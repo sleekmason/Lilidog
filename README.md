@@ -7,7 +7,14 @@ Pretty much, Debian. With some of the hard parts done, and some cool stuff along
 __NOTE*__ If you would like this version with updated drivers from sid, and the newest kernel available<br/>
 See: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
 
-__Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.__ 
+Be aware that in this case, newer doesn't always equate with better. <br/>
+An rc kernel newly patched by debian may run slower than the kernel in stable. <br/>
+Compiling your own vanilla kernel from https://www.kernel.org/ <br/>
+after building a stable image is the way to go for optimization purposes. However, If you have <br/>
+newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace. <br/>
+
+
+### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
 [![Lilidog4.png](https://i.postimg.cc/bJQwck8R/Lilidog4.png)](https://postimg.cc/62pXC787)
 
@@ -46,7 +53,7 @@ Conky has all sorts of relevant info, including connected drives. Fortune Cookie
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
 Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
-Set up custom paths to enable with ld-hotcorners. Folders within folders <br/>
+Set up custom paths to enable with ld-hotcorners. Folders within folders. <br/>
 Check wbar out in the live environment by toggling it from the menu, or ld-hotcorners. <br/>
 Use on startup by enabling in Lxsession-autostart, or keep it as a hotcorners toggle.
 
