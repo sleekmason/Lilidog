@@ -82,8 +82,9 @@ Swapid script for the frequent dual installer. This grabs your swap uuid and ope
 Run swapid in a terminal after installing another distro to a different partition.
 
 ld-hotcorners - Each corner of the screen responds to a command. <br/>
-Turn it on under Toggles in the menu.  Change the corners in ~/.config/ld-hotcorners <br/>
-Currently clockwise from top left: __pcmanfm, Compton toggle, Exit menu, urxvt terminal__.
+Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
+Change the corners in ~/.config/ld-hotcorners. <br/>
+Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urxvt terminal__.
 
 This ISO has about everything you could need for simple tasks while still quite responsive.
 
