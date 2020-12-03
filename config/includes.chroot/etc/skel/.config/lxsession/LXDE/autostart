@@ -1,0 +1,10 @@
+#@lxpanel --profile LXDE
+#@pcmanfm --desktop --profile LXDE
+#@xscreensaver -no-splash
+compton
+feh --bg-scale /home/wallpaper/linux2.png
+tint2
+#fbpanel-alsa
+#pnmixer
+conky
+#ld-hotcorners --daemon

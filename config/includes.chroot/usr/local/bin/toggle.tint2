@@ -1,0 +1,3 @@
+#!/bin/bash
+#
+bash -c 'if ! pkill -x tint2;then exec tint2; fi'

@@ -1,0 +1,9 @@
+#!/bin/bash
+if pgrep -xf fbpanel > /dev/null; then
+    pkill -xf fbpanel &
+    pkill -xf volumeicon
+else
+    fbpanel &
+    sleep 5 & 
+    volumeicon &
+fi

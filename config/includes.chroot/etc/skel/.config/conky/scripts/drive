@@ -1,0 +1,4 @@
+#!/bin/dash
+
+## Use df -h --output to find the filesystem types for Conky
+df -h -t ext4 -t vfat -t exfat -t fuseblk -t ntfs -t iso9660 -t udf -t fuse.sshfs --output=source,pcent,avail | grep -v "boot" 

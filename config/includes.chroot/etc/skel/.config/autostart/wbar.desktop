@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Warlock Bar
+Type=Application
+Exec=/usr/bin/wbar
+Terminal=false
+Icon=/usr/share/pixmaps/wbar/wbar.png
+Comment=A light and fast launch bar.
+Comment[de]=Eine leichte und schnelle Schnellstartleiste.
+Comment[es]=Una ligera y rápida barra de inicio.
+Categories=Utility;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=wbar
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=30
+X-Ubuntu-Gettext-Domain=wbar
+NotShowIn=LXDE;

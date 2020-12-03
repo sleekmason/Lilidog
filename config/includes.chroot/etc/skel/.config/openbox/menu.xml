@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>urxvt</execute>
+			</action>
+		</item>
+		<separator/>
+		<separator/>
+		<item label="PcManFM">
+			<action name="Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
+		<item label="Web Browser">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<item label="Thunderbird">
+			<action name="Execute">
+				<execute>thunderbird</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-594711" label="Quick Grab">
+			<item label="Geany">
+				<action name="Execute">
+					<execute>geany</execute>
+				</action>
+			</item>
+			<item label="Mousepad">
+				<action name="Execute">
+					<execute>mousepad</execute>
+				</action>
+			</item>
+			<item label="Newsboat">
+				<action name="Execute">
+					<execute>urxvt -g 120x40+120+100 -e newsboat</execute>
+				</action>
+			</item>
+			<item label="Lxterminal">
+				<action name="Execute">
+					<execute>lxterminal</execute>
+				</action>
+			</item>
+			<item label="Root PcManfm">
+				<action name="Execute">
+					<execute>gksudo pcmanfm</execute>
+				</action>
+			</item>
+			<item label="Root Lxterminal">
+				<action name="Execute">
+					<execute>gksudo lxterminal</execute>
+				</action>
+			</item>
+			<item label="Smplayer">
+				<action name="Execute">
+					<execute>smplayer</execute>
+				</action>
+			</item>
+			<item label="Lxmusic">
+				<action name="Execute">
+					<execute>lxmusic</execute>
+				</action>
+			</item>
+			<item label="Gimp">
+				<action name="Execute">
+					<execute>gimp</execute>
+				</action>
+			</item>
+			<item label="Gparted">
+				<action name="Execute">
+					<execute>gksudo gparted</execute>
+				</action>
+			</item>
+			<item label="Synaptic">
+				<action name="Execute">
+					<execute>gksudo synaptic</execute>
+				</action>
+			</item>
+			<item label="Printer Setup">
+				<action name="Execute">
+					<execute>system-config-printer</execute>
+				</action>
+			</item>
+			<item label="Catfish File Search">
+				<action name="Execute">
+					<execute>catfish</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="/Debian"/>
+		<separator/>
+		<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/>
+		<separator/>
+		<menu id="root-menu-21510" label="Configuration">
+			<item label="LxSession Autostart">
+				<action name="Execute">
+					<execute>lxsession-default-apps</execute>
+				</action>
+			</item>
+			<item label="Power Manager">
+				<action name="Execute">
+					<execute>xfce4-power-manager-settings</execute>
+				</action>
+			</item>
+			<item label="Lx-Appearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="Openbox Menu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Openbox Conf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Compton Conf">
+				<action name="Execute">
+					<execute>geany ~/.config/compton.conf</execute>
+				</action>
+			</item>
+			<item label="Conky Conf">
+				<action name="Execute">
+					<execute>geany ~/.config/conky/conky.conf</execute>
+				</action>
+			</item>
+			<item label="Urxvt Conf">
+				<action name="Execute">
+					<execute>geany ~/.Xdefaults</execute>
+				</action>
+			</item>
+			<item label="Tint2 Conf">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="FBPanel Conf">
+				<action name="Execute">
+					<execute>geany ~/.config/fbpanel/default</execute>
+				</action>
+			</item>
+			<item label="LightDm Conf">
+				<action name="Execute">
+					<execute>lightdm-gtk-greeter-settings</execute>
+				</action>
+			</item>
+			<item label="Xbindkeys Conf">
+				<action name="Execute">
+					<execute>xbindkeys-config</execute>
+				</action>
+			</item>
+			<item label="Dmenu Apps Conf">
+				<action name="Execute">
+					<execute>geany ~/.config/dmenu/apps</execute>
+				</action>
+			</item>
+			<item label="Ld-hotcorners Conf">
+				<action name="Execute">
+					<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-721334" label="Toggles">
+			<item label="Screenshot">
+				<action name="Execute">
+					<execute>gnome-screenshot -i</execute>
+				</action>
+			</item>
+			<item label="ClipIt Toggle">
+				<action name="Execute">
+					<execute>toggle.clipit</execute>
+				</action>
+			</item>
+			<item label="Conky Toggle">
+				<action name="Execute">
+					<execute>toggle.conky</execute>
+				</action>
+			</item>
+			<item label="Compton Toggle">
+				<action name="Execute">
+					<execute>toggle.compton</execute>
+				</action>
+			</item>
+			<item label="Ld-Hotcorners Toggle">
+				<action name="Execute">
+					<execute>toggle.ld</execute>
+				</action>
+			</item>
+			<item label="Tint2 Panel Toggle">
+				<action name="Execute">
+					<execute>toggle.tint2</execute>
+				</action>
+			</item>
+			<item label="FBPanel Toggle">
+				<action name="Execute">
+					<execute>toggle.fbpanel</execute>
+				</action>
+			</item>
+			<item label="Wbar Toggle">
+				<action name="Execute">
+					<execute>toggle.wbar</execute>
+				</action>
+			</item>
+			<item label="X-Kill">
+				<action name="Execute">
+					<execute>xkill</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item label="Restart">
+			<action name="Restart"/>
+		</item>
+		<separator/>
+		<item label="Exit">
+			<action name="Execute">
+				<execute>ld-logout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

@@ -1,0 +1,3 @@
+#!/bin/bash
+#
+bash -c 'if ! pkill -x compton; then exec compton; fi'

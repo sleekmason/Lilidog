@@ -1,0 +1,3 @@
+#!/bin/bash
+# A small script to start fbpanel with volumeicon-alsa.
+fbpanel & volumeicon 

@@ -1,0 +1,20 @@
+
+Welcome to ld-hotcorners!
+
+Try all of the corners out. Simply drag your mouse to a corner.
+
+Top-left       =  Wbar
+Top-right      =  Toggles Compton
+Lower-right    =  Exit menu
+Lower-left     =  urxvt terminal
+
+Once you get used to the bounceback, quite a handy little script.
+
+You can change these items in ~/.config/ld-hotcorners/ld-hotcornersrc
+There is a "Toggle" menu entry for ld-hotcorners under 'Configuration'.
+
+
+In order to use ld-hotcorners as default on login, go to menu,
+ configuration, LxSession autostart, and under autostart add:
+ 
+ld-hotcorners --daemon

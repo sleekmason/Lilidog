@@ -1,0 +1,62 @@
+## Lilidogs Newsboat config
+## 19 Feb. 2018
+auto-reload yes
+browser w3m
+cleanup-on-quit yes
+download-path "~/downloads/podcasts"
+notify-screen yes
+player mplayer
+refresh-on-startup yes
+reload-time 20
+reload-threads 2
+keep-articles-days 3
+max-items 100
+
+# Write error log
+error-log           "~/.newsboat/error.log"
+
+# binds ----------------------------------------------------------------
+
+unbind-key t
+unbind-key R
+bind-key \ reload-all
+bind-key RIGHT next article
+bind-key LEFT prev article
+bind-key / quit
+#bind-key "p" select-tag
+#bind-key space open
+#bind-key RIGHT next articlelist
+#bind-key LEFT prev articlelist
+#bind-key LEFT next-feed articlelist
+#bind-key RIGHT prev-feed articlelist
+# hide articles matching: ---------------------------------------------
+
+ignore-article "*" "title =~ \"Sponsor\""
+ignore-article "*" "title =~ \"Advertisement\""
+ignore-mode "display"
+
+# formatting and colorization ------------------------------------------
+
+articlelist-format "%4i %f %D  %?T?|%-17T| ?%t"
+
+highlight feedlist "^  *[0-9]+  *N  "                       color153   default
+highlight articlelist "^  *[0-9]+  *N  "                    color153   color66
+
+highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     color74    default
+highlight article     "(^Link:.*|^Date:.*)"                 color74    default
+highlight article     "^Podcast Download URL:.*"            color109   default
+highlight article     "^Links:"                             color109   default  underline
+highlight article     "\\[[0-9][0-9]*\\]"                   color72    default  bold
+highlight article     "\\[image [0-9][0-9]*\\]"             color72    default  bold
+highlight article     "\\[embedded flash: [0-9][0-9]*\\]"   color72    default  bold
+highlight article     ":.*\\(link\\)$"                      color152   default
+highlight article     ":.*\\(image\\)$"                     color152   default
+highlight article     ":.*\\(embedded flash\\)$"            color152   default
+
+color listnormal                                            color66    default
+color listfocus                                             color152   color23
+color listfocus_unread                                      color153   color23
+color info                                                  color153   color23
+color listnormal_unread                                     color152   default
+color article                                               color152   default
+color background                                            default    default

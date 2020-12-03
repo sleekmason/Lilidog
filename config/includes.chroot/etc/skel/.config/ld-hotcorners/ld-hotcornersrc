@@ -1,0 +1,5 @@
+[Hot Corners]
+top_left_corner_command = toggle.wbar
+top_right_corner_command = bash -c 'if ! pkill -x compton; then exec compton; fi'
+bottom_left_corner_command = urxvt
+bottom_right_corner_command = ld-logout

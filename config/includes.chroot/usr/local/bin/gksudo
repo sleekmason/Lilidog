@@ -1,0 +1,4 @@
+#!/bin/bash
+# A simple script to set the environmental variables in advance in order to use root.
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $@
+

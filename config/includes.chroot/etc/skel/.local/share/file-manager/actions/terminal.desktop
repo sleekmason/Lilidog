@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Action
+Tooltip=Open Terminal Here
+Name=Open Terminal
+Profiles=profile-one;
+Icon=utilities-terminal
+
+
+[X-Action-Profile profile-one]
+MimeTypes=inode/directory;
+Exec=urxvt -w %f
+Name=Default profile

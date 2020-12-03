@@ -1,0 +1,26 @@
+#!/bin/sh
+
+lb config noauto \
+	 --apt-recommends 'false' \
+     --apt-source-archives 'false' \
+     --apt-indices 'false' \
+     --archive-areas "main contrib non-free" \
+     --debian-installer 'live' \
+     --debian-installer-distribution 'buster' \
+     --distribution 'buster' \
+     --mirror-binary 'https://deb.debian.org/debian' \
+     --mirror-binary-security 'https://deb.debian.org/debian-security' \
+     --mirror-bootstrap 'https://deb.debian.org/debian' \
+     --firmware-binary 'true' \
+     --firmware-chroot 'true' \
+     --security 'true' \
+     --memtest 'none' \
+     --image-name 'Lilidog2020' \
+     --iso-application 'Lilidog' \
+     --iso-publisher 'Lilidog GNU/Linux' \
+     --iso-volume 'LiliDogBuster2020' \
+     --system 'live' \
+     --updates 'true' \
+     --win32-loader 'false' \
+     --quiet \
+     "${@}"
