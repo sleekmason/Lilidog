@@ -4,6 +4,8 @@ Lilidog is a dark themed distro build based on LXDE and Openbox as the window ma
 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way.
 
+### This is the stable version. Buster repos only.
+
 __NOTE*__ If you would like this version with updated drivers from sid, and the newest kernel available<br/>
 See: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
 
