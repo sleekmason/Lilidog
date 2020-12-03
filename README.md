@@ -45,6 +45,9 @@ Network-manager-gnome provided for internet access.
 Conky has all sorts of relevant info, including connected drives. Fortune Cookies are in the Conky. <br/>
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
+Desktop icons using wbar.  Check it out in live with ld-hotcorners (top-left), or toggle in the menu. <br/>
+Use on startup by enabling in Lxsession-autostart.
+
 Compton Composite Manager with transparency enabled. Change to suit.
 
 Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
