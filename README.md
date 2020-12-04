@@ -25,8 +25,9 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 LXDE + Openbox, based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
-Tint2 panel by default, with options for FbPanel or Lxpanel as well in Lxsession Autostart. <br/>
-Try Fbpanel in the live environment under 'Toggles' in the menu.  Toggle tint2 off first! <br/>
+Tint2 panel by default, with options for FbPanel, Lxpanel, or Monster panel. <br/>
+Try Fbpanel and Monster panel in the live environment under 'Toggles' in the menu. <br/>
+Monster panel is a combination of the pager and icon control from fbpanel, with everything else tint2. <br/>
 There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
