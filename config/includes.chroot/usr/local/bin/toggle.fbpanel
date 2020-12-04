@@ -2,6 +2,7 @@
 if pgrep -xf fbpanel > /dev/null; then
     pkill -xf fbpanel &
     pkill -xf volumeicon
+    pkill -f pager
 else
     fbpanel &
     sleep 5 & 

@@ -1,0 +1,8 @@
+#!/bin/bash
+if pgrep -f tint2 > /dev/null; then
+    pkill -f fbpanel
+    pkill -f tint2
+else
+    tint2 -c ~/.config/tint2/tint2-pager &
+    fbpanel -p pager &
+fi

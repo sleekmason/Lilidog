@@ -3,6 +3,7 @@
 #@xscreensaver -no-splash
 compton
 feh --bg-scale /home/wallpaper/linux2.png
+#monster-panel
 tint2
 #fbpanel-alsa
 #pnmixer

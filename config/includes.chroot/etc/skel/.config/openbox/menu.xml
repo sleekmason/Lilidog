@@ -194,6 +194,11 @@
 					<execute>toggle.ld</execute>
 				</action>
 			</item>
+			<item label="Monster Panel Toggle">
+				<action name="Execute">
+					<execute>toggle.monster</execute>
+				</action>
+			</item>
 			<item label="Tint2 Panel Toggle">
 				<action name="Execute">
 					<execute>toggle.tint2</execute>
