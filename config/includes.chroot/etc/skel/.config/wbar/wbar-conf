@@ -1,0 +1,65 @@
+i: /usr/share/pixmaps/wbar/dock.png
+c: wbar --bpress --above-desk --pos bottom --nofont --offset 8 --noreload --isize 56 --idist 14 --nanim 1 --zoomf 1.230000 --balfa 0 --falfa 80
+t: /usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold/10
+
+i: /usr/share/icons/ld-icons/wbar/autostartsettings.png
+c: lxsession-default-apps
+t: Autostart Settings
+
+i: /usr/share/icons/ld-icons/wbar/powermanager.png
+c: xfce4-power-manager-settings
+t: Power Manager
+
+i: /usr/share/icons/ld-icons/wbar/obmenuconf.png
+c: obmenu
+t: Openbox Menu
+
+i: /usr/share/icons/ld-icons/wbar/openboxsettings.png
+c: obconf
+t: Openbox Settings
+
+i: /usr/share/icons/ld-icons/wbar/comptonconf.png
+c: geany ~/.config/compton.conf
+t: Compton Settings
+
+i: /usr/share/icons/ld-icons/wbar/conkyconf.png
+c: geany ~/.config/conky/conky.conf
+t: Conky Conf
+
+i: /usr/share/icons/ld-icons/wbar/keybindsettings.png
+c: xbindkeys-config
+t: X-Bindkeys
+
+i: /usr/share/icons/ld-icons/wbar/lightdmsettings.png
+c: gksudo lightdm-gtk-greeter-settings
+t: LightDm Settings
+
+i: /usr/share/icons/ld-icons/wbar/monstersettings.png
+c: mousepad ~/.config/tint2/tint2-pager & mousepad ~/.config/fbpanel/pager
+t: Monster Settings
+
+i: /usr/share/icons/ld-icons/wbar/tint2settings.png
+c: tint2conf
+t: Tint2 Settings
+
+i: /usr/share/icons/ld-icons/wbar/fbpanelsettings.png
+c: geany ~/.config/fbpanel/default
+t: FbPanel Settings
+
+i: /usr/share/icons/ld-icons/wbar/dmenusettings.png
+c: geany ~/.config/dmenu/apps
+t: Dmenu Settings
+
+i: /usr/share/icons/ld-icons/wbar/hotcornersettings.png
+c: geany ~/.config/ld-hotcorners/ld-hotcornersrc
+t: Hotcorners Settings
+
+
+i: /usr/share/icons/ld-icons/wbar/urxvtsettings.png
+c: geany ~/.Xdefaults
+t: Urxvt Settings
+
+i: /usr/share/icons/ld-icons/wbar/windowsettings.png
+c: lxappearance
+t: Lxappearance
+

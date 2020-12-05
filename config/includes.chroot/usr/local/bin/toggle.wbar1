@@ -1,0 +1,11 @@
+#!/bin/bash
+trap 'kill $(jobs -p) >/dev/null 2>&1' EXIT
+# kills its children on exit ^
+# your custom wbar start here
+
+
+if pgrep -f wbar-places> /dev/null; then
+    pkill -f wbar-places
+else
+    wbar --config ~/.config/wbar/wbar-places
+fi

@@ -149,7 +149,7 @@
 			</item>
 			<item label="LightDm Conf">
 				<action name="Execute">
-					<execute>lightdm-gtk-greeter-settings</execute>
+					<execute>gksudo lightdm-gtk-greeter-settings</execute>
 				</action>
 			</item>
 			<item label="Xbindkeys Conf">

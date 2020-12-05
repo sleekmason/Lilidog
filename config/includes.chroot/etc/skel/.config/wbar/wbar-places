@@ -1,0 +1,27 @@
+i: /usr/share/pixmaps/wbar/dock.png
+c: wbar --bpress --above-desk --pos bottom --nofont --offset 168 --noreload --isize 56 --idist 14 --nanim 1 --zoomf 1.230000 --balfa 0 --falfa 80
+t: /usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold/10
+
+i: /usr/share/icons/ld-icons/wbar/pictures.png
+c: pcmanfm ~/Pictures
+t: Pictures Folder
+
+i: /usr/share/icons/ld-icons/wbar/scripts.png
+c: gksudo pcmanfm /usr/local/bin
+t: Scripts
+
+i: /usr/share/icons/ld-icons/wbar/etcapt.png
+c: gksudo pcmanfm /etc/apt
+t: Openbox Menu
+
+i: /usr/share/icons/ld-icons/wbar/desktop.png
+c: pcmanfm ~/Desktop
+t: Openbox Settings
+
+i: /usr/share/icons/ld-icons/wbar/usrshare.png
+c: gksudo pcmanfm /usr/share
+t: /usr/share
+
+i: /usr/share/icons/ld-icons/wbar/config.png
+c: pcmanfm ~/.config
+t: /usr/share
