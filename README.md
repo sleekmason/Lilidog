@@ -41,6 +41,8 @@ X-screensaver and other handy startup apps readily available through Lxsession A
 Custom right-click menu with ease of use in mind. Easy access to root options, configurations, and toggles. <br/>
 Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
 customized menu with only the most commonly used apps.  Customization available from the Openbox menu.
+Another menu option using wbar with pre-cofigured values can be turned on with Alt + F5 <br/> 
+There are four pre-made wbar lines ready to mix and match whatever you come up with.
 
 PcManFM file manager has built in right-click options for Open in Terminal, and Open as Root.
 
@@ -57,7 +59,7 @@ Conky has all sorts of relevant info, including connected drives. Fortune Cookie
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
 Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
-Check wbar out in the live environment by toggling it from the menu under toggles <br/>
+Check wbar out in the live environment by toggling it from the menu under toggles or ld-hotcorners Top-Left <br/>
 Easy to configure from the settings icon. Use on startup by enabling in Lxsession-autostart.
 
 Compton Composite Manager with transparency enabled. Change to suit.
@@ -87,10 +89,7 @@ Run swapid in a terminal after installing another distro to a different partitio
 ld-hotcorners - Each corner of the screen responds to a command. <br/>
 Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
 Change the corners in ~/.config/ld-hotcorners. <br/>
-Currently clockwise from top left: __Wbar pyramid toggle, Compton toggle, Exit menu, urxvt terminal__. <br/>
-
-*NOTE the Wbar Pyramid from the top-left hotcorners toggle is more of an example than a rule. <br/> 
-There are four pre-made wbar lines ready to mix and match whatever you come up with.
+Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urxvt terminal__. <br/>
 
 This ISO has about everything you could need for simple tasks while still quite responsive.
 
