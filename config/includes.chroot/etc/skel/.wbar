@@ -1,40 +1,40 @@
 i: /usr/share/pixmaps/wbar/dock.png
-c: wbar --bpress --above-desk --vbar --pos left --grow --offset 14 --noreload --isize 48 --idist 24 --nanim 1 --zoomf 1.300000 --balfa 0 --falfa 70
+c: wbar --bpress --above-desk --vbar --nofont --pos left --grow --offset 14 --noreload --isize 48 --idist 24 --nanim 1 --zoomf 1.300000 --balfa 0 --falfa 70
 t: /usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold/10
 
-i: /usr/share/icons/gnome/48x48/apps/utilities-terminal.png
+i: /usr/share/icons/gnome/256x256/apps/utilities-terminal.png
 c: urxvt
 t: Terminal
 
-i: /usr/share/icons/gnome/48x48/apps/system-file-manager.png
+i: /usr/share/icons/gnome/256x256/apps/system-file-manager.png
 c: pcmanfm
 t: pcmanfm
 
-i: /usr/share/icons/gnome/48x48/apps/accessories-text-editor.png
+i: /usr/share/icons/gnome/256x256/apps/accessories-text-editor.png
 c: geany
 t: Geany
 
-i: /usr/share/icons/gnome/48x48/categories/applications-internet.png
+i: /usr/share/icons/gnome/256x256/categories/applications-internet.png
 c: firefox
 t: Firefox
 
-i: /usr/share/icons/gnome/48x48/actions/mail-send-receive.png
+i: /usr/share/icons/gnome/256x256/actions/mail-message-new.png
 c: thunderbird
 t: E-Mail
 
-i: /usr/share/icons/gnome/48x48/mimetypes/audio-x-generic.png
+i: /usr/share/icons/gnome/256x256/mimetypes/audio-x-generic.png
 c: lxmusic
 t: Music
 
-i: /usr/share/icons/gnome/48x48/mimetypes/video-x-generic.png
+i: /usr/share/icons/gnome/256x256/mimetypes/video-x-generic.png
 c: smplayer
 t: SmPlayer
 
-i: /usr/share/icons/gnome/48x48/apps/preferences-desktop-keyboard-shortcuts.png
+i: /usr/share/icons/gnome/256x256/actions/document-page-setup.png
 c: libreoffice
 t: Writer
 
-i: /usr/share/icons/gnome/48x48/categories/preferences-desktop.png
+i: /usr/share/icons/gnome/256x256/actions/system-run.png
 c: wbar-config
 t: Config
 

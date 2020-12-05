@@ -75,5 +75,9 @@
 "~/.config/dmenu/apps"
    Alt + F3
 
+#Pyramid menu toggle
+"toggle.pyramid"
+   Alt + F5
+
 #
 # End of xbindkeys configuration

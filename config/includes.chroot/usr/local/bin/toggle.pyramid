@@ -1,0 +1,5 @@
+#!/bin/bash
+toggle.wbar1 &
+toggle.wbar2 &
+toggle.wbar3 &
+toggle.wbar4 &

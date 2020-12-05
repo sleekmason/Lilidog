@@ -1,5 +1,5 @@
 i: /usr/share/pixmaps/wbar/dock.png
-c: wbar --bpress --above-desk --pos bottom --offset 88 --nofont --noreload --isize 56 --idist 14 --nanim 1 --zoomf 1.230000 --balfa 0 --falfa 80
+c: wbar --bpress --above-desk --pos bottom --offset 90 --nofont --noreload --isize 56 --idist 14 --nanim 1 --zoomf 1.230000 --balfa 0 --falfa 80
 t: /usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold/10
 
 i: /usr/share/icons/ld-icons/wbar/screenshottoggle.png

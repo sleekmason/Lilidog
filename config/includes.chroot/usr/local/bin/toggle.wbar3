@@ -4,8 +4,8 @@ trap 'kill $(jobs -p) >/dev/null 2>&1' EXIT
 # your custom wbar start here
 
 
-if pgrep -f wbar-conf> /dev/null; then
-    pkill -f wbar-conf
+if pgrep -f wbar-configs> /dev/null; then
+    pkill -f wbar-configs
 else
-    wbar --config ~/.config/wbar/wbar-conf
+    wbar --config ~/.config/wbar/wbar-configs
 fi

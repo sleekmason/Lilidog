@@ -144,7 +144,7 @@ mouse_scroll_down = iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 1 0 2
+systray_padding = 2 0 2
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 20
@@ -172,7 +172,7 @@ time1_font = Liberation Sans 11
 time1_timezone = 
 time2_timezone = 
 clock_font_color = #b8e7e4 100
-clock_padding = 7 0
+clock_padding = 4 0
 clock_background_id = 1
 clock_tooltip = Left click = calendar - Middle click = time formats
 clock_tooltip_timezone = 
@@ -184,19 +184,19 @@ clock_dwheel_command =
 
 #-------------------------------------
 # Battery
-battery_tooltip = 0
+battery_tooltip = 1
 battery_low_status = 10
 battery_low_cmd = notify-send 'Battery Low'
 battery_full_cmd = notify-send 'Battery Fully Charged'
 bat1_font = Liberation Sans 11
 bat2_font = Sans 8
 battery_font_color = #b8e7e4 100
-bat1_format = %p Bat
+bat1_format = Bat %p
 bat2_format = 
-battery_padding = 8 0
+battery_padding = 4 0
 battery_background_id = 0
 battery_hide = 101
-battery_lclick_command = 
+battery_lclick_command = xfce4-power-manager-settings
 battery_rclick_command = 
 battery_mclick_command = urxvt -e htop
 battery_uwheel_command = 
@@ -230,7 +230,7 @@ execp_uwheel_command = amixer -q set Master 2%+ unmute
 execp_dwheel_command = amixer -q set Master 5%- unmute
 execp_font = Liberation Sans 11
 execp_font_color = #b8e7e4 100
-execp_padding = 7 0
+execp_padding = 4 0
 execp_background_id = 1
 execp_centered = 0
 execp_icon_w = 24
@@ -280,7 +280,7 @@ button_mclick_command =
 button_uwheel_command = 
 button_dwheel_command = 
 button_font_color = #000000 100
-button_padding = 0 0
+button_padding = 2 0
 button_background_id = 0
 button_centered = 0
 button_max_icon_size = 18
