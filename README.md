@@ -2,7 +2,8 @@
 ## LXDE - Openbox Optimized - 64 bit version.<br/>
 Lilidog is a dark themed distro build based on LXDE and Openbox as the window manager. 
 
-Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way.
+Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
+Everything is easily accessible, with numerous options to customize.
 
 ### This is the stable version. Buster repos only.
 
@@ -25,9 +26,9 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 LXDE + Openbox, based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
-Tint2 panel by default, with options for FbPanel, Lxpanel, or Monster panel. <br/>
-Try Fbpanel and Monster panel in the live environment under 'Toggles' in the menu. <br/>
+Hybrid Monster panel by default, with options for FbPanel, Lxpanel, or tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from fbpanel, with everything else tint2. <br/>
+Try Fbpanel or tint2 alone if you like, in the live environment under 'Toggles' in the menu. <br/>
 There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
@@ -56,9 +57,8 @@ Conky has all sorts of relevant info, including connected drives. Fortune Cookie
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
 Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
-Set up custom paths to enable with ld-hotcorners. Folders within folders. <br/>
-Check wbar out in the live environment by toggling it from the menu, or ld-hotcorners. <br/>
-Use on startup by enabling in Lxsession-autostart, or keep it as a hotcorners toggle.
+Check wbar out in the live environment by toggling it from the menu under toggles <br/>
+Easy to configure from the settings icon. Use on startup by enabling in Lxsession-autostart.
 
 Compton Composite Manager with transparency enabled. Change to suit.
 
@@ -76,7 +76,7 @@ They are mine/yours, not off the internet.
 
 System notifications enabled with Dunst. Set your own settings in ~/.config/dunst/dunstrc.
 
-The fun scripts in /usr/local/bin are: <br/>
+All scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
 winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
 Try: __winfuncs cascade__ or __winfuncs showdesktop__  in a terminal with a couple of windows open to get the idea. <br/>
 Look at the script in /usr/local/bin for the rest of the options.
@@ -87,7 +87,10 @@ Run swapid in a terminal after installing another distro to a different partitio
 ld-hotcorners - Each corner of the screen responds to a command. <br/>
 Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
 Change the corners in ~/.config/ld-hotcorners. <br/>
-Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urxvt terminal__.
+Currently clockwise from top left: __Wbar pyramid toggle, Compton toggle, Exit menu, urxvt terminal__. <br/>
+
+*NOTE the Wbar Pyramid from the top-left hotcorners toggle is more of an example than a rule. <br/> 
+There are four pre-made wbar lines ready to mix and match whatever you come up with.
 
 This ISO has about everything you could need for simple tasks while still quite responsive.
 
