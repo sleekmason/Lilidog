@@ -26,9 +26,9 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 LXDE + Openbox, based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
-Hybrid Monster panel by default, with options for FbPanel, Lxpanel, or tint2 panel. <br/>
-Monster panel is a combination of the pager and icon control from fbpanel, with everything else tint2. <br/>
-Try Fbpanel or tint2 alone if you like, in the live environment under 'Toggles' in the menu. <br/>
+Hybrid Monster panel by default, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
+Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
+Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu. <br/>
 There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
@@ -40,7 +40,7 @@ X-screensaver and other handy startup apps readily available through Lxsession A
 
 Custom right-click menu with ease of use in mind. Easy access to root options, configurations, and toggles. <br/>
 Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
-customized menu with only the most commonly used apps.  Customization available from the Openbox menu.
+customized menu with only the most commonly used apps. <br/>
 Another menu option using wbar with pre-cofigured values can be turned on with Alt + F5 <br/> 
 There are four pre-made wbar lines ready to mix and match whatever you come up with.
 
@@ -59,7 +59,7 @@ Conky has all sorts of relevant info, including connected drives. Fortune Cookie
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
 Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
-Check wbar out in the live environment by toggling it from the menu under toggles or ld-hotcorners Top-Left <br/>
+Check wbar out in the live environment by toggling it from the menu or ld-hotcorners, Top-Left. <br/>
 Easy to configure from the settings icon. Use on startup by enabling in Lxsession-autostart.
 
 Compton Composite Manager with transparency enabled. Change to suit.
@@ -139,7 +139,7 @@ Follow the instructions below to build your own iso using the Debian Live-build 
 Clone or download the Lilidog-Buster zip file so you have access to all the necessary files.
 Open a terminal in the resultant folder and:
 ```sh
-sudo apt install live-build live-config live-boot
+sudo apt install live-build
 sudo lb build
 ```
 Thats it. The iso will be in the main folder when completed. Read below for potential problems.
