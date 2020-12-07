@@ -26,6 +26,10 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 LXDE + Openbox, based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
+Fluxbox now an option. A work in progress:)  In the live session, you can switch from Openbox to <br/>
+Fluxbox through the toggles in the menu.  To return to Openbox, you will have to logout and back in. <br/>
+The username and password for the live environment is "user", and "live" respectively.
+ 
 Hybrid Monster panel by default, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
 Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu. <br/>
