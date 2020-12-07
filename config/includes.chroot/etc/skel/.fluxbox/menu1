@@ -1,0 +1,59 @@
+## Please see <file:/usr/share/doc/menu/README> for information.
+## to use your own menu, copy this to ~/.fluxbox/menu, 
+##or whatever you wish to name it,then edit
+## ~/.fluxbox/init and change the session.menuFile path,
+## to ~/.fluxbox/menu
+[begin] (Fluxbox)
+##  ~/.fluxbox/menu1 
+#
+
+[exec] (Terminal) {urxvt}
+[separator]
+[exec] (Pcmanfm) {pcmanfm}
+[exec] (Web Browser) {firefox-esr}
+[exec] (Thunderbird) {thunderbird}
+[separator]
+[submenu](Quick Grab)
+[exec] (Catfish File) {catfish}
+[exec] (Lxterminal) {lxterminal}
+[exec] (Newsboat) {urxvt -g 120x40+120+100 -e newsboat}
+[exec] (Geany) {geany}
+[exec] (Mousepad) {mousepad}
+[exec] (Writer) {libreoffice}
+[exec] (Lxmusic) {lxmusic}
+[exec] (SmPlayer) {smplayer}
+[exec] (Gimp) {gimp}
+[exec] (gparted) {urxvt -g 40x3+20+20 -e sudo gparted}
+[exec] (Synaptic) {urxvt -g 40x3+20+20 -e sudo synaptic}
+[exec] (Root PcManfm) {urxvt -g 40x3+20+20 -e sudo pcmanfm}
+[exec] (Printer Setup) {system-config-printer}
+[end]
+[submenu] (Applications)
+[exec] (Regenerate Menu) {update-menus}
+[include] (/etc/X11/fluxbox/fluxbox-menu)
+[end]
+[separator]
+#[exec] (Wallpaper X) {fbsetbg -f -r ~/Pictures/wallpapers} 
+[submenu](Configuration)
+[exec] (Lxappearance) {lxappearance}
+[exec] (Power Manager) {xfce4-power-manager-settings}
+[config] (FluxConfig)
+   [submenu] (Styles) {}
+      [stylesdir] (/usr/share/fluxbox/styles)
+      [stylesdir] (~/.fluxbox/styles)
+   [end]
+   [end]
+   [submenu](Toggles)
+[exec] (Screenshot) {toggle.compton}
+[exec] (Toggle Compton) {toggle.compton}
+[exec] (Toggle Conky) {toggle.conky}
+[exec] (Toggle clipit) {toggle.clipit}
+[exec] (Toggle Wbar) {toggle.wbar}
+[exec] (Toggle Ld-Hotcorners) {toggle.ld}
+[exec] (Xkill) {xkill}
+[end]
+[separator]
+   [restart] (Restart)
+   [exec] (Exit) {ld-logout}
+[end]
+

@@ -79,5 +79,9 @@
 "toggle.pyramid"
    Alt + F5
 
+#Remark
+"urxvt"
+   Mod4 + t
+
 #
 # End of xbindkeys configuration
