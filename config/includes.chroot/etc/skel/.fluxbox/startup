@@ -5,7 +5,7 @@
 # Lines starting with a '#' are ignored.
 
 # Change your keymap:
-xmodmap "~/.Xmodmap"
+# xmodmap "~/.Xmodmap"
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
@@ -20,6 +20,7 @@ compton &
 conky &
 volumeicon &
 nm-applet &
+lxpolkit &
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
 #     exists. If it does, we'll start it up by default.

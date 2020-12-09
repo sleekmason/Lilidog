@@ -1,7 +1,8 @@
 #!/bin/bash
 # Small script to change to fluxbox during session.
-toggle.monster
-toggle.conky
-toggle.compton
+pkill -f tint2
+pkill -f fbpanel
+pkill -f conky
+pkill -f compton
 pkill -x openbox
 /usr/bin/startfluxbox

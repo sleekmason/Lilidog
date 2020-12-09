@@ -29,8 +29,12 @@ Debian backport sources can be enabled during installation.
 Fluxbox now an option. A work in progress:)  In the live session, you can switch from Openbox to <br/>
 Fluxbox through the toggles in the menu.  To return to Openbox, you will have to logout and back in. <br/>
 The username and password for the live environment is "user", and "live" respectively.
+
+Even though this is currently based on the Lxde-openbox combo, I have since separated out Openbox, <br/>
+which can now be started on it's own in the lightdm login screen. Just another choice, <br/>
+not necessarily better or worse.
  
-Hybrid Monster panel by default, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
+Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
 Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu. <br/>
 There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>

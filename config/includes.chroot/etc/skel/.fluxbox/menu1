@@ -37,13 +37,23 @@
 [submenu](Configuration)
 [exec] (Lxappearance) {lxappearance}
 [exec] (Power Manager) {xfce4-power-manager-settings}
+   [submenu](Fluxbox Config)
 [config] (FluxConfig)
    [submenu] (Styles) {}
       [stylesdir] (/usr/share/fluxbox/styles)
       [stylesdir] (~/.fluxbox/styles)
    [end]
+   [exec] (Fluxbox Menu) {geany ~/.fluxbox/menu1}
+[exec] (Fluxbox Startup) {geany ~/.fluxbox/startup}
+[exec] (Fluxbox Init) {geany ~/.fluxbox/init}
    [end]
-   [submenu](Toggles)
+   [exec] (Xbindkeys Config) {geany ~/.xbindkeysrc}
+   [exec] (Conky Config) {geany ~/.config/conky/conky.conf}
+   [exec] (Compton Config) {geany ~/.config/compton.conf}
+   [exec] (Dmenu F3 Config) {geany ~/.config/dmenu/dmenu-apps}
+   [exec] (Wbar Config) {geany ~/.wbar}
+   [end]
+[submenu](Toggles)
 [exec] (Screenshot) {toggle.compton}
 [exec] (Toggle Compton) {toggle.compton}
 [exec] (Toggle Conky) {toggle.conky}
