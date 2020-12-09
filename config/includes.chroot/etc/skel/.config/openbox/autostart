@@ -12,4 +12,3 @@ conky &
 xbindkeys &
 nm-applet &
 lxpolkit &
-lxsettings-daemon -f ~/.config/gtk-3.0/settings.ini
