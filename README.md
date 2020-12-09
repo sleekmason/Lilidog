@@ -32,7 +32,7 @@ The username and password for the live environment is "user", and "live" respect
 
 Even though this is currently based on the Lxde-openbox combo, I have since separated out Openbox, <br/>
 which can now be started on it's own in the lightdm login screen. Just another choice, <br/>
-not necessarily better or worse.
+not necessarily better or worse. For pure Openbox and Fluxbox, Fonts are changed through ~/.Xresources.
  
 Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>

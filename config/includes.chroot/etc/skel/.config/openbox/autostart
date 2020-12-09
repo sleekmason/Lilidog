@@ -1,14 +1,15 @@
-#@lxpanel --profile LXDE
-#@pcmanfm --desktop --profile LXDE
-#pnmixer
-#@xscreensaver -no-splash
+#@lxpanel --profile LXDE &
+#@pcmanfm --desktop --profile LXDE &
+#pnmixer &
+#@xscreensaver -no-splash &
 compton &
 feh --bg-scale /home/wallpaper/linux2.png &
-#tint2
-#fbpanel-alsa
+#tint2 &
+#fbpanel-alsa &
 monster-panel &
 xfce4-power-manager &
 conky &
 xbindkeys &
 nm-applet &
 lxpolkit &
+system-config-printer-applet &

@@ -134,7 +134,7 @@
 			</item>
 			<item label="Urxvt Conf">
 				<action name="Execute">
-					<execute>geany ~/.Xdefaults</execute>
+					<execute>geany ~/.Xresources</execute>
 				</action>
 			</item>
 			<item label="Tint2 Conf">

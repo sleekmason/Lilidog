@@ -48,6 +48,7 @@
 [exec] (Fluxbox Init) {geany ~/.fluxbox/init}
    [end]
    [exec] (Xbindkeys Config) {geany ~/.xbindkeysrc}
+   [exec] (Urxvt Config) {geany ~/.Xresources}
    [exec] (Conky Config) {geany ~/.config/conky/conky.conf}
    [exec] (Compton Config) {geany ~/.config/compton.conf}
    [exec] (Dmenu F3 Config) {geany ~/.config/dmenu/dmenu-apps}
@@ -61,8 +62,10 @@
 [exec] (Toggle Wbar) {toggle.wbar}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
 [exec] (Xkill) {xkill}
+#[restart] (Start Openbox) {openbox-lxde}
 [end]
 [separator]
+[reconfig] (Reconfigure)
    [restart] (Restart)
    [exec] (Exit) {ld-logout}
 [end]
