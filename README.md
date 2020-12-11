@@ -1,6 +1,9 @@
 ﻿# Lilidog-Linux Based on Debian Buster (stable)
-## LXDE - Openbox Optimized - 64 bit version.<br/>
-Lilidog is a dark themed distro build based on LXDE and Openbox as the window manager. 
+## LXDE - Openbox - Fluxbox Combo Optimized - 64 bit version.<br/>
+
+Lilidog is a dark themed distro build based on LXDE with either Openbox <br/> 
+or Fluxbox as the window manager.  Toggle freely between the two when in the default session. <br/>
+Either can be accessed separately through the Lightdm login screen, but no toggling in this case.
 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize.
@@ -23,11 +26,11 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 
 ### Features:
 
-LXDE + Openbox, based on Debian Buster with contrib and non-free sources enabled by default. <br/>
+Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
 Fluxbox now an option. A work in progress:)  In the live session, you can switch from Openbox to <br/>
-Fluxbox through the toggles in the menu.  To return to Openbox, you will have to logout and back in. <br/>
+Fluxbox and back through the toggles in the menu. <br/> Logging into each separately is also an option <br/>
 The username and password for the live environment is "user", and "live" respectively.
 
 Even though this is currently based on the Lxde-openbox combo, I have since separated out Openbox, <br/>
