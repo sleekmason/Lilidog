@@ -214,14 +214,14 @@
 					<execute>toggle.wbar</execute>
 				</action>
 			</item>
-			<item label="Fluxbox no backsies">
-				<action name="Execute">
-					<execute>flux-entry</execute>
-				</action>
-			</item>
 			<item label="X-Kill">
 				<action name="Execute">
 					<execute>xkill</execute>
+				</action>
+			</item>
+			<item label="Switch To Fluxbox">
+				<action name="Execute">
+					<execute>flux-entry</execute>
 				</action>
 			</item>
 		</menu>

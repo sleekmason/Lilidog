@@ -62,7 +62,7 @@
 [exec] (Toggle Wbar) {toggle.wbar}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
 [exec] (Xkill) {xkill}
-#[restart] (Start Openbox) {openbox-lxde}
+[exec] (Switch To Openbox) {open-entry}
 [end]
 [separator]
 [reconfig] (Reconfigure)

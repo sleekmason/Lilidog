@@ -17,9 +17,10 @@
 xfce4-power-manager &
 compton &
 #ld-hotcorners --daemon &
-conky &
-volumeicon &
-nm-applet &
+killall conky ; conky &
+killall volumeicon ; volumeicon &
+killall nm-applet ; nm-applet &
+killall applet.py &
 lxpolkit &
 system-config-printer-applet &
 # Debian-local change:
