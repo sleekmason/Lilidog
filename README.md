@@ -105,7 +105,29 @@ Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urx
 
 This ISO has about everything you could need for simple tasks while still quite responsive.
 
-Running live: uses around 300MB ram. <br/>
+I also have custom kernels you can try, based off of the images found on https://www.kernel.org/ <br/>
+Most of the debugging has been removed, along with a bunch of other changes. <br/>
+I'll get a list up soon.
+
+A custom kernel for the stable build can be found here:
+https://github.com/sleekmason/Configuration/tree/master/kernel-stable
+
+A custom kernel running the newest RC kernel to support the latest firmare can be found here:
+https://github.com/sleekmason/Configuration/tree/master/kernel-unstable
+
+Download the kernel image and header, Open a terminal in the folder where they are located, and use:
+```sh
+sudo dpkg -i <Linux-image Linux-headers>
+```
+Where linux-image and linux-headers reflect the actual version you are installing.
+
+This will install the kernel and headers and update grub.  If for some reason it doesn't work, <br/>
+simply reboot into another kernel and uninstall this one using: <br/>
+```sh
+sudo apt remove <Linux-image Linux-headers>
+```
+
+This build running live uses around 300MB ram. <br/>
 Installed: around 280MB <br/> 
 
 Installed extras include but not limited to: <br/>
