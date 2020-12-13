@@ -86,6 +86,11 @@
 					<execute>system-config-printer</execute>
 				</action>
 			</item>
+			<item label="Kernel Remover">
+				<action name="Execute">
+					<execute>kernel-remover</execute>
+				</action>
+			</item>
 			<item label="Catfish File Search">
 				<action name="Execute">
 					<execute>catfish</execute>
