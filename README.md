@@ -31,7 +31,8 @@ Debian backport sources can be enabled during installation.
 
 Fluxbox now an option. A work in progress:)  In the live session, you can switch from Openbox to <br/>
 Fluxbox and back through the toggles in the menu. <br/> Logging into each separately is also an option <br/>
-The username and password for the live environment is "user", and "live" respectively.
+The username and password for the live environment is "user", and "live" respectively. <br/>
+Be aware that Conky doesn't always play nice through the toggle, but thats just a click away if needed.
 
 Even though this is currently based on the Lxde-openbox combo, I have since separated out Openbox, <br/>
 which can now be started on it's own in the lightdm login screen. Just another choice, <br/>

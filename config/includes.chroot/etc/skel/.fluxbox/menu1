@@ -61,6 +61,7 @@
 [exec] (Toggle clipit) {toggle.clipit}
 [exec] (Toggle Wbar) {toggle.wbar}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
+[exec] (Toggle Monster Panel) {toggle.monster}
 [exec] (Xkill) {xkill}
 [exec] (Switch To Openbox) {open-entry}
 [end]
