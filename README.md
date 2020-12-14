@@ -26,86 +26,86 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 
 ### Features:
 
-Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
+- Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
-Fluxbox now an option. A work in progress:)  In the live session, you can switch from Openbox to <br/>
+- Fluxbox now an option. A work in progress:)  In the live session, you can switch from Openbox to <br/>
 Fluxbox and back through the toggles in the menu. <br/> Logging into each separately is also an option <br/>
 The username and password for the live environment is "user", and "live" respectively. <br/>
 Be aware that Conky doesn't always play nice through the toggle, but thats just a click away if needed.
 
-Even though this is currently based on the Lxde-openbox combo, I have since separated out Openbox, <br/>
+- Even though this is currently based on the Lxde-openbox combo, I have since separated out Openbox, <br/>
 which can now be started on it's own in the lightdm login screen. Just another choice, <br/>
 not necessarily better or worse. For pure Openbox and Fluxbox, Fonts are changed through ~/.Xresources.
  
-Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
+- Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
 Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu. <br/>
 There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
-If preferred, you can enable the Pnmixer icon in LxSession Autostart and remove the executor from tint2.<br/>
+- If preferred, you can enable the Pnmixer icon in LxSession Autostart and remove the executor from tint2.<br/>
 Make a backup of the tint2rc in case you change your mind, or see /etc/skel/.config/tint2 for the original.
 
-X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
+- X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
 
-Custom right-click menu with ease of use in mind. Easy access to root options, configurations, and toggles. <br/>
+- Custom right-click menu with ease of use in mind. Easy access to root options, configurations, and toggles. <br/>
 Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
 customized menu with only the most commonly used apps. <br/>
 Another menu option using wbar with pre-cofigured values can be turned on with Alt + F5 <br/> 
 There are four pre-made wbar lines ready to mix and match whatever you come up with.
 
-PcManFM file manager has built in right-click options for Open in Terminal, and Open as Root.
+- PcManFM file manager has built in right-click options for Open in Terminal, and Open as Root.
 
-Custom Lilidog Openbox and GTK theme, Gnome Brave Icons, and matching themes for Geany and Mousepad. <br/>
+- Custom Lilidog Openbox and GTK theme, Gnome Brave Icons, and matching themes for Geany and Mousepad. <br/>
 The Mousepad theme will need to be enabled under 'Edit' -> 'Preferences' in the app. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. <br/>
 
-URXVT terminal has font size control (ctl+up/down), transparency and the ability to open urls. <br/>
+- URXVT terminal has font size control (ctl+up/down), transparency and the ability to open urls. <br/>
 Lxterminal is readily available in the menu and launcher for those who prefer it.
 
-Network-manager-gnome provided for internet access.
+- Network-manager-gnome provided for internet access.
 
-Conky has all sorts of relevant info, including connected drives. Fortune Cookies are in the Conky. <br/>
+- Conky has all sorts of relevant info, including connected drives. Fortune Cookies are in the Conky. <br/>
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
-Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
+- Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
 Check wbar out in the live environment by toggling it from the menu or ld-hotcorners, Top-Left. <br/>
 Easy to configure from the settings icon. Use on startup by enabling in Lxsession-autostart.
 
-Compton Composite Manager with transparency enabled. Change to suit.
+- Compton Composite Manager with transparency enabled. Change to suit.
 
-Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
+- Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
-BFQ IO Scheduler by Default. To change this to kernel default, delete 60-scheduler.rules in /etc/udev/rules.d
+- BFQ IO Scheduler by Default. To change this to kernel default, delete 60-scheduler.rules in /etc/udev/rules.d
 
-Feh sets the wallpaper directly in lxsession autostart rather than pointing to ~/.fehbg <br/>
+- Feh sets the wallpaper directly in lxsession autostart rather than pointing to ~/.fehbg <br/>
 After installation, you may want to change this to ~/.fehbg & in lxsession autostart for customization. <br/>
 If you would prefer to use icons on the desktop, enable the pcmanfm --desktop --profile in Lxsession autostart.
 
-My wife painted rocks for the wallpaper and I found I like them quite a bit:) Maybe you will too.<br/> 
+- My wife painted rocks for the wallpaper and I found I like them quite a bit:) Maybe you will too.<br/> 
 Feel free to use them however you like, or delete them and point to something else. No worries:) <br/> 
 They are mine/yours, not off the internet. 
 
-System notifications enabled with Dunst. Set your own settings in ~/.config/dunst/dunstrc.
+- System notifications enabled with Dunst. Set your own settings in ~/.config/dunst/dunstrc.
 
-All scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
-winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
+- All scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
+- winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
 Try: __winfuncs cascade__ or __winfuncs showdesktop__  in a terminal with a couple of windows open to get the idea. <br/>
 Look at the script in /usr/local/bin for the rest of the options.
 
-Swapid script for the frequent dual installer. This grabs your swap uuid and opens the appropriate windows to edit. <br/>
+- Swapid script for the frequent dual installer. This grabs your swap uuid and opens the appropriate windows to edit. <br/>
 Run swapid in a terminal after installing another distro to a different partition.
 
-ld-hotcorners - Each corner of the screen responds to a command. <br/>
+- ld-hotcorners - Each corner of the screen responds to a command. <br/>
 Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
 Change the corners in ~/.config/ld-hotcorners. <br/>
 Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urxvt terminal__. <br/>
 
 This ISO has about everything you could need for simple tasks while still quite responsive.
 
-I also have custom kernels you can try, based off of the images found on https://www.kernel.org/ <br/>
+- I also have custom kernels you can try, based off of the images found on https://www.kernel.org/ <br/>
 Most of the debugging has been removed, along with a bunch of other changes. <br/>
 I'll get a list up soon.
 
@@ -127,7 +127,7 @@ simply reboot into another kernel and uninstall this one using: <br/>
 sudo apt remove <Linux-image Linux-headers>
 ```
 
-This build running live uses around 300MB ram. <br/>
+- This build running live uses around 300MB ram. <br/>
 Installed: around 280MB <br/> 
 
 Installed extras include but not limited to: <br/>
