@@ -15,11 +15,11 @@ See: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
 
 Be aware that in this case, newer doesn't always equate with better. <br/>
 An rc kernel newly patched by debian may run slower than the kernel in stable. <br/>
-Compiling your own vanilla kernel from https://www.kernel.org/ <br/>
+Compiling your own vanilla kernel from https://www.kernel.org/ or see below for a link to my kernels<br/>
 after building a stable image is the way to go for optimization purposes. However, If you have <br/>
 newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace. <br/>
 
-
+*Note - Please "star" this site!  This lets others know there is something worthwhile here. <br/>
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
 [![Lilidog.png](https://i.postimg.cc/4yjn713c/Lilidog.png)](https://postimg.cc/y3X72cc6)
@@ -103,7 +103,7 @@ Turn it on with the button in the lower left corner or under Toggles in the menu
 Change the corners in ~/.config/ld-hotcorners. <br/>
 Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urxvt terminal__. <br/>
 
-This ISO has about everything you could need for simple tasks while still quite responsive.
+- This ISO has about everything you could need for simple tasks while still quite responsive.
 
 - I also have custom kernels you can try, based off of the images found on https://www.kernel.org/ <br/>
 Most of the debugging has been removed, along with a bunch of other changes. <br/>
@@ -127,8 +127,12 @@ simply reboot into another kernel and uninstall this one using: <br/>
 sudo apt remove <Linux-image Linux-headers>
 ```
 
+- This build also has everything you need to build your own custom kernel. Just get started:)
+
 - This build running live uses around 300MB ram. <br/>
 Installed: around 280MB <br/> 
+
+This iso comes in at 1.15 GB
 
 Installed extras include but not limited to: <br/>
 bash-completion /
@@ -137,12 +141,15 @@ compton /
 conky /
 curl /
 dmenu /
+dunst /
 feh /
 firefox-esr /
+fluxbox /
 fortunes / 
 geany /
 gimp /
 gparted /
+kernel remover /
 ld-hotcorners /
 libreoffice /
 lightdm-gtk-greeter-settings /
@@ -265,10 +272,13 @@ The whole system becomes your template. Think clone within a clone.
 Follow the examples here for further ideas. A whole new world just opened up if you do:) <br/>
 https://live-team.pages.debian.net/live-manual/html/live-manual/examples.en.html#tutorial-1
 
-Feel free to link this page:) <br/>
-Good Luck!
+- Please "star" this site!  This lets others know there is something worthwhile here. <br/>
+- Email me, ask questions here, or find me in the forums:)  I always want insight from others! <br/>
+- Feel free to link this page:) Again, this is how others also get to try new things! <br/>
 
 Contact info: sleekmason@gmail.com
+
+### Good Luck!
 
 ## Lilidog
 
