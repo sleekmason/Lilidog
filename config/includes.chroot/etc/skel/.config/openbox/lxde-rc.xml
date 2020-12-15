@@ -71,7 +71,7 @@
     </font>
     <font place="MenuHeader">
       <name>Liberation Sans</name>
-      <size>12</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -80,7 +80,7 @@
     </font>
     <font place="MenuItem">
       <name>Liberation Sans</name>
-      <size>12</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
