@@ -59,7 +59,7 @@
 [submenu](Toggles)
 [exec] (Screenshot) {toggle.compton}
 [exec] (Toggle Compton) {toggle.compton}
-[exec] (Toggle Conky) {toggle.conky}
+[exec] (Toggle Conky) {toggle.conky2}
 [exec] (Toggle clipit) {toggle.clipit}
 [exec] (Toggle Wbar) {toggle.wbar}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}

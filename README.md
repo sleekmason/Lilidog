@@ -110,10 +110,10 @@ Most of the debugging has been removed, along with a bunch of other changes. <br
 I'll get a list up soon.
 
 A custom kernel for the stable build can be found here:
-https://github.com/sleekmason/Configuration/tree/master/kernel-stable
+https://github.com/sleekmason/Kernel-Stable
 
 A custom kernel running the newest RC kernel to support the latest firmare can be found here:
-https://github.com/sleekmason/Configuration/tree/master/kernel-unstable
+https://github.com/sleekmason/Kernel-Unstable
 
 Download the kernel image and header, Open a terminal in the folder where they are located, and use:
 ```sh

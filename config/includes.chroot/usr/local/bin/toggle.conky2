@@ -1,0 +1,3 @@
+#!/bin/bash
+#
+bash -c 'if ! pkill -x conky; then exec conky -c ~/.config/conky/conky2.conf; fi'
