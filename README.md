@@ -105,15 +105,11 @@ Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urx
 
 - This ISO has about everything you could need for simple tasks while still quite responsive.
 
-- I also have custom kernels you can try, based off of the images found on https://www.kernel.org/ <br/>
+- I also have a custom kernel you can try, based off of the images found on https://www.kernel.org/ <br/>
 Most of the debugging has been removed, along with a bunch of other changes. <br/>
 I'll get a list up soon.
 
-A custom kernel for the stable build can be found here:
 https://github.com/sleekmason/Kernel-Stable
-
-A custom kernel running the newest RC kernel to support the latest firmare can be found here:
-https://github.com/sleekmason/Kernel-Unstable
 
 Download the kernel image and header, Open a terminal in the folder where they are located, and use:
 ```sh
