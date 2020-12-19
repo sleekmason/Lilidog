@@ -23,9 +23,9 @@
 [exec] (Lxmusic) {lxmusic}
 [exec] (SmPlayer) {smplayer}
 [exec] (Gimp) {gimp}
-[exec] (gparted) {urxvt -g 40x3+20+20 -e sudo gparted}
-[exec] (Synaptic) {urxvt -g 40x3+20+20 -e sudo synaptic}
-[exec] (Root PcManfm) {urxvt -g 40x3+20+20 -e sudo pcmanfm}
+[exec] (gparted) {gksudo gparted}
+[exec] (Synaptic) {gksudo synaptic}
+[exec] (Root PcManfm) {gksudo pcmanfm}
 [exec] (Printer Setup) {system-config-printer}
 [exec] (Kernel Remover) {kernel-remover}
 [exec] (Catfish File) {catfish}
