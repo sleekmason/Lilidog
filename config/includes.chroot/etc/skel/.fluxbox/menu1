@@ -57,7 +57,7 @@
    [exec] (Wbar Config) {geany ~/.wbar}
    [end]
 [submenu](Toggles)
-[exec] (Screenshot) {toggle.compton}
+[exec] (Screenshot) {gnome-screenshot -i}
 [exec] (Toggle Compton) {toggle.compton}
 [exec] (Toggle Conky) {toggle.conky2}
 [exec] (Toggle clipit) {toggle.clipit}
