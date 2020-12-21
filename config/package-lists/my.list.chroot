@@ -16,6 +16,7 @@ conky
 cpuid
 crda
 curl
+dbus-x11
 desktop-base
 dosfstools
 dunst
