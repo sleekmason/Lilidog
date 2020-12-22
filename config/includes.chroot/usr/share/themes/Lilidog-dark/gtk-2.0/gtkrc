@@ -14,11 +14,11 @@
 # order to not mess up the dark theme.
 
 # Text/base
-gtk-color-scheme = "text_color:#EDFFFE\nbase_color:#18252B"
+gtk-color-scheme = "text_color:#A6DDD9\nbase_color:#18252B"
 # Foreground/background
-gtk-color-scheme = "fg_color:#EDFFFE\nbg_color:#1D1E1F"
+gtk-color-scheme = "fg_color:#A6DDD9\nbg_color:#1D1E1F"
 # Selected foreground/background
-gtk-color-scheme = "selected_fg_color:#ffffff\nselected_bg_color:#5175A3"
+gtk-color-scheme = "selected_fg_color:#EDFFFE\nselected_bg_color:#5175A3"
 # Insensitive foreground/background
 gtk-color-scheme = "insensitive_fg_color:#A6C7D7\ninsensitive_bg_color:#181E21"
 # Menus
