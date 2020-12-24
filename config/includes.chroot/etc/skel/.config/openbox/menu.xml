@@ -8,9 +8,9 @@
 		</item>
 		<separator/>
 		<separator/>
-		<item label="PcManFM">
+		<item label="Thunar">
 			<action name="Execute">
-				<execute>pcmanfm</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<item label="Web Browser">

@@ -26,12 +26,12 @@
   <_description>Color scheme using Solarized dark color palette</_description>
 
   <!-- Solarized Palette -->
-  <color name="base03"  value="#142229"/>
+  <color name="base03"  value="#111F26"/>
   <color name="base02"  value="#073642"/>
   <color name="base01"  value="#A3B8BB"/>
   <color name="base00"  value="#657B83"/>
   <color name="base0"   value="#839496"/>
-  <color name="base1"   value="#B8E7E4"/>
+  <color name="base1"   value="#81CDD5"/>
   <color name="base2"   value="#C9F0EE"/>
   <color name="base3"   value="#EDFFFE"/>
   <color name="yellow"  value="#B58900"/>

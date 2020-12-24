@@ -5,28 +5,28 @@ vol=$(pactl list sinks | awk '/Volume:/ {printf "%s ",$5}' | cut -f1 -d ' ' | cu
 
 if [[ $muted = "no" ]]; then
 	if [[ $vol -ge 80 ]]; then
-		echo /usr/share/volumeicon/icons/Blue Bar/8.png
+		    echo ~/.config/tint2/executors/icons/8.png
 		echo "$vol%"
 	elif [[ $vol -ge 70 ]]; then
-		    echo /usr/share/volumeicon/icons/Blue Bar/7.png
+		    echo ~/.config/tint2/executors/icons/7.png
 			echo "$vol%"
 	elif [[ $vol -ge 60 ]]; then
-		    echo /usr/share/volumeicon/icons/Blue Bar/6.png
+		    echo ~/.config/tint2/executors/icons/6.png
 			echo "$vol%"							
 	elif [[ $vol -ge 50 ]]; then
-		    echo /usr/share/volumeicon/icons/Blue Bar/5.png
+		    echo ~/.config/tint2/executors/icons/5.png
 			echo "$vol%"
 	elif [[ $vol -ge 30 ]]; then
-		    echo /usr/share/volumeicon/icons/Blue Bar/4.png
+		    echo ~/.config/tint2/executors/icons/4.png
 			echo "$vol%"
 	elif [[ $vol -ge 10 ]]; then
-		    echo /usr/share/volumeicon/icons/Blue Bar/3.png
+		    echo ~/.config/tint2/executors/icons/3.png
 			echo "$vol%"			
 	elif [[ $vol -ge 0 ]]; then
-       		echo /usr/share/volumeicon/icons/Blue Bar/2.png
+       		echo ~/.config/tint2/executors/icons/2.png
 	 		echo "$vol%"		
 	fi
 else
-	echo /usr/share/volumeicon/icons/Blue Bar/1.png
+	echo ~/.config/tint2/executors/icons/1.png
 	echo "muted"
 fi
