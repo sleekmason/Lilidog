@@ -74,10 +74,10 @@ URxvt.tabbed.tab-fg:        5
 URxvt.cursorColor:          #06D5FF
 URxvt.pointerColor:         #15ACCC
 ! URxvt.background:         #000000
-URxvt.foreground:           #6DBDCF
+URxvt.foreground:           #6CB1B8
 URxvt.underlineColor:       #DE9D00
 URxvt.throughColor:         #57AABA
-URxvt.highlightColor:       #34BEBC
+URxvt.highlightColor:       #162E3B
 URxvt.color0:               #000000
 URxvt.color1:               #15ACCC
 URxvt.color2:               #15ACCC
