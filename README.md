@@ -10,7 +10,11 @@ Everything is easily accessible, with numerous options to customize.
 
 ### This is the stable version. Buster repos only.
 
-__NOTE*__ If you would like this version with updated drivers from sid, and the newest kernel available<br/>
+### Versions:
+
+There are three versions of Lilidog. This is the stable only build. <br/>
+
+If you would like this version with updated drivers from sid, and the newest kernel available, <br/>
 See: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
 
 Be aware that in this case, newer doesn't always equate with better. <br/>
@@ -19,7 +23,9 @@ Compiling your own vanilla kernel from https://www.kernel.org/ or see below for 
 after building a stable image is the way to go for optimization purposes. However, If you have <br/>
 newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace. <br/>
 
-*Note - Please "star" this site!  This lets others know there is something worthwhile here. <br/>
+The other version is A fluxbox minimal version designed to add your own packages: <br/>
+https://github.com/sleekmason/Liliflux
+
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
 [![Lilidog.png](https://i.postimg.cc/4yjn713c/Lilidog.png)](https://postimg.cc/y3X72cc6)
