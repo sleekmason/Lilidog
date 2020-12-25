@@ -77,7 +77,7 @@ URxvt.pointerColor:         #15ACCC
 URxvt.foreground:           #6CB1B8
 URxvt.underlineColor:       #DE9D00
 URxvt.throughColor:         #57AABA
-URxvt.highlightColor:       #162E3B
+URxvt.highlightColor:       #00526E
 URxvt.color0:               #000000
 URxvt.color1:               #15ACCC
 URxvt.color2:               #15ACCC
