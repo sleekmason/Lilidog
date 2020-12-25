@@ -99,6 +99,7 @@ os-prober
 oss-compat
 p7zip
 p7zip-full
+pcmanfm
 pnmixer
 publicsuffix
 pulseaudio
@@ -120,11 +121,8 @@ system-config-printer
 system-config-printer-udev
 tasksel
 tint2
-thunar
-thunar-volman
 thunderbird
 transmission-gtk
-tumbler
 unzip
 usermode
 user-setup
