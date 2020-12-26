@@ -312,7 +312,7 @@ style "evolve-menu" {
 	xthickness = 0
 	
 	bg[SELECTED] = @selected_bg_color
-	bg[NORMAL] = shade (1.40, @menu_bg_color)
+	bg[NORMAL] = shade (1.0, @menu_bg_color)
 	bg[PRELIGHT] = @selected_bg_color
 	bg[ACTIVE] = shade (1.40, @menu_bg_color)
 	bg[INSENSITIVE] = shade (1.40, @menu_bg_color)
