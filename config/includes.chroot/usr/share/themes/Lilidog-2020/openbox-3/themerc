@@ -17,6 +17,7 @@ menu.items.active.bg: flat border
 menu.items.active.bg.color: #203A48
 menu.items.active.bg.border.color: #25548a
 menu.items.active.text.color: #BCFFF9
+
 #======================================
 #     Focused Window Settings
 #======================================
