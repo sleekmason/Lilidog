@@ -1,3 +1,3 @@
 #!/bin/bash
 #
-(dmenu_run -nb '#18191A' -nf '#A5D3D6' -sb '#007187' -sf '#E0FCFF' -fn 'Liberation Sans-11')
+(dmenu_run -nb '#18191A' -nf '#5DB0C2' -sb '#007187' -sf '#E0FCFF' -fn 'Liberation Sans-11')
