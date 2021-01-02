@@ -11,13 +11,14 @@ Lxmusic
 Smplayer
 Writer
 Gimp
+Synaptic
 Screenshot
 T-Compton
 Suspend
 ScreenLock
 Exit"
 
-cmd=$(dmenu -nb '#18191A' -nf '#5DB0C2' -sb '#007187' -sf '#E0FCFF' -fn 'Liberation Sans-11' <<< "$prog")
+cmd=$(dmenu -nb '#0F171A' -nf '#5DB0C2' -sb '#007187' -sf '#E0FCFF' -fn 'Liberation Sans-11' <<< "$prog")
 
 case ${cmd%% *} in
 
@@ -26,11 +27,12 @@ case ${cmd%% *} in
 	Pcmanfm)		exec pcmanfm ;;
 	Terminal)		exec urxvt ;;
 	Firefox)		exec firefox ;;
-	Thunderbird)	exec thunderbird ;;
+	Thunderbird)		exec thunderbird ;;
 	Lxmusic)		exec lxmusic ;;
 	Smplayer)		exec smplayer ;;
 	Writer)			exec libreoffice ;;
 	Gimp)			exec gimp ;;
+	Synaptic)		exec gksudo synaptic ;;
 	Screenshot)		exec gnome-screenshot -i ;;
 	T-Compton)		exec toggle.compton ;;
 	Suspend)		exec systemctl suspend ;;
