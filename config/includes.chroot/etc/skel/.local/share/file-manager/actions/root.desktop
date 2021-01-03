@@ -5,9 +5,9 @@ Name=Open Folder As Root
 Profiles=profile-zero;
 Icon=gtk-dialog-authentication
 
-Exec=/usr/local/bin/xsudo /usr/bin/pcmanfm %u
+Exec=/usr/local/bin/gksudo /usr/bin/pcmanfm %u
 
 [X-Action-Profile profile-zero]
 MimeTypes=inode/directory;
-Exec=/usr/local/bin/xsudo /usr/bin/pcmanfm %u
+Exec=/usr/local/bin/gksudo /usr/bin/pcmanfm %u
 Name=Default profile

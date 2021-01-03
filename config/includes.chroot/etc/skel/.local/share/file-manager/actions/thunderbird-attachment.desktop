@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Action
+Name=Attach to Thunderbird Mail
+Icon=thunderbird
+
+Profiles=profile-zero;
+[X-Action-Profile profile-zero]
+MimeTypes=text/*;audio/*;image/*;application/*;
+Exec=thunderbird-action %U
+Name=Default profile
+
+
+

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Action
+Name=Edit as root
+Name[it]=Modifica come root
+Name[es]=Editar como root
+Name[de]=Oeffnen mit Root-Rechten
+Name[pt]=Editar como root
+Name[fr]=Modifier en tant que root
+Name[nl]=Bewerken als root
+Name[pl]=Edytuj jako root
+Name[ru]=Редактировать как root
+Name[cz]=Upravit jako root
+Icon=dialog-password
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=text/*;application/*;
+Exec=gksudo mousepad %f
+Name=Default profile
