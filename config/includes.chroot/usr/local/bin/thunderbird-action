@@ -1,0 +1,17 @@
+#!/bin/bash
+# call thunderbird with -compose option and attach files as selected in pcmanfm
+# called by .desktop in /home/my_username/.local/share/file-manager/actions
+
+args=("$@")
+
+new_string = ""
+
+for i in "${args[@]}"
+do
+    new_string="${new_string},"
+    new_string="${new_string}$i"
+done
+
+new_string="${new_string/,file:/file:}"
+
+thunderbird -compose "attachment='$new_string'"
