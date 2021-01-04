@@ -9,7 +9,7 @@
 
 [exec] (Terminal) {urxvt}
 [separator]
-[exec] (Thunar) {thunar}
+[exec] (Pcmanfm) {pcmanfm}
 [exec] (Web Browser) {firefox-esr}
 [exec] (Thunderbird) {thunderbird}
 [separator]

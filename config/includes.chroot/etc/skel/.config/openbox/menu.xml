@@ -8,12 +8,7 @@
 		</item>
 		<separator/>
 		<separator/>
-		<item label="Thunar">
-			<action name="Execute">
-				<execute>thunar</execute>
-			</action>
-		</item>
-		<item label="pcmanfm">
+		<item label="Pcmanfm">
 			<action name="Execute">
 				<execute>pcmanfm</execute>
 			</action>
