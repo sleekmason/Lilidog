@@ -8,7 +8,12 @@
 		</item>
 		<separator/>
 		<separator/>
-		<item label="PcManfm">
+		<item label="Thunar">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="pcmanfm">
 			<action name="Execute">
 				<execute>pcmanfm</execute>
 			</action>
@@ -59,6 +64,11 @@
 			<item label="Smplayer">
 				<action name="Execute">
 					<execute>smplayer</execute>
+				</action>
+			</item>
+			<item label="Gpicview">
+				<action name="Execute">
+					<execute>gpicview</execute>
 				</action>
 			</item>
 			<item label="Lxmusic">

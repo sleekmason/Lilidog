@@ -9,20 +9,20 @@
 
 [exec] (Terminal) {urxvt}
 [separator]
-[exec] (Pcmanfm) {pcmanfm}
+[exec] (Thunar) {thunar}
 [exec] (Web Browser) {firefox-esr}
 [exec] (Thunderbird) {thunderbird}
 [separator]
 [submenu](Quick Grab)
-
 [exec] (Lxterminal) {lxterminal}
 [exec] (Newsboat) {urxvt -g 120x40+120+100 -e newsboat}
+[exec] (Gpicview) {gpicview}
 [exec] (Geany) {geany}
 [exec] (Mousepad) {mousepad}
-[exec] (Writer) {libreoffice}
 [exec] (Lxmusic) {lxmusic}
 [exec] (SmPlayer) {smplayer}
 [exec] (Gimp) {gimp}
+[exec] (Writer) {libreoffice}
 [exec] (gparted) {gksudo gparted}
 [exec] (Synaptic) {gksudo synaptic}
 [exec] (Root PcManfm) {gksudo pcmanfm}
