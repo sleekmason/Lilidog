@@ -15,10 +15,10 @@ lb config noauto \
      --firmware-chroot 'true' \
      --security 'true' \
      --memtest 'none' \
-     --image-name 'Lilidog2020' \
+     --image-name 'Lilidog' \
      --iso-application 'Lilidog' \
      --iso-publisher 'Lilidog GNU/Linux' \
-     --iso-volume 'LiliDogBuster2020' \
+     --iso-volume 'LiliDog' \
      --system 'live' \
      --updates 'true' \
      --win32-loader 'false' \
