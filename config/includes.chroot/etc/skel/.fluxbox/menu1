@@ -9,13 +9,14 @@
 
 [exec] (Terminal) {urxvt}
 [separator]
-[exec] (Pcmanfm) {pcmanfm}
-#[exec] (Thunar) {thunar}
+#[exec] (Pcmanfm) {pcmanfm}
+[exec] (Thunar) {thunar}
 [exec] (Web Browser) {firefox-esr}
 [exec] (Thunderbird) {thunderbird}
 [separator]
 [submenu](Quick Grab)
 [exec] (Geany) {geany}
+[exec] (Pcmanfm) {pcmanfm}
 [exec] (Mousepad) {mousepad}
 [exec] (Lxterminal) {lxterminal}
 [exec] (Writer) {libreoffice}

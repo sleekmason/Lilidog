@@ -8,9 +8,9 @@
 		</item>
 		<separator/>
 		<separator/>
-		<item label="Pcmanfm">
+		<item label="Thunar">
 			<action name="Execute">
-				<execute>pcmanfm</execute>
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<item label="Web Browser">
@@ -29,6 +29,11 @@
 			<item label="Geany">
 				<action name="Execute">
 					<execute>geany</execute>
+				</action>
+			</item>
+			<item label="Pcmanfm">
+				<action name="Execute">
+					<execute>pcmanfm</execute>
 				</action>
 			</item>
 			<item label="Mousepad">
