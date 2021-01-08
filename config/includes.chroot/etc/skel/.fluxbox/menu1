@@ -10,6 +10,7 @@
 [exec] (Terminal) {urxvt}
 [separator]
 [exec] (Pcmanfm) {pcmanfm}
+#[exec] (Thunar) {thunar}
 [exec] (Web Browser) {firefox-esr}
 [exec] (Thunderbird) {thunderbird}
 [separator]
@@ -19,7 +20,7 @@
 [exec] (Gpicview) {gpicview}
 [exec] (Geany) {geany}
 [exec] (Mousepad) {mousepad}
-[exec] (Lxmusic) {lxmusic}
+[exec] (Rhythmbox) {rhythmbox}
 [exec] (SmPlayer) {smplayer}
 [exec] (Gimp) {gimp}
 [exec] (Writer) {libreoffice}

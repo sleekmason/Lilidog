@@ -56,6 +56,11 @@
 					<execute>gksudo lxterminal</execute>
 				</action>
 			</item>
+			<item label="Rhythmbox">
+				<action name="Execute">
+					<execute>rhythmbox</execute>
+				</action>
+			</item>
 			<item label="Smplayer">
 				<action name="Execute">
 					<execute>smplayer</execute>
@@ -64,11 +69,6 @@
 			<item label="Gpicview">
 				<action name="Execute">
 					<execute>gpicview</execute>
-				</action>
-			</item>
-			<item label="Lxmusic">
-				<action name="Execute">
-					<execute>lxmusic</execute>
 				</action>
 			</item>
 			<item label="Gimp">
