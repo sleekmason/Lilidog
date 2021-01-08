@@ -56,12 +56,7 @@
 					<execute>gksudo lxterminal</execute>
 				</action>
 			</item>
-			<item label="Rhythmbox">
-				<action name="Execute">
-					<execute>rhythmbox</execute>
-				</action>
-			</item>
-			<item label="Smplayer">
+			<item label="SmPlayer">
 				<action name="Execute">
 					<execute>smplayer</execute>
 				</action>
@@ -74,6 +69,11 @@
 			<item label="Gimp">
 				<action name="Execute">
 					<execute>gimp</execute>
+				</action>
+			</item>
+			<item label="Pragha">
+				<action name="Execute">
+					<execute>pragha</execute>
 				</action>
 			</item>
 			<item label="Gparted">

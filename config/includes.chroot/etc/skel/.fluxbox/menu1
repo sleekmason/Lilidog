@@ -15,20 +15,20 @@
 [exec] (Thunderbird) {thunderbird}
 [separator]
 [submenu](Quick Grab)
-[exec] (Lxterminal) {lxterminal}
-[exec] (Newsboat) {urxvt -g 120x40+120+100 -e newsboat}
-[exec] (Gpicview) {gpicview}
 [exec] (Geany) {geany}
 [exec] (Mousepad) {mousepad}
-[exec] (Rhythmbox) {rhythmbox}
-[exec] (SmPlayer) {smplayer}
-[exec] (Gimp) {gimp}
+[exec] (Lxterminal) {lxterminal}
 [exec] (Writer) {libreoffice}
+[exec] (Newsboat) {urxvt -g 120x40+120+100 -e newsboat}
+[exec] (Gpicview) {gpicview}
+[exec] (SmPlayer) {smplayer}
+[exec] (Pragha) {pragha}
+[exec] (Gimp) {gimp}
 [exec] (gparted) {gksudo gparted}
 [exec] (Synaptic) {gksudo synaptic}
 [exec] (Root PcManfm) {gksudo pcmanfm}
-[exec] (Printer Setup) {system-config-printer}
 [exec] (Kernel Remover) {kernel-remover}
+[exec] (Printer Setup) {system-config-printer}
 [exec] (Catfish File) {catfish}
 [end]
 [submenu] (Applications)

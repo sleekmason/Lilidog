@@ -55,6 +55,8 @@ gnome-screenshot
 gnome-system-tools
 gparted
 gsimplecal
+gstreamer1.0-plugins-good
+gstreamer1.0-pulseaudio
 gtk2-engines-murrine
 gvfs-backends
 gvfs-fuse
@@ -113,6 +115,7 @@ pciutils
 pcmciautils
 pcmanfm
 pnmixer
+pragha
 publicsuffix
 pulseaudio
 pulseaudio-utils
@@ -124,8 +127,6 @@ qt5-style-plugins
 rename
 rsync
 rxvt-unicode
-rhythmbox
-rhythmbox-plugins
 smplayer
 smplayer-l10n
 smplayer-themes
