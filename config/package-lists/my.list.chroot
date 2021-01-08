@@ -46,6 +46,7 @@ fonts-liberation
 fortunes
 fortune-mod
 fuse
+galternatives
 geany
 genisoimage
 gimp
@@ -119,6 +120,8 @@ pragha
 publicsuffix
 pulseaudio
 pulseaudio-utils
+python3-xdg
+python-gtk2
 python-notify
 python-six
 python-xdg
