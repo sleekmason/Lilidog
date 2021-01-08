@@ -6,5 +6,5 @@ Profiles=profile-zero;
 
 [X-Action-Profile profile-zero]
 MimeTypes=inode/directory;
-Exec=urxvt --hold -e ls -ghS --color %f
+Exec=urxvt --hold -e ls -AghS --color %f
 Name=Default profile
