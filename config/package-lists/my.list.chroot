@@ -95,6 +95,7 @@ manpages
 manpages-dev
 menu
 menu-xdg
+mesa-utils
 mesa-va-drivers:amd64
 mesa-vdpau-drivers:amd64
 miscfiles
