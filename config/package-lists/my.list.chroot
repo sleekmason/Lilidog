@@ -72,7 +72,6 @@ iw
 jq
 libavcodec-extra
 libelf-dev
-libexo-1-0
 libncurses5-dev
 libnotify-bin
 libnss-mdns
