@@ -48,7 +48,7 @@
 </action>
 <action>
 	<icon>preferences-desktop-wallpaper</icon>
-	<name>Set Background Here</name>
+	<name>Set As Background</name>
 	<unique-id>1610134373979054-1</unique-id>
 	<command>feh --bg-scale %f</command>
 	<description>Set the current image as wallpaper</description>
