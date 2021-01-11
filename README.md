@@ -28,7 +28,7 @@ https://github.com/sleekmason/Liliflux
 
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
-[![Lilidog-12-26-20.png](https://i.postimg.cc/qM2fLbVp/Lilidog-12-26-20.png)](https://postimg.cc/3drbrZxq)
+[![Lilidog.png](https://i.postimg.cc/V65D9kGJ/Lilidog.png)](https://postimg.cc/CBTGSSV0)
 
 ### Features:
 
