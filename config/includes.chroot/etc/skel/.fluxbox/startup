@@ -19,6 +19,7 @@ compton &
 #ld-hotcorners --daemon &
 killall conky ; conky -c ~/.config/conky/conky2.conf &
 killall volumeicon ; volumeicon &
+killall compton ; compton --config ~/.config/compton2.conf &
 killall nm-applet ; nm-applet &
 killall applet.py &
 lxpolkit &

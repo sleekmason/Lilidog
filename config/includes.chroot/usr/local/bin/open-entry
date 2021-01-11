@@ -4,4 +4,6 @@ fluxbox-remote exit
 openbox-lxde & toggle.monster
 pkill -f volumeicon
 pkill -f conky
+pkill -f compton
 conky
+compton
