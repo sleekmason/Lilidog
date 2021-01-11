@@ -67,4 +67,13 @@
 	<other-files/>
 	<text-files/>
 </action>
+<action>
+	<icon>gparted</icon>
+	<name>File Sizes</name>
+	<unique-id>1610405390468673-1</unique-id>
+	<command>urxvt -e ncdu -rr %F</command>
+	<description>Lists Folder File Sizes</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
 </actions>

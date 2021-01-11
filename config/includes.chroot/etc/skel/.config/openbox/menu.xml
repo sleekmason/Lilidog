@@ -71,14 +71,14 @@
 					<execute>gpicview</execute>
 				</action>
 			</item>
-			<item label="Gimp">
-				<action name="Execute">
-					<execute>gimp</execute>
-				</action>
-			</item>
 			<item label="Pragha">
 				<action name="Execute">
 					<execute>pragha</execute>
+				</action>
+			</item>
+			<item label="Gimp">
+				<action name="Execute">
+					<execute>gimp</execute>
 				</action>
 			</item>
 			<item label="Gparted">
