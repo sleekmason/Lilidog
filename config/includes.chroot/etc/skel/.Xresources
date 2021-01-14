@@ -1,3 +1,4 @@
+!--- Use command: xrdb ~/.Xresources to reset.
 Xft.autohint: 1
 Xft.antialias: 1
 Xft.hinting: true
@@ -9,7 +10,7 @@ Xft.lcdfilter: lcddefault
 !--- Window Settings
 Xcursor.size:11
 URxvt.buffered:             true
-URxvt.geometry:             85x30
+URxvt.geometry:             80x30
 
 !--- Font Size and Controls
 URxvt*.font:  xft:DejaVu Sans Mono:autohint=true:pixelsize=12
