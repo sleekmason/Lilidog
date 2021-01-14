@@ -14,8 +14,8 @@ menu.items.bg.color: #121C1F
 menu.items.text.color: #85D3DB
 menu.items.disabled.text.color: #707070
 menu.items.active.bg: flat border
-menu.items.active.bg.color: #203A48
-menu.items.active.bg.border.color: #25548a
+menu.items.active.bg.color: #0C4552
+menu.items.active.bg.border.color: #476263
 menu.items.active.text.color: #BCFFF9
 
 #======================================
@@ -23,8 +23,8 @@ menu.items.active.text.color: #BCFFF9
 #======================================
 
 window.active.title.bg: flat border
-window.active.title.bg.color: #203A48
-window.active.title.bg.border.color: #25548a
+window.active.title.bg.color: #0C4552
+window.active.title.bg.border.color: #476263
 window.active.handle.bg: raised
 window.active.handle.bg.color: #121C1F
 window.active.grip.bg: parentrelative
