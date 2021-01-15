@@ -1,0 +1,3 @@
+#!/bin/bash
+#
+bash -c 'if ! pkill -x compton; then exec compton --config ~/.config/compton2.conf; fi'
