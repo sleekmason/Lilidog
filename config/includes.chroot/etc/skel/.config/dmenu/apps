@@ -7,13 +7,13 @@ Pcmanfm
 Terminal
 Firefox
 Thunderbird
-Lxmusic
+Pragha
 Smplayer
 Writer
 Gimp
+Gpicview
 Synaptic
 Screenshot
-T-Compton
 Suspend
 ScreenLock
 Exit"
@@ -28,13 +28,13 @@ case ${cmd%% *} in
 	Terminal)		exec urxvt ;;
 	Firefox)		exec firefox ;;
 	Thunderbird)		exec thunderbird ;;
-	Lxmusic)		exec lxmusic ;;
+	Pragha) 		exec pragha ;;
 	Smplayer)		exec smplayer ;;
 	Writer)			exec libreoffice ;;
 	Gimp)			exec gimp ;;
+	Gpicview)		exec gpicview ;;
 	Synaptic)		exec gksudo synaptic ;;
 	Screenshot)		exec gnome-screenshot -i ;;
-	T-Compton)		exec toggle.compton ;;
 	Suspend)		exec systemctl suspend ;;
 	ScreenLock)		exec slock ;;
 	Exit)			exec ld-logout ;;
