@@ -8,8 +8,8 @@
 show_thumbnail=1
 
 [Window]
-width=640
-height=480
+width=564
+height=374
 maximized=0
 
 [Desktop]
@@ -23,7 +23,7 @@ shadow=0,0,0
 [MOD]
 dev_root_mount-z=/usr/bin/udevil mount -o %o %v
 dev_root_unmount-z=/usr/bin/udevil umount %v
-dev_show_internal_drives-b=2
+dev_show_internal_drives-b=1
 dev_show_empty-b=1
 dev_show_net-b=1
 dev_show_file-b=1
@@ -61,7 +61,7 @@ main_terminal-b=1
 main_save_tabs-b=1
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////#HOME
+panel1_show-s=///$HOME
 panel1_show-x=0
 panel1_show-key=49
 panel1_show-keymod=4
@@ -84,6 +84,7 @@ root_bar-b=1
 view_thumb-b=1
 plug_cverb-b=1
 main_help-key=65470
+main_dev-b=1
 task_col_status-x=0
 task_col_status-y=130
 task_col_status-b=1
@@ -311,7 +312,7 @@ cstm_2c906e96-z=$HOME
 cstm_2c906e96-label=Home
 cstm_2c906e96-parent=main_book
 panel1_show_toolbox0-b=1
-panel1_show_devmon0-b=2
+panel1_show_devmon0-b=1
 panel1_show_book0-b=2
 panel1_show_sidebar0-b=2
 panel1_detcol_name0-b=1
@@ -321,7 +322,7 @@ panel1_detcol_perm0-b=2
 panel1_detcol_owner0-b=2
 panel1_detcol_date0-b=2
 panel1_slider_positions0-s=0
-panel1_slider_positions0-x=0
+panel1_slider_positions0-x=143
 panel1_slider_positions0-y=0
 panel1_tool_l-child=cstm_2741ee49
 cstm_2741ee49-next=cstm_06f21556
