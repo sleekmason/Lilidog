@@ -35,7 +35,7 @@ https://github.com/sleekmason/Liliflux
 - Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
-- Fluxbox now an option. A work in progress:)  In the live session, you can switch from Openbox to <br/>
+- In the live session, you can switch from Openbox to <br/>
 Fluxbox and back through the toggles in the menu. <br/> Logging into each separately is also an option <br/>
 The username and password for the live environment is "user", and "live" respectively. <br/>
 Be aware that Conky doesn't always play nice through the toggle, but thats just a click away if needed.
@@ -51,21 +51,19 @@ There are shortcuts for Alsamixer in the volume icon and Htop in the battery ico
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
-- If preferred, you can enable the Pnmixer icon in LxSession Autostart and remove the executor from tint2.<br/>
-Make a backup of the tint2rc in case you change your mind, or see /etc/skel/.config/tint2 for the original.
-
 - X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
 
 - Custom right-click menu with ease of use in mind. Easy access to root options, configurations, and toggles. <br/>
-Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
+
+- Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
 customized menu with only the most commonly used apps. <br/>
 Another menu option using wbar with pre-cofigured values can be turned on with Alt + F5 <br/> 
 There are four pre-made wbar lines ready to mix and match whatever you come up with.
 
-- PcManFM file manager has built in right-click options for Open in Terminal, and Open as Root.
+- Thunar as default file manager, with Pcmanfm and Spacefm as alternatives.  Custom right-click <br/> 
+options for each are already enabled.  See what you like best.
 
-- Custom Lilidog Openbox and GTK theme, Gnome Brave Icons, and matching themes for Geany and Mousepad. <br/>
-The Mousepad theme will need to be enabled under 'Edit' -> 'Preferences' in the app. <br/> 
+- Custom Lilidog Openbox and GTK theme, Gnome Brave Icons, and matching themes for Geany and Mousepad. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. <br/>
 
 - URXVT terminal has font size control (ctl+up/down), transparency and the ability to open urls. <br/>
@@ -78,7 +76,7 @@ For drive information, you may wish to edit the script in  ~/.config/conky/scrip
 
 - Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
 Check wbar out in the live environment by toggling it from the menu or ld-hotcorners, Top-Left. <br/>
-Easy to configure from the settings icon. Use on startup by enabling in Lxsession-autostart.
+Another instance of most apps can be pulled up with ALT + F1, or ALT + F5
 
 - Compton Composite Manager with transparency enabled. Change to suit.
 
