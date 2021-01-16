@@ -16,6 +16,7 @@
 [separator]
 [submenu](Quick Grab)
 [exec] (Geany) {geany}
+[exec] (Spacefm) {spacefm}
 [exec] (Pcmanfm) {pcmanfm}
 [exec] (Mousepad) {mousepad}
 [exec] (Lxterminal) {lxterminal}
