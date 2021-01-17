@@ -13,6 +13,8 @@ Everything is easily accessible, with numerous options to customize.
 ### Versions:
 
 There are three versions of Lilidog. This is the stable only build. <br/>
+Here is a minimal version designed to add your own packages: <br/>
+https://github.com/sleekmason/Liliflux
 
 If you would like this version with updated drivers from sid, and the newest kernel available, <br/>
 See: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
@@ -21,10 +23,7 @@ Be aware that in this case, newer doesn't always equate with better. <br/>
 An rc kernel newly patched by debian may run slower than the kernel in stable. <br/>
 Compiling your own vanilla kernel from https://www.kernel.org/ or see below for a link to my kernels<br/>
 after building a stable image is the way to go for optimization purposes. However, If you have <br/>
-newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace. <br/>
-
-The other version is A minimal version designed to add your own packages: <br/>
-https://github.com/sleekmason/Liliflux
+newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace.
 
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
@@ -36,14 +35,14 @@ https://github.com/sleekmason/Liliflux
 Debian backport sources can be enabled during installation. 
 
 - In the live session, you can switch from Openbox to Fluxbox and back through the toggles in the menu. <br/> 
-Logging into each separately is also an option. <br/>
+Logging into each separately is also an option. Be aware that Conky doesn't always play nice through the toggle, <br/>
+but the conky toggle is just a click away in the menu if needed.
 
 The username and password for the live environment is "user", and "live" respectively. <br/>
-Be aware that Conky doesn't always play nice through the toggle, but thats just a click away if needed.
 
 - Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
-Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu. <br/>
+Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu.
 
 - There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
@@ -52,13 +51,13 @@ Hover over the icons to see what they are.  The live password is "live" for the 
 - X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
 
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
-customized menu with only the most commonly used apps. <br/>
+customized menu with only the most commonly used apps.
 
 - Thunar as default file manager, with Pcmanfm and Spacefm as alternatives.  Custom right-click <br/> 
 options for each are already enabled.  See what you like best.
 
 - Custom Lilidog Openbox and GTK theme, Gnome Brave Icons, and matching themes for Geany and Mousepad. <br/> 
-The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. <br/>
+The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used.
 
 - URXVT terminal has font size control (ctl+up/down), transparency and the ability to open urls. <br/>
 Lxterminal is readily available in the menu and launcher for those who prefer it.
@@ -66,7 +65,7 @@ Lxterminal is readily available in the menu and launcher for those who prefer it
 - Conky has all sorts of relevant info, including connected drives. Fortune Cookies are in the Conky. <br/>
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
-- Desktop icons can be enabled and customized using pcmanfm. See autostart. <br/>
+- Desktop icons can be enabled and customized using pcmanfm. See lxsession autostart in the menu. <br/>
 
 - Compton Composite Manager with transparency enabled. Change to suit.
 
