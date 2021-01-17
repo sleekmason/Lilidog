@@ -35,15 +35,17 @@ https://github.com/sleekmason/Liliflux
 - Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be enabled during installation. 
 
-- In the live session, you can switch from Openbox to <br/>
-Fluxbox and back through the toggles in the menu. <br/> Logging into each separately is also an option <br/>
+- In the live session, you can switch from Openbox to Fluxbox and back through the toggles in the menu. <br/> 
+Logging into each separately is also an option. <br/>
+
 The username and password for the live environment is "user", and "live" respectively. <br/>
 Be aware that Conky doesn't always play nice through the toggle, but thats just a click away if needed.
 
 - Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
 Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu. <br/>
-There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
+
+- There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
