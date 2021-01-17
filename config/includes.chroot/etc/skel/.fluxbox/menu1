@@ -57,14 +57,12 @@
    [exec] (Conky Config) {geany ~/.config/conky/conky.conf}
    [exec] (Compton Config) {geany ~/.config/compton.conf}
    [exec] (Dmenu F3 Config) {geany ~/.config/dmenu/dmenu-apps}
-   [exec] (Wbar Config) {geany ~/.wbar}
    [end]
 [submenu](Toggles)
 [exec] (Screenshot) {gnome-screenshot -i}
 [exec] (Toggle Compton) {toggle.compton2}
 [exec] (Toggle Conky) {toggle.conky2}
 [exec] (Toggle clipit) {toggle.clipit}
-[exec] (Toggle Wbar) {toggle.wbar}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
 [exec] (Toggle Monster Panel) {toggle.monster}
 [exec] (Xkill) {xkill}

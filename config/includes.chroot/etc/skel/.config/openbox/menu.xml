@@ -229,11 +229,6 @@
 					<execute>toggle.fbpanel</execute>
 				</action>
 			</item>
-			<item label="Wbar Toggle">
-				<action name="Execute">
-					<execute>toggle.wbar</execute>
-				</action>
-			</item>
 			<item label="X-Kill">
 				<action name="Execute">
 					<execute>xkill</execute>
