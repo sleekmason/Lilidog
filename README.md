@@ -23,7 +23,7 @@ Compiling your own vanilla kernel from https://www.kernel.org/ or see below for 
 after building a stable image is the way to go for optimization purposes. However, If you have <br/>
 newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace. <br/>
 
-The other version is A fluxbox minimal version designed to add your own packages: <br/>
+The other version is A minimal version designed to add your own packages: <br/>
 https://github.com/sleekmason/Liliflux
 
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
@@ -40,10 +40,6 @@ Fluxbox and back through the toggles in the menu. <br/> Logging into each separa
 The username and password for the live environment is "user", and "live" respectively. <br/>
 Be aware that Conky doesn't always play nice through the toggle, but thats just a click away if needed.
 
-- Even though this is currently based on the Lxde-openbox combo, I have since separated out Openbox, <br/>
-which can now be started on it's own in the lightdm login screen. Just another choice, <br/>
-not necessarily better or worse. For pure Openbox and Fluxbox, Fonts are changed through ~/.Xresources.
- 
 - Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
 Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu. <br/>
@@ -52,8 +48,6 @@ To see time format options for 24 hour vs. 12 hour, middleclick over the time fo
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
 - X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
-
-- Custom right-click menu with ease of use in mind. Easy access to root options, configurations, and toggles. <br/>
 
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
 customized menu with only the most commonly used apps. <br/>
@@ -68,8 +62,6 @@ The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used.
 
 - URXVT terminal has font size control (ctl+up/down), transparency and the ability to open urls. <br/>
 Lxterminal is readily available in the menu and launcher for those who prefer it.
-
-- Network-manager-gnome provided for internet access.
 
 - Conky has all sorts of relevant info, including connected drives. Fortune Cookies are in the Conky. <br/>
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
