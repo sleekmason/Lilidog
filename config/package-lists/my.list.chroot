@@ -75,7 +75,6 @@ libelf-dev
 libexo-1-0
 libncurses5-dev
 libnotify-bin
-libnss-mdns
 libreoffice-gtk2
 libreoffice-writer
 libssl-dev
