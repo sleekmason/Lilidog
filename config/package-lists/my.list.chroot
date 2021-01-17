@@ -160,8 +160,6 @@ vdpau-driver-all:amd64
 volumeicon-alsa
 w3m
 w3m-img
-wbar
-wbar-config
 wmctrl
 x11-apps
 x11-common
@@ -169,6 +167,7 @@ x11-session-utils
 x11-utils
 x11-xkb-utils
 x11-xserver-utils
+xbindkeys
 xbindkeys-config
 xbitmaps
 xdg-user-dirs
