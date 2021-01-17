@@ -71,14 +71,11 @@ isc-dhcp-client
 iw
 jq
 libavcodec-extra
-libelf-dev
 libexo-1-0
 libncurses5-dev
 libnotify-bin
 libreoffice-gtk2
 libreoffice-writer
-libssl-dev
-libu2f-udev
 lightdm
 lightdm-gtk-greeter-settings
 locales
