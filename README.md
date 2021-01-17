@@ -51,8 +51,6 @@ Hover over the icons to see what they are.  The live password is "live" for the 
 
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
 customized menu with only the most commonly used apps. <br/>
-Another menu option using wbar with pre-cofigured values can be turned on with Alt + F5 <br/> 
-There are four pre-made wbar lines ready to mix and match whatever you come up with.
 
 - Thunar as default file manager, with Pcmanfm and Spacefm as alternatives.  Custom right-click <br/> 
 options for each are already enabled.  See what you like best.
@@ -66,9 +64,7 @@ Lxterminal is readily available in the menu and launcher for those who prefer it
 - Conky has all sorts of relevant info, including connected drives. Fortune Cookies are in the Conky. <br/>
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
-- Desktop icons can be enabled and customized using wbar (Warlock Bar). <br/>
-Check wbar out in the live environment by toggling it from the menu or ld-hotcorners, Top-Left. <br/>
-Another instance of most apps can be pulled up with ALT + F1, or ALT + F5
+- Desktop icons can be enabled and customized using pcmanfm. See autostart. <br/>
 
 - Compton Composite Manager with transparency enabled. Change to suit.
 
