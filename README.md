@@ -27,7 +27,7 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
-[![Lilidog.png](https://i.postimg.cc/V65D9kGJ/Lilidog.png)](https://postimg.cc/CBTGSSV0)
+[![Lilidog-current-1-18-21.png](https://i.postimg.cc/qvpVmKFD/Lilidog-current-1-18-21.png)](https://postimg.cc/F7CBzYN0)
 
 ### Features:
 
