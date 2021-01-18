@@ -50,8 +50,8 @@ Hover over the icons to see what they are.  The live password is "live" for the 
 
 - X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
 
-- Dmenu for an alternate menu source. - ALT + F2 pulls the full menu up, while ALT + F3 pulls up a <br/>
-customized menu with only the most commonly used apps.
+- Dmenu and Rofi for alternate menu sources. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
+customized Dmenu with only the most commonly used apps. ALT + F5 pulls up Rofi.
 
 - Thunar as default file manager, with Pcmanfm and Spacefm as alternatives.  Custom right-click <br/> 
 options for each are already enabled.  See what you like best.
@@ -94,7 +94,7 @@ Run swapid in a terminal after installing another distro to a different partitio
 - ld-hotcorners - Each corner of the screen responds to a command. <br/>
 Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
 Change the corners in ~/.config/ld-hotcorners. <br/>
-Currently clockwise from top left: __Wbar toggle, Compton toggle, Exit menu, urxvt terminal__. <br/>
+Currently clockwise from top left: __Thunar, Compton toggle, Exit menu, urxvt terminal__. <br/>
 
 - This ISO has about everything you could need for simple tasks while still quite responsive.
 
