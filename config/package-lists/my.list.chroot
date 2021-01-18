@@ -127,6 +127,7 @@ python-xdg
 python-xlib
 qt5-style-plugins
 rename
+rofi
 rsync
 rxvt-unicode
 smplayer

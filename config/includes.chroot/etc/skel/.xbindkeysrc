@@ -33,6 +33,8 @@
 #keystate_scrolllock = enable
 #keystate_capslock = enable
 
+
+
 #Screenshot
 "gnome-screenshot -i"
    Mod4 + p
@@ -45,13 +47,13 @@
 "~/.config/dmenu/apps"
    Alt + F3
 
-#Pyramid menu toggle
-"toggle.pyramid"
-   Alt + F5
-
 #Remark
 "urxvt"
    Mod4 + t
+
+#rofi run
+"rofi -modi run -show run"
+   Alt + F5
 
 #
 # End of xbindkeys configuration
