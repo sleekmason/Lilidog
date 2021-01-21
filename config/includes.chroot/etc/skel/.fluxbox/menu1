@@ -67,6 +67,7 @@
 [exec] (Toggle Monster Panel) {toggle.monster}
 [exec] (Xkill) {xkill}
 [exec] (Switch To Openbox) {open-entry}
+[exec] (Switch To Pekwm) {pek-entry}
 [end]
 [separator]
 [reconfig] (Reconfigure)

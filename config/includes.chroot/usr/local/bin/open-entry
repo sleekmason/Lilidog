@@ -2,6 +2,7 @@
 # Small script to change to openbox during session.
 fluxbox-remote exit
 openbox-lxde & toggle.monster
+pkill -f ld-hotcorners
 pkill -f volumeicon
 pkill -f conky
 pkill -f compton

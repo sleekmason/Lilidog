@@ -1,0 +1,4 @@
+#!/bin/bash
+# Small script to change from Fluxbox to pekwm during session.
+fluxbox-remote exit
+pekwm

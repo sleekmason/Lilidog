@@ -77,6 +77,8 @@ libncurses5-dev
 libnotify-bin
 libreoffice-gtk2
 libreoffice-writer
+libelf-dev
+libssl-dev
 lightdm
 lightdm-gtk-greeter-settings
 locales
@@ -115,6 +117,8 @@ p7zip-full
 pciutils
 pcmciautils
 pcmanfm
+pekwm
+plank
 pnmixer
 pragha
 publicsuffix
@@ -137,6 +141,7 @@ smplayer-themes
 spacefm
 ssft
 squashfs-tools
+stalonetray
 suckless-tools
 sudo
 synaptic
