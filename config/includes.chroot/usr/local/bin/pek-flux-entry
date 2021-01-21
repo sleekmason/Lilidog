@@ -3,4 +3,6 @@
 pkill -f stalonetray
 pkill -f plank
 pkill -f ld-hotcorners
+pkill -f conky
+pkill -f compton
 pkill -xf pekwm & /usr/bin/startfluxbox
