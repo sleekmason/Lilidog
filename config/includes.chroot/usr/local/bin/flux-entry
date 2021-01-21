@@ -2,6 +2,7 @@
 # Small script to change to fluxbox during session.
 pkill -f compton
 pkill -f ld-hotcorners
+pkill -f fbpanel
+pkill -f tint2
 pkill -x openbox
-/usr/bin/startfluxbox & toggle.monster
-toggle.monster
+/usr/bin/startfluxbox
