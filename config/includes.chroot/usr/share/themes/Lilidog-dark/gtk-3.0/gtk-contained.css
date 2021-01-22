@@ -64,7 +64,7 @@ textview text {
   iconview text:backdrop,
   textview text:backdrop {
     color: #74ABC2;
-    background-color: #157478; }
+    background-color: #141F24; }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
@@ -2189,7 +2189,7 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
     border-style: none solid solid none;
     color: #aaaaaa;
     background-image: none;
-    background-color: #157478; }
+    background-color: #141F24; }
     treeview.view header button:backdrop:disabled {
       border-color: #18252B;
       background-image: none; }
