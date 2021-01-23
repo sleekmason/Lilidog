@@ -13,14 +13,15 @@ Everything is easily accessible, with numerous options to customize.
 ### Versions:
 
 There are three versions of Lilidog. This is the stable only build. <br/>
-Here is a minimal version designed to add your own packages: <br/>
+
+For the minimal build: <br/>
 https://github.com/sleekmason/Liliflux
 
-If you would like this version with updated drivers from sid, and the newest kernel available, <br/>
-See: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
+For the Unstable build: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
 
-Be aware that in this case, newer doesn't always equate with better. <br/>
+Be aware that for the unstable build, newer doesn't always equate with better. <br/>
 An rc kernel newly patched by debian may run slower than the kernel in stable. <br/>
+
 Compiling your own vanilla kernel from https://www.kernel.org/ or see below for a link to my kernels<br/>
 after building a stable image is the way to go for optimization purposes. However, If you have <br/>
 newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace.
@@ -32,11 +33,10 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 ### Features:
 
 - Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
-Debian backport sources can be enabled during installation. 
+Debian backport sources can be added during installation. 
 
 - In the live session, you can switch from Openbox to Fluxbox and back through the toggles in the menu. <br/> 
-Logging into each separately is also an option. Be aware that Conky doesn't always play nice through the toggle, <br/>
-but the conky toggle is just a click away in the menu if needed.
+Logging into each separately is also an option.
 
 The username and password for the live environment is "user", and "live" respectively. <br/>
 
@@ -46,7 +46,7 @@ Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu.
 
 - There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
-Hover over the icons to see what they are.  The live password is "live" for the screenlock.
+Hover over the icons to see what they are.
 
 - X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
 
@@ -75,7 +75,7 @@ For drive information, you may wish to edit the script in  ~/.config/conky/scrip
 
 - Feh sets the wallpaper directly in lxsession autostart rather than pointing to ~/.fehbg <br/>
 After installation, you may want to change this to ~/.fehbg & in lxsession autostart for customization. <br/>
-If you would prefer to use icons on the desktop, enable the pcmanfm --desktop --profile in Lxsession autostart.
+If you would prefer to use icons on the desktop, enable __pcmanfm --desktop --profile__ in Lxsession autostart.
 
 - My wife painted rocks for the wallpaper and I found I like them quite a bit:) Maybe you will too.<br/> 
 Feel free to use them however you like, or delete them and point to something else. No worries:) <br/> 
@@ -97,26 +97,6 @@ Change the corners in ~/.config/ld-hotcorners. <br/>
 Currently clockwise from top left: __Thunar, Compton toggle, Exit menu, urxvt terminal__. <br/>
 
 - This ISO has about everything you could need for simple tasks while still quite responsive.
-
-- I also have a custom kernel you can try, based off of the images found on https://www.kernel.org/ <br/>
-Most of the debugging has been removed, along with a bunch of other changes. <br/>
-I'll get a list up soon.
-
-https://github.com/sleekmason/Kernel-Stable
-
-Download the kernel image and header, Open a terminal in the folder where they are located, and use:
-```sh
-sudo dpkg -i <Linux-image Linux-headers>
-```
-Where linux-image and linux-headers reflect the actual version you are installing.
-
-This will install the kernel and headers and update grub.  If for some reason it doesn't work, <br/>
-simply reboot into another kernel and uninstall this one using: <br/>
-```sh
-sudo apt remove <Linux-image Linux-headers>
-```
-
-- This build also has everything you need to build your own custom kernel. Just get started:)
 
 - This build running live uses around 300MB ram. <br/>
 Installed: around 280MB <br/> 
@@ -150,6 +130,7 @@ obconf /
 obmenu /
 pcmanfm /
 pnmixer /
+rofi /
 rsync /
 rxvt-unicode / 
 synaptic /
@@ -167,6 +148,7 @@ Follow the instructions below to build your own iso using the Debian Live-build 
 
 ## Quick instructions: <br/>
 Clone or download the Lilidog-Buster zip file so you have access to all the necessary files.
+
 Open a terminal in the resultant folder and:
 ```sh
 sudo apt install live-build
@@ -175,6 +157,7 @@ sudo lb build
 Thats it. The iso will be in the main folder when completed. Read below for potential problems.
 
 ## Less quick, but you learn something and have control over the process.
+
 
 ### Recommended
 Unzip the file somewhere to reveal the folder inside.  You will not be building directly in <br/>
