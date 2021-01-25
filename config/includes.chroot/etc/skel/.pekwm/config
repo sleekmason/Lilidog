@@ -5,8 +5,8 @@ Files {
 }
 
 Screen {
-    Workspaces = "6"
-    WorkspacesPerRow = "6"
+    Workspaces = "4"
+    WorkspacesPerRow = "4"
     WorkspaceNames = "01;02;03;04;05;06;07;08;09"
 
     Placement {

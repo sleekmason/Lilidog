@@ -16,14 +16,16 @@
 # There's probably a few other good uses for it, too. I mainly pushed for it
 # because when I was doing fluxbox's docs, people used to complain that there
 # wasn't one, and I wanted to avoid that for pekwm. ;) --eyez
-feh --bg-scale /home/wallpaper/rabbitlife.png
+
+feh --bg-scale /home/wallpaper/rabbitlife.png &
 stalonetray &
-killall compton ; compton &
-killall volumeicon ; volumeicon &
-lxpolkit &
-killall nm-applet ; nm-applet &
 plank &
-killall conky &
-sleep 1 ; conky &
+killall volumeicon ; volumeicon &
+killall lxpolkit ; lxpolkit  &
+killall nm-applet ; nm-applet &
 xfce4-power-manager &
 pkill -f ld-hotcorners ; ld-hotcorners --daemon &
+killall conky &
+sleep 1 ; conky -c ~/.config/conky/conky.conf &
+killall compton &
+sleep 1 ; compton --config ~/.config/compton.conf &

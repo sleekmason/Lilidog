@@ -26,12 +26,12 @@ RootMenu = "Pekwm" {
 
 	Submenu = "Quick Grab" {
 			Entry = "Run.." { Actions = "ShowCmdDialog" }
+			Entry = "Writer" { Actions = "Exec libreoffice" }
 			Entry = "Geany" { Actions = "Exec geany" }
 			Entry = "Spacefm" { Actions = "Exec spacefm" }
 			Entry = "Pcmanfm" { Actions = "Exec pcmanfm" }
 			Entry = "Mousepad" { Actions = "Exec mousepad" }
 			Entry = "Lxterminal" { Actions = "Exec lxterminal" }
-			Entry = "Writer" { Actions = "Exec libreoffice" }
 			Entry = "Newsboat" { Actions = "Exec urxvt -g 120x40+120+100 -e newsboat" }
 			Entry = "Gpicview" { Actions = "Exec gpicview" }
 			Entry = "SmPlayer" { Actions = "Exec smplayer" }
@@ -74,6 +74,7 @@ RootMenu = "Pekwm" {
 			Entry = "Toggle Monster Panel" { Actions = "Exec toggle.monster" }
 			Entry = "Xkill" { Actions = "Exec xkill" }
 			Entry = "Switch To Fluxbox" { Actions = "Exec pek-flux-entry" }
+			Entry = "Switch To Openbox" { Actions = "Exec pek-open-entry" }
 	}
 		Entry = "Reload" { Actions = "Reload" }
 		Entry = "Restart" { Actions = "Restart" }

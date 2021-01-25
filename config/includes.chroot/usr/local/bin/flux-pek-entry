@@ -1,0 +1,6 @@
+#!/bin/bash
+# Small script to change from Fluxbox to pekwm during session.
+pkill -f conky
+pkill -f compton
+fluxbox-remote exit
+pekwm

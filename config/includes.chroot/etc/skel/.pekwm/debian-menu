@@ -1,0 +1,105 @@
+# Menu config for pekwm
+
+	Submenu = "Applications" {
+		Submenu = "Accessibility" {
+			Entry = "xbindkeys" { Actions = "Exec /usr/bin/xbindkeys &" } 
+			Entry = "Xmag" { Actions = "Exec xmag &" } 
+		} 
+		Submenu = "Editors" {
+			Entry = "Xedit" { Actions = "Exec xedit &" } 
+		} 
+		Submenu = "Graphics" {
+			Entry = "X Window Snapshot" { Actions = "Exec xwd | xwud &" } 
+		} 
+		Submenu = "Network" {
+			Submenu = "Communication" {
+				Entry = "Xbiff" { Actions = "Exec xbiff &" } 
+			} 
+			Submenu = "File Transfer" {
+				Entry = "Transmission BitTorrent Client (GTK)" { Actions = "Exec /usr/bin/transmission-gtk &" } 
+			} 
+			Submenu = "Web Browsing" {
+				Entry = "w3m" { Actions = "Exec x-terminal-emulator  -T \"w3m\" -e sh -c \"/usr/bin/w3m /usr/share/doc/w3m/MANUAL.html\" &" } 
+			} 
+		} 
+		Submenu = "Science" {
+			Submenu = "Mathematics" {
+				Entry = "Bc" { Actions = "Exec x-terminal-emulator  -T \"Bc\" -e sh -c \"/usr/bin/bc\" &" } 
+				Entry = "galculator" { Actions = "Exec /usr/bin/galculator &" } 
+				Entry = "Xcalc" { Actions = "Exec xcalc &" } 
+			} 
+		} 
+		Submenu = "Shells" {
+			Entry = "Bash" { Actions = "Exec x-terminal-emulator  -T \"Bash\" -e sh -c \"/bin/bash --login\" &" } 
+			Entry = "Dash" { Actions = "Exec x-terminal-emulator  -T \"Dash\" -e sh -c \"/bin/dash -i\" &" } 
+			Entry = "Sh" { Actions = "Exec x-terminal-emulator  -T \"Sh\" -e sh -c \"/bin/sh --login\" &" } 
+		} 
+		Submenu = "System" {
+			Submenu = "Administration" {
+				Entry = "Debian Task selector" { Actions = "Exec x-terminal-emulator  -T \"Debian Task selector\" -e sh -c \"su-to-root -c tasksel\" &" } 
+				Entry = "Editres" { Actions = "Exec editres &" } 
+				Entry = "fbpanel" { Actions = "Exec /usr/bin/fbpanel &" } 
+				Entry = "Openbox Menu Editor" { Actions = "Exec /usr/bin/obmenu &" } 
+				Entry = "Orphaner (all)" { Actions = "Exec x-terminal-emulator  -T \"Orphaner (all)\" -e sh -c \"su-to-root -c '/usr/sbin/orphaner -a'\" &" } 
+				Entry = "Orphaner - editkeep" { Actions = "Exec x-terminal-emulator  -T \"Orphaner - editkeep\" -e sh -c \"su-to-root -c '/usr/sbin/editkeep'\" &" } 
+				Entry = "Orphaner (libs)" { Actions = "Exec x-terminal-emulator  -T \"Orphaner (libs)\" -e sh -c \"su-to-root -c /usr/sbin/orphaner\" &" } 
+				Entry = "stalonetray" { Actions = "Exec /usr/bin/stalonetray &" } 
+				Entry = "XBindKeys-config" { Actions = "Exec /usr/bin/xbindkeys-config &" } 
+				Entry = "Xclipboard" { Actions = "Exec xclipboard &" } 
+				Entry = "Xfontsel" { Actions = "Exec xfontsel &" } 
+				Entry = "Xkill" { Actions = "Exec xkill &" } 
+				Entry = "Xrefresh" { Actions = "Exec xrefresh &" } 
+			} 
+			Submenu = "Hardware" {
+				Entry = "Xvidtune" { Actions = "Exec xvidtune &" } 
+			} 
+			Submenu = "Monitoring" {
+				Entry = "Pstree" { Actions = "Exec x-terminal-emulator  -T \"Pstree\" -e sh -c \"/usr/bin/pstree.x11\" &" } 
+				Entry = "Top" { Actions = "Exec x-terminal-emulator  -T \"Top\" -e sh -c \"/usr/bin/top\" &" } 
+				Entry = "Xconsole" { Actions = "Exec xconsole -file /dev/xconsole &" } 
+				Entry = "Xev" { Actions = "Exec x-terminal-emulator -e xev &" } 
+				Entry = "Xload" { Actions = "Exec xload &" } 
+			} 
+			Submenu = "Package Management" {
+				Entry = "Synaptic Package Manager" { Actions = "Exec x-terminal-emulator -e synaptic-pkexec &" } 
+			} 
+		} 
+		Submenu = "Text" {
+			Entry = "Fortune" { Actions = "Exec sh -c 'while /usr/games/fortune | col -x | xmessage -center -buttons OK:1,Another:0 -default OK -file - ; do :; done' &" } 
+		} 
+		Submenu = "Viewers" {
+			Entry = "Xditview" { Actions = "Exec xditview &" } 
+		} 
+	} 
+	Submenu = "Games" {
+		Submenu = "Toys" {
+			Entry = "Oclock" { Actions = "Exec oclock &" } 
+			Entry = "Xclock (analog)" { Actions = "Exec xclock -analog &" } 
+			Entry = "Xclock (digital)" { Actions = "Exec xclock -digital -update 1 &" } 
+			Entry = "Xeyes" { Actions = "Exec xeyes &" } 
+			Entry = "Xlogo" { Actions = "Exec xlogo &" } 
+		} 
+	} 
+	Submenu = "Help" {
+		Entry = "Xman" { Actions = "Exec xman &" } 
+	} 
+	Submenu = "Screen" {
+		Submenu = "Locking" {
+			Entry = "Lock Screen (XScreenSaver)" { Actions = "Exec /usr/bin/xscreensaver-command -lock &" } 
+		} 
+		Submenu = "Saving" {
+			Entry = "Activate ScreenSaver (Next)" { Actions = "Exec /usr/bin/xscreensaver-command -next &" } 
+			Entry = "Activate ScreenSaver (Previous)" { Actions = "Exec /usr/bin/xscreensaver-command -prev &" } 
+			Entry = "Activate ScreenSaver (Random)" { Actions = "Exec /usr/bin/xscreensaver-command -activate &" } 
+			Entry = "Demo Screen Hacks" { Actions = "Exec /usr/bin/xscreensaver-command -demo &" } 
+			Entry = "Disable XScreenSaver" { Actions = "Exec /usr/bin/xscreensaver-command -exit &" } 
+			Entry = "Enable XScreenSaver" { Actions = "Exec /usr/bin/xscreensaver &" } 
+			Entry = "Reinitialize XScreenSaver" { Actions = "Exec /usr/bin/xscreensaver-command -restart &" } 
+			Entry = "ScreenSaver Preferences" { Actions = "Exec /usr/bin/xscreensaver-command -prefs &" } 
+		} 
+	} 
+	Submenu = "Window Managers" {
+		Entry = "FluxBox" { Actions = "RestartOther /usr/bin/startfluxbox" } 
+		Entry = "Flwm" { Actions = "RestartOther /usr/bin/flwm" } 
+		Entry = "Pekwm" { Actions = "RestartOther /usr/bin/pekwm" } 
+	} 

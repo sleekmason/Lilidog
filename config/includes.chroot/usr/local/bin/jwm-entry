@@ -1,0 +1,8 @@
+#!/bin/bash
+# Small script to change to jwm from openbox during session.
+pkill -f compton
+pkill -f ld-hotcorners
+pkill -f fbpanel
+pkill -f tint2
+pkill -x openbox
+/usr/bin/jwm

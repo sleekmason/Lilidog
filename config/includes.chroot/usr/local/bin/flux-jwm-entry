@@ -1,0 +1,8 @@
+#!/bin/bash
+# Small script to change from Fluxbox to jwm during session.
+pkill -f conky
+pkill -f compton
+pkill -f fbpanel
+pkill -f tint2
+fluxbox-remote exit
+jwm

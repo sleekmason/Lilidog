@@ -1,0 +1,16 @@
+#!/bin/bash
+# Small script to change to openbox from pekwm during session.
+pkill -f stalonetray
+pkill -f plank
+pkill -f ld-hotcorners
+pkill -f conky
+pkill -f compton
+pkill -x pekwm
+openbox-lxde & toggle.monster
+feh --bg-scale /home/wallpaper/linux2.png
+pkill -f ld-hotcorners
+pkill -f volumeicon
+pkill -f conky
+pkill -f compton
+conky
+compton

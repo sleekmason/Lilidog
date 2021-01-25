@@ -1,6 +1,8 @@
 #!/bin/bash
-# Small script to change from Fluxbox to pekwm during session.
+# Small script to change to pekwm from openbox during session.
 pkill -f conky
 pkill -f compton
-fluxbox-remote exit
-pekwm
+pkill -f ld-hotcorners
+pkill -f fbpanel
+pkill -f tint2
+pkill -x openbox & pekwm

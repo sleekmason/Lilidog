@@ -1,6 +1,6 @@
 #!/bin/bash
-# Small script to change to openbox during session.
-fluxbox-remote exit
+# Small script to change to openbox from jwm during session.
+pkill -x jwm
 openbox-lxde & toggle.monster
 pkill -f ld-hotcorners
 pkill -f volumeicon

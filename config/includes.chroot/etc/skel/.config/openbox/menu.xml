@@ -162,14 +162,14 @@
 					<execute>tint2conf</execute>
 				</action>
 			</item>
-			<item label="FBPanel Conf">
-				<action name="Execute">
-					<execute>geany ~/.config/fbpanel/default</execute>
-				</action>
-			</item>
 			<item label="LightDm Conf">
 				<action name="Execute">
 					<execute>gksudo lightdm-gtk-greeter-settings</execute>
+				</action>
+			</item>
+			<item label="FBPanel Conf">
+				<action name="Execute">
+					<execute>geany ~/.config/fbpanel/default</execute>
 				</action>
 			</item>
 			<item label="Xbindkeys Conf">
@@ -232,6 +232,16 @@
 			<item label="X-Kill">
 				<action name="Execute">
 					<execute>xkill</execute>
+				</action>
+			</item>
+			<item label="Switch To Jwm">
+				<action name="Execute">
+					<execute>jwm-entry</execute>
+				</action>
+			</item>
+			<item label="Switch To Pekwm">
+				<action name="Execute">
+					<execute>pek-entry</execute>
 				</action>
 			</item>
 			<item label="Switch To Fluxbox">
