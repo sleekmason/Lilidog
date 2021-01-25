@@ -1,0 +1,7 @@
+#!/bin/bash
+# Small script to change to pekwm from jwm during session.
+pkill -f conky
+pkill -f compton
+pkill -f volumeicon
+pkill -x jwm
+pekwm

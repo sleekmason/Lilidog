@@ -60,8 +60,10 @@
             <Program icon="object-flip-horizontal.png" label="Toggle Ld-hotcorners">toggle.ld</Program>
             <Program icon="object-flip-horizontal.png" label="Toggle Monsterpanel">toggle.monster</Program>
             <Program icon="window-close.png" label="Xkill">xkill</Program>
+            <Program icon="object-flip-horizontal.png" label="Switch to Openbox">jwm-open-entry</Program>
             <Program icon="object-flip-horizontal.png" label="Switch to Fluxbox">jwm-flux-entry</Program>
-                       <Program icon="object-flip-horizontal.png" label="Switch to Openbox">jwm-open-entry</Program>
+            <Program icon="object-flip-horizontal.png" label="Switch to Pekwm">jwm-pek-entry</Program>
+                       
 	    </Menu>
 	    <Separator/>
 	      <Menu icon="debian-swirl.png" label="Debian Menu" <Include>/etc/jwm/debian-menu</Include> </Menu>

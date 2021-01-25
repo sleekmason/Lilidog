@@ -73,8 +73,9 @@ RootMenu = "Pekwm" {
 			Entry = "Toggle Ld-hotcorners" { Actions = "Exec toggle.ld" }
 			Entry = "Toggle Monster Panel" { Actions = "Exec toggle.monster" }
 			Entry = "Xkill" { Actions = "Exec xkill" }
-			Entry = "Switch To Fluxbox" { Actions = "Exec pek-flux-entry" }
 			Entry = "Switch To Openbox" { Actions = "Exec pek-open-entry" }
+			Entry = "Switch To Fluxbox" { Actions = "Exec pek-flux-entry" }
+			Entry = "Switch To JWM" { Actions = "Exec pek-jwm-entry" }
 	}
 		Entry = "Reload" { Actions = "Reload" }
 		Entry = "Restart" { Actions = "Restart" }

@@ -1,0 +1,8 @@
+#!/bin/bash
+# Small script to change to jwm from pekwm during session.
+pkill -f stalonetray
+pkill -f plank
+pkill -f ld-hotcorners
+pkill -f conky
+pkill -f compton
+pkill -xf pekwm & jwm
