@@ -1,5 +1,5 @@
 ﻿# Lilidog-Linux Based on Debian Buster (stable)
-## LXDE - Openbox - Fluxbox Combo Optimized - 64 bit version.<br/>
+## LXDE With Openbox, Fluxbox, Jwm, and Pekwm.  Optimized - 64 bit version.<br/>
 
 Lilidog is a dark themed distro build based on LXDE. <br/> 
 Options are available for Openbox, Fluxbox, Jwm, or Pekwm. <br/> 
