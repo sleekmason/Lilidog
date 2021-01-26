@@ -1,9 +1,10 @@
 ﻿# Lilidog-Linux Based on Debian Buster (stable)
 ## LXDE - Openbox - Fluxbox Combo Optimized - 64 bit version.<br/>
 
-Lilidog is a dark themed distro build based on LXDE with either Openbox <br/> 
-or Fluxbox as the window manager.  Toggle freely between the two when in the default session. <br/>
-Either can be accessed separately through the Lightdm login screen, but no toggling in this case.
+Lilidog is a dark themed distro build based on LXDE. <br/> 
+Options are available for Openbox, Fluxbox, Jwm, or Pekwm. <br/> 
+Toggle freely between the four while in the default session. <br/>
+All Window managers can be accessed separately through the login screen, but no toggling in this case.
 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize.
@@ -28,7 +29,17 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
-[![Lilidog-current-1-18-21.png](https://i.postimg.cc/qvpVmKFD/Lilidog-current-1-18-21.png)](https://postimg.cc/F7CBzYN0)
+### Openbox
+[![Openbox-1-26-21.png](https://i.postimg.cc/hPZ1qYdj/Openbox-1-26-21.png)](https://postimg.cc/xcHzvtgD)
+
+### Fluxbox
+[![Fluxbox-1-26-21.png](https://i.postimg.cc/x1kyjPvP/Fluxbox-1-26-21.png)](https://postimg.cc/hXB7pT3J)
+
+### Jwm
+[![Jwm-1-26-21.png](https://i.postimg.cc/nh6KXQTf/Jwm-1-26-21.png)](https://postimg.cc/k2vRZGkT)
+
+### Pekwm
+[![Pekwm-1-26-21.png](https://i.postimg.cc/JnQjYY8R/Pekwm-1-26-21.png)](https://postimg.cc/zbVLVj3Q)
 
 ### Features:
 
