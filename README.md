@@ -36,7 +36,7 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 [![Fluxbox-1-26-21.png](https://i.postimg.cc/x1kyjPvP/Fluxbox-1-26-21.png)](https://postimg.cc/hXB7pT3J)
 
 ### Jwm
-[![Jwm-1-26-21.png](https://i.postimg.cc/nh6KXQTf/Jwm-1-26-21.png)](https://postimg.cc/k2vRZGkT)
+[![Jwm-1-26-21.png](https://i.postimg.cc/YC38jxjG/Jwm-1-26-21.png)](https://postimg.cc/9DDynZdC)
 
 ### Pekwm
 [![Pekwm-1-26-21.png](https://i.postimg.cc/JnQjYY8R/Pekwm-1-26-21.png)](https://postimg.cc/zbVLVj3Q)
