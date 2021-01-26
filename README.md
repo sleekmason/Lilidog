@@ -46,7 +46,7 @@ newer hardware, The firmware from sid and the newest Debian kernel available may
 - Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be added during installation. 
 
-- In the live session, you can switch from Openbox to Fluxbox and back through the toggles in the menu. <br/> 
+- In the live session, you can switch between all four window managers through the toggles in the menu. <br/> 
 Logging into each separately is also an option.
 
 The username and password for the live environment is "user", and "live" respectively. <br/>
