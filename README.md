@@ -82,7 +82,8 @@ For drive information, you may wish to edit the script in  ~/.config/conky/scrip
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
-- BFQ IO Scheduler by Default. To change this to kernel default, delete 60-scheduler.rules in /etc/udev/rules.d
+- BFQ IO Scheduler by Default for spinning drives. "Mq-Deadline" for SSD and eMMC, and "None" for nvme. <br/>
+To change this to kernel default, delete 60-scheduler.rules in /etc/udev/rules.d
 
 - Feh sets the wallpaper directly in lxsession autostart rather than pointing to ~/.fehbg <br/>
 After installation, you may want to change this to ~/.fehbg & in lxsession autostart for customization. <br/>
@@ -262,6 +263,13 @@ https://live-team.pages.debian.net/live-manual/html/live-manual/examples.en.html
 Contact info: sleekmason@gmail.com
 
 ### Good Luck!
+
+__Credits__
+
+The linux rocks are my wifes:) She paints rocks, and I like em. <br/>
+The rabbit is a local image on the side of a building. Apt for the times. <br/>
+The Cracked Window is from one of our backpacking trips. An old truck, 2000' down. <br/>
+The "Lis" is a changed copy from a print we have.
 
 ## Lilidog
 
