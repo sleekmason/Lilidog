@@ -1,3 +1,10 @@
 #!/bin/bash
-#
-bash -c 'if ! pkill -x tint2;then exec tint2; fi'
+if pgrep -xf tint2 > /dev/null; then
+    pkill -f tint2 &
+    pkill -f fbpanel
+else
+    tint2 &
+    pkill -f tint2-pager &
+    pkill -f fbpanel &
+    pkill -f volumeicon
+fi

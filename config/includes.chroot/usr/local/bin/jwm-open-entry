@@ -1,11 +1,10 @@
 #!/bin/bash
 # Small script to change to openbox from jwm during session.
 pkill -x jwm
-openbox-lxde & toggle.monster
+openbox-lxde & toggle.monster & feh --bg-scale /home/wallpaper/linux2.png
 pkill -f ld-hotcorners
 pkill -f volumeicon
 pkill -f conky
 pkill -f compton
-feh --bg-scale /home/wallpaper/linux2.png
 conky
 compton
