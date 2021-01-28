@@ -268,7 +268,7 @@ entry {
       color: #0D4B59; }
     spinbutton:not(.vertical) image:backdrop,
     entry image:backdrop {
-      color: #2E4652; }
+      color: #688EA1; }
   spinbutton:drop(active):focus:not(.vertical), spinbutton:drop(active):not(.vertical),
   entry:drop(active):focus,
   entry:drop(active) {
@@ -2058,7 +2058,7 @@ window.csd > .titlebar:not(headerbar) {
  * Tree Views *
  **************/
 treeview.view {
-  border-left-color: #2E4652;
+  border-left-color: #688EA1;
   border-top-color: #18252B; }
   * {
     -GtkTreeView-horizontal-separator: 4;
@@ -2143,7 +2143,7 @@ treeview.view {
       border-style: solid;
       border-color: #0D4B59; }
   treeview.view header button {
-    color: #2E4652;
+    color: #688EA1;
     background-color: #121C1F;
     font-weight: bold;
     text-shadow: none;
