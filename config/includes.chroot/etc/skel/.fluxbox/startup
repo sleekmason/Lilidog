@@ -22,7 +22,7 @@ killall nm-applet ; nm-applet &
 killall applet.py &
 lxpolkit &
 killall conky &
-sleep 1 ; conky -c ~/.config/conky/conky2.conf &
+sleep 1 ; conky &
 system-config-printer-applet &
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it

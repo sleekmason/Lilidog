@@ -62,7 +62,7 @@
 [submenu](Toggles)
 [exec] (Screenshot) {gnome-screenshot -i}
 [exec] (Toggle Compton) {toggle.compton2}
-[exec] (Toggle Conky) {toggle.conky2}
+[exec] (Toggle Conky) {toggle.conky}
 [exec] (Toggle clipit) {toggle.clipit}
 [exec] (Toggle Wbar) {toggle.wbar}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
