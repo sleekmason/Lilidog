@@ -26,22 +26,16 @@
 [exec] (SmPlayer) {smplayer}
 [exec] (Pragha) {pragha}
 [exec] (Gimp) {gimp}
-[exec] (gparted) {gksudo gparted}
-[exec] (Synaptic) {gksudo synaptic}
-[exec] (Root PcManfm) {gksudo pcmanfm}
-[exec] (Kernel Remover) {kernel-remover}
-[exec] (Printer Setup) {system-config-printer}
 [exec] (Catfish File) {catfish}
 [end]
-[submenu] (Applications)
+[submenu] (Debian)
 [exec] (Regenerate Menu) {update-menus}
 [include] (/etc/X11/fluxbox/fluxbox-menu)
 [end]
 [separator]
 #[exec] (Wallpaper X) {fbsetbg -f -r ~/Pictures/wallpapers} 
+[submenu] (Utilities)
 [submenu](Configuration)
-[exec] (Lxappearance) {lxappearance}
-[exec] (Power Manager) {xfce4-power-manager-settings}
    [submenu](Fluxbox Config)
 [config] (FluxConfig)
    [submenu] (Styles) {}
@@ -52,18 +46,31 @@
 [exec] (Fluxbox Startup) {geany ~/.fluxbox/startup}
 [exec] (Fluxbox Init) {geany ~/.fluxbox/init}
    [end]
+[exec] (Lxappearance) {lxappearance}
+[exec] (Power Manager) {xfce4-power-manager-settings}
    [exec] (Urxvt Config) {geany ~/.Xresources}
    [exec] (Conky Config) {geany ~/.config/conky/conky.conf}
    [exec] (Compton Config) {geany ~/.config/compton.conf}
    [exec] (Dmenu F3 Config) {geany ~/.config/dmenu/dmenu-apps}
    [exec] (Xbindkeys Config) {geany ~/.xbindkeysrc}
    [end]
-[submenu](Toggles)
 [exec] (Screenshot) {gnome-screenshot -i}
-[exec] (Toggle Compton) {toggle.compton2}
-[exec] (Toggle Conky) {toggle.conky}
+[exec] (Htop) {urxvt -e htop}
+[exec] (gparted) {gksudo gparted}
+[exec] (Lxrandr) {lxrandr}
+[exec] (Transmission) {transmission-gtk}
+[exec] (G-Alternatives) {galternatives}
+[exec] (Kernel Remover) {kernel-remover}
+[exec] (Gnome Disks) {gnome-disks}
+[exec] (Printer Setup) {gksudo system-config-printer}
+[exec] (Galculator) {galculator}
+[exec] (Synaptic) {gksudo synaptic}
+[end]
+[submenu](Toggles)
 [exec] (Toggle clipit) {toggle.clipit}
 [exec] (Toggle Wbar) {toggle.wbar}
+[exec] (Toggle Conky) {toggle.conky}
+[exec] (Toggle Compton) {toggle.compton2}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
 [exec] (Toggle Monster Panel) {toggle.monster}
 [exec] (Xkill) {xkill}
