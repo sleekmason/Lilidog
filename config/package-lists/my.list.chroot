@@ -63,6 +63,7 @@ gtk2-engines-murrine
 gvfs-backends
 gvfs-fuse
 hdparm
+hplip
 htop
 hwdata
 hunspell-en-us
@@ -137,6 +138,7 @@ rename
 rofi
 rsync
 rxvt-unicode
+sane-utils
 smplayer
 smplayer-l10n
 smplayer-themes
