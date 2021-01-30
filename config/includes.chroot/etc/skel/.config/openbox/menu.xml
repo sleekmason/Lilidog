@@ -239,11 +239,6 @@
 					<execute>xkill</execute>
 				</action>
 			</item>
-			<item label="Switch To Fluxbox">
-				<action name="Execute">
-					<execute>flux-entry</execute>
-				</action>
-			</item>
 			<item label="Switch To Jwm">
 				<action name="Execute">
 					<execute>jwm-entry</execute>
@@ -252,6 +247,11 @@
 			<item label="Switch To Pekwm">
 				<action name="Execute">
 					<execute>pek-entry</execute>
+				</action>
+			</item>
+			<item label="Switch To Fluxbox">
+				<action name="Execute">
+					<execute>flux-entry</execute>
 				</action>
 			</item>
 		</menu>

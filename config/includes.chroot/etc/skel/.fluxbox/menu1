@@ -15,12 +15,12 @@
 [exec] (Thunderbird) {thunderbird}
 [separator]
 [submenu](Quick Grab)
+[exec] (Writer) {libreoffice}
 [exec] (Geany) {geany}
 [exec] (Spacefm) {spacefm}
 [exec] (Pcmanfm) {pcmanfm}
 [exec] (Mousepad) {mousepad}
 [exec] (Lxterminal) {lxterminal}
-[exec] (Writer) {libreoffice}
 [exec] (Newsboat) {urxvt -g 120x40+120+100 -e newsboat}
 [exec] (Gpicview) {gpicview}
 [exec] (SmPlayer) {smplayer}
@@ -52,12 +52,11 @@
 [exec] (Fluxbox Startup) {geany ~/.fluxbox/startup}
 [exec] (Fluxbox Init) {geany ~/.fluxbox/init}
    [end]
-   [exec] (Xbindkeys Config) {geany ~/.xbindkeysrc}
    [exec] (Urxvt Config) {geany ~/.Xresources}
    [exec] (Conky Config) {geany ~/.config/conky/conky.conf}
    [exec] (Compton Config) {geany ~/.config/compton.conf}
    [exec] (Dmenu F3 Config) {geany ~/.config/dmenu/dmenu-apps}
-   [exec] (Wbar Config) {geany ~/.wbar}
+   [exec] (Xbindkeys Config) {geany ~/.xbindkeysrc}
    [end]
 [submenu](Toggles)
 [exec] (Screenshot) {gnome-screenshot -i}

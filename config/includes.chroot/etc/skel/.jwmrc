@@ -24,12 +24,12 @@
         <Program icon="web-browser.png" label="Web Browser">firefox-esr</Program>
                 <Program icon="thunderbird.png" label="Thunderbird">thunderbird</Program>
         <Menu icon="applications-office.png" label="Quick Grab">
+			<Program icon="edit-select-all.png" label="Writer">libreoffice</Program>
             <Program icon="geany.png" label="Geany">geany</Program>
             <Program icon="system-file-manager.png" label="Spacefm">spacefm</Program>
             <Program icon="system-file-manager.png" label="Pcmanfm">pcmanfm</Program>
             <Program icon="accessories-text-editor.png" label="Mousepad">mousepad</Program>
             <Program icon="terminal.png" label="Lxterminal">lxterminal</Program>
-            <Program icon="edit-select-all.png" label="Writer">libreoffice</Program>
             <Program icon="desktop.png" label="Newsboat">urxvt -g 120x40+120+100 -e newsboat</Program>
             <Program icon="emblem-photos.png" label="Gpicview">gpicview</Program>
             <Program icon="smplayer.png" label="Smplayer">smplayer</Program>
@@ -53,9 +53,9 @@
 	    </Menu>
 	     <Menu icon="object-flip-horizontal.png" label="Toggles">
 			<Program icon="insert-image.png" label="Screenshot">gnome-screenshot -i</Program>
+			<Program icon="object-flip-horizontal.png" label="Toggle Clipit">toggle.clipit</Program>
+			<Program icon="object-flip-horizontal.png" label="Toggle Conky">toggle.conky</Program>
 			<Program icon="object-flip-horizontal.png" label="Toggle Compton">toggle.compton2</Program>
-            <Program icon="object-flip-horizontal.png" label="Toggle Conky">toggle.conky</Program>
-            <Program icon="object-flip-horizontal.png" label="Toggle Clipit">toggle.clipit</Program>
             <Program icon="object-flip-horizontal.png" label="Toggle Ld-hotcorners">toggle.ld</Program>
             <Program icon="window-close.png" label="Xkill">xkill</Program>
             <Program icon="object-flip-horizontal.png" label="Switch to Openbox">jwm-open-entry</Program>
