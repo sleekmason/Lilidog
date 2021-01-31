@@ -37,10 +37,6 @@ RootMenu = "Pekwm" {
 			Entry = "SmPlayer" { Actions = "Exec smplayer" }
 			Entry = "Pragha" { Actions = "Exec pragha" }
 			Entry = "Gimp" { Actions = "Exec gimp" }
-			Entry = "Gparted" { Actions = "Exec gksudo gparted" }
-			Entry = "Synaptic" { Actions = "Exec gksudo synaptic" }
-			Entry = "Root Pcmanfm" { Actions = "Exec gksudo pcmanfm" }
-			Entry = "Kernel Remover" { Actions = "Exec kernel-remover" }
 			Entry = "Catfish File" { Actions = "Exec catfish" }
 	}
 	
@@ -48,15 +44,16 @@ RootMenu = "Pekwm" {
 	Submenu = "Debian Menu" {
 	        INCLUDE = "/etc/pekwm/debian-menu" 
 }
-		Submenu = "Configuration" {
+	Submenu = "Utilities" {
+			Submenu = "Configuration" {
 	Submenu = "Pekwm" {
 		Submenu = "Themes" {
 			Entry { Actions = "Dynamic $_PEKWM_SCRIPT_PATH/pekwm_themeset.sh $_PEKWM_THEME_PATH" }
 			Entry { Actions = "Dynamic $_PEKWM_SCRIPT_PATH/pekwm_themeset.sh ~/.pekwm/themes" }
-		}
-		Entry = "Reload" { Actions = "Reload" }
-		Entry = "Restart" { Actions = "Restart" }
-		Entry = "Exit" { Actions = "Exit" }
+	}
+			Entry = "Reload" { Actions = "Reload" }
+			Entry = "Restart" { Actions = "Restart" }
+			Entry = "Exit" { Actions = "Exit" }
 	}
 			Entry = "Power Manager" { Actions = "Exec xfce4-power-manager-settings" }
 			Entry = "Lxappearance" { Actions = "Exec lxappearance" }
@@ -64,6 +61,26 @@ RootMenu = "Pekwm" {
 			Entry = "Conky Config" { Actions = "Exec geany ~/.config/conky/conky.conf" }
 			Entry = "Compton Config" { Actions = "Exec geany ~/.config/compton.conf" }
 			Entry = "Dmenu F3 Config" { Actions = "Exec geany ~/.config/dmenu/dmenu-apps" }
+	}
+			Entry = "Screenshot" { Actions = "Exec gnome-screenshot -i" }
+			Entry = "Htop" { Actions = "Exec urxvt -e htop" }
+			Entry = "Lxrandr" { Actions = "Exec lxrandr" }
+			Entry = "Gparted" { Actions = "Exec gksudo gparted" }
+			Entry = "Synaptic" { Actions = "Exec gksudo synaptic" }
+			Entry = "Printer Setup" { Actions = "Exec gksudo system-config-printer" }
+			Entry = "Gnome Disks" { Actions = "Exec gnome-disks" }
+			Entry = "Transmission" { Actions = "Exec transmission-gtk" }
+			Entry = "G-Alternatives" { Actions = "Exec galternatives" }
+			Entry = "Kernel Remover" { Actions = "Exec kernel-remover" }
+			
+			
+			
+			
+			
+			
+			
+			
+			
 	}
 		Submenu = "Toggles" {
 			Entry = "Screenshot" { Actions = "Exec gnome-screenshot -i" }

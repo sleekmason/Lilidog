@@ -40,9 +40,6 @@
 				Entry = "Editres" { Actions = "Exec editres &" } 
 				Entry = "fbpanel" { Actions = "Exec /usr/bin/fbpanel &" } 
 				Entry = "Openbox Menu Editor" { Actions = "Exec /usr/bin/obmenu &" } 
-				Entry = "Orphaner (all)" { Actions = "Exec x-terminal-emulator  -T \"Orphaner (all)\" -e sh -c \"su-to-root -c '/usr/sbin/orphaner -a'\" &" } 
-				Entry = "Orphaner - editkeep" { Actions = "Exec x-terminal-emulator  -T \"Orphaner - editkeep\" -e sh -c \"su-to-root -c '/usr/sbin/editkeep'\" &" } 
-				Entry = "Orphaner (libs)" { Actions = "Exec x-terminal-emulator  -T \"Orphaner (libs)\" -e sh -c \"su-to-root -c /usr/sbin/orphaner\" &" } 
 				Entry = "stalonetray" { Actions = "Exec /usr/bin/stalonetray &" } 
 				Entry = "XBindKeys-config" { Actions = "Exec /usr/bin/xbindkeys-config &" } 
 				Entry = "Xclipboard" { Actions = "Exec xclipboard &" } 
@@ -100,6 +97,5 @@
 	} 
 	Submenu = "Window Managers" {
 		Entry = "FluxBox" { Actions = "RestartOther /usr/bin/startfluxbox" } 
-		Entry = "Flwm" { Actions = "RestartOther /usr/bin/flwm" } 
 		Entry = "Pekwm" { Actions = "RestartOther /usr/bin/pekwm" } 
 	} 
