@@ -8,6 +8,7 @@
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
 <StartupCommand>xfce4-power-manager</StartupCommand>
+<StartupCommand>system-config-printer-applet</StartupCommand>
 <StartupCommand>killall compton ; compton --config ~/.config/compton2.conf</StartupCommand>
 <StartupCommand>killall conky</StartupCommand>
 <StartupCommand>sleep 1 ; conky</StartupCommand>
@@ -35,14 +36,12 @@
             <Program icon="smplayer.png" label="Smplayer">smplayer</Program>
             <Program icon="pragha.png" label="Pragha">pragha</Program>
             <Program icon="gimp.png" label="Gimp">gimp</Program>
-            <Program icon="gparted.png" label="Gparted">gksudo gparted</Program>
-            <Program icon="synaptic.png" label="Synaptic">gksudo synaptic</Program>
-            <Program icon="terminal.png" label="Kernel Remover">kernel-remover</Program>
-            <Program icon="printer.png" label="Printer Setup">system-config-printer</Program>
             <Program icon="edit-find.png" label="Catfish">catfish</Program>
 	    </Menu>
+	    	      <Menu icon="debian-swirl.png" label="Debian" <Include>/etc/jwm/debian-menu</Include> </Menu>
         <Separator/>
-        <Menu icon="preferences-system.png" label="Configuration">
+	     <Menu icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Utilities">
+		<Menu icon="preferences-system.png" label="Configuration">
 			<Program icon="preferences-system.png" label="Power Manager">xfce4-power-manager-settings</Program>
             <Program icon="preferences-desktop-display.png" label="Lxappearance">lxappearance</Program>
             <Program icon="document-page-setup.png" label="Urxvt Config">geany ~/.Xresources</Program>
@@ -51,8 +50,20 @@
             <Program icon="document-page-setup.png" label="Dmenu Apps Config">geany ~/.config/dmenu/dmenu-apps</Program>
             <Program icon="preferences-desktop-display.png" label="Window Properties">xprop | xmessage -file -</Program>
 	    </Menu>
+			<Program icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Htop">urxvt -e htop</Program>
+			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lxrandr">lxrandr</Program>
+			<Program icon="gparted.png" label="Gparted">gksudo gparted</Program>
+            <Program icon="synaptic.png" label="Synaptic">gksudo synaptic</Program>
+			<Program icon="printer.png" label="Printer Setup">system-config-printer</Program>
+			<Program icon="terminal.png" label="Kernel Remover">kernel-remover</Program>
+			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-desktop.png" label="G-Alternatives">galternatives</Program>
+		    <Program icon="/usr/share/icons/gnome/48x48/devices/media-optical.png" label="Transmission">transmission-gtk</Program>
+			<Program icon="/usr/share/icons/gnome/48x48/devices/drive-harddisk.png" label="Gnome Disks">gnome-disks</Program>
+			<Program icon="document-page-setup.png" label="Urxvt Config">geany ~/.Xresources</Program>
+			<Program icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">galculator</Program>
+			<Program icon="synaptic.png" label="Synaptic">gksudo synaptic</Program>
+	    </Menu>
 	     <Menu icon="object-flip-horizontal.png" label="Toggles">
-			<Program icon="insert-image.png" label="Screenshot">gnome-screenshot -i</Program>
 			<Program icon="object-flip-horizontal.png" label="Toggle Clipit">toggle.clipit</Program>
 			<Program icon="object-flip-horizontal.png" label="Toggle Conky">toggle.conky</Program>
 			<Program icon="object-flip-horizontal.png" label="Toggle Compton">toggle.compton2</Program>
@@ -60,12 +71,9 @@
             <Program icon="window-close.png" label="Xkill">xkill</Program>
             <Program icon="object-flip-horizontal.png" label="Switch to Openbox">jwm-open-entry</Program>
             <Program icon="object-flip-horizontal.png" label="Switch to Fluxbox">jwm-flux-entry</Program>
-            <Program icon="object-flip-horizontal.png" label="Switch to Pekwm">jwm-pek-entry</Program>
-                       
+            <Program icon="object-flip-horizontal.png" label="Switch to Pekwm">jwm-pek-entry</Program>                    
 	    </Menu>
 	    <Separator/>
-	      <Menu icon="debian-swirl.png" label="Debian Menu" <Include>/etc/jwm/debian-menu</Include> </Menu>
-        <Separator/>
 	    <Program icon="lock.png" label="Lock">slock</Program>
         <Restart icon="view-fullscreen.png" label="Restart"/>
 <!--      <Exit label="Exit" confirm="true" icon="quit.png"/> -->
