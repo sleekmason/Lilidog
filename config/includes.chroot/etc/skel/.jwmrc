@@ -50,6 +50,7 @@
             <Program icon="document-page-setup.png" label="Dmenu Apps Config">geany ~/.config/dmenu/dmenu-apps</Program>
             <Program icon="preferences-desktop-display.png" label="Window Properties">xprop | xmessage -file -</Program>
 	    </Menu>
+			<Program icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">gnome-screenshot -i</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Htop">urxvt -e htop</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lxrandr">lxrandr</Program>
 			<Program icon="gparted.png" label="Gparted">gksudo gparted</Program>
