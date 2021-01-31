@@ -257,6 +257,11 @@
 					<execute>toggle.fbpanel</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Plank Toggle">
+				<action name="Execute">
+					<execute>toggle.plank</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/process-stop.png" label="X-Kill">
 				<action name="Execute">
 					<execute>xkill</execute>
