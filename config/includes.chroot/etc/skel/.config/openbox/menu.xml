@@ -46,6 +46,11 @@
 					<execute>pcmanfm</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
+				<action name="Execute">
+					<execute>lxterminal</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-text-editor.png" label="Mousepad">
 				<action name="Execute">
 					<execute>mousepad</execute>
@@ -54,21 +59,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-dictionary.png" label="Newsboat">
 				<action name="Execute">
 					<execute>urxvt -g 120x40+120+100 -e newsboat</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
-				<action name="Execute">
-					<execute>lxterminal</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/system-file-manager.png" label="Root PcManfm">
-				<action name="Execute">
-					<execute>gksudo pcmanfm</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Root Lxterminal">
-				<action name="Execute">
-					<execute>gksudo lxterminal</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/categories/applications-multimedia.png" label="SmPlayer">
