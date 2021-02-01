@@ -20,13 +20,6 @@ https://github.com/sleekmason/Liliflux
 
 For the Unstable build: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
 
-Be aware that for the unstable build, newer doesn't always equate with better. <br/>
-An rc kernel newly patched by debian may run slower than the kernel in stable. <br/>
-
-Compiling your own vanilla kernel from https://www.kernel.org/ or see below for a link to my kernels<br/>
-after building a stable image is the way to go for optimization purposes. However, If you have <br/>
-newer hardware, The firmware from sid and the newest Debian kernel available may be a saving grace.
-
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
 ### Openbox
