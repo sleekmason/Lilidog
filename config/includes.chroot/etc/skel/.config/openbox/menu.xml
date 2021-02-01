@@ -89,7 +89,7 @@
 		</menu>
 		<menu id="/Debian"/>
 		<separator/>
-		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/gnome/48x48/categories/applications-system.png" id="applications-menu" label="Debian"/>
+		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="Debian"/>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
 			<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
