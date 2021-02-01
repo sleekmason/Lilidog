@@ -8,7 +8,7 @@
 		</item>
 		<separator/>
 		<separator/>
-		<item icon="/usr/share/icons/gnome/48x48/apps/file-manager.png" label="Thunar">
+		<item icon="/usr/share/icons/ld-icons/Thunar.png" label="Thunar">
 			<action name="Execute">
 				<execute>thunar</execute>
 			</action>
@@ -26,7 +26,7 @@
 		</item>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/applications-other.png" id="root-menu-594711" label="Quick Grab">
-			<item icon="/usr/share/icons/gnome/48x48/apps/preferences-desktop-keyboard-shortcuts.png" label="Writer">
+			<item icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">
 				<action name="Execute">
 					<execute>libreoffice</execute>
 				</action>
@@ -36,7 +36,7 @@
 					<execute>geany</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/system-file-manager.png" label="Spacefm">
+			<item icon="/usr/share/icons/ld-icons/spacefm-48-pyramid-green.png" label="Spacefm">
 				<action name="Execute">
 					<execute>spacefm</execute>
 				</action>
@@ -66,17 +66,17 @@
 					<execute>smplayer</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/insert-image.png" label="Gpicview">
+			<item icon="/usr/share/icons/ld-icons/gpicview.png" label="Gpicview">
 				<action name="Execute">
 					<execute>gpicview</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/categories/applications-multimedia.png" label="Pragha">
+			<item icon="/usr/share/icons/ld-icons/pragha.png" label="Pragha">
 				<action name="Execute">
 					<execute>pragha</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Gimp">
+			<item icon="/usr/share/icons/ld-icons/gimp.png" label="Gimp">
 				<action name="Execute">
 					<execute>gimp</execute>
 				</action>
@@ -118,7 +118,7 @@
 						<execute>obconf</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-office.png" label="Compton Conf">
+				<item icon="/usr/share/icons/ld-icons/compton.png" label="Compton Conf">
 					<action name="Execute">
 						<execute>geany ~/.config/compton.conf</execute>
 					</action>
@@ -174,7 +174,7 @@
 					<execute>urxvt -e htop</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/devices/drive-multidisk.png" label="Gparted">
+			<item icon="/usr/share/icons/ld-icons/gparted.png" label="Gparted">
 				<action name="Execute">
 					<execute>gksudo gparted</execute>
 				</action>
@@ -190,7 +190,7 @@
 					<execute>transmission-gtk</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/categories/preferences-desktop.png" label="G-Alternatives">
+			<item icon="/usr/share/icons/ld-icons/galternatives.png" label="G-Alternatives">
 				<action name="Execute">
 					<execute>galternatives</execute>
 				</action>
@@ -200,7 +200,7 @@
 					<execute>kernel-remover</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/devices/drive-harddisk.png" label="Gnome Disks">
+			<item icon="/usr/share/icons/ld-icons/gnome-disks.png" label="Gnome Disks">
 				<action name="Execute">
 					<execute>gnome-disks</execute>
 				</action>
@@ -291,7 +291,7 @@
 			<action name="Restart"/>
 		</item>
 		<separator/>
-		<item icon="/usr/share/icons/ld-icons/exit3.png" label="Exit">
+		<item icon="/usr/share/icons/ld-icons/exit4.png" label="Exit">
 			<action name="Execute">
 				<execute>ld-logout</execute>
 			</action>
