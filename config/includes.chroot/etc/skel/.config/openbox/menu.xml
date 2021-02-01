@@ -13,13 +13,13 @@
 				<execute>thunar</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/gnome/48x48/apps/web-browser.png" label="Web Browser">
+		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Web Browser">
 			<action name="Execute">
 				<execute>x-www-browser</execute>
 			</action>
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item icon="/usr/share/icons/gnome/48x48/actions/mail-send-receive.png" label="Thunderbird">
+		<item icon="/usr/share/pixmaps/thunderbird.png" label="Thunderbird">
 			<action name="Execute">
 				<execute>thunderbird</execute>
 			</action>
@@ -31,7 +31,7 @@
 					<execute>libreoffice</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-text-editor.png" label="Geany">
+			<item icon="/usr/share/pixmaps/geany.xpm" label="Geany">
 				<action name="Execute">
 					<execute>geany</execute>
 				</action>
@@ -61,7 +61,7 @@
 					<execute>urxvt -g 120x40+120+100 -e newsboat</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/categories/applications-multimedia.png" label="SmPlayer">
+			<item icon="/usr/share/pixmaps/smplayer.xpm" label="SmPlayer">
 				<action name="Execute">
 					<execute>smplayer</execute>
 				</action>
@@ -113,7 +113,7 @@
 						<execute>obmenu</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-desktop.png" label="Openbox Conf">
+				<item icon="/usr/share/pixmaps/obconf.png" label="Openbox Conf">
 					<action name="Execute">
 						<execute>obconf</execute>
 					</action>
@@ -169,7 +169,7 @@
 					<execute>gnome-screenshot -i</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Htop">
+			<item icon="/usr/share/pixmaps/htop.png" label="Htop">
 				<action name="Execute">
 					<execute>urxvt -e htop</execute>
 				</action>
@@ -184,7 +184,7 @@
 					<execute>lxrandr</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/devices/media-optical.png" label="Transmission">
+			<item icon="/usr/share/pixmaps/transmission.xpm" label="Transmission">
 				&gt;
 				<action name="Execute">
 					<execute>transmission-gtk</execute>
@@ -210,12 +210,12 @@
 					<execute>gksudo system-config-printer</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">
+			<item icon="/usr/share/pixmaps/galculator.xpm" label="Galculator">
 				<action name="Execute">
 					<execute>galculator</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" label="Synaptic">
+			<item icon="/usr/share/pixmaps/synaptic.png" label="Synaptic">
 				<action name="Execute">
 					<execute>gksudo synaptic</execute>
 				</action>
