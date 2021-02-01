@@ -48,9 +48,7 @@
             [exec] (Editres) {editres} <>
             [exec] (fbpanel) {/usr/bin/fbpanel} <>
             [exec] (Openbox Menu Editor) {/usr/bin/obmenu} <>
-            [exec] (Orphaner (all\)) { x-terminal-emulator -T "Orphaner (all)" -e su-to-root -c '/usr/sbin/orphaner -a'} <>
-            [exec] (Orphaner - editkeep) { x-terminal-emulator -T "Orphaner - editkeep" -e su-to-root -c '/usr/sbin/editkeep'} <>
-            [exec] (Orphaner (libs\)) { x-terminal-emulator -T "Orphaner (libs)" -e su-to-root -c /usr/sbin/orphaner} <>
+            [exec] (stalonetray) {/usr/bin/stalonetray} <>
             [exec] (XBindKeys-config) {/usr/bin/xbindkeys-config} <>
             [exec] (Xclipboard) {xclipboard} <>
             [exec] (Xfontsel) {xfontsel} <>
@@ -107,6 +105,7 @@
    [end]
    [submenu] (Window Managers) {}
       [restart] (FluxBox)  {/usr/bin/startfluxbox}
+      [restart] (Pekwm)  {/usr/bin/pekwm}
    [end]
 
    [config] (Configuration)

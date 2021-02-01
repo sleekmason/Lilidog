@@ -19,11 +19,11 @@ xfce4-power-manager &
 killall volumeicon ; volumeicon &
 killall compton ; compton --config ~/.config/compton2.conf &
 killall nm-applet ; nm-applet &
-killall applet.py &
+killall parcellite & 
 lxpolkit &
 killall conky &
 sleep 1 ; conky &
-system-config-printer-applet &
+parcellite &
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
 #     exists. If it does, we'll start it up by default.

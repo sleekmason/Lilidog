@@ -67,10 +67,9 @@
 [exec] (Synaptic) {gksudo synaptic}
 [end]
 [submenu](Toggles)
-[exec] (Toggle clipit) {toggle.clipit}
-[exec] (Toggle Wbar) {toggle.wbar}
 [exec] (Toggle Conky) {toggle.conky}
 [exec] (Toggle Compton) {toggle.compton2}
+[exec] (Toggle Clipboard) {toggle.parcellite}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
 [exec] (Toggle Monster Panel) {toggle.monster}
 [exec] (Xkill) {xkill}

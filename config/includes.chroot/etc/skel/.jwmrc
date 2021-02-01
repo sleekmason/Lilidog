@@ -5,14 +5,13 @@
 <!-- Startup -->	
 <StartupCommand>feh --bg-scale /home/wallpaper/Peace.png</StartupCommand>	
 <StartupCommand>killall lxpolkit ; lxpolkit</StartupCommand>
+<StartupCommand>killall parcellite ; parcellite</StartupCommand>
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
 <StartupCommand>xfce4-power-manager</StartupCommand>
-<StartupCommand>system-config-printer-applet</StartupCommand>
 <StartupCommand>killall compton ; compton --config ~/.config/compton2.conf</StartupCommand>
 <StartupCommand>killall conky</StartupCommand>
 <StartupCommand>sleep 1 ; conky</StartupCommand>
- 
 
 <!-- **********  ROOT MENU **********  -->
 
@@ -64,14 +63,14 @@
 			<Program icon="synaptic.png" label="Synaptic">gksudo synaptic</Program>
 	    </Menu>
 	     <Menu icon="object-flip-horizontal.png" label="Toggles">
-			<Program icon="object-flip-horizontal.png" label="Toggle Clipit">toggle.clipit</Program>
-			<Program icon="object-flip-horizontal.png" label="Toggle Conky">toggle.conky</Program>
-			<Program icon="object-flip-horizontal.png" label="Toggle Compton">toggle.compton2</Program>
+	    <Program icon="object-flip-horizontal.png" label="Toggle Conky">toggle.conky</Program>
+	    <Program icon="object-flip-horizontal.png" label="Toggle Compton">toggle.compton2</Program>
+	    <Program icon="object-flip-horizontal.png" label="Toggle Clipboard">toggle.parcellite</Program>
             <Program icon="object-flip-horizontal.png" label="Toggle Ld-hotcorners">toggle.ld</Program>
             <Program icon="window-close.png" label="Xkill">xkill</Program>
-            <Program icon="object-flip-horizontal.png" label="Switch to Openbox">jwm-open-entry</Program>
-            <Program icon="object-flip-horizontal.png" label="Switch to Fluxbox">jwm-flux-entry</Program>
-            <Program icon="object-flip-horizontal.png" label="Switch to Pekwm">jwm-pek-entry</Program>                    
+            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Openbox">jwm-open-entry</Program>
+            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Fluxbox">jwm-flux-entry</Program>
+            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Pekwm">jwm-pek-entry</Program>                    
 	    </Menu>
 	    <Separator/>
 	    <Program icon="lock.png" label="Lock">slock</Program>

@@ -222,11 +222,6 @@
 			</item>
 		</menu>
 		<menu icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" id="root-menu-721334" label="Toggles">
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="ClipIt Toggle">
-				<action name="Execute">
-					<execute>toggle.clipit</execute>
-				</action>
-			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Conky Toggle">
 				<action name="Execute">
 					<execute>toggle.conky</execute>
@@ -235,6 +230,11 @@
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Compton Toggle">
 				<action name="Execute">
 					<execute>toggle.compton</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Clipboard Toggle">
+				<action name="Execute">
+					<execute>toggle.parcellite</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Ld-Hotcorners Toggle">
