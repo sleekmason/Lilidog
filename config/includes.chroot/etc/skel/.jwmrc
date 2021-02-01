@@ -52,16 +52,15 @@
 	    </Menu>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">gnome-screenshot -i</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Htop">urxvt -e htop</Program>
-			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lxrandr">lxrandr</Program>
+			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lx-randr">lxrandr</Program>
 			<Program icon="gparted.png" label="Gparted">gksudo gparted</Program>
-            <Program icon="synaptic.png" label="Synaptic">gksudo synaptic</Program>
+			<Program icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">galculator</Program>
 			<Program icon="printer.png" label="Printer Setup">system-config-printer</Program>
 			<Program icon="terminal.png" label="Kernel Remover">kernel-remover</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-desktop.png" label="G-Alternatives">galternatives</Program>
-		    <Program icon="/usr/share/icons/gnome/48x48/devices/media-optical.png" label="Transmission">transmission-gtk</Program>
+		        <Program icon="/usr/share/icons/gnome/48x48/devices/media-optical.png" label="Transmission">transmission-gtk</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/devices/drive-harddisk.png" label="Gnome Disks">gnome-disks</Program>
 			<Program icon="document-page-setup.png" label="Urxvt Config">geany ~/.Xresources</Program>
-			<Program icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">galculator</Program>
 			<Program icon="synaptic.png" label="Synaptic">gksudo synaptic</Program>
 	    </Menu>
 	     <Menu icon="object-flip-horizontal.png" label="Toggles">
