@@ -38,3 +38,4 @@ Exec=parcellite
 Terminal=false
 Type=Application
 X-GNOME-Autostart-enabled=true
+NotShowIn=LXDE;

@@ -1,3 +1,0 @@
-#!/bin/bash
-#
-bash -c 'if ! pkill -x xscreensaver; then exec xscreensaver; fi'

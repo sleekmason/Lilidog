@@ -6,6 +6,5 @@ pkill -f ld-hotcorners &
 pkill -f volumeicon &
 killall compton ; compton &
 killall nm-applet ; nm-applet &
-killall parcellite ; parcellite &
 killall conky ; conky &
 xfce4-power-manager

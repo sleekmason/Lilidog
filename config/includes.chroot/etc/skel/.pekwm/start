@@ -23,9 +23,9 @@ plank &
 killall volumeicon ; volumeicon &
 killall lxpolkit ; lxpolkit  &
 killall nm-applet ; nm-applet &
-xfce4-power-manager &
 pkill -f ld-hotcorners ; ld-hotcorners --daemon &
 killall conky &
 sleep 1 ; conky -c ~/.config/conky/conky.conf &
 killall compton &
 sleep 1 ; compton --config ~/.config/compton.conf &
+xfce4-power-manager &
