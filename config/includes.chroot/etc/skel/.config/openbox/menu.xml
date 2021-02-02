@@ -234,7 +234,7 @@
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Clipboard Toggle">
 				<action name="Execute">
-					<execute>toggle.parcellite</execute>
+					<execute>toggle.clipit</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Screensaver Toggle">

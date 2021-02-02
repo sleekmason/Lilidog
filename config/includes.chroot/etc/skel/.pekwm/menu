@@ -86,7 +86,7 @@ RootMenu = "Pekwm" {
 			Entry = "Screenshot" { Actions = "Exec gnome-screenshot -i" }
 			Entry = "Toggle Conky" { Actions = "Exec toggle.conky" }
 			Entry = "Toggle Compton" { Actions = "Exec toggle.compton" }
-			Entry = "Toggle Clipboard" { Actions = "Exec toggle.parcellite" }
+			Entry = "Toggle Clipboard" { Actions = "Exec toggle.clipit" }
 			Entry = "Toggle Screensaver" { Actions = "Exec toggle.xscreensaver" }
 			Entry = "Toggle Ld-hotcorners" { Actions = "Exec toggle.ld" }
 			Entry = "Toggle Monster Panel" { Actions = "Exec toggle.monster" }

@@ -5,7 +5,6 @@
 <!-- Startup -->	
 <StartupCommand>feh --bg-scale /home/wallpaper/Peace.png</StartupCommand>	
 <StartupCommand>killall lxpolkit ; lxpolkit</StartupCommand>
-<!-- <StartupCommand>killall parcellite ; parcellite</StartupCommand> -->
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
 <StartupCommand>xfce4-power-manager</StartupCommand>
@@ -65,7 +64,7 @@
 	     <Menu icon="object-flip-horizontal.png" label="Toggles">
 	    <Program icon="object-flip-horizontal.png" label="Toggle Conky">toggle.conky</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Compton">toggle.compton2</Program>
-	    <Program icon="object-flip-horizontal.png" label="Toggle Clipboard">toggle.parcellite</Program>
+	    <Program icon="object-flip-horizontal.png" label="Toggle Clipboard">toggle.clipit</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Screensaver">toggle.xscreensaver</Program>
             <Program icon="object-flip-horizontal.png" label="Toggle Ld-hotcorners">toggle.ld</Program>
             <Program icon="window-close.png" label="Xkill">xkill</Program>
