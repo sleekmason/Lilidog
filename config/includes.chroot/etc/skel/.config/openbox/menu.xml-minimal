@@ -13,42 +13,17 @@
 				<execute>thunar</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Web Browser">
-			<action name="Execute">
-				<execute>x-www-browser</execute>
-			</action>
-		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item icon="/usr/share/pixmaps/thunderbird.png" label="Thunderbird">
-			<action name="Execute">
-				<execute>thunderbird</execute>
-			</action>
-		</item>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/applications-other.png" id="root-menu-594711" label="Quick Grab">
-			<item icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">
-				<action name="Execute">
-					<execute>libreoffice</execute>
-				</action>
-			</item>
 			<item icon="/usr/share/pixmaps/geany.xpm" label="Geany">
 				<action name="Execute">
 					<execute>geany</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/ld-icons/spacefm-48-pyramid-green.png" label="Spacefm">
-				<action name="Execute">
-					<execute>spacefm</execute>
-				</action>
-			</item>
 			<item icon="/usr/share/icons/gnome/48x48/apps/system-file-manager.png" label="Pcmanfm">
 				<action name="Execute">
 					<execute>pcmanfm</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
-				<action name="Execute">
-					<execute>lxterminal</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-text-editor.png" label="Mousepad">
@@ -59,26 +34,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-dictionary.png" label="Newsboat">
 				<action name="Execute">
 					<execute>urxvt -g 120x40+120+100 -e newsboat</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/smplayer.xpm" label="SmPlayer">
-				<action name="Execute">
-					<execute>smplayer</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/gpicview.png" label="Gpicview">
-				<action name="Execute">
-					<execute>gpicview</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/pragha.png" label="Pragha">
-				<action name="Execute">
-					<execute>pragha</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/gimp.png" label="Gimp">
-				<action name="Execute">
-					<execute>gimp</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/edit-find.png" label="Catfish File Search">
@@ -93,11 +48,6 @@
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
 			<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
-				<item icon="/usr/share/icons/gnome/48x48/actions/system-run.png" label="LxSession Autostart">
-					<action name="Execute">
-						<execute>lxsession-default-apps</execute>
-					</action>
-				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-system.png" label="Power Manager">
 					<action name="Execute">
 						<execute>xfce4-power-manager-settings</execute>
@@ -184,12 +134,6 @@
 					<execute>lxrandr</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/pixmaps/transmission.xpm" label="Transmission">
-				&gt;
-				<action name="Execute">
-					<execute>transmission-gtk</execute>
-				</action>
-			</item>
 			<item icon="/usr/share/icons/ld-icons/galternatives.png" label="G-Alternatives">
 				<action name="Execute">
 					<execute>galternatives</execute>
@@ -198,26 +142,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/actions/edit-cut.png" label="Kernel Remover">
 				<action name="Execute">
 					<execute>kernel-remover</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/gnome-disks.png" label="Gnome Disks">
-				<action name="Execute">
-					<execute>gnome-disks</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/devices/printer.png" label="Printer Setup">
-				<action name="Execute">
-					<execute>gksudo system-config-printer</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/galculator.xpm" label="Galculator">
-				<action name="Execute">
-					<execute>galculator</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/synaptic.png" label="Synaptic">
-				<action name="Execute">
-					<execute>gksudo synaptic</execute>
 				</action>
 			</item>
 		</menu>
@@ -235,11 +159,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Clipboard Toggle">
 				<action name="Execute">
 					<execute>toggle.parcellite</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Screensaver Toggle">
-				<action name="Execute">
-					<execute>xscreensaver</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Ld-Hotcorners Toggle">
@@ -270,21 +189,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/actions/process-stop.png" label="X-Kill">
 				<action name="Execute">
 					<execute>xkill</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch To Jwm">
-				<action name="Execute">
-					<execute>jwm-entry</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch To Pekwm">
-				<action name="Execute">
-					<execute>pek-entry</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch To Fluxbox">
-				<action name="Execute">
-					<execute>flux-entry</execute>
 				</action>
 			</item>
 		</menu>
