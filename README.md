@@ -66,7 +66,7 @@ The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used.
 - URXVT terminal has font size control (ctl+up/down), transparency and the ability to open urls. <br/>
 Lxterminal is readily available in the menu and launcher for those who prefer it.
 
-- Conky has all sorts of relevant info, including connected drives. Fortune Cookies are in the Conky. <br/>
+- Conky has all sorts of relevant info, including connected drives, number of packages installed, and more. <br/>
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
 - Desktop icons can be enabled and customized using pcmanfm. See lxsession autostart in the menu. <br/>
