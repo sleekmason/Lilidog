@@ -15,6 +15,16 @@
 [exec] (Thunderbird) {thunderbird}
 [separator]
 [submenu](Quick Grab)
+[submenu] (Root Files)
+[exec] (/etc) {gksudo thunar /etc}
+[exec] (/etc/apt/sources.list) {gksudo geany /etc/apt/sources.list}
+[exec] (/usr/share) {gksudo thunar /usr/share}
+[exec] (/usr/share/fonts) {gksudo thunar /usr/share/fonts}
+[exec] (/usr/share/icons) {gksudo thunar /usr/share/icons}
+[exec] (/usr/share/themes) {gksudo thunar /usr/share/themes}
+[exec] (/usr/bin) {gksudo thunar /usr/bin}
+[exec] (/usr/local/bin) {gksudo thunar /usr/local/bin}
+[end]
 [exec] (Writer) {libreoffice}
 [exec] (Geany) {geany}
 [exec] (Spacefm) {spacefm}

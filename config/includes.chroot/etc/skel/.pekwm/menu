@@ -25,6 +25,18 @@ RootMenu = "Pekwm" {
 	Separator {}
 
 	Submenu = "Quick Grab" {
+	Submenu = "Root Files" {
+
+			Entry = "/etc" { Actions = "Exec gksudo thunar /etc" }
+			Entry = "/ect/apt/sources.list" { Actions = "Exec gksudo geany /etc/apt/sources.list" }
+			Entry = "/usr/share" { Actions = "Exec gksudo thunar /usr/share" }
+			Entry = "/usr/share/fonts" { Actions = "Exec gksudo thunar /usr/share/fonts" }
+			Entry = "/usr/share/icons" { Actions = "Exec gksudo thunar /usr/share/icons" }
+			Entry = "/usr/share/themes" { Actions = "Exec gksudo thunar /usr/share/themes" }
+			Entry = "/usr/bin" { Actions = "Exec gksudo thunar /usr/bin" }
+			Entry = "/usr/local/bin" { Actions = "Exec gksudo thunar /usr/local/bin" }
+}
+			Entry = "Mousepad" { Actions = "Exec mousepad" }
 			Entry = "Run.." { Actions = "ShowCmdDialog" }
 			Entry = "Writer" { Actions = "Exec libreoffice" }
 			Entry = "Geany" { Actions = "Exec geany" }

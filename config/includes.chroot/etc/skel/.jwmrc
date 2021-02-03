@@ -23,7 +23,17 @@
             <Program icon="/usr/share/icons/ld-icons/firefox.png" label="Web Browser">firefox-esr</Program>
             <Program icon="thunderbird.png" label="Thunderbird">thunderbird</Program>
         <Menu icon="applications-office.png" label="Quick Grab">
-	        <Program icon="edit-select-all.png" label="Writer">libreoffice</Program>
+	<Menu icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="Root Files">
+            <Program icon="/usr/share/icons/gnome-human/32x32/places/folder-documents.png" label="/etc">gksudo thunar /etc</Program>
+	    <Program icon="/usr/share/icons/gnome-human/32x32/places/folder-documents.png" label="/etc/apt/sources.list">gksudo geany /etc/apt/sources.list</Program>
+	    <Program icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share">gksudo thunar /usr/share</Program>
+	    <Program icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share/fonts">gksudo thunar /usr/share/fonts</Program>
+	    <Program icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share/icons">gksudo thunar /usr/share/icons</Program>
+            <Program icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share/themes">gksudo thunar /usr/share/themes</Program>
+            <Program icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" label="/usr/bin">gksudo thunar /usr/bin</Program>
+            <Program icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" label="/usr/local/bin">gksudo thunar /usr/local/bin</Program>
+ 	</Menu>
+	    <Program icon="edit-select-all.png" label="Writer">libreoffice</Program>
             <Program icon="geany.png" label="Geany">geany</Program>
             <Program icon="system-file-manager.png" label="Spacefm">spacefm</Program>
             <Program icon="system-file-manager.png" label="Pcmanfm">pcmanfm</Program>
