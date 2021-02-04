@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#iconpath="/usr/share/icons/Papirus-Dark/24x24/panel/"
+iconpath="$HOME/.config/tint2/executors/icons/battery/png/"
+
+status=$(cat /sys/class/power_supply/BAT0/status)
+perc=$(cat /sys/class/power_supply/BAT0/capacity)
+
+if [[ $status = "Discharging" ]]; then
+	if [[ $perc -ge 91 ]]; then
+		echo "${iconpath}battery-full.png"
+		echo "$perc%"
+	elif [[ $perc -ge 71 ]]; then
+		echo "${iconpath}battery-good.png"
+		echo "$perc%"
+		elif [[ $perc -ge 51 ]]; then
+			echo "${iconpath}battery-medium.png"
+			echo "$perc%"
+			elif [[ $perc -ge 31 ]]; then
+				echo "${iconpath}battery-low.png"
+				echo "$perc%"
+				elif [[ $perc -ge 16 ]]; then
+					echo "${iconpath}battery-caution.png"
+					echo "$perc%"
+					elif [[ $perc -ge 1 ]]; then
+						echo "${iconpath}battery-empty.png"
+						echo "$perc%"
+	fi
+
+elif [[ $status = "Charging" ]]; then
+	if [[ $perc -ge 90 ]]; then
+		echo "${iconpath}battery-full-charging.png"
+		echo "$perc%"
+	elif [[ $perc -ge 70 ]]; then
+		echo "${iconpath}battery-good-charging.png"
+		echo "$perc%"
+		elif [[ $perc -ge 50 ]]; then
+			echo "${iconpath}battery-medium-charging.png"
+			echo "$perc%"
+			elif [[ $perc -ge 30 ]]; then
+				echo "${iconpath}battery-low-charging.png"
+				echo "$perc%"
+				elif [[ $perc -ge 15 ]]; then
+					echo "${iconpath}battery-caution-charging.png"
+					echo "$perc%"
+					elif [[ $perc -ge 1 ]]; then
+						echo "${iconpath}battery-empty-charging.png"
+						echo "$perc%"		
+	fi
+
+else
+	echo "${iconpath}battery-full-charged.png"
+	echo "$perc%"
+fi
