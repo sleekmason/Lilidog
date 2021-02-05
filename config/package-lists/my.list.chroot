@@ -12,7 +12,6 @@ blackbird-gtk-theme
 btrfs-progs
 build-essential
 catfish
-clipit
 compton
 conky
 cpuid
@@ -115,6 +114,7 @@ obmenu
 openbox-lxde-session
 os-prober
 oss-compat
+parcellite
 p7zip
 p7zip-full
 pciutils
