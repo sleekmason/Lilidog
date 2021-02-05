@@ -19,7 +19,7 @@
     <RootMenu onroot="23">
         <Program icon="utilities-system-monitor.png" label="Terminal">urxvt</Program>
         <Separator/>
-            <Program icon="file-manager.png" label="Thunar">thunar</Program>
+            <Program icon="/usr/share/icons/ld-icons/Thunar.png" label="Thunar">thunar</Program>
             <Program icon="/usr/share/icons/ld-icons/firefox.png" label="Web Browser">firefox-esr</Program>
             <Program icon="thunderbird.png" label="Thunderbird">thunderbird</Program>
         <Menu icon="applications-office.png" label="Quick Grab">
@@ -33,17 +33,17 @@
             <Program icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" label="/usr/bin">gksudo thunar /usr/bin</Program>
             <Program icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" label="/usr/local/bin">gksudo thunar /usr/local/bin</Program>
  	</Menu>
-	    <Program icon="edit-select-all.png" label="Writer">libreoffice</Program>
+	    <Program icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">libreoffice</Program>
             <Program icon="geany.png" label="Geany">geany</Program>
-            <Program icon="system-file-manager.png" label="Spacefm">spacefm</Program>
+            <Program icon="/usr/share/icons/ld-icons/spacefm-48-pyramid-green.png" label="Spacefm">spacefm</Program>
             <Program icon="system-file-manager.png" label="Pcmanfm">pcmanfm</Program>
             <Program icon="accessories-text-editor.png" label="Mousepad">mousepad</Program>
             <Program icon="terminal.png" label="Lxterminal">lxterminal</Program>
-            <Program icon="desktop.png" label="Newsboat">urxvt -g 120x40+120+100 -e newsboat</Program>
-            <Program icon="emblem-photos.png" label="Gpicview">gpicview</Program>
-            <Program icon="smplayer.png" label="Smplayer">smplayer</Program>
-            <Program icon="pragha.png" label="Pragha">pragha</Program>
-            <Program icon="gimp.png" label="Gimp">gimp</Program>
+            <Program icon="/usr/share/icons/gnome/48x48/apps/accessories-dictionary.png" label="Newsboat">urxvt -g 120x40+120+100 -e newsboat</Program>
+            <Program icon="/usr/share/icons/ld-icons/gpicview.png" label="Gpicview">gpicview</Program>
+            <Program icon="/usr/share/pixmaps/smplayer.xpm" label="Smplayer">smplayer</Program>
+            <Program icon="/usr/share/icons/ld-icons/pragha.png" label="Pragha">pragha</Program>
+            <Program icon="/usr/share/icons/ld-icons/gimp.png" label="Gimp">gimp</Program>
             <Program icon="edit-find.png" label="Catfish">catfish</Program>
 	    </Menu>
 	    	      <Menu icon="debian-swirl.png" label="Debian" <Include>/etc/jwm/debian-menu</Include> </Menu>
@@ -52,21 +52,21 @@
 		<Menu icon="preferences-system.png" label="Configuration">
 	    <Program icon="preferences-system.png" label="Power Manager">xfce4-power-manager-settings</Program>
             <Program icon="preferences-desktop-display.png" label="Lxappearance">lxappearance</Program>
-            <Program icon="document-page-setup.png" label="Urxvt Config">geany ~/.Xresources</Program>
+            <Program icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Config">geany ~/.Xresources</Program>
             <Program icon="document-page-setup.png" label="Conky Config">geany ~/.config/conky/conky.conf</Program>
-            <Program icon="document-page-setup.png" label="Compton Config">geany ~/.config/compton.conf</Program>
-            <Program icon="document-page-setup.png" label="Dmenu Apps Config">geany ~/.config/dmenu/dmenu-apps</Program>
+            <Program icon="/usr/share/icons/ld-icons/compton.png" label="Compton Config">geany ~/.config/compton.conf</Program>
+            <Program icon="/usr/share/icons/gnome/48x48/actions/tools-check-spelling.png" label="Dmenu Apps Config">geany ~/.config/dmenu/dmenu-apps</Program>
             <Program icon="preferences-desktop-display.png" label="Window Properties">xprop | xmessage -file -</Program>
 	    </Menu>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">gnome-screenshot -i</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Htop">urxvt -e htop</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lx-randr">lxrandr</Program>
 			<Program icon="gparted.png" label="Gparted">gksudo gparted</Program>
-			<Program icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">galculator</Program>
+			<Program icon="/usr/share/pixmaps/galculator.xpm" label="Galculator">galculator</Program>
 			<Program icon="printer.png" label="Printer Setup">system-config-printer</Program>
 			<Program icon="terminal.png" label="Kernel Remover">kernel-remover</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-desktop.png" label="G-Alternatives">galternatives</Program>
-		        <Program icon="/usr/share/icons/gnome/48x48/devices/media-optical.png" label="Transmission">transmission-gtk</Program>
+		    <Program icon="/usr/share/icons/gnome/48x48/devices/media-optical.png" label="Transmission">transmission-gtk</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/devices/drive-harddisk.png" label="Gnome Disks">gnome-disks</Program>
 			<Program icon="document-page-setup.png" label="Urxvt Config">geany ~/.Xresources</Program>
 			<Program icon="synaptic.png" label="Synaptic">gksudo synaptic</Program>
@@ -84,9 +84,9 @@
 	    </Menu>
 	    <Separator/>
 	    <Program icon="lock.png" label="Lock">slock</Program>
-        <Restart icon="view-fullscreen.png" label="Restart"/>
+        <Restart icon="/usr/share/icons/ld-icons/pixmaps/logout_reboot.png" label="Restart"/>
 <!--      <Exit label="Exit" confirm="true" icon="quit.png"/> -->
-		<Program icon="exit" label="Exit">ld-logout</Program>
+		<Program icon="/usr/share/icons/ld-icons/exit4.png" label="Exit">ld-logout</Program>
     </RootMenu>
 
 
