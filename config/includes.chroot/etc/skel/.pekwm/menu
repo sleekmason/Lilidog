@@ -45,8 +45,8 @@ RootMenu = "Pekwm" {
 			Entry = "Mousepad" { Actions = "Exec mousepad" }
 			Entry = "Lxterminal" { Actions = "Exec lxterminal" }
 			Entry = "Newsboat" { Actions = "Exec urxvt -g 120x40+120+100 -e newsboat" }
-			Entry = "Gpicview" { Actions = "Exec gpicview" }
 			Entry = "SmPlayer" { Actions = "Exec smplayer" }
+			Entry = "Gpicview" { Actions = "Exec gpicview" }
 			Entry = "Pragha" { Actions = "Exec pragha" }
 			Entry = "Gimp" { Actions = "Exec gimp" }
 			Entry = "Catfish File" { Actions = "Exec catfish" }
