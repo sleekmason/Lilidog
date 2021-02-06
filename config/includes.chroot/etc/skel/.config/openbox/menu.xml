@@ -8,24 +8,8 @@
 		</item>
 		<separator/>
 		<separator/>
-		<item icon="/usr/share/icons/ld-icons/Thunar.png" label="Thunar">
-			<action name="Execute">
-				<execute>thunar</execute>
-			</action>
-		</item>
-		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Web Browser">
-			<action name="Execute">
-				<execute>x-www-browser</execute>
-			</action>
-		</item>
-		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item icon="/usr/share/pixmaps/thunderbird.png" label="Thunderbird">
-			<action name="Execute">
-				<execute>thunderbird</execute>
-			</action>
-		</item>
-		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/applications-other.png" id="root-menu-594711" label="Quick Grab">
+			<menu execute="pipe-recent-files" icon="/usr/share/icons/gnome-brave/32x32/places/folder.png" id="ID41" label="Recent Files"/>
 			<menu icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" id="root-menu-594711-105346" label="Root Files">
 				<item icon="/usr/share/icons/gnome-human/32x32/places/folder.png" label="/etc">
 					<action name="Execute">
@@ -129,6 +113,23 @@
 				</action>
 			</item>
 		</menu>
+		<item icon="/usr/share/icons/ld-icons/Thunar.png" label="Thunar">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Firefox">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/pixmaps/thunderbird.png" label="Thunderbird">
+			<action name="Execute">
+				<execute>thunderbird</execute>
+			</action>
+		</item>
+		<separator/>
 		<menu id="/Debian"/>
 		<separator/>
 		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="Debian"/>
