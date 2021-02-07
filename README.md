@@ -23,7 +23,7 @@ For the Unstable build: https://github.com/sleekmason/Lilidog-buster-w-custom-ke
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
 ### Openbox
-[![Openbox2-7-21.png](https://i.postimg.cc/9FNHj27p/Openbox2-7-21.png)](https://postimg.cc/0bmBpLZM)
+[![Openbox-2-7.png](https://i.postimg.cc/QCkrcK4k/Openbox-2-7.png)](https://postimg.cc/V06T8vcd)
 
 ### Fluxbox
 [![Fluxbox-1-26-21.png](https://i.postimg.cc/x1kyjPvP/Fluxbox-1-26-21.png)](https://postimg.cc/hXB7pT3J)
