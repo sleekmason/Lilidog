@@ -13,7 +13,7 @@ Everything is easily accessible, with numerous options to customize.
 
 ### Versions:
 
-There are three versions of Lilidog. This is the stable only build. <br/>
+There are three versions of Lilidog. This is the stable only build, and generally recommended. <br/>
 
 For the minimal build: <br/>
 https://github.com/sleekmason/Liliflux
@@ -48,16 +48,17 @@ The username and password for the live environment is "user", and "live" respect
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
 Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu.
 
-- There are shortcuts for Alsamixer in the volume icon and Htop in the battery icon. <br/>
+- There are shortcuts for Alsamixer in the volume icon and xfce4-power-manager in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
-Hover over the icons to see what they are.
+Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
-- X-screensaver and other handy startup apps readily available through Lxsession Autostart in the menu.
+- X-screensaver and other handy startup apps readily available through the toggles in the menu, <br/>
+or can be activated on login by navigating to Lxsession Autostart in the menu, and enabling.
 
 - Dmenu and Rofi for alternate menu sources. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
 customized Dmenu with only the most commonly used apps. ALT + F5 pulls up Rofi.
 
-- Thunar as default file manager, with Pcmanfm and Spacefm as alternatives.  Custom right-click <br/> 
+- Thunar is the default file manager, with Pcmanfm and Spacefm as alternatives to explore.  Custom right-click <br/> 
 options for each are already enabled.  See what you like best.
 
 - Custom Lilidog Openbox and GTK theme, Gnome Brave Icons, and matching themes for Geany and Mousepad. <br/> 
@@ -106,7 +107,7 @@ Currently clockwise from top left: __Thunar, Compton toggle, Exit menu, urxvt te
 - This build running live uses around 300MB ram. <br/>
 Installed: around 280MB <br/> 
 
-This iso comes in at 1.15 GB
+This iso comes in at 1.18 GB
 
 Installed extras include but not limited to: <br/>
 bash-completion /
@@ -250,8 +251,8 @@ Follow the examples here for further ideas. A whole new world just opened up if 
 https://live-team.pages.debian.net/live-manual/html/live-manual/examples.en.html#tutorial-1
 
 - Please "star" this site!  This lets others know there is something worthwhile here. <br/>
-- Email me, ask questions here, or find me in the forums:)  I always want insight from others! <br/>
-- Feel free to link this page:) Again, this is how others also get to try new things! <br/>
+- Email me, ask questions here, or find me in the forums:) (Private message only in the forums please).  
+- Feel free to link this page. This is how others also get to try new things. <br/>
 
 Contact info: sleekmason@gmail.com
 
@@ -263,6 +264,7 @@ The linux rocks are my wifes:) She paints rocks, and I like em. <br/>
 The rabbit is a local image on the side of a building. Apt for the times. <br/>
 The Cracked Window is from one of our backpacking trips. An old truck, 2000' down. <br/>
 The "Lis" is a changed copy from a print we have.
+The Grub image is Lili out playing in the snow.
 
 ## Lilidog
 
