@@ -24,7 +24,7 @@ menu.items.active.text.color: #BCFFF9
 #======================================
 
 window.active.title.bg: raised gradient vertical
-window.active.title.bg.color: #375159
+window.active.title.bg.color: #135C6E
 window.active.title.bg.colorTo: #000000
 window.active.title.bg.border.color: #476263
 window.active.handle.bg: raised
@@ -32,7 +32,7 @@ window.active.handle.bg.color: #121C1F
 window.active.grip.bg: parentrelative
 window.active.label.bg: parentrelative
 window.active.label.text.color: #85D3DB
-window.*.button.*.bg: parentrelative borders
+window.*.button.*.bg: parentrelative
 window.active.button.*.image.color: #A4EEF5
 window.active.button.*.pressed.image.color: #000000
 window.active.button.disabled.image.color: #2F8AA0
