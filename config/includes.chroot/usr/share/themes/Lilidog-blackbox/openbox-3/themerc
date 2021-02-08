@@ -59,7 +59,7 @@ window.inactive.button.*.image.color: #77B4BA
 padding.width: 1
 padding.height: 1
 border.width: 2
-window.handle.width: 5
+window.handle.width: 3
 window.client.padding.width: 0
 menu.overlap.x: -5
 
