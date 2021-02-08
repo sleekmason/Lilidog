@@ -29,7 +29,7 @@ For the Unstable build: https://github.com/sleekmason/Lilidog-buster-w-custom-ke
 [![Fluxbox-1-26-21.png](https://i.postimg.cc/x1kyjPvP/Fluxbox-1-26-21.png)](https://postimg.cc/hXB7pT3J)
 
 ### Jwm
-[![Jwm-1-26-21.png](https://i.postimg.cc/YC38jxjG/Jwm-1-26-21.png)](https://postimg.cc/9DDynZdC)
+[![Jwm-2-7-21.png](https://i.postimg.cc/8CJ0ZR0B/Jwm-2-7-21.png)](https://postimg.cc/f3sCL9ZJ)
 
 ### Pekwm
 [![Pekwm-1-26-21.png](https://i.postimg.cc/JnQjYY8R/Pekwm-1-26-21.png)](https://postimg.cc/zbVLVj3Q)
