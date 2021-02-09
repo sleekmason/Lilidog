@@ -139,6 +139,7 @@ rofi
 rsync
 rxvt-unicode
 sane-utils
+shellcheck
 smplayer
 smplayer-l10n
 smplayer-themes
