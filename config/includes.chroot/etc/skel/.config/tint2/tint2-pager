@@ -245,10 +245,10 @@ execp_has_icon = 1
 execp_cache_icon = 0
 execp_continuous = 0
 execp_markup = 1
-execp_tooltip = Left-Click for Info. Right-Click for power manager.
+execp_tooltip = Left-Click = Info, Right-Click = Power Manager, Middle-Click = Htop
 execp_lclick_command = b=$(acpi -b) && notify-send "$b"
 execp_rclick_command = xfce4-power-manager -c
-execp_mclick_command = 
+execp_mclick_command = urxvt -e htop
 execp_uwheel_command = 
 execp_dwheel_command = 
 execp_font = Liberation Sans 11
