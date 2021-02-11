@@ -119,7 +119,7 @@
 			</action>
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Firefox">
+		<item icon="/usr/share/icons/ld-icons/eyefox.png" label="Firefox">
 			<action name="Execute">
 				<execute>x-www-browser</execute>
 			</action>
