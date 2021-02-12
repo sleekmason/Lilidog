@@ -39,8 +39,9 @@ For the Unstable build: https://github.com/sleekmason/Lilidog-buster-w-custom-ke
 - Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be added during installation. 
 
-- In the live session, you can switch between all four window managers through the toggles in the menu. <br/> 
-Logging into each separately is also an option.
+- Switch between all four window managers freely while in session through the toggles in the menu. <br/> 
+
+- Switch between four different panels on the fly as well. - Customize your own to be toggled when desired.
 
 The username and password for the live environment is "user", and "live" respectively. <br/>
 
