@@ -5,7 +5,7 @@ cat ~/.local/share/recently-used.xbel | grep file:///  | tail -n15 |  cut -d "\"
 do  
 file=$(echo "$line")
 name=$(echo -en "$file" | sed 's,.*/,,' | sed 's/%20/ /g')
-echo "<item label=\"$name\" icon=\"/usr/share/icons/gnome-wise/32x32/places/folder-documents.png\">
+echo "<item label=\"$name\" icon=\"/usr/share/icons/gnome/32x32/apps/accessories-text-editor.png\">
 		<action name=\"Execute\"><command>xdg-open $line</command></action>
 	</item>"
 done);
