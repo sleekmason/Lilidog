@@ -1,12 +1,16 @@
 #!/bin/bash
 if pgrep -f tint2-pager > /dev/null; then
-    pkill -fx volumeicon &
     pkill -f fbpanel &
     pkill -f tint2
+    pkill -f nm-applet
 else
-    killall tint2
+    killall plank
     killall volumeicon
+    killall nm-applet
+    killall tint2
     killall fbpanel
+    killall stalonetray
     tint2 -c ~/.config/tint2/tint2-pager &
-    fbpanel -p pager
+    fbpanel -p pager &
+    nm-applet
 fi

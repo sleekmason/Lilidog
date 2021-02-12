@@ -102,7 +102,9 @@ RootMenu = "Pekwm" {
 			Entry = "Toggle Screensaver" { Actions = "Exec toggle.xscreensaver" }
 			Entry = "Toggle Ld-hotcorners" { Actions = "Exec toggle.ld" }
 			Entry = "Toggle Monster Panel" { Actions = "Exec toggle.monster" }
-		    Entry = "Toggle Plank Panel" { Actions = "Exec toggle.plank" }
+                        Entry = "Toggle Plank + Tray" { Actions = "Exec toggle.stalonetray" }
+	                Entry = "Toggle FbPanel" { Actions = "Exec toggle.fbpanel" }
+		        Entry = "Toggle Plank" { Actions = "Exec toggle.plank" }
 			Entry = "Xkill" { Actions = "Exec xkill" }
 			Entry = "Switch To Openbox" { Actions = "Exec pek-open-entry" }
 			Entry = "Switch To Fluxbox" { Actions = "Exec pek-flux-entry" }

@@ -18,6 +18,8 @@
 # wasn't one, and I wanted to avoid that for pekwm. ;) --eyez
 
 feh --bg-scale /home/wallpaper/rabbitlife.png &
+pkill -f fbpanel
+pkill -f tint2
 stalonetray &
 plank &
 killall volumeicon ; volumeicon &

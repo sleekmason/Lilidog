@@ -1,12 +1,17 @@
 #!/bin/bash
 if pgrep -xf fbpanel > /dev/null; then
-    pkill -f pager &
-    pkill -f tint2-pager &
+    pkill -fx volumeicon &
     pkill -f fbpanel &
     pkill -f tint2
+    pkill -f nm-applet
 else
-    pkill -f tint2 &
-    pkill -f pager &
+    killall plank
+    killall volumeicon
+    killall nm-applet
+    killall tint2
+    killall fbpanel
+    killall stalonetray
     fbpanel &
     volumeicon &
+    nm-applet
 fi

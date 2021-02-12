@@ -83,6 +83,8 @@
 [exec] (Toggle Screensaver) {toggle.xscreensaver}
 [exec] (Toggle Ld-Hotcorners) {toggle.ld}
 [exec] (Toggle Monster Panel) {toggle.monster}
+[exec] (Toggle Plank+Tray) {toggle.stalonetray}
+[exec] (Toggle plank) {toggle.plank}
 [exec] (Xkill) {xkill}
 [exec] (Switch To Openbox) {open-entry}
 [exec] (Switch To Pekwm) {flux-pek-entry}

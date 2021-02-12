@@ -295,6 +295,11 @@
 					<execute>toggle.monster</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Plank + Tray Toggle">
+				<action name="Execute">
+					<execute>toggle.stalonetray</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Tint2 Panel Toggle">
 				<action name="Execute">
 					<execute>toggle.tint2</execute>

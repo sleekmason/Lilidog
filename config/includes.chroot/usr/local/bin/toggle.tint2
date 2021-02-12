@@ -2,9 +2,14 @@
 if pgrep -xf tint2 > /dev/null; then
     pkill -f tint2 &
     pkill -f fbpanel
+    pkill -f nm-applet
 else
-    tint2 &
-    pkill -f tint2-pager &
-    pkill -f fbpanel &
-    pkill -f volumeicon
+    killall plank
+    killall volumeicon
+    killall nm-applet
+    killall tint2
+    killall fbpanel
+    killall stalonetray
+    tint2 & 
+    nm-applet &  
 fi

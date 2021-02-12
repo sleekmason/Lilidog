@@ -5,11 +5,17 @@ pkill -f plank
 pkill -f ld-hotcorners
 pkill -f conky
 pkill -f compton
+pkill -f fbpanel
+pkill -f tint2
 pkill -x pekwm
-openbox-lxde & toggle.monster & feh --bg-scale /home/wallpaper/linux2.png
+openbox-lxde & feh --bg-scale /home/wallpaper/linux2.png
 pkill -f ld-hotcorners &
+tint2 -c ~/.config/tint2/tint2-pager &
+fbpanel -p pager &
 pkill -f volumeicon &
+
 killall compton ; compton &
 killall nm-applet ; nm-applet &
 killall conky ; conky &
+
 xfce4-power-manager

@@ -5,4 +5,6 @@ pkill -f plank
 pkill -f ld-hotcorners
 pkill -f conky
 pkill -f compton
+pkill -f fbpanel
+pkill -f tint2
 pkill -xf pekwm & /usr/bin/startfluxbox

@@ -2,5 +2,9 @@
 # Small script to change from Fluxbox to pekwm during session.
 pkill -f conky
 pkill -f compton
+pkill -f fbpanel
+pkill -f tint2
+pkill -f stalonetray
+pkill -f plank
 fluxbox-remote exit
 pekwm

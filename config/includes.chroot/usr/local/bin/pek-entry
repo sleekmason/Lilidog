@@ -5,4 +5,6 @@ pkill -f compton
 pkill -f ld-hotcorners
 pkill -f fbpanel
 pkill -f tint2
+pkill -f stalonetray
+pkill -f plank
 pkill -x openbox & pekwm

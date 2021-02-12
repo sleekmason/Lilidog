@@ -1,5 +1,7 @@
 #!/bin/bash
 # Small script to change from Fluxbox to jwm during session.
+pkill -f stalonetray
+pkill -f plank
 pkill -f conky
 pkill -f compton
 pkill -f fbpanel
