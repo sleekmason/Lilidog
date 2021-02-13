@@ -1,7 +1,7 @@
-﻿# Lilidog-Linux Based on Debian Buster (stable)
+﻿# Lilidog Linux Based on Debian stable
 ## LXDE With Openbox, Fluxbox, Jwm, and Pekwm.  Optimized - 64 bit version.<br/>
 
-Lilidog is a dark themed distro build based on LXDE. <br/> 
+Lilidog is a dark themed distro based on LXDE. <br/> 
 Options are available for Openbox, Fluxbox, Jwm, or Pekwm. <br/> 
 Toggle freely between the four while in the default session. <br/>
 All Window managers can be accessed separately through the login screen, but no toggling in this case.
@@ -9,7 +9,7 @@ All Window managers can be accessed separately through the login screen, but no 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize.
 
-### This is the stable version. Buster repos only.
+### This is the stable version. Stable repos only.
 
 ### Versions:
 
@@ -18,7 +18,7 @@ There are three versions of Lilidog. This is the stable only build, and generall
 For the minimal build: <br/>
 https://github.com/sleekmason/Liliflux
 
-For the Unstable build: https://github.com/sleekmason/Lilidog-buster-w-custom-kernel
+For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
 
 ### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
 
