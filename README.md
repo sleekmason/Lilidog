@@ -20,7 +20,10 @@ https://github.com/sleekmason/Liliflux
 
 For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
 
-### Instructions on building your own ISO of Lilidog are at the end of this page. Easy peasy.
+For the present time, there is only the stable version available for download, <br/>
+but the rest can be buillt with the instructions in their respective sites.
+
+[![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
 ### Openbox
 [![Openbox-gradient-2-7-21.png](https://i.postimg.cc/qBKYdxQN/Openbox-gradient-2-7-21.png)](https://postimg.cc/Wt2SGrBV)
@@ -147,26 +150,10 @@ wicd /
 winfuncs /
 xbindkeys-config /
 
-If you came here hoping to download The Lilidog Distro, I'm afraid it won't happen from here. <br/>
-If somebody wanted to actually host the iso I would keep it updated and add cool stuff here and there. Well, I will anyway. 
-
-But all is not lost!  You can build your own distro with everything above, and install it or just run it live. <br/>
+ 
 Follow the instructions below to build your own iso using the Debian Live-build system:)
 
-## Quick instructions: <br/>
-Clone or download the Lilidog-Buster zip file so you have access to all the necessary files.
-
-Open a terminal in the resultant folder and:
-```sh
-sudo apt install live-build
-sudo lb build
-```
-Thats it. The iso will be in the main folder when completed. Read below for potential problems.
-
-## Less quick, but you learn something and have control over the process.
-
-
-### Recommended
+### Instructions
 Unzip the file somewhere to reveal the folder inside.  You will not be building directly in <br/>
 this folder.  It is to copy files from only, and can be deleted once you have a build.
 
