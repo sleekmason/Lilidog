@@ -60,7 +60,7 @@ session.screen0.clickRaises:	true
 session.tabsAttachArea:	Window
 session.doubleClickInterval:	250
 session.colorsPerChannel:	4
-session.slitlistFile:	/home/sleekmason/.fluxbox/slitlist
+session.slitlistFile:	~/.fluxbox/slitlist
 session.autoRaiseDelay:	250
 session.keyFile:	~/.fluxbox/keys
 session.appsFile:	~/.fluxbox/apps
@@ -69,7 +69,7 @@ session.forcePseudoTransparency:	false
 session.tabPadding:	0
 session.menuFile:	~/.fluxbox/menu1
 session.cacheMax:	200
-session.styleFile:	~/.fluxbox/styles/sleek2lilidog
+session.styleFile:	~/.fluxbox/styles/Lilidog-Dark
 session.styleOverlay:	~/.fluxbox/overlay
 session.configVersion:	13
 session.ignoreBorder:	false
