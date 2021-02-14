@@ -21,7 +21,7 @@ https://github.com/sleekmason/Liliflux
 For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
 
 For the present time, there is only the stable version available for download, <br/>
-but the rest can be buillt with the instructions in their respective sites.
+but the rest can be built with the instructions from their respective sites.
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
