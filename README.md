@@ -9,18 +9,16 @@ All Window managers can be accessed separately through the login screen, but no 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize.
 
-### This is the stable version. Stable repos only.
+### This is the stable version. Stable repos only. 
+[![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-### Versions:
 
-There are three versions of Lilidog. This is the stable only build, and generally recommended. <br/>
+### Other Versions:
 
-For the minimal build: <br/>
-https://github.com/sleekmason/Liliflux
+For the minimal build: https://github.com/sleekmason/Lilidog-Minimal
 
 For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
 
-To download any of the above: https://sourceforge.net/projects/lilidog/files/Releases/
 
 ### Openbox
 [![Openbox-gradient-2-7-21.png](https://i.postimg.cc/qBKYdxQN/Openbox-gradient-2-7-21.png)](https://postimg.cc/Wt2SGrBV)
