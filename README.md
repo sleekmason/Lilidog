@@ -9,11 +9,11 @@ All Window managers can be accessed separately through the login screen, but no 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize.
 
-### This is the stable version. You can download the full ISO from Sourceforge:
+- This is the stable version. You can download the full ISO from Sourceforge:
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
 
-### Other Versions on Github:
+- Other Versions on Github:
 
 For the minimal build: https://github.com/sleekmason/Lilidog-Minimal
 
@@ -149,7 +149,8 @@ xbindkeys-config /
  
 Follow the instructions below to build your own iso using the Debian Live-build system:)
 
-### Instructions
+### Instructions for building your own if you so choose!
+Download the Lilidog zip from the github code box at the top of this page. (Not the huge green Download:)
 Unzip the file somewhere to reveal the folder inside.  You will not be building directly in <br/>
 this folder.  It is to copy files from only, and can be deleted once you have a build.
 
@@ -235,7 +236,7 @@ Follow the examples here for further ideas. A whole new world just opened up if 
 https://live-team.pages.debian.net/live-manual/html/live-manual/examples.en.html#tutorial-1
 
 - Please "star" this site!  This lets others know there is something worthwhile here. <br/>
-- Email me, ask questions here, or find me in the forums:) (Private message only in the forums please).  
+- Ask questions here, or on Sourceforge. <br/>
 - Feel free to link this page. This is how others also get to try new things. <br/>
 
 Contact info: sleekmason@gmail.com
