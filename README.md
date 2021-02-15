@@ -9,11 +9,11 @@ All Window managers can be accessed separately through the login screen, but no 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize.
 
-### This is the stable version. Stable repos only. 
+### This is the stable version. You can download the full ISO from Sourceforge:
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
 
-### Other Versions:
+### Other Versions on Github:
 
 For the minimal build: https://github.com/sleekmason/Lilidog-Minimal
 
