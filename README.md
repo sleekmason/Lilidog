@@ -20,10 +20,7 @@ https://github.com/sleekmason/Liliflux
 
 For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
 
-For the present time, there is only the stable version available for download, <br/>
-but the rest can be built with the instructions from their respective sites.
-
-[![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
+To download any of the above: https://sourceforge.net/projects/lilidog/files/Releases/
 
 ### Openbox
 [![Openbox-gradient-2-7-21.png](https://i.postimg.cc/qBKYdxQN/Openbox-gradient-2-7-21.png)](https://postimg.cc/Wt2SGrBV)
@@ -85,6 +82,7 @@ To change this to kernel default, delete 60-scheduler.rules in /etc/udev/rules.d
 
 - Feh sets the wallpaper directly in lxsession autostart rather than pointing to ~/.fehbg <br/>
 After installation, you may want to change this to ~/.fehbg & in lxsession autostart for customization. <br/>
+
 If you would prefer to use icons on the desktop, enable __pcmanfm --desktop --profile__ in Lxsession autostart.
 
 - My wife painted rocks for the wallpaper and I found I like them quite a bit:) Maybe you will too.<br/> 
