@@ -13,11 +13,11 @@ This is the stable version. You can download the full ISO from Sourceforge:
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
+Lilidog-Minimal and Lilidog-Custom have releases here as well: https://sourceforge.net/projects/lilidog/files/Releases/
 
 ### Other Versions on Github:
 
 For the minimal build: https://github.com/sleekmason/Lilidog-Minimal
-
 For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
 
 
