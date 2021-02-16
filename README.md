@@ -82,7 +82,7 @@ To change this to kernel default, delete 60-scheduler.rules in /etc/udev/rules.d
 - Feh sets the wallpaper directly in lxsession autostart rather than pointing to ~/.fehbg <br/>
 After installation, you may want to change this to ~/.fehbg & in lxsession autostart for customization. <br/>
 
-If you would prefer to use icons on the desktop, enable __pcmanfm --desktop --profile__ in Lxsession autostart.
+- Icons on the desktop by enabling  __pcmanfm --desktop --profile__ in Lxsession autostart.
 
 - My wife painted rocks for the wallpaper and I found I like them quite a bit:) Maybe you will too.<br/> 
 Feel free to use them however you like, or delete them and point to something else. No worries:) <br/> 
@@ -147,8 +147,8 @@ wicd /
 winfuncs /
 xbindkeys-config /
 
- Download the full ISO from the green download box above, or follow <br/>
- the instructions below to build your own iso using the Debian Live-build system:)
+Download the full ISO from the green download box above, or follow <br/>
+the instructions below to build your own iso using the Debian Live-build system:)
 
 ### Instructions for building your own if you so choose!
 
