@@ -35,14 +35,14 @@ For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
 
 ### Features:
 
-- Based on Debian Buster with contrib and non-free sources enabled by default. <br/>
+- Based on Debian Stable with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be added during installation. 
 
 - Switch between all four window managers freely while in session through the toggles in the menu. <br/> 
 
 - Switch between four different panels on the fly as well. - Customize your own to be toggled when desired.
 
-The username and password for the live environment is "user", and "live" respectively. <br/>
+- The username and password for the live environment is "user", and "live" respectively. <br/>
 
 - Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
@@ -147,11 +147,12 @@ wicd /
 winfuncs /
 xbindkeys-config /
 
- 
-Follow the instructions below to build your own iso using the Debian Live-build system:)
+ Download the full ISO from the green download box above, or follow <br/>
+ the instructions below to build your own iso using the Debian Live-build system:)
 
 ### Instructions for building your own if you so choose!
-Download the Lilidog zip from the github code box at the top of this page. (Not the huge green Download:)
+
+Download the Lilidog zip from the github code box at the top of this page. (Not the huge green Download:) <br/>
 Unzip the file somewhere to reveal the folder inside.  You will not be building directly in <br/>
 this folder.  It is to copy files from only, and can be deleted once you have a build.
 
