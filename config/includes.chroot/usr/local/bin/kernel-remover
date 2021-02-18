@@ -292,7 +292,7 @@ if [ "${force}" -eq 1 ]; then
 	done
 
 	MSG="$(eval_gettext "the following kernels have been removed: \"${KernelList}\"")"
-	echo $MSG
+	"echo $MSG"
 else
 	select_more "${TITLE}" "${CURRENT}" ${KernelList} 
 	if [ "$?" -ne 0 ]; then
@@ -312,7 +312,7 @@ else
 			remove_one_kernel "$i"
 			one_removed=true
 		else
-			msgbox "${TiTLE}" "$(gettext "Kernel not removed:") $i"
+			msgbox "${TITLE}" "$(gettext "Kernel not removed:") $i"
 		fi
 	done
 fi

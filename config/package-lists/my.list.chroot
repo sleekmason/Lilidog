@@ -121,6 +121,7 @@ pciutils
 pcmciautils
 pcmanfm
 pekwm
+pep8
 plank
 pnmixer
 pragha
@@ -202,3 +203,4 @@ xsltproc
 yad
 b43-fwcutter
 firmware-b43-installer
+firmware-b43legacy-installer

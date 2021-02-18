@@ -80,7 +80,7 @@ fi
 type xscreensaver >/dev/null 2>&1
 RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
-xscrsav=$(which xscreensaver)
+xscrsav=$(xscreensaver -v)
 active_xscrsav=$(pidof "$xscrsav")
 if [[ -z "$active_xscrsav" ]]; then
 xscreensaver -no-splash &
@@ -100,7 +100,7 @@ if [[ "$current_user_id" == 0 ]]; then
 su "$xscrsav_user" -c "xscreensaver-command -lock"
 exit 0
 fi
-yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_iico" --fixed --center --on-top --skip-taskbar --text="\nxscreensaver was started by another user.\nso current user can't use the lock function.\nauto-start xscreensaver with your session.\n" --button="OK!$pmlo_buto!OK"
+yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_iico" --fixed --center --on-top --skip-taskbar --text="\\nxscreensaver was started by another user.\\nso current user can't use the lock function.\\nauto-start xscreensaver with your session.\\n" --button="OK!$pmlo_buto!OK"
 exit 0
 type gnome-screensaver >/dev/null 2>&1
 RETVAL=$?
@@ -116,25 +116,25 @@ exit 0
 fi
 ;;
 3)
-pkill -KILL -u $USER
+pkill -KILL -u "$USER"
 RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
 id_of_session=$(loginctl --no-ask-password session-status | head -n 1 | awk '{print $1}')
-pkill -KILL -u $USER
+pkill -KILL -u "$USER"
 RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-pmlo_logout=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\nyour system policy seems to be preventing,\nyou from completing the logout operation.\n\n<b>continue logout with superuser privilege?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_logout=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\\nyour system policy seems to be preventing,\\nyou from completing the logout operation.\\n\\n<b>continue logout with superuser privilege?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_logout=$?
 case "$pmlo_logout" in
 1)
 exit 1
 ;;
 2)
-pmlo_logout_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\n<b>authentication is required to perform this action.</b>\n\n[sudo] password for <b>$pmlo_user</b>:\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
+pmlo_logout_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\\n<b>authentication is required to perform this action.</b>\\n\\n[sudo] password for <b>$pmlo_user</b>:\\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
 pmlo_logout_pass=$?
 case "$pmlo_logout_pass" in
 1)
@@ -147,7 +147,7 @@ fi
 sudo -S <<<"$pmlo_logout_pass" true
 RETVAL=$?
 if ! [[ "$RETVAL" == 0 ]]; then
-pmlo_logout_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\nincorrect password entered.\n\n<b>would you like to try again?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_logout_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\\nincorrect password entered.\\n\\n<b>would you like to try again?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_logout_pass_check=$?
 case "$pmlo_logout_pass_check" in
 1)
@@ -175,7 +175,7 @@ RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\nfailed to complete the logout operation." --button="OK!$pmlo_buto!OK"
+yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\\nfailed to complete the logout operation." --button="OK!$pmlo_buto!OK"
 exit 1
 ;;
 130)
@@ -200,14 +200,14 @@ RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-pmlo_suspend=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\nyour system policy seems to be preventing,\nyou from completing this suspend process.\n\n<b>continue suspend with superuser privilege?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_suspend=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\\nyour system policy seems to be preventing,\\nyou from completing this suspend process.\\n\\n<b>continue suspend with superuser privilege?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_suspend=$?
 case "$pmlo_suspend" in
 1)
 exit 1
 ;;
 2)
-pmlo_suspend_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\n<b>authentication is required to perform this action.</b>\n\n[sudo] password for <b>$pmlo_user</b>:\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
+pmlo_suspend_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\\n<b>authentication is required to perform this action.</b>\\n\\n[sudo] password for <b>$pmlo_user</b>:\\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
 pmlo_suspend_pass=$?
 case "$pmlo_suspend_pass" in
 1)
@@ -220,7 +220,7 @@ fi
 sudo -S <<<"$pmlo_suspend_pass" true
 RETVAL=$?
 if ! [[ "$RETVAL" == 0 ]]; then
-pmlo_suspend_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\nincorrect password entered.\n\n<b>would you like to try again?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_suspend_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\\nincorrect password entered.\\n\\n<b>would you like to try again?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_suspend_pass_check=$?
 case "$pmlo_suspend_pass_check" in
 1)
@@ -242,7 +242,7 @@ RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\nfailed to complete the suspend operation." --button="OK!$pmlo_buto!OK"
+yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\\nfailed to complete the suspend operation." --button="OK!$pmlo_buto!OK"
 exit 1
 ;;
 130)
@@ -267,14 +267,14 @@ RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-pmlo_reboot=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\nyour system policy seems to be preventing,\nyou from completing the reboot operation.\n\n<b>continue reboot with superuser privilege?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_reboot=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\\nyour system policy seems to be preventing,\\nyou from completing the reboot operation.\\n\\n<b>continue reboot with superuser privilege?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_reboot=$?
 case "$pmlo_reboot" in
 1)
 exit 1
 ;;
 2)
-pmlo_reboot_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\n<b>authentication is required to perform this action.</b>\n\n[sudo] password for <b>$pmlo_user</b>:\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
+pmlo_reboot_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\\n<b>authentication is required to perform this action.</b>\\n\\n[sudo] password for <b>$pmlo_user</b>:\\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
 pmlo_reboot_pass=$?
 case "$pmlo_reboot_pass" in
 1)
@@ -287,7 +287,7 @@ fi
 sudo -S <<<"$pmlo_reboot_pass" true
 RETVAL=$?
 if ! [[ "$RETVAL" == 0 ]]; then
-pmlo_reboot_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\nincorrect password entered.\n\n<b>would you like to try again?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_reboot_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\\nincorrect password entered.\\n\\n<b>would you like to try again?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_reboot_pass_check=$?
 case "$pmlo_reboot_pass_check" in
 1)
@@ -309,7 +309,7 @@ RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\nfailed to complete the reboot operation." --button="OK!$pmlo_buto!OK"
+yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\\nfailed to complete the reboot operation." --button="OK!$pmlo_buto!OK"
 exit 1
 ;;
 130)
@@ -334,14 +334,14 @@ RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-pmlo_poweroff=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\nyour system policy seems to be preventing,\nyou from completing shut down operation.\n\n<b>continue poweroff with superuser privilege?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_poweroff=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_qico" --fixed --center --on-top --skip-taskbar --text="\\nyour system policy seems to be preventing,\\nyou from completing shut down operation.\\n\\n<b>continue poweroff with superuser privilege?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_poweroff=$?
 case "$pmlo_poweroff" in
 1)
 exit 1
 ;;
 2)
-pmlo_poweroff_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\n<b>authentication is required to perform this action.</b>\n\n[sudo] password for <b>$pmlo_user</b>:\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
+pmlo_poweroff_pass=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_pico" --fixed --center --on-top --skip-taskbar --text="\\n<b>authentication is required to perform this action.</b>\\n\\n[sudo] password for <b>$pmlo_user</b>:\\n" --entry --hide-text --button="Cancel!$pmlo_butn!Cancel:1" --button="OK!$pmlo_buto!Continue:2")
 pmlo_poweroff_pass=$?
 case "$pmlo_poweroff_pass" in
 1)
@@ -354,7 +354,7 @@ fi
 sudo -S <<<"$pmlo_poweroff_pass" true
 RETVAL=$?
 if ! [[ "$RETVAL" == 0 ]]; then
-pmlo_poweroff_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\nincorrect password entered.\n\n<b>would you like to try again?</b>\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
+pmlo_poweroff_pass_check=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_aico" --fixed --center --on-top --skip-taskbar --text="\\nincorrect password entered.\\n\\n<b>would you like to try again?</b>\\n" --button="NO!$pmlo_butn!Cancel:1" --button="YES!$pmlo_buto!Continue:2")
 pmlo_poweroff_pass_check=$?
 case "$pmlo_poweroff_pass_check" in
 1)
@@ -376,7 +376,7 @@ RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
 exit 0
 fi
-yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\nfailed to complete the poweroff operation." --button="OK!$pmlo_buto!OK"
+yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --image="$pmlo_eico" --fixed --center --on-top --skip-taskbar --text="\\nfailed to complete the poweroff operation." --button="OK!$pmlo_buto!OK"
 exit 1
 ;;
 130)

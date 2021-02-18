@@ -1,10 +1,10 @@
 #!/bin/sh
 echo "<openbox_pipe_menu>"
 files=$(
-cat ~/.local/share/recently-used.xbel | grep file:///  | tail -n15 |  cut -d "\"" -f 2 | tac | while read -r line; 
+grep 'file:///' ~/.local/share/recently-used.xbel | tail -n15 |  cut -d "\"" -f 2 | tac | while read -r line;
 do  
-file=$(echo "$line")
-name=$(echo -en "$file" | sed 's,.*/,,' | sed 's/%20/ /g')
+file="$line"
+name=$(echo "$file" | sed 's,.*/,,' | sed 's/%20/ /g')
 echo "<item label=\"$name\" icon=\"/usr/share/icons/gnome/32x32/apps/accessories-text-editor.png\">
 		<action name=\"Execute\"><command>xdg-open $line</command></action>
 	</item>"
