@@ -9,7 +9,7 @@
 		<separator/>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/applications-other.png" id="root-menu-594711" label="Quick Grab">
-			<menu execute="pipe-recent-files" icon="/usr/share/icons/gnome-brave/32x32/places/folder.png" id="ID41" label="Recent Files"/>
+			<menu execute="pipe-recent-files -t gnome" icon="/usr/share/icons/gnome-brave/32x32/places/folder.png" id="ID41" label="Recent Files"/>
 			<menu icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" id="root-menu-594711-105346" label="Root Files">
 				<item icon="/usr/share/icons/gnome-human/32x32/places/folder.png" label="/etc">
 					<action name="Execute">

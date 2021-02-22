@@ -18,6 +18,7 @@ cpuid
 crda
 curl
 dbus-user-session
+dconf-editor
 desktop-base
 dosfstools
 dunst
@@ -185,6 +186,7 @@ xdg-utils
 xdotool
 xfce4-power-manager
 xfonts-cyrillic
+xmlstarlet
 xorg
 xorriso
 xscreensaver
