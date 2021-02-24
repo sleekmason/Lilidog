@@ -76,6 +76,7 @@ jwm
 libavcodec-extra
 libexo-1-0
 libfm-modules
+libglib2.0-bin
 libncurses5-dev
 libnotify-bin
 libreoffice-gtk2
