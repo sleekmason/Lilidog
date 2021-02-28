@@ -124,7 +124,7 @@
 				<execute>x-www-browser</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/pixmaps/thunderbird.png" label="Thunderbird">
+		<item icon="/usr/share/thunderbird/chrome/icons/default/default48.png" label="Thunderbird">
 			<action name="Execute">
 				<execute>thunderbird</execute>
 			</action>
@@ -201,11 +201,6 @@
 						<execute>geany ~/.config/dmenu/apps</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-games.png" label="Ld-hotcorners Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
-					</action>
-				</item>
 			</menu>
 			<item icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">
 				<action name="Execute">
@@ -280,14 +275,14 @@
 					<execute>toggle.parcellite</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Hotcorners Toggle">
+				<action name="Execute">
+					<execute>toggle.lwa</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Screensaver Toggle">
 				<action name="Execute">
 					<execute>xscreensaver</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Ld-Hotcorners Toggle">
-				<action name="Execute">
-					<execute>toggle.ld</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Monster Panel Toggle">

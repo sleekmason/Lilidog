@@ -80,8 +80,8 @@
 [exec] (Toggle Conky) {toggle.conky}
 [exec] (Toggle Compton) {toggle.compton2}
 [exec] (Toggle Clipboard) {toggle.parcellite}
+[exec] (Toggle Hotcorners) {toggle.lwa}
 [exec] (Toggle Screensaver) {toggle.xscreensaver}
-[exec] (Toggle Ld-Hotcorners) {toggle.ld}
 [exec] (Toggle Monster Panel) {toggle.monster}
 [exec] (Toggle Plank+Tray) {toggle.stalonetray}
 [exec] (Toggle plank) {toggle.plank}

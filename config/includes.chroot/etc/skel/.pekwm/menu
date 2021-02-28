@@ -79,9 +79,9 @@ RootMenu = "Pekwm" {
 			Entry = "Lxrandr" { Actions = "Exec lxrandr" }
 			Entry = "Gparted" { Actions = "Exec gksudo gparted" }
 			Entry = "Synaptic" { Actions = "Exec gksudo synaptic" }
-			Entry = "Printer Setup" { Actions = "Exec gksudo system-config-printer" }
 			Entry = "Gnome Disks" { Actions = "Exec gnome-disks" }
 			Entry = "Transmission" { Actions = "Exec transmission-gtk" }
+			Entry = "Printer Setup" { Actions = "Exec gksudo system-config-printer" }
 			Entry = "G-Alternatives" { Actions = "Exec galternatives" }
 			Entry = "Kernel Remover" { Actions = "Exec kernel-remover" }
 			
@@ -99,8 +99,8 @@ RootMenu = "Pekwm" {
 			Entry = "Toggle Conky" { Actions = "Exec toggle.conky" }
 			Entry = "Toggle Compton" { Actions = "Exec toggle.compton" }
 			Entry = "Toggle Clipboard" { Actions = "Exec toggle.parcellite" }
+			Entry = "Toggle Hotcorners" { Actions = "Exec toggle.lwa" }
 			Entry = "Toggle Screensaver" { Actions = "Exec toggle.xscreensaver" }
-			Entry = "Toggle Ld-hotcorners" { Actions = "Exec toggle.ld" }
 			Entry = "Toggle Monster Panel" { Actions = "Exec toggle.monster" }
                         Entry = "Toggle Plank + Tray" { Actions = "Exec toggle.stalonetray" }
 	                Entry = "Toggle FbPanel" { Actions = "Exec toggle.fbpanel" }

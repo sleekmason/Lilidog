@@ -1,0 +1,6 @@
+#!/bin/bash
+if pgrep -f lwa-hot-corners > /dev/null; then
+    pkill -f lwa-hot-corners
+else
+    lwa-hot-corners ~/.config/lwa-hotcornersrc &
+fi
