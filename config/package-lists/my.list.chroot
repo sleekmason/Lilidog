@@ -18,6 +18,7 @@ cpuid
 crda
 curl
 dbus-user-session
+dbus-x11
 dconf-editor
 desktop-base
 dosfstools
