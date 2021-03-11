@@ -24,8 +24,8 @@ menu.items.active.text.color: #CCE6EB
 #======================================
 
 window.active.title.bg: raised gradient vertical
-window.active.title.bg.color: #76857C
-window.active.title.bg.colorTo: #C0C4C4
+window.active.title.bg.color: #656E68
+window.active.title.bg.colorTo: #A0A8A7
 window.active.title.bg.border.color: #476263
 window.active.handle.bg: raised
 window.active.handle.bg.color: #7D8581
