@@ -37,7 +37,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>Lilidog-Darkbox</name>
+    <name>Lilidog-Claybox</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -53,7 +53,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Liberation Sans</name>
-      <size>11</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -62,7 +62,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Liberation Sans</name>
-      <size>11</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -71,7 +71,7 @@
     </font>
     <font place="MenuHeader">
       <name>Liberation Sans</name>
-      <size>11</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -80,7 +80,7 @@
     </font>
     <font place="MenuItem">
       <name>Liberation Sans</name>
-      <size>11</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->

@@ -12,7 +12,7 @@ menu.separator.color: #1B313B
 menu.items.bg: raised gradient diagonal
 menu.items.bg.color: #767D79
 menu.items.bg.colorTo: #89918D
-menu.items.text.color: #0F0E0E
+menu.items.text.color: #0D0B0B
 menu.items.disabled.text.color: #545E59
 menu.items.active.bg: raised border
 menu.items.active.bg.color: #5E6963
@@ -31,7 +31,7 @@ window.active.handle.bg: raised
 window.active.handle.bg.color: #7D8581
 window.active.grip.bg: parentrelative
 window.active.label.bg: parentrelative
-window.active.label.text.color: #0F0F0F
+window.active.label.text.color: #0D0B0B
 window.*.button.*.bg: parentrelative
 window.active.button.*.image.color: #000000
 window.active.button.*.pressed.image.color: #ffffff
