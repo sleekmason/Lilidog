@@ -54,12 +54,13 @@ URxvt.mapAlert:             true
 ! URxvt*transparent:          true
 !---With Compositor enabled:
 URxvt.depth: 32
-URxvt.background: rgba:0000/0000/0000/bbbb
+!URxvt.background: rgba:0000/0000/0000/bbbb
+URxvt.background:         #050505
 
 
 !---URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
 ! URxvt*shading:              110
-URxvt.blurRadius:           40
+URxvt.blurRadius:           20
 URxvt.fading:               0
 ! URxvt.tintColor:            #ffffff
 
@@ -74,11 +75,10 @@ URxvt.tabbed.tab-fg:        5
 
 URxvt.cursorColor:          #8CC9D0
 URxvt.pointerColor:         #15ACCC
-! URxvt.background:         #000000
 URxvt.foreground:           #8BAAAD
 URxvt.underlineColor:       #DE9D00
 URxvt.throughColor:         #57AABA
-URxvt.highlightColor:       #394746
+URxvt.highlightColor:       #243E42
 URxvt.color0:               #000000
 URxvt.color1:               #15ACCC
 URxvt.color2:               #15ACCC
