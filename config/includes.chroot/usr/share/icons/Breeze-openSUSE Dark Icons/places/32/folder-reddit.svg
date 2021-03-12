@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="folder-reddit.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="7.375"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs3051">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4538">
+      <stop
+         style="stop-color:#00a489;stop-opacity:1"
+         offset="0"
+         id="stop4534" />
+      <stop
+         style="stop-color:#006453;stop-opacity:1"
+         offset="1"
+         id="stop4536" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4530">
+      <stop
+         style="stop-color:#004c5a;stop-opacity:1"
+         offset="0"
+         id="stop4526" />
+      <stop
+         style="stop-color:#00a5be;stop-opacity:1"
+         offset="1"
+         id="stop4528" />
+    </linearGradient>
+    <style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      .ColorScheme-Background {
+        color:#eff0f1;
+      }
+      .ColorScheme-Highlight {
+        color:#3daee9;
+      }
+      .ColorScheme-ViewText {
+        color:#31363b;
+      }
+      .ColorScheme-ViewBackground {
+        color:#fcfcfc;
+      }
+      .ColorScheme-ViewHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ViewFocus{
+        color:#3daee9;
+      }
+      .ColorScheme-ButtonText {
+        color:#31363b;
+      }
+      .ColorScheme-ButtonBackground {
+        color:#eff0f1;
+      }
+      .ColorScheme-ButtonHover {
+        color:#93cee9;
+      }
+      .ColorScheme-ButtonFocus{
+        color:#3daee9;
+      }
+      </style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4530"
+       id="linearGradient4532"
+       x1="12"
+       y1="11"
+       x2="23.813559"
+       y2="34.711864"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4538"
+       id="linearGradient4540"
+       x1="2"
+       y1="6.5"
+       x2="30"
+       y2="6.5"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     style="fill:url(#linearGradient4532);fill-opacity:1;stroke:none"
+     d="M 2 3 L 2 10 L 1 10 L 1 29 L 12 29 L 13 29 L 31 29 L 31 8 L 30 8 L 30 5 L 16 5 L 14 3 L 2 3 z "
+     class="ColorScheme-Highlight"
+     id="path4" />
+  <path
+     style="fill-opacity:1;fill-rule:evenodd;fill:url(#linearGradient4540)"
+     d="m 2,3 0,7 9,0 L 13,8 30,8 30,5 16,5 14,3 2,3 Z"
+     id="path6" />
+  <path
+     style="fill:#ffffff;fill-opacity:0.2;fill-rule:evenodd"
+     d="M 14 3 L 15 6 L 30 6 L 30 5 L 16 5 L 14 3 z M 13 8 L 11 10 L 1 10 L 1 11 L 12 11 L 13 8 z "
+     id="path8" />
+  <path
+     style="fill-opacity:0.2;fill-rule:evenodd"
+     d="M 13 8 L 11 9 L 2 9 L 2 10 L 11 10 L 13 8 z M 1 28 L 1 29 L 31 29 L 31 28 L 1 28 z "
+     class="ColorScheme-Text"
+     id="path10" />
+  <path
+     d="m 22.786419,17.779054 c 0,-0.913979 -0.743568,-1.655209 -1.655135,-1.655209 -0.359141,0 -0.70212,0.115101 -0.985285,0.324618 -0.803456,-0.405193 -1.758815,-0.649153 -2.769356,-0.706707 l 0.660657,-1.825528 1.59766,0.398269 c 0.03451,0.656078 0.580093,1.176284 1.2431,1.176284 0.685936,0 1.245356,-0.559412 1.245356,-1.245344 C 22.123416,13.559414 21.563996,13 20.87806,13 c -0.467319,0 -0.874774,0.257811 -1.088877,0.639982 l -2.189264,-0.547904 -0.953005,2.635834 c -1.098063,0.03221 -2.138653,0.280831 -3.006494,0.715963 -0.283169,-0.20952 -0.623795,-0.322281 -0.982963,-0.322281 C 11.743573,16.124094 11,16.86742 11,17.779054 c 0,0.446567 0.184153,0.877019 0.499527,1.185557 -0.0206,0.131196 -0.03223,0.264739 -0.03223,0.398168 0,1.001391 0.584671,1.931471 1.64362,2.61749 1.012895,0.658327 2.354999,1.01973 3.777664,1.01973 1.422676,0 2.762448,-0.361403 3.777585,-1.01973 1.058946,-0.688354 1.643705,-1.618343 1.643705,-2.61749 0,-0.1312 -0.01152,-0.262396 -0.02989,-0.393596 0.319947,-0.306176 0.506449,-0.738978 0.506449,-1.190129 z m -8.485346,0.966865 c 0,-0.531807 0.4328,-0.964609 0.964607,-0.964609 0.531725,0 0.964526,0.432802 0.964526,0.964609 0,0.531713 -0.432801,0.964514 -0.964526,0.964514 -0.531807,0 -0.964607,-0.432801 -0.964607,-0.964514 z m 2.654278,3.052431 c -0.748175,0 -1.4779,-0.211767 -2.108608,-0.612285 l 0.370573,-0.582422 c 0.520291,0.331442 1.12341,0.506438 1.740358,0.506438 0.616977,0 1.217753,-0.174996 1.740288,-0.506438 l 0.370672,0.582422 C 18.43324,21.586583 17.70351,21.79835 16.955351,21.79835 Z m 1.710425,-2.087917 c -0.531812,0 -0.964525,-0.432801 -0.964525,-0.964514 0,-0.531807 0.432713,-0.964609 0.964525,-0.964609 0.5318,0 0.964509,0.432802 0.964509,0.964609 0,0.531713 -0.432709,0.964514 -0.964509,0.964514 z m 0,0"
+     id="path2-3"
+     style="fill:#d3ecf3;fill-opacity:1;stroke-width:0.0230207" />
+</svg>
