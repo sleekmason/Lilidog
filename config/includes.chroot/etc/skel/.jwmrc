@@ -141,7 +141,7 @@
 
     <!-- Visual Styles -->
     <WindowStyle>
-        <Font>LiberationSans-11</Font>
+        <Font>LiberationSans-12</Font>
         <Width>4</Width>
         <Height>21</Height>
         <Corner>5</Corner>
@@ -157,14 +157,14 @@
         </Active>
     </WindowStyle>
     <TrayStyle group="true" list="all">
-        <Font>LiberationSans-11</Font>
+        <Font>LiberationSans-12</Font>
         <Background>#000000</Background>
         <Foreground>#95E7F0</Foreground>
         <Outline>#000000</Outline>
         <Opacity>0.85</Opacity>
     </TrayStyle>
     <TaskListStyle>
-      <Font>LiberationSans-11</Font>
+      <Font>LiberationSans-12</Font>
       <Active>
         <Foreground>#A3ADAC</Foreground>
         <Background>#233330</Background>
@@ -183,7 +183,7 @@
         </Active>
     </PagerStyle>
     <MenuStyle>
-        <Font>LiberationSans-11</Font>
+        <Font>LiberationSans-12</Font>
         <Foreground>#0D0B0B</Foreground>
         <Background>#7D8581</Background>
         <Outline>#000000</Outline>
@@ -194,7 +194,7 @@
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>LiberationSans-11</Font>
+        <Font>LiberationSans-12</Font>
         <Foreground>#000505</Foreground>
         <Background>#7D8581</Background>
     </PopupStyle>
