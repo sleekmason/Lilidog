@@ -54,13 +54,12 @@ URxvt.mapAlert:             true
 ! URxvt*transparent:          true
 !---With Compositor enabled:
 URxvt.depth: 32
-!URxvt.background: rgba:0000/0000/0000/bbbb
-URxvt.background:         #050505
+URxvt.background: rgba:0000/0000/0000/bbbb
 
 
 !---URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
 ! URxvt*shading:              110
-URxvt.blurRadius:           20
+URxvt.blurRadius:           40
 URxvt.fading:               0
 ! URxvt.tintColor:            #ffffff
 
