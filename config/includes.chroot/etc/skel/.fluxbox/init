@@ -69,7 +69,7 @@ session.forcePseudoTransparency:	false
 session.tabPadding:	0
 session.menuFile:	~/.fluxbox/menu1
 session.cacheMax:	200
-session.styleFile:	~/.fluxbox/styles/Lilidog-Dark
+session.styleFile:	~/.fluxbox/styles/Lilidog-Clay
 session.styleOverlay:	~/.fluxbox/overlay
 session.configVersion:	13
 session.ignoreBorder:	false
