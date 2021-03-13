@@ -3,7 +3,7 @@
 	
 	
 <!-- Startup -->	
-<StartupCommand>feh --bg-scale /home/wallpaper/Peace.png</StartupCommand>	
+<StartupCommand>feh --bg-scale /home/wallpaper/Lilidog-Paws.png</StartupCommand>	
 <StartupCommand>killall lxpolkit ; lxpolkit</StartupCommand>
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
@@ -145,19 +145,19 @@
         <Width>4</Width>
         <Height>21</Height>
         <Corner>5</Corner>
-        <Foreground>#95E7F0</Foreground>
-        <Background>#3E5D67</Background>
+        <Foreground>#0D0B0B</Foreground>
+        <Background>#7D8581</Background>
         <Outline>#000000</Outline>
         <Opacity>0.85</Opacity>
         <Active>
-            <Foreground>#95E7F0</Foreground>
-            <Background>#004859</Background>
+            <Foreground>#0D0B0B</Foreground>
+            <Background>#7D8581</Background>
             <Outline>#000000</Outline>
             <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
     <TrayStyle group="true" list="all">
-        <Font>LiberationSans-10</Font>
+        <Font>LiberationSans-11</Font>
         <Background>#000000</Background>
         <Foreground>#95E7F0</Foreground>
         <Outline>#000000</Outline>
@@ -166,41 +166,41 @@
     <TaskListStyle>
       <Font>LiberationSans-11</Font>
       <Active>
-        <Foreground>#95E7F0</Foreground>
+        <Foreground>#829998</Foreground>
         <Background>#002B3B</Background>
       </Active>
-      <Foreground>#95E7F0</Foreground>
+      <Foreground>#829998</Foreground>
       <Background>#000000</Background>
     </TaskListStyle>
     <PagerStyle>
         <Outline>#000000</Outline>
-        <Foreground>#3E5D67</Foreground>
+        <Foreground>#829998</Foreground>
         <Background>#0F181B</Background>
         <Text>#95E7F0</Text>
         <Active>
-            <Foreground>#154054</Foreground>
+            <Foreground>#829998</Foreground>
             <Background>#002B3B</Background>
         </Active>
     </PagerStyle>
     <MenuStyle>
-        <Font>LiberationSans-10</Font>
-        <Foreground>#95E7F0</Foreground>
-        <Background>#132026</Background>
-        <Outline>#004859</Outline>
+        <Font>LiberationSans-11</Font>
+        <Foreground>#0D0B0B</Foreground>
+        <Background>#7D8581</Background>
+        <Outline>#000000</Outline>
         <Active>
-            <Foreground>#95E7F0</Foreground>
-            <Background>#004859</Background>
+            <Foreground>#A4B0AF</Foreground>
+            <Background>#565C59</Background>
         </Active>
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
         <Font>LiberationSans-11</Font>
-        <Foreground>#5DB0C2</Foreground>
-        <Background>#121C1F</Background>
+        <Foreground>#829998</Foreground>
+        <Background>#7D8581</Background>
     </PopupStyle>
     <ClockStyle>
         <Font>LiberationSans-12</Font>
-        <Foreground>#5DB0C2</Foreground>
+        <Foreground>#829998</Foreground>
         <Background>#000000</Background>
     </ClockStyle>
     <!-- Path where icons can be found.
@@ -264,7 +264,7 @@
               contained within a Desktop tag to give a specific background
               for that desktop.
          -->
-        <Background type="scale">/home/wallpaper/Peace.png</Background>
+        <Background type="scale">/home/wallpaper/Lilidog-Paws.png</Background>
     </Desktops>
 
     <!-- Double click speed (in milliseconds) -->
