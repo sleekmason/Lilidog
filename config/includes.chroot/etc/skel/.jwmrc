@@ -166,20 +166,20 @@
     <TaskListStyle>
       <Font>LiberationSans-11</Font>
       <Active>
-        <Foreground>#829998</Foreground>
-        <Background>#002B3B</Background>
+        <Foreground>#A3ADAC</Foreground>
+        <Background>#233330</Background>
       </Active>
-      <Foreground>#829998</Foreground>
+      <Foreground>#A3ADAC</Foreground>
       <Background>#000000</Background>
     </TaskListStyle>
     <PagerStyle>
         <Outline>#000000</Outline>
-        <Foreground>#829998</Foreground>
+        <Foreground>#A3ADAC</Foreground>
         <Background>#0F181B</Background>
         <Text>#95E7F0</Text>
         <Active>
-            <Foreground>#829998</Foreground>
-            <Background>#002B3B</Background>
+            <Foreground>#A3ADAC</Foreground>
+            <Background>#233330</Background>
         </Active>
     </PagerStyle>
     <MenuStyle>
@@ -189,18 +189,18 @@
         <Outline>#000000</Outline>
         <Active>
             <Foreground>#A4B0AF</Foreground>
-            <Background>#565C59</Background>
+            <Background>#525D5A</Background>
         </Active>
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
         <Font>LiberationSans-11</Font>
-        <Foreground>#829998</Foreground>
+        <Foreground>#000505</Foreground>
         <Background>#7D8581</Background>
     </PopupStyle>
     <ClockStyle>
         <Font>LiberationSans-12</Font>
-        <Foreground>#829998</Foreground>
+        <Foreground>#A3ADAC</Foreground>
         <Background>#000000</Background>
     </ClockStyle>
     <!-- Path where icons can be found.
