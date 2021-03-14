@@ -83,7 +83,7 @@ flowbox rubberband,
 treeview.view rubberband,
 .content-view rubberband,
 XfdesktopIconView.view .rubberband {
-  border: 1px solid #5EA1A7;
+  border: 1px solid #B06295;
   background-color: rgba(26, 116, 211, 0.2); }
 
 flowbox flowboxchild {
@@ -841,8 +841,8 @@ button.suggested-action {
     button.suggested-action:backdrop:checked,
     button.suggested-action.flat:backdrop:active,
     button.suggested-action.flat:backdrop:checked {
-      border-color: #5EA1A7;
-      background-color: #5EA1A7;
+      border-color: #B06295;
+      background-color: #B06295;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
       .selection-mode button.titlebutton:backdrop:active label, .selection-mode button.titlebutton:backdrop:active, .selection-mode button.titlebutton:backdrop:checked label, .selection-mode button.titlebutton:backdrop:checked,
       button.suggested-action:backdrop:active label,
@@ -1783,8 +1783,8 @@ headerbar {
         headerbar.selection-mode button:backdrop.flat:checked,
         headerbar.selection-mode button:backdrop:active,
         headerbar.selection-mode button:backdrop:checked {
-          border-color: #5EA1A7;
-          background-color: #5EA1A7;
+          border-color: #B06295;
+          background-color: #B06295;
           box-shadow: inset 0 1px rgba(255, 255, 255, 0);
           border-color: #0f4278; }
           .selection-mode.titlebar:not(headerbar) button:backdrop.flat:active label, .selection-mode.titlebar:not(headerbar) button:backdrop.flat:active, .selection-mode.titlebar:not(headerbar) button:backdrop.flat:checked label, .selection-mode.titlebar:not(headerbar) button:backdrop.flat:checked, .selection-mode.titlebar:not(headerbar) button:backdrop:active label, .selection-mode.titlebar:not(headerbar) button:backdrop:active, .selection-mode.titlebar:not(headerbar) button:backdrop:checked label, .selection-mode.titlebar:not(headerbar) button:backdrop:checked,
@@ -2118,7 +2118,7 @@ treeview.view {
     border: 1px solid #0f4278;
     border-radius: 4px;
     background-color: #87918C;
-    background-image: linear-gradient(to bottom, #87918C, #5EA1A7);
+    background-image: linear-gradient(to bottom, #87918C, #B06295);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px rgba(0, 0, 0, 0.2); }
     treeview.view.progressbar:selected:focus, treeview.view.progressbar:selected {
       border-radius: 4px;
@@ -2670,7 +2670,7 @@ scrollbar {
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
-      color: #5EA1A7; }
+      color: #B06295; }
     scrollbar button:disabled {
       border-color: transparent;
       background-color: transparent;
@@ -3985,7 +3985,7 @@ infobar {
 .question,
 .warning,
 .error {
-  text-shadow: 0 1px #5EA1A7; }
+  text-shadow: 0 1px #B06295; }
   .info:backdrop, .info,
   .question:backdrop,
   .question,
@@ -3994,7 +3994,7 @@ infobar {
   .error:backdrop,
   .error {
     background-color: #87918C;
-    border-color: #5EA1A7; }
+    border-color: #B06295; }
     .info:backdrop label, .info:backdrop, .info label, .info,
     .question:backdrop label,
     .question:backdrop,
@@ -4111,7 +4111,7 @@ infobar {
   .error label:selected:focus,
   .error label:selected:hover,
   .error label:selected {
-    background-color: #5EA1A7; }
+    background-color: #B06295; }
 
 /*************
  * Buttonbox *
@@ -4754,7 +4754,7 @@ XfdesktopIconView.view {
     text-shadow: 0 1px transparentize black, 0.5;
     -gtk-icon-shadow: 0 1px transparentize black, 0.5;
     box-shadow: inset 0 -1px transparentize black, 0.5;
-    background-color: rgba(36, 36, 36, 0.8);
+    background-color: #222C2A;
     text-shadow: 0 1px transparentize black, 0.5;
     -gtk-icon-shadow: 0 1px transparentize black, 0.5; }
     .lightdm-gtk-greeter #panel_window menubar menu {
@@ -4769,9 +4769,9 @@ XfdesktopIconView.view {
   .lightdm-gtk-greeter #restart_dialog {
     border-style: none;
     border-radius: 5px;
-    background-color: #A9ADAD;
+    background-color: #7D8581;
     color: #0D0D0C;
-    box-shadow: inset 1px 0 shade(#A9ADAD, 0.6), inset -1px 0 shade(#A9ADAD, 0.6), inset 0 1px shade(#A9ADAD, 0.6), inset 0 -1px shade(#A9ADAD, 0.6); }
+    box-shadow: inset 1px 0 shade(#A9ADAD, 0.6), inset -1px 0 shade(#A9ADAD, 0.6), inset 0 1px shade(#A9ADAD, 0.6), inset 0 -1px shade(#4B5654, 0.6); }
     .lightdm-gtk-greeter #login_window button,
     .lightdm-gtk-greeter #shutdown_dialog button,
     .lightdm-gtk-greeter #restart_dialog button {
@@ -4832,10 +4832,10 @@ XfdesktopIconView.view {
   .lightdm-gtk-greeter #login_window #user_image {
     padding: 3px;
     border-radius: 3px;
-    box-shadow: inset 1px 0 shade(#A9ADAD, 0.75), inset -1px 0 shade(#A9ADAD, 0.75), inset 0 1px shade(#A9ADAD, 0.55), inset 0 -1px shade(#A9ADAD, 0.85); }
+    box-shadow: inset 1px 0 shade(#818A86, 0.75), inset -1px 0 shade(#A9ADAD, 0.75), inset 0 1px shade(#A9ADAD, 0.55), inset 0 -1px shade(#818A86, 0.85); }
   .lightdm-gtk-greeter #login_window #user_image_border {
     border-radius: 3px;
-    background-image: linear-gradient(to bottom, shade(#A9ADAD, 0.9), shade(#A9ADAD, 0.98) 10%, shade(#A9ADAD, 1) 99%, shade(#A9ADAD, 1));
+    background-image: linear-gradient(to bottom, shade(#818A86, 0.9), shade(#818A86, 0.98) 10%, shade(#A9ADAD, 1) 99%, shade(#818A86, 1));
     box-shadow: inset 0 1px shade(#A9ADAD, 0.8), inset 0 -1px shade(#A9ADAD, 0.55); }
   .lightdm-gtk-greeter #buttonbox_frame {
     padding-top: 20px;
