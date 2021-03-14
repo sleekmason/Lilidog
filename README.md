@@ -15,12 +15,6 @@ This is the stable version. You can download the full ISO from Sourceforge:
 
 Lilidog-Minimal and Lilidog-Custom have releases here as well: https://sourceforge.net/projects/lilidog/files/Releases/
 
-### Other Versions on Github:
-
-For the minimal build: https://github.com/sleekmason/Lilidog-Minimal
-For the Unstable build: https://github.com/sleekmason/Lilidog-w-custom-kernel
-
-
 ### Openbox
 [![Openbox-gradient-2-7-21.png](https://i.postimg.cc/qBKYdxQN/Openbox-gradient-2-7-21.png)](https://postimg.cc/Wt2SGrBV)
 
