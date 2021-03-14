@@ -1,4 +1,4 @@
-# Lilidog-lightgraybox by sleekmason.                                                                    
+# Lilidog-Claybox by sleekmason.                                                                    
 #============================================================
 
 #======================================
@@ -8,30 +8,30 @@
 menu.title.bg: raised
 menu.title.bg.color: #767D79
 menu.title.text.color: #89918D
-menu.separator.color: #1B313B
+menu.separator.color: #293231
 menu.items.bg: raised gradient diagonal
 menu.items.bg.color: #767D79
 menu.items.bg.colorTo: #89918D
 menu.items.text.color: #0D0B0B
 menu.items.disabled.text.color: #545E59
 menu.items.active.bg: raised border
-menu.items.active.bg.color: #5E6963
+menu.items.active.bg.color: #57615E
 menu.items.active.bg.border.color: #4B544F
-menu.items.active.text.color: #CCE6EB
+menu.items.active.text.color: #C9DBD9
 
 #======================================
 #     Focused Window Settings
 #======================================
 
 window.active.title.bg: raised gradient vertical
-window.active.title.bg.color: #656E68
-window.active.title.bg.colorTo: #A0A8A7
+window.active.title.bg.color: #707874
+window.active.title.bg.colorTo: #8A9490
 window.active.title.bg.border.color: #476263
 window.active.handle.bg: raised
 window.active.handle.bg.color: #7D8581
 window.active.grip.bg: parentrelative
 window.active.label.bg: parentrelative
-window.active.label.text.color: #0D0B0B
+window.active.label.text.color: #050404
 window.*.button.*.bg: parentrelative
 window.active.button.*.image.color: #000000
 window.active.button.*.pressed.image.color: #ffffff
@@ -43,13 +43,13 @@ window.active.button.*.hover.image.color: #D1ECED
 #======================================
 
 window.inactive.title.bg: raised gradient horizontal
-window.inactive.title.bg.color: #656E6A
-window.inactive.title.bg.colorTo: #7D8581
+window.inactive.title.bg.color: #5B6663
+window.inactive.title.bg.colorTo: #5B6663
 window.inactive.handle.bg: raised
-window.inactive.handle.bg.color: #6B7871
+window.inactive.handle.bg.color: #5B6663
 window.inactive.grip.bg: parentrelative
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #12120D
+window.inactive.label.text.color: #1F1D1D
 window.inactive.button.*.image.color: #000000
 
 #======================================
