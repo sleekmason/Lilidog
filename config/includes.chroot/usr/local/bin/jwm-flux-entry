@@ -1,9 +1,0 @@
-#!/bin/bash
-# Small script to change to fluxbox during session.
-pkill -f conky
-pkill -f compton
-pkill -f volumeicon
-pkill -f stalonetray
-pkill -f plank
-pkill -x jwm
-startfluxbox

@@ -320,16 +320,6 @@
 					<execute>jwm-entry</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch To Pekwm">
-				<action name="Execute">
-					<execute>pek-entry</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch To Fluxbox">
-				<action name="Execute">
-					<execute>flux-entry</execute>
-				</action>
-			</item>
 		</menu>
 		<separator/>
 		<item icon="/usr/share/icons/gnome/48x48/actions/redo.png" label="Reconfigure">

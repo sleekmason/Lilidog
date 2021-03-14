@@ -86,9 +86,6 @@
 [exec] (Toggle Plank+Tray) {toggle.stalonetray}
 [exec] (Toggle plank) {toggle.plank}
 [exec] (Xkill) {xkill}
-[exec] (Switch To Openbox) {open-entry}
-[exec] (Switch To Pekwm) {flux-pek-entry}
-[exec] (Switch To Jwm) {flux-jwm-entry}
 [end]
 [separator]
 [reconfig] (Reconfigure)

@@ -3,8 +3,7 @@
 pkill -f stalonetray
 pkill -f plank
 pkill -x jwm
-openbox-lxde & toggle.monster & feh --bg-scale /home/wallpaper/linux2.png
-pkill -f ld-hotcorners &
+openbox-lxde & toggle.tint2 & feh --bg-scale /home/wallpaper/Lilidog-Paws.png
 pkill -f volumeicon &
 killall compton ; compton &
 killall nm-applet ; nm-applet &

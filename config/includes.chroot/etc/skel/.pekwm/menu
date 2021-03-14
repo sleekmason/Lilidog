@@ -106,9 +106,6 @@ RootMenu = "Pekwm" {
 	                Entry = "Toggle FbPanel" { Actions = "Exec toggle.fbpanel" }
 		        Entry = "Toggle Plank" { Actions = "Exec toggle.plank" }
 			Entry = "Xkill" { Actions = "Exec xkill" }
-			Entry = "Switch To Openbox" { Actions = "Exec pek-open-entry" }
-			Entry = "Switch To Fluxbox" { Actions = "Exec pek-flux-entry" }
-			Entry = "Switch To JWM" { Actions = "Exec pek-jwm-entry" }
 	}
 		Entry = "Reload" { Actions = "Reload" }
 		Entry = "Restart" { Actions = "Restart" }

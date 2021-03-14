@@ -78,9 +78,7 @@
 	    <Program icon="object-flip-horizontal.png" label="Toggle Hotcorners">toggle.lwa</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Screensaver">toggle.xscreensaver</Program>
             <Program icon="window-close.png" label="Xkill">xkill</Program>
-            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Openbox">jwm-open-entry</Program>
-            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Fluxbox">jwm-flux-entry</Program>
-            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Pekwm">jwm-pek-entry</Program>                    
+            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Openbox">jwm-open-entry</Program>                  
 	    </Menu>
 	    <Separator/>
 	    <Program icon="lock.png" label="Lock">slock</Program>
