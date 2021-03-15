@@ -9,8 +9,6 @@
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
 <StartupCommand>xfce4-power-manager</StartupCommand>
 <StartupCommand>killall compton ; compton --config ~/.config/compton2.conf</StartupCommand>
-<StartupCommand>killall conky</StartupCommand>
-<StartupCommand>sleep 1 ; conky</StartupCommand>
 
 <!-- **********  ROOT MENU **********  -->
 

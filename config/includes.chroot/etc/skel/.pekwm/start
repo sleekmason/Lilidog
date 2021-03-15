@@ -25,8 +25,6 @@ plank &
 killall volumeicon ; volumeicon &
 killall lxpolkit ; lxpolkit  &
 killall nm-applet ; nm-applet &
-killall conky &
-sleep 1 ; conky -c ~/.config/conky/conky.conf &
 killall compton &
 sleep 1 ; compton --config ~/.config/compton.conf &
 xfce4-power-manager &

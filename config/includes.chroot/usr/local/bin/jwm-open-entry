@@ -7,5 +7,4 @@ openbox-lxde & toggle.tint2 & feh --bg-scale /home/wallpaper/Lilidog-Paws.png
 pkill -f volumeicon &
 killall compton ; compton &
 killall nm-applet ; nm-applet &
-killall conky ; conky &
 xfce4-power-manager
