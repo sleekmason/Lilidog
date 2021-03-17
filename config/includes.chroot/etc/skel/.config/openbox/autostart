@@ -2,12 +2,13 @@
 #@pcmanfm --desktop --profile LXDE &
 #pnmixer &
 #@xscreensaver -no-splash &
-~/.fehbg &
+compton &
+feh --bg-scale /home/wallpaper/Lilidog-Paws.png &
 tint2 &
 #fbpanel-alsa &
 #monster-panel &
 xfce4-power-manager &
+killall conky ; conky &
 xbindkeys &
 nm-applet &
 lxpolkit &
-compton &
