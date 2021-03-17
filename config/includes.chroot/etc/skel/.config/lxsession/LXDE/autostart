@@ -2,8 +2,9 @@
 #@pcmanfm --desktop --profile LXDE
 #@xscreensaver -no-splash
 compton
-~/.fehbg &
+~/.fehbg
 #monster-panel
 tint2
 #fbpanel-alsa
 #pnmixer
+conky
