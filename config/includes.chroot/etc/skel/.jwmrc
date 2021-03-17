@@ -3,7 +3,7 @@
 	
 	
 <!-- Startup -->	
-<StartupCommand>feh --bg-scale /home/wallpaper/Lilidog-Paws.png</StartupCommand>	
+<StartupCommand>~/.fehbg</StartupCommand>	
 <StartupCommand>killall lxpolkit ; lxpolkit</StartupCommand>
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>

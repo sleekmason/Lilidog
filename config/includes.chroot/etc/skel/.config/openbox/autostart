@@ -2,7 +2,7 @@
 #@pcmanfm --desktop --profile LXDE &
 #pnmixer &
 #@xscreensaver -no-splash &
-feh --bg-scale /home/wallpaper/Lilidog-Paws.png &
+~/.fehbg &
 tint2 &
 #fbpanel-alsa &
 #monster-panel &
