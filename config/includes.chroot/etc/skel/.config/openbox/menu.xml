@@ -282,7 +282,7 @@
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Hotcorners Toggle">
 				<action name="Execute">
-					<execute>toggle.lwa</execute>
+					<execute>toggle.ld</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Screensaver Toggle">

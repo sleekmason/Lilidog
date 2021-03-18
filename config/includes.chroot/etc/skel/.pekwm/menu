@@ -100,7 +100,7 @@ RootMenu = "Pekwm" {
 			Entry = "Toggle Conky" { Actions = "Exec toggle.conky" }
 			Entry = "Toggle Compton" { Actions = "Exec toggle.compton" }
 			Entry = "Toggle Clipboard" { Actions = "Exec toggle.parcellite" }
-			Entry = "Toggle Hotcorners" { Actions = "Exec toggle.lwa" }
+			Entry = "Toggle Hotcorners" { Actions = "Exec toggle.ld" }
 			Entry = "Toggle Screensaver" { Actions = "Exec toggle.xscreensaver" }
 			Entry = "Toggle Monster Panel" { Actions = "Exec toggle.monster" }
                         Entry = "Toggle Plank + Tray" { Actions = "Exec toggle.stalonetray" }
