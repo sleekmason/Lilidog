@@ -141,7 +141,7 @@
 						<execute>lxsession-default-apps</execute>
 					</action>
 				</item>
-				<item label="Desktop Settings">
+				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Desktop Settings">
 					<action name="Execute">
 						<execute>pcmanfm --desktop-pref</execute>
 					</action>
