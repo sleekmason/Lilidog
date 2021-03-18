@@ -141,6 +141,11 @@
 						<execute>lxsession-default-apps</execute>
 					</action>
 				</item>
+				<item label="Desktop Settings">
+					<action name="Execute">
+						<execute>pcmanfm --desktop-pref</execute>
+					</action>
+				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-system.png" label="Power Manager">
 					<action name="Execute">
 						<execute>xfce4-power-manager-settings</execute>

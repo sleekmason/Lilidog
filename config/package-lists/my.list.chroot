@@ -37,9 +37,16 @@ feh
 ffmpeg
 file
 firefox-esr
+firmware-atheros
+firmware-amd-graphics
+firmware-b43-installer
+firmware-b43legacy-installer
+firmware-linux-nonfree
+firmware-linux-free
 firmware-linux
-firmware-realtek
 firmware-iwlwifi
+firmware-misc-nonfree
+firmware-realtek
 flex
 fluxbox
 fonts-dejavu-extra

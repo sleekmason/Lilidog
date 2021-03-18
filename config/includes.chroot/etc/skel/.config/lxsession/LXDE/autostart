@@ -1,8 +1,7 @@
 #@lxpanel --profile LXDE
-#@pcmanfm --desktop --profile LXDE
+@pcmanfm --desktop --profile LXDE
 #@xscreensaver -no-splash
 compton
-~/.fehbg
 #monster-panel
 tint2
 #fbpanel-alsa

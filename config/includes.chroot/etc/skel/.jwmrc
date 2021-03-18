@@ -3,7 +3,7 @@
 	
 	
 <!-- Startup -->	
-<StartupCommand>~/.fehbg</StartupCommand>	
+<StartupCommand>pcmanfm --desktop --profile LXDE</StartupCommand>	
 <StartupCommand>killall lxpolkit ; lxpolkit</StartupCommand>
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
@@ -49,6 +49,7 @@
 	     <Menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" label="Utilities">
 		<Menu icon="preferences-system.png" label="Configuration">
 	    <Program icon="preferences-system.png" label="Power Manager">xfce4-power-manager-settings</Program>
+            <Program icon="preferences-system.png" label="Desktop-Settings">pcmanfm --desktop-pref</Program>
             <Program icon="preferences-desktop-display.png" label="Lxappearance">lxappearance</Program>
             <Program icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Config">geany ~/.Xresources</Program>
             <Program icon="document-page-setup.png" label="Conky Config">geany ~/.config/conky/conky.conf</Program>
