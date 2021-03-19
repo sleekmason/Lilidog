@@ -6,14 +6,14 @@ lb config noauto \
      --apt-indices 'false' \
      --archive-areas "main contrib non-free" \
      --debian-installer 'live' \
-     --debian-installer-distribution 'buster' \
-     --distribution 'buster' \
+     --debian-installer-distribution 'bullseye' \
+     --distribution 'bullseye' \
      --mirror-binary 'https://deb.debian.org/debian' \
      --mirror-binary-security 'https://deb.debian.org/debian-security' \
      --mirror-bootstrap 'https://deb.debian.org/debian' \
      --firmware-binary 'true' \
      --firmware-chroot 'true' \
-     --security 'true' \
+     --security 'false' \
      --memtest 'none' \
      --image-name 'Lilidog' \
      --iso-application 'Lilidog' \
@@ -22,5 +22,6 @@ lb config noauto \
      --system 'live' \
      --updates 'true' \
      --win32-loader 'false' \
+     --zsync 'false' \
      --quiet \
      "${@}"
