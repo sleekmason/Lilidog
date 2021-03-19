@@ -18,7 +18,7 @@ Suspend
 ScreenLock
 Exit"
 
-cmd=$(dmenu -nb '#0F171A' -nf '#5DB0C2' -sb '#007187' -sf '#E0FCFF' -fn 'Liberation Sans-11' <<< "$prog")
+cmd=$(dmenu -nb '#0F171A' -nf '#93ADAC' -sb '#007187' -sf '#E0FCFF' -fn 'Liberation Sans-11' <<< "$prog")
 
 case ${cmd%% *} in
 
