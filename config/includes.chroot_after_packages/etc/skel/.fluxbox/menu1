@@ -27,8 +27,8 @@
 [end]
 [exec] (Writer) {libreoffice}
 [exec] (Geany) {geany}
+[exec] (Thunar) {thunar}
 [exec] (Spacefm) {spacefm}
-[exec] (Pcmanfm) {pcmanfm}
 [exec] (Mousepad) {mousepad}
 [exec] (Lxterminal) {lxterminal}
 [exec] (Newsboat) {urxvt -g 120x40+120+100 -e newsboat}

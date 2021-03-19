@@ -76,8 +76,7 @@
 	    <Program icon="object-flip-horizontal.png" label="Toggle Clipboard">toggle.parcellite</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Hotcorners">toggle.ld</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Screensaver">toggle.xscreensaver</Program>
-            <Program icon="window-close.png" label="Xkill">xkill</Program>
-            <Program icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch to Openbox">jwm-open-entry</Program>                  
+            <Program icon="window-close.png" label="Xkill">xkill</Program>                
 	    </Menu>
 	    <Separator/>
 	    <Program icon="lock.png" label="Lock">slock</Program>
