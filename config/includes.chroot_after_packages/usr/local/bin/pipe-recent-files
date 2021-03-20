@@ -7,17 +7,22 @@
 ### Dependencies:
 # - xmlstarlet                  parsing recentfile
 ### Optional:
-# - gio (glib2, libglib2-bin)   redefine useless mimetypes
+# - gio (glib2, libglib2.0-bin) redefine useless mimetypes
 
 # Options:
 # -r str  Recentfile to parse (default: $HOME/.local/share/recently-used.xbel)
 # -c      Clear the recentfile
-# 
+#
 # -d      Output a little more to stderr
 # -s str  Comma-separated list of icon sizes to consider. Default 22,24,32
 # -t str  Comma-separated list of Icon theme names to consider. No default.
 #         Example: "Tela,Papirus,Paper"
 # -m int  maximum number of results to display
+
+# If the user didn't define iconthemes, we extract the current one from
+# gtk3's settings.ini and append the "Inherits" found in that theme's index.theme.
+# Warning: many icon themes have messy Inherits - if the result is less than
+# desirable, one can override the whole Icon theme chain with the '-' option.
 
 max=12 # maximum number of recent files
 # Comma-separated list of Desired icon sizes.
@@ -46,7 +51,6 @@ findicon() {
 
     # If the user didn't define iconthemes, we extract the current one from
     # gtk3's settings.ini and append the "Inherits" found in that theme's index.theme.
-    # Warning: many icon themes have a messy inherits
     if [[ "$iconthemes" == "" ]]; then
         G gtk-icon-theme-name "$gtksettingsfile" iconthemes
         iconthemes="${iconthemes##*=}"
@@ -91,7 +95,7 @@ pipe_exit() {
 
 echo "<openbox_pipe_menu>"
 
-while getopts "dcs:t:m:r:" opt; do
+while getopts "dcs:t:m:r:g:" opt; do
     case $opt in
         d)  debug=1
         ;;
@@ -115,7 +119,11 @@ EOF
         m)  [[ "$OPTARG" =~ [0-9]+ ]] && (( OPTARG >= 0 )) && (( OPTARG <= 65535 )) || pipe_exit "Option -${opt}: invalid number $OPTARG"
             max="$OPTARG"
         ;;
-        r)  recentfile="$OPTARG"
+        r)  [ -r "$OPTARG" ] || pipe_exit "Option -${opt}: Cannot read $OPTARG"
+            recentfile="$OPTARG"
+        ;;
+        g)  [ -r "$OPTARG" ] || pipe_exit "Option -${opt}: Cannot read $OPTARG"
+            gtksettingsfile="$OPTARG"
         ;;
     esac
 done
@@ -125,8 +133,6 @@ for dep in xmlstarlet; do
     type "$dep" >/dev/null || exit 1
 done
 
-[ -r "$recentfile" ] || pipe_exit "No Recent Files"
-# [ -r "$recentfile" ] || pipe_exit "Cannot read ${recentfile/$HOME/\~}"
 # Use an Xpath expression to collect all
 # 1) file:///...
 # 2) mime-type
@@ -144,8 +150,9 @@ j=0
 for ((i=0;i<${#array[@]};i++)); do
     # file path
     array[i]="${array[i]#*file://}"
-    array[i]="${array[i]%\"*}"
-    array[i]="${array[i]//%20/ }"
+    #array[i]="${array[i]%\"*}"
+    array[i]=$(perl -MURI::Escape -e 'print uri_unescape($ARGV[0]);' "${array[i]}" )
+    #array[i]="${array[i]//%20/ }"
     ((i++))
     # mime-type - keep only the part after the /
     array[i]="${array[i]#*/}"
@@ -155,10 +162,14 @@ for ((i=0;i<${#array[@]};i++)); do
     fi
     ((i++))
     # command to open file
-    # remove single quotes
-    array[i]="${array[i]//\'/}"
+    # remove enclosing single quotes
+    array[i]="${array[i]#\'}"
+    array[i]="${array[i]%\'}"
+    filepath="${array[$((i-2))]}"
+    # escaping single quotes is tricky
+    filepath="${filepath//\'/\'\\\'\'}"
     # replace %u with quoted file path
-    array[i]="${array[i]//%u/\"${array[$((i-2))]}}\""
+    array[i]="${array[i]//%u/\'${filepath}\'}"
 done
 
 mimetypesfixed=()
@@ -191,6 +202,10 @@ for ((i=0,j=0;i<${#array[@]};i+=3)); do
 
     # 1. the file - skip if unreadable
     [ -r "${array[i]}" ] || continue
+    array[i]="${array[i]//\'/&apos;}"
+    array[i]="${array[i]//\"/&quot;}"
+    array[i]="${array[i]//</&lt;}"
+    array[i]="${array[i]//>/&gt;}"
     # label of the menu entry - openbox-specific
     label="${array[i]/$HOME/\~}"
     label="${label//_/__}"
@@ -207,9 +222,15 @@ for ((i=0,j=0;i<${#array[@]};i+=3)); do
 
     # 3. the command
     cmd="${array[$((i+2))]}"
-
+ 
     # finally print out the recent item
-    echo "<item label=\"$label \" icon=\"$icon\"><action name=\"Execute\"><command><![CDATA[$cmd]]></command></action></item>"
+    echo "<item label=\"$label \" icon=\"$icon\">
+    <action name=\"Execute\">
+        <command>
+            <![CDATA[$cmd]]>
+        </command>
+    </action>
+</item>"
 done
 
 # close up the pipemenu, with one last entry to remove $recentfile and a suitable "delete" icon

@@ -119,7 +119,7 @@
 			</action>
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item icon="/usr/share/icons/ld-icons/eyefox.png" label="Firefox">
+		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Firefox">
 			<action name="Execute">
 				<execute>x-www-browser</execute>
 			</action>
@@ -129,6 +129,8 @@
 				<execute>thunderbird</execute>
 			</action>
 		</item>
+		<!--<separator/> -->
+		<!-- <menu id="/Debian"/> -->
 		<separator/>
 		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="Debian"/>
 		<separator/>
@@ -189,6 +191,11 @@
 						<execute>geany ~/.config/dmenu/apps</execute>
 					</action>
 				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/applications-games.png" label="Ld-hotcorners Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
+					</action>
+				</item>
 			</menu>
 			<item icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">
 				<action name="Execute">
@@ -236,7 +243,7 @@
 					<execute>gksudo system-config-printer</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/ld-icons/galculator.png" label="Galculator">
+			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">
 				<action name="Execute">
 					<execute>galculator</execute>
 				</action>
@@ -263,24 +270,19 @@
 					<execute>toggle.parcellite</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Hotcorners Toggle">
-				<action name="Execute">
-					<execute>toggle.ld</execute>
-				</action>
-			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Screensaver Toggle">
 				<action name="Execute">
 					<execute>xscreensaver</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Ld-Hotcorners Toggle">
+				<action name="Execute">
+					<execute>toggle.ld</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Monster Panel Toggle">
 				<action name="Execute">
 					<execute>toggle.monster</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Plank + Tray Toggle">
-				<action name="Execute">
-					<execute>toggle.stalonetray</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Tint2 Panel Toggle">
