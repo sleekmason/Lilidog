@@ -67,8 +67,7 @@ RootMenu = "Pekwm" {
 			Entry = "Restart" { Actions = "Restart" }
 			Entry = "Exit" { Actions = "Exit" }
 	}
-			Entry = "Desktop Settings" { Actions = "Exec pcmanfm --desktop-pref" }
-                        Entry = "Power Manager" { Actions = "Exec xfce4-power-manager-settings" }
+            Entry = "Power Manager" { Actions = "Exec xfce4-power-manager-settings" }
 			Entry = "Lxappearance" { Actions = "Exec lxappearance" }
 			Entry = "Urxvt Config" { Actions = "Exec geany ~/.Xresources" }
 			Entry = "Conky Config" { Actions = "Exec geany ~/.config/conky/conky.conf" }

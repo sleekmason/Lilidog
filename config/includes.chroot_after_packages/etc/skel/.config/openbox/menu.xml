@@ -130,8 +130,6 @@
 			</action>
 		</item>
 		<separator/>
-		<menu id="/Debian"/>
-		<separator/>
 		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="Debian"/>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
@@ -139,11 +137,6 @@
 				<item icon="/usr/share/icons/gnome/48x48/actions/system-run.png" label="LxSession Autostart">
 					<action name="Execute">
 						<execute>lxsession-default-apps</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Desktop Settings">
-					<action name="Execute">
-						<execute>pcmanfm --desktop-pref</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-system.png" label="Power Manager">
@@ -154,11 +147,6 @@
 				<item icon="/usr/share/icons/gnome/48x48/apps/preferences-desktop-theme.png" label="Lx-Appearance">
 					<action name="Execute">
 						<execute>lxappearance</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-desktop-peripherals.png" label="Openbox Menu">
-					<action name="Execute">
-						<execute>obmenu</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/pixmaps/obconf.png" label="Openbox Conf">
@@ -253,7 +241,7 @@
 					<execute>gksudo system-config-printer</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/pixmaps/galculator.xpm" label="Galculator">
+			<item icon="/usr/share/icons/ld-icons/galculator.png" label="Galculator">
 				<action name="Execute">
 					<execute>galculator</execute>
 				</action>
@@ -318,11 +306,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/actions/process-stop.png" label="X-Kill">
 				<action name="Execute">
 					<execute>xkill</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome-brave/32x32/actions/go-jump.png" label="Switch To Jwm">
-				<action name="Execute">
-					<execute>jwm-entry</execute>
 				</action>
 			</item>
 		</menu>

@@ -6,6 +6,6 @@ Profiles=profile-zero;
 
 [X-Action-Profile profile-zero]
 MimeTypes=image/*;
-Exec=pcmanfm -w %f
+Exec=feh --bg-scale %f
 Name=Default profile
 SelectionCount==1

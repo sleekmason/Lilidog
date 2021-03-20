@@ -56,7 +56,6 @@
 [exec] (Fluxbox Startup) {geany ~/.fluxbox/startup}
 [exec] (Fluxbox Init) {geany ~/.fluxbox/init}
    [end]
-[exec] (Desktop Settings) {pcmanfm --desktop-pref}
 [exec] (Lxappearance) {lxappearance}
 [exec] (Power Manager) {xfce4-power-manager-settings}
    [exec] (Urxvt Config) {geany ~/.Xresources}

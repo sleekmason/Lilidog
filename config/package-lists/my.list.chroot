@@ -2,6 +2,7 @@ acpi
 adwaita-icon-theme
 alsa-oss
 alsa-utils
+amd64-microcode
 anacron
 at-spi2-core
 b43-fwcutter
@@ -69,6 +70,7 @@ gsimplecal
 gstreamer1.0-plugins-good
 gstreamer1.0-pulseaudio
 gtk2-engines-murrine
+gtk2-engines-pixbuf
 gvfs-backends
 gvfs-fuse
 hdparm
@@ -77,6 +79,7 @@ htop
 hwdata
 hunspell-en-us
 hyphen-en-us
+intel-microcode
 inxi
 isc-dhcp-client
 intel-microcode
@@ -95,13 +98,12 @@ libelf-dev
 libssl-dev
 lightdm
 lightdm-gtk-greeter-settings
+linux-image-amd64
+linux-headers-amd64
 locales
+lsb-release
 lxappearance
 lxappearance-obconf
-lxde
-lxde-settings-daemon
-lxlock
-lxsession-default-apps
 lxpolkit
 lxrandr
 lxterminal
@@ -122,7 +124,7 @@ network-manager-gnome
 newsboat
 ntfs-3g
 obconf
-openbox-lxde-session
+openbox
 os-prober
 oss-compat
 parcellite
@@ -186,6 +188,7 @@ x11-session-utils
 x11-utils
 x11-xkb-utils
 x11-xserver-utils
+xarchiver
 xbindkeys
 xbindkeys-config
 xbitmaps
