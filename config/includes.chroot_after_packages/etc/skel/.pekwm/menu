@@ -36,7 +36,6 @@ RootMenu = "Pekwm" {
 			Entry = "/usr/bin" { Actions = "Exec gksudo thunar /usr/bin" }
 			Entry = "/usr/local/bin" { Actions = "Exec gksudo thunar /usr/local/bin" }
 }
-			Entry = "Mousepad" { Actions = "Exec mousepad" }
 			Entry = "Run.." { Actions = "ShowCmdDialog" }
 			Entry = "Writer" { Actions = "Exec libreoffice" }
 			Entry = "Geany" { Actions = "Exec geany" }

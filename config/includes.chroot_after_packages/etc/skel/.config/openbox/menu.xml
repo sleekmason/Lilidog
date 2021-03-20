@@ -134,11 +134,6 @@
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
 			<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
-				<item icon="/usr/share/icons/gnome/48x48/actions/system-run.png" label="LxSession Autostart">
-					<action name="Execute">
-						<execute>lxsession-default-apps</execute>
-					</action>
-				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-system.png" label="Power Manager">
 					<action name="Execute">
 						<execute>xfce4-power-manager-settings</execute>
