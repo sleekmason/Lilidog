@@ -107,6 +107,7 @@ lxappearance-obconf
 lxde
 lxpolkit
 lxrandr
+lxsession-default-apps
 lxde-settings-daemon
 lxterminal
 manpages
