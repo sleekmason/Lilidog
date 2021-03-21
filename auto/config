@@ -6,7 +6,6 @@ lb config noauto \
      --apt-indices 'false' \
      --archive-areas "main contrib non-free" \
      --debian-installer 'live' \
-     --parent-debian-installer-distribution 'daily' \
      --debian-installer-distribution 'bullseye' \
      --distribution 'bullseye' \
      --mirror-binary 'https://deb.debian.org/debian' \
