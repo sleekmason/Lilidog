@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Terminal">
 			<action name="Execute">
-				<execute>lxterminal</execute>
+				<execute>urxvt</execute>
 			</action>
 		</item>
 		<separator/>
@@ -52,15 +52,6 @@
 					</action>
 				</item>
 			</menu>
-<<<<<<< HEAD
-			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
-=======
-			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Urxvt">
->>>>>>> 7eeb1d671aa3728af7801109df3e83c109887f12
-				<action name="Execute">
-					<execute>urxvt</execute>
-				</action>
-			</item>
 			<item icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">
 				<action name="Execute">
 					<execute>libreoffice</execute>
@@ -79,6 +70,11 @@
 			<item icon="/usr/share/icons/gnome/48x48/apps/system-file-manager.png" label="Pcmanfm">
 				<action name="Execute">
 					<execute>pcmanfm</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
+				<action name="Execute">
+					<execute>lxterminal</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-text-editor.png" label="Mousepad">
@@ -123,7 +119,7 @@
 			</action>
 		</item>
 		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Firefox">
+		<item icon="/usr/share/icons/ld-icons/eyefox.png" label="Firefox">
 			<action name="Execute">
 				<execute>x-www-browser</execute>
 			</action>
@@ -133,13 +129,18 @@
 				<execute>thunderbird</execute>
 			</action>
 		</item>
-		<!--<separator/> -->
-		<!-- <menu id="/Debian"/> -->
+		<separator/>
+		<menu id="/Debian"/>
 		<separator/>
 		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="Debian"/>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
 			<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
+				<item icon="/usr/share/icons/gnome/48x48/actions/system-run.png" label="LxSession Autostart">
+					<action name="Execute">
+						<execute>lxsession-default-apps</execute>
+					</action>
+				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-system.png" label="Power Manager">
 					<action name="Execute">
 						<execute>xfce4-power-manager-settings</execute>
@@ -195,11 +196,6 @@
 						<execute>geany ~/.config/dmenu/apps</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-games.png" label="Ld-hotcorners Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
-					</action>
-				</item>
 			</menu>
 			<item icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">
 				<action name="Execute">
@@ -247,7 +243,7 @@
 					<execute>gksudo system-config-printer</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">
+			<item icon="/usr/share/pixmaps/galculator.xpm" label="Galculator">
 				<action name="Execute">
 					<execute>galculator</execute>
 				</action>
@@ -274,19 +270,24 @@
 					<execute>toggle.parcellite</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Hotcorners Toggle">
+				<action name="Execute">
+					<execute>toggle.ld</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Screensaver Toggle">
 				<action name="Execute">
 					<execute>xscreensaver</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Ld-Hotcorners Toggle">
-				<action name="Execute">
-					<execute>toggle.ld</execute>
-				</action>
-			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Monster Panel Toggle">
 				<action name="Execute">
 					<execute>toggle.monster</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Plank + Tray Toggle">
+				<action name="Execute">
+					<execute>toggle.stalonetray</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Tint2 Panel Toggle">

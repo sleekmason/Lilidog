@@ -7,5 +7,5 @@ Icon=utilities-terminal
 
 [X-Action-Profile profile-one]
 MimeTypes=inode/directory;
-Exec=urxvt
+Exec=exo-open --working-directory %f --launch TerminalEmulator
 Name=Default profile
