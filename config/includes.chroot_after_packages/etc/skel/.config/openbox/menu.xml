@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Terminal">
 			<action name="Execute">
-				<execute>urxvt</execute>
+				<execute>lxterminal</execute>
 			</action>
 		</item>
 		<separator/>
@@ -52,6 +52,11 @@
 					</action>
 				</item>
 			</menu>
+			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Urxvt">
+				<action name="Execute">
+					<execute>urxvt</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">
 				<action name="Execute">
 					<execute>libreoffice</execute>
@@ -70,11 +75,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/apps/system-file-manager.png" label="Pcmanfm">
 				<action name="Execute">
 					<execute>pcmanfm</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
-				<action name="Execute">
-					<execute>lxterminal</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-text-editor.png" label="Mousepad">

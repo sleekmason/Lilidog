@@ -7,7 +7,7 @@
 ##  ~/.fluxbox/menu1 
 #
 
-[exec] (Terminal) {urxvt}
+[exec] (Terminal) {lxterminal}
 [separator]
 #[exec] (Pcmanfm) {pcmanfm}
 [exec] (Thunar) {thunar}
@@ -26,11 +26,11 @@
 [exec] (/usr/local/bin) {gksudo thunar /usr/local/bin}
 [end]
 [exec] (Writer) {libreoffice}
+[exec] (Urxvt) {urxvt}
 [exec] (Geany) {geany}
 [exec] (Thunar) {thunar}
 [exec] (Spacefm) {spacefm}
 [exec] (Mousepad) {mousepad}
-[exec] (Lxterminal) {lxterminal}
 [exec] (Newsboat) {urxvt -g 120x40+120+100 -e newsboat}
 [exec] (Gpicview) {gpicview}
 [exec] (SmPlayer) {smplayer}
