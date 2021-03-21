@@ -4,7 +4,11 @@
 INCLUDE = "vars"
 
 RootMenu = "Pekwm" {
+<<<<<<< HEAD
+	Entry = "Terminal" { Actions = "Exec urxvt" }
+=======
 	Entry = "Terminal" { Actions = "Exec lxterminal" }
+>>>>>>> 7eeb1d671aa3728af7801109df3e83c109887f12
 	Entry = "Thunar" { Actions = "Exec thunar" }
 	Entry = "Web Browser" { Actions = "Exec firefox" }
 	Entry = "Thunderbird" { Actions = "Exec thunderbird" }
@@ -37,7 +41,11 @@ RootMenu = "Pekwm" {
 			Entry = "/usr/local/bin" { Actions = "Exec gksudo thunar /usr/local/bin" }
 }
 			Entry = "Run.." { Actions = "ShowCmdDialog" }
+<<<<<<< HEAD
+			Entry = "Lxterminal" { Actions = "Exec lxterminal" }
+=======
 			Entry = "Urxvt" { Actions = "Exec urxvt" }
+>>>>>>> 7eeb1d671aa3728af7801109df3e83c109887f12
 			Entry = "Geany" { Actions = "Exec geany" }
 			Entry = "Writer" { Actions = "Exec libreoffice" }
 			Entry = "Spacefm" { Actions = "Exec spacefm" }

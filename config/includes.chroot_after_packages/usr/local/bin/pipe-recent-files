@@ -142,7 +142,7 @@ mapfile -n "$((max*3))" -t array <<<"$(xmlstarlet sel -t -m "/xbel/bookmark" -s 
 -v '@href' -n \
 -v 'info/metadata/mime:mime-type/@type' -n \
 -v 'info/metadata/bookmark:applications/bookmark:application[last()]/@exec' -n "$recentfile")"
-[[ "$array" == "" ]] && pipe_exit "No file data to process"
+[[ "$array" == "" ]] && pipe_exit "No Recents"
 
 mimetypestofix=()
 j=0

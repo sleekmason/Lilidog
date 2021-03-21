@@ -32,7 +32,11 @@
             <Program icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" label="/usr/local/bin">gksudo thunar /usr/local/bin</Program>
  	</Menu>
 	    <Program icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">libreoffice</Program>
+<<<<<<< HEAD
+	        <Program icon="terminal.png" label="Lxterminal">lxterminal</Program>
+=======
 	        <Program icon="terminal.png" label="Urxvt">urxvt</Program>
+>>>>>>> 7eeb1d671aa3728af7801109df3e83c109887f12
             <Program icon="geany.png" label="Geany">geany</Program>
             <Program icon="/usr/share/icons/ld-icons/spacefm-48-pyramid-green.png" label="Spacefm">spacefm</Program>
             <Program icon="system-file-manager.png" label="Pcmanfm">pcmanfm</Program>

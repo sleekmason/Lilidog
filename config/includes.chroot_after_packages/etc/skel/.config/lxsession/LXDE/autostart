@@ -1,0 +1,8 @@
+#@lxpanel --profile LXDE
+#@xscreensaver -no-splash
+~/.fehbg
+compton
+#monster-panel
+tint2
+#fbpanel-alsa
+#pnmixer

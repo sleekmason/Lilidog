@@ -26,7 +26,11 @@
 [exec] (/usr/local/bin) {gksudo thunar /usr/local/bin}
 [end]
 [exec] (Writer) {libreoffice}
+<<<<<<< HEAD
+[exec] (Lxterminal) {lxterminal}
+=======
 [exec] (Urxvt) {urxvt}
+>>>>>>> 7eeb1d671aa3728af7801109df3e83c109887f12
 [exec] (Geany) {geany}
 [exec] (Thunar) {thunar}
 [exec] (Spacefm) {spacefm}

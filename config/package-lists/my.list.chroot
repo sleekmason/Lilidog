@@ -104,8 +104,10 @@ locales
 lsb-release
 lxappearance
 lxappearance-obconf
+lxde
 lxpolkit
 lxrandr
+lxde-settings-daemon
 lxterminal
 manpages
 manpages-dev
@@ -124,7 +126,7 @@ network-manager-gnome
 newsboat
 ntfs-3g
 obconf
-openbox
+openbox-lxde-session
 os-prober
 oss-compat
 parcellite
@@ -195,9 +197,7 @@ xbitmaps
 xdg-user-dirs
 xdg-utils
 xdotool
-xfce4-helpers
 xfce4-power-manager
-xfce4-settings
 xfonts-cyrillic
 xinput
 xmlstarlet

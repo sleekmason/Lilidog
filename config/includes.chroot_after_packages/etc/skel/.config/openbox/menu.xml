@@ -52,7 +52,11 @@
 					</action>
 				</item>
 			</menu>
+<<<<<<< HEAD
+			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
+=======
 			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Urxvt">
+>>>>>>> 7eeb1d671aa3728af7801109df3e83c109887f12
 				<action name="Execute">
 					<execute>urxvt</execute>
 				</action>
