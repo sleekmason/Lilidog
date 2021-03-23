@@ -1,0 +1,60 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>catfish</icon>
+	<name>Find files</name>
+	<unique-id>1608480111388528-1</unique-id>
+	<command>catfish --hidden %f</command>
+	<description>Search for files with Catfish</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open terminal here</name>
+	<unique-id>1608480111388550-2</unique-id>
+	<command>urxvt</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>accessories-text-editor</icon>
+	<name>Folder Attributes</name>
+	<unique-id>1610133896270522-1</unique-id>
+	<command>urxvt --hold -e ls -AghS --color %f</command>
+	<description>Detailed list in terminal.</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>preferences-desktop-wallpaper</icon>
+	<name>Set As Background</name>
+	<unique-id>1610134373979054-1</unique-id>
+	<command>feh --bg-scale %f</command>
+	<description>Set the current image as wallpaper</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>thunderbird</icon>
+	<name>Attach to Thunderbird</name>
+	<unique-id>1610135671429381-1</unique-id>
+	<command>thunderbird-action %U</command>
+	<description>Attach File to Thunderbird</description>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>gparted</icon>
+	<name>File Sizes</name>
+	<unique-id>1610405390468673-1</unique-id>
+	<command>urxvt -e ncdu -rr %F</command>
+	<description>Lists Folder File Sizes</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>

@@ -4,7 +4,7 @@
 INCLUDE = "vars"
 
 RootMenu = "Pekwm" {
-	Entry = "Terminal" { Actions = "Exec $TERM &" }
+	Entry = "Terminal" { Actions = "Exec urxvt" }
 	Entry = "Thunar" { Actions = "Exec thunar" }
 	Entry = "Web Browser" { Actions = "Exec firefox" }
 	Entry = "Thunderbird" { Actions = "Exec thunderbird" }
@@ -36,14 +36,13 @@ RootMenu = "Pekwm" {
 			Entry = "/usr/bin" { Actions = "Exec gksudo thunar /usr/bin" }
 			Entry = "/usr/local/bin" { Actions = "Exec gksudo thunar /usr/local/bin" }
 }
-			Entry = "Mousepad" { Actions = "Exec mousepad" }
 			Entry = "Run.." { Actions = "ShowCmdDialog" }
-			Entry = "Writer" { Actions = "Exec libreoffice" }
+			Entry = "Lxterminal" { Actions = "Exec lxterminal" }
 			Entry = "Geany" { Actions = "Exec geany" }
+			Entry = "Writer" { Actions = "Exec libreoffice" }
 			Entry = "Spacefm" { Actions = "Exec spacefm" }
 			Entry = "Pcmanfm" { Actions = "Exec pcmanfm" }
 			Entry = "Mousepad" { Actions = "Exec mousepad" }
-			Entry = "Lxterminal" { Actions = "Exec lxterminal" }
 			Entry = "Newsboat" { Actions = "Exec urxvt -g 120x40+120+100 -e newsboat" }
 			Entry = "SmPlayer" { Actions = "Exec smplayer" }
 			Entry = "Gpicview" { Actions = "Exec gpicview" }
@@ -67,7 +66,7 @@ RootMenu = "Pekwm" {
 			Entry = "Restart" { Actions = "Restart" }
 			Entry = "Exit" { Actions = "Exit" }
 	}
-                        Entry = "Power Manager" { Actions = "Exec xfce4-power-manager-settings" }
+            Entry = "Power Manager" { Actions = "Exec xfce4-power-manager-settings" }
 			Entry = "Lxappearance" { Actions = "Exec lxappearance" }
 			Entry = "Urxvt Config" { Actions = "Exec geany ~/.Xresources" }
 			Entry = "Conky Config" { Actions = "Exec geany ~/.config/conky/conky.conf" }

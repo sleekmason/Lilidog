@@ -1,5 +1,6 @@
 #@lxpanel --profile LXDE &
-~/.fehbg &
+#pcmanfm --desktop --profile LXDE &
+. $HOME/.fehbg &
 #pnmixer &
 #@xscreensaver -no-splash &
 compton &

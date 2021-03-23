@@ -4,7 +4,7 @@ unset HISTFILE
 pmlo_user=$(id -un)
 pmlo_ttle="Logout Options"
 pmlo_clas="$pmlo_ttle"
-pmlo_wico="/usr/share/icons/ld-icons/exit3.png"
+pmlo_wico="/usr/share/icons/ld-icons/exit4.png"
 pmlo_butl="/usr/share/icons/ld-icons/pixmaps/password.png"
 pmlo_bute="/usr/share/icons/ld-icons/pixmaps/logout_exit.png"
 pmlo_buts="/usr/share/icons/ld-icons/pixmaps/logout_suspend.png"

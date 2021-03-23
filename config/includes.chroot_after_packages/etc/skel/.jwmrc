@@ -3,7 +3,7 @@
 	
 	
 <!-- Startup -->	
-<StartupCommand>~/.fehbg</StartupCommand>	
+<StartupCommand>~/.fegbg</StartupCommand>	
 <StartupCommand>killall lxpolkit ; lxpolkit</StartupCommand>
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
@@ -32,11 +32,11 @@
             <Program icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" label="/usr/local/bin">gksudo thunar /usr/local/bin</Program>
  	</Menu>
 	    <Program icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">libreoffice</Program>
+	        <Program icon="terminal.png" label="Lxterminal">lxterminal</Program>
             <Program icon="geany.png" label="Geany">geany</Program>
             <Program icon="/usr/share/icons/ld-icons/spacefm-48-pyramid-green.png" label="Spacefm">spacefm</Program>
             <Program icon="system-file-manager.png" label="Pcmanfm">pcmanfm</Program>
             <Program icon="accessories-text-editor.png" label="Mousepad">mousepad</Program>
-            <Program icon="terminal.png" label="Lxterminal">lxterminal</Program>
             <Program icon="/usr/share/icons/gnome/48x48/apps/accessories-dictionary.png" label="Newsboat">urxvt -g 120x40+120+100 -e newsboat</Program>
             <Program icon="/usr/share/icons/ld-icons/gpicview.png" label="Gpicview">gpicview</Program>
             <Program icon="/usr/share/pixmaps/smplayer.xpm" label="Smplayer">smplayer</Program>
@@ -48,7 +48,7 @@
         <Separator/>
 	     <Menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" label="Utilities">
 		<Menu icon="preferences-system.png" label="Configuration">
-	    <Program icon="preferences-system.png" label="Power Manager">xfce4-power-manager-settings</Program>
+	        <Program icon="preferences-system.png" label="Power Manager">xfce4-power-manager-settings</Program>
             <Program icon="preferences-desktop-display.png" label="Lxappearance">lxappearance</Program>
             <Program icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Config">geany ~/.Xresources</Program>
             <Program icon="document-page-setup.png" label="Conky Config">geany ~/.config/conky/conky.conf</Program>
@@ -60,7 +60,7 @@
 			<Program icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Htop">urxvt -e htop</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lx-randr">lxrandr</Program>
 			<Program icon="gparted.png" label="Gparted">gksudo gparted</Program>
-			<Program icon="/usr/share/pixmaps/galculator.xpm" label="Galculator">galculator</Program>
+			<Program icon="/usr/share/icons/ld-icons/galculator.png" label="Galculator">galculator</Program>
 			<Program icon="printer.png" label="Printer Setup">system-config-printer</Program>
 			<Program icon="terminal.png" label="Kernel Remover">kernel-remover</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-desktop.png" label="G-Alternatives">galternatives</Program>
@@ -75,7 +75,7 @@
 	    <Program icon="object-flip-horizontal.png" label="Toggle Clipboard">toggle.parcellite</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Hotcorners">toggle.ld</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Screensaver">toggle.xscreensaver</Program>
-            <Program icon="window-close.png" label="Xkill">xkill</Program>
+            <Program icon="window-close.png" label="Xkill">xkill</Program>                
 	    </Menu>
 	    <Separator/>
 	    <Program icon="lock.png" label="Lock">slock</Program>

@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+#
+#    bl-xinerama-prop: script to get xinerama properties in a shell script
+#    Copyright (C) 2016 xaos52 <xaos52@bunsenlabs.org>
+#    Copyright (C) 2020 2ion <twoion@bunsenlabs.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from argparse import ArgumentParser, Namespace
+import logging
+import os
+import sys
+
+import gi # type: ignore
+gi.require_version("Gdk", "3.0")
+from gi.repository import Gdk # type: ignore
+
+DESCRIPTION = """Using the current cursor position, print the dimensions of the monitor the cursor is on."""
+LOG_FORMAT = "%(asctime)s %(levelname)s %(module)s %(funcName)s() : %(message)s"
+
+def getopts() -> Namespace:
+    ap = ArgumentParser(description=DESCRIPTION)
+    ap.add_argument("-d", "--debug", action="store_true", default=False, help="Print debug information")
+    opts = ap.parse_args()
+    if opts.debug:
+        logging.basicConfig(level=logging.DEBUG, format=LOG_FORMAT)
+    else:
+        logging.basicConfig(level=logging.WARN, format=LOG_FORMAT)
+    return opts
+
+def main() -> int:
+    getopts()
+
+    display = os.getenv("DISPLAY", None)
+    if display:
+        dsp = Gdk.Display.open(display)
+        assert dsp is not None, f"Failed to open X11 display {display} - does it exist?"
+    else:
+        dsp = Gdk.Display.get_default()
+        assert dsp is not None, f"Failed to open GDK default display"
+    logging.debug("Using display: %s", dsp.get_name())
+
+    # NOTE: This won't work correctly in multiseat environments.
+    seat = dsp.get_default_seat()
+
+    ptr_device = seat.get_pointer()
+    if ptr_device is None:
+        logging.error("No pointer device associated with display - none connected?")
+        return 1
+    else:
+        logging.debug("Using pointer device is: %s", ptr_device.get_name())
+
+    _, x, y = ptr_device.get_position()
+    mon = dsp.get_monitor_at_point(x, y)
+    logging.debug("Using monitor: %s (%s)", mon.get_model(), mon.get_manufacturer())
+
+    rect = mon.get_geometry()
+    print(f"{rect.width} {rect.height}")
+
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())

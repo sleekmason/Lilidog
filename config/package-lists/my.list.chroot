@@ -56,6 +56,7 @@ fonts-liberation
 fortunes
 fortune-mod
 fuse3
+galculator
 galternatives
 geany
 genisoimage
@@ -65,6 +66,7 @@ gnome-disk-utility
 gnome-screenshot
 gnome-system-tools
 gparted
+gpicview
 greybird-gtk-theme
 gsimplecal
 gstreamer1.0-plugins-good
@@ -89,7 +91,6 @@ jwm
 libavcodec-extra
 libexo-2-0
 libfm-modules
-libglib2.0-bin
 libncurses5-dev
 libnotify-bin
 libreoffice-gtk3
@@ -104,11 +105,9 @@ locales
 lsb-release
 lxappearance
 lxappearance-obconf
-lxde
+lxde-settings-daemon
 lxpolkit
 lxrandr
-lxsession-default-apps
-lxde-settings-daemon
 lxterminal
 manpages
 manpages-dev
@@ -127,7 +126,7 @@ network-manager-gnome
 newsboat
 ntfs-3g
 obconf
-openbox-lxde-session
+openbox
 os-prober
 oss-compat
 parcellite

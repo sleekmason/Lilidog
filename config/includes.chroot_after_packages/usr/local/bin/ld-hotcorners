@@ -33,9 +33,9 @@ ap.add_argument("-d", "--daemon", help="run daemon and listen for cursor trigger
             action="store_true")
 opts = ap.parse_args(sys.argv[1:])
 
-p = Popen(['xdotool','getdisplaygeometry'], stdout=PIPE, stderr=STDOUT)
+# p = Popen(['xdotool','getdisplaygeometry'], stdout=PIPE, stderr=STDOUT)
 # use bl helper script to get screen dimensions where the cursor is
-# p = Popen(['bl-xinerama-prop'], stdout=PIPE, stderr=STDOUT)
+p = Popen(['bl-xinerama-prop'], stdout=PIPE, stderr=STDOUT)
 Dimensions = p.communicate()
 Dimensions = Dimensions[0].decode('utf8').replace('\n', '')
 Dimensions = Dimensions.split(' ')

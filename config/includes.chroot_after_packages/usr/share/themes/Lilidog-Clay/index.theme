@@ -1,8 +1,12 @@
-[X-GNOME-Metatheme]
-Name=Blackbird
+[Desktop Entry]
 Type=X-GNOME-Metatheme
-Comment=Blackbird theme
-GtkTheme=Blackbird
-MetacityTheme=Blackbird
+Name=Lilidog-Clay
+Comment=Lilidog-Clay based off Greybird theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Lilidog-Clay
+MetacityTheme=Lilidog-Clay
 IconTheme=Adwaita
 CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

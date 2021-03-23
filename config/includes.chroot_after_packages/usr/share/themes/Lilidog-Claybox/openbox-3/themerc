@@ -7,7 +7,7 @@
 
 menu.title.bg: raised
 menu.title.bg.color: #767D79
-menu.title.text.color: #89918D
+menu.title.text.color: #0D0B0B
 menu.separator.color: #293231
 menu.items.bg: raised gradient diagonal
 menu.items.bg.color: #767D79

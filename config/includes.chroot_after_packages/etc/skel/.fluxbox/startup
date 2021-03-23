@@ -19,7 +19,7 @@ killall volumeicon ; volumeicon &
 killall compton ; compton --config ~/.config/compton2.conf &
 killall nm-applet ; nm-applet &
 lxpolkit &
-~/.fehbg &
+~/.fegbg &
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
 #     exists. If it does, we'll start it up by default.
