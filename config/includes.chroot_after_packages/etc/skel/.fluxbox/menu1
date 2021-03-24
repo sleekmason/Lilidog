@@ -7,7 +7,7 @@
 ##  ~/.fluxbox/menu1 
 #
 
-[exec] (Terminal) {urxvt}
+[exec] (Terminal) {lxterminal}
 [separator]
 #[exec] (Pcmanfm) {pcmanfm}
 [exec] (Thunar) {thunar}
@@ -26,7 +26,7 @@
 [exec] (/usr/local/bin) {gksudo thunar /usr/local/bin}
 [end]
 [exec] (Writer) {libreoffice}
-[exec] (Lxterminal) {lxterminal}
+[exec] (Urxvt) {urxvt}
 [exec] (Geany) {geany}
 [exec] (Thunar) {thunar}
 [exec] (Spacefm) {spacefm}

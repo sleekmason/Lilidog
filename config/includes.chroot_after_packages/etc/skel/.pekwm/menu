@@ -4,7 +4,7 @@
 INCLUDE = "vars"
 
 RootMenu = "Pekwm" {
-	Entry = "Terminal" { Actions = "Exec urxvt" }
+	Entry = "Terminal" { Actions = "Exec lxterminal" }
 	Entry = "Thunar" { Actions = "Exec thunar" }
 	Entry = "Web Browser" { Actions = "Exec firefox" }
 	Entry = "Thunderbird" { Actions = "Exec thunderbird" }
@@ -37,7 +37,7 @@ RootMenu = "Pekwm" {
 			Entry = "/usr/local/bin" { Actions = "Exec gksudo thunar /usr/local/bin" }
 }
 			Entry = "Run.." { Actions = "ShowCmdDialog" }
-			Entry = "Lxterminal" { Actions = "Exec lxterminal" }
+			Entry = "Urxvt" { Actions = "Exec urxvt" }
 			Entry = "Geany" { Actions = "Exec geany" }
 			Entry = "Writer" { Actions = "Exec libreoffice" }
 			Entry = "Spacefm" { Actions = "Exec spacefm" }
@@ -101,9 +101,9 @@ RootMenu = "Pekwm" {
 			Entry = "Toggle Hotcorners" { Actions = "Exec toggle.ld" }
 			Entry = "Toggle Screensaver" { Actions = "Exec toggle.xscreensaver" }
 			Entry = "Toggle Monster Panel" { Actions = "Exec toggle.monster" }
-                        Entry = "Toggle Plank + Tray" { Actions = "Exec toggle.stalonetray" }
-	                Entry = "Toggle FbPanel" { Actions = "Exec toggle.fbpanel" }
-		        Entry = "Toggle Plank" { Actions = "Exec toggle.plank" }
+            Entry = "Toggle Plank + Tray" { Actions = "Exec toggle.stalonetray" }
+	        Entry = "Toggle FbPanel" { Actions = "Exec toggle.fbpanel" }
+		    Entry = "Toggle Plank" { Actions = "Exec toggle.plank" }
 			Entry = "Xkill" { Actions = "Exec xkill" }
 	}
 		Entry = "Reload" { Actions = "Reload" }

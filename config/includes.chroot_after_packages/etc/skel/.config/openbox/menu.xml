@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Terminal">
 			<action name="Execute">
-				<execute>urxvt</execute>
+				<execute>lxterminal</execute>
 			</action>
 		</item>
 		<separator/>
@@ -52,7 +52,7 @@
 					</action>
 				</item>
 			</menu>
-			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Lxterminal">
+			<item icon="/usr/share/icons/gnome/48x48/apps/terminal.png" label="Urxvt">
 				<action name="Execute">
 					<execute>urxvt</execute>
 				</action>
@@ -283,6 +283,11 @@
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Monster Panel Toggle">
 				<action name="Execute">
 					<execute>toggle.monster</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Plank + Tray Toggle">
+				<action name="Execute">
+					<execute>toggle.stalonetray</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Tint2 Panel Toggle">

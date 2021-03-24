@@ -70,6 +70,8 @@ gpicview
 greybird-gtk-theme
 gsimplecal
 gstreamer1.0-plugins-good
+gstreamer1.0-plugins-bad
+gstreamer1.0-plugins-ugly
 gstreamer1.0-pulseaudio
 gtk2-engines-murrine
 gtk2-engines-pixbuf
@@ -86,6 +88,7 @@ inxi
 isc-dhcp-client
 intel-microcode
 iw
+ixo-usb-jtag
 jq
 jwm
 libavcodec-extra

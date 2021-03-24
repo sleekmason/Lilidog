@@ -8,6 +8,7 @@ lb config noauto \
      --debian-installer 'live' \
      --debian-installer-distribution 'bullseye' \
      --distribution 'bullseye' \
+     --parent-debian-installer-distribution 'sid' \
      --mirror-binary 'https://deb.debian.org/debian' \
      --mirror-binary-security 'https://deb.debian.org/debian-security' \
      --mirror-bootstrap 'https://deb.debian.org/debian' \
@@ -20,7 +21,7 @@ lb config noauto \
      --iso-publisher 'Lilidog GNU/Linux' \
      --iso-volume 'LiliDog' \
      --system 'live' \
-     --updates 'false' \
+     --updates 'true' \
      --win32-loader 'false' \
      --zsync 'false' \
      --quiet \

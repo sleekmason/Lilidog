@@ -15,7 +15,7 @@
    <!-- The root menu, if this is undefined you will not get a menu. -->
    <!-- Additional RootMenu attributes: onroot, labeled, label -->
     <RootMenu onroot="23">
-        <Program icon="utilities-system-monitor.png" label="Terminal">urxvt</Program>
+        <Program icon="utilities-system-monitor.png" label="Terminal">lxterminal</Program>
         <Separator/>
             <Program icon="/usr/share/icons/ld-icons/Thunar.png" label="Thunar">thunar</Program>
             <Program icon="/usr/share/icons/ld-icons/firefox.png" label="Web Browser">firefox-esr</Program>
@@ -32,7 +32,7 @@
             <Program icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" label="/usr/local/bin">gksudo thunar /usr/local/bin</Program>
  	</Menu>
 	    <Program icon="/usr/share/icons/ld-icons/libreoffice-writer.png" label="Writer">libreoffice</Program>
-	        <Program icon="terminal.png" label="Lxterminal">lxterminal</Program>
+	        <Program icon="terminal.png" label="Urxvt">urxvt</Program>
             <Program icon="geany.png" label="Geany">geany</Program>
             <Program icon="/usr/share/icons/ld-icons/spacefm-48-pyramid-green.png" label="Spacefm">spacefm</Program>
             <Program icon="system-file-manager.png" label="Pcmanfm">pcmanfm</Program>
