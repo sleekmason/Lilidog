@@ -93,6 +93,7 @@ jq
 jwm
 libavcodec-extra
 libexo-2-0
+libfile-mimeinfo-perl
 libfm-modules
 libncurses5-dev
 libnotify-bin
