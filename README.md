@@ -1,10 +1,9 @@
 ﻿# Lilidog Linux Based on Debian stable
 ## LXDE With Openbox, Fluxbox, Jwm, and Pekwm.  Optimized - 64 bit version.<br/>
 
-Lilidog is a dark themed distro based on LXDE. <br/> 
+Lilidog is a lightweight distro based on LXDE. <br/> 
 Options are available for Openbox, Fluxbox, Jwm, or Pekwm. <br/> 
-Toggle freely between the four while in the default session. <br/>
-All Window managers can be accessed separately through the login screen, but no toggling in this case.
+All Window managers can be accessed separately through the login screen. 
 
 Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize.
@@ -13,41 +12,37 @@ This is the stable version. You can download the full ISO from Sourceforge:
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-Lilidog-Minimal and Lilidog-Custom have releases here as well: https://sourceforge.net/projects/lilidog/files/Releases/
+Lilidog-Sid has  release here as well: https://sourceforge.net/projects/lilidog/files/Releases/
 
-### Openbox
-[![Openbox-gradient-2-7-21.png](https://i.postimg.cc/qBKYdxQN/Openbox-gradient-2-7-21.png)](https://postimg.cc/Wt2SGrBV)
+ 
+[![Lilidog-Clay.png](https://i.postimg.cc/rmPM7HWh/Lilidog-Clay.png)](https://postimg.cc/DJL9XBxs) <br/>
 
-### Fluxbox
-[![Fluxbox-1-26-21.png](https://i.postimg.cc/x1kyjPvP/Fluxbox-1-26-21.png)](https://postimg.cc/hXB7pT3J)
+[![Lilidog-Clay2.png](https://i.postimg.cc/x1n8vWPH/Lilidog-Clay2.png)](https://postimg.cc/ppcPxc4X) <br/>
 
-### Jwm
-[![Jwm-2-7-21.png](https://i.postimg.cc/8CJ0ZR0B/Jwm-2-7-21.png)](https://postimg.cc/f3sCL9ZJ)
+[![Trees.png](https://i.postimg.cc/QMxcNB9F/Trees.png)](https://postimg.cc/v4k43Zvy) <br/>
 
-### Pekwm
-[![Pekwm-1-26-21.png](https://i.postimg.cc/JnQjYY8R/Pekwm-1-26-21.png)](https://postimg.cc/zbVLVj3Q)
+[![Lilidog.png](https://i.postimg.cc/1X1s9qC6/Lilidog.png)](https://postimg.cc/mzj0jtG2) <br/>
+
+[![Lilidog-Dark2.png](https://i.postimg.cc/VLckw3pT/Lilidog-Dark2.png)](https://postimg.cc/232DFXzF) <br/>
 
 ### Features:
 
 - Based on Debian Stable with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be added during installation. 
 
-- Switch between all four window managers freely while in session through the toggles in the menu. <br/> 
-
-- Switch between four different panels on the fly as well. - Customize your own to be toggled when desired.
+- Switch between four different panels on the fly. - Customize your own to be toggled when desired.
 
 - The username and password for the live environment is "user", and "live" respectively. <br/>
 
-- Hybrid Monster panel by default in Openbox, with options for FbPanel, Lxpanel, or Tint2 panel. <br/>
+- Tint2 panel by default in Openbox, with options for FbPanel, Plank, or Monsterpanel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
-Try Fbpanel or Tint2 in the live environment under 'Toggles' in the menu.
+Try Fbpanel or Monsterpanel in the live environment under 'Toggles' in the menu.
 
 - There are shortcuts for Alsamixer in the volume icon and xfce4-power-manager in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
-Hover over the icons to see what they are.  The live password is "live" for the screenlock.
+Hover over the icons to see what they are.  
 
-- X-screensaver and other handy startup apps readily available through the toggles in the menu, <br/>
-or can be activated on login by navigating to Lxsession Autostart in the menu, and enabling.
+- X-screensaver and other handy startup apps readily available through the toggles in the menu <br/>
 
 - Dmenu and Rofi for alternate menu sources. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
 customized Dmenu with only the most commonly used apps. ALT + F5 pulls up Rofi.
@@ -70,18 +65,6 @@ For drive information, you may wish to edit the script in  ~/.config/conky/scrip
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
-- BFQ IO Scheduler by Default for spinning drives. "Mq-Deadline" for SSD and eMMC, and "None" for nvme. <br/>
-To change this to kernel default, delete 60-scheduler.rules in /etc/udev/rules.d
-
-- Feh sets the wallpaper directly in lxsession autostart rather than pointing to ~/.fehbg <br/>
-After installation, you may want to change this to ~/.fehbg & in lxsession autostart for customization. <br/>
-
-- Icons on the desktop by enabling  __pcmanfm --desktop --profile__ in Lxsession autostart.
-
-- My wife painted rocks for the wallpaper and I found I like them quite a bit:) Maybe you will too.<br/> 
-Feel free to use them however you like, or delete them and point to something else. No worries:) <br/> 
-They are mine/yours, not off the internet. 
-
 - System notifications enabled with Dunst. Set your own settings in ~/.config/dunst/dunstrc.
 
 - All scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
@@ -96,13 +79,6 @@ Run swapid in a terminal after installing another distro to a different partitio
 Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
 Change the corners in ~/.config/ld-hotcorners. <br/>
 Currently clockwise from top left: __Thunar, Compton toggle, Exit menu, urxvt terminal__. <br/>
-
-- This ISO has about everything you could need for simple tasks while still quite responsive.
-
-- This build running live uses around 300MB ram. <br/>
-Installed: around 280MB <br/> 
-
-This iso comes in at 1.18 GB
 
 Installed extras include but not limited to: <br/>
 bash-completion /
@@ -238,14 +214,6 @@ https://live-team.pages.debian.net/live-manual/html/live-manual/examples.en.html
 Contact info: sleekmason@gmail.com
 
 ### Good Luck!
-
-__Credits__
-
-The linux rocks are my wifes:) She paints rocks, and I like em. <br/>
-The rabbit is a local image on the side of a building. Apt for the times. <br/>
-The Cracked Window is from one of our backpacking trips. An old truck, 2000' down. <br/>
-The "Lis" is a changed copy from a print we have.
-The Grub image is Lili out playing in the snow.
 
 ## Lilidog
 
