@@ -8,6 +8,7 @@
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
 <StartupCommand>xfce4-power-manager</StartupCommand>
+<StartupCommand>xfsettingsd --daemon</StartupCommand>
 <StartupCommand>killall compton ; compton --config ~/.config/compton2.conf</StartupCommand>
 
 <!-- **********  ROOT MENU **********  -->
@@ -48,8 +49,7 @@
         <Separator/>
 	     <Menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" label="Utilities">
 		<Menu icon="preferences-system.png" label="Configuration">
-	        <Program icon="preferences-system.png" label="Power Manager">xfce4-power-manager-settings</Program>
-            <Program icon="preferences-desktop-display.png" label="Lxappearance">lxappearance</Program>
+	        <Program icon="preferences-system.png" label="Settings Manager">xfce4-settings-manager</Program>
             <Program icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Config">geany ~/.Xresources</Program>
             <Program icon="document-page-setup.png" label="Conky Config">geany ~/.config/conky/conky.conf</Program>
             <Program icon="/usr/share/icons/ld-icons/compton.png" label="Compton Config">geany ~/.config/compton.conf</Program>

@@ -73,6 +73,7 @@ gstreamer1.0-plugins-good
 gstreamer1.0-plugins-bad
 gstreamer1.0-plugins-ugly
 gstreamer1.0-pulseaudio
+gtk2-engines
 gtk2-engines-murrine
 gtk2-engines-pixbuf
 gvfs-backends
@@ -89,6 +90,7 @@ isc-dhcp-client
 intel-microcode
 iw
 ixo-usb-jtag
+jgmenu
 jq
 jwm
 libavcodec-extra
@@ -105,10 +107,9 @@ lightdm
 lightdm-gtk-greeter-settings
 linux-image-amd64
 linux-headers-amd64
+lm-sensors
 locales
 lsb-release
-lxappearance
-lxappearance-obconf
 lxde-settings-daemon
 lxpolkit
 lxrandr
@@ -126,6 +127,7 @@ mousepad
 mythes-en-us
 nano
 ncdu
+neofetch
 network-manager-gnome
 newsboat
 ntfs-3g
@@ -176,10 +178,12 @@ thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
+tree
 tumbler
 thunderbird
 transmission-gtk
 unzip
+usbutils
 usermode
 user-setup
 va-driver-all:amd64
@@ -202,6 +206,7 @@ xdg-user-dirs
 xdg-utils
 xdotool
 xfce4-power-manager
+xfce4-settings
 xfonts-cyrillic
 xinput
 xmlstarlet

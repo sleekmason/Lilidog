@@ -7,6 +7,22 @@
 			</action>
 		</item>
 		<separator/>
+		<item icon="/usr/share/icons/ld-icons/Thunar.png" label="Thunar">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Firefox">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/thunderbird/chrome/icons/default/default48.png" label="Thunderbird">
+			<action name="Execute">
+				<execute>thunderbird</execute>
+			</action>
+		</item>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/applications-other.png" id="root-menu-594711" label="Quick Grab">
 			<menu execute="pipe-recent-files -t gnome" icon="/usr/share/icons/gnome-brave/32x32/places/folder.png" id="ID41" label="Recent Files"/>
@@ -113,147 +129,6 @@
 				</action>
 			</item>
 		</menu>
-		<item icon="/usr/share/icons/ld-icons/Thunar.png" label="Thunar">
-			<action name="Execute">
-				<execute>thunar</execute>
-			</action>
-		</item>
-		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<item icon="/usr/share/icons/ld-icons/firefox.png" label="Firefox">
-			<action name="Execute">
-				<execute>x-www-browser</execute>
-			</action>
-		</item>
-		<item icon="/usr/share/thunderbird/chrome/icons/default/default48.png" label="Thunderbird">
-			<action name="Execute">
-				<execute>thunderbird</execute>
-			</action>
-		</item>
-		<!--<separator/> -->
-		<!-- <menu id="/Debian"/> -->
-		<separator/>
-		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="Debian"/>
-		<separator/>
-		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
-			<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-system.png" label="Power Manager">
-					<action name="Execute">
-						<execute>xfce4-power-manager-settings</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/apps/preferences-desktop-theme.png" label="Lx-Appearance">
-					<action name="Execute">
-						<execute>lxappearance</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/pixmaps/obconf.png" label="Openbox Conf">
-					<action name="Execute">
-						<execute>obconf</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/ld-icons/compton.png" label="Compton Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/compton.conf</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-engineering.png" label="Conky Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/conky/conky.conf</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Conf">
-					<action name="Execute">
-						<execute>geany ~/.Xresources</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-science.png" label="Tint2 Conf">
-					<action name="Execute">
-						<execute>tint2conf</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" label="LightDm Conf">
-					<action name="Execute">
-						<execute>gksudo lightdm-gtk-greeter-settings</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" label="FBPanel Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/fbpanel/default</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-utilities.png" label="Xbindkeys Conf">
-					<action name="Execute">
-						<execute>xbindkeys-config</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/actions/tools-check-spelling.png" label="Dmenu Apps Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/dmenu/apps</execute>
-					</action>
-				</item>
-				<item icon="/usr/share/icons/gnome/48x48/categories/applications-games.png" label="Ld-hotcorners Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
-					</action>
-				</item>
-			</menu>
-			<item icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">
-				<action name="Execute">
-					<execute>gnome-screenshot -i</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/htop.png" label="Htop">
-				<action name="Execute">
-					<execute>urxvt -e htop</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/gparted.png" label="Gparted">
-				<action name="Execute">
-					<execute>gksudo gparted</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lx-Randr">
-				<action name="Execute">
-					<execute>lxrandr</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/transmission.xpm" label="Transmission">
-				&gt;
-				<action name="Execute">
-					<execute>transmission-gtk</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/galternatives.png" label="G-Alternatives">
-				<action name="Execute">
-					<execute>galternatives</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/edit-cut.png" label="Kernel Remover">
-				<action name="Execute">
-					<execute>kernel-remover</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/gnome-disks.png" label="Gnome Disks">
-				<action name="Execute">
-					<execute>gnome-disks</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/devices/printer.png" label="Printer Setup">
-				<action name="Execute">
-					<execute>gksudo system-config-printer</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">
-				<action name="Execute">
-					<execute>galculator</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/pixmaps/synaptic.png" label="Synaptic">
-				<action name="Execute">
-					<execute>gksudo synaptic</execute>
-				</action>
-			</item>
-		</menu>
 		<menu icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" id="root-menu-721334" label="Toggles">
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Conky Toggle">
 				<action name="Execute">
@@ -311,10 +186,127 @@
 				</action>
 			</item>
 		</menu>
+		<!--<separator/> -->
+		<!-- <menu id="/Debian"/> -->
 		<separator/>
-		<item icon="/usr/share/icons/gnome/48x48/actions/redo.png" label="Reconfigure">
-			<action name="Reconfigure"/>
-		</item>
+		<menu execute="/usr/bin/obamenu" icon="/usr/share/icons/ld-icons/debian-logo.png" id="applications-menu" label="Debian"/>
+		<separator/>
+		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" id="root-menu-4985" label="Utilities">
+			<item icon="/usr/share/icons/gnome/48x48/categories/applications-accessories.png" label="Screenshot">
+				<action name="Execute">
+					<execute>gnome-screenshot -i</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/htop.png" label="Htop">
+				<action name="Execute">
+					<execute>urxvt -e htop</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/ld-icons/gparted.png" label="Gparted">
+				<action name="Execute">
+					<execute>gksudo gparted</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lx-Randr">
+				<action name="Execute">
+					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/transmission.xpm" label="Transmission">
+				&gt;
+				<action name="Execute">
+					<execute>transmission-gtk</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/ld-icons/galternatives.png" label="G-Alternatives">
+				<action name="Execute">
+					<execute>galternatives</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/actions/edit-cut.png" label="Kernel Remover">
+				<action name="Execute">
+					<execute>kernel-remover</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/ld-icons/gnome-disks.png" label="Gnome Disks">
+				<action name="Execute">
+					<execute>gnome-disks</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/devices/printer.png" label="Printer Setup">
+				<action name="Execute">
+					<execute>gksudo system-config-printer</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/gnome/48x48/apps/accessories-calculator.png" label="Galculator">
+				<action name="Execute">
+					<execute>galculator</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/synaptic.png" label="Synaptic">
+				<action name="Execute">
+					<execute>gksudo synaptic</execute>
+				</action>
+			</item>
+		</menu>
+		<menu icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" id="root-menu-21510" label="Configuration">
+				<item icon="/usr/share/icons/gnome/48x48/apps/preferences-desktop-theme.png" label="Settings Manager">
+					<action name="Execute">
+						<execute>xfce4-settings-manager</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/pixmaps/obconf.png" label="Openbox Conf">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/ld-icons/compton.png" label="Compton Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/compton.conf</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/applications-engineering.png" label="Conky Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/conky/conky.conf</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Conf">
+					<action name="Execute">
+						<execute>geany ~/.Xresources</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/applications-science.png" label="Tint2 Conf">
+					<action name="Execute">
+						<execute>tint2conf</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-system.png" label="LightDm Conf">
+					<action name="Execute">
+						<execute>gksudo lightdm-gtk-greeter-settings</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/preferences-other.png" label="FBPanel Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/fbpanel/default</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/applications-utilities.png" label="Xbindkeys Conf">
+					<action name="Execute">
+						<execute>xbindkeys-config</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/actions/tools-check-spelling.png" label="Dmenu Apps Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/dmenu/apps</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/gnome/48x48/categories/applications-games.png" label="Ld-hotcorners Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/ld-hotcorners/ld-hotcornersrc</execute>
+					</action>
+				</item>
+			</menu>
+		<separator/>
 		<item icon="/usr/share/icons/ld-icons/pixmaps/logout_reboot.png" label="Restart">
 			<action name="Restart"/>
 		</item>

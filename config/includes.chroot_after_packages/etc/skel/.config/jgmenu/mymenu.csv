@@ -1,0 +1,83 @@
+Terminal,           lxterminal,       utilities-terminal
+^sep()
+Thunar,             thunar,           /usr/share/icons/ld-icons/Thunar.png
+Firefox,            firefox,          firefox-esr
+Thunderbird,        thunderbird,      thunderbird
+^sep()
+Quick Grab,^checkout(quickgrab),applications-other
+Toggles,^checkout(toggles),object-flip-horizontal
+^sep()
+Debian,^pipe(jgmenu_run apps),debian-logo
+^sep()
+Utilities,^checkout(utilities),applications-utilities
+Configuration,^checkout(configuration),preferences-system
+^sep()
+Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_reboot.png
+Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
+
+^tag(quickgrab)
+Recent Files,^pipe(jgmenu_run ob --cmd="recents-old",folder
+Root Files,^checkout(rootfiles),folder-documents
+Urxvt,              urxvt,            utilities-terminal
+Writer,             libreoffice,      libreoffice-writer
+Geany,              geany,			  geany
+Spacefm,            spacefm,          spacefm
+Pcmanfm,            pcmanfm,          system-file-manager
+Mousepad,           mousepad,         accessories-text-editor
+Newsboat,           urxvt -g 120x40+120+100 -e newsboat,         accessories-text-editor
+Smplayer,           smplayer,         smplayer
+Gpicview,           gpicview,         gpicview
+Pragha,             pragha,           pragha
+Gimp,               gimp,             gimp
+Catfish Search,     catfish,          edit-find
+
+^tag(utilities)
+^sep()
+Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
+Htop,               urxvt -e htop,                    htop
+Gparted,            gksudo gparted,                   gparted
+Lx-randr,           lxrandr,                          preferences-system-network
+Transmission,       transmission,                     transmission
+G-Alternatives,     galternatives,                    galternatives
+Kernel Remover,     kernel-remover,                   edit-cut
+Gnome Disks,        gnome-disks,                      gparted
+Printer Setup,      gksudo system-config-printer,     printer
+Galculator,         galculator,                       galculator
+Synaptic,           gksudo synaptic,                  synaptic
+
+^tag(toggles)
+Conky,               toggle.conky,              object-flip-horizontal
+Compton,             toggle.compton,            object-flip-horizontal
+Clipboard,           toggle.parcellite,         object-flip-horizontal
+Hotcorners,          toggle.ld,                 object-flip-horizontal
+Screensaver,         toggle.xscreensaver,       object-flip-horizontal
+Monsterpanel,        toggle.monster,            object-flip-horizontal
+Plank + Tray,        toggle.stalonetray,        object-flip-horizontal
+Tint2 Panel,         toggle.tint2,              object-flip-horizontal
+Fbpanel,             toggle.fbpanel,            object-flip-horizontal
+Plank,               toggle.plank,              object-flip-horizontal
+Xkill,               xkill,                     edit-delete
+
+^tag(rootfiles)
+/etc/apt/sources.list,    gksudo geany /etc/apt/sources.list,  folder-documents 
+/usr/share,               gksudo thunar /usr/share,            folder-documents
+/usr/share/fonts,         gksudo thunar /usr/share/fonts,      folder-documents
+/usr/share/icons,         gksudo thunar /usr/share/icons,      folder-documents    
+/usr/share/themes,        gksudo thunar /usr/share/themes,     folder-documents
+/usr/bin,                 gksudo thunar /usr/bin,              folder-documents
+/usr/local/bin,           gksudo thunar /usr/local/bin,        folder-documents
+
+^tag(configuration)
+Power Manager,            xfce4-power-manager-settings,                   applications-system     
+Lx-appearance,             lxappearance,                                   preferences-desktop-theme
+Openbox Conf,             obconf,                                         obconf
+Compton Conf,             geany ~/.config/compton.conf,                   compton
+Jgmenu Conf,              urxvt -e jgmenu init --interactive -i,          document-properties
+Conky Conf,               geany ~/.config/conky/conky.conf,               document-properties
+Urxvt Conf,               geany ~/.Xresources,                            utilities-terminal
+Tint2 Conf,               tint2conf,                                      tint2
+Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,            preferences-system
+Fbpanel Conf,             geany ~/.config/fbpanel/default,                preferences-other
+Xbindkeys Conf,           xbindkeys-config,                               applications-utilities
+Dmenu Apps Conf,          geany ~/.config/dmenu/apps,                     geany
+Ld-Hotcorners Conf,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,  applications-games

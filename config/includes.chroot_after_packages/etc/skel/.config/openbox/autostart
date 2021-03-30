@@ -11,3 +11,4 @@ xfce4-power-manager &
 xbindkeys &
 nm-applet &
 lxpolkit &
+xfsettingsd --daemon &

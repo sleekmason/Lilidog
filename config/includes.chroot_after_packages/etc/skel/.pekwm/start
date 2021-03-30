@@ -22,6 +22,7 @@ stalonetray &
 plank &
 killall volumeicon ; volumeicon &
 killall lxpolkit ; lxpolkit  &
+xfsettingsd --daemon &
 killall nm-applet ; nm-applet &
 killall compton &
 sleep 1 ; compton --config ~/.config/compton.conf &
