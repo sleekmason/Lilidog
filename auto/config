@@ -5,7 +5,6 @@ lb config noauto \
      --apt-source-archives 'false' \
      --apt-indices 'false' \
      --archive-areas "main contrib non-free" \
-     --parent-debian-installer-distribution 'daily' \
      --debian-installer 'live' \
      --debian-installer-distribution 'bullseye' \
      --distribution 'bullseye' \
