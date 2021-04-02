@@ -108,7 +108,6 @@ isc-dhcp-client
 intel-microcode
 iw
 ixo-usb-jtag
-jgmenu
 jq
 jwm
 libavcodec-extra
@@ -123,7 +122,6 @@ libelf-dev
 libssl-dev
 lightdm
 lightdm-gtk-greeter-settings
-linux-image-amd64
 lm-sensors
 locales
 lsb-release
