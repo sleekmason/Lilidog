@@ -16,7 +16,7 @@
 # idesk &
 xfce4-power-manager &
 killall volumeicon ; volumeicon &
-killall compton ; compton --config ~/.config/compton2.conf &
+killall picom ; picom &
 killall nm-applet ; nm-applet &
 lxpolkit &
 xfsettingsd --daemon &

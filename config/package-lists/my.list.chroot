@@ -13,7 +13,6 @@ blackbird-gtk-theme
 btrfs-progs
 build-essential
 catfish
-compton
 conky
 cpuid
 crda
@@ -157,6 +156,7 @@ pciutils
 pcmciautils
 pcmanfm
 pekwm
+picom
 plank
 pnmixer
 pragha

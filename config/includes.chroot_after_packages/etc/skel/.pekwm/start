@@ -24,6 +24,6 @@ killall volumeicon ; volumeicon &
 killall lxpolkit ; lxpolkit  &
 xfsettingsd --daemon &
 killall nm-applet ; nm-applet &
-killall compton &
-sleep 1 ; compton --config ~/.config/compton.conf &
+killall picom &
+sleep 1 ; picom &
 xfce4-power-manager &
