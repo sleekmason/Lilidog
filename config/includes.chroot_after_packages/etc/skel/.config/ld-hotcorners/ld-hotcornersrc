@@ -1,6 +1,6 @@
 [Hot Corners]
 top_left_corner_command = thunar
-top_right_corner_command = bash -c 'if ! pkill -x picom; then exec picom; fi'
+top_right_corner_command = bash -c 'if ! pkill -x picom; then exec picom  --experimental-backend; fi'
 bottom_left_corner_command = lxterminal
 bottom_right_corner_command = ld-logout
 polling_interval = 0.2

@@ -25,5 +25,5 @@ killall lxpolkit ; lxpolkit  &
 xfsettingsd --daemon &
 killall nm-applet ; nm-applet &
 killall picom &
-sleep 1 ; picom &
+sleep 1 ; picom  --experimental-backend &
 xfce4-power-manager &

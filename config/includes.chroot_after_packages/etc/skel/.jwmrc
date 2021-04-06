@@ -9,7 +9,7 @@
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
 <StartupCommand>xfce4-power-manager</StartupCommand>
 <StartupCommand>xfsettingsd --daemon</StartupCommand>
-<StartupCommand>killall picom ; picom</StartupCommand>
+<StartupCommand>killall picom ; picom  --experimental-backend</StartupCommand>
 
 <!-- **********  ROOT MENU **********  -->
 
