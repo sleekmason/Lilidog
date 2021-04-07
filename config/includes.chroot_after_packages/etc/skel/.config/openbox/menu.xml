@@ -135,9 +135,9 @@
 					<execute>toggle.conky</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Picom Toggle">
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Compton Toggle">
 				<action name="Execute">
-					<execute>toggle.picom</execute>
+					<execute>toggle.compton</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Clipboard Toggle">
@@ -260,9 +260,9 @@
 						<execute>obconf</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/ld-icons/compton.png" label="Picom Conf">
+				<item icon="/usr/share/icons/ld-icons/compton.png" label="Compton Conf">
 					<action name="Execute">
-						<execute>geany ~/.config/picom.conf</execute>
+						<execute>geany ~/.config/compton.conf</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-engineering.png" label="Conky Conf">

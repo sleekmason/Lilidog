@@ -3,7 +3,7 @@
 . $HOME/.fehbg &
 #pnmixer &
 #@xscreensaver -no-splash &
-picom  --experimental-backend &
+compton &
 tint2 &
 #fbpanel-alsa &
 #monster-panel &

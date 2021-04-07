@@ -59,7 +59,7 @@
    [exec] (Settings manager) {xfce4-settings-manager}
    [exec] (Urxvt Config) {geany ~/.Xresources}
    [exec] (Conky Config) {geany ~/.config/conky/conky.conf}
-   [exec] (Picom Config) {geany ~/.config/Picom.conf}
+   [exec] (Compton Config) {geany ~/.config/compton.conf}
    [exec] (Dmenu F3 Config) {geany ~/.config/dmenu/dmenu-apps}
    [exec] (Xbindkeys Config) {geany ~/.xbindkeysrc}
    [end]
@@ -77,7 +77,7 @@
 [end]
 [submenu](Toggles)
 [exec] (Toggle Conky) {toggle.conky}
-[exec] (Toggle Picom) {toggle.picom}
+[exec] (Toggle Compton) {toggle.compton}
 [exec] (Toggle Clipboard) {toggle.parcellite}
 [exec] (Toggle Hotcorners) {toggle.ld}
 [exec] (Toggle Screensaver) {toggle.xscreensaver}

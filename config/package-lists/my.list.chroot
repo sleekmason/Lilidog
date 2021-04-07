@@ -13,6 +13,7 @@ blackbird-gtk-theme
 btrfs-progs
 build-essential
 catfish
+compton
 conky
 cpuid
 crda
@@ -41,6 +42,8 @@ firefox-esr
 firmware-atheros
 firmware-ath9k-htc
 firmware-amd-graphics
+firmware-b43-installer
+firmware-b43legacy-installer
 firmware-brcm80211
 firmware-bnx2x
 firmware-bnx2
@@ -157,7 +160,6 @@ pciutils
 pcmciautils
 pcmanfm
 pekwm
-picom
 plank
 pnmixer
 pragha

@@ -9,7 +9,7 @@
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
 <StartupCommand>xfce4-power-manager</StartupCommand>
 <StartupCommand>xfsettingsd --daemon</StartupCommand>
-<StartupCommand>killall picom ; picom  --experimental-backend</StartupCommand>
+<StartupCommand>killall compton ; compton --config ~/.config/compton2.conf</StartupCommand>
 
 <!-- **********  ROOT MENU **********  -->
 
@@ -52,7 +52,7 @@
 	        <Program icon="preferences-system.png" label="Settings Manager">xfce4-settings-manager</Program>
             <Program icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Config">geany ~/.Xresources</Program>
             <Program icon="document-page-setup.png" label="Conky Config">geany ~/.config/conky/conky.conf</Program>
-            <Program icon="/usr/share/icons/ld-icons/compton.png" label="Picom Config">geany ~/.config/picom.conf</Program>
+            <Program icon="/usr/share/icons/ld-icons/compton.png" label="Compton Config">geany ~/.config/compton2.conf</Program>
             <Program icon="/usr/share/icons/gnome/48x48/actions/tools-check-spelling.png" label="Dmenu Apps Config">geany ~/.config/dmenu/dmenu-apps</Program>
             <Program icon="preferences-desktop-display.png" label="Window Properties">xprop | xmessage -file -</Program>
 	    </Menu>
@@ -71,7 +71,7 @@
 	    </Menu>
 	     <Menu icon="object-flip-horizontal.png" label="Toggles">
 	    <Program icon="object-flip-horizontal.png" label="Toggle Conky">toggle.conky</Program>
-	    <Program icon="object-flip-horizontal.png" label="Toggle Picom">toggle.picom</Program>
+	    <Program icon="object-flip-horizontal.png" label="Toggle Compton">toggle.compton2</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Clipboard">toggle.parcellite</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Hotcorners">toggle.ld</Program>
 	    <Program icon="object-flip-horizontal.png" label="Toggle Screensaver">toggle.xscreensaver</Program>
