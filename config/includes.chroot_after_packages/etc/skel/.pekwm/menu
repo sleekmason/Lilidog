@@ -69,7 +69,7 @@ RootMenu = "Pekwm" {
                         Entry = "Settings Manager" { Actions = "Exec xfce4-settings-manager" }
 			Entry = "Urxvt Config" { Actions = "Exec geany ~/.Xresources" }
 			Entry = "Conky Config" { Actions = "Exec geany ~/.config/conky/conky.conf" }
-			Entry = "Picom Config" { Actions = "Exec geany ~/.config/picom.conf" }
+			Entry = "Compton Config" { Actions = "Exec geany ~/.config/compton.conf" }
 			Entry = "Dmenu F3 Config" { Actions = "Exec geany ~/.config/dmenu/dmenu-apps" }
 	}
 			Entry = "Screenshot" { Actions = "Exec gnome-screenshot -i" }
@@ -95,7 +95,7 @@ RootMenu = "Pekwm" {
 		Submenu = "Toggles" {
 			Entry = "Screenshot" { Actions = "Exec gnome-screenshot -i" }
 			Entry = "Toggle Conky" { Actions = "Exec toggle.conky" }
-			Entry = "Toggle Picom" { Actions = "Exec toggle.picom" }
+			Entry = "Toggle Compton" { Actions = "Exec toggle.compton" }
 			Entry = "Toggle Clipboard" { Actions = "Exec toggle.parcellite" }
 			Entry = "Toggle Hotcorners" { Actions = "Exec toggle.ld" }
 			Entry = "Toggle Screensaver" { Actions = "Exec toggle.xscreensaver" }
