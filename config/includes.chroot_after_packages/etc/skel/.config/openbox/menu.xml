@@ -25,44 +25,44 @@
 		</item>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/applications-other.png" id="root-menu-594711" label="Quick Grab">
-			<menu execute="pipe-recent-files -t gnome" icon="/usr/share/icons/gnome-brave/32x32/places/folder.png" id="ID41" label="Recent Files"/>
-			<menu icon="/usr/share/icons/gnome-wise/32x32/places/folder-documents.png" id="root-menu-594711-105346" label="Root Files">
-				<item icon="/usr/share/icons/gnome-human/32x32/places/folder.png" label="/etc">
+			<menu execute="pipe-recent-files -t gnome" icon="/usr/share/icons/gnome/32x32/places/folder.png" id="ID41" label="Recent Files"/>
+			<menu icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" id="root-menu-594711-105346" label="Root Files">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder.png" label="/etc">
 					<action name="Execute">
 						<execute>gksudo thunar /etc</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome-human/32x32/places/folder-documents.png" label="/etc/apt/sources.list">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" label="/etc/apt/sources.list">
 					<action name="Execute">
 						<execute>gksudo geany /etc/apt/sources.list</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" label="/usr/share">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share/fonts">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" label="/usr/share/fonts">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share/fonts</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share/icons">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" label="/usr/share/icons">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share/icons</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome-brave/32x32/places/folder-documents.png" label="/usr/share/themes">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" label="/usr/share/themes">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/share/themes</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome-wine/32x32/places/folder-documents.png" label="/usr/bin">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" label="/usr/bin">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/bin</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/gnome-wine/32x32/places/folder-documents.png" label="/usr/local/bin">
+				<item icon="/usr/share/icons/gnome/32x32/places/folder-documents.png" label="/usr/local/bin">
 					<action name="Execute">
 						<execute>gksudo thunar /usr/local/bin</execute>
 					</action>
@@ -226,11 +226,6 @@
 			<item icon="/usr/share/icons/gnome/48x48/actions/edit-cut.png" label="Kernel Remover">
 				<action name="Execute">
 					<execute>kernel-remover</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/ld-icons/gnome-disks.png" label="Gnome Disks">
-				<action name="Execute">
-					<execute>gnome-disks</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/devices/printer.png" label="Printer Setup">

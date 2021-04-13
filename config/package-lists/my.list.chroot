@@ -81,8 +81,7 @@ galternatives
 geany
 genisoimage
 gimp
-gnome-colors
-gnome-disk-utility
+gnome-icon-theme
 gnome-screenshot
 gnome-system-tools
 gparted
@@ -96,6 +95,7 @@ gstreamer1.0-pulseaudio
 gtk2-engines
 gtk2-engines-murrine
 gtk2-engines-pixbuf
+gvfs
 gvfs-backends
 gvfs-fuse
 hdparm
@@ -116,6 +116,7 @@ libavcodec-extra
 libexo-2-0
 libfile-mimeinfo-perl
 libfm-modules
+libinput-tools
 libncurses5-dev
 libnotify-bin
 libreoffice-gtk3
@@ -124,10 +125,10 @@ libelf-dev
 libssl-dev
 lightdm
 lightdm-gtk-greeter-settings
+linux-image-amd64
 lm-sensors
 locales
 lsb-release
-lxde-settings-daemon
 lxpolkit
 lxrandr
 lxterminal
@@ -150,7 +151,6 @@ newsboat
 ntfs-3g
 obconf
 openbox
-openbox-menu
 os-prober
 oss-compat
 parcellite
@@ -196,14 +196,15 @@ thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
-tree
 tumbler
 thunderbird
 transmission-gtk
+tree
 unzip
 usbutils
 usermode
 user-setup
+uuid-runtime
 va-driver-all:amd64
 vdpau-driver-all:amd64
 volumeicon-alsa

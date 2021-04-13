@@ -40,7 +40,6 @@ Lx-randr,           lxrandr,                          preferences-system-network
 Transmission,       transmission,                     transmission
 G-Alternatives,     galternatives,                    galternatives
 Kernel Remover,     kernel-remover,                   edit-cut
-Gnome Disks,        gnome-disks,                      gparted
 Printer Setup,      gksudo system-config-printer,     printer
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
@@ -68,11 +67,11 @@ Xkill,               xkill,                     edit-delete
 /usr/local/bin,           gksudo thunar /usr/local/bin,        folder-documents
 
 ^tag(configuration)
+Settings-Manager,         xfce4-settings-manager,                         preferences-desktop-theme
 Power Manager,            xfce4-power-manager-settings,                   applications-system     
-Lx-appearance,             lxappearance,                                   preferences-desktop-theme
 Openbox Conf,             obconf,                                         obconf
 Compton Conf,             geany ~/.config/compton.conf,                   compton
-Jgmenu Conf,              urxvt -e jgmenu init --interactive -i,          document-properties
+Jgmenu Conf,              urxvt -e jgmenu_run init --interactive -i,      document-properties
 Conky Conf,               geany ~/.config/conky/conky.conf,               document-properties
 Urxvt Conf,               geany ~/.Xresources,                            utilities-terminal
 Tint2 Conf,               tint2conf,                                      tint2
