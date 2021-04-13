@@ -1,0 +1,6 @@
+#!/bin/bash
+## Made by Sleekmason in 2020 to make dualboot changes easier!
+sudo gtk-update-icon-cache /usr/share/icons/Adwaita ;
+sudo gtk-update-icon-cache /usr/share/icons/Breeze-openSUSE\ Dark\ Icons/ ;
+sudo gtk-update-icon-cache /usr/share/icons/gnome ;
+sudo gtk-update-icon-cache /usr/share/icons/Obsidian-Gray ;
