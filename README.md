@@ -1,14 +1,9 @@
-﻿# Lilidog Linux Based on Debian stable
-## LXDE With Openbox, Fluxbox, Jwm, and Pekwm.  Optimized - 64 bit version.<br/>
+﻿# Lilidog is based on Debian Bullseye. With Openbox, Fluxbox, Jwm, and Pekwm.  64 bit version.<br/>
 
-Lilidog is a lightweight distro based on LXDE. <br/> 
-Options are available for Openbox, Fluxbox, Jwm, or Pekwm. <br/> 
-All Window managers can be accessed separately through the login screen. 
+The different window managers can be accessed through the login screen. Lilidog boots to <br/>
+Openbox by default.
 
-Pretty much, Debian. With some of the hard parts done, and some cool stuff along the way. <br/>
-Everything is easily accessible, with numerous options to customize.
-
-This is the stable version. You can download the full ISO from Sourceforge:
+You can download the full ISO from here:
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
@@ -27,8 +22,8 @@ Lilidog-Sid has  release here as well: https://sourceforge.net/projects/lilidog/
 
 ### Features:
 
-- Based on Debian Stable with contrib and non-free sources enabled by default. <br/>
-Debian backport sources can be added during installation. 
+- Based on Debian bullseye with contrib and non-free sources enabled by default. <br/>
+Debian backport sources can be added during installation. __Please use the the "expert installer" to add backports.__
 
 - Switch between four different panels on the fly. - Customize your own to be toggled when desired.
 
@@ -50,16 +45,16 @@ customized Dmenu with only the most commonly used apps. ALT + F5 pulls up Rofi.
 - Thunar is the default file manager, with Pcmanfm and Spacefm as alternatives to explore.  Custom right-click <br/> 
 options for each are already enabled.  See what you like best.
 
-- Custom Lilidog Openbox and GTK theme, Gnome Brave Icons, and matching themes for Geany and Mousepad. <br/> 
+- Four Custom themes with matching Geany themes ranging from light to dark. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used.
 
-- URXVT terminal has font size control (ctl+up/down), transparency and the ability to open urls. <br/>
-Lxterminal is readily available in the menu and launcher for those who prefer it.
+- Lxterminal by default for Thunar and the menu. URXVT terminal also available, and has font size control (ctl+up/down), <br/> 
+transparency and the ability to open urls. <br/>
 
 - Conky has all sorts of relevant info, including connected drives, number of packages installed, and more. <br/>
 For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
 
-- Desktop icons can be enabled and customized using pcmanfm. See lxsession autostart in the menu. <br/>
+- Desktop icons can be enabled and customized using pcmanfm. <br/>
 
 - Compton Composite Manager with transparency enabled. Change to suit.
 
@@ -199,7 +194,6 @@ sudo ./live-usb-maker-qt-19.11.02.x86_64.AppImage
 Root is required to write to connected devices.
 
 The boot screen gives a choice of using as a Live session, or installing Lilidog Linux if you like what you see. <br/>
-The only installer I am using is the expert Debian text installer in the menu. 
 
 If you would like to work on your own distro after building, install to a separate partition ONLY to build from. <br/> 
 The whole system becomes your template. Think clone within a clone.
