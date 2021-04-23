@@ -12,11 +12,11 @@ menu.separator.color: #1B313B
 menu.items.bg: raised gradient diagonal
 menu.items.bg.color: #253233
 menu.items.bg.colorTo: #253233
-menu.items.text.color: #B4D2D4
+menu.items.text.color: #BFD4D2
 menu.items.disabled.text.color: #707070
 menu.items.active.bg: raised border
-menu.items.active.bg.color: #4A6363
-menu.items.active.bg.border.color: #476263
+menu.items.active.bg.color: #3F5755
+menu.items.active.bg.border.color: #3F5755
 menu.items.active.text.color: #CDE8E6
 
 #======================================
@@ -31,7 +31,7 @@ window.active.handle.bg: raised
 window.active.handle.bg.color: #587778
 window.active.grip.bg: parentrelative
 window.active.label.bg: parentrelative
-window.active.label.text.color: #AFC7C9
+window.active.label.text.color: #BFD4D2
 window.*.button.*.bg: parentrelative
 window.active.button.*.image.color: #A4EEF5
 window.active.button.*.pressed.image.color: #000000
