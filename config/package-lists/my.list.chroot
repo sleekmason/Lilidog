@@ -15,6 +15,7 @@ build-essential
 catfish
 compton
 conky
+console-data
 cpuid
 crda
 curl
