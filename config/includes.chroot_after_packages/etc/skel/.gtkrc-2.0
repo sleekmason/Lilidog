@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/user/.gtkrc-2.0.mine"
-gtk-theme-name="Lilidog-Clay"
+gtk-theme-name="Lilidog-Slate"
 gtk-icon-theme-name="Breeze-openSUSE Dark Icons"
 gtk-font-name="Liberation Sans 11"
 gtk-cursor-theme-name="Adwaita"

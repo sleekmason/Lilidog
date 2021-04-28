@@ -16,7 +16,7 @@ Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_r
 Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
 
 ^tag(quickgrab)
-Recent Files,^pipe(jgmenu_run ob --cmd="recents-old",folder
+Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
 Root Files,^checkout(rootfiles),folder-documents
 Urxvt,              urxvt,            utilities-terminal
 Writer,             libreoffice,      libreoffice-writer

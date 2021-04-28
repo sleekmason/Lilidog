@@ -1,7 +1,7 @@
 INCLUDE = "$_PEKWM_ETC_PATH/config_system"
 
 Files {
-    Theme = "~/.pekwm/themes/Lilidog-Clay"
+    Theme = "~/.pekwm/themes/Lilidog-Slate"
 }
 
 Screen {

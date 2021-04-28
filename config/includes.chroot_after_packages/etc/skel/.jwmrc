@@ -2,8 +2,7 @@
 <JWM>
 	
 	
-<!-- Startup -->	
-<StartupCommand>~/.fegbg</StartupCommand>	
+<!-- Startup -->		
 <StartupCommand>killall lxpolkit ; lxpolkit</StartupCommand>
 <StartupCommand>killall nm-applet ; nm-applet</StartupCommand>
 <StartupCommand>killall volumeicon ; volumeicon</StartupCommand>
@@ -140,13 +139,13 @@
         <Width>4</Width>
         <Height>21</Height>
         <Corner>5</Corner>
-        <Foreground>#0D0B0B</Foreground>
-        <Background>#7D8581</Background>
+        <Foreground>#BBD9D5</Foreground>
+        <Background>#253233</Background>
         <Outline>#000000</Outline>
         <Opacity>0.85</Opacity>
         <Active>
-            <Foreground>#0D0B0B</Foreground>
-            <Background>#7D8581</Background>
+            <Foreground>#BBD9D5</Foreground>
+            <Background>#253233</Background>
             <Outline>#000000</Outline>
             <Opacity>1.0</Opacity>
         </Active>
@@ -179,19 +178,19 @@
     </PagerStyle>
     <MenuStyle>
         <Font>LiberationSans-12</Font>
-        <Foreground>#0D0B0B</Foreground>
-        <Background>#7D8581</Background>
+        <Foreground>#BBD9D5</Foreground>
+        <Background>#253233</Background>
         <Outline>#000000</Outline>
         <Active>
-            <Foreground>#A4B0AF</Foreground>
-            <Background>#525D5A</Background>
+            <Foreground>#CDE8E6</Foreground>
+            <Background>#3F5755</Background>
         </Active>
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
         <Font>LiberationSans-12</Font>
         <Foreground>#000505</Foreground>
-        <Background>#7D8581</Background>
+        <Background>#253233</Background>
     </PopupStyle>
     <ClockStyle>
         <Font>LiberationSans-12</Font>
@@ -259,7 +258,7 @@
               contained within a Desktop tag to give a specific background
               for that desktop.
          -->
-        <Background type="scale">/home/wallpaper/Lilidog-Paws.png</Background>
+        <Background type="scale">/home/wallpaper/Slate.png</Background>
     </Desktops>
 
     <!-- Double click speed (in milliseconds) -->

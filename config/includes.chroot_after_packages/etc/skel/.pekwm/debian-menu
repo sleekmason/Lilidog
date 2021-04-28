@@ -9,6 +9,10 @@
 			Entry = "Xedit" { Actions = "Exec xedit &" } 
 		} 
 		Submenu = "Graphics" {
+			Entry = "dotty" { Actions = "Exec /usr/bin/dotty &" } 
+			Entry = "lefty" { Actions = "Exec /usr/bin/lefty &" } 
+			Entry = "xcam" { Actions = "Exec /usr/bin/xcam &" } 
+			Entry = "xscanimage" { Actions = "Exec /usr/bin/xscanimage &" } 
 			Entry = "X Window Snapshot" { Actions = "Exec xwd | xwud &" } 
 		} 
 		Submenu = "Network" {
@@ -39,7 +43,6 @@
 				Entry = "Debian Task selector" { Actions = "Exec x-terminal-emulator  -T \"Debian Task selector\" -e sh -c \"su-to-root -c tasksel\" &" } 
 				Entry = "Editres" { Actions = "Exec editres &" } 
 				Entry = "fbpanel" { Actions = "Exec /usr/bin/fbpanel &" } 
-				Entry = "Openbox Menu Editor" { Actions = "Exec /usr/bin/obmenu &" } 
 				Entry = "stalonetray" { Actions = "Exec /usr/bin/stalonetray &" } 
 				Entry = "XBindKeys-config" { Actions = "Exec /usr/bin/xbindkeys-config &" } 
 				Entry = "Xclipboard" { Actions = "Exec xclipboard &" } 
@@ -97,5 +100,4 @@
 	} 
 	Submenu = "Window Managers" {
 		Entry = "FluxBox" { Actions = "RestartOther /usr/bin/startfluxbox" } 
-		Entry = "Pekwm" { Actions = "RestartOther /usr/bin/pekwm" } 
 	} 
