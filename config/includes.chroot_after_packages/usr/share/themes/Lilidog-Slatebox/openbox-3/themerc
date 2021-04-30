@@ -6,12 +6,12 @@
 #======================================
 
 menu.title.bg: raised
-menu.title.bg.color: #253233
+menu.title.bg.color: #202D2E
 menu.title.text.color: #C8E3E1
 menu.separator.color: #394F4C
 menu.items.bg: raised gradient diagonal
-menu.items.bg.color: #253233
-menu.items.bg.colorTo: #253233
+menu.items.bg.color: #202D2E
+menu.items.bg.colorTo: #202D2E
 menu.items.text.color: #BBD9D5
 menu.items.disabled.text.color: #707070
 menu.items.active.bg: raised border
@@ -25,7 +25,7 @@ menu.items.active.text.color: #CDE8E6
 
 window.active.title.bg: raised gradient vertical
 window.active.title.bg.color: #3B5152
-window.active.title.bg.colorTo: #212D2E
+window.active.title.bg.colorTo: #202D2E
 window.active.title.bg.border.color: #476263
 window.active.handle.bg: raised
 window.active.handle.bg.color: #587778
