@@ -13,6 +13,7 @@ blackbird-gtk-theme
 btrfs-progs
 build-essential
 catfish
+colord
 compton
 conky
 console-data
@@ -130,6 +131,7 @@ linux-image-amd64
 lm-sensors
 locales
 lsb-release
+lxinput
 lxpolkit
 lxrandr
 lxterminal
@@ -238,6 +240,7 @@ xscreensaver-data
 xserver-common
 xserver-xorg
 xserver-xorg-input-all
+xserver-xorg-input-libinput
 xserver-xorg-input-synaptics
 xserver-xorg-input-evdev
 xserver-xorg-input-wacom

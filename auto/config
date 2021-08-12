@@ -10,11 +10,11 @@ lb config noauto \
      --parent-debian-installer-distribution 'daily' \
      --distribution 'bullseye' \
      --mirror-binary 'https://deb.debian.org/debian' \
-     --mirror-binary-security 'http://security.debian.org/debian-security' \
+     --mirror-binary-security 'https://security.debian.org/debian-security' \
      --mirror-bootstrap 'https://deb.debian.org/debian' \
      --firmware-binary 'true' \
      --firmware-chroot 'true' \
-     --security 'false' \
+     --security 'true' \
      --memtest 'none' \
      --image-name 'Lilidog' \
      --iso-application 'Lilidog' \
