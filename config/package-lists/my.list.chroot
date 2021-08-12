@@ -100,6 +100,7 @@ gtk2-engines-pixbuf
 gvfs
 gvfs-backends
 gvfs-fuse
+hddtemp
 hdparm
 hplip
 htop
@@ -149,6 +150,7 @@ mythes-en-us
 nano
 ncdu
 neofetch
+net-tools
 network-manager-gnome
 newsboat
 ntfs-3g
