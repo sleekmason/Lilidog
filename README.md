@@ -5,9 +5,12 @@ Openbox by default.
 
 You can download the full ISO from here:
 
+###NOTE
+The Download button defaults to Sid, as I find it to be quite stable, and uses the preferred jgmenu.
+
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-Lilidog-Sid has  release here as well: https://sourceforge.net/projects/lilidog/files/Releases/
+Lilidog-Bullesye has  release here as well: https://sourceforge.net/projects/lilidog/files/Releases/
 
  
 [![Lilidog-Clay.png](https://i.postimg.cc/rmPM7HWh/Lilidog-Clay.png)](https://postimg.cc/DJL9XBxs) <br/>
