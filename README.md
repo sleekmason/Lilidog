@@ -6,11 +6,11 @@ Openbox by default.
 You can download the full ISO from here:
 
 ###NOTE
-The Download button defaults to Sid, as I find it to be quite stable, and uses the preferred jgmenu.
+The Download button defaults to the stable version (Bullseye).
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-Lilidog-Bullesye has  release here as well: https://sourceforge.net/projects/lilidog/files/Releases/
+Lilidog-Sid (unstable) has a release as well: https://sourceforge.net/projects/lilidog/files/Releases/
 
  
 [![Lilidog-Clay.png](https://i.postimg.cc/rmPM7HWh/Lilidog-Clay.png)](https://postimg.cc/DJL9XBxs) <br/>
@@ -32,6 +32,11 @@ Debian backport sources can be added during installation. __Please use the the "
 
 - The username and password for the live environment is "user", and "live" respectively. <br/>
 
+- Fully customized Jgmenu has been implemented for both versions, with numerous options available.
+
+- Dmenu and Rofi for alternate menu sources. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
+customized Dmenu with only the most commonly used apps. ALT + F5 pulls up Rofi.
+
 - Tint2 panel by default in Openbox, with options for FbPanel, Plank, or Monsterpanel. <br/>
 Monster panel is a combination of the pager and icon control from Fbpanel, with everything else Tint2. <br/>
 Try Fbpanel or Monsterpanel in the live environment under 'Toggles' in the menu.
@@ -41,9 +46,6 @@ To see time format options for 24 hour vs. 12 hour, middleclick over the time fo
 Hover over the icons to see what they are.  
 
 - X-screensaver and other handy startup apps readily available through the toggles in the menu <br/>
-
-- Dmenu and Rofi for alternate menu sources. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
-customized Dmenu with only the most commonly used apps. ALT + F5 pulls up Rofi.
 
 - Thunar is the default file manager, with Pcmanfm and Spacefm as alternatives to explore.  Custom right-click <br/> 
 options for each are already enabled.  See what you like best.

@@ -37,6 +37,7 @@ Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
 Htop,               urxvt -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
 Lx-randr,           lxrandr,                          preferences-system-network
+Quick Info,         x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   compton
 Transmission,       transmission,                     transmission
 G-Alternatives,     galternatives,                    galternatives
 Kernel Remover,     kernel-remover,                   edit-cut

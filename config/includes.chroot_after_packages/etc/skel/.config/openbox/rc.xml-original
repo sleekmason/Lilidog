@@ -12,7 +12,7 @@
        apply -->
     <followMouse>yes</followMouse>
     <!-- move focus to a window when you move the mouse into it -->
-    <focusLast>no</focusLast>
+    <focusLast>yes</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
        under the mouse pointer. when followMouse is enabled -->
     <underMouse>no</underMouse>
@@ -128,7 +128,7 @@
     <name>desktop 2</name>
     -->
     </names>
-    <popupTime>885</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -644,8 +644,8 @@
         </action>
       </mousebind>
       <mousebind button="Right" action="Press">
-        <action name="Execute">
-          <command>jgmenu_run</command>
+        <action name="ShowMenu">
+          <menu>root-menu</menu>
         </action>
       </mousebind>
     </context>

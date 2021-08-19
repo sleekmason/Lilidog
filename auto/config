@@ -7,7 +7,6 @@ lb config noauto \
      --archive-areas "main contrib non-free" \
      --debian-installer 'live' \
      --debian-installer-distribution 'bullseye' \
-     --parent-debian-installer-distribution 'daily' \
      --distribution 'bullseye' \
      --mirror-binary 'https://deb.debian.org/debian' \
      --mirror-binary-security 'https://security.debian.org/debian-security' \
