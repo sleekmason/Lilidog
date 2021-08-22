@@ -59,6 +59,7 @@
 			<Program icon="/usr/share/icons/gnome/48x48/apps/utilities-system-monitor.png" label="Htop">urxvt -e htop</Program>
 			<Program icon="/usr/share/icons/gnome/48x48/categories/preferences-system-network.png" label="Lx-randr">lxrandr</Program>
 			<Program icon="gparted.png" label="Gparted">gksudo gparted</Program>
+			<Program icon="preferences-system.png" label="Inxi Info">x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1"</Program>
 			<Program icon="/usr/share/icons/ld-icons/galculator.png" label="Galculator">galculator</Program>
 			<Program icon="printer.png" label="Printer Setup">system-config-printer</Program>
 			<Program icon="terminal.png" label="Kernel Remover">kernel-remover</Program>

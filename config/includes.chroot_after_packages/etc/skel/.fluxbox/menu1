@@ -67,6 +67,7 @@
 [exec] (Htop) {urxvt -e htop}
 [exec] (gparted) {gksudo gparted}
 [exec] (Lxrandr) {lxrandr}
+[exec] (Inxi Info) {x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1"}
 [exec] (Transmission) {transmission-gtk}
 [exec] (G-Alternatives) {galternatives}
 [exec] (Kernel Remover) {kernel-remover}
