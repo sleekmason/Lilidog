@@ -28,6 +28,10 @@ Lilidog-Sid (unstable) has a release as well: https://sourceforge.net/projects/l
 - Based on Debian bullseye with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be added during installation. __Please use the the "expert installer" to add backports.__
 
+- This is a no --recommends build! This means only dependancies are included during package install. <br/>
+This leaves out any suggested or recommended packages, allowing for better control over package installation, <br/>
+with no unwanted packages installed by default.  This can be changed after install if desired.
+
 - Switch between four different panels on the fly. - Customize your own to be toggled when desired.
 
 - The username and password for the live environment is "user", and "live" respectively. <br/>
