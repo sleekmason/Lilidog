@@ -10,7 +10,7 @@ The Download button defaults to the stable version (Bullseye).
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-Lilidog-Sid (unstable) has a release as well: https://sourceforge.net/projects/lilidog/files/Releases/
+Lilidog-Sid (unstable) and the i386 version have a release as well: https://sourceforge.net/projects/lilidog/files/Releases/
 
  
 [![Lilidog-Clay.png](https://i.postimg.cc/rmPM7HWh/Lilidog-Clay.png)](https://postimg.cc/DJL9XBxs) <br/>
