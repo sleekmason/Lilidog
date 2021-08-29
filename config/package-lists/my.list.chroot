@@ -115,7 +115,6 @@ iw
 ixo-usb-jtag
 jgmenu/unstable
 jq
-jwm
 libavcodec-extra
 libexo-2-0
 libfile-mimeinfo-perl
@@ -165,7 +164,6 @@ p7zip-full
 pciutils
 pcmciautils
 pcmanfm
-pekwm
 plank
 pnmixer
 pragha
