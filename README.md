@@ -1,4 +1,4 @@
-﻿# Lilidog is based on Debian Bullseye. With Openbox, Fluxbox, Jwm, and Pekwm.  64 bit version.<br/>
+﻿# Lilidog is based on Debian Bullseye. With Openbox & Fluxbox, 32 bit and 64 bit versions.<br/>
 
 The different window managers can be accessed through the login screen. Lilidog boots to <br/>
 Openbox by default.
@@ -6,22 +6,20 @@ Openbox by default.
 You can download the full ISO from here:
 
 ###NOTE
-The Download button defaults to the stable version (Bullseye).
+The Download button defaults to the stable 64 bit version (Bullseye).
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
 Lilidog-Sid (unstable) and the i386 version have a release as well: https://sourceforge.net/projects/lilidog/files/Releases/
 
  
-[![Lilidog-Clay.png](https://i.postimg.cc/rmPM7HWh/Lilidog-Clay.png)](https://postimg.cc/DJL9XBxs) <br/>
+[![Lilidog2-Slate.png](https://i.postimg.cc/fLzfRksj/Lilidog2-Slate.png)](https://postimg.cc/McLQs6vv) <br/>
 
 [![Lilidog-Clay2.png](https://i.postimg.cc/x1n8vWPH/Lilidog-Clay2.png)](https://postimg.cc/ppcPxc4X) <br/>
 
 [![Trees.png](https://i.postimg.cc/QMxcNB9F/Trees.png)](https://postimg.cc/v4k43Zvy) <br/>
 
 [![Lilidog.png](https://i.postimg.cc/1X1s9qC6/Lilidog.png)](https://postimg.cc/mzj0jtG2) <br/>
-
-[![Lilidog-Dark2.png](https://i.postimg.cc/VLckw3pT/Lilidog-Dark2.png)](https://postimg.cc/232DFXzF) <br/>
 
 ### Features:
 
