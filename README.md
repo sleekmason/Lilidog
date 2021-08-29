@@ -15,12 +15,7 @@ Lilidog-Sid (unstable) and the i386 version have a release as well: https://sour
  
 [![Lilidog2-Slate.png](https://i.postimg.cc/fLzfRksj/Lilidog2-Slate.png)](https://postimg.cc/McLQs6vv) <br/>
 
-[![Lilidog-Clay2.png](https://i.postimg.cc/x1n8vWPH/Lilidog-Clay2.png)](https://postimg.cc/ppcPxc4X) <br/>
-
-[![Trees.png](https://i.postimg.cc/QMxcNB9F/Trees.png)](https://postimg.cc/v4k43Zvy) <br/>
-
-[![Lilidog.png](https://i.postimg.cc/1X1s9qC6/Lilidog.png)](https://postimg.cc/mzj0jtG2) <br/>
-
+[![Lilidog-Slate.png](https://i.postimg.cc/3J4CRPs6/Lilidog-Slate.png)](https://postimg.cc/SJ4z1tN7) <br/>
 ### Features:
 
 - Based on Debian bullseye with contrib and non-free sources enabled by default. <br/>
