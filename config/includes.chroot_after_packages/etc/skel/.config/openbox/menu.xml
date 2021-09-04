@@ -130,14 +130,14 @@
 			</item>
 		</menu>
 		<menu icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" id="root-menu-721334" label="Toggles">
+			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Picom Toggle">
+				<action name="Execute">
+					<execute>toggle.picom</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Conky Toggle">
 				<action name="Execute">
 					<execute>toggle.conky</execute>
-				</action>
-			</item>
-			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Compton Toggle">
-				<action name="Execute">
-					<execute>toggle.compton</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/gnome/48x48/actions/object-flip-horizontal.png" label="Clipboard Toggle">
@@ -261,14 +261,14 @@
 						<execute>obconf</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/ld-icons/compton.png" label="Compton Conf">
-					<action name="Execute">
-						<execute>geany ~/.config/compton.conf</execute>
-					</action>
-				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-engineering.png" label="Conky Conf">
 					<action name="Execute">
 						<execute>geany ~/.config/conky/conky.conf</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/ld-icons/compton.png" label="Picom Conf">
+					<action name="Execute">
+						<execute>geany ~/.config/picom.conf</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/gnome/48x48/categories/applications-graphics.png" label="Urxvt Conf">

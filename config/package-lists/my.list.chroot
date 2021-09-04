@@ -14,7 +14,6 @@ btrfs-progs
 build-essential
 catfish
 colord
-compton
 conky
 console-data
 cpuid
@@ -164,6 +163,7 @@ p7zip-full
 pciutils
 pcmciautils
 pcmanfm
+picom
 plank
 pnmixer
 pragha

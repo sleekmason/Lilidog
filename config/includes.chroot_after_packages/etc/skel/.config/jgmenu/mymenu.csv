@@ -20,7 +20,7 @@ Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
 Root Files,^checkout(rootfiles),folder-documents
 Urxvt,              urxvt,            utilities-terminal
 Writer,             libreoffice,      libreoffice-writer
-Geany,              geany,			  geany
+Geany,              geany,	      geany
 Spacefm,            spacefm,          spacefm
 Pcmanfm,            pcmanfm,          system-file-manager
 Mousepad,           mousepad,         accessories-text-editor
@@ -37,7 +37,7 @@ Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
 Htop,               urxvt -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
 Lx-randr,           lxrandr,                          preferences-system-network
-Quick Info,         x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   compton
+Quick Info,         x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 Transmission,       transmission,                     transmission
 G-Alternatives,     galternatives,                    galternatives
 Kernel Remover,     kernel-remover,                   edit-cut
@@ -47,7 +47,7 @@ Synaptic,           gksudo synaptic,                  synaptic
 
 ^tag(toggles)
 Conky,               toggle.conky,              object-flip-horizontal
-Compton,             toggle.compton,            object-flip-horizontal
+Picom,               toggle.picom,              object-flip-horizontal
 Clipboard,           toggle.parcellite,         object-flip-horizontal
 Hotcorners,          toggle.ld,                 object-flip-horizontal
 Screensaver,         toggle.xscreensaver,       object-flip-horizontal
@@ -71,9 +71,9 @@ Xkill,               xkill,                     edit-delete
 Settings-Manager,         xfce4-settings-manager,                         preferences-desktop-theme
 Power Manager,            xfce4-power-manager-settings,                   applications-system     
 Openbox Conf,             obconf,                                         obconf
-Compton Conf,             geany ~/.config/compton.conf,                   compton
 Jgmenu Conf,              urxvt -e jgmenu_run init --interactive -i,      document-properties
 Conky Conf,               geany ~/.config/conky/conky.conf,               document-properties
+Picom Conf,               geany ~/.config/picom.conf,                     document-properties
 Urxvt Conf,               geany ~/.Xresources,                            utilities-terminal
 Tint2 Conf,               tint2conf,                                      tint2
 Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,            preferences-system

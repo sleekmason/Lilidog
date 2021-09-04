@@ -4,7 +4,7 @@ Welcome to ld-hotcorners!
 Try all of the corners out. Simply drag your mouse to a corner.
 
 Top-left       =  Toggle Thunar
-Top-right      =  Toggles Compton
+Top-right      =  Toggles Picom
 Lower-right    =  Exit Menu
 Lower-left     =  Urxvt Terminal
 
