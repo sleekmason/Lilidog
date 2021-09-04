@@ -29,7 +29,7 @@ with no unwanted packages installed by default.  This can be changed after insta
 
 - The username and password for the live environment is "user", and "live" respectively. <br/>
 
-- Fully customized Jgmenu has been implemented for both versions, with numerous options available.
+- Jgmenu has been implemented for both versions, with numerous options available. Look in menu/configuration. <br/>
 
 - Dmenu and Rofi for alternate menu sources. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
 customized Dmenu with only the most commonly used apps. ALT + F5 pulls up Rofi.
@@ -58,7 +58,7 @@ For drive information, you may wish to edit the script in  ~/.config/conky/scrip
 
 - Desktop icons can be enabled and customized using pcmanfm. <br/>
 
-- Compton Composite Manager with transparency enabled. Change to suit.
+- Picom Composite Manager with transparency enabled. Change to suit.
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
@@ -75,113 +75,37 @@ Run swapid in a terminal after installing another distro to a different partitio
 - ld-hotcorners - Each corner of the screen responds to a command. <br/>
 Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
 Change the corners in ~/.config/ld-hotcorners. <br/>
-Currently clockwise from top left: __Thunar, Compton toggle, Exit menu, urxvt terminal__. <br/>
+Currently clockwise from top left: __Thunar, Picom toggle, exit menu, urxvt terminal__. <br/>
 
-Installed extras include but not limited to: <br/>
-bash-completion /
-catfish /
-compton /
-conky /
-curl /
-dmenu /
-dunst /
-feh /
-firefox-esr /
-fluxbox /
-fortunes / 
-geany /
-gimp /
-gparted /
-kernel remover /
-ld-hotcorners /
-libreoffice /
-lightdm-gtk-greeter-settings /
-lxterminal /
-mousepad /
-nano /
-newsboat /
-obconf /
-obmenu /
-pcmanfm /
-pnmixer /
-rofi /
-rsync /
-rxvt-unicode / 
-synaptic /
-tint2 /
-transmission-gtk /
-wicd /
-winfuncs /
-xbindkeys-config /
 
-Download the full ISO from the green download box above, or follow <br/>
-the instructions below to build your own iso using the Debian Live-build system:)
+### Download the full ISO from the green download box above. <br/>
+
+
 
 ### Instructions for building your own if you so choose!
 
-Download the Lilidog zip from the github code box at the top of this page. (Not the huge green Download:) <br/>
-Unzip the file somewhere to reveal the folder inside.  You will not be building directly in <br/>
-this folder.  It is to copy files from only, and can be deleted once you have a build.
-
 Open a terminal and:
 ```sh
-sudo apt install live-build live-config live-boot
+sudo apt install live-build live-config live-boot git
 ```
 Be aware that neither live-boot nor live-config are necessary for the build, <br/>
 but having the information is good (man pages and such), and won't hurt anything.
 
-Now make the directory we will be working from and copy the template over:
+Now clone Lilidog to your $HOME directory:
 ```sh
-mkdir -p Lilidog/auto
-
-cp /usr/share/doc/live-build/examples/auto/* Lilidog/auto/  
-
-cd Lilidog
+git clone https://github.com/sleekmason/Lilidog.git
 ```
-Open a couple of file-manager instances to make life easier, and then:
 
-Replace the config in Lilidog/auto with the same file from the Lilidog clone you downloaded and unzipped then:
-```sh
-lb config
-```
-This will populate the folder. Go up a level to see.
-
-Now open up Lilidog/config.
-
-Make a folder in Lilidog/config named **bootloaders** and make sure to copy from the
-
-**/usr/share/live/build/bootloaders** on **YOUR** computer:
-
-Now copy the **isolinux** and **syslinux** folders to the /config/bootloader folder you made in Lilidog. 
-
-Or easier, copy the whole bootloaders folder over to Lilidog/config, and delete everything inside but isolinux and syslinux. 
-
-**In the isolinux folder**, Replace the advanced.cfg and the splash.svg with those from the lilidog clone. (replace with the splash.png)
-
-**In the syslinux folder**, replace just the splash.svg with the splash.png.
-
-Next is to copy over the configuration files from the Lilidog Clone.
-
-Replace __includes.chroot__, __includes.installer__, and  __package-lists__  with those from the Lilidog clone. <br/>
-This is when you should make any other changes you wish. Look at the package list to add or remove packages. <br/>
-Do you need firmware-b43legacy-installer? <br/>
-Recommend running the build once before making your own changes.
-
-Now, while still in ~/Lilidog in terminal:
+cd to Lilidog, and then:
 
 ```sh
 sudo lb clean
 
 Sudo lb build
 ```
-The usual bit about getting some coffee/tea here is a good idea.
 
-
-Live build fails occasionally during the build for no good reason I can see. <br/>
-Simply try lb build again without cleaning until it builds properly, <br/>
+If live build fails for some reason, simply try lb build again until it builds properly, <br/>
 or if obviously won't build after a few tries, use __lb clean__ and try again. <br/>
-Seriously, keep trying. Like it is meant to throw you off.  Remember, NOTHING is <br/>
-pushed to git unless it produced the desired results.   i.e, worked.
 
 This will leave you with an iso image you can either burn to dvd or usb (easier).
 
