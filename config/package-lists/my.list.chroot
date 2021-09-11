@@ -18,6 +18,8 @@ conky
 console-data
 cpuid
 crda
+cryptsetup
+cryptsetup-initramfs
 curl
 dbus-user-session
 dbus-x11
@@ -39,6 +41,7 @@ fbpanel
 feh
 ffmpeg
 file
+file-roller
 firefox-esr
 firmware-atheros
 firmware-ath9k-htc

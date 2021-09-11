@@ -26,32 +26,32 @@ style "clearlooks-default"
 	ythickness = 1
 
 	fg[NORMAL]		    = "#C8F0E8" # BUTTON TEXT BEFORE CLICKING AND TITLE TEXT (configure the network)
-	fg[PRELIGHT]		= "#D1FCF4" # BUTTON TEXT DURING HOVER & TEXT COLOR IN YES/NO BOX 
+	fg[PRELIGHT]		= "#D0F5F4" # BUTTON TEXT DURING HOVER & TEXT COLOR IN YES/NO BOX 
 	fg[SELECTED]		= "#6D999C" # MAYBE HIGHLIGHTED TEXT IN LONG BOX BACKGROUND
 	fg[ACTIVE]		    = "#D1FCF4" # TEXT COLOR IN YES AND NO BOXES
-	fg[INSENSITIVE]		= "#668F91" # MAYBE LONG BOX SCROLLTIMER BACKGROUND
+	fg[INSENSITIVE]		= "#668F91" # 
 
 	bg[NORMAL]		    = "#304949" # BACKGROUND
-	bg[PRELIGHT]		= "#2B403F" # LONGBOX BACKGROUND MATCH WITH BASE PRELIGHT
-	bg[SELECTED]		= "#354D4F" # #354D4F
-	bg[INSENSITIVE]		= "#3F5C5A" # PROGRESS BAR COLOR
-	bg[ACTIVE]		    = "#6B9C97" # HOLDING BUTTON DOWN
+	bg[PRELIGHT]		= "#273B3A" # LONGBOX BACKGROUND MATCH WITH BASE PRELIGHT
+	bg[SELECTED]		= "#527574" # 
+	bg[INSENSITIVE]		= "#527574" # PROGRESS BAR COLOR
+	bg[ACTIVE]		    = "#628A88" # HOLDING BUTTON DOWN & HIGHLIGHTED PRE INSERTED WORDS
 
 	base[NORMAL]		= "#2B4040" # WHOLE BACKGROUND IN INSET AREA
-	base[PRELIGHT]		= "#2B403F" # LONGBOX BACKGROUND MATCH WITH BG-PRELIGHT
-	base[ACTIVE]		= "#3E5957" # UNSELECTED HIGHLIGHTED BAR
-	base[SELECTED]		= "#5B8580" # CHOICE HIGHLIGHTED BAR & LONGBAR BLACK TEXT BG COLOR (LIGHT)
+	base[PRELIGHT]		= "#273B3A" # LONGBOX BACKGROUND MATCH WITH BG-PRELIGHT
+	base[ACTIVE]		= "#537372" # UNSELECTED HIGHLIGHTED BAR (DARKER)
+	base[SELECTED]		= "#77A6A4" # HIGHLIGHTED BAR (LIGHTER) & LONGBAR BLACK TEXT BG COLOR 
 	base[INSENSITIVE]	= "#1E666B" # BLUE COLOR
 
-	text[NORMAL]		= "#B5E0D8" # PRIMARY TEXT COLOR
+	text[NORMAL]		= "#CCF0EF" # PRIMARY TEXT COLOR
 	text[PRELIGHT]		= "#CDE9E4" # BRIGHTER TEXT DURING SELECTION
 	text[ACTIVE]		= "#0D1517" # BLACK TEXT
 	text[SELECTED]		= "#0D1517" # BLACK TEXT
-	text[INSENSITIVE]	= "#CDE9E4" # BUTTON TEXT
+	text[INSENSITIVE]	= "#D0F5F4" # BUTTON TEXT
 
 	engine "clearlooks"
 	{
-  # scrollbar_color	    = "#7CA7A5"  #This will disappear if uncommented 
+  # scrollbar_color	    = "#4D6E6D"  #This will disappear if uncommented 
 	menubarstyle		= 2	# 0 = flat, 1 = sunken, 2 = flat gradient
 	#menuitemstyle		= 1	# 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
 	#listviewitemstyle	= 1	# 0 = flat, 1 = 3d-ish (gradient)
@@ -74,15 +74,15 @@ style "clearlooks-wider" = "clearlooks-default"
 
 style "clearlooks-button" = "clearlooks-wider"
 {
-	bg[NORMAL]      = "#415E5C"  ## BUTTONS(3)
-	bg[INSENSITIVE]	= "#446361"
-	bg[PRELIGHT]	= "#58807C"
+	bg[NORMAL]      = "#51706F"  ## BUTTONS(3)
+	bg[INSENSITIVE]	= "#628786"
+	bg[PRELIGHT]	= "#699492"
 }
 
 style "clearlooks-notebook" = "clearlooks-wide"
 {
-	bg[NORMAL]	= "#D2EFFF"      ##CHANGED BOTH 5
-	bg[INSENSITIVE] = "#D2EFFF"
+	bg[NORMAL]	= "#CEFAFA"
+	bg[INSENSITIVE] = "#CEFAFA"
 }
 
 style "clearlooks-tasklist" = "clearlooks-default"
@@ -95,7 +95,7 @@ style "clearlooks-menu" = "clearlooks-default"
 {
 	xthickness = 2
 	ythickness = 1
-	bg[NORMAL] = "#f9f7f3"
+	bg[NORMAL] = "#D5F5F4"
 }
 
 style "clearlooks-menubar-item" = "clearlooks-button"
@@ -119,7 +119,7 @@ style "clearlooks-tree" = "clearlooks-default"
 
 style "clearlooks-frame-title" = "clearlooks-default"
 {
-	fg[NORMAL] = "#404040"
+	fg[NORMAL] = "#383838"
 }
 
 style "clearlooks-tooltips" = "clearlooks-default"
@@ -142,7 +142,7 @@ style "clearlooks-combo" = "clearlooks-button"
 
 style "clearlooks-menubar" = "blackrock-default"
 {
-	bg[NORMAL]	= "#bacedb"
+	bg[NORMAL]	= "#B8D4D9"
 }
 
 # widget styles
