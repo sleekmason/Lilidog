@@ -223,7 +223,6 @@ x11-session-utils
 x11-utils
 x11-xkb-utils
 x11-xserver-utils
-xarchiver
 xbindkeys
 xbindkeys-config
 xbitmaps
@@ -234,7 +233,6 @@ xfce4-power-manager
 xfce4-settings
 xfonts-cyrillic
 xinput
-xmlstarlet
 xorg
 xorriso
 xsane
