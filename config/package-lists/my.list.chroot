@@ -18,8 +18,6 @@ conky
 console-data
 cpuid
 crda
-cryptsetup
-cryptsetup-initramfs
 curl
 dbus-user-session
 dbus-x11
