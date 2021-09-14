@@ -1,4 +1,0 @@
-#!/bin/bash
-# A small script to start Monster Panel.
-tint2 -c ~/.config/tint2/tint2-pager &
-fbpanel -p pager &

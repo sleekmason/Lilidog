@@ -21,7 +21,6 @@ Root Files,^checkout(rootfiles),folder-documents
 Urxvt,              urxvt,            utilities-terminal
 Writer,             libreoffice,      libreoffice-writer
 Geany,              geany,	      geany
-Spacefm,            spacefm,          spacefm
 Pcmanfm,            pcmanfm,          system-file-manager
 Mousepad,           mousepad,         accessories-text-editor
 Newsboat,           urxvt -g 120x40+120+100 -e newsboat,         accessories-text-editor
@@ -39,7 +38,7 @@ Gparted,            gksudo gparted,                   gparted
 Lx-randr,           lxrandr,                          preferences-system-network
 Quick Info,         x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 Transmission,       transmission,                     transmission
-G-Alternatives,     galternatives,                    galternatives
+App-Alternatives,   xfce4-mime-settings,              preferences-system
 Kernel Remover,     kernel-remover,                   edit-cut
 Printer Setup,      gksudo system-config-printer,     printer
 Galculator,         galculator,                       galculator
@@ -51,11 +50,8 @@ Picom,               toggle.picom,              object-flip-horizontal
 Clipboard,           toggle.parcellite,         object-flip-horizontal
 Hotcorners,          toggle.ld,                 object-flip-horizontal
 Screensaver,         toggle.xscreensaver,       object-flip-horizontal
-Monsterpanel,        toggle.monster,            object-flip-horizontal
-Plank + Tray,        toggle.stalonetray,        object-flip-horizontal
 Tint2 Panel,         toggle.tint2,              object-flip-horizontal
 Fbpanel,             toggle.fbpanel,            object-flip-horizontal
-Plank,               toggle.plank,              object-flip-horizontal
 Xkill,               xkill,                     edit-delete
 
 ^tag(rootfiles)

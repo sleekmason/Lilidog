@@ -51,9 +51,5 @@
 "urxvt"
    Mod4 + t
 
-#rofi run
-"rofi -modi run -show run"
-   Alt + F5
-
 #
 # End of xbindkeys configuration

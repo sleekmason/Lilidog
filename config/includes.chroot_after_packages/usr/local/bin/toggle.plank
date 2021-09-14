@@ -1,3 +1,0 @@
-#!/bin/bash
-#
-bash -c 'if ! pkill -x plank; then exec plank; fi'

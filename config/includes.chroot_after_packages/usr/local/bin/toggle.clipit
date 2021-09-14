@@ -1,3 +1,0 @@
-#!/bin/bash
-#
-bash -c 'if ! pkill -x clipit; then exec clipit; fi'
