@@ -49,8 +49,10 @@ as options. The username and password for the live environment is "user", and "l
 
 Lilidog: <br/>
 
-[![Lilidog-Slate.png](https://i.postimg.cc/3J4CRPs6/Lilidog-Slate.png)](https://postimg.cc/SJ4z1tN7) <br/>
 [![Lilidog-Installer.png](https://i.postimg.cc/xCh51sv4/Lilidog-Installer.png)](https://postimg.cc/R61KPLb7)
+
+[![Lilidog-Slate.png](https://i.postimg.cc/3J4CRPs6/Lilidog-Slate.png)](https://postimg.cc/SJ4z1tN7) <br/>
+
 ### Features:
 
 - Based on Debian with contrib and non-free sources enabled by default. <br/>
