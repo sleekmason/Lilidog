@@ -49,7 +49,7 @@ as options. The username and password for the live environment is "user", and "l
 
 Lilidog: <br/>
 
-[![Lilidog-Installer.png](https://i.postimg.cc/xCh51sv4/Lilidog-Installer.png)](https://postimg.cc/R61KPLb7)
+[![Installer.png](https://i.postimg.cc/6qSpSZNR/Installer.png)](https://postimg.cc/JHN8HG04)
 
 [![Lilidog-Slate.png](https://i.postimg.cc/3J4CRPs6/Lilidog-Slate.png)](https://postimg.cc/SJ4z1tN7) <br/>
 
