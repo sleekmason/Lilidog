@@ -63,16 +63,17 @@ Xkill,               xkill,                     edit-delete
 /usr/local/bin,           gksudo thunar /usr/local/bin,        folder-documents
 
 ^tag(configuration)
+Wallpaper Chooser,        feh-set-wallpaper,                              feh
 Settings-Manager,         xfce4-settings-manager,                         preferences-desktop-theme
-Power Manager,            xfce4-power-manager-settings,                   applications-system     
+Power Manager,            xfce4-power-manager-settings,                   applications-system  
 Openbox Conf,             obconf,                                         obconf
 Jgmenu Conf,              geany ~/.config/jgmenu/README & pcmanfm ~/.config/jgmenu,  document-properties
 Conky Conf,               geany ~/.config/conky/conky.conf,               document-properties
-Picom Conf,               geany ~/.config/picom.conf,                     document-properties
 Urxvt Conf,               geany ~/.Xresources,                            utilities-terminal
 Tint2 Conf,               tint2conf,                                      tint2
+Picom Conf,               geany ~/.config/picom.conf,                     document-properties
 Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,            preferences-system
 Fbpanel Conf,             geany ~/.config/fbpanel/default,                preferences-other
 Xbindkeys Conf,           xbindkeys-config,                               applications-utilities
 Dmenu Apps Conf,          geany ~/.config/dmenu/apps,                     geany
-Ld-Hotcorners Conf,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,  applications-games
+Ld-Hotcorners Conf,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,  applications-games   
