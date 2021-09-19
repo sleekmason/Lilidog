@@ -1,0 +1,4 @@
+^sep()
+    Restart,       openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_reboot.png
+    Reconfigure,           openbox --reconfigure,    /usr/share/icons/gnome/48x48/actions/redo.png  
+    Exit,                  ld-logout,                 /usr/share/icons/ld-icons/exit4.png

@@ -1,0 +1,28 @@
+### TO CHANGE MENU ITEMS
+Open mymenu.csv file to add or remove items.  
+The format example is: Display-name, program-name, icon-name
+See the lxterminal entry for an example.
+For the original automated menu, open ~/.config/jgmenu/jgmenurc
+and comment (#) line 5. 
+
+
+###TO CHANGE THEMES EASILY
+Use the command: 'jgmenu-interactive' in a terminal for the 
+jgmenu interactive menu. (various choices to be made).
+Use  "o" or "g" to change to the openbox theme or the gtk theme 
+colors after changing gtk themes.
+
+Changing other items here could have a detrimental affect on your menu.
+However, why not have a little fun and learn something;)
+There are backups to all the original files in ~/.config/jgmenu.bak 
+if a mistake is made.
+
+### TO CHANGE ICONS
+Open ~/.config/jgmenu/jgmenurc -> icon_theme (line 54)
+
+
+###*NOTE
+"jgmenu-interactive" uses urxvt to open the complete line of:
+'jgmenu_run init --interactive -i' in case you do away with urxvt.
+If you have better ideas, tell me.
+'man jgmenu' in a terminal for more info!
