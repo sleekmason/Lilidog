@@ -44,8 +44,9 @@ Use "image mode" in the live-usb maker when burning the image.
 The boot screen for Lilidog gives a choice of using as a Live session, or installing if you like what you see. <br/>
 Lilidog uses the Debian installer with both text and graphical installs available.
 
-Lilidog opens in the Openbox window manager. Easy enough to install fluxbox or others. They will show up in your login screen <br/>
-as options. The username and password for the live environment is "user", and "live" respectively. 
+Lilidog opens in the Openbox window manager. Easy enough to install fluxbox or others. They will show up in your login screen
+as options. <br/>
+The username and password for the live environment is "user", and "live" respectively. 
 
 Lilidog: <br/>
 
@@ -68,7 +69,7 @@ No unwanted packages will be installed by default. This can be changed after ins
 Try them both under 'Toggles' in the menu.
 
 - Jgmenu is now the menu for all versions.  Huge amount of customization available. <br/>
-See the instructions section below for how to change themes.
+See the instructions section below for how to change themes and more.
 
 - Feh sets the background. Right-click on any image to set as background wallpaper. Easy peasy! <br/>
 
@@ -125,7 +126,7 @@ are located under "preferences" in the menu. (well, except for the Geany theme. 
 
 - Settings Manager - This will allow changes for your gtk theme, fonts, and icons.  Other important settings are here as well. <br/>
 - Openbox Conf - The settings here control the window borders and other settings specific to Openbox. <br/>
-- Jgmenu - Use __jgmenu_run init --interactive -i__ in a terminal to change some items, or go to menu -> configuration -> jgmenu.conf for item changes. <br/>
+- Jgmenu - Go to menu -> configuration -> jgmenu.conf for instructions, or use __jgmenu-interactive in a terminal. (options "o" and "g"). <br/>
 - Geany - There are themes to match.  These are changed through the Geany program under "view" - "change color scheme" <br/>
 - Conky net speed  -  Use: __ls /sys/class/net/__ in a terminal to determine which wired/wireless network you have, <br/>
 and replace "wlp2s0" with yours. <br/>
