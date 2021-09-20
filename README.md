@@ -69,9 +69,11 @@ No unwanted packages will be installed by default. This can be changed after ins
 Try them both under 'Toggles' in the menu.
 
 - Jgmenu is now the menu for all versions.  Huge amount of customization available. <br/>
-See the instructions section below for how to change themes and more.
+Go to menu -> configuration -> jgmenu.conf for how to change items and themes.
 
-- Feh sets the background. Right-click on any image to set as background wallpaper. Easy peasy! <br/>
+- Wallpapers - Place any image you would like to use as a wallpaper in ~/Pictures/wallpapers. <br/>
+Go to Menu -> Configuration -> Wallpaper Chooser to change wallpapers. <br/>
+You can also right-click on any image you choose from the file manager to set as background wallpaper. Easy peasy!
 
 - There are shortcuts for Alsamixer in the volume icon and xfce4-power-manager in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
