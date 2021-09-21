@@ -19,7 +19,6 @@ desktop-base
 dialog
 dosfstools
 dunst
-dvdauthor
 e2fsprogs
 efibootmgr
 eject
@@ -29,7 +28,6 @@ exfat-utils
 f2fs-tools
 fbpanel
 feh
-ffmpeg
 file
 file-roller
 firefox-esr
@@ -71,7 +69,6 @@ fuse3
 galculator
 gdebi
 geany
-genisoimage
 gimp
 gnome-icon-theme
 gnome-screenshot
@@ -122,10 +119,8 @@ menu-xdg
 mesa-utils
 mesa-va-drivers
 mesa-vdpau-drivers
-miscfiles
 mlocate
 mousepad
-mythes-en-us
 nano
 ncdu
 neofetch
@@ -161,7 +156,6 @@ scrot
 shellcheck
 smplayer
 smplayer-l10n
-smplayer-themes
 ssft
 squashfs-tools
 suckless-tools
