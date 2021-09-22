@@ -1,115 +1,88 @@
-!! Lilidog-lightbox 1-31-21 sleekmason
-!! syscrash's theme, based off nightm4re's flax or something
+# Lilidog-Claybox by sleekmason.                                                                    
+#============================================================
 
-!!---------------------------------------------------------------------------
-!! Dimensions
+#======================================
+#     Menu Settings	
+#======================================
 
-border.width:				1
-border.color:				#6d6d6d
+menu.title.bg: raised
+menu.title.bg.color: #9FA8A8
+menu.title.text.color: #0D0B0B
+menu.separator.color: #293231
+menu.items.bg: raised gradient diagonal
+menu.items.bg.color: #9FA8A8
+menu.items.bg.colorTo: #89918D
+menu.items.text.color: #0D0B0B
+menu.items.disabled.text.color: #545E59
+menu.items.active.bg: raised border
+menu.items.active.bg.color: #576363
+menu.items.active.bg.border.color: #4B544F
+menu.items.active.text.color: #C9DBD9
 
-padding.width:				1
-window.handle.width:			0
-window.client.padding.width:		0
-window.client.padding.height:		0
+#======================================
+#     Focused Window Settings
+#======================================
 
-menu.overlap:				0
+window.active.title.bg: raised gradient vertical
+window.active.title.bg.color: #9FA8A8
+window.active.title.bg.colorTo: #8A9490
+window.active.title.bg.border.color: #476263
+window.active.handle.bg: raised
+window.active.handle.bg.color: #7D8581
+window.active.grip.bg: parentrelative
+window.active.label.bg: parentrelative
+window.active.label.text.color: #050404
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: #000000
+window.active.button.*.pressed.image.color: #ffffff
+window.active.button.disabled.image.color: #969691
+window.active.button.*.hover.image.color: #D1ECED
 
-!!---------------------------------------------------------------------------
-!! Fonts
+#======================================
+#     Unfocused Window Settings
+#======================================
 
-window.active.label.text.font:		shadow=y
-window.label.text.justify:		left
+window.inactive.title.bg: raised gradient horizontal
+window.inactive.title.bg.color: #768282
+window.inactive.title.bg.colorTo: #768282
+window.inactive.handle.bg: raised
+window.inactive.handle.bg.color: #768282
+window.inactive.grip.bg: parentrelative
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #3D3B3B
+window.inactive.button.*.image.color: #000000
 
-menu.title.text.font:			shadow=y
-menu.title.text.justify:		left
+#======================================
+#     Global Width Settings
+#======================================
 
-menu.items.font:			
+padding.width: 1
+padding.height: 1
+border.width: 2
+window.handle.width: 3
+window.client.padding.width: 0
+menu.overlap.x: -5
 
-!!---------------------------------------------------------------------------
-!! Menu Settings
+#======================================
+#     Miscellaneous Settings
+#======================================
 
-menu.title.bg:				flat gradient vertical
-menu.title.bg.color:			#47819E
-menu.title.bg.colorTo:			#AFBDD1
-menu.title.text.color:			white
+border.color: #444D48
+menu.border.color: #444D48
 
-menu.items.bg:				flat solid
-menu.items.bg.color:			#D0D6E5
-menu.items.text.color:			#22221c
+#======================================
+#     Osd		
+#======================================
 
-menu.items.active.bg:			flat solid
-menu.items.active.bg.color:		#47819E
-menu.items.active.text.color:		#ffffff
+osd.bg: raised
+osd.bg.color: #A9ADAD
+osd.hilight.bg: flat border
+osd.hilight.bg.color: #9FA3A3
+osd.hilight.bg.border.color: #67706C
 
-menu.items.disabled.text.color:		#8c8c75
+#======================================
+#     Title Justification
+#======================================
 
-!!---------------------------------------------------------------------------
-!! Window Settings
-
-window.active.padding.width:		10
-window.active.title.bg:			flat solid
-window.active.title.bg.color:		#9CA9B3
-
-window.active.label.bg:			flat gradient vertical border
-window.active.label.bg.color:		#47819E
-window.active.label.bg.colorTo:		#AFBDD1
-window.active.label.text.color:		white
-
-window.active.handle.bg:		flat gradient crossdiagonal
-window.active.handle.bg.color:		#d3deda
-window.active.handle.bg.colorTo:	#9fbfc1
-
-window.active.grip.bg:			flat solid
-window.active.grip.bg.color:		#9fbfc1
-
-window.active.client.color: #47819E
-window.inactive.client.color: #AFBDD1
-
-window.inactive.title.bg:		flat solid
-window.inactive.title.bg.color:		#9CA9B3
-
-window.inactive.label.bg:		parentrelative
-window.inactive.label.text.color:	#474D55
-
-window.inactive.handle.bg:		flat solid
-window.inactive.handle.bg.color:	#D0D6E5
-
-window.inactive.grip.bg:		flat solid
-window.inactive.grip.bg.color:		#D0D6E5
-
-!!---------------------------------------------------------------------------
-!! Button Settings
-
-window.active.button.unpressed.bg:			flat gradient vertical border
-window.active.button.unpressed.bg.color:		#396880
-window.active.button.unpressed.bg.colorTo:		#AFBDD1
-window.active.button.unpressed.image.color:		white
-
-window.active.button.pressed.bg:			flat gradient crossdiagonal border
-window.active.button.pressed.bg.color:			#d3deda
-window.active.button.pressed.bg.colorTo:			#9fbfc1
-
-window.active.button.hover.bg:			flat solid border
-window.active.button.hover.bg.color:			#D0D6E5
-
-window.active.button.disabled.bg:			parentrelative
-window.active.button.disabled.image.color:		#8c8c75
-
-!! without this it looks right
-!!window.active.button.toggled.bg:			flat solid
-!!window.active.button.toggled.bg.color:			#9fbfc1
-
-window.inactive.button.unpressed.bg:			parentrelative
-window.inactive.button.unpressed.image.color:		#363636
-
-window.inactive.button.hover.bg:			flat solid border
-window.inactive.button.hover.bg.color:			#D0D6E5
-window.inactive.button.pressed.bg:			flat gradient crossdiagonal border
-window.inactive.button.pressed.bg.color:		#d3deda
-window.inactive.button.pressed.bg.colorTo:		#9fbfc1
-
-window.inactive.button.disabled.bg:			parentrelative
-window.inactive.button.disabled.image.color:		#8c8c75
-
-!! window.inactive.button.toggled.bg:			flat solid
-!! window.inactive.button.toggled.bg.color:		#444438
+menu.title.text.justify: center
+window.label.text.justify: center
