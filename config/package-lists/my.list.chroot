@@ -106,6 +106,7 @@ libreoffice-gtk3
 libreoffice-writer
 lightdm
 lightdm-gtk-greeter-settings
+lm-sensors
 locales
 lsb-release
 lxinput
