@@ -53,7 +53,7 @@ URxvt.mapAlert:             true
 ! URxvt*inheritPixmap:        true
 ! URxvt*transparent:          true
 !---With Compositor enabled:
- 
+
 !---Original setting (black)
 ! URxvt.depth: 32
 ! URxvt.background: rgba:0000/0000/0000/bbbb
@@ -77,12 +77,12 @@ URxvt.tabbed.tab-fg:        5
 
 !--- Colors
 
-URxvt.cursorColor:          #8CC9D0
+URxvt.cursorColor:          #00A0A6
 URxvt.pointerColor:         #15ACCC
-URxvt.foreground:           #8BAAAD
+URxvt.foreground:           #95BAB2
 URxvt.underlineColor:       #DE9D00
 URxvt.throughColor:         #57AABA
-URxvt.highlightColor:       #243E42
+URxvt.highlightColor:       #1F4040
 URxvt.color0:               #000000
 URxvt.color1:               #15ACCC
 URxvt.color2:               #15ACCC
@@ -95,13 +95,13 @@ URxvt.color8:               #15ACCC
 URxvt.color9:               #F5F500
 
 !--prompt(name)
-URxvt.color10:              #8FD1D8
+URxvt.color10:              #027D00
 
 !--urls
 URxvt.color11:              #F439A8
 
 !--folder name
-URxvt.color12:              #10C610
+URxvt.color12:              #00A0A6
 
 URxvt.color13:              #06D5FF
 
