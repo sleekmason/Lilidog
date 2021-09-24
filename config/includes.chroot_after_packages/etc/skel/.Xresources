@@ -62,7 +62,6 @@ URxvt.mapAlert:             true
 URxvt.depth: 32
 URxvt.background:  rgba:1400/2000/2100/bbbb
 
-
 !---URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
 ! URxvt*shading:              110
 URxvt.blurRadius:           40
