@@ -53,8 +53,14 @@ URxvt.mapAlert:             true
 ! URxvt*inheritPixmap:        true
 ! URxvt*transparent:          true
 !---With Compositor enabled:
+ 
+!---Original setting (black)
+! URxvt.depth: 32
+! URxvt.background: rgba:0000/0000/0000/bbbb
+
+!---Lilidog setting
 URxvt.depth: 32
-URxvt.background: rgba:0000/0000/0000/bbbb
+URxvt.background:  rgba:1400/2000/2100/bbbb
 
 
 !---URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
