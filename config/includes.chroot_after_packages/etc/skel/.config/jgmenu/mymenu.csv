@@ -31,7 +31,6 @@ Gimp,               gimp,             gimp
 Catfish Search,     catfish,          edit-find
 
 ^tag(utilities)
-^sep()
 Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
 Htop,               urxvt -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
