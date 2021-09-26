@@ -4127,7 +4127,7 @@ tooltip {
   /* not working */
   border-radius: 1px;
   box-shadow: none;
-  text-shadow: 0 1px #black; }
+  text-shadow: 0 1px #9C9D98; }
   tooltip.background {
     background-color: #9E9D98;
     background-clip: padding-box;
