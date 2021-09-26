@@ -1,4 +1,4 @@
 #!/bin/sh
 
-feh -r -t -P -N --scale-down -W 1008 -E 105 -y 168 -J 100 --index-info "%n" --title "Wallpapers" --action ";feh --no-fehbg --bg-scale %F" "$HOME/Pictures/wallpapers"
+feh -r -t -P -N --scale-down -W 1008 -E 105 -y 168 -J 100 --index-info "%n" --title "Wallpapers" --action ";feh --bg-scale %F" "$HOME/Pictures/wallpapers"
 
