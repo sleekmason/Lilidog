@@ -31,7 +31,7 @@ then this is the one for you!  You will want to __sudo apt update && sudo apt up
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-### Click Here for the Lilidog-Minimal, Lilidog-sid and the lilidog-i386 release: 
+### Click Here for Lilidog-Minimal, Lilidog-sid, Lilidog-Special, and the lilidog-i386 release: 
 https://sourceforge.net/projects/lilidog/files/Releases/
 
 ### Directions
