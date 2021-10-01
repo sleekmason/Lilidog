@@ -24,7 +24,7 @@ fi
 # we need root rights
 #---------------------------------------------------------------------
 if [ "$(id -u)" -ne 0 ]; then
-	if [ -x "$(which su-to-root)" ]; then
+	if [ -x "$(command -v su-to-root)" ]; then
 		[ -n "$DISPLAY" ] &&  exec gksudo "${0} $@"
 		exec su-to-root -c "${0} $@"
 	fi
