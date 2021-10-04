@@ -25,14 +25,14 @@ Click on FILES, and then RELEASES to access the 32 bit i386 version.
 then this is the one for you!  You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
 
 - Lilidog-Special - This one also includes Google Earth, Virtualbox, Live USB Maker, all packages necessary for a kernel build,
-git, and live-build. Note* Because the Lilidog-Special edition also contains virtualbox, your CPU may ramp up for a minute or so
-when testing "live" in a virtualbox environmnet.  This can be mitigated by choosing more than one cpu in the virtualbox host. (settings).
+git, and live-build. Note* Because the Lilidog-Special edition also contains Virtualbox, your CPU may ramp up for a minute or so
+when testing "live" in a virtualbox environment.  This can be mitigated by choosing more than one cpu in the virtualbox host. (settings).
  
 ### NOTE - The DOWNLOAD button defaults to the Bullseye-amd64 full version! (stable).  Click below for the others.
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-### Click Here for Lilidog-Minimal, Lilidog-sid, Lilidog-Special and the lilidog-i386 release: 
+### Click Here for Lilidog-Minimal, Lilidog-sid, Lilidog-Special, and the lilidog-i386 release: 
 https://sourceforge.net/projects/lilidog/files/Releases/
 
 ### Directions
