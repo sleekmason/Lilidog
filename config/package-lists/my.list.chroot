@@ -25,6 +25,7 @@ eject
 evince
 exfat-fuse
 exfat-utils
+extlinux
 f2fs-tools
 fbpanel
 feh
@@ -161,6 +162,7 @@ squashfs-tools
 suckless-tools
 sudo
 synaptic
+syslinux-common
 system-config-printer
 system-config-printer-udev
 tasksel
