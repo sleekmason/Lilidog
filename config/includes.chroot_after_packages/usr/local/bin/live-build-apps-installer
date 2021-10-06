@@ -1,0 +1,32 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   Packages Useful For Live-build, Git, And Openssh. 
+   
+   This will install: live-build, live-config, live-boot, 
+   git, openssh-sftp-server
+   
+   These allow you to work with live-build and git. 
+   https://live-team.pages.debian.net/live-manual/
+   
+   Few will really want these installed.
+   
+   
+   ------------------------------------------
+   
+   Please press enter to install the packages.
+   
+   ------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+   
+   
+sudo apt update && sudo apt install live-build live-config live-boot git openssh-sftp-server
+echo ""
+echo "----------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "----------------------------------------"

@@ -48,8 +48,9 @@ Extras,             ^checkout(extras),                applications-system
 ^tag(extras)
 Install VirtualBox,      lxterminal -t 'Virtualbox Installer' -e "virtualbox-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Google Earth,    lxterminal -t 'Google Earth Installer' -e "google-earth-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Kernel Packages, lxterminal -t 'Kernel Packages Installer' -e "kernel-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Liquorix Kernel, lxterminal -t 'Liquorix Kernel Installer' -e "liquorix-kernel-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Live-build Apps, lxterminal -t 'Live-build Apps Installer' -e "live-build-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Kernel Packages, lxterminal -t 'Kernel Packages Installer' -e "kernel-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 
 ^tag(toggles)
 Conky,               toggle.conky,              object-flip-horizontal
