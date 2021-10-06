@@ -108,6 +108,8 @@ For drive information, you may wish to edit the script in  ~/.config/conky/scrip
 - Picom Composite Manager with transparency enabled. There is also a config file for compton should you choose to install it. <br/>
 Look in the configuration menu to access ~/.config/picom.conf (Sid is still using Compton until updated!)
 
+- Live USB Maker  The folks at antiX/MX made a great little utility for making Live USB's.  Check it out!
+
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
 - Feh sets the wallpaper. More wallpapers are located in ~/Pictures/wallpapers. Right-Click in Thunar to change the wallpaper.
