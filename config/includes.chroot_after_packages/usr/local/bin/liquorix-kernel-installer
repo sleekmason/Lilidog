@@ -1,0 +1,35 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   This Will Install The Liquorix Kernel And Headers!
+   
+   See: https://liquorix.net/ for more info.
+   
+   If this kernel does not work for you, reboot and
+   choose your old kernel in the Options screen.
+   
+   Then use apt to remove the Liquorix kernel and headers.
+   
+   
+   ------------------------------------------
+   
+   Please press enter to install the kernel packages.
+   
+   ------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+sudo cp /usr/local/bin/Liquorix.list /etc/apt/sources.list.d
+sudo rm /etc/apt/sources.list.d/liquorix.list
+sudo apt update && sudo apt install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
+sudo rm /etc/apt/sources.list.d/Liquorix.list
+sudo cp /usr/local/bin/liquorix.list /etc/apt/sources.list.d
+echo ""
+echo "---------------------------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "Please reboot into your new kernel!"
+echo ""
+echo "---------------------------------------------------------"
