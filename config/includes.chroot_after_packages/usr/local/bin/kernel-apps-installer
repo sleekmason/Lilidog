@@ -1,0 +1,28 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   All Packages Necessary To Compile The Linux Kernel. 
+   
+   This will install: bc, bison build-essential, fakeroot, 
+   flex, libelf-dev, libncurses5-dev, libssl-dev
+   
+   This will NOT install A new kernel. 
+   Few will really want these installed.
+   
+   
+   ------------------------------------------
+   
+   Please press enter to install the packages.
+   
+   ------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+sudo apt update && sudo apt install bc bison build-essential fakeroot flex libelf-dev libncurses5-dev libssl-dev
+echo ""
+echo "----------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "----------------------------------------"

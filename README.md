@@ -5,7 +5,7 @@ Lilidog is a lightweight distro using the Openbox window manager. <br/>
 Lilidog is based on Debian, with some of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize further.
 
-### There are currently five versions of Lilidog Available.  See below for features.
+### There are currently three versions of Lilidog Available.  See below for features.
 
 - Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use. <br/>
 This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few!
@@ -15,24 +15,15 @@ while allowing you to choose most all of your OWN packages. <br/>
 Design your system with whatever other programs you might like! <br/> 
 Currently contains Lxterminal, Pcmanfm, and Mousepad to get you easily started. <br/>
 apt update && apt install synaptic for a graphical installer to make things easier. <br/>
-Be prepared to edit the menu as you add packages to your distro. <br/> 
-See Jgmenu.conf in the menu under "configuration" or go to ~/.config/jgmenu/README for details. <br/> 
-
-- Lilidog-i386 (Bullseye 32 bit full version) - This version uses a 32 bit i686-pae kernel for older computers. <br/>
-Click on FILES, and then RELEASES to access the 32 bit i386 version.
 
 - Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release, <br/>
 then this is the one for you!  You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
 
-- Lilidog-Special - This one also includes Google Earth, Virtualbox, Live USB Maker, all packages necessary for a kernel build,
-git, and live-build. Note* Because the Lilidog-Special edition also contains Virtualbox, your CPU may ramp up for a minute or so
-when testing "live" in a virtualbox environment.  This can be mitigated by choosing more than one cpu in the virtualbox host. (settings).
- 
 ### NOTE - The DOWNLOAD button defaults to the Bullseye-amd64 full version! (stable).  Click below for the others.
 
 [![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
 
-### Click Here for Lilidog-Minimal, Lilidog-sid, Lilidog-Special, and the lilidog-i386 release: 
+### Click Here for the other releases: 
 https://sourceforge.net/projects/lilidog/files/Releases/
 
 ### Directions
@@ -108,7 +99,9 @@ For drive information, you may wish to edit the script in  ~/.config/conky/scrip
 - Picom Composite Manager with transparency enabled. There is also a config file for compton should you choose to install it. <br/>
 Look in the configuration menu to access ~/.config/picom.conf (Sid is still using Compton until updated!)
 
-- Live USB Maker  The folks at antiX/MX made a great little utility for making Live USB's.  Check it out!
+- Live USB Maker  The folks at antiX/MX made a great little utility for making Live USB's. Adapted for Lilidog.
+
+- Menu installer for Google Earth, Virtualbox, and More!  Go to "Menu -> Utilities -> Extras" to install any of these.
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 

@@ -34,7 +34,7 @@ Catfish Search,     catfish,          edit-find
 Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
 Htop,               urxvt -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
-Quick Info,         x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   document-properties
+Quick Info,         lxterminal -t 'Inxi Info' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 Transmission,       transmission,                     transmission
 Kernel Remover,     lxterminal -e 'sudo kernel-remover -G dialog',     edit-cut
 App Alternatives,   xfce4-mime-settings,              preferences-system
@@ -43,6 +43,12 @@ Color Chooser,      yad --color,                      yad
 Printer Setup,      gksudo system-config-printer,     printer
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
+Extras,             ^checkout(extras),                applications-system
+
+^tag(extras)
+Install VirtualBox,      lxterminal -t 'Virtualbox Installer' -e "virtualbox-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Google Earth,    lxterminal -t 'Google Earth Installer' -e "google-earth-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Kernel Packages, lxterminal -t 'Kernel Packages Installer' -e "kernel-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 
 ^tag(toggles)
 Conky,               toggle.conky,              object-flip-horizontal
@@ -78,4 +84,4 @@ Fbpanel Conf,             geany ~/.config/fbpanel/default,                prefer
 Xbindkeys Conf,           xbindkeys-config,                               applications-utilities
 Dmenu Apps Conf,          geany ~/.config/dmenu/apps,                     geany
 Ld-Hotcorners Conf,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,  applications-games   
-Jgmenu Theme Changer,       jgmenu-interactive,                           preferences-desktop-theme 
+Jgmenu Theme Changer,     jgmenu-interactive,                             preferences-desktop-theme 

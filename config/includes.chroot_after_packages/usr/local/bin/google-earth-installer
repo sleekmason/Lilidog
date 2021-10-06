@@ -1,0 +1,21 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   To Install Google Earth Pro, Please Press Enter!" ;
+sudo cp /usr/local/bin/Google-Earth-Pro.list /etc/apt/sources.list.d
+sudo rm /etc/apt/sources.list.d/google-earth-pro.list
+sudo apt update && sudo apt install google-earth-pro-stable
+sudo rm /etc/apt/sources.list.d/Google-Earth-Pro.list
+sudo cp /usr/local/bin/google-earth-pro.list /etc/apt/sources.list.d
+echo ""
+echo "---------------------------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "If installed, you may want to put a menu entry into ~/.config/jgmenu/mymenu.csv"
+echo "Just copy and paste the line below where you want it! Perhaps, ^tag(quickgrab)?"
+echo ""
+echo "Google Earth,       google-earth-pro, google-earth-pro"
+echo ""
+echo "---------------------------------------------------------"
