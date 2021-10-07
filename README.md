@@ -101,8 +101,6 @@ Look in the configuration menu to access ~/.config/picom.conf (Sid is still usin
 
 - Live USB Maker  The folks at antiX/MX made a great little utility for making Live USB's. Adapted for Lilidog.
 
-- Menu installer for Google Earth, Virtualbox, and More!  Go to "Menu -> Utilities -> Extras" to install any of these.
-
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
 - Feh sets the wallpaper. More wallpapers are located in ~/Pictures/wallpapers. Right-Click in Thunar to change the wallpaper.
