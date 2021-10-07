@@ -1,4 +1,2 @@
 # deb https://deb.debian.org/debian/ unstable main non-free contrib
-# deb [arch=amd64] http://dl.google.com/linux/earth/deb/ stable main
-# deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bullseye contrib
 # deb http://liquorix.net/debian bullseye main
