@@ -36,9 +36,9 @@ Htop,               urxvt -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
 Quick Info,         lxterminal -t 'Inxi Info' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 Transmission,       transmission,                     transmission
-Kernel Remover,     lxterminal -e 'sudo kernel-remover -G dialog',     edit-cut
+Kernel Remover,     lxterminal -t 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 App Alternatives,   xfce4-mime-settings,              preferences-system
-Live USB Maker,     lxterminal -e "sudo live-usb-maker-gui-antix",     gparted
+Live USB Maker,     lxterminal -t 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Color Chooser,      yad --color,                      yad
 Printer Setup,      gksudo system-config-printer,     printer
 Galculator,         galculator,                       galculator
