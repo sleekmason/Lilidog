@@ -1,4 +1,4 @@
-﻿### Lilidog Linux - 32 bit and 64 bit versions.
+﻿### Lilidog Linux
  
 Lilidog is a lightweight distro using the Openbox window manager. <br/> 
 

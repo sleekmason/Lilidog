@@ -1,8 +1,0 @@
-deb http://liquorix.net/debian bullseye main
-# deb-src http://liquorix.net/debian bullseye main
-
-# Mirrors:
-#
-# Unit193 - France
-# deb http://mirror.unit193.net/liquorix bullseye main
-# deb-src http://mirror.unit193.net/liquorix bullseye main
