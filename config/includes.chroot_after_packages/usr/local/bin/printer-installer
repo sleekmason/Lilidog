@@ -1,0 +1,39 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   Printer Setup Installer. 
+   
+   This will install the packages necessary for printing
+   and scanning on your computer.
+   
+   If there is a package missing for your particular setup,
+   please let me know.
+   
+   
+   ---------------------------------------------------
+   
+   Please press enter to install the printer packages.
+   
+   ---------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+sudo apt update && sudo apt install --install-recommends hplip system-config-printer \
+system-config-printer-udev sane-utils printer-driver-all printer-driver-brlaser \
+printer-driver-c2050 printer-driver-c2esp printer-driver-cjet printer-driver-cups-pdf \
+printer-driver-dymo printer-driver-escpr printer-driver-foo2zjs printer-driver-fujixerox \
+printer-driver-gutenprint printer-driver-hpijs printer-driver-postscript-hp \
+printer-driver-m2300w printer-driver-min12xxw printer-driver-pnm2ppa printer-driver-oki \
+printer-driver-ptouch printer-driver-pxljr printer-driver-sag-gdi printer-driver-splix \
+printer-driver-indexbraille foomatic-db-compressed-ppds
+sed -i 's/lxterminal -e "printer-installer; read -srn1"/gksudo system-config-printer/g' ~/.config/jgmenu/mymenu.csv
+echo ""
+echo "------------------------------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "Return to Printer Setup in the menu to connect your printer!"
+echo ""
+echo ""
+echo "------------------------------------------------------------"

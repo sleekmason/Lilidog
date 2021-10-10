@@ -40,7 +40,7 @@ Kernel Remover,     lxterminal -t 'Kernel Remover' -e 'sudo kernel-remover -G di
 App Alternatives,   xfce4-mime-settings,              preferences-system
 Live USB Maker,     lxterminal -t 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Color Chooser,      yad --color,                      yad
-Printer Setup,      gksudo system-config-printer,     printer
+Printer Setup,      lxterminal -e "printer-installer; read -srn1", printer
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
 Extras,             ^checkout(extras),                applications-system

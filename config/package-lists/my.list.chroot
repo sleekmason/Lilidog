@@ -90,7 +90,6 @@ gvfs-backends
 gvfs-fuse
 hddtemp
 hdparm
-hplip
 htop
 hunspell-en-us
 hyphen-en-us
@@ -155,7 +154,6 @@ qt5-style-plugins
 rename
 rsync
 rxvt-unicode
-sane-utils
 scrot
 shellcheck
 smplayer
@@ -165,8 +163,6 @@ suckless-tools
 sudo
 synaptic
 syslinux-common
-system-config-printer
-system-config-printer-udev
 tasksel
 tint2
 thunar
