@@ -20,7 +20,7 @@ read -p "   Printer Setup Installer.
    
    Or close this terminal window to quit the install." ;
 sudo apt update && sudo apt install --install-recommends hplip system-config-printer \
-system-config-printer-udev sane-utils printer-driver-all printer-driver-brlaser \
+system-config-printer-udev sane-utils xsane printer-driver-all printer-driver-brlaser \
 printer-driver-c2050 printer-driver-c2esp printer-driver-cjet printer-driver-cups-pdf \
 printer-driver-dymo printer-driver-escpr printer-driver-foo2zjs printer-driver-fujixerox \
 printer-driver-gutenprint printer-driver-hpijs printer-driver-postscript-hp \
