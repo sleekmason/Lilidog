@@ -46,6 +46,7 @@ Synaptic,           gksudo synaptic,                  synaptic
 Extras,             ^checkout(extras),                applications-system
 
 ^tag(extras)
+Install Qemu,            lxterminal -t 'Qemu Installer' -e "qemu-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Steam,           lxterminal -t 'Steam Installer' -e "steam-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Liquorix Kernel, lxterminal -t 'Liquorix Kernel Installer' -e "liquorix-kernel-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Live-build Apps, lxterminal -t 'Live-build Apps Installer' -e "live-build-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities

@@ -1,0 +1,35 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   Qemu Installer
+
+   Qemu is a virtual machine similar to VirtualBox.
+   This will install Qemu with --recommends enabled, 
+   and give a command or two to use after installation.
+
+   https://qemu-project.gitlab.io/qemu/
+   
+    
+   
+   ---------------------------------------------------------
+   
+   Please press enter to install qemu.
+   
+   ---------------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+sudo apt update && sudo apt install --install-recommends qemu-system-x86
+echo ""
+echo "-----------------------------------------------------"
+echo ""
+echo "All Finished!"
+echo "" 
+echo "For quick use, open a terminal where you have an ISO and use:"
+echo "kvm -cdrom <Your-Cool-ISO-amd64.hybrid.iso> -m 2048"
+echo "" 
+echo "Where -m is the amount of dedicated memory to the VM"
+echo ""
+echo "Enjoy!"
+echo "-----------------------------------------------------"
