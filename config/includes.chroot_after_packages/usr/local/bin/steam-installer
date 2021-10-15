@@ -4,8 +4,8 @@ echo ""
 echo ""
 read -p "   Steam Installer
 
-   Steam is a proprietary content delivery and launcher 
-   application for video games, creative tools, and multimedia.
+   Steam is a proprietary content delivery and launcher application 
+   for video games, creative tools, and multimedia.
 
    https://wiki.debian.org/Steam
    
@@ -15,26 +15,22 @@ read -p "   Steam Installer
    https://wiki.debian.org/Multiarch/HOWTO
    You have been warned!
    
-   ---------------------------------------------------------
+   ----------------------------------------------------------
    
    Please press enter to enable multi-arch and install Steam.
    
-   ---------------------------------------------------------
+   ----------------------------------------------------------
    
    
    Or close this terminal window to quit the install." ;
-sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install --install-recommends steam
 echo ""
-echo "-----------------------------------------------------"
+sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install --install-recommends steam
+sudo sed -i '30 a Steam,         steam,       steam' ~/.config/jgmenu/mymenu.csv
+echo ""
+echo "------------------------------------------------------------------"
 echo ""
 echo "All Finished!"
 echo ""
-echo "If installed, you may want to put a menu entry into ~/.config/jgmenu/mymenu.csv"
-echo "Just copy and paste the line below where you want it! Perhaps, ^tag(quickgrab)?"
+echo "If installed, You should find a new menu entry under 'Quick Grab'"
 echo ""
-echo "Steam,              steam,            steam"
-echo ""
-echo "Use: 'killall jgmenu' in a terminal to restart jgmenu if Steam doesn't show."
-echo ""
-echo ""
-echo "-----------------------------------------------------"
+echo "------------------------------------------------------------------"

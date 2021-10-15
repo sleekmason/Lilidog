@@ -4,9 +4,8 @@ echo ""
 echo ""
 read -p "   Qemu Installer
 
-   Qemu is a virtual machine similar to VirtualBox.
-   This will install Qemu with --recommends enabled, 
-   and give a command or two to use after installation.
+   Qemu/kvm is a virtual machine, similar to VirtualBox.
+   This will install Qemu with --recommends enabled.
 
    https://qemu-project.gitlab.io/qemu/
    
@@ -14,22 +13,25 @@ read -p "   Qemu Installer
    
    ---------------------------------------------------------
    
-   Please press enter to install qemu.
+   Please press enter to install Qemu.
    
    ---------------------------------------------------------
    
    
    Or close this terminal window to quit the install." ;
-sudo apt update && sudo apt install --install-recommends qemu-system-x86
+echo "" 
+sudo apt update && sudo apt install --install-recommends qemu-system-x86 virt-manager
+sudo sed -i '30 a VM Manager,         virt-manager,       virt-manager' ~/.config/jgmenu/mymenu.csv
 echo ""
 echo "-----------------------------------------------------"
 echo ""
 echo "All Finished!"
+echo ""
+echo "If installed, You should find a new menu entry under 'Quick Grab'"
+echo "labeled 'VM Manager'"
 echo "" 
 echo "For quick use, open a terminal where you have an ISO and use:"
 echo "kvm -cdrom <Your-Cool-ISO-amd64.hybrid.iso> -m 2048"
 echo "" 
-echo "Where -m is the amount of dedicated memory to the VM"
 echo ""
-echo "Enjoy!"
 echo "-----------------------------------------------------"

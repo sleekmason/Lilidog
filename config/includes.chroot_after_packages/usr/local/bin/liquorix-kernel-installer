@@ -1,0 +1,51 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   This Will Install The Liquorix Kernel And Headers!
+   
+   See: https://liquorix.net/ for more info.
+   
+   If this kernel does not work for you, reboot and choose 
+   your old kernel in the Advanced Options screen.
+   
+   Then use apt, or the kernel remover to remove the 
+   Liquorix kernel and headers.
+   
+   
+   --------------------------------------------------
+   
+   Please press enter to install the kernel packages.
+   
+   --------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+sudo curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash 
+sudo sed -i '1s/# deb/deb/g' /etc/apt/sources.list.d/liquorix.list
+sudo sed -i '2s/# deb/deb/g' /etc/apt/sources.list.d/liquorix.list
+sudo apt update && sudo apt install --install-recommends linux-image-liquorix-amd64 linux-headers-liquorix-amd64
+sudo sed -i '1s/deb/# deb/g' /etc/apt/sources.list.d/liquorix.list
+sudo sed -i '2s/deb/# deb/g' /etc/apt/sources.list.d/liquorix.list
+echo ""
+echo "---------------------------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "Please reboot into your new kernel!"
+echo ""
+echo "You may need to look in 'Advanced Options' upon reboot if you"
+echo "have installed a higher numbered kernel version previously."
+echo "Grub will boot the highest numbered kernel version automatically."
+echo ""
+echo ""
+echo "To remove this kernel, reboot with your old kernel through"
+echo "the advanced menu at boot."
+echo ""
+echo "Then use apt or the kernel remover located in the menu"
+echo "under utilities to remove the liquorix kernel."
+echo ""
+echo "This script deactivates the repository after install."
+echo "Simply run the script again to install a newer kernel later."
+echo ""
+echo "---------------------------------------------------------"
