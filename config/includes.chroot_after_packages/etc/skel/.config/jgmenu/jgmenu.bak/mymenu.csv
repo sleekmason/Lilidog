@@ -34,7 +34,7 @@ Catfish Search,     catfish,          edit-find
 Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
 Htop,               urxvt -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
-Quick Info,         lxterminal -t 'Inxi Info' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1",   document-properties
+Quick Info,         lxterminal -t 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 Transmission,       transmission,                     transmission
 Kernel Remover,     lxterminal -t 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 App Alternatives,   xfce4-mime-settings,              preferences-system
