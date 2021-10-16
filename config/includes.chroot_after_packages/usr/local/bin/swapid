@@ -1,5 +1,28 @@
 #!/bin/bash
 ## Made by Sleekmason in 2020 to make dualboot changes easier!
+read -p "   Swapid! 
+
+   for the frequent dual installer, updates your fstab and
+   resume file with the proper uuid to use.
+   
+   This will open two files in mousepad, and the terminal 
+   will show you the proper uuid number to use.
+   
+   Just replace the numbers in both files from the one in 
+   the terminal and then save & close the mousepad window(s).
+   
+   Afterwards, you will be prompted to update your initramfs
+   and grub.
+    
+   ---------------------------------------------------------
+   
+   Please press enter begin.
+   
+   ---------------------------------------------------------
+   
+   
+   Or close this terminal window to quit." ;
+echo ""
 sudo blkid -l -t TYPE=swap | awk '{printf $2}'
 sudo mousepad /etc/fstab /etc/initramfs-tools/conf.d/resume
 echo ""
