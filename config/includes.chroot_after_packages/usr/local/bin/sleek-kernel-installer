@@ -6,9 +6,9 @@ read -p "   This Will Install the Sleek Kernel And Headers.
    Debugging mostly removed. Support for ntfs read and write,
    and more. See the readme for more info.
   
-   This script installs git, build essential, and irqbalance,
-   before cloning the sleek kernel into Downloads, extracting,
-   and then installing. The kernel and headers are 50.3MB
+   This script installs git and irqbalance, before cloning 
+   the sleek kernel into Downloads, extracting, and then 
+   installing. The kernel and headers are 50.3MB
    
    Be aware that the highest numbered kernel is automatically
    booted, and you may need to go to 'advanced options' on
@@ -28,7 +28,7 @@ read -p "   This Will Install the Sleek Kernel And Headers.
      
    Or close this terminal window to quit the install." ;
 echo ""
-sudo apt update && sudo apt install git build-essential irqbalance
+sudo apt update && sudo apt install git irqbalance
 git clone https://github.com/sleekmason/sleek-kernel.git ~/Downloads/sleek-kernel
 cd ~/Downloads/sleek-kernel/stable/ && sudo dpkg -i *.deb 
 echo ""
