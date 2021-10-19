@@ -1,39 +1,36 @@
 #!/bin/bash
 echo ""
-echo ""
-echo ""
-read -p "   Liquorix Kernel Installer
+read -p "   This Will Install the Sleek Kernel And Headers.
    
-   See: https://liquorix.net/ for more info. Great for gaming.
-
+   This is a stable kernel from www.kernel.org, with the
+   Debugging mostly removed. Support for ntfs read and write,
+   and more. See the readme for more info.
+  
+   This script installs git, build essential, and irqbalance,
+   before cloning the sleek kernel into Downloads, extracting,
+   and then installing. The kernel and headers are 50.3MB
+   
    Be aware that the highest numbered kernel is automatically
    booted, and you may need to go to 'advanced options' on
    boot if you have installed a higher numbered kernel 
-   previously. (sleek-kernel)
+   previously.
    
    If this kernel or any others do not work for you, reboot 
    and choose your old kernel in the Advanced Options screen,
    then use apt or the kernel remover from the menu to 
    remove the kernel and headers.
-
-   This will install the Liquorix kernel and headers, plus 
-   other packages to go with it. 
-   
-   
+     
    --------------------------------------------------
    
    Please press enter to install the kernel packages.
    
    --------------------------------------------------
-   
-   
+     
    Or close this terminal window to quit the install." ;
-sudo curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash 
-sudo sed -i '1s/# deb/deb/g' /etc/apt/sources.list.d/liquorix.list
-sudo sed -i '2s/# deb/deb/g' /etc/apt/sources.list.d/liquorix.list
-sudo apt update && sudo apt install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
-sudo sed -i '1s/deb/# deb/g' /etc/apt/sources.list.d/liquorix.list
-sudo sed -i '2s/deb/# deb/g' /etc/apt/sources.list.d/liquorix.list
+echo ""
+sudo apt update && sudo apt install git build-essential irqbalance
+git clone https://github.com/sleekmason/sleek-kernel.git ~/Downloads/sleek-kernel
+cd ~/Downloads/sleek-kernel/stable/ && sudo dpkg -i *.deb 
 echo ""
 echo "---------------------------------------------------------"
 echo ""
@@ -45,14 +42,11 @@ echo "You may need to look in 'Advanced Options' upon reboot if you"
 echo "have installed a higher numbered kernel version previously."
 echo "Grub will boot the highest numbered kernel version automatically."
 echo ""
-echo ""
 echo "To remove this kernel, reboot with your old kernel through"
 echo "the advanced menu at boot."
 echo ""
 echo "Then use apt or the kernel remover located in the menu"
-echo "under utilities to remove the liquorix kernel."
+echo "under utilities to remove the kernel."
 echo ""
-echo "This script deactivates the repository after install."
-echo "Simply run the script again to install a newer kernel later."
 echo ""
 echo "---------------------------------------------------------"
