@@ -1,4 +1,4 @@
-Terminal,           lxterminal,       utilities-terminal
+Terminal,           x-terminal-emulator,       utilities-terminal
 ^sep()
 Thunar,             thunar,           /usr/share/icons/ld-icons/Thunar.png
 Firefox,            firefox,          firefox-esr
@@ -23,7 +23,7 @@ Writer,             libreoffice,      libreoffice-writer
 Geany,              geany,	          geany
 Pcmanfm,            pcmanfm,          system-file-manager
 Mousepad,           mousepad,         accessories-text-editor
-Newsboat,           urxvt -g 120x40+120+100 -e newsboat,         accessories-text-editor
+Newsboat,           x-terminal-emulator -e newsboat,         accessories-text-editor
 Smplayer,           smplayer,         smplayer
 Gpicview,           gpicview,         gpicview
 Pragha,             pragha,           pragha
@@ -32,26 +32,26 @@ Catfish Search,     catfish,          edit-find
 
 ^tag(utilities)
 Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
-Htop,               urxvt -e htop,                    htop
+Htop,               x-terminal-emulator -t 'Htop' -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
-Quick Info,         lxterminal -t 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
+Quick Info,         x-terminal-emulator -t 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 Transmission,       transmission,                     transmission
-Kernel Remover,     lxterminal -t 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
+Kernel Remover,     x-terminal-emulator -t 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 App Alternatives,   xfce4-mime-settings,              preferences-system
-Live USB Maker,     lxterminal -t 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
+Live USB Maker,     x-terminal-emulator -t 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Color Chooser,      yad --color,                      yad
-Printer Setup,      lxterminal -e "printer-installer; read -srn1", printer
+Printer Setup,      x-terminal-emulator -e "printer-installer; read -srn1", printer
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
 Extras,             ^checkout(extras),                applications-system
 
 ^tag(extras)
-Install Qemu,            lxterminal -t 'Qemu Installer' -e "qemu-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Steam,           lxterminal -t 'Steam Installer' -e "steam-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Sleek Kernel,    lxterminal -t 'Sleek Kernel Installer' -e "sleek-kernel-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Liquorix Kernel, lxterminal -t 'Liquorix Kernel Installer' -e "liquorix-kernel-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Live-build Apps, lxterminal -t 'Live-build Apps Installer' -e "live-build-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Kernel Packages, lxterminal -t 'Kernel Packages Installer' -e "kernel-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Qemu,            x-terminal-emulator -t 'Qemu Installer' -e "qemu-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Steam,           x-terminal-emulator -t 'Steam Installer' -e "steam-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Sleek Kernel,    x-terminal-emulator -t 'Sleek Kernel Installer' -e "sleek-kernel-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Liquorix Kernel, x-terminal-emulator -t 'Liquorix Kernel Installer' -e "liquorix-kernel-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Live-build Apps, x-terminal-emulator -t 'Live-build Apps Installer' -e "live-build-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Kernel Packages, x-terminal-emulator -t 'Kernel Packages Installer' -e "kernel-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 
 ^tag(toggles)
 Conky,               toggle.conky,              object-flip-horizontal
@@ -87,4 +87,4 @@ Fbpanel Conf,             geany ~/.config/fbpanel/default,                prefer
 Xbindkeys Conf,           xbindkeys-config,                               applications-utilities
 Dmenu Apps Conf,          geany ~/.config/dmenu/apps,                     geany
 Ld-Hotcorners Conf,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,  applications-games   
-Jgmenu Theme Changer,     jgmenu-interactive,                             preferences-desktop-theme 
+Jgmenu Theme Changer,     x-terminal-emulator -t 'Jgmenu Interactive' -e "jgmenu-interactive",  preferences-desktop-theme  

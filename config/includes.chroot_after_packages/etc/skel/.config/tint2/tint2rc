@@ -178,7 +178,7 @@ clock_tooltip = Left click = calendar - Middle click = time formats
 clock_tooltip_timezone = 
 clock_lclick_command = gsimplecal
 clock_rclick_command = gsimplecal
-clock_mclick_command = urxvt -e man strftime
+clock_mclick_command = x-terminal-emulator -e man strftime
 clock_uwheel_command = 
 clock_dwheel_command = 
 
@@ -198,7 +198,7 @@ battery_background_id = 0
 battery_hide = 101
 battery_lclick_command = xfce4-power-manager-settings
 battery_rclick_command = 
-battery_mclick_command = urxvt -e htop
+battery_mclick_command = x-terminal-emulator -e htop
 battery_uwheel_command = 
 battery_dwheel_command = 
 ac_connected_cmd = notify-send 'Connected To Power'
@@ -248,7 +248,7 @@ execp_markup = 1
 execp_tooltip = Left-Click = Info, Right-Click = Power Manager, Middle-Click = Htop
 execp_lclick_command = b=$(acpi -b) && notify-send "$b"
 execp_rclick_command = xfce4-power-manager -c
-execp_mclick_command = urxvt -e htop
+execp_mclick_command = x-terminal-emulator -e htop
 execp_uwheel_command = 
 execp_dwheel_command = 
 execp_font = Liberation Sans 11

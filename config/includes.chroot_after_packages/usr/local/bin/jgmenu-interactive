@@ -1,2 +1,2 @@
 #!/bin/bash
-lxterminal -e jgmenu_run init --interactive -i
+jgmenu_run init --interactive -i
