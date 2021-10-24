@@ -35,10 +35,6 @@
 
 
 
-#Screenshot
-"gnome-screenshot -i"
-   Mod4 + p
-
 #Dmenu
 "~/.config/dmenu/dmenu"
    Alt + F2
@@ -47,9 +43,37 @@
 "~/.config/dmenu/apps"
    Alt + F3
 
-#Remark
-"urxvt"
+#Terminal
+"x-terminal-emulator"
    Mod4 + t
+
+#Web Browser
+"firefox-esr"
+   Mod4 + w
+
+#File Manager
+"thunar"
+   Mod4 + f
+
+#Pragha
+"pragha"
+   Mod4 + m
+
+#Slock
+"slock"
+   Mod4 + l
+
+#logout
+"ld-logout"
+   Mod4 + x
+
+#Toggle Conky
+"bash -c 'if ! pkill -x conky; then exec $HOME/.config/conky/scripts/conky-chooser; fi'"
+   Mod4 + c
+
+#Toggle Picom
+"toggle.picom"
+   Mod4 + p
 
 #
 # End of xbindkeys configuration

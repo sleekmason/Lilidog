@@ -54,7 +54,7 @@ Install Live-build Apps, x-terminal-emulator -t 'Live-build Apps Installer' -e "
 Install Kernel Packages, x-terminal-emulator -t 'Kernel Packages Installer' -e "kernel-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 
 ^tag(toggles)
-Conky,               toggle.conky,              object-flip-horizontal
+Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
 Picom,               toggle.picom,              object-flip-horizontal
 Clipboard,           toggle.parcellite,         object-flip-horizontal
 Hotcorners,          toggle.ld,                 object-flip-horizontal
