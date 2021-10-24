@@ -25,7 +25,7 @@ read -p "   Steam Installer
    Or close this terminal window to quit the install." ;
 echo ""
 sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install --install-recommends steam
-sudo sed -i '30 a Steam,         steam,       steam' ~/.config/jgmenu/mymenu.csv
+sed -i '30 a Steam,         steam,       steam' ~/.config/jgmenu/mymenu.csv
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
