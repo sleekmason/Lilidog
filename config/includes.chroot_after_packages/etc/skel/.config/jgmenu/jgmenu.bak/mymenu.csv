@@ -85,6 +85,6 @@ Picom Conf,               mousepad ~/.config/picom.conf,                     doc
 Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,            preferences-system
 Fbpanel Conf,             mousepad ~/.config/fbpanel/default,                preferences-other
 Xbindkeys Conf,           xbindkeys-config,                               applications-utilities
-Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                     mousepad
+Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                     document-properties
 Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,  applications-games   
 Jgmenu Theme Changer,     x-terminal-emulator -t 'Jgmenu Interactive' -e "jgmenu-interactive",  preferences-desktop-theme  
