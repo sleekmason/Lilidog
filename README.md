@@ -89,12 +89,12 @@ options for each are already added.
 - Custom Lilidog Openbox and GTK themes, and matching themes for Geany and Mousepad. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. (see "instructions" below.)
 
-- Lxterminal by default, with URXVT terminal also installed <br/>
+- Lxterminal by default as x-terminal-emulator, with URXVT terminal also installed.<br/>
 
 - URXVT terminal has font size control (ctl+up/down), transparency, and opens urls in Firefox. <br/>
 
-- Conky has all sorts of relevant info, including connected drives, number of packages installed, and more. <br/>
-For drive information, you may wish to edit the script in  ~/.config/conky/scripts. Directions included.
+- Conky Chooser toggle allows for toggling different conky's, and has all sorts of relevant info, including connected drives, 
+number of packages installed, and more. 
 
 - Picom Composite Manager with transparency enabled. There is also a config file for compton should you choose to install it. <br/>
 Look in the configuration menu to access ~/.config/picom.conf (Sid is still using Compton until updated!)
@@ -106,6 +106,8 @@ Look in the configuration menu to access ~/.config/picom.conf (Sid is still usin
 - Feh sets the wallpaper. More wallpapers are located in ~/Pictures/wallpapers. Right-Click in Thunar to change the wallpaper.
 
 - System notifications enabled with Dunst. Set your own settings in ~/.config/dunst/dunstrc.
+
+- Menu Extras list, with install options for Liquorix kernel, Sleek kernel, Qemu, Virtualbox, Steam, and more.
 
 - All custom scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
 winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
