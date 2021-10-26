@@ -21,7 +21,7 @@ read -p "   Qemu Installer
    Or close this terminal window to quit the install." ;
 echo "" 
 sudo apt update && sudo apt install --install-recommends qemu-system-x86 virt-manager
-sed -i '30 a VM Manager,         virt-manager,       virt-manager' ~/.config/jgmenu/mymenu.csv
+grep -qF "VM Manager,         virt-manager,       virt-manager" ~/.config/jgmenu/mymenu.csv  || sed -i '30 a VM Manager,         virt-manager,       virt-manager' ~/.config/jgmenu/mymenu.csv
 echo ""
 echo "-----------------------------------------------------"
 echo ""

@@ -6,5 +6,5 @@ Profiles=profile-zero;
 
 [X-Action-Profile profile-zero]
 MimeTypes=inode/directory;
-Exec=urxvt -e ncdu -rr %f
+Exec=x-terminal-emulator -e ncdu -rr %f
 Name=Default profile
