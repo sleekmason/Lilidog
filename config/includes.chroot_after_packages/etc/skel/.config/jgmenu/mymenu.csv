@@ -18,17 +18,17 @@ Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.p
 ^tag(quickgrab)
 Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
 Root Files,^checkout(rootfiles),folder-documents
-Urxvt,              urxvt,            utilities-terminal
-Writer,             libreoffice,      libreoffice-writer
-Geany,              geany,	          geany
-Pcmanfm,            pcmanfm,          system-file-manager
-Mousepad,           mousepad,         accessories-text-editor
-Newsboat,           x-terminal-emulator -e newsboat,         accessories-text-editor
-Smplayer,           smplayer,         smplayer
-Gpicview,           gpicview,         gpicview
-Pragha,             pragha,           pragha
-Gimp,               gimp,             gimp
-Catfish Search,     catfish,          edit-find
+Urxvt,              urxvt,                             utilities-terminal
+Writer,             libreoffice,                       libreoffice-writer
+Geany,              geany,	                           geany
+Pcmanfm,            pcmanfm,                           system-file-manager
+Mousepad,           mousepad,                          accessories-text-editor
+Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
+Smplayer,           smplayer,                          smplayer
+Gpicview,           gpicview,                          gpicview
+Pragha,             pragha,                            pragha
+Gimp,               gimp,                              gimp
+Catfish Search,     catfish,                           edit-find
 
 ^tag(utilities)
 Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
@@ -40,27 +40,27 @@ Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remo
 App Alternatives,   xfce4-mime-settings,              preferences-system
 Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Color Chooser,      yad --color,                      yad
-Printer Setup,      x-terminal-emulator -e "printer-installer; read -srn1", printer
+Printer Setup,      x-terminal-emulator -e bash -c "printer-installer; read -srn1", printer
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
 Extras,             ^checkout(extras),                applications-system
 
 ^tag(extras)
-Install Qemu,            x-terminal-emulator -T 'Qemu Installer' -e "qemu-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Steam,           x-terminal-emulator -T 'Steam Installer' -e "steam-installer;   echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Liquorix Kernel, x-terminal-emulator -T 'Liquorix Kernel Installer' -e "liquorix-kernel-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Live-build Apps, x-terminal-emulator -T 'Live-build Apps Installer' -e "live-build-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Kernel Packages, x-terminal-emulator -T 'Kernel Packages Installer' -e "kernel-apps-installer;  echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Qemu,            x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
+Install Steam,           x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-utilities
+Install Liquorix Kernel, x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Live-build Apps, x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Kernel Packages, x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 
 ^tag(toggles)
 Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
-Picom,               toggle.picom,              object-flip-horizontal
-Clipboard,           toggle.parcellite,         object-flip-horizontal
-Hotcorners,          toggle.ld,                 object-flip-horizontal
-Screensaver,         toggle.xscreensaver,       object-flip-horizontal
-Tint2 Panel,         toggle.tint2,              object-flip-horizontal
-Fbpanel,             toggle.fbpanel,            object-flip-horizontal
-Xkill,               xkill,                     edit-delete
+Picom,               toggle.picom,                                  object-flip-horizontal
+Clipboard,           toggle.parcellite,                             object-flip-horizontal
+Hotcorners,          toggle.ld,                                     object-flip-horizontal
+Screensaver,         toggle.xscreensaver,                           object-flip-horizontal
+Tint2 Panel,         toggle.tint2,                                  object-flip-horizontal
+Fbpanel,             toggle.fbpanel,                                object-flip-horizontal
+Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
 /etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents 
@@ -72,18 +72,18 @@ Xkill,               xkill,                     edit-delete
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
 
 ^tag(configuration)
-Wallpaper Chooser,        feh-set-wallpaper,                                 feh
-Settings-Manager,         xfce4-settings-manager,                            preferences-desktop-theme
-Power Manager,            xfce4-power-manager-settings,                      applications-system  
-Openbox Conf,             obconf,                                            obconf
-Jgmenu Conf,              mousepad ~/.config/jgmenu/README & pcmanfm ~/.config/jgmenu,  document-properties
-Conky Conf,               thunar ~/.config/conky,                            document-properties
-Urxvt Conf,               mousepad ~/.Xresources,                            utilities-terminal
-Tint2 Conf,               tint2conf,                                         tint2
-Picom Conf,               mousepad ~/.config/picom.conf,                     document-properties
-Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,               preferences-system
-Fbpanel Conf,             mousepad ~/.config/fbpanel/default,                preferences-other
-Xbindkeys Conf,           xbindkeys-config,                                  applications-utilities
-Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                     document-properties
-Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,  applications-games   
+Wallpaper Chooser,        feh-set-wallpaper,                                                    feh
+Settings-Manager,         xfce4-settings-manager,                                               preferences-desktop-theme
+Power Manager,            xfce4-power-manager-settings,                                         applications-system  
+Openbox Conf,             obconf,                                                               obconf
+Jgmenu Conf,              mousepad ~/.config/jgmenu/README & pcmanfm ~/.config/jgmenu,          document-properties
+Conky Conf,               thunar ~/.config/conky,                                               document-properties
+Urxvt Conf,               mousepad ~/.Xresources,                                               utilities-terminal
+Tint2 Conf,               tint2conf,                                                            tint2
+Picom Conf,               mousepad ~/.config/picom.conf,                                        document-properties
+Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
+Fbpanel Conf,             mousepad ~/.config/fbpanel/default,                                   preferences-other
+Xbindkeys Conf,           xbindkeys-config,                                                     applications-utilities
+Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                                        document-properties
+Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     applications-games   
 Jgmenu Theme Changer,     x-terminal-emulator -T 'Jgmenu Interactive' -e "jgmenu-interactive",  preferences-desktop-theme  
