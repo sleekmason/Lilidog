@@ -40,7 +40,7 @@ Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remo
 App Alternatives,   galternatives,                    preferences-system
 Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Color Chooser,      yad --color,                      yad
-Printer Setup,      x-terminal-emulator -e bash -c "printer-installer; read -srn1", printer
+Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
 Extras,             ^checkout(extras),                applications-system
