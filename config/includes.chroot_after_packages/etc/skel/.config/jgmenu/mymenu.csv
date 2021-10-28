@@ -75,7 +75,7 @@ Wallpaper Chooser,        feh-set-wallpaper,                                    
 Settings-Manager,         xfce4-settings-manager,                                               preferences-desktop-theme
 Power Manager,            xfce4-power-manager-settings,                                         applications-system  
 Openbox Conf,             obconf,                                                               obconf
-Jgmenu Conf,              mousepad ~/.config/jgmenu/README & pcmanfm ~/.config/jgmenu,          document-properties
+Jgmenu Conf,              mousepad ~/.config/jgmenu/README & thunar ~/.config/jgmenu,           document-properties
 Conky Conf,               thunar ~/.config/conky,                                               document-properties
 Urxvt Conf,               mousepad ~/.Xresources,                                               utilities-terminal
 Tint2 Conf,               tint2conf,                                                            tint2
