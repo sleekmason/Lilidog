@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=File Sizes
+Icon=gparted
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;
+Exec=x-terminal-emulator -e ncdu -rr %f
+Name=Default profile

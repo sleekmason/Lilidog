@@ -2,10 +2,11 @@
  
 Lilidog is a lightweight distro using the Openbox window manager. <br/> 
 
-Lilidog is based on Debian, with some of the hard parts done, and some cool stuff along the way. <br/>
+Lilidog is based on Debian, with most of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize further.
 
-### There are currently three versions of Lilidog Available.  See below for features.
+
+### There are currently Three versions of Lilidog Available.  See below for features.
 
 - Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use. <br/>
 This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few!
@@ -13,7 +14,7 @@ This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, 
 - Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog, <br/>
 while allowing you to choose most all of your OWN packages. <br/>
 Design your system with whatever other programs you might like! <br/> 
-Currently contains Lxterminal, Pcmanfm, and Mousepad to get you easily started. <br/>
+Currently contains the lightweight Lxterminal, Pcmanfm, and Mousepad programs to get you started. <br/>
 apt update && apt install synaptic for a graphical installer to make things easier. <br/>
 
 - Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release, <br/>
@@ -61,13 +62,10 @@ Debian backport sources can be added during installation in the stable build whe
 This leaves out any recommended or suggested packages, allowing for complete control over package installation. <br/>
 No unwanted packages will be installed by default. This can be changed after install if desired. <br/>
 
-- Switch between two different panels on the fly. - Customize your own to be toggled when desired.
-
-- Tint2 panel by default, with an options for FbPanel. <br/>
-Try them both under 'Toggles' in the menu.
+- Tint2 panel by default, with an options for FbPanel. Try them both under 'Toggles' in the menu.
 
 - Jgmenu is now the menu for all versions.  Huge amount of customization available. <br/>
-Go to menu -> configuration -> jgmenu.conf for how to change items and themes.
+Go to menu -> configuration -> jgmenu.conf for how to change items. For themes, go to Jgmenu Theme Changer and use "o" or "g".
 
 - Wallpapers - Place any image you would like to use as a wallpaper in ~/Pictures/wallpapers. <br/>
 Go to Menu -> Configuration -> Wallpaper Chooser to change wallpapers. <br/>
@@ -78,7 +76,7 @@ To see time format options for 24 hour vs. 12 hour, middleclick over the time fo
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
 - Xscreensaver and other handy startup apps readily available through the toggles in the menu, <br/>
-or can be activated on login by adding to the autostart cconfiguration files.
+or can be activated on login by adding to the autostart cconfiguration file.
 
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
 customized Dmenu with only the most commonly used apps.
@@ -89,25 +87,23 @@ options for each are already added.
 - Custom Lilidog Openbox and GTK themes, and matching themes for Geany and Mousepad. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. (see "instructions" below.)
 
-- Lxterminal by default as x-terminal-emulator, with URXVT terminal also installed.<br/>
+- Lxterminal is default, with URXVT terminal also installed. Use "App Alternatives in the menu <br/>
+to switch default terminals (x-terminal-emulator).  
 
 - URXVT terminal has font size control (ctl+up/down), transparency, and opens urls in Firefox. <br/>
 
-- Conky Chooser toggle allows for toggling different conky's, and has all sorts of relevant info, including connected drives, 
-number of packages installed, and more. 
+- Conky Chooser toggle allows for toggling different conky's, and has all sorts of relevant info, <br/>
+including connected drives, number of packages installed, and more. 
 
-- Picom Composite Manager with transparency enabled. There is also a config file for compton should you choose to install it. <br/>
-Look in the configuration menu to access ~/.config/picom.conf (Sid is still using Compton until updated!)
-
-- Live USB Maker  The folks at antiX/MX made a great little utility for making Live USB's. Adapted for Lilidog.
+- Picom Composite Manager with transparency enabled. Look in the configuration menu to access ~/.config/picom.conf.
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
-- Feh sets the wallpaper. More wallpapers are located in ~/Pictures/wallpapers. Right-Click in Thunar to change the wallpaper.
+- Feh sets the wallpaper. Place wallpapers in ~/Pictures/wallpapers. Wallpaper changer is in the menu under Configuration.
 
-- System notifications enabled with Dunst. Set your own settings in ~/.config/dunst/dunstrc.
+- System notifications enabled with Dunst.
 
-- Menu Extras list, with install options for Liquorix kernel, Sleek kernel, Qemu, Virtualbox, Steam, and more.
+- Menu Extras, with install options for Liquorix kernel, Qemu, Virtualbox (sid), Steam, and more to come.
 
 - All custom scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
 winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
@@ -120,7 +116,7 @@ Run 'swapid' in a terminal after installing another distro to a different partit
 - ld-hotcorners - Each corner of the screen responds to a command. <br/>
 Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
 Change the corners in ~/.config/ld-hotcorners. <br/>
-Currently clockwise from top left: __file manager, toggle Conky, exit menu, and terminal__. <br/>
+Currently clockwise from top left: __file manager, toggle Picom, exit menu, and terminal__. <br/>
 
 ### Instructions For Various Tasks:
 
@@ -130,11 +126,11 @@ are located under "preferences" in the menu. (well, except for the Geany theme. 
 
 - Settings Manager - This will allow changes for your gtk theme, fonts, and icons.  Other important settings are here as well. <br/>
 - Openbox Conf - The settings here control the window borders and other settings specific to Openbox. <br/>
-- Jgmenu - Go to menu -> configuration -> jgmenu.conf for instructions, or use __jgmenu-interactive in a terminal. (options "o" and "g"). <br/>
+- Jgmenu - Go to menu -> configuration -> jgmenu.conf for menu items. For theme changes, got to Jgmenu Theme Changer in the menu. ("o" or "g") <br/>
 - Geany - There are themes to match.  These are changed through the Geany program under "view" - "change color scheme" <br/>
-- Conky net speed  -  Use: __ls /sys/class/net/__ in a terminal to determine which wired/wireless network you have, <br/>
+- Conky net speed (when uncommented) -  Use: __ls /sys/class/net/__ in a terminal to determine which wired/wireless network you have, <br/>
 and replace "wlp2s0" with yours. <br/>
-- Printer - If you have an HP printer, you should be good to go:) Setup entry in the menu under utilities.
+- Printer - Setup entry in the menu under utilities.
 
 Also look under the "Toggles" section in the menu for some instant changes to different items as well.
 

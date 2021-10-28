@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Catfish File Search
+Icon=catfish
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;
+Exec=catfish --hidden %f
+Name=Default profile

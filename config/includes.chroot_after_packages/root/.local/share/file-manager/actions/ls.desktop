@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Folder Attributes
+Icon=accessories-text-editor
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;
+Exec=urxvt --hold -e ls -AghS --color %f
+Name=Default profile

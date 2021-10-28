@@ -13,7 +13,7 @@
 	<icon>utilities-terminal</icon>
 	<name>Open terminal here</name>
 	<unique-id>1608480111388550-2</unique-id>
-	<command>lxterminal</command>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description></description>
 	<patterns>*</patterns>
 	<directories/>
@@ -52,7 +52,7 @@
 	<icon>gparted</icon>
 	<name>File Sizes</name>
 	<unique-id>1610405390468673-1</unique-id>
-	<command>urxvt -e ncdu -rr %F</command>
+	<command>x-terminal-emulator -e ncdu -rr %F</command>
 	<description>Lists Folder File Sizes</description>
 	<patterns>*</patterns>
 	<directories/>
