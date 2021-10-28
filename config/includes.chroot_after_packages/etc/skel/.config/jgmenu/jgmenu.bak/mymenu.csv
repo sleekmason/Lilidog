@@ -38,7 +38,6 @@ Quick Info,         x-terminal-emulator -T 'Inxi Info' -e bash -c "inxi -Fxrzm; 
 Transmission,       transmission,                     transmission
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 App Alternatives,   galternatives,                    preferences-system
-Live USB Maker,     x-terminal-emulator -T 'Live USB Maker' -e "sudo live-usb-maker-gui-antix",     gparted
 Color Chooser,      yad --color,                      yad
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
 Galculator,         galculator,                       galculator
