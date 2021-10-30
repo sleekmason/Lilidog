@@ -12,3 +12,5 @@ xbindkeys &
 nm-applet &
 lxpolkit &
 xfsettingsd --daemon &
+conky -c ~/.config/conky/conky-min.conf &
+conky -c ~/.config/conky/conky-shortcuts-dark.conf &

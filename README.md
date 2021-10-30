@@ -87,7 +87,7 @@ options for each are already added.
 - Custom Lilidog Openbox and GTK themes, and matching themes for Geany and Mousepad. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. (see "instructions" below.)
 
-- Lxterminal is default, with URXVT terminal also installed. Use "App Alternatives in the menu <br/>
+- Xfce4-terminal is default, with URXVT and lxterminal also installed. Use "App Alternatives in the menu <br/>
 to switch default terminals (x-terminal-emulator).  
 
 - URXVT terminal has font size control (ctl+up/down), transparency, and opens urls in Firefox. <br/>
