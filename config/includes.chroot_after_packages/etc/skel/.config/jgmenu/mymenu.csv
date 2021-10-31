@@ -33,7 +33,7 @@ Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
 Htop,               x-terminal-emulator -T 'Htop' -e htop,                    htop
 Gparted,            gksudo gparted,                   gparted
 Quick Info,         x-terminal-emulator -T 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
-Transmission,       transmission,                     transmission
+Transmission,       transmission-gtk,                     transmission
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 App Alternatives,   galternatives,                    preferences-system
 Color Chooser,      yad --color,                      yad
