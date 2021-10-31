@@ -18,9 +18,8 @@ Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.p
 ^tag(quickgrab)
 Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
 Root Files,^checkout(rootfiles),folder-documents
-Urxvt,              urxvt,                             utilities-terminal
 Writer,             libreoffice,                       libreoffice-writer
-Geany,              geany,	                           geany
+Geany,              geany,	                       geany
 Pcmanfm,            pcmanfm,                           system-file-manager
 Mousepad,           mousepad,                          accessories-text-editor
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
@@ -28,7 +27,6 @@ Smplayer,           smplayer,                          smplayer
 Gpicview,           gpicview,                          gpicview
 Pragha,             pragha,                            pragha
 Gimp,               gimp,                              gimp
-Catfish Search,     catfish,                           edit-find
 
 ^tag(utilities)
 Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
@@ -42,11 +40,12 @@ Color Chooser,      yad --color,                      yad
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
-Extras,             ^checkout(extras),                applications-system
+Extras,             ^checkout(extras),                 applications-system
 
 ^tag(extras)
 Install Qemu,            x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
 Install Steam,           x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-utilities
+Install Libreoffice,     x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities
 Install Liquorix Kernel, x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Live-build Apps, x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Kernel Packages, x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities

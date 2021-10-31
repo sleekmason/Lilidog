@@ -1,0 +1,38 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   Libreoffice Installer
+
+   This will install the full Libreoffice Suite with
+   gtk support and other sensible extras. Hunspell will
+   default to US EN  (US english). Other languages available.
+   
+   Please note that Libreoffice Writer is already installed
+   if that is all you need. Look in the Quickgrab menu.
+   
+   ---------------------------------------------------------
+   
+   Please press enter to install the Libreoffice Suite.
+   
+   ---------------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+echo "" 
+sudo apt update && sudo apt install libreoffice libreoffice-gtk3 \
+hunspell-en-us hyphen-en-us cups-bsd libsane libxrender1 libgl1 libpaper-utils \
+fonts-dejavu fonts-liberation2 fonts-linuxlibertine fonts-noto-core fonts-noto-extra &&
+sed -i 's/Writer/Libreoffice/g' ~/.config/jgmenu/mymenu.csv
+killall jgmenu
+echo ""
+echo "-----------------------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "You should find the menu entry for 'Writer' in the" 
+echo "quickgrab menu changed to 'Libreoffice'."
+echo "" 
+echo "" 
+echo ""
+echo "-----------------------------------------------------"

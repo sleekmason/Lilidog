@@ -1,14 +1,18 @@
 ### TO CHANGE MENU ITEMS
-Open mymenu.csv file to add or remove items.  
+There is currently no gui menu editor for jgmenu. So:
+Open the mymenu.csv file and add items to the Quickgrab menu.  
 The format example is: Display-name, program-name, icon-name
-See the lxterminal entry for an example.
-For the original automated menu, open ~/.config/jgmenu/jgmenurc
-and comment (#) line 5. 
+See the other entries for examples.
+
+All new programs installed are still available through the 
+"Debian" menu if you don't want to edit. 
 
 
 ###TO CHANGE THEMES EASILY
 Go to 'jgmenu Theme Changer' in the Configuration menu to open  
-the jgmenu interactive menu. (various choices to be made).
+the jgmenu interactive menu. Would stick to changing the theme to
+the current theme unless experimenting. 
+
 Use  "o" or "g" to change to the openbox theme or the gtk theme 
 colors after changing gtk themes.
 
@@ -16,5 +20,10 @@ colors after changing gtk themes.
 ### TO CHANGE ICONS
 Open ~/.config/jgmenu/jgmenurc -> icon_theme (line 54)
 
+
+###*NOTE
+If you would like to use the jgmenu standard menu, comment line 5 of 
+~/.config/jgmenu/jgmenurc. Then rename prepend.csv.bak & append.csv.bak 
+to prepend.csv & append.csv.
 
 'man jgmenu' in a terminal for more info!
