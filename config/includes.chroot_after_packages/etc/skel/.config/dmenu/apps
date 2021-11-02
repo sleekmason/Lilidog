@@ -25,7 +25,7 @@ case ${cmd%% *} in
 	Catfish)		exec catfish ;;
 	Geany)			exec geany ;;
 	Pcmanfm)		exec pcmanfm ;;
-	Terminal)		exec urxvt ;;
+	Terminal)		exec x-terminal-emulator ;;
 	Firefox)		exec firefox ;;
 	Thunderbird)		exec thunderbird ;;
 	Pragha) 		exec pragha ;;
