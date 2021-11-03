@@ -3819,7 +3819,7 @@ filechooserbutton:drop(active) {
     .sidebar treeview iconview:selected,
     .sidebar treeview .view:selected:focus,
     .sidebar treeview iconview:selected:focus {
-      color: #CDDEDE; }
+      color: #AED4D0; }
     .sidebar row:backdrop,
     .sidebar treeview:backdrop {
       background-color: transparent; }
