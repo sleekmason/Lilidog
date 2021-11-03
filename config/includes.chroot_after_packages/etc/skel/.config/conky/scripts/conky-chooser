@@ -12,7 +12,7 @@ fi
 export -f toggle_conky
 
 yad --title "Conky" --button=gtk-close:1 --form --center --width=230 \
---height=340 --text="\n TOGGLE YOUR\n SELECTIONS. \n" --text-align=center \
+--height=340 --text="\n PLEASE TOGGLE\n YOUR SELECTIONS. \n" --text-align=center \
 --window-icon=applications-system \
     --form \
     --field="Conky Full":BTN "bash -c 'toggle_conky conky-full'" \
