@@ -1,10 +1,10 @@
 ### TO CHANGE MENU ITEMS
 There is currently no gui menu editor for jgmenu. So:
-Open the mymenu.csv file and add items to the Quickgrab menu.  
+Open the mymenu.csv file to add/remove items in the menu.  
 The format example is: Display-name, program-name, icon-name
 See the other entries for examples.
 
-All new programs installed are still available through the 
+All newly installed programs are still available through the 
 "Debian" menu if you don't want to edit. 
 
 

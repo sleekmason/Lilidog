@@ -1,0 +1,52 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   Etcher Installer
+
+   Etcher is a powerful OS image flasher built with 
+   web technologies to ensure flashing an SDCard or 
+   USB drive is a pleasant and safe experience.
+   
+   https://github.com/balena-io/etcher
+
+   Use Etcher to make your live USB drives for install.
+
+   This script will add the Etcher gpg.key and sources, 
+   and then download and  install Etcher. A new menu 
+   entry will be made under 'Utilities'.
+      
+   ---------------------------------------------------------
+   
+   Please press enter to install Etcher.
+   
+   ---------------------------------------------------------  
+   
+   Or close this terminal window to quit the install." ;
+echo ""
+curl -1sLf \
+   'https://dl.cloudsmith.io/public/balena/etcher/setup.deb.sh' \
+   | sudo -E bash
+sudo sed -i '7s/# deb/deb/g' /etc/apt/sources.list.d/balena-etcher.list
+sudo sed -i '9s/# deb/deb/g' /etc/apt/sources.list.d/balena-etcher.list
+sudo apt update && sudo apt install balena-etcher-electron &&
+grep -v "Etcher,         /opt/balenaEtcher/balena-etcher-electron,       balena-etcher-electron" ~/.config/jgmenu/mymenu.csv > tmpfile && mv tmpfile ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Extras/i Etcher,         \/\opt\/\balenaEtcher\/\balena-etcher-electron,       balena-etcher-electron' ~/.config/jgmenu/mymenu.csv
+#sed -i '22 a Etcher,         \/\opt\/\balenaEtcher\/\balena-etcher-electron,       balena-etcher-electron' ~/.config/jgmenu/mymenu.csv
+killall jgmenu
+sudo sed -i '7s/deb/# deb/g' /etc/apt/sources.list.d/balena-etcher.list
+sudo sed -i '9s/deb/# deb/g' /etc/apt/sources.list.d/balena-etcher.list
+echo ""
+echo "-----------------------------------------------------"
+echo ""
+echo ""
+echo ""
+echo "All Finished!"
+echo ""
+echo "If installed, You should find a new menu entry under 'Utilities'"
+echo "labeled 'Etcher'"
+echo "" 
+echo "Menu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo ""
+echo "-----------------------------------------------------"

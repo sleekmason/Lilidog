@@ -68,7 +68,7 @@
    Mod4 + x
 
 #Toggle Conky
-"bash -c 'if ! pkill -x conky; then exec $HOME/.config/conky/scripts/conky-chooser; fi'"
+""$HOME/.config/conky/scripts/conky-chooser""
    Mod4 + c
 
 #Toggle Picom

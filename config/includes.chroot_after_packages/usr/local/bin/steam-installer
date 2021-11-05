@@ -12,28 +12,33 @@ read -p "   Steam Installer
    WARNING*
    This will enable multi-arch, adding the i386 architecture,
    and install steam with --recommends enabled.
+
    https://wiki.debian.org/Multiarch/HOWTO
-   You have been warned!
    
    ----------------------------------------------------------
    
    Please press enter to enable multi-arch and install Steam.
    
    ----------------------------------------------------------
-   
-   
+      
    Or close this terminal window to quit the install." ;
 echo ""
 sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install --install-recommends steam &&
-sed -i '/Steam,         steam,       steam/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '22 a Steam,         steam,       steam' ~/.config/jgmenu/mymenu.csv
+sed -i '/Games,^checkout(games),applications-games/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Quick Grab,^checkout(quickgrab),applications-other/a Games,^checkout(games),applications-games' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Exit/a ^tag(games)' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Steam,         steam,       steam/d' ~/.config/jgmenu/mymenu.csv && 
+sed -i '/tag(games)/a Steam,         steam,       steam' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
+echo ""
+echo ""
 echo "All Finished!"
 echo ""
-echo "If installed, You should find a new menu entry under 'Quick Grab'"
+echo "If installed, You should find a new menu entry under 'Games'"
 echo "" 
 echo "Menu entries will need to be removed manually if uninstalled." 
 echo "See Jgmenu Conf under Configuration in the menu for directions."

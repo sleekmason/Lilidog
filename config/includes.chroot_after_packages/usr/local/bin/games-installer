@@ -1,0 +1,50 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   Games Installer
+
+   A few super small games to waste some time with:)
+   Currently Blockout2, Briquolo, Eboard Chess, Mahjong
+   Pinball, and Tron.
+   
+    
+   
+   ---------------------------------------------------------
+   
+   Please press enter to install the games.
+   
+   ---------------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+echo "" 
+sudo apt update && sudo apt install blockout2 eboard xmahjongg briquolo gltron pinball &&
+sed -i '/Games,^checkout(games),applications-games/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Quick Grab,^checkout(quickgrab),applications-other/a Games,^checkout(games),applications-games' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Exit/a ^tag(games)' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Tron, gltron, gltron/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/a Tron, gltron, gltron' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Pinball, pinball, pinball/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/a Pinball, pinball, pinball' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Mahjong, xmahjongg, xmahjongg/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/a Mahjong, xmahjongg, xmahjongg' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Eboard Chess, eboard, eboard/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/a Eboard Chess, eboard, eboard' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Briquolo, briquolo, briquolo/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/a Briquolo, briquolo, briquolo' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Blockout2, blockout2, blockout2/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/a Blockout2, blockout2, blockout2' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo ""
+echo "-----------------------------------------------------"
+echo ""
+echo "All Finished!"
+echo ""
+echo "If installed, You should find a new menu entry 'Games'"
+echo "" 
+echo "Menu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo ""
+echo "-----------------------------------------------------"
