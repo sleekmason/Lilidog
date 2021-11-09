@@ -1,0 +1,17 @@
+#!/bin/bash
+### A simple theme changer to set the theme to Lilidog-Dark
+##
+##
+# Change gtktheme
+xfconf-query -c xsettings -p /Net/ThemeName -s "Lilidog-Dark"
+#
+## Change openbox theme
+#sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Lilidog-Darkbox"/g" ~/.config/openbox/rc.xml
+xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:name' -v "Lilidog-Darkbox" ~/.config/openbox/rc.xml
+openbox --reconfigure
+#
+## Change Geany theme
+sed -i "s/color_scheme=.*/color_scheme=Lilidog.conf/g" ~/.config/geany/geany.conf
+#
+# Change jgmenu theme
+jgmenu_run gtktheme

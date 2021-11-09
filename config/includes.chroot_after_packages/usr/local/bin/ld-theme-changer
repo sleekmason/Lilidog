@@ -1,0 +1,11 @@
+#!/bin/bash
+
+yad --title "Lilidog Themes" --button=gtk-close:1 --form --center --on-top --width=250 \
+--height=285 --text="\n Please Make Your Selection. \n" --text-align=center \
+--window-icon=applications-system \
+    --form \
+    --field="Lilidog Slate":BTN "slate-theme" \
+    --field="Lilidog Clay":BTN "clay-theme" \
+    --field="Lilidog Grey":BTN "grey-theme" \
+    --field="Lilidog Light":BTN "light-theme" \
+    --field="Lilidog Dark":BTN "dark-theme" \

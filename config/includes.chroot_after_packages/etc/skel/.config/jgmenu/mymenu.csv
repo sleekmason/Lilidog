@@ -76,7 +76,8 @@ Xkill,               xkill,                                         edit-delete
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
 
 ^tag(configuration)
-Wallpaper Chooser,        feh-set-wallpaper,                                                    feh
+Lilidog Theme Changer,    ld-theme-changer,                                                     object-flip-horizontal
+Wallpaper Changer,        feh-set-wallpaper,                                                    feh
 Settings-Manager,         xfce4-settings-manager,                                               preferences-desktop-theme
 Power Manager,            xfce4-power-manager-settings,                                         applications-system  
 Openbox Conf,             obconf,                                                               obconf
