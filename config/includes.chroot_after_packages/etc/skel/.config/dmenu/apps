@@ -3,7 +3,7 @@
 prog="
 Catfish
 Geany
-Pcmanfm
+Thunar
 Terminal
 Firefox
 Thunderbird
@@ -24,7 +24,7 @@ case ${cmd%% *} in
 
 	Catfish)		exec catfish ;;
 	Geany)			exec geany ;;
-	Pcmanfm)		exec pcmanfm ;;
+	Thunar)		        exec thunar ;;
 	Terminal)		exec x-terminal-emulator ;;
 	Firefox)		exec firefox ;;
 	Thunderbird)		exec thunderbird ;;
