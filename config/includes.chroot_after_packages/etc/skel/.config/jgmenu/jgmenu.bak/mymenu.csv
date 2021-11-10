@@ -51,7 +51,6 @@ Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e 
 Install Etcher USB Maker, x-terminal-emulator -T 'Etcher Installer' -e bash -c "etcher-installer; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 Install Kernel Packages,  x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Virtualbox,       x-terminal-emulator -T 'Virtualbox Installer' -e bash -c "virtualbox-installer; echo $'\n\nPress any key to close.'; read -srn1",           applications-utilities
 Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c "pipewire-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-utilities
 ^sep()
 Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
