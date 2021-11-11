@@ -1,0 +1,88 @@
+# Lilidog-Claybox by sleekmason.                                                                    
+#============================================================
+
+#======================================
+#     Menu Settings	
+#======================================
+
+menu.title.bg: raised
+menu.title.bg.color: #C0C7C7
+menu.title.text.color: #0D0B0B
+menu.separator.color: #293231
+menu.items.bg: raised gradient diagonal
+menu.items.bg.color: #C0C7C7
+menu.items.bg.colorTo: #C0C7C7
+menu.items.text.color: #0D0B0B
+menu.items.disabled.text.color: #545E59
+menu.items.active.bg: raised border
+menu.items.active.bg.color: #97A3A3
+menu.items.active.bg.border.color: #4B544F
+menu.items.active.text.color: #151717
+
+#======================================
+#     Focused Window Settings
+#======================================
+
+window.active.title.bg: raised gradient vertical
+window.active.title.bg.color: #B8BFBF
+window.active.title.bg.colorTo: #B8BFBF
+window.active.title.bg.border.color: #476263
+window.active.handle.bg: raised
+window.active.handle.bg.color: #7D8581
+window.active.grip.bg: parentrelative
+window.active.label.bg: parentrelative
+window.active.label.text.color: #050404
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: #000000
+window.active.button.*.pressed.image.color: #ffffff
+window.active.button.disabled.image.color: #969691
+window.active.button.*.hover.image.color: #000000
+
+#======================================
+#     Unfocused Window Settings
+#======================================
+
+window.inactive.title.bg: raised gradient horizontal
+window.inactive.title.bg.color: #989E9E
+window.inactive.title.bg.colorTo: #989E9E
+window.inactive.handle.bg: raised
+window.inactive.handle.bg.color: #768282
+window.inactive.grip.bg: parentrelative
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #242222
+window.inactive.button.*.image.color: #000000
+
+#======================================
+#     Global Width Settings
+#======================================
+
+padding.width: 1
+padding.height: 1
+border.width: 2
+window.handle.width: 3
+window.client.padding.width: 0
+menu.overlap.x: -5
+
+#======================================
+#     Miscellaneous Settings
+#======================================
+
+border.color: #444D48
+menu.border.color: #444D48
+
+#======================================
+#     Osd		
+#======================================
+
+osd.bg: raised
+osd.bg.color: #A9ADAD
+osd.hilight.bg: flat border
+osd.hilight.bg.color: #9FA3A3
+osd.hilight.bg.border.color: #67706C
+
+#======================================
+#     Title Justification
+#======================================
+
+menu.title.text.justify: center
+window.label.text.justify: center
