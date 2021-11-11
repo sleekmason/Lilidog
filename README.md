@@ -14,7 +14,7 @@ This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, 
 - Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog, <br/>
 while allowing you to choose most all of your OWN packages. <br/>
 Design your system with whatever other programs you might like! <br/> 
-Currently contains the lightweight Lxterminal, Pcmanfm, and Mousepad programs to get you started. <br/>
+Currently contains Lxterminal, Thunar, and Mousepad to get you started. <br/>
 apt update && apt install synaptic for a graphical installer to make things easier. <br/>
 
 - Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release, <br/>
@@ -64,14 +64,14 @@ No unwanted packages will be installed by default. This can be changed after ins
 
 - Tint2 panel by default, with an options for FbPanel. Try them both under 'Toggles' in the menu.
 
-- Jgmenu is now the menu for all versions.  Huge amount of customization available. <br/>
+- Jgmenu is the menu for all versions.  Huge amount of customization available. <br/>
 Go to menu -> configuration -> jgmenu.conf for how to change items. For themes, go to Jgmenu Theme Changer and use "o" or "g".
 
-- Wallpapers - Place any image you would like to use as a wallpaper in ~/Pictures/wallpapers. <br/>
+- Wallpapers - Handles by Feh.  Place any image you would like to use as a wallpaper in ~/Pictures/wallpapers. <br/>
 Go to Menu -> Configuration -> Wallpaper Chooser to change wallpapers. <br/>
 You can also right-click on any image you choose from the file manager to set as background wallpaper. Easy peasy!
 
-- There are shortcuts for Alsamixer in the volume icon and xfce4-power-manager in the battery icon. <br/>
+- There are shortcuts for xfce4-power-manager in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
@@ -81,29 +81,27 @@ or can be activated on login by adding to the autostart cconfiguration file.
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
 customized Dmenu with only the most commonly used apps.
 
-- Thunar is the default file manager in the full build, with Pcmanfm the default in the minimal build.  Custom right-click <br/> 
+- Thunar is the default file manager.  Pcmanfm is also available in the full build. Custom right-click <br/> 
 options for each are already added.
 
 - Custom Lilidog Openbox and GTK themes, and matching themes for Geany and Mousepad. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. (see "instructions" below.)
 
 - Xfce4-terminal is default, with URXVT and lxterminal also installed. Use "App Alternatives in the menu <br/>
-to switch default terminals (x-terminal-emulator).  
+ or __sudo update-alternatives --config x-terminal-emulator__ in a terminal to switch default terminals.  
 
 - URXVT terminal has font size control (ctl+up/down), transparency, and opens urls in Firefox. <br/>
 
-- Conky Chooser toggle allows for toggling different conky's, and has all sorts of relevant info, <br/>
+- Conky Chooser in toggles allows for toggling different conky's, and has all sorts of relevant info, <br/>
 including connected drives, number of packages installed, and more. 
 
 - Picom Composite Manager with transparency enabled. Look in the configuration menu to access ~/.config/picom.conf.
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
-- Feh sets the wallpaper. Place wallpapers in ~/Pictures/wallpapers. Wallpaper changer is in the menu under Configuration.
-
 - System notifications enabled with Dunst.
 
-- Menu Extras, with install options for Liquorix kernel, Qemu, Virtualbox (sid), Steam, and more to come.
+- Menu Extras!  Extra install menu with options for Liquorix kernel, Qemu, Virtualbox (sid), Steam, Etcher, and more.
 
 - All custom scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
 winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
@@ -120,9 +118,11 @@ Currently clockwise from top left: __file manager, toggle Picom, exit menu, and 
 
 ### Instructions For Various Tasks:
 
-__Theme changes:__  Lilidog comes with four custom themes! From light to dark - Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, and Lilidog-Dark. <br/>
-In order to change themes completely you will need to adjust 3-4 different theme settings. All theme settings <br/>
-are located under "preferences" in the menu. (well, except for the Geany theme. Right-click on any image to set as background wallpaper!
+__Theme changes:__  Lilidog comes with six themes Already installed for ease of use. <br/> 
+Lilidog-Bright Lilidog-Light, Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, and Lilidog-Dark. <br/>
+The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under configuration. <br/>
+The Quick Changer changes The gtk theme, Openbox theme, Geany theme, and the menu theme all at once on the fly! 
+Only the Lightdm theme needs a separate switch due to needing root access.
 
 - Settings Manager - This will allow changes for your gtk theme, fonts, and icons.  Other important settings are here as well. <br/>
 - Openbox Conf - The settings here control the window borders and other settings specific to Openbox. <br/>
@@ -130,10 +130,10 @@ are located under "preferences" in the menu. (well, except for the Geany theme. 
 - Geany - There are themes to match.  These are changed through the Geany program under "view" - "change color scheme" <br/>
 - Conky net speed (when uncommented) -  Use: __ls /sys/class/net/__ in a terminal to determine which wired/wireless network you have, <br/>
 and replace "wlp2s0" with yours. <br/>
-- Printer - Setup entry in the menu under utilities.
+- Printer - Setup entry in the menu under utilities. <br/>
+- Lightdm - This switch requires root, and so is not part of the Quick Changer.  Configuration settings in the menu. <br/>
 
 Also look under the "Toggles" section in the menu for some instant changes to different items as well.
-
 ### Current Issues/bugs
 
 - Xfce4-power-manager does not display the systemtray icon.  Know issue.  Waiting for update.
