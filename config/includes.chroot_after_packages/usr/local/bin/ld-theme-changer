@@ -1,12 +1,15 @@
 #!/bin/bash
 
-yad --title "Lilidog Themes" --button=gtk-close:1 --form --center --on-top --width=250 \
---height=300 --text="\n Please Close Geany \n Before Selecting. \n" --text-align=center \
+yad --title "Lilidog Themes" --button=gtk-close:1 --form --center --width=250 \
+--height=350 --text="\n Please Close Geany \n Before Making Selection." --text-align=center \
 --window-icon=applications-system \
     --form \
+    --field="":LBL "" \
     --field="Lilidog Slate":BTN "slate-theme" \
     --field="Lilidog Clay":BTN "clay-theme" \
     --field="Lilidog Grey":BTN "grey-theme" \
     --field="Lilidog Light":BTN "light-theme" \
     --field="Lilidog Bright":BTN "bright-theme" \
     --field="Lilidog Dark":BTN "dark-theme" \
+    --field="":LBL "" \
+    --field="Lightdm (Requires Root)":BTN "gksudo lightdm-gtk-greeter-settings" \
