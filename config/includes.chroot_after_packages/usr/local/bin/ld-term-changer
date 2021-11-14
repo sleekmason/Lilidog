@@ -1,0 +1,14 @@
+#!/bin/bash
+
+yad --title "Terminal Themes" --form --center --width=500 --height=52 --borders=4 \
+--window-icon=/usr/share/xfce4/terminal/icons/paw-dark.png \
+    --form \
+    --button=" Dark!/usr/share/xfce4/terminal/icons/paw-dark.png!":"xfce4-term-colors lilidog-dark" \
+    --button=" Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":"xfce4-term-colors lilidog-slate" \
+    --button=" Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":"xfce4-term-colors lilidog-clay" \
+    --button=" Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":"xfce4-term-colors lilidog-grey" \
+    --button=" Light!/usr/share/xfce4/terminal/icons/paw-light.png!":"xfce4-term-colors lilidog-light" \
+    --button=" Bright!/usr/share/xfce4/terminal/icons/paw-bright.png!":"xfce4-term-colors lilidog-bright" \
+    --button=" Neon!/usr/share/xfce4/terminal/icons/paw-neon.png!":"xfce4-term-colors lilidog-neon" \
+    --button=gtk-close:1
+    

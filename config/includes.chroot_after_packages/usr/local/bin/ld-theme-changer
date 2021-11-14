@@ -1,15 +1,17 @@
 #!/bin/bash
 
-yad --title "Lilidog Themes" --button=gtk-close:1 --form --center --width=250 \
---height=356 --text="\n Please Close Geany \n Before Making Selection." --text-align=center \
---window-icon=applications-system \
+yad --title "Quick Themes" --button=gtk-close:1 --form --center --width=250 --borders=4 \
+--height=440 --text="\n Please Close Geany \n Before Making Selection." --text-align=center \
+--window-icon=applications-utilities \
     --form \
     --field="":LBL "" \
-    --field="Lilidog Slate":BTN "slate-theme" \
-    --field="Lilidog Clay":BTN "clay-theme" \
-    --field="Lilidog Grey":BTN "grey-theme" \
-    --field="Lilidog Light":BTN "light-theme" \
-    --field="Lilidog Bright":BTN "bright-theme" \
-    --field="Lilidog Dark":BTN "dark-theme" \
+    --field="   Lilidog Dark!/usr/share/xfce4/terminal/icons/paw-dark.png!":BTN "dark-theme" \
+    --field="   Lilidog Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":BTN "slate-theme" \
+    --field="   Lilidog Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":BTN "clay-theme" \
+    --field="   Lilidog Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":BTN "grey-theme" \
+    --field="   Lilidog Light!/usr/share/xfce4/terminal/icons/paw-light.png!":BTN "light-theme" \
+    --field="  Lilidog Bright!/usr/share/xfce4/terminal/icons/paw-bright.png!":BTN "bright-theme" \
     --field="":LBL "" \
-    --field="Lightdm (Requires Root)":BTN "gksudo lightdm-gtk-greeter-settings" \
+    --field="       Wallpaper Changer!wallpaper":FBTN "feh-set-wallpaper" \
+    --field="           LightDM Theme!preferences-system":FBTN "gksudo lightdm-gtk-greeter-settings" \
+    --field="          Terminal Themes!gnome-terminal":FBTN "ld-term-changer" \

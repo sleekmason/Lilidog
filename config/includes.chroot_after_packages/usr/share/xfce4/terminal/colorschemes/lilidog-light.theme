@@ -1,0 +1,5 @@
+[Scheme]
+Name=Lilidog-Light
+ColorBackground=#c9c9cfcfcfcf
+ColorForeground=#1f1f1c1c1c1c
+ColorPalette=rgb(0,0,0);rgb(184,19,0);rgb(2,99,17);rgb(144,50,0);rgb(0,0,170);rgb(170,0,170);rgb(0,122,122);rgb(170,170,170);rgb(0,93,93);rgb(255,85,85);rgb(0,65,0);rgb(255,255,85);rgb(0,113,121);rgb(255,85,255);rgb(0,123,123);rgb(255,255,255)

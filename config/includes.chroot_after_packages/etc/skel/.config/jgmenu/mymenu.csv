@@ -75,7 +75,7 @@ Xkill,               xkill,                                         edit-delete
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
 
 ^tag(configuration)
-Quick Theme Changer,      ld-theme-changer,                                                     object-flip-horizontal
+Quick Theme Changer,      ld-theme-changer,                                                     applications-utilities
 Wallpaper Changer,        feh-set-wallpaper,                                                    feh
 Settings-Manager,         xfce4-settings-manager,                                               preferences-desktop-theme
 Power Manager,            xfce4-power-manager-settings,                                         applications-system  
@@ -87,7 +87,8 @@ Tint2 Conf,               tint2conf,                                            
 Picom Conf,               mousepad ~/.config/picom.conf,                                        document-properties
 Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
 Fbpanel Conf,             mousepad ~/.config/fbpanel/default,                                   preferences-other
-Xbindkeys Conf,           xbindkeys-config,                                                     applications-utilities
+Xbindkeys Conf,           xbindkeys-config,                                                     document-properties
 Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                                        document-properties
-Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     applications-games   
+Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     applications-games 
+Xfce4-terminal Themes,    ld-term-changer,                                                      utilities-terminal   
 Jgmenu Theme Changer,     x-terminal-emulator -T 'Jgmenu Interactive' -e "jgmenu-interactive",  preferences-desktop-theme  
