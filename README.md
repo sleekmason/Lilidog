@@ -118,22 +118,25 @@ Currently clockwise from top left: __file manager, toggle Picom, exit menu, and 
 
 ### Instructions For Various Tasks:
 
-__Theme changes:__  Lilidog comes with six themes Already installed for ease of use. <br/> 
+__Theme changes:__  
+The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under Configuration. <br/>
+The Quick Changer changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly! 
+Lilidog comes with six full themes installed. <br/> 
 Lilidog-Bright Lilidog-Light, Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, and Lilidog-Dark. <br/>
-The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under configuration. <br/>
-The Quick Changer changes The gtk theme, Openbox theme, Geany theme, and the menu theme all at once on the fly! 
-Only the Lightdm theme needs a separate switch due to needing root access.
 
-- Settings Manager - This will allow changes for your gtk theme, fonts, and icons.  Other important settings are here as well. <br/>
+__Other Settings_
+- Most common items to change will have an entry under 'Configuration' in the menu.
+- Settings Manager - Change your gtk theme, fonts, and icons on an individual basis.  Other important settings are here as well. <br/>
 - Openbox Conf - The settings here control the window borders and other settings specific to Openbox. <br/>
 - Jgmenu - Go to menu -> configuration -> jgmenu.conf for menu items. For theme changes, got to Jgmenu Theme Changer in the menu. ("o" or "g") <br/>
 - Geany - There are themes to match.  These are changed through the Geany program under "view" - "change color scheme" <br/>
 - Conky net speed (when uncommented) -  Use: __ls /sys/class/net/__ in a terminal to determine which wired/wireless network you have, <br/>
 and replace "wlp2s0" with yours. <br/>
 - Printer - Setup entry in the menu under utilities. <br/>
-- Lightdm - This switch requires root, and so is not part of the Quick Changer.  Configuration settings in the menu. <br/>
+- Lightdm - Configuration settings in the menu. <br/>
 
 Also look under the "Toggles" section in the menu for some instant changes to different items as well.
+
 ### Current Issues/bugs
 
 - Xfce4-power-manager does not display the systemtray icon.  Know issue.  Waiting for update.
