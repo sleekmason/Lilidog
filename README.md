@@ -124,7 +124,7 @@ The Quick Changer changes The GTK theme, Openbox theme, Geany theme, Lightdm, wa
 Lilidog comes with six full themes installed. <br/> 
 Lilidog-Bright Lilidog-Light, Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, and Lilidog-Dark. <br/>
 
-__Other Settings_
+__Other Settings__
 - Most common items to change will have an entry under 'Configuration' in the menu.
 - Settings Manager - Change your gtk theme, fonts, and icons on an individual basis.  Other important settings are here as well. <br/>
 - Openbox Conf - The settings here control the window borders and other settings specific to Openbox. <br/>
