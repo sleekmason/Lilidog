@@ -1,0 +1,24 @@
+#!/bin/bash
+echo ""
+read -p "   Missing Firmware Installer
+
+
+   This script will install a tiny program (isenkram-cli) to check
+   for missing firmware and install the necessary packages.
+   
+   ---------------------------------------------------------------
+   
+   Please press enter to install isenkram-cli and run the program.
+   
+   ---------------------------------------------------------------
+      
+   Or close this terminal window to quit the install." ;
+echo ""
+sudo apt update && sudo apt install isenkram-cli &&
+echo "------------------------------------------------------------------"
+echo ""
+sudo isenkram-autoinstall-firmware
+echo ""
+echo "------------------------------------------------------------------"
+echo ""
+echo "All Done.  Hope any information found is useful."

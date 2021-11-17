@@ -1,0 +1,34 @@
+#!/bin/bash
+echo ""
+read -p "   Hw-Probe
+
+   The most comprehensive program to check your computer for issues.
+   
+   This is a project to anonymously collect hardware details of 
+   Linux-powered computers all over the world and help people to 
+   collaboratively debug hardware related issues, check for 
+   Linux-compatibility and find drivers.
+
+   Probe your computer in order to participate in the project 
+   and discover your hardware in details.
+   
+   https://linux-hardware.org/
+
+   A link will be provided to access the report upon completion.
+   -----------------------------------------------------------
+   
+   Please press enter to install Hw-Probe and run the program.
+   
+   -----------------------------------------------------------
+      
+   Or close this terminal window to quit the install." ;
+echo ""
+sudo apt update && sudo apt install --install-recommends hw-probe &&
+echo "------------------------------------------------------------------"
+echo ""
+sudo -E hw-probe -all -upload
+echo ""
+echo "------------------------------------------------------------------"
+echo ""
+echo "All Done.  Right-click on the link above to access your report."
+echo "Hope the information found is useful."
