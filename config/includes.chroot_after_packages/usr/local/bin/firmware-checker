@@ -4,13 +4,14 @@ read -p "   Missing Firmware Installer
 
 
    This script will install a tiny program (isenkram-cli) to check
-   for missing firmware and install the necessary packages.
+   for missing firmware and install the necessary packages. If already 
+   installed, this script will double check and then run isencram-cli.
    
-   ---------------------------------------------------------------
+   ----------------------------------------------------------------
    
-   Please press enter to install isenkram-cli and run the program.
+   Please press enter to install isenkram-cli or re-run the program.
    
-   ---------------------------------------------------------------
+   ----------------------------------------------------------------
       
    Or close this terminal window to quit the install." ;
 echo ""

@@ -3,23 +3,22 @@ echo ""
 read -p "   Hw-Probe
 
    The most comprehensive program to check your computer for issues.
+   https://linux-hardware.org/
    
-   This is a project to anonymously collect hardware details of 
+   Hw-probe is a project to anonymously collect hardware details of 
    Linux-powered computers all over the world and help people to 
    collaboratively debug hardware related issues, check for 
    Linux-compatibility and find drivers.
 
-   Probe your computer in order to participate in the project 
-   and discover your hardware in details.
-   
-   https://linux-hardware.org/
+   If already installed, this script will double check and then 
+   run the program.
 
    A link will be provided to access the report upon completion.
-   -----------------------------------------------------------
+   ------------------------------------------------------------
    
-   Please press enter to install Hw-Probe and run the program.
+   Please press enter to install Hw-Probe or re-run the program.
    
-   -----------------------------------------------------------
+   ------------------------------------------------------------
       
    Or close this terminal window to quit the install." ;
 echo ""
