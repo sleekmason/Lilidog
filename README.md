@@ -1,24 +1,25 @@
 ﻿### Lilidog Linux
  
-Lilidog is a lightweight distro using the Openbox window manager. <br/> 
+Lilidog is a lightweight Linux distro using the Openbox window manager. <br/> 
 
 Lilidog is based on Debian, with most of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize further.
 
-
-### There are currently Three versions of Lilidog Available.  See below for features.
+### There are currently three versions of Lilidog available.
 
 - Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use. <br/>
-This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few!
+This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few.
 
-- Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog, <br/>
-while allowing you to choose most all of your OWN packages. <br/>
-Design your system with whatever other programs you might like! <br/> 
+- Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog <br/>
+while allowing you to choose most all of your OWN packages. <br/> 
 Currently contains Lxterminal, Thunar, and Mousepad to get you started. <br/>
-apt update && apt install synaptic for a graphical installer to make things easier. <br/>
+Design your system with any other programs you might like. <br/>
+__sudo apt update && sudo apt install synaptic__ for a graphical interface to make installing your programs easier. <br/>
 
 - Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release, <br/>
-then this is the one for you!  You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
+this is the one for you. You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
+
+See further below for features.
 
 ### NOTE - The DOWNLOAD button defaults to the Bullseye-amd64 full version! (stable).  Click below for the others.
 
@@ -31,7 +32,7 @@ https://sourceforge.net/projects/lilidog/files/Releases/
 
 Probably the easiest way to use Lilidog is to put it on a usb stick.
 
-I recommend grabbing the live-usb-maker app: https://github.com/MX-Linux/lum-qt-appimage/releases/tag/19.11.02 <br/>
+One easy way is to grab the live-usb-maker app: https://github.com/MX-Linux/lum-qt-appimage/releases/tag/19.11.02 <br/>
 Download the AppImage.tar.gz and open a terminal:<br/>
 ```sh
 tar -xaf live-usb-maker-qt-19.11.02.x86_64.AppImage.tar.gz
@@ -101,7 +102,7 @@ including connected drives, number of packages installed, and more.
 
 - System notifications enabled with Dunst.
 
-- Menu Extras!  Extra install menu with options for Liquorix kernel, Qemu, Virtualbox (sid), Steam, Etcher, and more.
+- Menu Extras - Install menu with options for Liquorix kernel, Qemu, Virtualbox (sid), Steam, Etcher, and more.
 
 - All custom scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
 winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
@@ -120,11 +121,11 @@ Currently clockwise from top left: __file manager, toggle Picom, exit menu, and 
 
 __Theme changes:__  
 The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under Configuration. <br/>
-The Quick Changer changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly! 
+This changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly. 
 Lilidog comes with six full themes installed. <br/> 
 Lilidog-Bright Lilidog-Light, Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, and Lilidog-Dark. <br/>
 
-__Other Settings__
+__Other Settings:__ <br/>
 - Most common items to change will have an entry under 'Configuration' in the menu.
 - Settings Manager - Change your gtk theme, fonts, and icons on an individual basis.  Other important settings are here as well. <br/>
 - Openbox Conf - The settings here control the window borders and other settings specific to Openbox. <br/>
@@ -141,7 +142,7 @@ Also look under the "Toggles" section in the menu for some instant changes to di
 
 - Xfce4-power-manager does not display the systemtray icon.  Know issue.  Waiting for update.
 
-There is a discussion forum on Sourceforge as well if you have suggestions or questions!
+There is a discussion forum above on Sourceforge as well if you have suggestions or questions.
 https://sourceforge.net/p/lilidog/discussion/
 
 ### Instructions for building your own if you so choose:
