@@ -13,5 +13,8 @@ openbox --reconfigure
 ## Change Geany theme
 sed -i "s/color_scheme=.*/color_scheme=Lilidog.conf/g" ~/.config/geany/geany.conf
 #
-# Change jgmenu theme
+## Change jgmenu theme
 jgmenu_run gtktheme
+#
+## Change xfce4-terminal theme
+xfce4-term-colors lilidog-dark

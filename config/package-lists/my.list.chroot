@@ -9,7 +9,6 @@ at-spi2-core
 b43-fwcutter
 bash-completion
 btrfs-progs
-colord
 conky
 console-data
 crda
@@ -26,7 +25,6 @@ eject
 evince
 exfat-fuse
 exfatprogs
-extlinux
 f2fs-tools
 fbpanel
 feh
@@ -163,7 +161,6 @@ squashfs-tools
 suckless-tools
 sudo
 synaptic
-syslinux-common
 tasksel
 tint2
 thunar

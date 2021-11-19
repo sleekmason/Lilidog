@@ -15,3 +15,6 @@ sed -i "s/color_scheme=.*/color_scheme=Lilidog-Grey.conf/g" ~/.config/geany/gean
 #
 # Change jgmenu theme
 jgmenu_run gtktheme
+#
+## Change xfce4-terminal theme
+xfce4-term-colors lilidog-grey
