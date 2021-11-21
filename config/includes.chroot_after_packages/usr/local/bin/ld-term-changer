@@ -3,6 +3,7 @@
 yad --title "Terminal Themes" --form --center --width=500 --height=52 --borders=4 \
 --window-icon=/usr/share/xfce4/terminal/icons/paw-dark.png \
     --form \
+    --button=" Cobalt!/usr/share/xfce4/terminal/icons/paw-cobalt.png!":"xfce4-term-colors lilidog-cobalt" \
     --button=" Dark!/usr/share/xfce4/terminal/icons/paw-dark.png!":"xfce4-term-colors lilidog-dark" \
     --button=" Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":"xfce4-term-colors lilidog-slate" \
     --button=" Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":"xfce4-term-colors lilidog-clay" \

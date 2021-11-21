@@ -5,11 +5,12 @@ yad --title "Quick Themes" --button=gtk-close:1 --form --center --width=250 --bo
 --window-icon=applications-utilities \
     --form \
     --field="":LBL "" \
-    --field="   Lilidog Dark!/usr/share/xfce4/terminal/icons/paw-dark.png!":BTN "dark-theme" \
+    --field=" Lilidog Cobalt!/usr/share/xfce4/terminal/icons/paw-cobalt.png!":BTN "cobalt-theme" \
+    --field="    Lilidog Dark!/usr/share/xfce4/terminal/icons/paw-dark.png!":BTN "dark-theme" \
     --field="   Lilidog Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":BTN "slate-theme" \
-    --field="   Lilidog Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":BTN "clay-theme" \
-    --field="   Lilidog Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":BTN "grey-theme" \
-    --field="   Lilidog Light!/usr/share/xfce4/terminal/icons/paw-light.png!":BTN "light-theme" \
+    --field="    Lilidog Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":BTN "clay-theme" \
+    --field="    Lilidog Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":BTN "grey-theme" \
+    --field="    Lilidog Light!/usr/share/xfce4/terminal/icons/paw-light.png!":BTN "light-theme" \
     --field="  Lilidog Bright!/usr/share/xfce4/terminal/icons/paw-bright.png!":BTN "bright-theme" \
     --field="   Lilidog Neon!/usr/share/xfce4/terminal/icons/paw-neon.png!":BTN "neon-theme" \
     --field="":LBL "" \
