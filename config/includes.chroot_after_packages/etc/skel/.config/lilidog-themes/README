@@ -1,0 +1,27 @@
+These are the individual Lilidog theme scripts that set the different 
+options for each color theme in the Quick Theme Changer.
+
+The current setting will change: GTK theme, Openbox theme, Geany theme,
+Xfce4-terminal theme, and Jgmenu theme.
+
+Changing any of the options is easy so long as the theme is recognized
+by the system settings. Simply change the name of the theme in the file 
+of your choosing. 
+
+Maybe you want a Lilidog-dark terminal with the lilidog-bright theme? 
+No problem! Maybe some other theme entirely? Your choice.
+
+Other options not listed in the themes can be set as well.  Maybe you
+want conky or your wallpaper set with the theme?
+
+Also, if you would like to add a button to the theme changer itself, 
+rather than change one of the existing themes? Sure! The script 
+'ld-theme-changer' is located in /usr/local/bin.
+
+If you don't want to work from root, make a folder: ~/bin and copy
+ld-theme-changer from /usr/local/bin.  Logout, and back in for ~/bin to 
+be placed in your path. The script in ~/bin will be the active script.
+
+Just copy and paste a new line and then change the values.  Easy peasy.
+
+The options are endless, and you can create exactly what you want!
