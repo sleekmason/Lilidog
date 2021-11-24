@@ -112,7 +112,6 @@ lsb-release
 lxinput
 lxpolkit
 lxrandr
-lxterminal
 manpages
 manpages-dev
 menu
@@ -137,7 +136,6 @@ parcellite
 pavucontrol
 pciutils
 pcmciautils
-pcmanfm
 picom
 pnmixer
 pragha

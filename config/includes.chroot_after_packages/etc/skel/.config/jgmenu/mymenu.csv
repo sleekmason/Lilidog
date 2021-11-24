@@ -20,10 +20,9 @@ Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
 Root Files,^checkout(rootfiles),folder-documents
 Writer,             libreoffice,                       libreoffice-writer
 Geany,              geany,	                       geany
-Pcmanfm,            pcmanfm,                           system-file-manager
+Smplayer,           smplayer,                          smplayer
 Mousepad,           mousepad,                          accessories-text-editor
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
-Smplayer,           smplayer,                          smplayer
 Gpicview,           gpicview,                          gpicview
 Pragha,             pragha,                            pragha
 Gimp,               gimp,                              gimp

@@ -12,7 +12,7 @@ This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, 
 
 - Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog <br/>
 while allowing you to choose most all of your OWN packages. <br/> 
-Currently contains Lxterminal, Thunar, and Mousepad to get you started. <br/>
+Currently contains xfce4-terminal, Thunar, and Mousepad to get you started. <br/>
 Design your system with any other programs you might like. <br/>
 __sudo apt update && sudo apt install synaptic__ for a graphical interface to make installing your programs easier. <br/>
 
@@ -82,13 +82,12 @@ or can be activated on login by adding to the autostart cconfiguration file.
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
 customized Dmenu with only the most commonly used apps.
 
-- Thunar is the default file manager.  Pcmanfm is also available in the full build. Custom right-click <br/> 
-options for each are already added.
+- Thunar is the default file manager.  Custom right-click options are already added as well.
 
 - Custom Lilidog Openbox and GTK themes, and matching themes for Geany and Mousepad. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. (see "instructions" below.)
 
-- Xfce4-terminal is default, with URXVT and lxterminal also installed. Use "App Alternatives in the menu <br/>
+- Xfce4-terminal is default, with URXVT also installed. Use "App Alternatives in the menu <br/>
  or __sudo update-alternatives --config x-terminal-emulator__ in a terminal to switch default terminals.  
 
 - URXVT terminal has font size control (ctl+up/down), transparency, and opens urls in Firefox. <br/>
@@ -122,11 +121,17 @@ Currently clockwise from top left: __file manager, toggle Picom, exit menu, and 
 __Theme changes:__  
 The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under Configuration. <br/>
 This changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly. 
-Lilidog comes with six full themes installed. <br/> 
-Lilidog-Bright Lilidog-Light, Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, and Lilidog-Dark. <br/>
+Lilidog comes with eight full themes installed. <br/> 
+Lilidog-Bright Lilidog-Light, Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, Lilidog-Dark. Lilidog-Cobalt, and Lilidog-Neon. <br/>
 
-__Other Settings:__ <br/>
-- Most common items to change will have an entry under 'Configuration' in the menu.
+__Make your own themes:__ <br/>
+All of the theme files are located in ~/.config/lilidog-themes. This will allow you to change the settings on the existing themes,
+to making your own and adding a button to the theme changer. For a quick overview see the discussion: https://sourceforge.net/p/lilidog/discussion/setup/thread/b3fec6a23b/ <br/>
+or the README located in ~/.config/lilidog-themes. <br/>
+
+__Other Settings:__
+- For keyboard language layout see: https://sourceforge.net/p/lilidog/discussion/setup/thread/e9e88533c0/<br/>
+- Most common items to change will have an entry under 'Configuration' in the menu.<br/>
 - Settings Manager - Change your gtk theme, fonts, and icons on an individual basis.  Other important settings are here as well. <br/>
 - Openbox Conf - The settings here control the window borders and other settings specific to Openbox. <br/>
 - Jgmenu - Go to menu -> configuration -> jgmenu.conf for menu items. For theme changes, got to Jgmenu Theme Changer in the menu. ("o" or "g") <br/>

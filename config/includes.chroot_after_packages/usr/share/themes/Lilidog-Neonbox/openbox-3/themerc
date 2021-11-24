@@ -6,16 +6,16 @@
 #======================================
 
 menu.title.bg: raised
-menu.title.bg.color: #260C21
+menu.title.bg.color: #290D23
 menu.title.text.color: #61E7FF
 menu.separator.color: #1B313B
 menu.items.bg: raised gradient diagonal
-menu.items.bg.color: #12131F
+menu.items.bg.color: #290D23
 menu.items.bg.colorTo: #000000
 menu.items.text.color: #61E7FF
 menu.items.disabled.text.color: #707070
 menu.items.active.bg: raised border
-menu.items.active.bg.color: #2F5EA1
+menu.items.active.bg.color: #2A5591
 menu.items.active.bg.border.color: #476263
 menu.items.active.text.color: #BCFFF9
 
