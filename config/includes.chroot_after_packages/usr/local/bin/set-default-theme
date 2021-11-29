@@ -1,0 +1,33 @@
+#!/bin/bash
+echo ""
+read -p "   Total Theme Reset
+
+   An emergency button to put everything back to the default settings.
+
+   This little script will change all of the theme components back to
+   their original default configuration. This will reset:
+
+   GTK theme, Openbox theme, fonts, icons, wallpaper, terminal theme, 
+   Geany, and Lightdm settings.
+
+
+   ----------------------------------------------------------------------
+   
+   Please press enter to reset all items to their original configuration.
+   
+   ----------------------------------------------------------------------
+
+      
+   Or close this terminal window to quit." ;
+echo ""
+~/.config/lilidog-themes/default-theme
+echo ""
+echo ""
+echo ""
+echo "------------------------------------------------------------------"
+echo ""
+echo "All finished! If something did not change, check to see if the item" 
+echo "has been removed. (Uninstalled icons, wallpaper, etc.)"
+echo ""
+echo "------------------------------------------------------------------"
+echo ""

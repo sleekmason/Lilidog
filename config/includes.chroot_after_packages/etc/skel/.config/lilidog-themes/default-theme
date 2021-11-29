@@ -4,6 +4,12 @@
 ## Change any of the themes however you like to create custom entries.
 # You can also add anything that can be refreshed, wallpaper, conky, etc . . .
 
+## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
+sudo sed -i "s/theme-name.*/theme-name = Lilidog-Slate/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Trifull.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/position.*/position = 95%,end 9%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/font-name.*/font-name = Liberation Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
+
 # Change gtktheme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Lilidog-Slate"
 
@@ -29,15 +35,8 @@ xfce4-term-colors lilidog-slate
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Breeze"
 
 ## Set Background
-feh --bg-scale '/home/wallpaper/Trifull.png' 
-
-## Set Conky
-
-killall conky
-conky -c ~/.config/conky/conky-min.conf
-conky -c ~/.config/conky/conky-shortcuts-dark.conf
+feh --bg-scale '/home/wallpaper/Trifull.png'
 
 ## Set Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Liberation Sans 11"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
-
