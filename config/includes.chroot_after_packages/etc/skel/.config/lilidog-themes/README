@@ -6,7 +6,9 @@ Xfce4-terminal theme, and Jgmenu theme.
 
 Changing any of the options is easy so long as the theme is recognized
 by the system settings. Simply change the name of the theme in the file 
-of your choosing. 
+of your choosing.
+
+Look at the 'default-theme' for some examples of things to add.
 
 Maybe you want a Lilidog-dark terminal with the lilidog-bright theme? 
 No problem! Maybe some other theme entirely? Your choice.

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yad --title "Quick Themes" --button=gtk-close:1 --form --center --width=250 --borders=4 \
---height=440 --text="\n Please Close Geany \n Before Making Selection." --text-align=center \
+--height=544 --text="\n Please Close Geany \n Before Making Selection." --text-align=center \
 --window-icon=applications-utilities \
     --form \
     --field="":LBL "" \
@@ -14,6 +14,7 @@ yad --title "Quick Themes" --button=gtk-close:1 --form --center --width=250 --bo
     --field="    Lilidog Light!$HOME/.config/lilidog-themes/icons/paw-light.png!":BTN "$HOME/.config/lilidog-themes/light-theme" \
     --field="  Lilidog Bright!$HOME/.config/lilidog-themes/icons/paw-bright.png!":BTN "$HOME/.config/lilidog-themes/bright-theme" \
     --field="":LBL "" \
-    --field="       Wallpaper Changer!wallpaper":FBTN "feh-set-wallpaper" \
+    --field="      Wallpaper Changer!wallpaper":FBTN "feh-set-wallpaper" \
     --field="           LightDM Theme!preferences-system":FBTN "gksudo lightdm-gtk-greeter-settings" \
-    --field="          Terminal Themes!gnome-terminal":FBTN "ld-term-changer" \
+    --field="     Extras, Icons, Fonts!preferences-system":FBTN "xfce4-appearance-settings" \
+    --field="         Terminal Themes!gnome-terminal":FBTN "ld-term-changer" \
