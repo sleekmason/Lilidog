@@ -143,10 +143,6 @@ and replace "wlp2s0" with yours. <br/>
 
 Also look under the "Toggles" section in the menu for some instant changes to different items as well.
 
-### Current Issues/bugs
-
-- Xfce4-power-manager does not display the systemtray icon.  Know issue.  Waiting for update.
-
 There is a discussion forum above on Sourceforge as well if you have suggestions or questions.
 https://sourceforge.net/p/lilidog/discussion/
 
