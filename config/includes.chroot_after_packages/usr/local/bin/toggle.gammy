@@ -1,0 +1,6 @@
+#!/bin/bash
+if pgrep -x gammy > /dev/null; then
+    pkill -x gammy
+else
+    export QT_QPA_PLATFORMTHEME=gtk2 && gammy
+fi

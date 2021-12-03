@@ -75,5 +75,9 @@
 "toggle.picom"
    Mod4 + p
 
+#Toggle Gammy
+"toggle.gammy"
+   Mod4 + g
+
 #
 # End of xbindkeys configuration
