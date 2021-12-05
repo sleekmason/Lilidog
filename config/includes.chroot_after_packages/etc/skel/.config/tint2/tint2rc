@@ -290,7 +290,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 4
 button = new
-button_icon = /usr/share/icons/ld-icons/paw-color-28x26.png
+button_icon = /usr/share/icons/ld-icons/paw-theme.png
 button_text = 
 button_tooltip = Lilidog Quick Theme Changer
 button_lclick_command = ld-theme-changer

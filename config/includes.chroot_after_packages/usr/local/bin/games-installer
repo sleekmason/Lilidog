@@ -21,9 +21,9 @@ read -p "   Games Installer
 echo "" 
 sudo apt update && sudo apt install blockout2 eboard xmahjongg briquolo gltron pinball &&
 sed -i '/Games,^checkout(games),applications-games/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Quick Grab,^checkout(quickgrab),applications-other/a Games,^checkout(games),applications-games' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Development,^checkout(development),applications-development/i Games,^checkout(games),applications-games' ~/.config/jgmenu/mymenu.csv &&
 sed -i '/tag(games)/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Exit/a ^tag(games)' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Development/a ^tag(games)' ~/.config/jgmenu/mymenu.csv &&
 sed -i '/Tron, gltron, gltron/d' ~/.config/jgmenu/mymenu.csv &&
 sed -i '/tag(games)/a Tron, gltron, gltron' ~/.config/jgmenu/mymenu.csv &&
 sed -i '/Pinball, pinball, pinball/d' ~/.config/jgmenu/mymenu.csv &&
@@ -43,6 +43,8 @@ echo ""
 echo "All Finished!"
 echo ""
 echo "If installed, You should find a new menu entry 'Games'"
+echo "in the Quickgrab menu." 
+echo "" 
 echo "" 
 echo "Menu entries will need to be removed manually if uninstalled." 
 echo "See Jgmenu Conf under Configuration in the menu for directions."

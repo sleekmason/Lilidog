@@ -26,6 +26,12 @@ Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
 Gpicview,           gpicview,                          gpicview
 Pragha,             pragha,                            pragha
 Gimp,               gimp,                              gimp
+Development,^checkout(development),applications-development
+
+^tag(development)
+Meld,               meld,                              document-properties
+Geany,              geany,	                       geany
+Icon Browser,       yad-icon-browser,                  galternatives
 
 ^tag(utilities)
 Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
@@ -38,6 +44,7 @@ Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remo
 App Alternatives,   galternatives,                    preferences-system
 Color Chooser,      yad --color,                      yad
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
+Luckybackup,        export QT_QPA_PLATFORMTHEME=gtk2 && luckybackup,  luckybackup
 Hw-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Galculator,         galculator,                       galculator
 Synaptic,           gksudo synaptic,                  synaptic
@@ -77,7 +84,7 @@ Xkill,               xkill,                                         edit-delete
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
 
 ^tag(configuration)
-Quick Theme Changer,      ld-theme-changer,                                                     applications-utilities
+Quick Theme Changer,      ld-theme-changer,                                                     preferences-system
 Wallpaper Changer,        feh-set-wallpaper,                                                    feh
 Settings-Manager,         xfce4-settings-manager,                                               preferences-desktop-theme
 Power Manager,            xfce4-power-manager-settings,                                         applications-system  

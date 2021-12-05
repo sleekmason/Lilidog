@@ -112,17 +112,20 @@ lightdm-gtk-greeter-settings
 lm-sensors
 locales
 lsb-release
+luckybackup
 lxinput
 lxpolkit
 lxrandr
 manpages
 manpages-dev
+meld
 menu
 menu-xdg
 mesa-utils
 mesa-va-drivers
 mesa-vdpau-drivers
 mlocate
+moc
 mousepad
 nano
 ncdu
@@ -226,3 +229,4 @@ xserver-xorg-video-vmware
 xsel
 xsltproc
 yad
+youtube-dl
