@@ -19,7 +19,6 @@ Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.p
 Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
 Root Files,^checkout(rootfiles),folder-documents
 Writer,             libreoffice,                       libreoffice-writer
-Geany,              geany,	                       geany
 Smplayer,           smplayer,                          smplayer
 Mousepad,           mousepad,                          accessories-text-editor
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
