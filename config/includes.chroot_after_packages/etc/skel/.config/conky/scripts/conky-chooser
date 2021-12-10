@@ -15,9 +15,9 @@ yad --title "Conky" --button=gtk-close:1 --form --center --width=230 \
 --height=340 --text="\n PLEASE TOGGLE\n YOUR SELECTIONS. \n" --text-align=center \
 --window-icon=applications-system \
     --form \
-    --field="Conky Full":BTN "bash -c 'toggle_conky conky-full'" \
-    --field="Conky Min":BTN "bash -c 'toggle_conky conky-min'" \
-    --field="Conky Shortcuts":BTN "bash -c 'toggle_conky conky-shortcuts'" \
-    --field="Conky Shortcuts-Dark":BTN "bash -c 'toggle_conky conky-shortcuts-dark'" \
+    --field="Clock":BTN "bash -c 'toggle_conky conky-clock-date'" \
+    --field="Shortcuts":BTN "bash -c 'toggle_conky conky-shortcuts'" \
+    --field="Full Conky":BTN "bash -c 'toggle_conky conky-full'" \
+    --field="Fortunes":BTN "bash -c 'toggle_conky conky-fortunes'" \
     --field="Restart Conky":fbtn "killall -SIGUSR1 conky" \
     --field="Kill Conky":fbtn "killall conky" 

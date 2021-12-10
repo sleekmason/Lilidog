@@ -13,5 +13,4 @@ nm-applet &
 lxpolkit &
 xfsettingsd --daemon &
 pnmixer &
-conky -c ~/.config/conky/conky-min.conf &
-conky -c ~/.config/conky/conky-shortcuts-dark.conf &
+conky -c ~/.config/conky/conky-shortcuts.conf &
