@@ -1,0 +1,15 @@
+#!/bin/sh                                                                                                   
+
+mkdir -p ./Rotated/Clockwise           
+for file
+    do
+    if [ ! -e "$file" ]
+        then
+        continue
+    fi
+    name=$( echo $file | cut -f1 -d.)
+# Image rotated in place.
+#   mogrify -rotate 90 "$file" 
+# Image copied into added folder 'Rotated'
+    convert -rotate 90 "$file" "./Rotated/Clockwise/${name}-RR.jpg" 
+done

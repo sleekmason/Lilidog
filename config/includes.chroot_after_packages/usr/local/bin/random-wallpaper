@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true;
+do
+    feh --bg-scale "$(find $HOME/Pictures/wallpapers -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 600s
+done &

@@ -1,0 +1,6 @@
+#!/bin/bash
+if pgrep -f random-wallpaper > /dev/null; then
+    pkill -f random-wallpaper
+else
+    random-wallpaper
+fi

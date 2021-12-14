@@ -63,6 +63,7 @@ Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c
 Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 
 ^tag(toggles)
+Random Wall On/Off,  toggle.wallpaper-random,                       object-flip-horizontal
 Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
 Gammy,               toggle.gammy,                                  object-flip-horizontal
 Clipboard,           toggle.parcellite,                             object-flip-horizontal

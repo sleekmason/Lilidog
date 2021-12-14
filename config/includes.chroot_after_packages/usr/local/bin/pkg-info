@@ -1,0 +1,47 @@
+#!/bin/bash
+# get info about packages, installed or not
+
+output=''
+for i in "$@"
+do
+    package=$( dpkg-query -s $i 2>/dev/null )
+    if grep 'Status: install ok installed' > /dev/null <<< "$package"
+    then
+        if entry=$( grep -A2 " $1\$" /var/lib/apt/extended_states ) && grep -q 'Auto-Installed: 1' <<<"$entry"
+        then
+            package+="
+
+Auto-installed
+$(apt-cache rdepends --installed $i)"
+        else
+            package+="
+
+Manually installed"
+        fi
+        package+="
+
+Policy:
+$(apt-cache policy $i)
+
+Commands:
+$( dpkg -L $i | grep 'bin/' )
+
+$i: OK INSTALLED"
+    else package="$i: NOT INSTALLED
+$( apt-cache show $i 2>&1 )
+
+$i: NOT INSTALLED"
+    fi
+output+="$package
+--------------------------------------
+"
+done
+
+if [ -t 1 ]
+then
+    echo "$output"
+else
+     leafpad <(echo "$output")
+fi
+
+exit
