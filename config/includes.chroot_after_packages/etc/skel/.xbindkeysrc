@@ -79,5 +79,9 @@
 "toggle.gammy"
    Mod4 + g
 
+#Toggle Random bg
+"toggle.wallpaper-random"
+   Mod4 + b
+
 #
 # End of xbindkeys configuration
