@@ -1,6 +1,8 @@
 #!/bin/bash
 if pgrep -f random-wallpaper > /dev/null; then
     pkill -f random-wallpaper
+    notify-send "Random Wallpaper Off"
 else
     random-wallpaper
+    notify-send "Random Wallpaper Every 10 Minutes"
 fi
