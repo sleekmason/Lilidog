@@ -64,6 +64,7 @@ Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "
 
 ^tag(toggles)
 Random Wall On/Off,  toggle.wallpaper-random,                       object-flip-horizontal
+Wbar,                toggle.wbar,                                   object-flip-horizontal
 Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
 Gammy,               toggle.gammy,                                  object-flip-horizontal
 Clipboard,           toggle.parcellite,                             object-flip-horizontal

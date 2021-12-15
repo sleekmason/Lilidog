@@ -68,9 +68,10 @@ No unwanted packages will be installed by default. This can be changed after ins
 - Jgmenu is the menu for all versions.  Huge amount of customization available. <br/>
 Go to menu -> configuration -> jgmenu.conf for how to change items. For themes, go to Jgmenu Theme Changer and use "o" or "g".
 
-- Wallpapers - Handles by Feh.  Place any image you would like to use as a wallpaper in ~/Pictures/wallpapers. <br/>
+- Wallpapers - Handled by Feh.  Place any image you would like to use as a wallpaper in ~/Pictures/wallpapers. <br/>
 Go to Menu -> Configuration -> Wallpaper Chooser to change wallpapers. <br/>
-You can also right-click on any image you choose from the file manager to set as background wallpaper. Easy peasy!
+You can also right-click on any image you choose from the file manager to set as background wallpaper. Other right-click <br/>
+options for images include rotation and copying to ~/Pictures.wallpapers. A random wallpaper toggle is included.
 
 - There are shortcuts for xfce4-power-manager in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
@@ -81,6 +82,8 @@ or can be activated on login by adding to the autostart cconfiguration file.
 
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
 customized Dmenu with only the most commonly used apps.
+
+- Wbar for icons on the desktop if desired. activate from Toggles in the menu. Fun to configure!
 
 - Thunar is the default file manager.  Custom right-click options are already added as well.
 
@@ -96,6 +99,8 @@ The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used.
 including connected drives, number of packages installed, and more. 
 
 - Picom Composite Manager with transparency enabled. Look in the configuration menu to access ~/.config/picom.conf.
+
+- Gammy screen color and lightness control located in Toggles, and from the keyboard.
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 

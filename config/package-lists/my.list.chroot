@@ -186,6 +186,8 @@ uuid-runtime
 va-driver-all
 vdpau-driver-all
 volumeicon-alsa
+wbar
+wbar-config
 w3m
 w3m-img
 wmctrl

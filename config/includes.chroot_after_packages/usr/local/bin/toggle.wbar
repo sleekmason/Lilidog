@@ -1,0 +1,2 @@
+#!/bin/bash
+bash -c 'if ! pkill -x wbar; then exec wbar; fi'

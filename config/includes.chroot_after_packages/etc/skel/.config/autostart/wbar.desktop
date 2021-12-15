@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Wbar
+Type=Application
+Exec=wbar
+Terminal=false
+Icon=wbar
+Comment=Wbar
+Categories=Utility;
+Keywords=gtk;launcher;lightweight;simple;settings;bar;administration;
+NotShowIn=LXDE;
+Hidden=true
