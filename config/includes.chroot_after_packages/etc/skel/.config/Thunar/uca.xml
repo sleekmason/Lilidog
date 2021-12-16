@@ -122,4 +122,13 @@
 	<patterns>*</patterns>
 	<image-files/>
 </action>
+<action>
+	<icon>system-software-install</icon>
+	<name>Install Deb Package</name>
+	<unique-id>1639627177846769-2</unique-id>
+	<command>x-terminal-emulator -T &apos;Deb Installer&apos; -e bash -c &quot;sudo apt update &amp;&amp; sudo apt install %F; echo $&apos;\n\nPress any key to close.&apos;; read -srn1&quot;</command>
+	<description>Uses terminal and apt to install the deb package.</description>
+	<patterns>*.deb</patterns>
+	<other-files/>
+</action>
 </actions>
