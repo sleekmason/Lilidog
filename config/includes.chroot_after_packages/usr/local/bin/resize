@@ -1,5 +1,6 @@
 #!/bin/bash
- 
+# Modified for use in Lilidog by sleekmason. 12-23-21
+
 DEST="./Resized"
 WIDTH=200
 HEIGHT=340
