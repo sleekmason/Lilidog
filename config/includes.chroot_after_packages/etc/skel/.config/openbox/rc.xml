@@ -337,6 +337,12 @@
         <command>scrot</command>
       </action>
     </keybind>
+<!-- For an Openbox Menu -->
+    <keybind key="A-C-q">
+      <action name="showmenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

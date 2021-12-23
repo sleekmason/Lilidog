@@ -50,7 +50,7 @@
 	<icon>object-rotate-left</icon>
 	<name>Rotate In Place</name>
 	<unique-id>1639487409664741-1</unique-id>
-	<command>rotate-image-left-inplace %N</command>
+	<command>mogrify -rotate 90 %N</command>
 	<description>Rotate image counter clockwise in place.</description>
 	<patterns>*</patterns>
 	<image-files/>
@@ -97,19 +97,19 @@
 </action>
 <action>
 	<icon>object-rotate-right</icon>
-	<name>Rotate Clockwise With Copy</name>
+	<name>Rotate Image With Copy</name>
 	<unique-id>1777709978866110-1</unique-id>
-	<command>rotate-image-right %N</command>
-	<description>Copy to Rotated folder and rotate the image clockwise.</description>
+	<command>rotate %N</command>
+	<description>Copy to Rotated folder and rotate the image.</description>
 	<patterns>*</patterns>
 	<image-files/>
 </action>
 <action>
-	<icon>object-rotate-left</icon>
-	<name>Rotate CCW With Copy</name>
-	<unique-id>1639409978866110-1</unique-id>
-	<command>rotate-image-left %N</command>
-	<description>Copy to Rotated folder and rotate the image counter clockwise.</description>
+	<icon>resizecol</icon>
+	<name>Resize Image With Copy</name>
+	<unique-id>1640208205426649-1</unique-id>
+	<command>resize %N</command>
+	<description>Resize image to various sizes</description>
 	<patterns>*</patterns>
 	<image-files/>
 </action>

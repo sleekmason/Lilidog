@@ -1,12 +1,19 @@
-#@lxpanel --profile LXDE &
-#pcmanfm --desktop --profile LXDE &
+#### Openbox autostart - Place your commands here to have programs 
+### activated on login. See 'man openbox' for more information.
+
+## For lxpanel or pcmanfm use as wallpaper setter. Allows for icons.
+# @lxpanel --profile LXDE &
+# pcmanfm --desktop --profile LXDE &
+
+### Items not in use.
+# @xscreensaver -no-splash &
+# monster-panel &
+# fbpanel-alsa &
+
+### Items currently activated.
 . $HOME/.fehbg &
-#pnmixer &
-#@xscreensaver -no-splash &
 picom &
 tint2 &
-#fbpanel-alsa &
-#monster-panel &
 xfce4-power-manager &
 xbindkeys &
 nm-applet &

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 yad --title "Quick Themes" \
---button='Default Theme'!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!:"x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1'" \
---button=gtk-close:1 --form --center --width=250 --borders=4 \
+--button='Default'!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!:"x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1'" \
+--button=gtk-close:1 --form --center --width=230 --borders=4 \
 --height=544 --text="\n Please Close Geany \n Before Making Selection." --text-align=center \
 --window-icon=applications-utilities \
     --form \

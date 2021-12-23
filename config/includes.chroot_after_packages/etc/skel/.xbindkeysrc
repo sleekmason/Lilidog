@@ -80,7 +80,7 @@
    Mod4 + g
 
 #Toggle Random bg
-"toggle.wallpaper-random"
+"bash -c 'killall random-wallpaper*; feh --bg-scale --randomize $HOME/Pictures/wallpapers/*'"
    Mod4 + b
 
 #

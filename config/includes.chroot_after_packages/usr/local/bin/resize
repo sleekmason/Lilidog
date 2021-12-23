@@ -1,0 +1,51 @@
+#!/bin/bash
+ 
+DEST="./Resized"
+WIDTH=200
+HEIGHT=340
+QUALITY=100
+ 
+ 
+# check required software
+CHECK=("convert" "yad")
+for i in "${CHECK[@]}"
+do
+  if ! command -v "$i" >/dev/null 2>&1 ; then
+      echo "Error: '$i' not found (install the appropriate package)" 1>&2
+      exit 1
+  fi
+done
+ 
+set -x
+resize="$(yad --title "Resize" --width="$WIDTH" --height="$HEIGHT" --center --list \
+  --text "\n Copy And Scale Image  \n Based On Final Width. \n" --text-align=center \
+--radiolist  --column "Select" --column "New Size" --separator=" " \
+  FALSE "600" \
+  FALSE "800" \
+  FALSE "1366" \
+  FALSE "1440" \
+  FALSE "1600" \
+  FALSE "1920" \
+  FALSE "2560")" 
+resize="$(echo "$resize" | cut -d' ' -f2-)"
+ 
+# check if "Cancel" button
+if ! [[ $resize ]];
+then
+  exit 1
+fi
+ 
+mkdir -p "$DEST/$resize"
+ 
+for file
+    do
+    if [ ! -e "$file" ]
+        then
+        continue
+    fi
+    to_name="$DEST/$resize/$(echo "$file" | cut -f1 -d.).jpg"
+#    convert -resize $resize% -quality $QUALITY "${file}" "${to_name}"
+     convert -geometry "$resize" -quality $QUALITY "${file}" "${to_name}"
+done
+ 
+exit 0

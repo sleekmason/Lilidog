@@ -1,0 +1,13 @@
+#!/bin/bash
+
+yad --title "Random BG" --button=gtk-close:1 --form --center --width=230 \
+--height=340 --text="\n Please Choose Interval \n Time Between Change. \n" --text-align=center \
+--window-icon=applications-system \
+    --form \
+    --field="5 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper'" \
+    --field="10 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper1'" \
+    --field="30 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper2'" \
+    --field="60 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper3'" \
+    --field="Fast Flip Through":FBTN "bash -c 'feh --bg-scale --randomize $HOME/Pictures/wallpapers/*'" \
+    --field="":LBL "" \
+    --field="Random Wallpaper Off":FBTN "bash -c 'notify-send 'Random-Wallpaper-Off'; killall random-wallpaper*'"

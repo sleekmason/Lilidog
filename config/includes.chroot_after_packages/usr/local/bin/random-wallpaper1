@@ -3,6 +3,6 @@
 while true;
 do
     feh --bg-scale "$(find $HOME/Pictures/wallpapers -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 300s
+    sleep 600s
 done &
-notify-send 'Random Wallpaper Every 5 Minutes'
+notify-send 'Random Wallpaper Every 10 Minutes'

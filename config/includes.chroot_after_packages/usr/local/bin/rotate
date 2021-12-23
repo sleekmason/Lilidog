@@ -1,0 +1,45 @@
+#!/bin/bash
+ 
+DEST="./Rotated"
+WIDTH=200
+HEIGHT=260
+ 
+ 
+# check required software
+CHECK=("convert" "yad")
+for i in "${CHECK[@]}"
+do
+  if ! command -v "$i" >/dev/null 2>&1 ; then
+      echo "Error: '$i' not found (install the appropriate package)" 1>&2
+      exit 1
+  fi
+done
+ 
+set -x
+rotate="$(yad --title "Rotate" --width="$WIDTH" --height="$HEIGHT" --center --list \
+  --text "\n Copy And Rotate Image  \n Based On Degrees" \
+--radiolist  --column "Select" --column "New Size" --separator=" " \
+  FALSE "90" \
+  FALSE "180" \
+  FALSE "270")"
+  rotate="$(echo "$rotate" | cut -d' ' -f2-)"
+ 
+# check if "Cancel" button
+if ! [[ $rotate ]];
+then
+  exit 1
+fi
+ 
+mkdir -p "$DEST/$rotate"
+ 
+for file
+    do
+    if [ ! -e "$file" ]
+        then
+        continue
+    fi
+    to_name="$DEST/$rotate/$(echo "$file" | cut -f1 -d.).jpg"
+     convert -rotate "$rotate" "${file}" "${to_name}"
+done
+ 
+exit 0
