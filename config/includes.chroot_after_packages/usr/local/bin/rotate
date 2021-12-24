@@ -18,7 +18,8 @@ done
  
 set -x
 rotate="$(yad --title "Rotate" --width="$WIDTH" --height="$HEIGHT" --center --list \
-  --text "\n Copy And Rotate Image  \n Based On Degrees." --text-align=center \
+--text "\n Copy And Rotate Image  \n Based On Degrees. \n" --text-align=center \
+--window-icon=applications-system \
 --radiolist  --column "Select" --column "New Size" --separator=" " \
   FALSE "90" \
   FALSE "180" \

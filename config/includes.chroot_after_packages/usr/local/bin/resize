@@ -19,7 +19,8 @@ done
  
 set -x
 resize="$(yad --title "Resize" --width="$WIDTH" --height="$HEIGHT" --center --list \
-  --text "\n Copy And Scale Image  \n Based On Final Width. \n" --text-align=center \
+--text "\n Copy And Scale Image  \n Based On Final Width. \n" --text-align=center \
+--window-icon=applications-system \
 --radiolist  --column "Select" --column "New Size" --separator=" " \
   FALSE "600" \
   FALSE "800" \
