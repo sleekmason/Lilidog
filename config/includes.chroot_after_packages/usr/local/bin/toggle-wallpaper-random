@@ -1,7 +1,7 @@
 #!/bin/bash
 
-yad --title "Random BG" --button=gtk-close:1 --form --center --width=230 \
---height=340 --text="\n Please Choose Interval \n Time Between Change. \n" --text-align=center \
+yad --title "Random BG" --button=gtk-close:1 --form --center --width=228 \
+--height=340 --text="\n Please Choose Interval \n Time Between Changes. \n" --text-align=center \
 --window-icon=applications-system \
     --form \
     --field="5 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper'" \
