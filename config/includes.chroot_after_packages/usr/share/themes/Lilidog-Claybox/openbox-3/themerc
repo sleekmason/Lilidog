@@ -1,88 +1,96 @@
-# Lilidog-Claybox by sleekmason.                                                                    
-#============================================================
+!! Lilidog-Claybox by sleekmason 12-26-21
+!! Based on Onyx-Citrus by Dana Jansens
 
-#======================================
-#     Menu Settings	
-#======================================
-
-menu.title.bg: raised
-menu.title.bg.color: #767D79
-menu.title.text.color: #0D0B0B
+!! Menu background
+menu.items.bg: flat gradient vertical
+menu.items.bg.color: #7D8581
+menu.items.bg.colorTo: #7D8581
 menu.separator.color: #293231
-menu.items.bg: raised gradient diagonal
-menu.items.bg.color: #767D79
-menu.items.bg.colorTo: #89918D
+
+!! Menu text
 menu.items.text.color: #0D0B0B
+menu.items.justify: left
 menu.items.disabled.text.color: #545E59
-menu.items.active.bg: raised border
-menu.items.active.bg.color: #57615E
-menu.items.active.bg.border.color: #4B544F
-menu.items.active.text.color: #C9DBD9
 
-#======================================
-#     Focused Window Settings
-#======================================
+!! Menu title
+menu.title.bg: raised splitvertical gradient
+menu.title.bg.color: #7D8581
+menu.title.bg.colorTo: #7D8581
+menu.title.text.color: #0D0B0B
+menu.title.text.justify: center
 
-window.active.title.bg: raised gradient vertical
-window.active.title.bg.color: #707874
-window.active.title.bg.colorTo: #8A9490
-window.active.title.bg.border.color: #476263
+!! Selected menu item
+menu.items.active.bg: raised splitvertical gradient
+menu.items.active.bg.color: #9DA7A2
+menu.items.active.bg.colorTo: #9DA7A2
+menu.items.active.text.color: #0D0B0B
+
+!! Titlebar
+window.active.title.bg: raised vertical gradient
+window.active.title.bg.color: #7B827E
+window.active.title.bg.colorTo: #8C9692
+window.inactive.title.bg: flat splitvertical gradient
+window.inactive.title.bg.color: #78807C
+window.inactive.title.bg.colorTo: #78807C
+
+!! Titlebar text
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #050404
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #262424
+
+!! Window buttons
+window.*.button.*.bg: parentrelative
+window.active.button.*.hover.bg: flat splitvertical gradient border
+window.inactive.button.*.hover.bg: parentrelative
+window.*.button.*.pressed.bg: flat splitvertical gradient border
+
+window.active.button.*.hover.bg.color: #A4A8A8
+window.active.button.*.hover.bg.colorTo: #A4A8A8
+window.active.button.*.hover.bg.border.color: #173B3D
+
+window.active.button.*.pressed.bg.color: #596666
+window.active.button.*.pressed.bg.colorTo: #596666
+window.active.button.*.pressed.image.color: #D7FFFF
+window.active.button.*.pressed.bg.border.color: #001F29
+window.active.button.*.pressed.bg.border.color: #000000
+window.inactive.button.*.pressed.bg.color: #ffaa64
+window.inactive.button.*.pressed.bg.colorTo: #ffaa64
+window.inactive.button.*.pressed.image.color: #fdceb7
+window.inactive.button.*.pressed.bg.border.color: #545757
+
+window.active.button.*.image.color: #000000
+window.active.button.disabled.image.color: #707070
+window.inactive.button.*.image.color: #575757
+window.inactive.button.disabled.image.color: #B5BFBF
+
+!! Borders
+window.active.border.color: #4B5451
+window.inactive.border.color: #7A8581
+window.inactive.title.separator.color: #87948F
+border.width: 1
+padding.width: 1
+window.handle.width: 3
+window.active.client.color:  #ACB0B0
+window.inactive.client.color:  #7A8581
+window.client.padding.width: 1
+window.client.padding.height: 1
+menu.border.color: #394F4C
+menu.overlap: 0
+
+!! Handles
 window.active.handle.bg: raised
 window.active.handle.bg.color: #7D8581
 window.active.grip.bg: parentrelative
-window.active.label.bg: parentrelative
-window.active.label.text.color: #050404
-window.*.button.*.bg: parentrelative
-window.active.button.*.image.color: #000000
-window.active.button.*.pressed.image.color: #ffffff
-window.active.button.disabled.image.color: #969691
-window.active.button.*.hover.image.color: #D1ECED
-
-#======================================
-#     Unfocused Window Settings
-#======================================
-
-window.inactive.title.bg: raised gradient horizontal
-window.inactive.title.bg.color: #5B6663
-window.inactive.title.bg.colorTo: #5B6663
 window.inactive.handle.bg: raised
-window.inactive.handle.bg.color: #5B6663
+window.inactive.handle.bg.color: #909994
 window.inactive.grip.bg: parentrelative
-window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #1F1D1D
-window.inactive.button.*.image.color: #000000
 
-#======================================
-#     Global Width Settings
-#======================================
+!! Font shadows
+!! menu.items.font:shadow=y:shadowtint=30
 
-padding.width: 1
-padding.height: 1
-border.width: 2
-window.handle.width: 3
-window.client.padding.width: 0
-menu.overlap.x: -5
-
-#======================================
-#     Miscellaneous Settings
-#======================================
-
-border.color: #444D48
-menu.border.color: #444D48
-
-#======================================
-#     Osd		
-#======================================
-
-osd.bg: raised
-osd.bg.color: #A9ADAD
-osd.hilight.bg: flat border
-osd.hilight.bg.color: #9FA3A3
-osd.hilight.bg.border.color: #67706C
-
-#======================================
-#     Title Justification
-#======================================
-
-menu.title.text.justify: center
-window.label.text.justify: center
+!! On-screen displays
+osd.bg: gradient vertical flat
+osd.bg.color: #7D8581
+osd.bg.colorTo: #8D9692
