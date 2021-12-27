@@ -9,6 +9,7 @@ apt-utils
 at-spi2-core
 b43-fwcutter
 bash-completion
+bind9-dnsutils
 btrfs-progs
 catfish
 conky
@@ -177,6 +178,7 @@ tumbler
 thunderbird
 transmission
 transmission-gtk
+tree
 unzip
 usbutils
 usermode
