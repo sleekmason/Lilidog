@@ -100,5 +100,4 @@ Fbpanel Conf,             mousepad ~/.config/fbpanel/default,                   
 Xbindkeys Conf,           xbindkeys-config,                                                     document-properties
 Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                                        document-properties
 Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     applications-games 
-Xfce4-terminal Themes,    ld-term-changer,                                                      utilities-terminal   
-Jgmenu Theme Changer,     x-terminal-emulator -T 'Jgmenu Interactive' -e "jgmenu-interactive",  preferences-desktop-theme  
+Xfce4-terminal Themes,    ld-term-changer,                                                      utilities-terminal
