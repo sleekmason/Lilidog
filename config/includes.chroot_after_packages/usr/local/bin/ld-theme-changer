@@ -10,6 +10,8 @@ yad --title "Quick Themes" \
     --field="   Lilidog Neon!$HOME/.config/lilidog-themes/icons/paw-neon.png!":BTN "$HOME/.config/lilidog-themes/neon-theme" \
     --field=" Lilidog Cobalt!$HOME/.config/lilidog-themes/icons/paw-cobalt.png!":BTN "$HOME/.config/lilidog-themes/cobalt-theme" \
     --field="    Lilidog Dark!$HOME/.config/lilidog-themes/icons/paw-dark.png!":BTN "$HOME/.config/lilidog-themes/dark-theme" \
+    --field="  Lilidog Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":BTN "$HOME/.config/lilidog-themes/taupe-theme" \
+    --field="     Lilidog Buff!$HOME/.config/lilidog-themes/icons/paw-buff.png!":BTN "$HOME/.config/lilidog-themes/buff-theme" \
     --field="   Lilidog Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":BTN "$HOME/.config/lilidog-themes/slate-theme" \
     --field="    Lilidog Clay!$HOME/.config/lilidog-themes/icons/paw-clay.png!":BTN "$HOME/.config/lilidog-themes/clay-theme" \
     --field="    Lilidog Grey!$HOME/.config/lilidog-themes/icons/paw-grey.png!":BTN "$HOME/.config/lilidog-themes/grey-theme" \

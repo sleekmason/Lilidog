@@ -1,0 +1,42 @@
+#!/bin/bash
+echo ""
+echo ""
+read -p "   Minecraft Installer
+
+
+   This script will install all the necessary packages for Minecraft.
+   This includes default-jre default-jre-headless java-common
+   openjdk-11-jre & openjdk-11-jre-headless.
+   
+   https://www.minecraft.net/en-us  Microsoft login required.
+   
+   ----------------------------------------------------------
+   
+   Please press enter to install Minecraft.
+   
+   ----------------------------------------------------------
+      
+   Or close this terminal window to quit the install." ;
+echo ""
+cd /usr/share/lilidog/extras/ &&
+sudo apt update && sudo apt install --install-recommends ./Minecraft.deb &&
+sed -i '/Games,^checkout(games),applications-games/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Development,^checkout(development),applications-development/i Games,^checkout(games),applications-games' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/tag(games)/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Development/a ^tag(games)' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Minecraft,         minecraft-launcher,       minecraft-launcher/d' ~/.config/jgmenu/mymenu.csv && 
+sed -i '/tag(games)/a Minecraft,         minecraft-launcher,       minecraft-launcher' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo ""
+echo "------------------------------------------------------------------"
+echo ""
+echo ""
+echo ""
+echo "All Finished!"
+echo ""
+echo "If installed, You should find a new menu entry under 'Games'"
+echo "" 
+echo "Menu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo ""
+echo "------------------------------------------------------------------"

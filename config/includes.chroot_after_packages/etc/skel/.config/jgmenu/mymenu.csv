@@ -50,9 +50,8 @@ Synaptic,           gksudo synaptic,                  synaptic
 Extras,             ^checkout(extras),                 applications-system
 
 ^tag(extras)
+Install Games,^checkout(games-install),applications-utilities
 Install Qemu,             x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
-Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-utilities
-Install Games,            x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-utilities
 Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities
 Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Etcher USB Maker, x-terminal-emulator -T 'Etcher Installer' -e bash -c "etcher-installer; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
@@ -61,6 +60,11 @@ Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e 
 Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c "pipewire-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-utilities
 ^sep()
 Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
+
+^tag(games-install)
+Install Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
+Install Minecraft,        x-terminal-emulator -T 'Minecraft Installer' -e bash -c "minecraft-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-games
+Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
 
 ^tag(toggles)
 Wbar,                toggle.wbar,                                   object-flip-horizontal
