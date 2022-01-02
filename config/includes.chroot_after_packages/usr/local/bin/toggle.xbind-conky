@@ -1,0 +1,12 @@
+#!/bin/bash
+
+trap 'kill $(jobs -p) >/dev/null 2>&1' EXIT
+# kills its children on exit ^
+
+#!/bin/bash
+if pgrep -x conky> /dev/null; then
+    pkill -f conky
+else
+    $HOME/.config/conky/scripts/conky-chooser
+fi
+

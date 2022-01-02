@@ -68,7 +68,7 @@
    Mod4 + x
 
 #Toggle Conky
-""$HOME/.config/conky/scripts/conky-chooser""
+"toggle.xbind-conky"
    Mod4 + c
 
 #Toggle Picom
