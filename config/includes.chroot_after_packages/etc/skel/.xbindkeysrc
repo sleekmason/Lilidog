@@ -83,5 +83,9 @@
 "bash -c 'killall random-wallpaper*; feh --bg-scale --randomize $HOME/Pictures/wallpapers/*'"
    Mod4 + b
 
+#Toggle Panel
+"toggle.tint2"
+   Mod4 + p
+
 #
 # End of xbindkeys configuration
