@@ -1,3 +1,8 @@
 #!/bin/bash
 #
-bash -c 'if ! pkill -x xscreensaver; then exec xscreensaver; fi'
+if pgrep -fx xscreensaver > /dev/null; then
+    pkill -fx xscreensaver
+    notify-send 'Screensaver Off'
+else
+    xscreensaver
+fi

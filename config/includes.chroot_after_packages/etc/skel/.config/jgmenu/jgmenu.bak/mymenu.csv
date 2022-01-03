@@ -16,8 +16,8 @@ Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_r
 Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
 
 ^tag(quickgrab)
-Recent Files,^pipe(jgmenu_run ob --cmd="pipe-recent-files",folder
-Root Files,^checkout(rootfiles),folder-documents
+Theme Folders,^checkout(themes),folder
+Root Folders,^checkout(rootfiles),folder
 Writer,             libreoffice,                       libreoffice-writer
 Smplayer,           smplayer,                          smplayer
 Mousepad,           mousepad,                          accessories-text-editor
@@ -80,13 +80,21 @@ Picom,               toggle.picom,                                  object-flip-
 Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
+/etc,                     gksudo thunar /usr/share,               folder-documents
 /etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents 
 /usr/share,               gksudo thunar /usr/share,               folder-documents
-/usr/share/fonts,         gksudo thunar /usr/share/fonts,         folder-documents
-/usr/share/icons,         gksudo thunar /usr/share/icons,         folder-documents    
-/usr/share/themes,        gksudo thunar /usr/share/themes,        folder-documents
 /usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
+
+^tag(themes)
+Lilidog Theme Scripts,    thunar ~/.config/lilidog-themes,               folder-documents
+Xfce4 Term Colors,        thunar /usr/share/xfce4/terminal/colorschemes, folder-documents
+Geany Themes,             thunar /usr/share/geany/colorschemes,          folder-documents
+Icons,                    thunar /usr/share/icons,                       folder-documents
+Fonts,                    thunar /usr/share/fonts,                       folder-documents 
+GTK Themes,               thunar /usr/share/themes,                      folder-documents  
+Openbox Themes,           thunar /usr/share/themes,                      folder-documents
+Grub Backgrounds,         thunar /home/wallpaper,                        folder-documents
 
 ^tag(configuration)
 Quick Theme Changer,      ld-theme-changer,                                                     preferences-system
@@ -105,3 +113,4 @@ Xbindkeys Conf,           xbindkeys-config,                                     
 Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                                        document-properties
 Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     applications-games 
 Xfce4-terminal Themes,    ld-term-changer,                                                      utilities-terminal
+Grub Background Changer,  x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
