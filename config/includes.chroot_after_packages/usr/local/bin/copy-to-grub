@@ -1,18 +1,9 @@
 #!/bin/sh
 ### Script to change the grub background.
-### Please select standard monitor sizes for the images.
-### select image directories to be shown. 
+### select image directory to be shown. 
 BGDIR1="/home/wallpaper"
-#BGDIR2="$HOME/Pictures/wildflowers"
-#BGDIR3="/usr/share/backgrounds"
-
-### select background setting mode
-BGSET="--bg-scale"
-#BGSET="--bg-fill"
-#BGSET="--bg-max"
-#BGSET="--bg-tile"
 
 feh -r -t -P -N --scale-down -W 960 -E 100 -y 160 -J 100 --title "Grub-wallpaper" \
 --fontpath /usr/share/fonts/truetype/liberation/ --font LiberationSans-Regular.ttf/10 \
 --index-info "%n" \
---action ";sudo rm /boot/grub/*.png /boot/grub/*.jpg; sudo cp -t /boot/grub %F && sudo update-grub  && notify-send 'Grub Background Changed'; pkill -f copy-to-grub" $BGDIR1 $BGDIR2 $BGDIR3
+--action ";sudo rm /boot/grub/*.png /boot/grub/*.jpg; sudo cp -t /boot/grub %F && sudo update-grub && notify-send 'Grub Background Changed'; pkill -f copy-to-grub" $BGDIR1
