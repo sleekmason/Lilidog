@@ -73,6 +73,8 @@ Go to Menu -> Configuration -> Wallpaper Chooser to change wallpapers. <br/>
 You can also right-click on any image you choose from the file manager to set as background wallpaper. Other right-click <br/>
 options for images include rotation and copying to ~/Pictures.wallpapers. A random wallpaper toggle is included.
 
+- Grub background changer opens a window to choose your own images.
+
 - There are shortcuts for xfce4-power-manager in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
@@ -125,9 +127,7 @@ Currently clockwise from top left: __file manager, toggle Picom, exit menu, and 
 
 __Theme changes:__  
 The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under Configuration. <br/>
-This changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly. 
-Lilidog comes with eight full themes installed. <br/> 
-Lilidog-Bright Lilidog-Light, Lilidog-Grey, Lilidog-Clay, Lilidog-Slate, Lilidog-Dark. Lilidog-Cobalt, and Lilidog-Neon. <br/>
+This changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly. <br/>
 
 __Make your own themes:__ <br/>
 All of the theme files are located in ~/.config/lilidog-themes. This will allow you to change the settings on the existing themes,
