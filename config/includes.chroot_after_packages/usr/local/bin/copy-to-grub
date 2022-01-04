@@ -1,7 +1,7 @@
 #!/bin/sh
 ### Script to change the grub background.
 ### select image directory to be shown. 
-BGDIR1="/home/wallpaper"
+BGDIR1="$HOME/Pictures/grub-bg"
 
 feh -r -t -P -N --scale-down -W 960 -E 100 -y 160 -J 100 --title "Grub-wallpaper" \
 --fontpath /usr/share/fonts/truetype/liberation/ --font LiberationSans-Regular.ttf/10 \
