@@ -5,7 +5,7 @@ Lilidog is a lightweight Linux distro using the Openbox window manager. <br/>
 Lilidog is based on Debian, with most of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize further.
 
-### There are currently three versions of Lilidog available.
+### There are currently four versions of Lilidog available.
 
 - Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use. <br/>
 This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few.
@@ -18,6 +18,8 @@ __sudo apt update && sudo apt install synaptic__ for a graphical interface to ma
 
 - Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release, <br/>
 this is the one for you. You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
+
+- Lilidog-i386 (Bullseye i386 full version) Using the same packages as the amd64 version.
 
 See further below for features.
 
