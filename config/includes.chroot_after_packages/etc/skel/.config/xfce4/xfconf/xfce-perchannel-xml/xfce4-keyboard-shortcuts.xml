@@ -26,7 +26,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="empty"/>
-      <property name="&lt;Super&gt;r" type="empty">
         <property name="startup-notify" type="empty"/>
       </property>
     </property>

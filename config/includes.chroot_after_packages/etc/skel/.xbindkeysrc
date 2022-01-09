@@ -87,5 +87,9 @@
 "toggle.tint2"
    Mod4 + p
 
+#Recents
+"popup -o /usr/local/bin/pipe-recent-files"
+   Mod4 + r
+
 #
 # End of xbindkeys configuration

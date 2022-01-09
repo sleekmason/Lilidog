@@ -19,7 +19,8 @@ __sudo apt update && sudo apt install synaptic__ for a graphical interface to ma
 - Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release, <br/>
 this is the one for you. You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
 
-- Lilidog-i386 (Bullseye i386 full version) Using the same packages as the amd64 version.
+- Lilidog-i386 (Bullseye i386 full version) Uses the same base packages as the amd64 version, but for older hardware. <br/>
+You may need to boot with the kernel parameter 'forcepae' if you have difficulties.
 
 See further below for features.
 

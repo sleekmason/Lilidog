@@ -1,0 +1,80 @@
+#!/bin/bash
+
+HELP="    bl-jgpop launch a simple jgmenu popup menu
+
+Usage:  bl-jgpop -h|--help
+        bl-jgpop [-o|--openbox] <pipemenu_command> [<arguments>]
+        bl-jgpop [-o|--openbox] -f|--file <menu_file>
+    It can be called from a tint2 button or any launcher.
+
+Options:
+    -h --help
+        show this message
+    -o --openbox
+        parse the pipemenu output, or file, as openbox xml (default is csv)
+    -f --file
+        read a file instead of running an executable
+        parsing mode is determined by previous option
+"
+
+parsing='native'
+source='pipe'
+while [[ -n $1 ]]
+do
+    case "$1" in
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    -o|--openbox)
+        parsing='openbox'
+        shift
+        ;;
+    -f|--file)
+        source='file'
+        shift
+        ;;
+    -*)
+        echo "${0}: ${1}: no such option" >&2
+        echo "
+$HELP"
+        exit 1
+        ;;
+    *)
+        hash "$1" >/dev/null || {
+            echo "${0}: $1 is not an executable command" >&2
+            exit 1
+        }
+        src=("$@")
+        break
+        ;;
+    esac
+done
+
+opt='--csv-cmd'
+case "$parsing" in
+native)
+    case "$source" in
+    pipe)
+        arg="${src[@]@Q}" # single-quote command & arguments separately
+        ;;
+    file)
+        arg=${src[0]} # discard any junk arguments after filepath
+        opt='--csv-file'
+        ;;
+    esac
+    ;;
+openbox)
+    case "$source" in
+    pipe)
+        arg="jgmenu_run ob --cmd=\"${src[@]@Q}\"" # command needs extra layer of quotes in case it contains spaces
+        ;;
+    file)
+        arg="jgmenu_run ob '${src[0]}'"
+        ;;
+    esac
+    ;;
+esac
+
+exec jgmenu --simple --icon-size=20 --config-file=<( sed '/menu_padding_top/ s/^/#/' ~/.config/jgmenu/jgmenurc ) "${opt}=${arg}"
+

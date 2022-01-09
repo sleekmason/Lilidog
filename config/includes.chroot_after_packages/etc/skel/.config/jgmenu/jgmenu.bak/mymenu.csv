@@ -18,7 +18,7 @@ Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.p
 ^tag(quickgrab)
 Theme Folders,^checkout(themes),folder
 Root Folders,^checkout(rootfiles),folder
-Writer,             libreoffice,                       libreoffice-writer
+Writer,             abiword,                           abiword
 Smplayer,           smplayer,                          smplayer
 Mousepad,           mousepad,                          accessories-text-editor
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor

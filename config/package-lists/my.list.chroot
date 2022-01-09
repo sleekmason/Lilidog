@@ -1,3 +1,4 @@
+abiword
 acpi
 adwaita-icon-theme
 alsa-oss
@@ -106,8 +107,6 @@ libfile-mimeinfo-perl
 libfm-modules
 libinput-tools
 libnotify-bin
-libreoffice-gtk3
-libreoffice-writer
 libqt5svg5
 lightdm
 lightdm-gtk-greeter-settings
