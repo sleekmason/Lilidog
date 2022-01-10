@@ -30,7 +30,7 @@ case ${cmd%% *} in
 	Thunderbird)		exec thunderbird ;;
 	Pragha) 		exec pragha ;;
 	Smplayer)		exec smplayer ;;
-	Writer)			exec libreoffice ;;
+	Writer)			exec abiword ;;
 	Gimp)			exec gimp ;;
 	Gpicview)		exec gpicview ;;
 	Synaptic)		exec gksudo synaptic ;;
