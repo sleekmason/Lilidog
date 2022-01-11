@@ -1,0 +1,54 @@
+#!/bin/bash
+# Command-line world clock by PPC 1/9/2022, GPL license
+# Adapted for Lilidog by sleekmason 1-10-2022
+# Originally Adapted from https://gist.github.com/rangersmyth74/4c7e291b64d48c1beb7029e9b07b6bca
+# and examples from stackoverflow: https://stackoverflow.com/questions/370075/command-line-world-clock
+
+# create preference file $HOME/.time-zones, if it's missing
+if [ ! -f $HOME/.time-zones ]; then
+echo "Asia/Tokyo
+Asia/Hong_Kong
+Pacific/Auckland
+Australia/Melbourne
+Europe/Athens
+Europe/Berlin
+Europe/London
+Europe/Moscow
+America/Los_Angeles
+America/Chicago
+America/New_York
+US/Hawaii" > $HOME/.time-zones
+fi
+
+worldtz () {
+	: ${WORLDCLOCK_ZONES:=$HOME/.time-zones}
+: ${WORLDCLOCK_FORMAT:='+%Y-%m-%d %H:%M:%S %Z'}
+echo
+echo "		CLI World Clock:"
+echo
+local_time=$(date "$WORLDCLOCK_FORMAT")
+echo "Local Time	       $local_time"
+echo
+while read zone
+do echo $zone '!' $(TZ=$zone date "$WORLDCLOCK_FORMAT")
+
+done < $WORLDCLOCK_ZONES |
+awk -F '!' '{ printf "%-20s  %s\n", $1, $2;}' |
+sort -b -r -k2,2 -k3,3
+echo
+echo "You can manage the displayed time zones by editing the file:"
+echo "$HOME/.time-zones. The list of available"
+echo "time zones can be found here:"
+echo
+echo "https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"
+echo
+echo
+echo "Press any key to exit"
+#sleep 1;
+}
+
+export -f worldtz
+watch -t -n 1 -x bash -c worldtz  &   # put function in the background
+read -n 1
+kill $!               # kill the the job most recently placed into the background
+read -t 0.1 -n 1000000
