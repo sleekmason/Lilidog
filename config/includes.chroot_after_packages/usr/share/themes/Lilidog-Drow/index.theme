@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Lilidog-Buff
-Comment=Lilidog-Buff based off Greybird theme
+Name=Lilidog-Drow
+Comment=Lilidog-Drow based off Greybird theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Lilidog-Buff
-MetacityTheme=Lilidog-Buff
+GtkTheme=Lilidog-Drow
+MetacityTheme=Lilidog-Drow
 IconTheme=Adwaita
 CursorTheme=Adwaita
 ButtonLayout=:minimize,maximize,close

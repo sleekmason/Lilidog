@@ -7,16 +7,15 @@ yad --title "Quick Themes" \
 --window-icon=applications-utilities \
     --form \
     --field="":LBL "" \
-    --field="   Lilidog Neon!$HOME/.config/lilidog-themes/icons/paw-neon.png!":BTN "$HOME/.config/lilidog-themes/neon-theme" \
-    --field=" Lilidog Cobalt!$HOME/.config/lilidog-themes/icons/paw-cobalt.png!":BTN "$HOME/.config/lilidog-themes/cobalt-theme" \
-    --field="    Lilidog Dark!$HOME/.config/lilidog-themes/icons/paw-dark.png!":BTN "$HOME/.config/lilidog-themes/dark-theme" \
-    --field="  Lilidog Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":BTN "$HOME/.config/lilidog-themes/taupe-theme" \
-    --field="     Lilidog Buff!$HOME/.config/lilidog-themes/icons/paw-buff.png!":BTN "$HOME/.config/lilidog-themes/buff-theme" \
-    --field="   Lilidog Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":BTN "$HOME/.config/lilidog-themes/slate-theme" \
-    --field="    Lilidog Clay!$HOME/.config/lilidog-themes/icons/paw-clay.png!":BTN "$HOME/.config/lilidog-themes/clay-theme" \
-    --field="    Lilidog Grey!$HOME/.config/lilidog-themes/icons/paw-grey.png!":BTN "$HOME/.config/lilidog-themes/grey-theme" \
-    --field="    Lilidog Light!$HOME/.config/lilidog-themes/icons/paw-light.png!":BTN "$HOME/.config/lilidog-themes/light-theme" \
-    --field="  Lilidog Bright!$HOME/.config/lilidog-themes/icons/paw-bright.png!":BTN "$HOME/.config/lilidog-themes/bright-theme" \
+    --field="     Dark!$HOME/.config/lilidog-themes/icons/paw-dark.png!":BTN "$HOME/.config/lilidog-themes/dark-theme" \
+    --field="   Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":BTN "$HOME/.config/lilidog-themes/taupe-theme" \
+     --field="    Drow!$HOME/.config/lilidog-themes/icons/paw-drow.png!":BTN "$HOME/.config/lilidog-themes/drow-theme" \
+    --field="    Earth!$HOME/.config/lilidog-themes/icons/paw-earth.png!":BTN "$HOME/.config/lilidog-themes/earth-theme" \
+    --field="    Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":BTN "$HOME/.config/lilidog-themes/slate-theme" \
+    --field="     Clay!$HOME/.config/lilidog-themes/icons/paw-clay.png!":BTN "$HOME/.config/lilidog-themes/clay-theme" \
+    --field="     Grey!$HOME/.config/lilidog-themes/icons/paw-grey.png!":BTN "$HOME/.config/lilidog-themes/grey-theme" \
+    --field="     Light!$HOME/.config/lilidog-themes/icons/paw-light.png!":BTN "$HOME/.config/lilidog-themes/light-theme" \
+    --field="   Bright!$HOME/.config/lilidog-themes/icons/paw-bright.png!":BTN "$HOME/.config/lilidog-themes/bright-theme" \
     --field="":LBL "" \
     --field="      Wallpaper Changer!wallpaper":FBTN "feh-set-wallpaper" \
     --field="           LightDM Theme!preferences-system":FBTN "gksudo lightdm-gtk-greeter-settings" \
