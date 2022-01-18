@@ -1,0 +1,28 @@
+#!/bin/bash
+# Small script to toogle tint2 clock between 12h/24h
+###
+# The script was created by PPC
+# adapted for use in Lilidog by sleekmason 1-15-2022
+
+original_time_format=$(grep -E "^time1_format =" ~/.config/tint2/tint2rc | cut -d'=' -f2)
+SUB='%H'
+
+if [[ "$original_time_format" == *"$SUB"* ]]; then
+sed -i 's/%H/%I/g' ~/.config/conky/conky-clock-date.conf
+sed -i 's/%H/%I/g' ~/.config/conky/conky-shortcuts.conf
+seleccao="%d %b %I:%M"
+notify-send "Time Format Changed To 12H"
+  else
+sed -i 's/%I/%H/g' ~/.config/conky/conky-clock-date.conf
+sed -i 's/%I/%H/g' ~/.config/conky/conky-shortcuts.conf
+seleccao="%d %b %H:%M"
+notify-send "Time Format Changed To 24H"
+fi
+
+#Edit changes in tint2rc config file
+sed -i "/^time1_format =/s/$original_time_format/ $seleccao/g" ~/.config/tint2/tint2rc
+
+# restart tint2
+pkill -x tint2
+tint2 &
+exit

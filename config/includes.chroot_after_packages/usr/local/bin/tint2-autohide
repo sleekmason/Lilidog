@@ -1,0 +1,23 @@
+#!/bin/bash
+# Small script to toogle tint2 toolbar auto hide
+###
+# The script was created by PPC
+#adapted for Lilidog by sleekmason 1-15-22
+
+original_auto_hide=$(grep -E "^autohide =" ~/.config/tint2/tint2rc | cut -d'=' -f2)
+SUB='0'
+
+if [[ "$original_auto_hide" == *"$SUB"* ]]; then
+  notify-send "Autohide On"
+  seleccao="1"
+  else 
+  notify-send "Autohide Off"
+  seleccao="0"
+fi
+
+sed -i "/^autohide =/s/$original_auto_hide/ $seleccao/g" ~/.config/tint2/tint2rc
+
+# restart tint2
+	pkill -x tint2
+	nohup tint2 &
+	exit

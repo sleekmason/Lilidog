@@ -1,0 +1,21 @@
+#!/bin/bash
+# Toggle tint2 position from bottom to top.
+# Made by sleekmason 1-15-2022
+# Original toggle script by ppc
+
+position=$(grep -E "^panel_position =" ~/.config/tint2/tint2rc | cut -d'=' -f2)
+SUB='bottom center horizontal'
+
+if [[ "$position" == *"$SUB"* ]]; then
+selection="top center horizontal"
+  else
+selection="bottom center horizontal"
+fi
+
+#Edit changes in tint2rc config file
+sed -i "/^panel_position =/s/$position/ $selection/g" ~/.config/tint2/tint2rc
+
+# restart tint2
+pkill -x tint2
+tint2 &
+exit
