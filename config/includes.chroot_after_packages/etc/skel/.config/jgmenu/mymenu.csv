@@ -73,8 +73,8 @@ Gammy,               toggle.gammy,                                  object-flip-
 Clipboard,           toggle.parcellite,                             object-flip-horizontal
 Hotcorners,          toggle.ld,                                     object-flip-horizontal
 Random BG,           toggle-wallpaper-random,                       object-flip-horizontal
-X-screensaver,       toggle.xscreensaver,                           object-flip-horizontal
-12H/24H Clock,       tint2-12to24,                                  object-flip-horizontal
+Xscreensaver,        toggle.xscreensaver,                           object-flip-horizontal
+Tint2 12H/24H,       tint2-12to24,                                  object-flip-horizontal
 Tint2 Autohide,      tint2-autohide,                                object-flip-horizontal
 Tint2 Position,      tint2-position,                                object-flip-horizontal
 Tint2 Panel,         toggle.tint2,                                  object-flip-horizontal

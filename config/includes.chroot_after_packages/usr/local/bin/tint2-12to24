@@ -8,15 +8,11 @@ original_time_format=$(grep -E "^time1_format =" ~/.config/tint2/tint2rc | cut -
 SUB='%H'
 
 if [[ "$original_time_format" == *"$SUB"* ]]; then
-sed -i 's/%H/%I/g' ~/.config/conky/conky-clock-date.conf
-sed -i 's/%H/%I/g' ~/.config/conky/conky-shortcuts.conf
+notify-send "Tint2 Time Format Changed To 12H"
 seleccao="%d %b %I:%M"
-notify-send "Time Format Changed To 12H"
   else
-sed -i 's/%I/%H/g' ~/.config/conky/conky-clock-date.conf
-sed -i 's/%I/%H/g' ~/.config/conky/conky-shortcuts.conf
+notify-send "Tint2 Time Format Changed To 24H" 
 seleccao="%d %b %H:%M"
-notify-send "Time Format Changed To 24H"
 fi
 
 #Edit changes in tint2rc config file
