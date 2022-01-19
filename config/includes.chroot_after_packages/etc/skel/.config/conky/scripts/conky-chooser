@@ -20,5 +20,6 @@ yad --title "Conky" --button=gtk-close:1 --form --center --width=230 \
     --field="Full Conky":BTN "bash -c 'toggle_conky conky-full'" \
     --field="Fortunes":BTN "bash -c 'toggle_conky conky-fortunes'" \
     --field="World Clock":BTN "bash -c 'toggle_conky conky-world-clock'" \
+    --field="12H/24H Format":BTN "bash -c 'conky-12to24'" \
     --field="Restart Conky":FBTN "killall -SIGUSR1 conky" \
     --field="Kill Conky":FBTN "killall conky" 
