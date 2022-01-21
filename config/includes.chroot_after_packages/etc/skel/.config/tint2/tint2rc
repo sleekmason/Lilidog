@@ -174,11 +174,11 @@ time2_timezone =
 clock_font_color = #93adac 100
 clock_padding = 3 0
 clock_background_id = 0
-clock_tooltip = left-click = Calendar * middle-click = 12H vs. 24H * right-click = World Clock .
+clock_tooltip = left-click = Calendar - right-click = World Clock
 clock_tooltip_timezone = 
 clock_lclick_command = gsimplecal
 clock_rclick_command = x-terminal-emulator -T 'World Clock' -e bash -c "worldclock"
-clock_mclick_command = tint2-12to24 &
+clock_mclick_command =
 clock_uwheel_command = 
 clock_dwheel_command = 
 
