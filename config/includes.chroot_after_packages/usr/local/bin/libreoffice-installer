@@ -8,8 +8,8 @@ read -p "   Libreoffice Installer
    and other sensible extras. Hunspell will default to US EN. 
    Other languages available.
    
-   Please note that Abiword is already installed in the full 
-   versions if all you need is a writer.
+   Please note that libreoffice-writer is already installed in the
+   full versions if all you need is a writer.
    
    --------------------------------------------------------------
    
@@ -24,7 +24,8 @@ sudo apt update && sudo apt install libreoffice libreoffice-gtk3 \
 hunspell-en-us hyphen-en-us cups-bsd libsane libxrender1 libgl1 libpaper-utils \
 fonts-dejavu fonts-liberation2 fonts-linuxlibertine fonts-noto-core fonts-noto-extra &&
 sed -i '/Libreoffice,             libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Libreoffice,             libreoffice,                       libreoffice-writer' ~/.config/jgmenu/mymenu.csv
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Libreoffice,             libreoffice,                       libreoffice-writer' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Writer,             libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv
 killall jgmenu
 echo ""
 echo ""
