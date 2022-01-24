@@ -15,10 +15,11 @@ yad --title "Conky" --button=gtk-close:1 --form --center --width=230 \
 --height=330 --text="\n Please Toggle \n Your Selections. \n" --text-align=center \
 --window-icon=applications-system \
     --form \
-    --field="Shortcuts":BTN "bash -c 'toggle_conky conky-shortcuts'" \
     --field="Clock":BTN "bash -c 'toggle_conky conky-clock-date'" \
-    --field="Full Conky":BTN "bash -c 'toggle_conky conky-full'" \
+    --field="Full Info":BTN "bash -c 'toggle_conky conky-full'" \
+    --field="Shortcuts":BTN "bash -c 'toggle_conky conky-shortcuts'" \
     --field="Fortunes":BTN "bash -c 'toggle_conky conky-fortunes'" \
+    --field="Weather":BTN "bash -c 'toggle_conky conky-weather'" \
     --field="World Clock":BTN "bash -c 'toggle_conky conky-world-clock'" \
     --field="12H/24H Format":BTN "bash -c 'conky-12to24'" \
     --field="Restart Conky":FBTN "killall -SIGUSR1 conky" \
