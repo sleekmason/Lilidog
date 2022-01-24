@@ -12,7 +12,7 @@ fi
 export -f toggle_conky
 
 yad --title "Conky" --button=gtk-close:1 --form --center --width=230 \
---height=330 --text="\n Please Toggle \n Your Selections. \n" --text-align=center \
+--height=430 --text="\n Please Toggle \n Your Selections. \n" --text-align=center \
 --window-icon=applications-system \
     --form \
     --field="Clock":BTN "bash -c 'toggle_conky conky-clock-date'" \
