@@ -123,16 +123,16 @@ and set the gamma and brightness of your screen for different times of your choi
 - Swapid script for the frequent dual installer. This grabs your swap uuid and opens the appropriate windows to edit.
 Run 'swapid' in a terminal after installing another distro to a different partition.
 
-- ld-hotcorners - Each corner of the screen responds to a command. <br/>
-Turn it on with the button in the lower left corner or under Toggles in the menu. <br/>
-Change the corners in ~/.config/ld-hotcorners. <br/>
-Currently clockwise from top left: __file manager, toggle Picom, exit menu, and terminal__. <br/>
+- ld-hotcorners - Each corner of the screen responds to a command.
+Turn it on with the button in the lower left corner or under Toggles in the menu.
+Change the corners in ~/.config/ld-hotcorners.
+Currently clockwise from top left: __file manager, toggle Picom, exit menu, and terminal.
 
 ### Instructions For Various Tasks:
 
 __Theme changes:__  
-The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under Configuration. <br/>
-This changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly. <br/>
+The easiest way to change themes is with the 'Quick Theme Changer' located in the menu under Configuration.
+This changes The GTK theme, Openbox theme, Geany theme, Lightdm, wallpaper, menu, and terminal theme all on the fly.
 
 __Make your own themes:__ <br/>
 All of the theme files are located in ~/.config/lilidog-themes. This will allow you to change the settings on the existing themes,
