@@ -10,16 +10,15 @@ Everything is easily accessible, with numerous options to customize further.
 - Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use. <br/>
 This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few.
 
-- Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog <br/>
-while allowing you to choose most all of your OWN packages. <br/> 
-Currently contains xfce4-terminal, Thunar, and Mousepad to get you started. <br/>
-Design your system with any other programs you might like. <br/>
-__sudo apt update && sudo apt install synaptic__ for a graphical interface to make installing your programs easier. <br/>
+- Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog while allowing you to choose most all of
+your OWN packages. Currently contains xfce4-terminal, Thunar, and Mousepad to get you started.
+Design your system with any other programs you might like.
+__sudo apt update && sudo apt install synaptic__ for a graphical interface to make installing your programs easier.
 
-- Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release, <br/>
+- Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release,
 this is the one for you. You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
 
-- Lilidog-i386 (Bullseye i386 full version) Uses the same base packages as the amd64 version, but for older hardware. <br/>
+- Lilidog-i386 (Bullseye i386 full version) Uses the same base packages as the amd64 version, but for older hardware.
 You may need to boot with the kernel parameter 'forcepae' if you have difficulties.
 
 See further below for features.
