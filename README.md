@@ -62,37 +62,41 @@ Lilidog: <br/>
 - Based on Debian with contrib and non-free sources enabled by default. <br/>
 Debian backport sources can be added during installation in the stable build when using the 'expert' installer. 
 
-- These are 'no --recommends' builds. This means only the required dependancies are included during package install. <br/>
+- These are 'no --recommends' builds. This means only the required dependencies are included during package install. <br/>
 This leaves out any recommended or suggested packages, allowing for complete control over package installation. <br/>
 No unwanted packages will be installed by default. This can be changed after install if desired. <br/>
 
-- Tint2 panel by default, with an options for FbPanel. Try them both under 'Toggles' in the menu.
+- Tint2 is the panel by default, with an options for FbPanel. Look under Toggles in the menu for some other nifty options, <br/>
+as well including toggles for the position (top or bottom), autohide, Tint2 time format (12/24H), and on/off. A separate <br/>
+keybind is included to toggle the panel on/off: "Super + p".
 
 - Jgmenu is the menu for all versions.  Huge amount of customization available. <br/>
-Go to menu -> configuration -> jgmenu.conf for how to change items. For themes, go to Jgmenu Theme Changer and use "o" or "g".
+Go to menu -> configuration -> jgmenu.conf for how to change and add items. 
 
 - Wallpapers - Handled by Feh.  Place any image you would like to use as a wallpaper in ~/Pictures/wallpapers. <br/>
 Go to Menu -> Configuration -> Wallpaper Chooser to change wallpapers. <br/>
 You can also right-click on any image you choose from the file manager to set as background wallpaper. Other right-click <br/>
 options for images include rotation and copying to ~/Pictures.wallpapers. A random wallpaper toggle is included.
 
-- Grub background changer opens a window to choose your own images.
+- Grub background changer opens a window to choose your own images. Lilidog ships with six to give you an intitial <br/>
+choice before finding your own to add to the collection.
 
 - There are shortcuts for xfce4-power-manager in the battery icon. <br/>
 To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page. <br/>
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
 - Xscreensaver and other handy startup apps readily available through the toggles in the menu, <br/>
-or can be activated on login by adding to the autostart cconfiguration file.
+or can be activated on login by adding to the autostart configuration file.
 
 - Dmenu for an alternate menu source. - ALT + F2 pulls the full Dmenu up, while ALT + F3 pulls up a <br/>
-customized Dmenu with only the most commonly used apps.
+customized Dmenu with only the most commonly used apps. Look under Configuration in the menu to change items.
 
 - Wbar for icons on the desktop if desired. activate from Toggles in the menu. Fun to configure!
 
-- Thunar is the default file manager.  Custom right-click options are already added as well.
+- Thunar is the default file manager.  Custom right-click options are already added as well. These include everything from <br/>
+"Open as Root', to different rotations and sizing of pics, to comparisons of files using Meld. And more.
 
-- Custom Lilidog Openbox and GTK themes, and matching themes for Geany and Mousepad. <br/> 
+- Custom Lilidog Openbox and GTK themes, and matching themes for Geany and Xfce4-terminal. <br/> 
 The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used. (see "instructions" below.)
 
 - Xfce4-terminal is default, with URXVT also installed. Use "App Alternatives in the menu <br/>
@@ -100,23 +104,22 @@ The fonts are Liberation Sans, except for urxvt and Conky, where Dejavu is used.
 
 - URXVT terminal has font size control (ctl+up/down), transparency, and opens urls in Firefox. <br/>
 
-- Conky Chooser in toggles allows for toggling different conky's, and has all sorts of relevant info, <br/>
-including connected drives, number of packages installed, and more. 
+- Conky Chooser in the toggles section of the menu contains toggles for six different Conkys and the time format shown. All of <br/>
+the Conkys contain relevant info. These include a Clock, Full Info, Fortunes, Shortcuts, Worldclock, and Current Conditions. <br/>
+Please note that "Current Conditions" takes a moment to initialize.  Mix, match, change, etc. Everything is located in the <br/>
+conky folder ~/.config/conky including the Conky Chooser script.
 
-- Picom Composite Manager with transparency enabled. Look in the configuration menu to access ~/.config/picom.conf.
+- Picom Composite Manager with transparency enabled. Look in the configuration menu to access ~/.config/picom.conf in order to <br/>
+change transparency, shadows, and more.
 
-- Gammy screen color and lightness control located in Toggles, and from the keyboard.
+- Gammy screen color and lightness control located in Toggles, and from the keybind "Super + g". This will allow you to change <br/>
+and set the gamma and brightness of your screen for different times of your choice, or simply as a toggle when desired.
 
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
 - System notifications enabled with Dunst.
 
 - Menu Extras - Install menu with options for Liquorix kernel, Qemu, Virtualbox (sid), Steam, Etcher, and more.
-
-- All custom scripts are in /usr/local/bin.  Some of the fun ones are: <br/>
-winfuncs tiler - For tiling and such. Set your own keybinds! <br/>
-Try: __winfuncs cascade__ or __winfuncs showdesktop__  in a terminal with a couple of windows open to get the idea. <br/>
-Look at the script in /usr/local/bin for the rest of the options.
 
 - Swapid script for the frequent dual installer. This grabs your swap uuid and opens the appropriate windows to edit. <br/>
 Run 'swapid' in a terminal after installing another distro to a different partition.
