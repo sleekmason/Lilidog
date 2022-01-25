@@ -33,20 +33,20 @@ Geany,              geany,	                       geany
 Icon Browser,       yad-icon-browser,                  galternatives
 
 ^tag(utilities)
-Screenshot,         gnome-screenshot -i,              preferences-desktop-theme
+Screenshot,         gnome-screenshot -i,               preferences-desktop-theme
 Htop,               x-terminal-emulator -T 'Htop' -e htop,                    htop
-Gparted,            gksudo gparted,                   gparted
+Gparted,            gksudo gparted,                    gparted
 Quick Info,         x-terminal-emulator -T 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
-Transmission,       transmission-gtk,                 transmission
-Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
-Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
-App Alternatives,   galternatives,                    preferences-system
-Color Chooser,      yad --color,                      yad
-Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
-Luckybackup,        export QT_QPA_PLATFORMTHEME=gtk2 && luckybackup,  luckybackup
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
-Galculator,         galculator,                       galculator
-Synaptic,           gksudo synaptic,                  synaptic
+Transmission,       transmission-gtk,                     transmission
+Color Chooser,      yad --color,                       yad
+Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
+Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
+App Alternatives,   galternatives,                     preferences-system
+Lucky Backup,       export QT_QPA_PLATFORMTHEME=gtk2 && luckybackup,  luckybackup
+Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
+Galculator,         galculator,                        galculator
+Synaptic,           gksudo synaptic,                   synaptic
 Extras,             ^checkout(extras),                 applications-system
 
 ^tag(extras)
