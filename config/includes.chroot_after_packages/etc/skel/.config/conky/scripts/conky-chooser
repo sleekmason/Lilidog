@@ -21,6 +21,6 @@ yad --title "Conky" --button=gtk-close:1 --form --center --width=230 \
     --field="Shortcuts":BTN "bash -c 'toggle_conky conky-shortcuts'" \
     --field="World Clock":BTN "bash -c 'toggle_conky conky-world-clock'" \
     --field="Current Conditions":BTN "bash -c 'toggle_conky conky-current'" \
-    --field="12H/24H Format":BTN "bash -c 'conky-12to24'" \
+    --field="12H/24H Format":BTN "bash -c '~/.config/conky/scripts/conky-12to24'" \
     --field="Restart Conky":FBTN "killall -SIGUSR1 conky" \
     --field="Kill Conky":FBTN "killall conky" 
