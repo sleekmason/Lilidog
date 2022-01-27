@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Made by sleekmason 1-27-2022
+
+metric_format=$(grep -E "\&m" ~/.config/conky/conky-current.conf)
+
+if [[ "$metric_format" ]]; then
+sed -i 's/\\\&m//g' ~/.config/conky/conky-current.conf
+notify-send "Current Conditions Conky Format Changed To US"
+  else
+sed -i 's/%t/%t\\\&m/g' ~/.config/conky/conky-current.conf
+sed -i 's/%w/%w\\\&m/g' ~/.config/conky/conky-current.conf
+notify-send "Current Conditions Conky Format Changed To Metric"
+fi
+
+exit
