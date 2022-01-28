@@ -1,0 +1,15 @@
+#!/bin/bash
+#Virtual Manager auto resolution change by sleekmason 1-27-22
+
+if grep hypervisor /proc/cpuinfo ; then
+
+notify-send "Virtual Machine Detected
+Adjusting Initial Resolution
+To 1440x900."
+    xrandr -s "1440x900" && ~/.fehbg
+else
+notify-send "Not In A Virtual Machine.
+Exiting Script."
+exit
+
+fi
