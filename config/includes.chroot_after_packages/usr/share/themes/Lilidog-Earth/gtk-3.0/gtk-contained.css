@@ -2581,9 +2581,9 @@ scrollbar {
     border-color: #7F7F7F;
     transition: 200ms ease-out; }
   scrollbar slider {
-    min-width: 7px;
-    min-height: 7px;
-    margin: 3px;
+    min-width: 9px;
+    min-height: 9px;
+    margin: 2px;
     border: 1px solid #525252;
     border-radius: 10px;
     background-clip: padding-box;
@@ -2609,8 +2609,8 @@ scrollbar {
     background-color: transparent; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
       margin: 0;
-      min-width: 6px;
-      min-height: 6px;
+      min-width: 7px;
+      min-height: 7px;
       background-color: shade(#DBDBDB, 0.9);
       background-image: none;
       border: 1px solid #DEDEDE; }
