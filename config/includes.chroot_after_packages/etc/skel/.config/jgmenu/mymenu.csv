@@ -77,6 +77,7 @@ Xscreensaver,        toggle.xscreensaver,                           object-flip-
 Tint2 12H/24H,       tint2-12to24,                                  object-flip-horizontal
 Tint2 Autohide,      tint2-autohide,                                object-flip-horizontal
 Tint2 Position,      tint2-position,                                object-flip-horizontal
+Tint2 Shrink,        tint2-shrink,                                  object-flip-horizontal
 Tint2 Panel,         toggle.tint2,                                  object-flip-horizontal
 Fbpanel,             toggle.fbpanel,                                object-flip-horizontal
 Picom,               toggle.picom,                                  object-flip-horizontal

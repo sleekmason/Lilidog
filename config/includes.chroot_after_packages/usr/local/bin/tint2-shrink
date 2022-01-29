@@ -1,0 +1,22 @@
+#!/bin/bash
+# Toggle tint2 Shrink toggle on/off.
+# Made by sleekmason 1-15-2022
+
+trans=$(grep -E "^panel_shrink =" ~/.config/tint2/tint2rc | cut -d'=' -f2)
+SUB='0'
+
+if [[ "$trans" == *"$SUB"* ]]; then
+selection="1"
+notify-send "Tint2 Panel Shrink On"
+  else
+selection="0"
+notify-send "Tint2 Panel Shrink Off"
+fi
+
+#Edit changes in tint2rc config file
+sed -i "/^panel_shrink =/s/$trans/ $selection/g" ~/.config/tint2/tint2rc
+
+# restart tint2
+pkill -x tint2
+tint2 &
+exit
