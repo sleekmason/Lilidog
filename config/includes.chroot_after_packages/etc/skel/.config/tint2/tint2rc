@@ -176,7 +176,7 @@ clock_padding = 3 0
 clock_background_id = 0
 clock_tooltip = Left-Click = Calendar - Middle-Click = Time Format - Right-Click = World Clock
 clock_tooltip_timezone = 
-clock_lclick_command = gsimplecal
+clock_lclick_command = calendar
 clock_rclick_command = x-terminal-emulator -T 'World Clock' -e bash -c "worldclock"
 clock_mclick_command = tint2-12to24 &
 clock_uwheel_command = 

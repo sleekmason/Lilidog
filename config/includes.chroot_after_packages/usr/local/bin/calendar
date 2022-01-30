@@ -1,0 +1,73 @@
+#!/bin/bash
+################################
+# Yad calendar that allows to enter and view events, created for use with antiX Linux
+#Version 2- 14/01/2022, by PPC, GPL license, use as you wish, but please keep this atribution lines
+# Adapted for use in Lilidog by Sleekmason 1-28-2022 With much thanks to PPC for this useful program. 
+
+Adicionar_evento(){
+# Day without event, add one...
+event=$(yad --window-icon="/usr/share/icons/gnome/24x24/apps/accessories-text-editor.png" --width=800 --form --center --title="$day ..." --field="") && event=${event%|*}
+space=" "
+text=$day$space$event
+echo "$text" >> "$HOME/calendar.txt"
+exit
+}
+
+Editar_evento(){
+# Day with existing event, edit it...
+entrada=$(grep -h "$day" "$HOME/calendar.txt")
+line=($(grep -n "$day" "$HOME/calendar.txt" | head -n 1 | cut -d: -f1))
+altered_entry=$(yad --window-icon="/usr/share/icons/gnome/24x24/apps/accessories-text-editor.png" --width=800 --center --title="$day" --button="OK" --form --field="" "$entrada")
+#remove last unecessary character
+entry=${altered_entry%|*}
+#save text into the original line
+awk -v line="$line" -v texto="$entry" 'NR=='line' {$0='texto'} { print }' "$HOME/calendar.txt" > "$HOME/.cache/calendar.txt.TEMP"
+cp "$HOME/.cache/calendar.txt.TEMP" "$HOME/calendar.txt"
+exit
+}
+
+search_event(){
+ ###future entry to search for events:
+  event_to_search=$( yad --window-icon="/usr/share/icons/gnome/24x24/apps/accessories-text-editor.png" --title="Search" --center --width=250 --entry --entry-label="" --button=" !"/usr/share/icons/gnome/22x22/actions/stock_search.png"")
+  rm /tmp/agenda_search_results.txt
+ #Display results, only if something was searched
+ if [ -z "${event_to_search}" ]; then exit; else grep -i "$event"_to_search "$HOME/calendar.txt" > /tmp/agenda_search_results-desorganized.txt
+   grep -i "$event_to_search" "$HOME/calendar.txt" > /tmp/agenda_search_results-desorganized.txt
+   sort -n -t"/" -k3 -k2 -k1 /tmp/agenda_search_results-desorganized.txt > /tmp/agenda_search_results.txt
+   yad --window-icon="/usr/share/icons/gnome/24x24/apps/accessories-text-editor.png" --title="Search Results" --no-buttons  --width=550 --height=550 --center --separator=" " --list  --column=""  < /tmp/agenda_search_results.txt
+    #pkill yad
+    exit 1
+ fi    
+}
+
+#import functions and make sure that the default config file exists
+export -f Adicionar_evento Editar_evento search_event
+touch ~/calendar.txt && [ -s ~/calendar.txt ] || echo "
+                  ##### CALENDAR ENTRIES #####
+
+You can add entries directly here or by clicking on any date in the 
+calendar. Please add ONLY ONE line per day, beginning with the date.
+ 
+Please see the example below, taking note of the date format used:
+
+------------------------------------------------------------------
+01/28/2022 This is an example. Entries stored in '~/calendar.txt'" > "$HOME/calendar.txt"
+
+#Main part of the script:
+#New section: on the top of the month view, display todays event's if any;
+today=$(date +%x)
+todays_events=$(grep "$today" "$HOME/calendar.txt")
+#Draw main window
+day=$(yad --borders=10 --window-icon="/usr/share/icons/gnome/24x24/apps/accessories-text-editor.png" --calendar --geometry=280x90-40-50 --title="Calendar" --text="$todays_events" --details=$HOME/calendar.txt  --button=" !"/usr/share/icons/gnome/22x22/actions/stock_search.png"":"bash -c search_event" --button="Close"!"/usr/share/icons/gnome/22x22/actions/gtk-delete.png":1)
+if [[ $foo -eq 1 ]]; then
+    exit 1
+  fi
+#If no date selected, just exit
+[ -z "$day" ] && exit
+
+#If a date was selected, see if has an event and run the corresponding function
+if grep -q "$day" "$HOME/calendar.txt"; then
+   Editar_evento
+   else
+   Adicionar_evento
+fi
