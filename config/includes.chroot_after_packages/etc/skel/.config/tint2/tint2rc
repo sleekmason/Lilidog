@@ -412,10 +412,10 @@ button_max_icon_size = 22
 button = new
 button_icon = /usr/share/icons/ld-icons/upgrade.png
 button_text = 
-button_tooltip = Apt Updater
+button_tooltip = Right/Left Click = Apt Updater - Middle Click = Synaptic
 button_lclick_command = x-terminal-emulator -T 'simple Apt Updater' -e bash -c "simple-apt-updater; echo $'\n\nPress any key to close.'; read -srn1"
 button_rclick_command = x-terminal-emulator -T 'simple Apt Updater' -e bash -c "simple-apt-updater; echo $'\n\nPress any key to close.'; read -srn1"
-button_mclick_command = 
+button_mclick_command = gksudo synaptic &
 button_uwheel_command = 
 button_dwheel_command = 
 button_font_color = #000000 100
