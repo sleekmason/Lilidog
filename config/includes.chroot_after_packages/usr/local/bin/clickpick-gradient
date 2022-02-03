@@ -6,7 +6,7 @@
 
 # pick two color and set that gradient as wallpaper
 yad --title "Clickpick Gradient" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
---width=310 --height=360 --center --button="OK"!/usr/share/icons/ld-icons/paw-color.png \
+--width=310 --height=480 --center --button="OK"!/usr/share/icons/ld-icons/paw-color.png \
 --text-info --justify=center --wrap < /usr/share/lilidog/clickpick-gradient.txt --fontname=" Dejavu Sans 11"
 
 one="$(gpick -p -s -o)"

@@ -10,7 +10,14 @@ make a gradient wallpaper.
 Or press Esc a few times
 to exit.
 	
-Image stored as Gradient.png
-in ~/Pictures/wallpapers
+Your wallpaper will change
+to your new selection.
+
+Your old wallpaper is where
+you left it.
+
+Your new wallpaper will be 
+stored as Gradient.png in
+~/Pictures/wallpapers
 
 Rename to save.
