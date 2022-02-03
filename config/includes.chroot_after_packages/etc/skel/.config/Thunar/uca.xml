@@ -84,6 +84,15 @@
 	<image-files/>
 </action>
 <action>
+	<icon>edit-copy</icon>
+	<name>Copy To Wallpapers</name>
+	<unique-id>1639488556315144-1</unique-id>
+	<command>cp -t $HOME/Pictures/wallpapers %F; notify-send &quot;Copied To Wallpapers&quot;</command>
+	<description>Copy the chosen image to the wallpaper directory.</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
 	<icon>thunderbird</icon>
 	<name>Attach To Thunderbird</name>
 	<unique-id>1610135671429381-1</unique-id>
@@ -114,11 +123,20 @@
 	<image-files/>
 </action>
 <action>
-	<icon>edit-copy</icon>
-	<name>Copy To Wallpapers</name>
-	<unique-id>1639488556315144-1</unique-id>
-	<command>cp -t $HOME/Pictures/wallpapers %F; notify-send &quot;Copied To Wallpapers&quot;</command>
-	<description>Copy the chosen image to the wallpaper directory.</description>
+	<icon>gpick</icon>
+	<name>Clickpick BG Gradient</name>
+	<unique-id>1643818839735115-1</unique-id>
+	<command>feh --geometry 640x400+28+28 --scale-down --image-bg black %f &amp; clickpick-gradient</command>
+	<description>Choose two colors to make a gradient wallpaper.</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>gpick</icon>
+	<name>Clickpick BG Single</name>
+	<unique-id>1643754305409176-1</unique-id>
+	<command>feh --geometry 640x400+28+28 --scale-down --image-bg black %f &amp; clickpick</command>
+	<description>Choose a single color to make a wallpaper.</description>
 	<patterns>*</patterns>
 	<image-files/>
 </action>

@@ -1,0 +1,16 @@
+	
+Gradient Wallpaper Maker
+	
+Select OK to activate the
+color picker.
+
+Click on any two colors to
+make a gradient wallpaper.
+	
+Or press Esc a few times
+to exit.
+	
+Image stored as Gradient.png
+in ~/Pictures/wallpapers
+
+Rename to save.

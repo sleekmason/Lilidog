@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# wallcol
+
+# pick color and set that as wallpaper
+yad --title "Clickpick Single" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
+--width=310 --height=360 --center --button="OK"!/usr/share/icons/ld-icons/paw-color.png \
+--text-info --justify=center --wrap < /usr/share/lilidog/clickpick.txt --fontname=" Dejavu Sans 11"
+
+color="$(gpick -p -s -o)" 
+
+doit () {
+    echo "$color"
+    convert -size 480x270 xc:"${color}" ~/Pictures/wallpapers/Plain.png && \
+    feh --bg-scale ~/Pictures/wallpapers/Plain.png
+}
+
+[[ "$color" ]] && doit &
+pkill -x feh

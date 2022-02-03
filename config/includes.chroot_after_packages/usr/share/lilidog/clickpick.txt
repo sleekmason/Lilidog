@@ -1,0 +1,16 @@
+	
+Color Wallpaper Maker
+	
+Select OK to activate the
+color picker.
+
+Click on any color to make 
+a solid color wallpaper.
+	
+Or press Esc a couple of
+times to exit.
+
+Image stored as Plain.png
+in ~/Pictures/wallpapers
+
+Rename to save.
