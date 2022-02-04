@@ -7,8 +7,8 @@ color picker.
 Click on any color to make 
 a new solid color wallpaper.
 	
-Or press Esc a couple of
-times to exit.
+Click Cancel or press Esc a 
+couple of times to exit.
 
 Your wallpaper will change
 to your new selection.

@@ -5,9 +5,8 @@
 # wallcolGradient
 
 # pick two color and set that gradient as wallpaper
-yad --title "Clickpick Gradient" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
---width=310 --height=480 --center --button="OK"!/usr/share/icons/ld-icons/paw-color.png \
---text-info --justify=center --wrap < /usr/share/lilidog/clickpick-gradient.txt --fontname=" Dejavu Sans 11"
+
+main () {
 
 one="$(gpick -p -s -o)"
 two="$(gpick -p -s -o)"
@@ -16,9 +15,13 @@ res="$(xdpyinfo | awk '/dimensions/{print $2}')"
 
 doit () {
     echo "$one > $two @ $res"
-    convert -size "${res}" gradient:"${one}-${two}" -channel RGB -separate -dither FloydSteinberg -colors 256 -combine -depth 8 ~/Pictures/wallpapers/Gradient.png && \
+    convert -size "${res}" gradient:"${one}-${two}" -channel RGB -separate -dither FloydSteinberg -colors 256 -combine -depth 8 ~/Pictures/wallpapers/Gradient.png || exit
     feh --bg-scale ~/Pictures/wallpapers/Gradient.png
 }
 
 [[ "$one" && "$two" && "$res" ]] && doit
+}
+yad --title "Clickpick Gradient" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
+--width=310 --height=482 --center \
+--text-info --justify=center --wrap < /usr/share/lilidog/clickpick-gradient.txt --fontname="Dejavu Sans 11" && main
 pkill -x feh

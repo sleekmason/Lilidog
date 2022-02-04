@@ -7,8 +7,8 @@ color picker.
 Click on any two colors to
 make a gradient wallpaper.
 	
-Or press Esc a few times
-to exit.
+Click Cancel or press Esc a 
+few of times to exit.
 	
 Your wallpaper will change
 to your new selection.
