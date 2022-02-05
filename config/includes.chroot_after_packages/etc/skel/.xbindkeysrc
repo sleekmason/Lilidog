@@ -71,10 +71,6 @@
 "~/.config/conky/scripts/conky-chooser"
    Mod4 + c
 
-#Toggle Picom
-"toggle.picom"
-   Mod4 + p
-
 #Toggle Gammy
 "toggle.gammy"
    Mod4 + g
