@@ -1,0 +1,26 @@
+	
+Gradient 4-way Wallpaper Maker
+	
+This one can be a bit slow
+to finish after selections.
+
+Select OK to activate the
+color picker.
+
+Click on any four colors to
+make a gradient wallpaper.
+	
+Click Cancel or press Esc a 
+few of times to exit.
+	
+Your wallpaper will change
+to your new selection.
+
+Your old wallpaper is where
+you left it.
+
+Your new wallpaper will be 
+stored as Gradient-4.png
+in ~/Pictures/wallpapers
+
+Rename to save.

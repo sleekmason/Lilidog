@@ -1,0 +1,44 @@
+#!/bin/bash
+# Based on a script from brontosaurusrex https://forums.bunsenlabs.org/viewtopic.php?id=779&p=9
+# with much thanks to the author.
+# Adapted for use in Lilidog by sleekmason 02-7-2022
+# wallcol2DGradient
+
+# pick four colors and set that gradient as wallpaper
+main () {
+  one="$(gpick -p -s -o)"
+  two="$(gpick -p -s -o)"
+three="$(gpick -p -s -o)"
+ four="$(gpick -p -s -o)"
+
+res="$(xdpyinfo | awk '/dimensions/{print $2}')"
+
+doit () {
+    
+    # info
+    echo "$one > $two > $three > $four @ $res"
+    
+    # make gradient
+    # https://legacy.imagemagick.org/Usage/canvas/#gradient_colorspace
+    convert \( xc:"${one}" xc:"${two}" +append \) \
+          \( xc:"${three}" xc:"${four}" +append \) -append \
+          -size "${res}" xc: +swap  -fx 'v.p{i/(w-1),j/(h-1)}' \
+          -channel RGB -separate -dither FloydSteinberg -colors 256 -combine -depth 8 ~/Pictures/wallpapers/Gradient-4.png || exit
+          
+    # if there is ~/.noise.png, lets overlay that automagically
+    if [[ -f ~/.noise.png ]]; then
+        composite -tile -alpha off -compose overlay ~/.noise.png ~/Pictures/wallpapers/Gradient-4.png /tmp/tmpout.png
+        mv /tmp/tmpout.png ~/Pictures/wallpapers/Gradient-4.png
+    fi 
+    
+    # set wallpaper
+    feh --bg-scale ~/Pictures/wallpapers/Gradient-4.png
+
+}
+
+[[ "$one" && "$two" && "$three" && "$four" && "$res" ]] && doit
+}
+yad --title "Clickpick Gradient" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
+--width=310 --height=540 --center \
+--text-info --justify=center --wrap < /usr/share/lilidog/clickpick-gradient4.txt --fontname="Dejavu Sans 11" && main
+pkill -x feh
