@@ -430,8 +430,8 @@ button = new
 button_icon = /usr/share/icons/ld-icons/upgrade.png
 button_text = 
 button_tooltip = Apt Updater - Middle Click = Synaptic Package Manager
-button_lclick_command = simple-apt-updater
-button_rclick_command = simple-apt-updater
+button_lclick_command = x-terminal-emulator -T 'Simple Apt Updater' -e bash -c "simple-apt-updater"
+button_rclick_command = x-terminal-emulator -T 'Simple Apt Updater' -e bash -c "simple-apt-updater"
 button_mclick_command = gksudo synaptic &
 button_uwheel_command = 
 button_dwheel_command = 

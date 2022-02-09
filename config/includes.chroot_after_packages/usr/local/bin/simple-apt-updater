@@ -1,60 +1,35 @@
 #!/bin/bash
 ## Made by Sleekmason 1 Feb 2022
 ## Simple script to update, list, and then upgrade your system.
-## If no updates exist, exit.
-## requires aptitude
-#!/bin/bash
-## Simple script to update, list, and then upgrade your system.
-## If no updates exist, exit.
+read -p "
 
-# check arguments
 
-case $1 in
-'') # no argument
-
-   # updates
-   updates=$(apt-get dist-upgrade -s --quiet=2 | grep ^Inst | wc -l)
-
-   # If 0
-   if [[ "$updates" -eq 0 ]];
-   then
-      yad --title "Simple Apt Updater" --window-icon=/usr/share/icons/ld-icons/upgrade.png \
-      --width=310 --height=180 --center \
-      --text-info --justify=center --wrap < /usr/share/lilidog/simple-apt-updater.txt --button="OK" --fontname="Dejavu Sans 12" && exit
-   else
-      x-terminal-emulator -T 'Simple Apt Updater' -e "$0" --upgrade
-   fi
-   ;;
---upgrade) # now running in terminal
-   echo '
-
-                 ------ SIMPLE APT UPDATER ------
+                      ------ SIMPLE APT UPDATER ------
 
    
-    A helper script to update and upgrade your system using apt.
+          A helper script to update and upgrade your system using apt.
 
 
 
-         -------------------------------------------------
+              -------------------------------------------------
 
-                  Please press any key to begin.
+                       Please press any key to begin.
 
-         -------------------------------------------------
-
-
+              -------------------------------------------------
 
 
-                  Or close this window to quit.
 
-                   '
-   read -srn1
+
+                       Or close this window to quit.
+
+";
    echo ""
    echo ""
    sudo apt update && sudo apt list --upgradeable
    echo ""
    echo "   ------------------------------------------------------------"
    echo ""
-   read -r -p "   Scroll Above to see the list of all packages to be upgraded.
+   read -p "   Scroll Above to see the list of all packages to be upgraded.
    If no packages are shown, then there are none to upgrade.
 
    ------------------------------------------------------------
@@ -66,10 +41,6 @@ case $1 in
    "
    echo ""
    echo ""
-   sudo apt upgrade
+   sudo apt upgrade;bash
    echo ""
    echo ""
-   echo $'Press any key to close.'; read -srn1
-   ;;
-esac
-
