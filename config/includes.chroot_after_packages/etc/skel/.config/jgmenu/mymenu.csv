@@ -54,7 +54,6 @@ Extras,             ^checkout(extras),                 applications-system
 ^tag(clickpick)
 Clickpick Single,   clickpick,                        gpick
 Clickpick Gradient, clickpick-gradient,               gpick
-Clickpick Gradient 4, clickpick-gradient4,            gpick
 
 ^tag(extras)
 Install Games,^checkout(games-install),applications-utilities

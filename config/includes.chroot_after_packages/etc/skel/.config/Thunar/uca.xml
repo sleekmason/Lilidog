@@ -124,15 +124,6 @@
 </action>
 <action>
 	<icon>gpick</icon>
-	<name>Clickpick BG Gradient4</name>
-	<unique-id>1644263149036316-1</unique-id>
-	<command>feh --geometry 640x400+28+28 --scale-down --image-bg black %f &amp; clickpick-gradient4</command>
-	<description>Click on any four colors to make wallpaper.</description>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
-	<icon>gpick</icon>
 	<name>Clickpick BG Gradient</name>
 	<unique-id>1643818839735115-1</unique-id>
 	<command>feh --geometry 640x400+28+28 --scale-down --image-bg black %f &amp; clickpick-gradient</command>
