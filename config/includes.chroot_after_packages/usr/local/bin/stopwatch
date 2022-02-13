@@ -1,0 +1,13 @@
+#!/bin/bash
+echo
+stopwatch_laps=$"     LAPS: Press Enter"
+stopwatch_exit=$"     EXIT: Close Window"
+
+   now=$(date +%s)sec
+    echo "      $stopwatch_laps"
+    echo "      $stopwatch_exit"
+    echo
+   while true; do
+  printf "           %s\r" $(TZ=UTC date --date now-$now +%H:%M:%S.%N)
+     sleep 0.1
+  done;

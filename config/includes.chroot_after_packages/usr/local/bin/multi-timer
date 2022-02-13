@@ -1,0 +1,586 @@
+#!/bin/bash
+# NAME: multi-timer
+# DESC: Multiple timers countdown with alarm.
+#       https://askubuntu.com/questions/1039357
+#       /a-timer-to-set-up-differen/t-alarms-simultaneosly
+# Adapted to work with antiX by PCC 8/1/2021
+# Adapted for Lilidog by sleekmason 2-10-22
+
+ 
+export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/mysql/bin:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools:~/usr/lib/jvm/jdk-6/bin
+
+# Must have the yad package.
+command -v yad >/dev/null 2>&1 || { echo >&2 \
+        "yad package required but it is not installed.  Aborting."; \
+        exit 99; }
+
+# Must have notify-send from libnotify-bin package
+command -v notify-send >/dev/null 2>&1 || { echo >&2 \
+        "libnotify-bin package required but it is not installed.  Aborting."; \
+        exit 99; }
+
+# On Skylake i7-6700HQ .467 seconds lost over 1200 second timer due to display.
+if [[ "$1" == "-l" ]] || [[ "$1" == "--log-lost-time" ]] ; then
+    fLog=TRUE
+else
+    fLog=FALSE
+fi
+
+# Geometry e.g.: -g=4365+76 sets to X=4356 and Y=76
+if [[ "$1" == -g=* ]] || [[ "$1" == --geometry=* ]] ; then
+    XY="${1#*=}"        # Grab =X+Y side
+    WindowX="${XY%+*}"  # Grab X+ side
+    WindowY="${XY#*+}"  # Grab +Y side
+    GEOMETRY="--geometry=0x0+$WindowX+$WindowY"
+else
+    GEOMETRY="--center"
+fi
+
+# Key for tying Notebook tabs together. Cannot be same key twice.
+KEY=$(echo $[($RANDOM % ($[10000 - 32000] + 1)) + 10000] )
+
+OIFS=$IFS;      # Save current IFS (Input File Separator)
+IFS="|";        # Yad fields and Bash array indices separated by `|`
+aMulti=()       # Main array for storing configuration
+# Temporary files for Notebook output
+res1=$(echo "" > /tmp/iface1.XXXXXXXX) # Notebook Configuraion
+res2=$(echo "" > /tmp/iface2.XXXXXXXX) # Notebook Timers
+
+# Suppress Transient parent error spam
+exec 2> >(grep -v 'GtkDialog mapped without a transient parent' >&2)
+
+Cleanup () {
+    res1=$(echo "" > /tmp/iface1.XXXXXXXX) # Notebook Configuraion
+res2=$(echo "" > /tmp/iface2.XXXXXXXX) # Notebook Timers
+    IFS=$OIFS;                          # Retore Input File Separator
+    if [[ -f ~/.lock-screen-timer-remaining ]]; then
+        # Remove Sysmonitor Indicator interface file.
+        rm -f ~/.lock-screen-timer-remaining
+    fi
+} # Cleanup
+
+# Comboboxes, constants and Index offsets
+cbTimeUnits=$"Seconds!Minutes"
+cbLockScreen="Never!Each timer end!Each set end!All sets end"
+
+TIME_UNIT_NDX=0
+SET_COUNT_NDX=1
+PROGRESS_INTERVAL_NDX=2
+ALARM_FILENAME_NDX=3
+LOCK_SCREEN_NDX=4
+PROMPT_BEFORE_TIMER_NDX=5
+END_TIMER_MESSAGE_NDX=6
+END_TIMER_ALARM_NDX=7
+PROMPT_BEFORE_SET_NDX=8
+END_SET_MESSAGE_NDX=9
+END_SET_ALARM_NDX=10
+SYSMONITOR_INDICATOR_NDX=11
+CLOSE_PROGRAM_AT_END_NDX=12
+TMR_ALIAS_NDX=13
+# No. of timers default is 17 for 768 line screen and TMR_DURATION_NDX is 30
+TMR_DURATION_NDX=23 # Set to 28 for 800x600 screen, 32 for 1920x1080 screen
+MAX_TIMERS=10       # Set to 15 for 800x600 screen, 19 for 1920x1080 screen
+
+ReadConfiguration () {
+
+    if [[ -s ~/.multi-timer ]]; then
+        read -ra aMulti < ~/.multi-timer
+        for (( i=0; i<MAX_TIMERS; i++ )); do
+            aAlias[i]="${aMulti[ i+TMR_ALIAS_NDX ]}"
+            aDuration[i]="${aMulti[ i+TMR_DURATION_NDX ]}"
+        done
+        # Set Combobox default with ^ prefix
+        Str="${aMulti[TIME_UNIT_NDX]}"
+        cbTimeUnits="${cbTimeUnits/$Str/\^$Str}"
+        Str="${aMulti[LOCK_SCREEN_NDX]}"
+        cbLockScreen="${cbLockScreen/$Str/\^$Str}"
+    else
+        # Create new file
+        aMulti[TIME_UNIT_NDX]=$"Seconds"
+        aMulti[SET_COUNT_NDX]=1
+        aMulti[PROGRESS_INTERVAL_NDX]=1
+        aMulti[ALARM_FILENAME_NDX]="/usr/share/lilidog/a-tone.wav"
+        aMulti[LOCK_SCREEN_NDX]=$"Never"
+        aMulti[PROMPT_BEFORE_TIMER_NDX]="FALSE"
+        aMulti[END_TIMER_MESSAGE_NDX]="FALSE"
+        aMulti[END_TIMER_ALARM_NDX]="TRUE"
+        aMulti[PROMPT_BEFORE_SET_NDX]="FALSE"
+        aMulti[END_SET_MESSAGE_NDX]="TRUE"
+        aMulti[END_SET_ALARM_NDX]="FALSE"
+        aMulti[SYSMONITOR_INDICATOR_NDX]="FALSE"
+        aMulti[CLOSE_PROGRAM_AT_END_NDX]="FALSE"
+        aAlias=("1" "2" "3" "4" "5" \
+                "6" "7" "8" "9" "10" \
+                "11" "12" "13" "14" "15" \
+                "16" "17" "18" "19")
+        aDuration=(0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+    fi
+
+} # ReadConfiguration
+
+BuildTimerPage () {
+
+    aTimerPage=()
+    for ((i=0; i<MAX_TIMERS; i++)); do
+        b1=$(( i + 1 ))
+        alias_text=$"Name"
+        aTimerPage+=("--field=$alias_text $b1:")
+        
+        aTimerPage+=("${aAlias[i]}")
+    done
+    for ((i=0; i<MAX_TIMERS; i++)); do
+       duration_text=$"Duration"
+        aTimerPage+=("--field=$duration_text::NUM")
+        aTimerPage+=("${aDuration[i]}")
+    done
+}
+
+GetParameters () {
+export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/mysql/bin:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools:~/usr/lib/jvm/jdk-6/bin" 
+res2=/tmp/iface2.XXXXXXXX
+	# timers notebook page
+    BuildTimerPage
+    yad --plug="$KEY" --tabnum=1 --form --columns=2 \
+        "${aTimerPage[@]}" > "$res2" &
+
+    # configuration notebook page
+    timer_duration_units_TEXT=$"Timer duration units"
+    times_to_run_sets_TEXT=$"Number of times to run set (all timers)"
+    progress=$"Progress Bar update every x seconds"
+    alarm_sound_TEXT=$"Alarm sound filename"
+    lock_screen_TEXT=$"SUSPEND COMPUTER"
+    
+    ask_before_timer_TEXT=$"Ask to begin each timer"
+    pop_up_after_eache_timer_TEXT=$"Pop-up message when each timer ends"
+    alarm_after_each_timer_TEXT=$"Sound alarm when each timer ends"
+    ask_begin_set_TEXT=$"Ask to begin each set (all timers)"
+    pop_up_after_each_set_TEXT=$"Pop-up message when each set ends"
+    alarm_after_each_set_TEXT=$"Sound alarm when each set ends"
+    sysmon_TEXT=$"Interface to Sysmonitor Indicator"
+    autoclose=$"Auto close progress bar display when all sets end"
+    res1=/tmp/iface1.XXXXXXXX
+    yad --plug="$KEY" --tabnum=2 --form \
+    --field="$timer_duration_units_TEXT::CB" "$cbTimeUnits" \
+    --field="$times_to_run_sets_TEXT::NUM" \
+            "${aMulti[SET_COUNT_NDX]}"!1..99!1!0 \
+    --field="$progress::NUM" \
+            "${aMulti[PROGRESS_INTERVAL_NDX]}"!1..60!1!0 \
+    --field="$alarm_sound_TEXT::FL" "${aMulti[ALARM_FILENAME_NDX]}" \
+    --field="$lock_screen_TEXT::CB" "$cbLockScreen" \
+    --field="$ask_before_timer_TEXT:CHK" \
+            "${aMulti[PROMPT_BEFORE_TIMER_NDX]}" \
+    --field="$pop_up_after_eache_timer_TEXT:CHK" \
+            "${aMulti[END_TIMER_MESSAGE_NDX]}" \
+    --field="$alarm_after_each_timer_TEXT:CHK" \
+            "${aMulti[END_TIMER_ALARM_NDX]}" \
+    --field="$ask_begin_set_TEXT:CHK" \
+            "${aMulti[PROMPT_BEFORE_SET_NDX]}" \
+    --field="$pop_up_after_each_set_TEXT:CHK" \
+            "${aMulti[END_SET_MESSAGE_NDX]}" \
+    --field="$alarm_after_each_set_TEXT:CHK" \
+            "${aMulti[END_SET_ALARM_NDX]}" \
+    --field="$sysmon_TEXT:CHK" \
+            "${aMulti[SYSMONITOR_INDICATOR_NDX]}" \
+    --field="$autoclose:CHK" \
+            "${aMulti[CLOSE_PROGRAM_AT_END_NDX]}" > /tmp/iface1.XXXXXXXX &
+
+    # run main dialog
+    #  --image=gnome-calculator
+    if yad  --window-icon="/usr/share/icons/ld-icons/timer.png"  --notebook --key="$KEY"  \
+    --tab=$"Timers" --tab=$"Configuration" --button="Cancel!/usr/share/icons/ld-icons/pixmaps/logout_no.png:1" \
+    --button="Start!/usr/share/icons/ld-icons/pixmaps/logout_ok.png:0" --borders="6" \
+        --image=/usr/share/icons/ld-icons/timer.png \
+        --title="Multi Timer Configuration" --auto-close \
+        --width=400 --image-on-top --text=$"Please set your timers and press Start.            " --text-align="center" \
+        "$GEOMETRY"
+    then
+
+        # When LC_NUMERIC=it_IT-UTF8 30 seconds can be `30,000000` or
+        # `30.000000` which breaks bash tests for `-gt 0`.
+        # Search and replace ".000000" or ",000000" to null
+        res2=/tmp/iface2.XXXXXXXX
+        res1=/tmp/iface1.XXXXXXXX
+        sed -i 's/[,.]000000//g' "$res1"
+        sed -i 's/[,.]000000//g' "$res2"
+
+        # Save configuration
+        truncate -s -1 "$res1" # Remove new line at EOF
+        cat "$res1" >  ~/.multi-timer
+        truncate -s -2 "$res2" # Remove trailing "|" and new line at EOF
+        cat "$res2" >> ~/.multi-timer
+        # Get user changes into aAlias & aDuration
+        ReadConfiguration
+        return 0
+    else
+        return 1    # Cancel click or Escape press
+    fi
+
+}
+
+fNewRun=FALSE
+fNewTimer=FALSE
+iSetSaveSec=0
+
+InitTimers () {
+
+    if [[ "${aMulti[TIME_UNIT_NDX]}" == $"Seconds" ]]; then
+        fUnitsInSeconds=TRUE
+    else
+        fUnitsInSeconds=FALSE
+    fi
+
+    iActiveTimersCount=0
+    for ((i=0; i<MAX_TIMERS; i++)); do
+        if [[ ${aDuration[i]} -gt 0 ]] ; then
+            (( iActiveTimersCount++ ))
+            iSetSaveSec=$(( iSetSaveSec + ${aDuration[i]} ))
+        fi
+    done
+
+    # Progress Bars, 1 per timer + optional: set and/or set count
+    iAllSetsSaveCount="${aMulti[SET_COUNT_NDX]}"
+    iAllSetsRemainingCount=$iAllSetsSaveCount
+    fSetProgressBar=FALSE # Summary progress bar when > 1 timer used
+    iSetProgressBarNo=0
+    fAllSetsProgressBar=FALSE  # Summary progress bar when > 1 run
+    iAllSetsProgressBarNo=0
+    if [[ $iActiveTimersCount -eq 0 ]]; then
+        # If active timers count = 0, error message & clear run count
+        yad  --window-icon="/usr/share/icons/ld-icons/timer.png" --title "Mutli Timer Error" "$GEOMETRY" --text \
+            "At least one non-zero timer required." --image=dialog-error \
+            --on-top --borders=20 --button=gtk-close:0
+        iAllSetsRemainingCount=0 # Set orderly exit via sibling function(s)
+        iProgressBarCount=0
+        fAbend=TRUE
+    else
+        # Active timers count > 0 so calculate times
+        fNewTimer=TRUE
+        fNewRun=TRUE
+        [[ $fUnitsInSeconds == FALSE ]] && \
+            iSetSaveSec=$(( iSetSaveSec * 60 ))
+        iAllSetsSaveCountSec=$(( iSetSaveSec * iAllSetsRemainingCount ))
+        iAllSetsElapsedSec=0
+        iProgressBarCount=$iActiveTimersCount
+        if [[ $iActiveTimersCount -gt 1 ]]; then
+            (( iProgressBarCount++ )) # Extra progress bar for Set
+            fSetProgressBar=TRUE
+            iSetProgressBarNo=$iProgressBarCount
+        fi
+        if [[ $iAllSetsRemainingCount -gt 1 ]]; then
+            (( iProgressBarCount++ )) # Extra progress bar for Set Count
+            fAllSetsProgressBar=TRUE
+            iAllSetsProgressBarNo=$iProgressBarCount
+        fi
+    fi
+
+    # Friendly variable names instead of Array entries
+    iProgressSleepSeconds="${aMulti[PROGRESS_INTERVAL_NDX]}"
+    sSoundFilename="${aMulti[ALARM_FILENAME_NDX]}"
+    if [[ $fWindows10 == TRUE ]] ; then
+        mod="${sSoundFilename//\//\\}" # Replace Linux / with Windows \
+    mod="${mod#*Windows}"          # Remove "/mnt/whatever/Windows"
+        sSoundFilename="C:\\Windows""\\$mod"
+    fi
+
+    fPromptBeforeTimer="${aMulti[PROMPT_BEFORE_TIMER_NDX]}"
+    fEndTimerMessage="${aMulti[END_TIMER_MESSAGE_NDX]}"
+    fEndTimerAlarm="${aMulti[END_TIMER_ALARM_NDX]}"
+    fPromptBeforeSetRun="${aMulti[PROMPT_BEFORE_SET_NDX]}"
+    fEndSetMessage="${aMulti[END_SET_MESSAGE_NDX]}"
+    fEndSetAlarm="${aMulti[END_SET_ALARM_NDX]}"
+    fSysmonitorIndicator="${aMulti[SYSMONITOR_INDICATOR_NDX]}"
+    fCloseProgramAtEnd="${aMulti[CLOSE_PROGRAM_AT_END_NDX]}"
+} # InitTimers
+
+# Optional lost time log file monitors program execution time for progress
+# bars
+[[ $fLog == TRUE ]] && echo "multi-timer lost time log"  > ~/multi-timer.log
+
+PromptToStart () {
+  ready_to_start_TEXT=$"Ready to start" 
+    # $1= Message key text
+    # Dialog box to proceed with timer.
+    yad  --window-icon="/usr/share/icons/ld-icons/timer.png" --title "Multi Timer Notification" "$GEOMETRY" --on-top \
+        --fontname="Serif bold italic 28" \
+        --text "$ready_to_start_TEXT $1" \
+        --image=/usr/share/icons/ld-icons/timer.png \
+        --borders="4" --button=OK:0
+
+    # Eliminates time waiting for user input
+    [[ $fLog == TRUE ]] && LastWakeMicroSeconds=$(date +%s%N)
+}
+
+EndMessageAndAlarm () {
+
+    # $1= fEndTimerMessage, $2= fEndTimerAlarm, $3= Message key text
+
+    # Sound alarm when timer ends
+    if [[ "$2" == TRUE ]]; then
+        if [[ ! -f "$sSoundFilename" ]]; then
+            notify-send --urgency=normal "multi-timer" \
+            --icon=/usr/share/icons/ld-icons/timer.png \
+            "Sound File Not Found: $sSoundFilename"
+        else
+            mpv "$sSoundFilename" ;
+        fi
+    fi
+
+    # Bubble message when timer ends
+   ended_text=$"Has Ended."
+    if [[ "$1" == TRUE ]]; then
+        notify-send --urgency=low "Multi Timer" \
+            --icon=/usr/share/icons/ld-icons/timer.png \
+            "$3 $ended_text"
+    fi
+
+}
+
+LockScreenCheck () {
+
+    # $1=Run type being checked:
+    # "Each timer end" / "Each set end" / "All sets end"
+    [[ "$1" != "${aMulti[$LOCK_SCREEN_NDX]}" ]] && return 0
+
+    # When locking screen override & prompt to start next timer / run
+    [[ "$1" == "Each timer end" ]] && fPromptBeforeTimer=TRUE
+    [[ "$1" == "Each set end"   ]] && fPromptBeforeSetRun=TRUE
+
+    if [[ $fWindows10 == TRUE ]]; then
+        # Call lock screen for Windows 10
+        rundll32.exe user32.dll,LockWorkStation
+    else
+        # NOTE : PPC - turn off computer (suspend it)
+        #desktop-session-exit -S
+		systemctl suspend
+    fi
+}
+
+iCurrTimerNo=0
+iCurrTimerNdx=0
+TotalLostTime=0
+
+PrepareNewSet () {
+
+    # Was a set just completed?
+    if [[ $iAllSetsRemainingCount -ne $iAllSetsSaveCount ]]; then
+        # Display mssage and/or sound alarm for set end
+        EndMessageAndAlarm $fEndSetMessage $fEndSetAlarm \
+                           "$sSetProgressText"
+        # Check to lock screen
+        LockScreenCheck "Each set end"
+    fi
+
+    if [[ $iAllSetsRemainingCount -eq 0 ]]; then
+        # We are done. Force exit from all while loops.
+        fNewRun=FALSE
+        fNewTimer=FALSE
+    else
+        # Decrement remaining run count and start at first timer.
+        (( iAllSetsRemainingCount-- ))
+        iSetElapsedSec=0
+        fNewTimer=TRUE
+        iCurrTimerNo=0
+        iCurrTimerNdx=0
+        iNextTimerNdx=0
+        iCurrSetNo=$(( iAllSetsSaveCount - iAllSetsRemainingCount ))
+        sSetProgressText="Set $iCurrSetNo / $iAllSetsSaveCount"
+        [[ $fPromptBeforeSetRun == TRUE ]] && \
+            PromptToStart "$sSetProgressText"
+    fi
+}
+
+PrepareNewTimer () {
+
+    iCurrTimerElapsedSec=0
+    if [[ $iCurrTimerNo -eq $iActiveTimersCount ]]; then
+        # Last timer done. Force exit from inner while loop.
+        fNewTimer=FALSE
+        return 0
+    fi
+
+    for ((i=iNextTimerNdx; i<MAX_TIMERS; i++ )); do
+        if [[ ${aDuration[i]} -gt 0 ]]; then
+            iCurrTimerNdx=$i
+            (( iCurrTimerNo++ ))    # Increment progress bar number
+            iNextTimerNdx=$(( iCurrTimerNdx + 1 ))
+            iCurrTimerSaveSec=${aDuration[i]}
+            [[ $fUnitsInSeconds == FALSE ]] && \
+                            iCurrTimerSaveSec=$(( iCurrTimerSaveSec * 60 ))
+            iCurrTimerRemainingSec=$iCurrTimerSaveSec
+            break
+        fi
+    done
+}
+
+# Next function could be embedded within InitTimers to save space
+# and code line count but this provides better readability IMO.
+SetupYadProgressBars () {
+
+    aYadProgressBars=("yad"  --window-icon="/usr/share/icons/ld-icons/timer.png" \
+    --title="Multi Timer Progress" --button="gtk-close:1" --multi-progress \
+    --center --width="288" --height="88" --borders="6")
+#    aYadProgressBars+=("--title=multi-timer progress")
+    [[ $fCloseProgramAtEnd == TRUE ]] && aYadProgressBars+=("--auto-close")
+    aYadProgressBars+=("--watch-bar$iProgressBarCount")
+
+    for ((i=0; i<MAX_TIMERS; i++)); do
+        if [[ ${aDuration[i]} -gt 0 ]] ; then
+            b1=$(( i + 1 ))
+            aYadProgressBars+=("--bar= $b1 - ${aAlias[i]}:NORM")
+        fi
+    done
+
+#    if [[ $fSetProgressBar == TRUE ]]; then
+#        aYadProgressBars+=("--bar=Set:NORM")
+#    fi
+#    if [[ $fAllSetsProgressBar == TRUE ]]; then
+#        aYadProgressBars+=("--bar=All Sets:NORM")
+#    fi
+}
+
+DisplayProgressBar () {
+
+    # Parameters
+    # $1=Elapsed Time, $2=Total Time, $3=Bar Number, 
+    # $4=TRUE/FALSE if eligible to update Sysmonitor Indicator
+    # $5=Sysmonitor Indicator text for interface file or null
+    # $6=Progress Text Prefix, ie "Set 2 of 4: " or null
+    iPercentage=$(( $1 * 100 / $2 ))
+    echo "$3:$iPercentage"
+
+    RemainingSec=$(( $2 - $1 ))
+    h=$((RemainingSec/3600))
+    m=$(((RemainingSec%3600)/60))
+    s=$((RemainingSec%60))
+
+    TimeRemaining=""
+    [[ $h -gt 0 ]] && TimeRemaining=$TimeRemaining" $h H"
+    [[ $m -gt 0 ]] && TimeRemaining=$TimeRemaining" $m m"
+    [[ $s -gt 0 ]] && TimeRemaining=$TimeRemaining" $s s"
+    if [[ $TimeRemaining == "" ]]; then
+    finished_text=$"Finished."
+        echo "$3:#$6$finished_text"
+    else
+        echo "$3:#$6$TimeRemaining..."
+    fi
+
+    if [[ $fSysmonitorIndicator == TRUE ]] && [[ $4 == TRUE ]]; then
+        echo "$5: $TimeRemaining" > ~/.lock-screen-timer-remaining
+    fi
+}
+
+ProcessCurrTimer () {
+
+    sTimerAlias="${aAlias[iCurrTimerNdx]}"
+
+    # Dialog box to proceed with timer.
+    [[ $fPromptBeforeTimer == TRUE ]] && PromptToStart "$sTimerAlias"
+
+    iLastSleepSec=0
+    [[ $fLog == TRUE ]] && echo Start timer: "${aAlias[iCurrTimerNdx]}" \
+        >> ~/multi-timer.log
+
+    while [[ $iCurrTimerElapsedSec -lt $iCurrTimerSaveSec ]]; do
+
+        iCurrTimerElapsedSec=$(( iCurrTimerElapsedSec + iLastSleepSec))
+        iSetElapsedSec=$(( iSetElapsedSec + iLastSleepSec))
+        iAllSetsElapsedSec=$(( iAllSetsElapsedSec + iLastSleepSec))
+
+        DisplayProgressBar $iCurrTimerElapsedSec $iCurrTimerSaveSec \
+            "$iCurrTimerNo" TRUE "${aAlias[iCurrTimerNdx]}" "" ""
+        if [[ $fSetProgressBar == TRUE ]] ; then
+            DisplayProgressBar $iSetElapsedSec $iSetSaveSec \
+                           "$iSetProgressBarNo" FALSE "" "$sSetProgressText: "
+        fi
+        [[ $fAllSetsProgressBar == TRUE ]] && \
+            DisplayProgressBar $iAllSetsElapsedSec $iAllSetsSaveCountSec \
+                           "$iAllSetsProgressBarNo" FALSE "" ""
+
+        # We sleep lesser of iProgressSleepSeconds or iCurrTimerRemainingSec
+        iCurrTimerRemainingSec=$(( iCurrTimerRemainingSec - iLastSleepSec))
+        if [[ $iProgressSleepSeconds -gt $iCurrTimerRemainingSec ]]; then
+            iLastSleepSec=$iCurrTimerRemainingSec
+        else
+            iLastSleepSec=$iProgressSleepSeconds
+        fi
+
+        if [[ $fLog == TRUE ]] ; then
+            tt=$((($(date +%s%N) - LastWakeMicroSeconds)/1000000))
+            echo "Last lost time: $tt milliseconds" >> ~/multi-timer.log
+            TotalLostTime=$(( TotalLostTime + tt ))
+            echo "Total Lost: $TotalLostTime milliseconds" ~/multi-timer.log
+        fi
+        sleep $iLastSleepSec
+        [[ $fLog == TRUE ]] && LastWakeMicroSeconds=$(date +%s%N)
+
+    done
+
+    # Currently removing Sysmonitor Indicator after current timer. Need to
+    # modify to do it based on choice box for "Lock Screen".
+    if [[ -f ~/.lock-screen-timer-remaining ]]; then
+        # Remove Sysmonitor Indicator interface file.
+        rm -f ~/.lock-screen-timer-remaining
+    fi
+
+    # Check for and display mssage and/or sound alarm
+    EndMessageAndAlarm $fEndTimerMessage $fEndTimerAlarm \
+                       "Timer: $sTimerAlias"
+
+    # cbLockScreen="Never!Each timer end!Each set end!All sets end"  
+    LockScreenCheck $"Each timer end"
+}
+
+ZeroIndividualTimerProgressBars () {
+
+    for ((i=1; i<=iActiveTimersCount; i++)); do
+        echo "$i:0"
+        echo "$i:#"
+    done
+}
+
+###################################
+#            MAINLINE             #
+###################################
+
+ReadConfiguration
+
+if GetParameters ; then :
+else
+    # Escape or Cancel from yad notebook
+    Cleanup
+    exit 1
+fi
+
+InitTimers
+if [[ $fAbend == TRUE ]]; then
+    Cleanup
+    exit 1
+fi
+
+SetupYadProgressBars
+PrepareNewSet
+[[ $fLog == TRUE ]] && LastWakeMicroSeconds=$(date +%s%N)
+
+while [[ $fNewRun == TRUE ]]; do
+
+    PrepareNewTimer
+    while [[ $fNewTimer == TRUE ]]; do
+        ProcessCurrTimer
+        PrepareNewTimer
+    done
+    PrepareNewSet
+    [[ $fNewRun == TRUE ]] && ZeroIndividualTimerProgressBars
+    [[ $fLog == TRUE ]] && echo "Set Lost Time: $TotalLostTime milliseconds" \
+        >> ~/multi-timer.log  # For some reason value is zero?
+
+done | "${aYadProgressBars[@]}"
+
+LockScreenCheck "All sets end"
+
+# TO-DO why is $TotalLostTime zero below?
+[[ $fLog == TRUE ]] && echo "All sets lost time: $TotalLostTime milliseconds" \
+    >> ~/multi-timer.log
+
+Cleanup
+
+exit 0
