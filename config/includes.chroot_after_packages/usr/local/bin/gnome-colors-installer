@@ -1,0 +1,25 @@
+#!/bin/bash
+read -p "   Gnome Colors Installer.
+
+
+   Nothing fancy script wise.  Just a convenience to download the
+   Gnome Color icons.  The Gnome Icon theme itself is already
+   installed, so these don't take up much space.
+   
+   To remove completely, use: sudo apt purge gnome-colors* 
+    
+   ---------------------------------------------------------------
+   
+   Please press enter to install the Gnome Colors icon themes.
+   
+   ---------------------------------------------------------------    
+      
+   Or close this terminal window to quit the install." ;
+echo ""
+sudo apt update && sudo apt install gnome-colors
+
+echo ""
+echo ""
+echo "All done. Enjoy your new icon themes!"
+echo ""
+echo ""
