@@ -18,6 +18,6 @@ fi
 sed -i "/^autohide =/s/$original_auto_hide/ $seleccao/g" ~/.config/tint2/tint2rc
 
 # restart tint2
-	pkill -x tint2
-	nohup tint2 &
-	exit
+pkill -x tint2
+tint2 &
+exit
