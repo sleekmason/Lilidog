@@ -96,8 +96,8 @@ Picom,               toggle.picom,                                  object-flip-
 Xkill,               xkill,                                         edit-delete
 
 ^tag(rootfiles)
-/etc,                     gksudo thunar /usr/share,               folder-documents
-/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents 
+/etc,                     gksudo thunar /etc,                     folder-documents
+/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents
 /usr/share,               gksudo thunar /usr/share,               folder-documents
 /usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
