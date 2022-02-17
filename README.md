@@ -77,6 +77,10 @@ Go to Menu -> Configuration -> Wallpaper Chooser to change wallpapers.
 You can also right-click on any image you choose from the file manager to set as background wallpaper. Other right-click
 options for images include rotation and copying to ~/Pictures.wallpapers. A random wallpaper toggle is included.
 
+- Icons - The Breeze icon set comes installed as default. Papirus and Gnome icon sets both have menu install entries as well.
+Both menu options provide for a variety of different colors to choose from.  There is an extra script to provide even
+more Papirus theme colors if interested. (24 in total for now.)
+
 - Grub background changer opens a window to choose your own images. Lilidog ships with six to give you an intitial
 choice before finding your own to add to the collection.
 
