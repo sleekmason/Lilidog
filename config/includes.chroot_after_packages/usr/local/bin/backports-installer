@@ -1,6 +1,6 @@
 #!/bin/bash
-## Made by Sleekmason 1 Feb 2022
-## Simple script to update, list, and then upgrade your system.
+## Made by Sleekmason 18 Feb 2022
+## Simple script to add backports and Fast Track to your sources.
 read -p "   
                           ADD ADDITIONAL SOURCES
    
