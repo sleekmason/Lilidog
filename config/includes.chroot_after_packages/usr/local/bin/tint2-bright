@@ -1,0 +1,26 @@
+#!/bin/bash
+# Bright mode for tint2 in Lilidog by sleekmason 2-17-2022
+#
+#
+FILE="$HOME/.config/tint2/tint2rc"
+STRING="task_font_color = #93adac 100"
+if  grep -q "$STRING" "$FILE" ; then
+         notify-send 'Changing Tint2 font to Bright Mode' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#C8DEDE 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#C8DEDE 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#C8DEDE 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#C8DEDE 100/' $FILE
+         
+ else
+          notify-send 'Changing Tint2 font to Default Brightness' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#93adac 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#93adac 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#93adac 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#93adac 100/' $FILE
+fi
+# restart tint2
+pkill -x tint2
+tint2 &
+
+
+ 

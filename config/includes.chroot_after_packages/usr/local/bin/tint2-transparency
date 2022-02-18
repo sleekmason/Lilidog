@@ -1,0 +1,40 @@
+#!/bin/bash
+# Tint2 transparency by sleekmason 2-17-2022
+#
+#
+#
+WIDTH=215
+HEIGHT=380
+
+trans="$(yad --title "Transparency" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
+--text "" --text-align=center \
+--window-icon=applications-system \
+--radiolist  --column "Select" --column "Amount" --separator=" " \
+  FALSE "0" \
+  FALSE "10" \
+  FALSE "20" \
+  FALSE "30" \
+  FALSE "40" \
+  FALSE "50" \
+  FALSE "60" \
+  FALSE "70" \
+  FALSE "80" \
+  FALSE "90" \
+  FALSE "100")"
+  trans="$(echo "$trans" | cut -d' ' -f2-)"
+ 
+# check if "Cancel" button
+if ! [[ $trans ]];
+then
+  exit 1
+fi
+
+    #sed -i "s/background_color = #0d0f0f.*/background_color = #0d0f0f $trans/g" ~/.config/tint2/tint2rc
+    ## Conversely, only select the first instance of background_color
+    sed -i "0,/background_color =/{s/background_color =.*/background_color = #0d0f0f ${trans}/}" ~/.config/tint2/tint2rc
+pkill -x tint2
+tint2 &
+
+exit 0
+
+ 
