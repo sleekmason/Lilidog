@@ -1,0 +1,97 @@
+#!/bin/bash
+## Made by Sleekmason 1 Feb 2022
+## Simple script to update, list, and then upgrade your system.
+read -p "   
+                          ADD ADDITIONAL SOURCES
+   
+   
+   This script will add the Bullseye Backports repository and an option 
+   to add the Debian Fast Track repositories.
+   
+   More info:
+   https://backports.debian.org/Instructions/
+   https://fasttrack.debian.net/#
+   
+   
+   -------------------------------------------------------------------
+   
+   Please press Enter to add Bullseye Backports and have the option to
+   add the Debian Fast Track repositories.
+   
+   -------------------------------------------------------------------
+   
+   
+
+
+   Or close this terminal window to quit." ;
+   echo ""
+   echo ""
+   sudo echo 'deb http://deb.debian.org/debian bullseye-backports main' | sudo tee /etc/apt/sources.list.d/bullseye-backports.list &&
+   sudo apt update
+   echo ""
+   echo ""
+   echo ""
+   echo "-------------------------------------------------------------------------------"
+   read -r -p "
+   
+               ---BULLSEYE BACKPORTS ENABLED AND UPDATED---
+           
+      
+          
+   Repository added to /etc/apt/sources.list.d/bullseye-backports.list 
+   For available packages try: https://backports.debian.org/Packages/
+    
+   In order to install a package from bullseye backports: 
+   sudo apt install <package>/bullseye-backports
+   
+
+   ---------------------------------------------------------------------
+   
+   If you ONLY want Bullseye Backports, exit now by closing this window.
+   
+   ---------------------------------------------------------------------
+   
+   
+   If you would also like to ADD the Debian Fast Track repositories,
+   please press Enter to continue.
+
+
+
+
+   "
+   echo "" 
+   echo ""
+   echo ""
+   echo ""
+   sudo apt install fasttrack-archive-keyring &&
+   sudo echo 'deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-fasttrack main contrib' | sudo tee /etc/apt/sources.list.d/fasttrack.list;
+   sudo echo 'deb https://fasttrack.debian.net/debian-fasttrack/ bullseye-backports-staging main contrib' | sudo tee -a /etc/apt/sources.list.d/fasttrack.list &&
+   sudo apt update
+   echo ""
+   echo ""
+   echo ""
+   echo "-------------------------------------------------------------------------------"
+   echo ""
+   echo ""
+   echo "               ---FAST TRACK REPOSITORIES ENABLED AND UPDATED---"
+echo ""
+   echo "
+   Fast Track repos have been added to /etc/apt/sources.list.d/fasttrack.list
+   Bullseye Backports must also remain enabled for Fast Track to work. 
+   
+   To install from Fast Track: sudo apt install <package>/bullseye-fasttrack
+
+
+   As an example, Virtualbox is available through Fast Track. Try:
+   sudo apt install virtualbox/bullseye-fasttrack
+
+   ----------------------------------------------------------------------------
+
+
+   If you want to remove the Fast Track sources from your sources list:
+
+   sudo rm /etc/apt/sources.list.d/fasttrack.list && 
+   sudo apt remove fasttrack-archive-keyring 
+   "
+   echo ""
+   echo ""
