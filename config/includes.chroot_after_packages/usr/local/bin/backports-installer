@@ -72,7 +72,6 @@ read -p "
    echo ""
    echo "-------------------------------------------------------------------------------"
    echo ""
-   echo ""
    echo "               ---FAST TRACK REPOSITORIES ENABLED AND UPDATED---"
 echo ""
    echo "
@@ -93,5 +92,4 @@ echo ""
    sudo rm /etc/apt/sources.list.d/fasttrack.list && 
    sudo apt remove fasttrack-archive-keyring 
    "
-   echo ""
    echo ""

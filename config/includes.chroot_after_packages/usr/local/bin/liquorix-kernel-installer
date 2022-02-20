@@ -1,31 +1,26 @@
 #!/bin/bash
 echo ""
-echo ""
-echo ""
 read -p "   Liquorix Kernel Installer
    
    See: https://liquorix.net/ for more info. Great for gaming.
 
    Be aware that the highest numbered kernel is automatically
    booted, and you may need to go to 'advanced options' on
-   boot if you have installed a higher numbered kernel 
-   previously. (sleek-kernel)
+   boot if you previously installed a higher numbered kernel.
    
    If this kernel or any others do not work for you, reboot 
    and choose your old kernel in the Advanced Options screen,
-   then use apt or the kernel remover from the menu to 
-   remove the kernel and headers.
+   then after boot, use apt or the kernel remover from the
+   menu to remove the offending kernel and headers.
 
-   This will install the Liquorix kernel and headers, plus 
-   other packages to go with it. 
-   
-   
+   This script will install the Liquorix kernel and headers
+   and other related packaged. 
+     
    --------------------------------------------------
    
    Please press enter to install the kernel packages.
    
-   --------------------------------------------------
-   
+   --------------------------------------------------  
    
    Or close this terminal window to quit the install." ;
 sudo curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash 
@@ -44,7 +39,6 @@ echo ""
 echo "You may need to look in 'Advanced Options' upon reboot if you"
 echo "have installed a higher numbered kernel version previously."
 echo "Grub will boot the highest numbered kernel version automatically."
-echo ""
 echo ""
 echo "To remove this kernel, reboot with your old kernel through"
 echo "the advanced menu at boot."

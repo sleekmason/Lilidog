@@ -1,20 +1,17 @@
 #!/bin/bash
-read -p "   Papirus Icon Installer With Added Colors.
-
+read -p "              Papirus Icon Installer With Added Colors.
 
    This nifty script will download the Papirus Icon Theme and then 
    add the color themes: Black, Bluegrey, Grey, Nordic, Yaro, Red, 
    Violet, Teal, Magenta, Orange, Brown, and Green.
    
    The new themes will be added to ~/.local/share/icons, and will be
-   made immediately available in the Settings Manager and through
-   the Quick Theme Changer located in the panel and menu.
+   available in both the Settings Manager and Quick Theme Changer.
    
-   These should be quite light weight as they are symlinked rather
-   than copied whole. Find /usr/local/bin/papirus-folder-color.sh
-   for a few more color themes to create as well if interested.
+   Try papirus-folder-color.sh -h in a terminal to see other color
+   themes available. All themes are symlinked rather than copied.
    
-   For themes you don't want, please only remove the folders named
+   For themes you don't want, please only remove the named folders
    above from ~/.local/share/icons Nothing more required.
    
    To use these icons in root applications, move the individual
@@ -115,7 +112,7 @@ papirus-folder-color.sh magenta &&
 mv ~/.local/share/icons/Papirus-color Papirus-Magenta &&
  sed -i "2s/color/Magenta/g" ~/.local/share/icons/Papirus-Magenta/index.theme
 echo "Magenta icon theme added."
-
+sudo /usr/local/bin/update-icons ~/.local/share/icons/
 echo ""
 echo ""
 echo "All done. Enjoy your new icon themes!"

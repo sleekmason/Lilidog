@@ -6,16 +6,12 @@ read -p "
 
                       ------ SIMPLE APT UPDATER ------
 
-   
-          A helper script to update and upgrade your system using apt.
 
-
-
-              -------------------------------------------------
+                   ---------------------------------------
 
                        Please press any key to begin.
 
-              -------------------------------------------------
+                   ---------------------------------------
 
 
 
@@ -25,22 +21,10 @@ read -p "
 ";
    echo ""
    echo ""
-   sudo apt update && sudo apt list --upgradeable
+   sudo nala update
    echo ""
    echo "   ------------------------------------------------------------"
    echo ""
-   read -p "   Scroll Above to see the list of all packages to be upgraded.
-   If no packages are shown, then there are none to upgrade.
-
-   ------------------------------------------------------------
-
-
-   Press Enter to continue with the upgrade, or close this
-   window to quit.
-
-   "
-   echo ""
-   echo ""
-   sudo apt upgrade;bash
+   bash
    echo ""
    echo ""
