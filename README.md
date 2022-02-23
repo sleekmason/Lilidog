@@ -59,15 +59,16 @@ Lilidog: <br/>
 ### Features:
 
 - Based on Debian with contrib and non-free sources enabled by default.
-Debian backport sources can be added during installation in the stable build when using the 'expert' installer. 
 
-- These are 'no --recommends' builds. This means only the required dependencies are included during package install.
+- Bullseye backport and Debian Fast Track can be added to your sources from the 'Extras' portion of the menu under 'Utilities'.
+
+- These are 'no recommends' builds. (Sid version excluded). This means only required dependencies are included during install.
 This leaves out any recommended or suggested packages, allowing for complete control over package installation.
 No unwanted packages will be installed by default. This can be changed after install if desired.
 
-- Tint2 is the panel by default, with an options for FbPanel. Look under Toggles in the menu for some other nifty options,
-as well including toggles for the position (top or bottom), autohide, Tint2 time format (12/24H), and on/off. A separate
-keybind is included to toggle the panel on/off: "Super + p".
+- Tint2 is the panel by default, with an option to use FbPanel if desired. Currently available tweaks for tint2 include
+transparency, time format, autoshrink, autohide, and position (top or bottom). These can be accessed from either the menu,
+or in the tint2panel itself under the 'T2' icon.
 
 - Jgmenu is the menu for all versions.  Huge amount of customization available.
 Go to menu -> configuration -> jgmenu.conf for how to change and add items. 
