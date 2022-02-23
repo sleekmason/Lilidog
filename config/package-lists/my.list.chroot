@@ -14,6 +14,7 @@ btrfs-progs
 catfish
 conky
 console-data
+console-setup
 crda
 curl
 dbus-user-session
@@ -72,6 +73,7 @@ fuse3
 galculator
 galternatives
 geany
+gettext-base
 gimp
 gnome-icon-theme
 gnome-screenshot
@@ -99,7 +101,9 @@ intel-microcode
 inxi
 isc-dhcp-client
 iw
+jp2a
 jq
+kbd
 libavcodec-extra
 libexo-2-0
 libfile-mimeinfo-perl
@@ -126,8 +130,12 @@ menu-xdg
 mesa-utils
 mesa-va-drivers
 mesa-vdpau-drivers
+mesa-vulkan-drivers
 mlocate
+mobile-broadband-provider-info
 moc
+modemmanager
+mokutil
 mousepad
 nano
 ncdu
@@ -155,9 +163,12 @@ python3-xdg
 python3-notify2
 python3-six
 python3-xlib
+qt5-gtk-platformtheme
+qt5-gtk2-platformtheme
 qt5-style-plugins
 rename
 rsync
+rtmpdump
 rxvt-unicode
 scrot
 shellcheck
@@ -180,6 +191,8 @@ transmission
 transmission-gtk
 tree
 unzip
+usb-modeswitch
+usbmuxd
 usbutils
 usermode
 user-setup
@@ -192,6 +205,7 @@ wbar-config
 w3m
 w3m-img
 wmctrl
+wvdial
 x11-apps
 x11-common
 x11-session-utils
@@ -205,6 +219,7 @@ xdg-user-dirs
 xdg-utils
 xdotool
 xfce4-power-manager
+xfce4-power-manager-plugins
 xfce4-settings
 xfce4-terminal
 xinput
@@ -216,6 +231,7 @@ xscreensaver-data
 xserver-common
 xserver-xorg
 xserver-xorg-core
+xserver-xorg-legacy
 xserver-xorg-input-all
 xserver-xorg-input-evdev
 xserver-xorg-input-libinput
