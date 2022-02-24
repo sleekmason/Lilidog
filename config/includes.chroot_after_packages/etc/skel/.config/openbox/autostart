@@ -21,3 +21,4 @@ lxpolkit &
 xfsettingsd --daemon &
 pnmixer &
 conky -c ~/.config/conky/conky-shortcuts.conf &
+welcome.sh &
