@@ -7,8 +7,6 @@
    echo ""
    echo ""
    echo ""
-   echo "Please Enter your password below to continue."
-   echo ""
    echo ""
 sudo nala update
    echo ""
