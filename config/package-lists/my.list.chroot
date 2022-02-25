@@ -4,6 +4,7 @@ alsa-oss
 alsa-utils
 amd64-microcode
 anacron
+apt-listchanges
 apt-transport-https
 apt-utils
 at-spi2-core
@@ -109,6 +110,7 @@ libexo-2-0
 libfile-mimeinfo-perl
 libfm-modules
 libinput-tools
+libnss-systemd
 libreoffice-gtk3
 libreoffice-writer
 libnotify-bin
@@ -122,6 +124,7 @@ luckybackup
 lxinput
 lxpolkit
 lxrandr
+mailcap
 manpages
 manpages-dev
 meld
@@ -131,6 +134,7 @@ mesa-utils
 mesa-va-drivers
 mesa-vdpau-drivers
 mesa-vulkan-drivers
+mime-support
 mlocate
 mobile-broadband-provider-info
 moc
@@ -141,6 +145,7 @@ nano
 ncdu
 neofetch
 net-tools
+netcat-openbsd
 network-manager-gnome
 newsboat
 ntfs-3g
@@ -187,6 +192,7 @@ thunar-media-tags-plugin
 thunar-volman
 tumbler
 thunderbird
+traceroute
 transmission
 transmission-gtk
 tree
