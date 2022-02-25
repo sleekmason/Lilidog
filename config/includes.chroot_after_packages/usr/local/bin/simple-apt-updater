@@ -1,27 +1,16 @@
 #!/bin/bash
 ## Made by Sleekmason 1 Feb 2022
 ## Simple script to update, list, and then upgrade your system.
-read -p "
-
-
-                      ------ SIMPLE APT UPDATER ------
-
-
-                   ---------------------------------------
-
-                       Please press any key to begin.
-
-                   ---------------------------------------
-
-
-
-
-                       Or close this window to quit.
-
-";
+   echo ""
+   echo "                         ----- SIMPLE APT UPDATER -----"
    echo ""
    echo ""
-   sudo nala update
+   echo ""
+   echo ""
+   echo "Please Enter your password below to continue."
+   echo ""
+   echo ""
+sudo nala update
    echo ""
    echo "   ------------------------------------------------------------"
    echo ""
