@@ -11,8 +11,6 @@
     Explore through the Tint2 Panel, Menus, and File Manager to
     see if this distro is right for you. Reboot to install.
     
-    We are always on the lookout for new ideas and concepts. If
-    you enjoy Lilidog and would like to contribute toward its
-    development, feel free to opine in the forums.
-     
-    Enjoy!
+    I am always on the lookout for new ideas and cool concepts.
+    If you enjoy Lilidog and would like to contribute toward 
+    its development, feel free to opine in the forums.

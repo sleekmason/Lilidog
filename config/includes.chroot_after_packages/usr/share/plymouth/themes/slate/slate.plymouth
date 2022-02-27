@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Default theme for Lilidog
+Description=Lilidog theme for Plymouth
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/slate
+ScriptFile=/usr/share/plymouth/themes/slate/slate.script

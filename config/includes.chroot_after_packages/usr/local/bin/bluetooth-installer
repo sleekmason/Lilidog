@@ -1,0 +1,40 @@
+#!/bin/bash
+echo ""
+read -p "   Bluetooth Installer - Bluetooth may not work while in a VM.
+
+
+   This script will install the packages necessary for bluetooth use in 
+   Lilidog. Bluetooth may, or may not work depending on your computer.
+   
+   Here is the script install list: bluetooth bluez-tools blueman rfkill
+   pulseaudio-module-bluetooth
+   
+   After installation, you should be able to connect through the options
+   in the bluetooth tasktray applet. I used the directions from here:
+   https://sourceforge.net/p/lilidog/discussion/setup/thread/6b7ce1898e/
+   in order to connect to my android smart phone.
+   
+   Once installed, you will need to log out and back in to initialize
+   the bluetooth-manager applet which should appear in the task tray.
+   
+   ----------------------------------------
+   
+   Please press enter to install bluetooth.
+   
+   ----------------------------------------
+      
+   Or close this terminal window to quit the install." ;
+echo ""
+
+sudo apt update && sudo apt install bluetooth bluez-tools blueman pulseaudio-module-bluetooth rfkill
+echo "" 
+echo "" 
+echo "All Finished!"
+echo ""
+echo "Remember to log out and back in to activate the bluetooth manager." 
+echo "And a reminder that if you are in a VM, bluetooth will not work."
+echo ""
+echo "Good luck in your endeavors!" 
+echo ""
+echo ""
+echo "-----------------------------------------------------------"

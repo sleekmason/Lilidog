@@ -1,0 +1,57 @@
+#!/bin/bash
+echo ""
+read -p "   Joplin AppImage Installer - 164MB AppImage
+
+
+   This script will install Joplin, an opensource note program similar
+   to Evernote. The AppImage will be installed to '~/.joplin', and new
+   menu entries will be added to the Quickgrab Menu. 
+   
+   Joplin also provides downloads for Android and Apple devices. These
+   can be easily found in their respective app stores. This will make
+   syncing notes between your computer and any mobile devices easier.
+   
+   Info:
+   https://github.com/laurent22/joplin/blob/dev/readme/terminal.md
+   https://joplinapp.org/
+   
+   -------------------------------------
+   
+   Please press enter to install Joplin.
+   
+   -------------------------------------
+      
+   Or close this terminal window to quit the install." ;
+echo ""
+if [ -e "$HOME/.joplin" ]
+then
+echo "" 
+echo ""
+echo "" 
+echo "   --------------------------------------"
+echo ""
+echo "   JOPLIN APPEARS TO BE ALREADY INSTALLED" 
+echo ""
+echo "   --------------------------------------"
+echo "" 
+notify-send "Joplin is already installed" && exit
+else
+echo "" 
+echo ""
+sudo wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash &&
+echo ""
+sed -i '/^Joplin\b/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Joplin,             ~/.joplin/Joplin.AppImage,         joplin' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo "" 
+echo "" 
+echo "All Finished!"
+echo ""
+echo "You should find a Joplin entry in the quickgrab menu " 
+echo "Please be aware that joplin takes a long time to open." 
+echo "" 
+echo "Menu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo ""
+echo "-----------------------------------------------------------"
+fi

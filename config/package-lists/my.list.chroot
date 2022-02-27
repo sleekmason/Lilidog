@@ -158,6 +158,7 @@ pavucontrol
 pciutils
 pcmciautils
 picom
+plymouth
 pnmixer
 pragha
 publicsuffix
@@ -176,7 +177,6 @@ rsync
 rtmpdump
 rxvt-unicode
 scrot
-shellcheck
 smplayer
 ssft
 squashfs-tools
