@@ -1,27 +1,64 @@
 #!/bin/bash
 # Based on a script from brontosaurusrex https://forums.bunsenlabs.org/viewtopic.php?id=779&p=9
 # with much thanks to the author.
-# Adapted for use in Lilidog by sleekmason 02-02-2022
-# wallcolGradient
+# Adapted for use in Lilidog by sleekmason 02-28-2022
+# wallcolGradientAngle
 
-# pick two color and set that gradient as wallpaper
+# pick two colors and 
+# pick two points for angle and
+# set that gradient as wallpaper
 
+# pick colors
 main () {
-
 one="$(gpick -p -s -o)"
 two="$(gpick -p -s -o)"
 
 res="$(xdpyinfo | awk '/dimensions/{print $2}')"
 
+# pick angle
+# gpick used as blocker, similar to click-release event
+gpick -p -s && read -r X1 Y1 _ < <(xdotool getmouselocation) || exit
+gpick -p -s && read -r X2 Y2 _ < <(xdotool getmouselocation) || exit
+X1="${X1//[^0-9]/}"; X2="${X2//[^0-9]/}"; Y1="${Y1//[^0-9]/}"; Y2="${Y2//[^0-9]/}"
+
+angleInDegrees() {
+    
+    #                                                                          ˇ imagemagick friendly 90 degrees
+    angle="$(bc -l <<< "(a (($Y2 - $Y1) / ($X2 - $X1))) * 180 / (4 * a (1)) + 90")"
+
+}
+if (( X2 != X1 )); then # avoid division by zero
+    angleInDegrees
+else
+    X2="$(( X2 + 1 ))" && angleInDegrees
+fi
+
 doit () {
-    echo "$one > $two @ $res"
-    convert -size "${res}" gradient:"${one}-${two}" -channel RGB -separate -dither FloydSteinberg -colors 256 -combine -depth 8 ~/Pictures/wallpapers/Gradient.png || exit
-    feh --bg-scale ~/Pictures/wallpapers/Gradient.png
+    
+    # info
+    echo "$one > $two @ $res / $angle"
+    
+    # make gradient
+    convert -size "${res}" -define gradient:angle="${angle}" gradient:"${one}-${two}" -channel RGB -separate -dither FloydSteinberg -colors 256 -combine -depth 8 ~/Pictures/wallpapers/Gradient.png || exit
+    
+     # -set colorspace HSB -colorspace RGB
+    
+    # if there is ~/.noise.png, lets overlay that automagically
+    if [[ -f ~/.noise.png ]]; then
+        composite -tile -alpha off -compose overlay ~/.noise.png ~/Pictures/wallpapers/Gradient.png /tmp/tmpout.png
+        mv /tmp/tmpout.png ~/Pictures/wallpapers/Gradient.png
+    fi 
+    
+   
+    
+    # set wallpaper
+        feh --bg-scale ~/Pictures/wallpapers/Gradient.png
+
 }
 
 [[ "$one" && "$two" && "$res" ]] && doit
 }
 yad --title "Clickpick Gradient" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
---width=310 --height=488 --center \
+--width=310 --height=510 --center \
 --text-info --justify=center --wrap < /usr/share/lilidog/clickpick-gradient.txt --fontname="Dejavu Sans 11" && main
 pkill -x feh

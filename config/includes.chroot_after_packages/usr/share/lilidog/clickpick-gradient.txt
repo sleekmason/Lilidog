@@ -1,11 +1,12 @@
 	
-Gradient Wallpaper Maker
+Directional Gradient Wallpaper
 	
+click twice for the colors,
+then twice for the angles
+of direction.
+
 Select OK to activate the
 color picker.
-
-Click on any two colors to
-make a gradient wallpaper.
 	
 Click Cancel or press Esc a 
 few of times to exit.
