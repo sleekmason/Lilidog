@@ -99,7 +99,7 @@ case $1 in
     if [ -x "$recent_script" ]
     then
         output="${output}<separator label=\"Recently opened...\" />
-<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" />
+<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" icon=\"/usr/share/icons/gnome/32x32/apps/accessories-text-editor.png\" />
 "
     else
         echo "$0 : cannot find executable script $recent_script" >&2
@@ -139,8 +139,8 @@ XXX
     ;;
 esac
 
-output="$output<separator label=\"$pathe\" />
-<item label=\"Browse here...\">
+output="$output<separator />
+<item label=\"Browse Home Directory\" icon=\"/usr/share/icons/gnome/32x32/places/folder-documents.png\">
     <action name=\"Execute\">
         <command>
          &apos;$open_folder_cmd&apos; &apos;$pathe_apos&apos;
@@ -217,7 +217,8 @@ done
 [ -n "$files_menu" ] && {
 # NOTE3 comment out next 2 lines if you don't want "Files" label
 #   output="${output}<separator label=\"Files\" />
-#"
+    output="${output}<separator />
+"
     output="${output}${files_menu}
 "
 }
