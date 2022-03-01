@@ -140,7 +140,7 @@ XXX
 esac
 
 output="$output<separator />
-<item label=\"Browse Home Directory\" icon=\"/usr/share/icons/gnome/32x32/places/folder-documents.png\">
+<item label=\"Browse Home\" icon=\"/usr/share/icons/gnome/32x32/places/folder-documents.png\">
     <action name=\"Execute\">
         <command>
          &apos;$open_folder_cmd&apos; &apos;$pathe_apos&apos;
