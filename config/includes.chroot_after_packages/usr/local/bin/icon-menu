@@ -1,0 +1,5 @@
+#!/bin/bash
+
+    yad --icons --read-dir=/usr/share/applications --geometry=224x640+244+42 \
+    --sort-by-name --single-click --skip-taskbar --center \
+    --title="Icon Menu" --no-buttons
