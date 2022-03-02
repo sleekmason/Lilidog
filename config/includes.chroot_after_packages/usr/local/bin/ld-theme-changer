@@ -2,14 +2,16 @@
 
 yad --title "Quick Themes" \
 --button='Default'!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!:"x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1'" \
---button=gtk-close:1 --form --center --width=230 --borders=4 \
---height=544 --text="\n Please Close Geany \n Before Making Selection." --text-align=center \
+--button=gtk-close:1 --form --center --width=230 --height=650 --borders=4 \
+--text="\n Please Close Geany \n Before Selecting." --text-align=center \
 --window-icon=applications-utilities \
     --form \
     --field="":LBL "" \
+    --field="    Neon!$HOME/.config/lilidog-themes/icons/paw-neon.png!":BTN "$HOME/.config/lilidog-themes/neon-theme" \
+    --field="   Cobalt!$HOME/.config/lilidog-themes/icons/paw-cobalt.png!":BTN "$HOME/.config/lilidog-themes/cobalt-theme" \
     --field="     Dark!$HOME/.config/lilidog-themes/icons/paw-dark.png!":BTN "$HOME/.config/lilidog-themes/dark-theme" \
     --field="   Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":BTN "$HOME/.config/lilidog-themes/taupe-theme" \
-     --field="    Drow!$HOME/.config/lilidog-themes/icons/paw-drow.png!":BTN "$HOME/.config/lilidog-themes/drow-theme" \
+    --field="    Drow!$HOME/.config/lilidog-themes/icons/paw-drow.png!":BTN "$HOME/.config/lilidog-themes/drow-theme" \
     --field="    Earth!$HOME/.config/lilidog-themes/icons/paw-earth.png!":BTN "$HOME/.config/lilidog-themes/earth-theme" \
     --field="    Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":BTN "$HOME/.config/lilidog-themes/slate-theme" \
     --field="     Clay!$HOME/.config/lilidog-themes/icons/paw-clay.png!":BTN "$HOME/.config/lilidog-themes/clay-theme" \
