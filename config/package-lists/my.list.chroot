@@ -159,6 +159,7 @@ pciutils
 pcmciautils
 picom
 plymouth
+plymouth-themes
 pnmixer
 pragha
 publicsuffix
@@ -210,6 +211,7 @@ wbar
 wbar-config
 w3m
 w3m-img
+wget
 wmctrl
 wvdial
 x11-apps
