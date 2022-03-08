@@ -30,6 +30,7 @@ BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 ColorBackground=#1c1c28272929
 FontName=JetBrains Mono Light 11
 ScrollingLines=10000
+ScrollingOnOutput=FALSE
 ColorForeground=#a1a1c9c9c0c0
 BackgroundDarkness=0.930000
 FontAllowBold=FALSE
