@@ -49,7 +49,7 @@ shown_dotfiles='.config .local .Xresources .Xdefaults .bash_aliases .bashrc .inp
 # By default, this script will display directories separately, before files.
 # To change this behaviour, see NOTE1, NOTE2 and NOTE3 below, near end of page.
 
-HELP='    places-pipemenu an Openbox Pipe Menu for showing a directory tree
+HELP="    places-pipemenu an Openbox Pipe Menu for showing a directory tree
     It should normally be called from an openbox menu.
 Usage:
 places-pipemenu [options] [directory tree root]
@@ -76,7 +76,7 @@ shown_dotfiles      list of dotfiles to display (they are hidden by default)
 
 By default, this script will display directories separately, before files.
 To change this behaviour, see NOTE1, NOTE2 and NOTE3 near end of file.
-'
+"
 
 ############################################################################
 
@@ -99,7 +99,7 @@ case $1 in
     if [ -x "$recent_script" ]
     then
         output="${output}<separator label=\"Recently opened...\" />
-<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" icon=\"/usr/share/icons/gnome/32x32/apps/accessories-text-editor.png\" />
+<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" icon=\"/usr/share/icons/Breeze/actions/32/document-edit-sign.svg\" />
 "
     else
         echo "$0 : cannot find executable script $recent_script" >&2
@@ -140,7 +140,7 @@ XXX
 esac
 
 output="$output<separator />
-<item label=\"Browse Home\" icon=\"/usr/share/icons/gnome/32x32/places/folder-documents.png\">
+<item label=\"Browse Home\" icon=\"/usr/share/icons/Breeze/actions/32/document-open.svg\">
     <action name=\"Execute\">
         <command>
          &apos;$open_folder_cmd&apos; &apos;$pathe_apos&apos;
@@ -194,10 +194,10 @@ XXX
 # NOTE1 If you want directories and files listed together
 # change next line [directories_menu="$directories_menu] to read: [files_menu="$files_menu] (there is no final quote)
         directories_menu="$directories_menu
-<menu id=\"${pathe_apos}/${shortnamee_apos}\" label=\"$shortnamee_label\" icon=\"/usr/share/icons/gnome/32x32/places/folder.png\" execute=\"&apos;$0&apos; &apos;${pathe_apos}/${shortnamee_apos}&apos;\" />"
+<menu id=\"${pathe_apos}/${shortnamee_apos}\" label=\"$shortnamee_label\" icon=\"/usr/share/icons/Breeze/actions/32/document-open.svg\" execute=\"&apos;$0&apos; &apos;${pathe_apos}/${shortnamee_apos}&apos;\" />"
     else
         files_menu="$files_menu
-<item label=\"$shortnamee_label\" icon=\"/usr/share/icons/gnome/32x32/apps/accessories-text-editor.png\">
+<item label=\"$shortnamee_label\" icon=\"/usr/share/icons/Breeze/actions/32/document-edit-sign.svg\">
     <action name=\"Execute\">
         <command>
         &apos;$0&apos; --open &apos;${pathe_apos}/${shortnamee_apos}&apos;
