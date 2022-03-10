@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "   Gnome Colors Installer.
+read -p "   [0;33mGnome Colors Installer.[0m
 
 
    Nothing fancy script wise.  Just a convenience to download the
@@ -10,7 +10,7 @@ read -p "   Gnome Colors Installer.
     
    ---------------------------------------------------------------
    
-   Please press enter to install the Gnome Colors icon themes.
+   [0;32mPlease press enter to install the Gnome Colors icon themes.[0m
    
    ---------------------------------------------------------------    
       
@@ -20,6 +20,6 @@ sudo apt update && sudo apt install gnome-colors
 
 echo ""
 echo ""
-echo "All done. Enjoy your new icon themes!"
+echo "[0;32mAll done. Enjoy your new icon themes![0m"
 echo ""
 echo ""

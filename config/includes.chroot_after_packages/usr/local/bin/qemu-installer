@@ -2,7 +2,7 @@
 echo ""
 echo ""
 echo ""
-read -p "   Qemu Installer
+read -p "   [0;33mQemu Installer[0m
 
    Qemu/kvm is a virtual machine, similar to VirtualBox.
    This will install Qemu with --recommends enabled.
@@ -13,7 +13,7 @@ read -p "   Qemu Installer
    
    ---------------------------------------------------------
    
-   Please press enter to install Qemu.
+   [0;32mPlease press enter to install Qemu.[0m
    
    ---------------------------------------------------------
    
@@ -27,15 +27,15 @@ killall jgmenu
 echo ""
 echo "-----------------------------------------------------"
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
-echo "If installed, You should find a new menu entry under 'Quick Grab'"
-echo "labeled 'VM Manager'"
+echo "[0;33mIf installed, You should find a new menu entry under 'Quick Grab'"
+echo "labeled 'VM Manager'[0m"
 echo "" 
-echo "For quick use, open a terminal where you have an ISO and use:"
-echo "kvm -cdrom <Your-Cool-ISO-amd64.hybrid.iso> -m 2048"
+echo "[0;32mFor quick use, open a terminal where you have an ISO and use:"
+echo "kvm -cdrom <Your-Cool-ISO-amd64.hybrid.iso> -m 2048[0m"
 echo "" 
-echo "Menu entries will need to be removed manually if uninstalled." 
-echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "-----------------------------------------------------"

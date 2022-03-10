@@ -2,7 +2,7 @@
 echo ""
 echo ""
 echo ""
-read -p "   Etcher Installer
+read -p "   [0;33mEtcher Installer[0m
 
    Etcher is a powerful OS image flasher built with 
    web technologies to ensure flashing an SDCard or 
@@ -18,7 +18,7 @@ read -p "   Etcher Installer
       
    ---------------------------------------------------------
    
-   Please press enter to install Etcher.
+   [0;32mPlease press enter to install Etcher.[0m
    
    ---------------------------------------------------------  
    
@@ -41,12 +41,12 @@ echo "-----------------------------------------------------"
 echo ""
 echo ""
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
-echo "If installed, You should find a new menu entry under 'Utilities'"
-echo "labeled 'Etcher'"
+echo "[0;33mIf installed, You should find a new menu entry under 'Utilities'"
+echo "labeled 'Etcher'[0m"
 echo "" 
-echo "Menu entries will need to be removed manually if uninstalled." 
-echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "-----------------------------------------------------"

@@ -2,7 +2,7 @@
 echo ""
 echo ""
 echo ""
-read -p "   Printer Setup Installer. 
+read -p "   [0;33mPrinter Setup Installer.[0m 
    
    This will install the packages necessary for printing
    and scanning on your computer.
@@ -10,7 +10,7 @@ read -p "   Printer Setup Installer.
    
    ---------------------------------------------------
    
-   Please press enter to install the printer packages.
+   [0;32mPlease press enter to install the printer packages.[0m
    
    ---------------------------------------------------
    
@@ -29,9 +29,9 @@ killall jgmenu
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
-echo "Return to Printer Setup in the menu to connect your printer!"
+echo "[0;33mReturn to Printer Setup in the menu to connect your printer![0m"
 echo ""
 echo ""
 echo "------------------------------------------------------------"

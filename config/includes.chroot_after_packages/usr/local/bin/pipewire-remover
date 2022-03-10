@@ -1,7 +1,7 @@
 #!/bin/bash
 echo ""
 echo ""
-read -p "   Pipewire Remover
+read -p "   [0;33mPipewire Remover[0m
 
    If you are using Pipewire, and want to switch back to Pulseaudio.
 
@@ -11,7 +11,7 @@ read -p "   Pipewire Remover
 
    -------------------------------------------------
    
-   Please press enter to Switch back to Pulseaudio.
+   [0;32mPlease press enter to Switch back to Pulseaudio.[0m
    
    -------------------------------------------------
    
@@ -37,13 +37,13 @@ LANG=C pactl info | grep '^Server Name'
 echo ""
 echo "-----------------------------------------------------"
 echo ""
-echo "If Pipewire has been sucessfully removed, you should see:"
-echo "'Server Name: PulseAudio'" above.
+echo "[0;33mIf Pipewire has been sucessfully removed, you should see above:[0m"
 echo ""
-echo "Remember if no Pnmixer warning box appeared, right-click" 
-echo "on Pnmixer (sound icon) and 'Reload Sound'."
+echo "[0;32m'Server Name: PulseAudio'[0m"
 echo ""
-echo "All Finished!"
+echo "[0;31mRemember if no Pnmixer warning box appeared, right-click" 
+echo "on Pnmixer (sound icon) and 'Reload Sound'.[0m"
 echo ""
+echo "[0;32mAll Finished![0m"
 echo ""
 echo "-----------------------------------------------------"

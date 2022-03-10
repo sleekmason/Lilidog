@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   Hw-Probe
+read -p "   [0;33mHw-Probe[0m
 
    The most comprehensive program to check your computer for issues.
    https://linux-hardware.org/
@@ -16,7 +16,7 @@ read -p "   Hw-Probe
    A link will be provided to access the report upon completion.
    ------------------------------------------------------------
    
-   Please press enter to install Hw-Probe or re-run the program.
+   [0;32mPlease press enter to install Hw-Probe or re-run the program.[0m
    
    ------------------------------------------------------------
       
@@ -29,5 +29,5 @@ sudo -E hw-probe -all -upload
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
-echo "All Done.  Right-click on the link above to access your report."
-echo "Hope the information found is useful."
+echo "[0;32mAll Done.  Right-click on the link above to access your report.[0m"
+echo "[0;32mHope the information found is useful.[0m"

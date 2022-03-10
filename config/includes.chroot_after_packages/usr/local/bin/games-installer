@@ -2,7 +2,7 @@
 echo ""
 echo ""
 echo ""
-read -p "   Games Installer
+read -p "   [0;33mGames Installer[0m
 
    A few super small games to waste some time with:)
    Currently Blockout2, Briquolo, Eboard Chess, Mahjong
@@ -12,7 +12,7 @@ read -p "   Games Installer
    
    ---------------------------------------------------------
    
-   Please press enter to install the games.
+   [0;32mPlease press enter to install the games.[0m
    
    ---------------------------------------------------------
    
@@ -40,13 +40,13 @@ killall jgmenu
 echo ""
 echo "-----------------------------------------------------"
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
-echo "If installed, You should find a new menu entry 'Games'"
-echo "in the Quickgrab menu." 
+echo "[0;33mIf installed, You should find a new menu entry 'Games'"
+echo "in the Quickgrab menu.[0m" 
 echo "" 
 echo "" 
-echo "Menu entries will need to be removed manually if uninstalled." 
-echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "-----------------------------------------------------"

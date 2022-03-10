@@ -2,7 +2,7 @@
 echo ""
 echo ""
 echo ""
-read -p "   Packages Useful For Live-build, Git, And Openssh. 
+read -p "   [0;33mPackages Useful For Live-build, Git, And Openssh.[0m 
    
    This will install: live-build, live-config, live-boot, 
    git, openssh-sftp-server
@@ -15,7 +15,7 @@ read -p "   Packages Useful For Live-build, Git, And Openssh.
    
    ------------------------------------------
    
-   Please press enter to install the packages.
+   [0;32mPlease press enter to install the packages.[0m
    
    ------------------------------------------
    
@@ -26,6 +26,6 @@ sudo apt update && sudo apt install live-build live-config live-boot git openssh
 echo ""
 echo "----------------------------------------"
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
 echo "----------------------------------------"

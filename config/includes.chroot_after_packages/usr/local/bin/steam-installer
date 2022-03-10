@@ -2,22 +2,22 @@
 echo ""
 echo ""
 echo ""
-read -p "   Steam Installer
+read -p "   [0;33mSteam Installer[0m
 
    Steam is a proprietary content delivery and launcher application 
    for video games, creative tools, and multimedia.
 
    https://wiki.debian.org/Steam
    
-   WARNING*
+   [0;31mWARNING*
    This will enable multi-arch, adding the i386 architecture,
-   and install steam with --recommends enabled.
+   and install steam with --recommends enabled.[0m
 
    https://wiki.debian.org/Multiarch/HOWTO
    
    ----------------------------------------------------------
    
-   Please press enter to enable multi-arch and install Steam.
+   [0;32mPlease press enter to enable multi-arch and install Steam.[0m
    
    ----------------------------------------------------------
       
@@ -36,11 +36,11 @@ echo "------------------------------------------------------------------"
 echo ""
 echo ""
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
-echo "If installed, You should find a new menu entry under 'Games'"
+echo "[0;33mIf installed, You should find a new menu entry under 'Games'[0m"
 echo "" 
-echo "Menu entries will need to be removed manually if uninstalled." 
-echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "------------------------------------------------------------------"

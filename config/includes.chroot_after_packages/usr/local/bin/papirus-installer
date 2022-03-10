@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "              Papirus Icon Installer With Added Colors.
+read -p "              [0;33mPapirus Icon Installer With Added Colors[0m
 
    This nifty script will download the Papirus Icon Theme and then 
    add the color themes: Black, Bluegrey, Grey, Nordic, Yaro, Red, 
@@ -19,7 +19,7 @@ read -p "              Papirus Icon Installer With Added Colors.
     
    ---------------------------------------------------------------
    
-   Please press enter to install Papirus and add the color themes.
+   [0;32mPlease press enter to install Papirus and add the color themes.[0m
    
    ---------------------------------------------------------------    
       
@@ -29,92 +29,92 @@ sudo apt update && sudo apt install papirus-icon-theme &&
 echo ""
 echo "--------------------------------------------------------------"
 echo ""
-echo "Creating the Bluegrey icon color scheme."
+echo "[0;32mCreating the Bluegrey icon color scheme.[0m"
 cd ~/.local/share/icons &&
 papirus-folder-color.sh bluegrey &&
 mv ~/.local/share/icons/Papirus-color Papirus-Bluegrey &&
  sed -i "2s/color/Bluegrey/g" ~/.local/share/icons/Papirus-Bluegrey/index.theme
- echo "Bluegrey icon theme added."
+ echo "[0;33mBluegrey icon theme added.[0m"
  
  echo ""
- echo "Creating the Brown icon color scheme."
+ echo "[0;32mCreating the Brown icon color scheme.[0m"
 papirus-folder-color.sh brown &&
 mv ~/.local/share/icons/Papirus-color Papirus-Brown &&
  sed -i "2s/color/Brown/g" ~/.local/share/icons/Papirus-Brown/index.theme
- echo "Brown icon theme added."
+ echo "[0;33mBrown icon theme added.[0m"
  
  echo ""
- echo "Creating the Red icon color scheme."
+ echo "[0;32mCreating the Red icon color scheme.[0m"
 papirus-folder-color.sh red &&
 mv ~/.local/share/icons/Papirus-color Papirus-Red &&
  sed -i "2s/color/Red/g" ~/.local/share/icons/Papirus-Red/index.theme
- echo "Red icon theme added."
+ echo "[0;33mRed icon theme added.[0m"
  
  echo ""
- echo "Creating the Grey icon color scheme."
+ echo "[0;32mCreating the Grey icon color scheme.[0m"
 papirus-folder-color.sh grey &&
 mv ~/.local/share/icons/Papirus-color Papirus-Grey &&
  sed -i "2s/color/Grey/g" ~/.local/share/icons/Papirus-Grey/index.theme
- echo "Grey icon theme added."
+ echo "[0;33mGrey icon theme added.[0m"
  
  echo ""
- echo "Creating the Black icon color scheme."
+ echo "[0;32mCreating the Black icon color scheme.[0m"
 papirus-folder-color.sh black &&
 mv ~/.local/share/icons/Papirus-color Papirus-Black &&
  sed -i "2s/color/Black/g" ~/.local/share/icons/Papirus-Black/index.theme
- echo "Black icon theme added."
+ echo "[0;33mBlack icon theme added.[0m"
  
 echo ""
- echo "Creating the Deeporange icon color scheme."
+ echo "[0;32mCreating the Deeporange icon color scheme.[0m"
 papirus-folder-color.sh deeporange &&
 mv ~/.local/share/icons/Papirus-color Papirus-Deeporange &&
  sed -i "2s/color/Deeporange/g" ~/.local/share/icons/Papirus-Deeporange/index.theme
- echo "Deeporange icon theme added."
+ echo "[0;33mDeeporange icon theme added.[0m"
  
  echo ""
- echo "Creating the Teal icon color scheme."
+ echo "[0;32mCreating the Teal icon color scheme.[0m"
 papirus-folder-color.sh teal &&
 mv ~/.local/share/icons/Papirus-color Papirus-Teal &&
  sed -i "2s/color/Teal/g" ~/.local/share/icons/Papirus-Teal/index.theme
-echo "Teal icon theme added."
+echo "[0;33mTeal icon theme added.[0m"
 
  echo ""
- echo "Creating the Green icon color scheme."
+ echo "[0;32mCreating the Green icon color scheme.[0m"
 papirus-folder-color.sh green &&
 mv ~/.local/share/icons/Papirus-color Papirus-Green &&
  sed -i "2s/color/Green/g" ~/.local/share/icons/Papirus-Green/index.theme
-echo "Green icon theme added."
+echo "[0;33mGreen icon theme added.[0m"
 
  echo ""
- echo "Creating the Violet icon color scheme."
+ echo "[0;32mCreating the Violet icon color scheme.[0m"
 papirus-folder-color.sh violet &&
 mv ~/.local/share/icons/Papirus-color Papirus-Violet &&
  sed -i "2s/color/Violet/g" ~/.local/share/icons/Papirus-Violet/index.theme
-echo "Violet icon theme added."
+echo "[0;33mViolet icon theme added.[0m"
 
  echo ""
- echo "Creating the Nordic icon color scheme."
+ echo "[0;32mCreating the Nordic icon color scheme.[0m"
 papirus-folder-color.sh nordic &&
 mv ~/.local/share/icons/Papirus-color Papirus-Nordic &&
  sed -i "2s/color/Nordic/g" ~/.local/share/icons/Papirus-Nordic/index.theme
-echo "Nordic icon theme added."
+echo "[0;33mNordic icon theme added.[0m"
 
  echo ""
- echo "Creating the Yaru icon color scheme."
+ echo "[0;32mCreating the Yaru icon color scheme.[0m"
 papirus-folder-color.sh yaru &&
 mv ~/.local/share/icons/Papirus-color Papirus-Yaru &&
  sed -i "2s/color/Yaru/g" ~/.local/share/icons/Papirus-Yaru/index.theme
-echo "Yaru icon theme added."
+echo "[0;33mYaru icon theme added.[0m"
 
  echo ""
- echo "Creating the Magenta icon color scheme."
+ echo "[0;32mmCreating the Magenta icon color scheme.[0m"
 papirus-folder-color.sh magenta &&
 mv ~/.local/share/icons/Papirus-color Papirus-Magenta &&
  sed -i "2s/color/Magenta/g" ~/.local/share/icons/Papirus-Magenta/index.theme
-echo "Magenta icon theme added."
+echo "[0;33mMagenta icon theme added.[0m"
 sudo /usr/local/bin/update-icons ~/.local/share/icons/
 echo ""
 echo ""
-echo "All done. Enjoy your new icon themes!"
+echo "[0;33mAll done. Enjoy your new icon themes![0m"
 echo ""
 echo ""

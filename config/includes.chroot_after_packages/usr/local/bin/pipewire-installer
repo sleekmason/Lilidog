@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   Pipewire Installer
+read -p "   [0;33mPipewire Installer[0m
 
    This script will replace Pulseaudio as the audio server with Pipewire.
    This is an EXPERIMENTAL usage of Pipewire. Use at your own risk.
@@ -18,7 +18,7 @@ read -p "   Pipewire Installer
    
    -------------------------------------------------
    
-   Please press enter to install and use Pipewire.
+   [0;32mPlease press enter to install and use Pipewire.[0m
    
    -------------------------------------------------
  
@@ -46,15 +46,15 @@ LANG=C pactl info | grep '^Server Name'
 echo ""
 echo "-----------------------------------------------------"
 echo ""
-echo "If Pipewire is correctly set up, you should see above:"
+echo "[0;33mIf Pipewire is correctly set up, you should see above:[0m"
 echo ""
-echo "'Server Name: PulseAudio (on PipeWire 0.3.XX)'"
+echo "[0;32m'Server Name: PulseAudio (on PipeWire 0.3.XX)'[0m"
 echo ""
 echo ""
-echo "Remember if no Pnmixer warning box appeared, right-click" 
-echo "on Pnmixer (sound icon) and 'Reload Sound'."
+echo "[0;31mRemember if no Pnmixer warning box appeared, right-click" 
+echo "on Pnmixer (sound icon) and 'Reload Sound'.[0m"
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
 echo ""
 echo "-----------------------------------------------------"

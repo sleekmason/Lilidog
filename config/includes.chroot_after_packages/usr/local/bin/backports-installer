@@ -2,21 +2,21 @@
 ## Made by Sleekmason 18 Feb 2022
 ## Simple script to add backports and Fast Track to your sources.
 read -p "   
-                          ADD ADDITIONAL SOURCES
+                          [0;33mADD ADDITIONAL SOURCES[0m
    
    
    This script will add the Bullseye Backports repository and an option 
    to add the Debian Fast Track repositories.
    
    More info:
-   https://backports.debian.org/Instructions/
-   https://fasttrack.debian.net/#
+   [0;31mhttps://backports.debian.org/Instructions/
+   https://fasttrack.debian.net/#[0m
    
    
    -------------------------------------------------------------------
    
-   Please press Enter to add Bullseye Backports and have the option to
-   add the Debian Fast Track repositories.
+   [0;32mPlease press Enter to add Bullseye Backports and have the option to
+   add the Debian Fast Track repositories.[0m
    
    -------------------------------------------------------------------
    
@@ -34,7 +34,7 @@ read -p "
    echo "-------------------------------------------------------------------------------"
    read -r -p "
    
-               ---BULLSEYE BACKPORTS ENABLED AND UPDATED---
+               [0;33m---BULLSEYE BACKPORTS ENABLED AND UPDATED---[0m
            
       
           
@@ -47,13 +47,13 @@ read -p "
 
    ---------------------------------------------------------------------
    
-   If you ONLY want Bullseye Backports, exit now by closing this window.
+   [0;31mIf you ONLY want Bullseye Backports, exit now by closing this window.[0m
    
    ---------------------------------------------------------------------
    
    
-   If you would also like to ADD the Debian Fast Track repositories,
-   please press Enter to continue.
+   [0;32mIf you would also like to ADD the Debian Fast Track repositories,
+   please press Enter to continue.[0m
 
 
 
@@ -72,11 +72,11 @@ read -p "
    echo ""
    echo "-------------------------------------------------------------------------------"
    echo ""
-   echo "               ---FAST TRACK REPOSITORIES ENABLED AND UPDATED---"
+   echo "               [0;33m---FAST TRACK REPOSITORIES ENABLED AND UPDATED---[0m"
 echo ""
    echo "
-   Fast Track repos have been added to /etc/apt/sources.list.d/fasttrack.list
-   Bullseye Backports must also remain enabled for Fast Track to work. 
+   [0;32mFast Track repos have been added to /etc/apt/sources.list.d/fasttrack.list
+   Bullseye Backports must also remain enabled for Fast Track to work.[0m 
    
    To install from Fast Track: sudo apt install <package>/bullseye-fasttrack
 
@@ -87,9 +87,9 @@ echo ""
    ----------------------------------------------------------------------------
 
 
-   If you want to remove the Fast Track sources from your sources list:
+   [0;32mIf you want to remove the Fast Track sources from your sources list:[0m
 
    sudo rm /etc/apt/sources.list.d/fasttrack.list && 
-   sudo apt remove fasttrack-archive-keyring 
+   sudo apt remove fasttrack-archive-keyring
    "
    echo ""

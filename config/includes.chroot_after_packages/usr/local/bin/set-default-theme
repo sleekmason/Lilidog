@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   Total Theme Reset
+read -p "   [0;33mTotal Theme Reset[0m
 
    An emergency button to put everything back to the default settings.
 
@@ -13,7 +13,7 @@ read -p "   Total Theme Reset
 
    ----------------------------------------------------------------------
    
-   Please press enter to reset all items to their original configuration.
+   [0;31mPlease press enter to reset all items to their original configuration.[0m
    
    ----------------------------------------------------------------------
 
@@ -26,8 +26,8 @@ echo ""
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
-echo "All finished! If something did not change, check to see if the item" 
-echo "has been removed. (Uninstalled icons, wallpaper, etc.)"
+echo "[0;32mAll finished! If something did not change, check to see if the item" 
+echo "has been removed. (Uninstalled icons, wallpaper, etc.)[0m"
 echo ""
 echo "------------------------------------------------------------------"
 echo ""

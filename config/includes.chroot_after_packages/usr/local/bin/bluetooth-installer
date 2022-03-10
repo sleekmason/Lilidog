@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   Bluetooth Installer - Bluetooth may not work while in a VM.
+read -p "   [0;33mBluetooth Installer - Bluetooth may not work while in a VM.[0m
 
 
    This script will install the packages necessary for bluetooth use in 
@@ -19,7 +19,7 @@ read -p "   Bluetooth Installer - Bluetooth may not work while in a VM.
    
    ----------------------------------------
    
-   Please press enter to install bluetooth.
+   [0;32mPlease press enter to install bluetooth.[0m
    
    ----------------------------------------
       
@@ -29,12 +29,12 @@ echo ""
 sudo apt update && sudo apt install bluetooth bluez-tools blueman pulseaudio-module-bluetooth rfkill
 echo "" 
 echo "" 
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
-echo "Remember to log out and back in to activate the bluetooth manager." 
-echo "And a reminder that if you are in a VM, bluetooth will not work."
+echo "[0;33mRemember to log out and back in to activate the bluetooth manager." 
+echo "And a reminder that if you are in a VM, bluetooth will not work.[0m"
 echo ""
-echo "Good luck in your endeavors!" 
+echo "[0;32mGood luck in your endeavors![0m" 
 echo ""
 echo ""
 echo "-----------------------------------------------------------"

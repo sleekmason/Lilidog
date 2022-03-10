@@ -2,7 +2,7 @@
 echo ""
 echo ""
 echo ""
-read -p "   Libreoffice Installer
+read -p "   [0;33mLibreoffice Installer[0m
 
    This will install the full Libreoffice Suite with gtk support 
    and other sensible extras. Hunspell will default to US EN. 
@@ -13,7 +13,7 @@ read -p "   Libreoffice Installer
    
    --------------------------------------------------------------
    
-   Please press enter to install the Libreoffice Suite.
+   [0;32mPlease press enter to install the Libreoffice Suite.[0m
    
    --------------------------------------------------------------
    
@@ -32,12 +32,12 @@ echo ""
 echo ""
 echo "-----------------------------------------------------------"
 echo ""
-echo "All Finished!"
+echo "[0;32mAll Finished![0m"
 echo ""
-echo "You should find a Libreoffice entry in the quickgrab menu " 
+echo "[0;33mYou should find a Libreoffice entry in the quickgrab menu [0m" 
 echo "" 
 echo "" 
-echo "Menu entries will need to be removed manually if uninstalled." 
-echo "See Jgmenu Conf under Configuration in the menu for directions."
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "-----------------------------------------------------------"

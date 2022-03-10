@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   Missing Firmware Installer
+read -p "   [0;33mMissing Firmware Installer[0m
 
 
    This script will install a tiny program (isenkram-cli) to check
@@ -9,7 +9,7 @@ read -p "   Missing Firmware Installer
    
    ----------------------------------------------------------------
    
-   Please press enter to install isenkram-cli or re-run the program.
+   [0;32mPlease press enter to install isenkram-cli or re-run the program.[0m
    
    ----------------------------------------------------------------
       
@@ -22,4 +22,4 @@ sudo isenkram-autoinstall-firmware
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
-echo "All Done.  Hope any information found is useful."
+echo "[0;32mAll Done.  Hope any information found is useful.[0m"
