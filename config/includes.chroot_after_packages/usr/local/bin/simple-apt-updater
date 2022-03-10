@@ -2,16 +2,26 @@
 ## Made by Sleekmason 1 Feb 2022
 ## Simple script to update, list, and then upgrade your system.
    echo ""
-   echo "                         ----- SIMPLE APT UPDATER -----"
+   echo "                        [0;33m----- SIMPLE APT UPDATER -----[0m"
    echo ""
    echo ""
    echo ""
    echo ""
-   echo ""
-sudo nala update
+   sudo apt update && sudo apt list --upgradeable
    echo ""
    echo "   ------------------------------------------------------------"
    echo ""
-   bash
+   read -p "   [0;33mScroll Above to see the list of all packages to be upgraded.
+   If no packages are shown, then there are none to upgrade.[0m
+   
+   ------------------------------------------------------------
+   
+   [0;32mPress Enter to continue with the upgrade, or close this
+   window to quit.[0m
+   
+   "
+   echo ""
+   echo ""
+   sudo apt upgrade;bash
    echo ""
    echo ""
