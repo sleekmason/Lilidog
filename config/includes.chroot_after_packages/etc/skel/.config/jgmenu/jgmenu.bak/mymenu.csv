@@ -34,6 +34,7 @@ Geany,              geany,	                           geany
 Icon Browser,       yad-icon-browser,                  galternatives
 
 ^tag(utilities)
+Wallpaper Maker,    ^checkout(clickpick),              applications-utilities
 Screenshot,         gnome-screenshot -i,               preferences-desktop-theme
 Htop,               x-terminal-emulator -T 'Htop' -e htop,                    htop
 Gparted,            gksudo gparted,                    gparted
@@ -43,7 +44,6 @@ Transmission,       transmission-gtk,                     transmission
 Color Chooser,      yad --color,                       yad
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     edit-cut
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
-Wallpaper Maker,    ^checkout(clickpick),              applications-utilities
 App Alternatives,   galternatives,                     preferences-system
 Lucky Backup,       export QT_QPA_PLATFORMTHEME=gtk2 && luckybackup,  luckybackup
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
@@ -82,6 +82,7 @@ Install Papirus Icons,     x-terminal-emulator -T 'Papirus Icon Theme Installer'
 Install Gnome Color Icons, x-terminal-emulator -T 'Gnome Colors Icons Installer' -e bash -c "gnome-colors-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-utilities
 
 ^tag(toggles)
+Tint2 Options,       ^checkout(tint2-options),                      object-flip-horizontal
 Wbar,                toggle.wbar,                                   object-flip-horizontal
 Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
 Gammy,               toggle.gammy,                                  object-flip-horizontal
@@ -89,7 +90,6 @@ Clipboard,           toggle.parcellite,                             object-flip-
 Hotcorners,          toggle.ld,                                     object-flip-horizontal
 Random BG,           toggle-wallpaper-random,                       object-flip-horizontal
 Xscreensaver,        toggle.xscreensaver,                           object-flip-horizontal
-Tint2 Options,       ^checkout(tint2-options),                      object-flip-horizontal
 Tint2 Toggle,        toggle.tint2,                                  object-flip-horizontal
 Fbpanel,             toggle.fbpanel,                                object-flip-horizontal
 Picom,               toggle.picom,                                  object-flip-horizontal
