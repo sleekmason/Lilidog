@@ -19,6 +19,8 @@ read -p "   [0;33mTotal Theme Reset[0m
 
       
    Or close this terminal window to quit." ;
+   wget -q --tries=10 --timeout=20 --spider http://google.com
+if [ $? -eq 0 ]; then
 echo ""
 ~/.config/lilidog-themes/default-theme
 echo ""
@@ -31,3 +33,12 @@ echo "has been removed. (Uninstalled icons, wallpaper, etc.)[0m"
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

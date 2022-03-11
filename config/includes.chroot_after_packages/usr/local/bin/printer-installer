@@ -16,6 +16,8 @@ read -p "   [0;33mPrinter Setup Installer.[0m
    
    
    Or close this terminal window to quit the install." ;
+   wget -q --tries=10 --timeout=20 --spider http://google.com
+if [ $? -eq 0 ]; then
 sudo apt update && sudo apt install hplip system-config-printer \
 system-config-printer-udev sane-utils xsane printer-driver-all printer-driver-brlaser \
 printer-driver-c2050 printer-driver-c2esp printer-driver-cjet printer-driver-cups-pdf \
@@ -35,3 +37,12 @@ echo "[0;33mReturn to Printer Setup in the menu to connect your printer![0m"
 echo ""
 echo ""
 echo "------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

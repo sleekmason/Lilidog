@@ -23,6 +23,8 @@ read -p "   [0;33mLiquorix Kernel Installer[0m
    --------------------------------------------------  
    
    Or close this terminal window to quit the install." ;
+   wget -q --tries=10 --timeout=20 --spider http://google.com
+if [ $? -eq 0 ]; then
 sudo curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash 
 sudo sed -i '1s/# deb/deb/g' /etc/apt/sources.list.d/liquorix.list
 sudo sed -i '2s/# deb/deb/g' /etc/apt/sources.list.d/liquorix.list
@@ -50,3 +52,12 @@ echo "[0;31mThis script deactivates the repository after install."
 echo "Simply run the script again to install a newer kernel later.[0m"
 echo ""
 echo "---------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
