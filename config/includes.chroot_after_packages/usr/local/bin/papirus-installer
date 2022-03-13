@@ -109,7 +109,7 @@ mv ~/.local/share/icons/Papirus-color Papirus-Yaru &&
 echo "[0;33mYaru icon theme added.[0m"
 
  echo ""
- echo "[0;32mmCreating the Magenta icon color scheme.[0m"
+ echo "[0;32mCreating the Magenta icon color scheme.[0m"
 papirus-folder-color.sh magenta &&
 mv ~/.local/share/icons/Papirus-color Papirus-Magenta &&
  sed -i "2s/color/Magenta/g" ~/.local/share/icons/Papirus-Magenta/index.theme
