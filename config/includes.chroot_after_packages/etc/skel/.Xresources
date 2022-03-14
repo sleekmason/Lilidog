@@ -10,7 +10,7 @@ Xft.lcdfilter: lcddefault
 !--- Window Settings
 Xcursor.size:11
 URxvt.buffered:             true
-URxvt.geometry:             80x30
+URxvt.geometry:             80x26
 
 !--- Font Size and Controls
 URxvt*.font:  xft:JetBrains Mono Light:autohint=true:pixelsize=14
