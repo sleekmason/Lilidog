@@ -5,7 +5,7 @@ Lilidog is a lightweight Linux distro using the Openbox window manager. <br/>
 Lilidog is based on Debian, with most of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize further.
 
-### There are currently four versions of Lilidog available.
+### There are currently three versions of Lilidog available.
 
 - Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use. <br/>
 This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few.
@@ -14,9 +14,6 @@ This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, 
 your OWN packages. Currently contains xfce4-terminal, Thunar, and Mousepad to get you started.
 Design your system with any other programs you might like.
 __sudo apt update && sudo apt install synaptic__ for a graphical interface to make installing your programs easier.
-
-- Lilidog-Sid-amd64 This version uses the repositories from the unstable branch (sid).  If you want a rolling release,
-this is the one for you. You will want to __sudo apt update && sudo apt upgrade__ frequently to not fall too far behind.
 
 - Lilidog-i386 (Bullseye i386 full version) Uses the same base packages as the amd64 version, but for older hardware.
 You may need to boot with the kernel parameter 'forcepae' if you have difficulties.
@@ -62,7 +59,7 @@ Lilidog: <br/>
 
 - Bullseye backport and Debian Fast Track can be added to your sources from the 'Extras' portion of the menu under 'Utilities'.
 
-- These are 'no recommends' builds. (Sid version excluded). This means only required dependencies are included during install.
+- These are 'no recommends' builds. This means only required dependencies are included during install.
 This leaves out any recommended or suggested packages, allowing for complete control over package installation.
 No unwanted packages will be installed by default. This can be changed after install if desired.
 
@@ -123,7 +120,7 @@ and set the gamma and brightness of your screen for different times of your choi
 
 - System notifications enabled with Dunst.
 
-- Menu Extras - Install menu with options for Liquorix kernel, Qemu, Virtualbox (sid), Steam, Etcher, and more.
+- Menu Extras - Install menu with options for Liquorix kernel, Qemu, Steam, Etcher, and more.
 
 - Swapid script for the frequent dual installer. This grabs your swap uuid and opens the appropriate windows to edit.
 Run 'swapid' in a terminal after installing another distro to a different partition.
