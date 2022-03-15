@@ -19,8 +19,6 @@ read -p "   [0;33mAll Packages Necessary To Compile The Linux Kernel.[0m
    
    
    Or close this terminal window to quit the install." ;
-   wget -q --tries=10 --timeout=20 --spider http://google.com
-if [ $? -eq 0 ]; then
 echo ""
 sudo apt update && sudo apt install bc bison build-essential fakeroot flex libelf-dev libncurses5-dev libssl-dev
 echo ""
@@ -29,12 +27,3 @@ echo ""
 echo "[0;32mAll Finished![0m"
 echo ""
 echo "----------------------------------------"
-else
-echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
- echo ""
- echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
- echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
-echo ""
-fi

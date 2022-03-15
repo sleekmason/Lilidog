@@ -13,9 +13,9 @@
 ### Items currently activated.
 . $HOME/.fehbg &
 
-## Touchpad settings
-synclient VertEdgeScroll=0 HorizEdgeScroll=0 TapButton1=1 2>/dev/null
-syndaemon -i .5 -K -t -R -d &
+## Touchpad settings Uncomment for touchpad use.
+#synclient VertEdgeScroll=0 HorizEdgeScroll=0 TapButton1=1 2>/dev/null
+#syndaemon -i .5 -K -t -R -d &
 
 picom &
 tint2 &

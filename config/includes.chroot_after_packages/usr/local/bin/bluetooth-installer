@@ -24,8 +24,6 @@ read -p "   [0;33mBluetooth Installer - Bluetooth may not work while in a VM.[
    ----------------------------------------
       
    Or close this terminal window to quit the install." ;
-     wget -q --tries=10 --timeout=20 --spider http://google.com
-if [ $? -eq 0 ]; then
 echo ""
 
 sudo apt update && sudo apt install bluetooth bluez-tools blueman pulseaudio-module-bluetooth rfkill
@@ -40,12 +38,3 @@ echo "[0;32mGood luck in your endeavors![0m"
 echo ""
 echo ""
 echo "-----------------------------------------------------------"
-else
-echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
- echo ""
- echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
- echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
-echo ""
-fi

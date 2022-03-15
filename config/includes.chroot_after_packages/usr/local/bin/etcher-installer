@@ -23,8 +23,6 @@ read -p "   [0;33mEtcher Installer[0m
    ---------------------------------------------------------  
    
    Or close this terminal window to quit the install." ;
-        wget -q --tries=10 --timeout=20 --spider http://google.com
-if [ $? -eq 0 ]; then
 echo ""
 curl -1sLf \
    'https://dl.cloudsmith.io/public/balena/etcher/setup.deb.sh' \
@@ -52,12 +50,3 @@ echo "[0;32mMenu entries will need to be removed manually if uninstalled."
 echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "-----------------------------------------------------"
-else
-echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
- echo ""
- echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
- echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
-echo ""
-fi

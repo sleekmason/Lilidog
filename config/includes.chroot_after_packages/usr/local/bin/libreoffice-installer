@@ -19,8 +19,6 @@ read -p "   [0;33mLibreoffice Installer[0m
    
    
    Or close this terminal window to quit the install." ;
-wget -q --tries=10 --timeout=20 --spider http://google.com
-if [ $? -eq 0 ]; then
 echo "" 
 sudo apt update && sudo apt install libreoffice libreoffice-gtk3 \
 hunspell-en-us hyphen-en-us cups-bsd libsane libxrender1 libgl1 libpaper-utils \
@@ -43,12 +41,3 @@ echo "[0;32mMenu entries will need to be removed manually if uninstalled."
 echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "-----------------------------------------------------------"
-else
-echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
- echo ""
- echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
- echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
-echo ""
-fi
