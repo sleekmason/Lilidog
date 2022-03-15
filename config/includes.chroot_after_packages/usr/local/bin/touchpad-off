@@ -1,0 +1,4 @@
+#!/bin/bash
+
+synclient TapButton1=0 2>/dev/null
+notify-send "Touchpad Tap To Click Off"
