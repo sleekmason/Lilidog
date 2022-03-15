@@ -15,6 +15,7 @@ read -p "   [0;33mGnome Colors Installer.[0m
    ---------------------------------------------------------------    
       
    Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 sudo apt update && sudo apt install gnome-colors
 
@@ -23,3 +24,12 @@ echo ""
 echo "[0;32mAll done. Enjoy your new icon themes![0m"
 echo ""
 echo ""
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

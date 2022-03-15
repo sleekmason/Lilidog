@@ -21,6 +21,7 @@ read -p "   [0;33mPackages Useful For Live-build, Git, And Openssh.[0m
    
    
    Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
 echo ""  
 sudo apt update && sudo apt install live-build live-config live-boot git openssh-sftp-server
 echo ""
@@ -29,3 +30,12 @@ echo ""
 echo "[0;32mAll Finished![0m"
 echo ""
 echo "----------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

@@ -24,6 +24,7 @@ read -p "
 
 
    Or close this terminal window to quit." ;
+   if : >/dev/tcp/8.8.8.8/53; then
 echo ""
    echo ""
    echo ""
@@ -94,3 +95,12 @@ echo ""
    sudo apt remove fasttrack-archive-keyring
    "
    echo ""
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

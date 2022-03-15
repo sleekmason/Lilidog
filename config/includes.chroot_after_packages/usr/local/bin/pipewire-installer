@@ -23,6 +23,7 @@ read -p "   [0;33mPipewire Installer[0m
    -------------------------------------------------
  
    Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
 echo "" 
 sudo apt update && sudo apt install pipewire pipewire-audio-client-libraries \
 libspa-0.2-bluetooth libspa-0.2-jack qjackctl jackd2-firewire jack-tools &&
@@ -58,3 +59,12 @@ echo "[0;32mAll Finished![0m"
 echo ""
 echo ""
 echo "-----------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

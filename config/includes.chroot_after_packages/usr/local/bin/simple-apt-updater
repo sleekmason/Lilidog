@@ -7,6 +7,7 @@
    echo ""
    echo ""
    echo ""
+   if : >/dev/tcp/8.8.8.8/53; then
    sudo apt update && sudo apt list --upgradeable
    echo ""
    echo "   ------------------------------------------------------------"
@@ -25,3 +26,12 @@
    sudo apt upgrade;bash
    echo ""
    echo ""
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

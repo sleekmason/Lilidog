@@ -22,6 +22,7 @@ read -p "   [0;33mJoplin AppImage Installer - 164MB AppImage[0m
    -------------------------------------
       
    Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 if [ -e "$HOME/.joplin" ]
 then
@@ -54,4 +55,13 @@ echo "[0;35mMenu entries will need to be removed manually if uninstalled."
 echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "-----------------------------------------------------------"
+fi
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
 fi

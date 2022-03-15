@@ -22,6 +22,7 @@ read -p "   [0;33mSteam Installer[0m
    ----------------------------------------------------------
       
    Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install --install-recommends steam &&
 sed -i '/Games,^checkout(games),applications-games/d' ~/.config/jgmenu/mymenu.csv &&
@@ -44,3 +45,12 @@ echo "[0;32mMenu entries will need to be removed manually if uninstalled."
 echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "------------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
