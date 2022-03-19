@@ -1,0 +1,14 @@
+#!/bin/sh
+# Made by sleekmason for Lilidog 3-19-2022
+
+mkdir -p "./Sharpened/$1"
+
+for file
+do
+if [ ! -e "$file" ]
+then
+continue
+fi
+toname="./Sharpened/$1/$( echo "$file" | cut -f1 -d.)_$1.jpg"
+convert -unsharp 1.5x1.0+1.5+0.02 "${file}" "${toname}"
+done

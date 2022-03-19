@@ -114,6 +114,15 @@
 	<image-files/>
 </action>
 <action>
+	<icon>image-jpeg</icon>
+	<name>Sharpen Image With Copy</name>
+	<unique-id>1647700745000650-1</unique-id>
+	<command>sharpen %N</command>
+	<description>Copy to sharpened folder in same directory.</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
 	<icon>resizecol</icon>
 	<name>Resize Image With Copy</name>
 	<unique-id>1640208205426649-1</unique-id>
