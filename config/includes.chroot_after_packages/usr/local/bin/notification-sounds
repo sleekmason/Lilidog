@@ -1,0 +1,26 @@
+#! /bin/bash
+
+noti=$(yad --width 300 --borders=10 --entry --title "Notification Sounds" --center --window-icon=applications-system \
+    --image="/usr/share/volumeicon/icons/tango/8.png" \
+    --button="Sounds":"dunst-wav-changer" \
+    --button="gtk-ok:0" --button="gtk-close:1" \
+    --text "Sound Notification Choices" \
+    --entry-text \
+    "Please Select" "Off" "On For All Notifications")
+
+case $noti in
+  Off*)
+   sed -i '/summary/d' ~/.config/dunst/dunstrc
+   sed -i '/sounds/d' ~/.config/dunst/dunstrc
+   killall dunst
+notify-send 'Notification Sound Is Off' ;;
+   On*)  
+    sed -i '/summary/d' ~/.config/dunst/dunstrc
+    sed -i '/sounds/d' ~/.config/dunst/dunstrc
+    sed -i '/play/a script = ~/.config/dunst/sounds/dunst-sound' ~/.config/dunst/dunstrc
+    sed -i '/sounds/a summary = "*"' ~/.config/dunst/dunstrc
+    killall dunst
+    sleep 1s
+notify-send 'Sound Is On For All Notifications' ;;
+        *) exit 1 ;;
+    esac

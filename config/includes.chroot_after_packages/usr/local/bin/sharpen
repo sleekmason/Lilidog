@@ -8,6 +8,6 @@ if [ ! -e "$file" ]
 then
 continue
 fi
-toname="./Sharpened/$( echo sharpened)_$1"
+toname="./Sharpened/$1"
 convert -unsharp 1.5x1.0+1.5+0.02 "${file}" "${toname}"
 done

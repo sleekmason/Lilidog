@@ -54,3 +54,5 @@ timeout = 0
 background = "#5C1313"
 foreground = "#EDFFFE"
 frame_color = "#25ABA9"
+
+[play_sound]

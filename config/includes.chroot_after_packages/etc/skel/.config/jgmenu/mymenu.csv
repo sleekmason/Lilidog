@@ -93,6 +93,7 @@ Xscreensaver,        toggle.xscreensaver,                           object-flip-
 Tint2 Toggle,        toggle.tint2,                                  object-flip-horizontal
 Touchpad,            toggle-touchpad,                               object-flip-horizontal
 Fbpanel,             toggle.fbpanel,                                object-flip-horizontal
+Sounds,              notification-sounds,                           object-flip-horizontal
 Picom,               toggle.picom,                                  object-flip-horizontal
 Xkill,               xkill,                                         edit-delete
 

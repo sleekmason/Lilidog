@@ -1,0 +1,36 @@
+#! /bin/bash
+
+soundwav=$(yad --width 300 --entry --borders=10 --title "Sound Choices" --center --window-icon=applications-system \
+    --image="/usr/share/volumeicon/icons/tango/8.png" \
+    --button="gtk-ok:0" --button="gtk-close:1" \
+    --text "Notification Sounds" \
+    --entry-text \
+    "Please Choose Sound" "A-tone" "Bong" "Cowbell" "Ping" "Long Ping" "Gong")
+
+case $soundwav in
+    A-tone*)
+   sed -i '/aplay/c aplay ~/.config/dunst/sounds/a-tone.wav' ~/.config/dunst/sounds/dunst-sound &&
+   aplay ~/.config/dunst/sounds/a-tone.wav
+notify-send 'Sound Changed To A-Tone If Enabled' ;;
+    Bong*)
+   sed -i '/aplay/c aplay ~/.config/dunst/sounds/bong.wav' ~/.config/dunst/sounds/dunst-sound &&
+   aplay ~/.config/dunst/sounds/bong.wav
+notify-send 'Sound Changed To Bong If Enabled' ;;
+    Cowbell*)
+   sed -i '/aplay/c aplay ~/.config/dunst/sounds/cowbell.wav' ~/.config/dunst/sounds/dunst-sound &&
+   aplay ~/.config/dunst/sounds/cowbell.wav
+notify-send 'Sound Changed To Cowbell If Enabled' ;;
+    Ping*)
+   sed -i '/aplay/c aplay ~/.config/dunst/sounds/ping.wav' ~/.config/dunst/sounds/dunst-sound &&
+   aplay ~/.config/dunst/sounds/ping.wav
+notify-send 'Sound Changed To Ping If Enabled' ;;
+    Long*)
+   sed -i '/aplay/c aplay ~/.config/dunst/sounds/long-ping.wav' ~/.config/dunst/sounds/dunst-sound &&
+   aplay ~/.config/dunst/sounds/long-ping.wav
+notify-send 'Sound Changed To Long Ping If Enabled' ;;
+    Gong*)
+   sed -i '/aplay/c aplay ~/.config/dunst/sounds/gong.wav' ~/.config/dunst/sounds/dunst-sound &&
+   aplay ~/.config/dunst/sounds/gong.wav
+notify-send 'Sound Changed To Gong If Enabled' ;;
+        *) exit 1 ;;
+    esac
