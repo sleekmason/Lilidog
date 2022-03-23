@@ -1,13 +1,94 @@
 #!/bin/bash
+# 
+#Feh random wallpaper changer by sleekmason 3-22-2022
+random=$(yad --width 300 --entry --title "Random Background" --borders=10 --center --window-icon=applications-system \
+    --image="preferences-system-time" \
+    --button="Fast Flip":"bash -c 'feh --bg-scale --randomize $HOME/Pictures/wallpapers/*'" \
+    --button="gtk-ok:0" --button="gtk-close:1" \
+    --text "Random BG Time Selection" \
+    --entry-text \
+    "Please Select Interval" "Off" "One Minute" "Five Minutes" "Ten Minutes" "Thirty Minutes" "Sixty Minutes" "Two Hours" "Four Hours" "Eight Hours" "Full 24 Hours")
+[  $? -ne 0 ] && exit
 
-yad --title "Random BG" --button=gtk-close:1 --form --center --width=228 \
---height=340 --text="\n Please Choose Interval \n Time Between Changes. \n" --text-align=center \
---window-icon=applications-system \
-    --form \
-    --field="5 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper'" \
-    --field="10 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper1'" \
-    --field="30 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper2'" \
-    --field="60 minutes":FBTN "bash -c 'killall random-wallpaper*; random-wallpaper3'" \
-    --field="Fast Flip Through":FBTN "bash -c 'feh --bg-scale --randomize $HOME/Pictures/wallpapers/*'" \
-    --field="":LBL "" \
-    --field="Random Wallpaper Off":FBTN "bash -c 'notify-send 'Random-Wallpaper-Off'; killall random-wallpaper*'"
+## get pid and kill
+# proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+# kill $proc_id
+
+## can also wait untill the process exists
+# wait $proc_id
+
+case $random in
+    Off*) while true;
+do
+    proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id
+done &
+notify-send 'Random Wallpaper Off' ;;
+    One*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 60s
+done &
+notify-send 'Random Wallpaper Every 1 minute' ;;
+    Five*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 5m
+done &
+notify-send 'Random Wallpaper Every 5 Minutes' ;;
+    Ten*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 10m
+done &
+notify-send 'Random Wallpaper Every 10 Minutes' ;;
+    Thirty*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 30m
+done &
+notify-send 'Random Wallpaper Every 30 Minutes' ;;
+    Sixty*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 60m
+done &
+notify-send 'Random Wallpaper Every 60 Minutes' ;;
+    Two*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 2h
+done &
+notify-send 'Random Wallpaper Every 2 Hours' ;;
+
+    Four*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 4h
+done &
+notify-send 'Random Wallpaper Every 4 Hours' ;;
+
+    Eight*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 8h
+done &
+notify-send 'Random Wallpaper Every 8 Hours' ;;
+
+    Full*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
+kill $proc_id && while true;
+do
+    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
+    sleep 24h
+done &
+notify-send 'Random Wallpaper Every 24 Hours' ;; 
+        *) exit 1 ;;
+    esac
