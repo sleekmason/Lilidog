@@ -23,12 +23,12 @@ export -f change_wallpaper
 
 # add handler for tray icon left click
 function on_click() {
-    yad --form --on-top --geometry="200x75-350-68" --title "Fast Flip" \
-    --window-icon=darktable \
-        --field="Shuffle Wallpaper:fbtn" 'bash -c change_wallpaper' \
+    yad --form --on-top --geometry="200x75-350-68" --title "Fast Flip" --borders=2 \
+    --window-icon=application-x-addon \
+        --field="  Shuffle Wallpapers!"/usr/share/icons/gnome/22x22/actions/edit-redo.png":FBTN" 'bash -c change_wallpaper' \
         --image-on-top --no-markup \
-        --text="" --text-align=center\
-         --skip-taskbar --no-buttons
+        --text="" \
+        --skip-taskbar --no-buttons
 }
 export -f on_click
 
@@ -81,20 +81,20 @@ yad --notification --no-markup  --text="Random Background Changer"   \
 
 
 # set notification right-click menu
-echo "menu:Off! bash -c 'on_kill'!/usr/share/icons/Breeze/actions/22/process-stop.svg|| \
-One Minute! bash -c 'wallpaper_shuffler 60'!/usr/share/icons/ld-icons/timer3.png| \
-Five Minutes! bash -c 'wallpaper_shuffler 5m'!/usr/share/icons/ld-icons/timer3.png| \
-Ten Minutes! bash -c 'wallpaper_shuffler 10m'!/usr/share/icons/ld-icons/timer3.png| \
-Half Hour! bash -c  'wallpaper_shuffler 30m'!/usr/share/icons/ld-icons/timer3.png| \
-One Hour! bash -c  'wallpaper_shuffler 60m'!/usr/share/icons/ld-icons/timer3.png| \
-Two Hours! bash -c  'wallpaper_shuffler 2h'!/usr/share/icons/ld-icons/timer3.png| \
-Four Hours! bash -c  'wallpaper_shuffler 4h'!/usr/share/icons/ld-icons/timer3.png| \
-Eight Hours! bash -c  'wallpaper_shuffler 8h'!/usr/share/icons/ld-icons/timer3.png| \
-Once A Day! bash -c  'wallpaper_shuffler 24h'!/usr/share/icons/ld-icons/timer3.png|| \
-Exit!Quit!/usr/share/icons/Breeze/actions/22/window-close.svg " >&3
+echo "menu:Off! bash -c 'on_kill'!/usr/share/icons/gnome/22x22/actions/process-stop.png|| \
+One Minute! bash -c 'wallpaper_shuffler 60'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+Five Minutes! bash -c 'wallpaper_shuffler 5m'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+Ten Minutes! bash -c 'wallpaper_shuffler 10m'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+Thirty Minutes! bash -c  'wallpaper_shuffler 30m'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+One Hour! bash -c  'wallpaper_shuffler 60m'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+Two Hours! bash -c  'wallpaper_shuffler 2h'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+Four Hours! bash -c  'wallpaper_shuffler 4h'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+Eight Hours! bash -c  'wallpaper_shuffler 8h'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png| \
+One Full Day! bash -c  'wallpaper_shuffler 24h'!/usr/share/icons/gnome/22x22/mimetypes/application-x-addon.png|| \
+Exit!Quit!/usr/share/icons/gnome/22x22/actions/window-close.png " >&3
 
 # set notification icon
-echo "icon:darktable" >&3
+echo "icon:application-x-addon " >&3
 
 # wait for notification to quit
 wait $NPID 2>/dev/null
