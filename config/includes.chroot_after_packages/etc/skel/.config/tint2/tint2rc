@@ -147,7 +147,7 @@ mouse_scroll_down = iconify
 # System tray (notification area)
 systray_padding = 0 1 8
 systray_background_id = 0
-systray_sort = descending
+systray_sort = ascending
 systray_icon_size = 22
 systray_icon_asb = 94 0 0
 systray_monitor = 1

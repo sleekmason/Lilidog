@@ -1,94 +1,100 @@
-#!/bin/bash
-# 
-#Feh random wallpaper changer by sleekmason 3-22-2022
-random=$(yad --width 300 --entry --title "Random Background" --borders=10 --center --window-icon=applications-system \
-    --image="preferences-system-time" \
-    --button="Fast Flip":"bash -c 'feh --bg-scale --randomize $HOME/Pictures/wallpapers/*'" \
-    --button="gtk-ok:0" --button="gtk-close:1" \
-    --text "Random BG Time Selection" \
-    --entry-text \
-    "Please Select Interval" "Off" "One Minute" "Five Minutes" "Ten Minutes" "Thirty Minutes" "Sixty Minutes" "Two Hours" "Four Hours" "Eight Hours" "Full 24 Hours")
-[  $? -ne 0 ] && exit
+#!/usr/bin/env bash
+# Random background changer. Requires feh and yad. Made by misco_1083 3-25-2022 - Thank you.
 
-## get pid and kill
-# proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-# kill $proc_id
+# add handler to manage process shutdown
+on_exit () {
+    trap SIGINT              # Resore signal handling for SIGINT
+    echo "quit" >&3
+    rm -f $PIPE
+    local proc_id="$(ps -eo pid,cmd | grep "bash -c wallpaper_shuffler *" | grep -v "grep" | awk '{ print $1 }')"
+    for pid in $(tac -s" " <<< "$proc_id "); do
+        kill -SIGTERM $pid
+    done
+}
+export -f on_exit
 
-## can also wait untill the process exists
-# wait $proc_id
+trap 'on_exit' 0 1 2 15
 
-case $random in
-    Off*) while true;
-do
-    proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id
-done &
-notify-send 'Random Wallpaper Off' ;;
-    One*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
+# function to change the wallpaper
+function change_wallpaper() {
     feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 60s
-done &
-notify-send 'Random Wallpaper Every 1 minute' ;;
-    Five*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 5m
-done &
-notify-send 'Random Wallpaper Every 5 Minutes' ;;
-    Ten*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 10m
-done &
-notify-send 'Random Wallpaper Every 10 Minutes' ;;
-    Thirty*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 30m
-done &
-notify-send 'Random Wallpaper Every 30 Minutes' ;;
-    Sixty*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 60m
-done &
-notify-send 'Random Wallpaper Every 60 Minutes' ;;
-    Two*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 2h
-done &
-notify-send 'Random Wallpaper Every 2 Hours' ;;
+}
+export -f change_wallpaper
 
-    Four*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 4h
-done &
-notify-send 'Random Wallpaper Every 4 Hours' ;;
+# add handler for tray icon left click
+function on_click() {
+    yad --form --on-top --geometry="200x75-350-68" --title "Fast Flip" \
+    --window-icon=darktable \
+        --field="Shuffle Wallpaper:fbtn" 'bash -c change_wallpaper' \
+        --image-on-top --no-markup \
+        --text="" --text-align=center\
+         --skip-taskbar --no-buttons
+}
+export -f on_click
 
-    Eight*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 8h
-done &
-notify-send 'Random Wallpaper Every 8 Hours' ;;
+# on kill command handler
+on_kill() {
+    local proc_id="$(ps -eo pid,cmd | grep "bash -c wallpaper_shuffler *" | grep -v "grep" | awk '{ print $1 }')"
+    for pid in $proc_id ; do
+        kill -SIGTERM $pid
+    done 
+}
+export -f on_kill
 
-    Full*) proc_id=$(ps -eo pid,cmd | grep 'toggle-wallpaper-random' | grep -v "grep" | awk '{ print $1 }')
-kill $proc_id && while true;
-do
-    feh --bg-scale "$(find "$HOME/Pictures/wallpapers" -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 24h
-done &
-notify-send 'Random Wallpaper Every 24 Hours' ;; 
-        *) exit 1 ;;
-    esac
+# run shuffler
+function wallpaper_shuffler() {
+    # handle sleep leftover process
+    kill_sleep() {
+        kill -SIGTERM $(jobs -p)
+        exit #$
+    }
+    trap kill_sleep SIGTERM
+
+    # fetch all processes this function spawns
+    local proc_id="$(ps -eo pid,cmd | grep "bash -c wallpaper_shuffler *" | grep -v "grep" | awk '{ print $1 }')"
+    # If the are more than two kill them but leave this one
+    if [[ "$(echo $proc_id | wc -w)" -gt "2" ]] ; then
+        # reverse order, skip the last two pids
+        for pid in $(tac -s" " <<< "$proc_id " | head -2); do
+            kill -SIGTERM $pid
+         done
+    fi
+    while true ; do
+        change_wallpaper
+        sleep $1 &
+        wait
+    done
+    exit
+}
+export -f wallpaper_shuffler
+
+
+PIPE=/tmp/${0##*/}.$RANDOM
+mkfifo $PIPE
+# attach a file descriptor to the file
+exec 3<> $PIPE
+
+# create the notification icon
+yad --notification --no-markup  --text="Random Background Changer"   \
+    --listen                       \
+    --command="bash -c on_click" 2> /dev/null <&3 & NPID=$!
+
+
+# set notification right-click menu
+echo "menu:Off! bash -c 'on_kill'!/usr/share/icons/Breeze/actions/22/process-stop.svg|| \
+One Minute! bash -c 'wallpaper_shuffler 60'!/usr/share/icons/ld-icons/timer3.png| \
+Five Minutes! bash -c 'wallpaper_shuffler 5m'!/usr/share/icons/ld-icons/timer3.png| \
+Ten Minutes! bash -c 'wallpaper_shuffler 10m'!/usr/share/icons/ld-icons/timer3.png| \
+Half Hour! bash -c  'wallpaper_shuffler 30m'!/usr/share/icons/ld-icons/timer3.png| \
+One Hour! bash -c  'wallpaper_shuffler 60m'!/usr/share/icons/ld-icons/timer3.png| \
+Two Hours! bash -c  'wallpaper_shuffler 2h'!/usr/share/icons/ld-icons/timer3.png| \
+Four Hours! bash -c  'wallpaper_shuffler 4h'!/usr/share/icons/ld-icons/timer3.png| \
+Eight Hours! bash -c  'wallpaper_shuffler 8h'!/usr/share/icons/ld-icons/timer3.png| \
+Once A Day! bash -c  'wallpaper_shuffler 24h'!/usr/share/icons/ld-icons/timer3.png|| \
+Exit!Quit!/usr/share/icons/Breeze/actions/22/window-close.svg " >&3
+
+# set notification icon
+echo "icon:darktable" >&3
+
+# wait for notification to quit
+wait $NPID 2>/dev/null
