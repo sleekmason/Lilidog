@@ -68,6 +68,7 @@ Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e 
 Install Joplin Note,      x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 Install Bluetooth,        x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "bluetooth-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
 Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c "pipewire-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-utilities
+Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
 Install Qemu,             x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
 ^sep()
 Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
