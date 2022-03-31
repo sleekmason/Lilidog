@@ -91,8 +91,8 @@ Hotcorners,          toggle.ld,                                     object-flip-
 Random BG,           toggle-wallpaper-random,                       object-flip-horizontal
 Xscreensaver,        toggle.xscreensaver,                           object-flip-horizontal
 Tint2 Toggle,        toggle.tint2,                                  object-flip-horizontal
+Auto Login,          lightdm-autologin,                             object-flip-horizontal
 Touchpad,            toggle-touchpad,                               object-flip-horizontal
-Fbpanel,             toggle.fbpanel,                                object-flip-horizontal
 Sounds,              notification-sounds,                           object-flip-horizontal
 Picom,               toggle.picom,                                  object-flip-horizontal
 Xkill,               xkill,                                         edit-delete
