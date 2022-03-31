@@ -77,7 +77,6 @@ geany
 gettext-base
 gimp
 gnome-icon-theme
-gnome-screenshot
 gnome-system-tools
 gnupg2
 gparted
@@ -177,7 +176,6 @@ rename
 rsync
 rtmpdump
 rxvt-unicode
-scrot
 smplayer
 ssft
 squashfs-tools
@@ -228,6 +226,7 @@ xdg-utils
 xdotool
 xfce4-power-manager
 xfce4-power-manager-plugins
+xfce4-screenshooter
 xfce4-settings
 xfce4-terminal
 xinput
