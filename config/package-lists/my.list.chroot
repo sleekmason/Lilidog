@@ -14,6 +14,7 @@ bash-completion
 bind9-dnsutils
 btrfs-progs
 catfish
+chafa
 conky
 console-data
 console-setup
@@ -82,6 +83,10 @@ gnupg2
 gparted
 gpick
 gpicview
+gstreamer1.0-gl
+gstreamer1.0-gtk3
+gstreamer1.0-libav
+gstreamer1.0-x
 gstreamer1.0-plugins-good
 gstreamer1.0-plugins-bad
 gstreamer1.0-plugins-ugly
@@ -143,6 +148,7 @@ mousepad
 nano
 ncdu
 neofetch
+netpbm
 net-tools
 netcat-openbsd
 network-manager-gnome
@@ -160,11 +166,14 @@ picom
 plymouth
 plymouth-themes
 pnmixer
+powermgmt-base
 pragha
 publicsuffix
 pulseaudio
 pulseaudio-utils
 pycodestyle
+python3-distro
+python3-pyxattr
 python3-xdg
 python3-notify2
 python3-six
@@ -174,6 +183,7 @@ qt5-gtk2-platformtheme
 qt5-style-plugins
 rename
 rsync
+rtkit
 rtmpdump
 rxvt-unicode
 scrot
@@ -197,6 +207,8 @@ transmission
 transmission-gtk
 tree
 unzip
+update-inetd
+usb.ids
 usb-modeswitch
 usbmuxd
 usbutils
@@ -222,6 +234,8 @@ x11-xserver-utils
 xbindkeys
 xbindkeys-config
 xbitmaps
+xdg-dbus-proxy
+xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
 xdotool
@@ -230,7 +244,9 @@ xfce4-power-manager-plugins
 xfce4-screenshooter
 xfce4-settings
 xfce4-terminal
+xiccd
 xinput
+xml-core
 xmlstarlet
 xorg
 xorriso
@@ -257,5 +273,6 @@ xserver-xorg-video-vesa
 xserver-xorg-video-vmware
 xsel
 xsltproc
+xz-utils
 yad
 youtube-dl
