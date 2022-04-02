@@ -79,11 +79,15 @@ options for images include rotation and copying to ~/Pictures.wallpapers. A rand
 Both menu options provide for a variety of different colors to choose from.  There is an extra script to provide even
 more Papirus theme colors if interested. (24 in total for now.)
 
+- Menu Toggles - Items like Autologin, notification sounds, screen color correction, conky, random BG, and more.
+
+- Menu Extras - an extra install menu with options for Liquorix kernel, Qemu, Steam, Etcher, Discord, and more.
+
 - Grub background changer opens a window to choose your own images. Lilidog ships with six to give you an intitial
 choice before finding your own to add to the collection.
 
-- There are shortcuts for xfce4-power-manager in the battery icon.
-To see time format options for 24 hour vs. 12 hour, middleclick over the time for the man page.
+- There is a shortcut for xfce4-power-manager by right-clicking on the battery icon.
+To see time format options for 24 hour vs. 12 hour, middle-click over the time for the man page.
 Hover over the icons to see what they are.  The live password is "live" for the screenlock.
 
 - Xscreensaver and other handy startup apps readily available through the toggles in the menu,
@@ -119,8 +123,6 @@ and set the gamma and brightness of your screen for different times of your choi
 - Newsboat RSS reader with a custom configuration already in place and ready for new RSS feeds.
 
 - System notifications enabled with Dunst.
-
-- Menu Extras - Install menu with options for Liquorix kernel, Qemu, Steam, Etcher, and more.
 
 - Swapid script for the frequent dual installer. This grabs your swap uuid and opens the appropriate windows to edit.
 Run 'swapid' in a terminal after installing another distro to a different partition.
