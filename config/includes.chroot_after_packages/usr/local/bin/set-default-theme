@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   [0;33mTotal Theme Reset[0m
+read -p "   Total Theme Reset
 
    An emergency button to put everything back to the default settings.
 
@@ -13,14 +13,12 @@ read -p "   [0;33mTotal Theme Reset[0m
 
    ----------------------------------------------------------------------
    
-   [0;31mPlease press enter to reset all items to their original configuration.[0m
+   Please press enter to reset all items to their original configuration.
    
    ----------------------------------------------------------------------
 
       
    Or close this terminal window to quit." ;
-   wget -q --tries=10 --timeout=20 --spider http://google.com
-if [ $? -eq 0 ]; then
 echo ""
 ~/.config/lilidog-themes/default-theme
 echo ""
@@ -28,17 +26,8 @@ echo ""
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
-echo "[0;32mAll finished! If something did not change, check to see if the item" 
-echo "has been removed. (Uninstalled icons, wallpaper, etc.)[0m"
+echo "All finished! If something did not change, check to see if the item" 
+echo "has been removed. (Uninstalled icons, wallpaper, etc.)"
 echo ""
 echo "------------------------------------------------------------------"
 echo ""
-else
-echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
- echo ""
- echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
- echo ""
- echo "   [0;31m-----------------------------------------------------[0m"
-echo ""
-fi
