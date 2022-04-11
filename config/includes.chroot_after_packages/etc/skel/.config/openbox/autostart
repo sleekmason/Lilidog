@@ -29,4 +29,7 @@ lxpolkit &
 xfsettingsd --daemon &
 pnmixer &
 conky -c ~/.config/conky/conky-shortcuts.conf &
+
+### These should be auto-removed upon installation
 welcome.sh &
+batt-remover &

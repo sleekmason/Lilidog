@@ -1,0 +1,22 @@
+#!/bin/bash
+# Autobattery remover for tint2 in Lilidog by sleekmason 11-Apr-2022
+#
+#
+FILE="$HOME/.config/tint2/tint2rc"
+
+sleep 2
+
+if test -e "/sys/module/battery";then
+exit
+
+else
+sed -i '/# Executor 1/,/#-------/d' "$FILE"
+fi
+# restart tint2
+pkill -x tint2
+tint2 &
+
+sed -i '/batt-remover &/d' ~/.config/openbox/autostart
+
+
+ 
