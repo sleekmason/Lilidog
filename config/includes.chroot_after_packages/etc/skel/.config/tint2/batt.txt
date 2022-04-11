@@ -1,0 +1,23 @@
+
+#-------------------------------------
+# Executor 1
+execp = new
+execp_command = ~/.config/tint2/executors/battery
+execp_interval = 60
+execp_has_icon = 1
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_tooltip = Left-Click = Info, Right-Click = Power Manager, Middle-Click = Htop
+execp_lclick_command = b=$(acpi -b) && notify-send "$b"
+execp_rclick_command = xfce4-power-manager -c
+execp_mclick_command = x-terminal-emulator -e htop
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = Liberation Sans 12
+execp_font_color = #93adac 100
+execp_padding = 2 0
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 26
+execp_icon_h = 28

@@ -1,0 +1,19 @@
+#!/bin/bash
+# Batteryicon toggle for tint2 in Lilidog by sleekmason 11-Apr-2022
+#
+#
+FILE="$HOME/.config/tint2/tint2rc"
+STRING="# Executor 1"
+if  grep -q "$STRING" "$FILE" ; then
+         notify-send 'Removing Battery Icon From Tint2' ;
+         sed -i '/# Executor 1/,/#-------/d' "$FILE"        
+ else
+          notify-send 'Adding Battery Icon To Tint2' ;
+         sed -i '/tooltip_font_color =/r .config/tint2/batt.txt' "$FILE"
+fi
+# restart tint2
+pkill -x tint2
+tint2 &
+
+
+ 
