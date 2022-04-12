@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yad --title "GTK Themes" --geometry="210x570-602-150" --escape-ok --borders=14 \
+yad --title "GTK Themes" --geometry="210x570-602-80" --escape-ok --borders=14 \
 --button=gtk-close:1 --form --center --width=180 --height=580 \
 --text="\n Please Close Geany \n Before Making Selection.\n" --text-align=center \
 --window-icon=applications-utilities \
