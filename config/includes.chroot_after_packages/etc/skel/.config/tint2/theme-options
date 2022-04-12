@@ -4,4 +4,4 @@ Grub BG,             x-terminal-emulator -T 'Grub Background Changer' -e bash -c
 Lightdm,             gksudo lightdm-gtk-greeter-settings,      /usr/share/icons/Breeze/actions/22/adjustrgb.svg
 Terminal,            ld-term-changer,                          /usr/share/icons/Breeze/actions/22/channelmixer.svg
 Themes Folder,       thunar ~/.config/lilidog-themes,          /usr/share/icons/Breeze/places/22/folder-brown.svg
-Reset To Default,    x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/Breeze/places/22/folder-blue.svg
+Reset To Default,    x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/Breeze/actions/22/adjustrgb.svg
