@@ -1,0 +1,22 @@
+#!/bin/bash
+
+yad --title "GTK Themes" --geometry="210x570-602-150" --escape-ok --borders=14 \
+--button=gtk-close:1 --form --center --width=180 --height=580 \
+--text="\n Please Close Geany \n Before Making Selection.\n" --text-align=center \
+--window-icon=applications-utilities \
+    --form \
+    --field="":LBL "" \
+    --field="          Neon!$HOME/.config/lilidog-themes/icons/paw-neon.png!":FBTN "$HOME/.config/lilidog-themes/neon-theme" \
+    --field="         Cobalt!$HOME/.config/lilidog-themes/icons/paw-cobalt.png!":FBTN "$HOME/.config/lilidog-themes/cobalt-theme" \
+    --field="         Denim!$HOME/.config/lilidog-themes/icons/paw-denim.png!":FBTN "$HOME/.config/lilidog-themes/denim-theme" \
+    --field="       Dragon!$HOME/.config/lilidog-themes/icons/paw-dragon.png!":FBTN "$HOME/.config/lilidog-themes/dragon-theme" \
+    --field="  Dark Drow!$HOME/.config/lilidog-themes/icons/paw-dark-drow.png!":FBTN "$HOME/.config/lilidog-themes/dark-drow-theme" \
+    --field="  Dark Earth!$HOME/.config/lilidog-themes/icons/paw-dark-earth.png!":FBTN "$HOME/.config/lilidog-themes/dark-earth-theme" \
+    --field="          Drow!$HOME/.config/lilidog-themes/icons/paw-drow.png!":FBTN "$HOME/.config/lilidog-themes/drow-theme" \
+    --field="          Earth!$HOME/.config/lilidog-themes/icons/paw-earth.png!":FBTN "$HOME/.config/lilidog-themes/earth-theme" \
+    --field="         Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":FBTN "$HOME/.config/lilidog-themes/taupe-theme" \
+    --field="          Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":FBTN "$HOME/.config/lilidog-themes/slate-theme" \
+    --field="           Clay!$HOME/.config/lilidog-themes/icons/paw-clay.png!":FBTN "$HOME/.config/lilidog-themes/clay-theme" \
+    --field="           Grey!$HOME/.config/lilidog-themes/icons/paw-grey.png!":FBTN "$HOME/.config/lilidog-themes/grey-theme" \
+    --field="           Light!$HOME/.config/lilidog-themes/icons/paw-light.png!":FBTN "$HOME/.config/lilidog-themes/light-theme" \
+    --field="         Bright!$HOME/.config/lilidog-themes/icons/paw-bright.png!":FBTN "$HOME/.config/lilidog-themes/bright-theme" \
