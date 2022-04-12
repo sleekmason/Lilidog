@@ -18,7 +18,7 @@ want conky or your wallpaper set with the theme?
 
 Also, if you would like to add a button to the theme changer itself, 
 rather than change one of the existing themes? Sure! The script 
-'ld-theme-changer' is located in /usr/local/bin.
+'ld-themes' is located in /usr/local/bin.
 
 If you don't want to work from root, make a folder: ~/bin and copy
 ld-theme-changer from /usr/local/bin.  Logout, and back in for ~/bin to 

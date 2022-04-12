@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yad --title "Term Themes" --geometry="180x600-395-100" --escape-ok \
+yad --title "Term Themes" --width=180 --height=580 --escape-ok \
 --button=gtk-close:1  --form --center --borders=10 --escape-ok \
 --text="\n Terminal Themes \n" --text-align=center \
 --window-icon=/usr/share/xfce4/terminal/icons/paw-denim.png \
