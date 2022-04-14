@@ -1,0 +1,9 @@
+##DIRECTIONS
+
+If you choose to change over to using the openbox menu, 
+you can simply backup the existing rc.xml, and then change 
+the name of rc.xml-original to rc.xml.
+
+Please note the the Openbox menu is the original full menu, 
+and will need to be adjusted as such.  This will have to be done
+by editing the file, as no menu editor exists anymore.
