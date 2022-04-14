@@ -21,7 +21,7 @@ rather than change one of the existing themes? Sure! The script
 'ld-themes' is located in /usr/local/bin.
 
 If you don't want to work from root, make a folder: ~/bin and copy
-ld-theme-changer from /usr/local/bin.  Logout, and back in for ~/bin to 
+ld-themes from /usr/local/bin.  Logout, and back in for ~/bin to 
 be placed in your path. The script in ~/bin will be the active script.
 
 Just copy and paste a new line and then change the values.  Easy peasy.

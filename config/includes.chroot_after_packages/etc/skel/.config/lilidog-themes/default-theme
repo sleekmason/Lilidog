@@ -35,7 +35,7 @@ xfce4-term-colors lilidog-slate
 
 ## Set Icon Theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Breeze"
-sed -i 's/^icon_size.*/icon_size = 22/g' ~/.config/jgmenu/jgmenurc
+sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
 sed -i 's/^icon_theme =.*/icon_theme = Breeze/g' ~/.config/jgmenu/jgmenurc
 
 ## Set Background
