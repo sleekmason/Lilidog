@@ -1,0 +1,12 @@
+#!/bin/bash
+# Toggle jgmenu icons on/off by sleekmason 4-13-2022
+FILE="$HOME/.config/jgmenu/jgmenurc"
+STRING="icon_size = 0"
+
+if  grep -q "$STRING" "$FILE" ; then
+     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
+ else
+     sed -i 's/^icon_size.*/icon_size = 0/g' ~/.config/jgmenu/jgmenurc
+fi
+
+sed -i 's/^# icon_size.*/icon_size = 0/g' ~/.config/jgmenu/jgmenurc

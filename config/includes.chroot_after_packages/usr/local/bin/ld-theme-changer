@@ -9,10 +9,10 @@ yad --title "Theming Options" --escape-ok \
     --field="                Quick Themes!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!":FBTN "ld-themes" \
     --field="                       Wallpaper!gtk-select-color":FBTN "feh-set-wallpaper" \
     --field="                        Grub BG!wallpaper":FBTN "x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1'" \
+    --field="                          Jgmenu!jgmenu":FBTN "jg-icon-changer" \
     --field="                         LightDM!lightdm-gtk-greeter-settings":FBTN "gksudo lightdm-gtk-greeter-settings" \
     --field="           Terminal Themes!gnome-terminal":FBTN "ld-term-changer" \
     --field="       Extras, Icons, Fonts!preferences-system":FBTN "xfce4-appearance-settings" \
-    --field="   Random BG (Systray)!application-x-addon":FBTN "toggle-wallpaper-random" \
     --field="":LBL "" \
     --field="":LBL "" \
     --field="              Themes Folder!folder":FBTN "thunar .config/lilidog-themes" \

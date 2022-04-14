@@ -7,8 +7,8 @@ read -p "   Total Theme Reset
    This little script will change all of the theme components back to
    their original default configuration. This will reset:
 
-   GTK theme, Openbox theme, fonts, icons, wallpaper, terminal theme, 
-   Geany, and Lightdm settings.
+   GTK theme, Openbox theme, fonts, icons, wallpaper, terminal, Geany,
+   notification sound, Jgmenu icons and fonts, and Lightdm settings.
 
 
    ----------------------------------------------------------------------

@@ -1,0 +1,30 @@
+#! /bin/bash
+# Jgmenu options for icon type, on/off, and font size
+# Made be sleekmason for Lilidog 4-13-2022
+noti=$(yad --width 300 --borders=10 --entry --title "Jgmenu Icon & Font Options" --center --window-icon=applications-system \
+    --image="jgmenu" \
+    --button=" Font Size"!/usr/share/icons/gnome/22x22/apps/preferences-desktop-font.png!:"jg-font-size" \
+    --button="gtk-ok:0" --button="gtk-close:1" \
+    --text "               Jgmenu Icon Options" \
+    --entry-text \
+    "Please Select" "Breeze" "Gnome" "Papirus" "Off")
+
+case $noti in
+  Breeze*)
+     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
+     sed -i 's/^icon_theme =.*/icon_theme = Breeze/g' ~/.config/jgmenu/jgmenurc   
+notify-send 'Menu Icons Set To Breeze' ;;
+   Gnome*) 
+     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc 
+     sed -i 's/^icon_theme =.*/icon_theme = gnome/g' ~/.config/jgmenu/jgmenurc 
+notify-send 'Menu Icons Set To Gnome' ;;
+   Papirus*)
+     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
+     sed -i 's/^icon_theme =.*/icon_theme = Papirus/g' ~/.config/jgmenu/jgmenurc
+notify-send 'Menu Icons Set To Papirus' ;;
+   Off*)
+     jg-icon-on-off
+notify-send 'Menu Icons Toggled Off' ;;
+        *) exit 1 ;;
+    esac
+    killall jgmenu

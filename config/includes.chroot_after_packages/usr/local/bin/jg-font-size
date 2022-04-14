@@ -1,0 +1,36 @@
+#!/bin/bash
+# Jgmenu font size by sleekmason 4-13-2022
+#
+#
+#
+WIDTH=180
+HEIGHT=400
+
+trans="$(yad --title "Font Size" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
+--text="\n This dialog will also change \n the font to the default \n of Liberation Sans. \n" --text-align=center \
+--window-icon=applications-system \
+--radiolist  --column "Choose" --column "Size" --separator=" " \
+  FALSE "8" \
+  FALSE "9" \
+  FALSE "10" \
+  TRUE "11" \
+  FALSE "12" \
+  FALSE "14" \
+  FALSE "16" \
+  FALSE "18")"
+  trans="$(echo "$trans" | cut -d' ' -f2-)"
+ 
+# check if "Cancel" button
+if ! [[ $trans ]];
+then
+  exit 1
+fi
+
+    sed -i "s/font =.*/font = Liberation Sans $trans/g" ~/.config/jgmenu/jgmenurc
+    ## Conversely, only select the first instance of the line.
+    ## sed -i "0,/font = Liberation Sans/{s/font = Liberation Sans.*/font = Liberation Sans ${trans}/}" ~/.config/jgmenu/jgmenurc
+pkill -x jgmenu
+
+exit 0
+
+ 

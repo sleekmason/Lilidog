@@ -25,14 +25,18 @@ sed -i "s/color_scheme=.*/color_scheme=Lilidog-Slate.conf/g" ~/.config/geany/gea
 
 
 # Change jgmenu theme
+#jgmenu_run init --apply-obtheme
 jgmenu_run gtktheme
-
+#change jgmenu font back to 11
+sed -i "s/font =.*/font = Liberation Sans 11/g" ~/.config/jgmenu/jgmenurc
 
 ## Change xfce4-terminal theme
 xfce4-term-colors lilidog-slate
 
 ## Set Icon Theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Breeze"
+sed -i 's/^icon_size.*/icon_size = 22/g' ~/.config/jgmenu/jgmenurc
+sed -i 's/^icon_theme =.*/icon_theme = Breeze/g' ~/.config/jgmenu/jgmenurc
 
 ## Set Background
 feh --bg-scale '/home/wallpaper/Trifull.png'
@@ -40,3 +44,8 @@ feh --bg-scale '/home/wallpaper/Trifull.png'
 ## Set Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Liberation Sans 11"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
+
+## Sounds
+sed -i '/summary/d' ~/.config/dunst/dunstrc
+sed -i '/sounds/d' ~/.config/dunst/dunstrc
+killall dunst
