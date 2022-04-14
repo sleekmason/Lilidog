@@ -11,7 +11,7 @@ noti=$(yad --width 300 --borders=10 --entry --title "Jgmenu Icon & Font Options"
 
 case $noti in
   Breeze*)
-   if [[ -d "/usr/share/icons/Papirus" ]]
+   if [[ -d "/usr/share/icons/Breeze" ]]
 then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
      sed -i 's/^icon_theme =.*/icon_theme = Breeze/g' ~/.config/jgmenu/jgmenurc   
