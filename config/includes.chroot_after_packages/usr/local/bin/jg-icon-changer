@@ -11,20 +11,35 @@ noti=$(yad --width 300 --borders=10 --entry --title "Jgmenu Icon & Font Options"
 
 case $noti in
   Breeze*)
+   if [[ -d "/usr/share/icons/Papirus" ]]
+then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
      sed -i 's/^icon_theme =.*/icon_theme = Breeze/g' ~/.config/jgmenu/jgmenurc   
-notify-send 'Menu Icons Set To Breeze' ;;
+notify-send --urgency low 'Menu Icons Set To Breeze'
+else
+notify-send --urgency low "Breeze icons are not installed."
+fi ;;
    Gnome*) 
+   if [[ -d "/usr/share/icons/gnome" ]]
+then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc 
      sed -i 's/^icon_theme =.*/icon_theme = gnome/g' ~/.config/jgmenu/jgmenurc 
-notify-send 'Menu Icons Set To Gnome' ;;
+notify-send --urgency low 'Menu Icons Set To Gnome'
+else
+notify-send --urgency low "Gnome icons are not installed. Please install the Gnome icons from the installer menu located under Extras in the Utilities menu."
+fi  ;;
    Papirus*)
+    if [[ -d "/usr/share/icons/Papirus" ]]
+then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
      sed -i 's/^icon_theme =.*/icon_theme = Papirus/g' ~/.config/jgmenu/jgmenurc
-notify-send 'Menu Icons Set To Papirus' ;;
+notify-send --urgency low 'Menu Icons Set To Papirus'
+else
+notify-send --urgency low "Papirus icons are not installed. Please install the Pairus icons from the installer menu located under Extras in the Utilities menu."
+fi ;;
    Off*)
      jg-icon-on-off
-notify-send 'Menu Icons Toggled Off' ;;
+notify-send --urgency low 'Menu Icons Toggled Off' ;;
         *) exit 1 ;;
     esac
     killall jgmenu
