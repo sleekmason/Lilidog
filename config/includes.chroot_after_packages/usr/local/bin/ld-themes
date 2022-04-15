@@ -1,9 +1,9 @@
 #!/bin/bash
 
-yad --title "GTK Themes" --escape-ok --borders=14 \
---button=gtk-close:1 --form --center --width=210 --height=570 \
+yad --title "Quick Themes" --escape-ok --borders=14 \
+--button=gtk-close:1 --form --center --width=220 --height=570 \
 --text="\n Please Close Geany \n Before Making Selection.\n" --text-align=center \
---window-icon=applications-utilities \
+--window-icon=gpick \
     --form \
     --field="":LBL "" \
     --field="          Neon!$HOME/.config/lilidog-themes/icons/paw-neon.png!":FBTN "$HOME/.config/lilidog-themes/neon-theme" \
