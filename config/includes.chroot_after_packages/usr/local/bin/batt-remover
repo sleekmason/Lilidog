@@ -11,12 +11,10 @@ exit
 
 else
 sed -i '/# Executor 1/,/#-------/d' "$FILE"
+sed -i 's/^battery_low_status.*/battery_low_status = 0/g' "$FILE"
 fi
 # restart tint2
 pkill -x tint2
 tint2 &
 
 sed -i '/batt-remover &/d' ~/.config/openbox/autostart
-
-
- 
