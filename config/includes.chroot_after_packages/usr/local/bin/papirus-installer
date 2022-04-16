@@ -31,7 +31,6 @@ echo ""
 echo "--------------------------------------------------------------"
 echo ""
 echo "[0;32mCreating the Bluegrey icon color scheme.[0m"
-mkdir ~/.local/share/icons &&
 cd ~/.local/share/icons &&
 papirus-folder-color.sh bluegrey &&
 mv ~/.local/share/icons/Papirus-color Papirus-Bluegrey &&
