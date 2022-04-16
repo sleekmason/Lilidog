@@ -56,5 +56,3 @@ foreground = "#EDFFFE"
 frame_color = "#000000"
 
 [play_sound]
-script = ~/.config/dunst/sounds/dunst-sound
-summary = "*"
