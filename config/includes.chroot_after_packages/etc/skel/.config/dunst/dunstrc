@@ -12,7 +12,7 @@ sort = no
 idle_threshold = 60
 corner_radius = 0
 font = Liberation Sans 12
-transparency = 22
+transparency = 28
 notification_height = 0
 line_height = 4
 markup = full
@@ -46,7 +46,7 @@ frame_color = "#000000"
 
 [urgency_normal]
 background = "#000000"
-foreground = "#AFBABA"
+foreground = "#9EA8A8"
 frame_color = "#000000"
 
 [urgency_critical]
