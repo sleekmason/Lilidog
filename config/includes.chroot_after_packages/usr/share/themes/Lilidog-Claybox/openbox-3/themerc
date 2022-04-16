@@ -38,7 +38,7 @@ window.label.text.justify: center
 window.active.label.bg: parentrelative
 window.active.label.text.color: #050404
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #262424
+window.inactive.label.text.color: #383535
 
 !! Window buttons
 window.*.button.*.bg: parentrelative
@@ -68,7 +68,7 @@ window.inactive.button.disabled.image.color: #B5BFBF
 !! Borders
 window.active.border.color: #4B5451
 window.inactive.border.color: #7A8581
-window.inactive.title.separator.color: #87948F
+window.inactive.title.separator.color: #828C88
 border.width: 1
 padding.width: 1
 window.handle.width: 3
@@ -84,7 +84,7 @@ window.active.handle.bg: raised
 window.active.handle.bg.color: #7D8581
 window.active.grip.bg: parentrelative
 window.inactive.handle.bg: raised
-window.inactive.handle.bg.color: #909994
+window.inactive.handle.bg.color: #78807B
 window.inactive.grip.bg: parentrelative
 
 !! Font shadows

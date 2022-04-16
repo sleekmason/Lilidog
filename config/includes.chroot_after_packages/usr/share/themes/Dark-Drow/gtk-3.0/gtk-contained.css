@@ -2587,7 +2587,7 @@ scrollbar {
     border: 1px solid #2F3635;
     border-radius: 10px;
     background-clip: padding-box;
-    background-image: linear-gradient(to right, #454545, #39403F); }
+    background-image: linear-gradient(to right, #454545, #424A49); }
     scrollbar slider:hover {
       background-image: linear-gradient(to right, #596362, #707070); }
     scrollbar slider:hover:active {
@@ -2611,9 +2611,9 @@ scrollbar {
       margin: 0;
       min-width: 7px;
       min-height: 7px;
-      background-color: shade(#C3D4D4, 0.9);
+      background-color: shade(#3B4140, 0.9);
       background-image: none;
-      border: 1px solid #C5D4D3; }
+      border: 1px solid #3B4140; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
       min-width: 5px;
       min-height: 5px;
@@ -2758,14 +2758,14 @@ switch {
     color: #C3D4D4;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #2F3635;
-    background-image: linear-gradient(to bottom, #5D7F7E 20%, #232323 90%);
+    background-image: linear-gradient(to bottom, #4B5250 20%, #232323 90%);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #2E2E2E, inset 0 -1px #2B2B2B, 0 1px rgba(0, 0, 0, 0.1); }
   switch:hover slider {
     color: #C3D4D4;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #2F3635;
     background-image: linear-gradient(to bottom, #232323 10%, #BCD5DE 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #5D7F7E, inset 0 -1px#232323, 0 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #4B5250, inset 0 -1px#232323, 0 1px rgba(0, 0, 0, 0.1); }
   switch:checked slider {
     border: 1px solid alpha(#696969,0.8); }
   switch:disabled slider {
@@ -2868,7 +2868,7 @@ radio {
   color: #C3D4D4;
   outline-color: rgba(60, 60, 60, 0.3);
   border-color: #9b9b9b;
-  background-image: linear-gradient(to bottom, #1C1C1C 20%, #5D7F7E 90%);
+  background-image: linear-gradient(to bottom, #292929 20%, #292929 90%);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), inset 0 -2px #2E2E2E, inset 0 -1px #232323, 0 1px rgba(0, 0, 0, 0.1); }
   check:only-child,
   radio:only-child {
@@ -2878,8 +2878,8 @@ radio {
     color: #C3D4D4;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #2F3635;
-    background-image: linear-gradient(to bottom, #232323 10%, #BCD5DE 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #5D7F7E, inset 0 -1px#232323, 0 1px rgba(0, 0, 0, 0.1); }
+    background-image: linear-gradient(to bottom, #333333 10%, #333333 90%);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #4B5250, inset 0 -1px#232323, 0 1px rgba(0, 0, 0, 0.1); }
   check:active,
   radio:active {
     color: #C3D4D4;
@@ -3171,7 +3171,7 @@ scale {
       outline-color: rgba(60, 60, 60, 0.3);
       border-color: #2F3635;
       background-image: linear-gradient(to bottom, #2E2E2E 10%, #BCD5DE 90%);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #5D7F7E, inset 0 -1px#2E2E2E, 0 1px rgba(0, 0, 0, 0.1); }
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #4B5250, inset 0 -1px#2E2E2E, 0 1px rgba(0, 0, 0, 0.1); }
     scale slider:active {
       border-color: #696969; }
     scale slider:disabled {

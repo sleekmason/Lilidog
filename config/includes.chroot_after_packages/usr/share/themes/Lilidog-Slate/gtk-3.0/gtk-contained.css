@@ -2868,7 +2868,7 @@ radio {
   color: #B6D4D4;
   outline-color: rgba(60, 60, 60, 0.3);
   border-color: #9b9b9b;
-  background-image: linear-gradient(to bottom, #202D2E 20%, #5D7F7E 90%);
+  background-image: linear-gradient(to bottom, #283A3B 20%, #283A3B 90%);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), inset 0 -2px #2E3F40, inset 0 -1px #293A3B, 0 1px rgba(0, 0, 0, 0.1); }
   check:only-child,
   radio:only-child {
@@ -2878,8 +2878,8 @@ radio {
     color: #B6D4D4;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #3E5557;
-    background-image: linear-gradient(to bottom, #293A3B 10%, #BCD5DE 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #5D7F7E, inset 0 -1px#293A3B, 0 1px rgba(0, 0, 0, 0.1); }
+    background-image: linear-gradient(to bottom, #375052 10%, #375052 90%);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #2E3F40, inset 0 -1px#293A3B, 0 1px rgba(0, 0, 0, 0.1); }
   check:active,
   radio:active {
     color: #B6D4D4;

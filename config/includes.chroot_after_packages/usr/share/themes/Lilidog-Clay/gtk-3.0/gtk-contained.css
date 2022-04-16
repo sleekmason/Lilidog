@@ -2563,22 +2563,22 @@ notebook > stack:not(:only-child) {
  * Scrollbars *
  **************/
 scrollbar {
-  background-image: linear-gradient(to right, #e8e8e8, #3E4B47);
+  background-image: linear-gradient(to right, #A4A8A8, #A4A8A8);
   transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #dbdbdb; }
+    border-bottom: 1px solid #A9ADAD; }
   scrollbar.bottom {
-    border-top: 1px solid #dbdbdb; }
+    border-top: 1px solid #A9ADAD; }
   scrollbar.left {
-    border-right: 1px solid #dbdbdb; }
+    border-right: 1px solid #A9ADAD; }
   scrollbar.right {
-    border-left: 1px solid #dbdbdb; }
+    border-left: 1px solid #A9ADAD; }
   scrollbar:backdrop {
     background-color: #c6c6c6;
-    border-color: #dbdbdb;
+    border-color: #A9ADAD;
     transition: 200ms ease-out; }
   scrollbar slider {
     min-width: 9px;
@@ -2587,9 +2587,9 @@ scrollbar {
     border: 1px solid #828282;
     border-radius: 10px;
     background-clip: padding-box;
-    background-image: linear-gradient(to right, #606E69, #ABB3B3); }
+    background-image: linear-gradient(to right, #646B68, #5F6663); }
     scrollbar slider:hover {
-      background-image: linear-gradient(to right, #c1c1c1, #606E69); }
+      background-image: linear-gradient(to right, #818A85, #818A85); }
     scrollbar slider:hover:active {
       background-color: #B1B5B5; }
     scrollbar slider:backdrop {
@@ -2611,9 +2611,9 @@ scrollbar {
       margin: 0;
       min-width: 7px;
       min-height: 7px;
-      background-color: shade(#0D0D0C, 0.9);
+      background-color: shade(#666E6A, 0.9);
       background-image: none;
-      border: 1px solid white; }
+      border: 1px solid #76807B; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
       min-width: 5px;
       min-height: 5px;
@@ -2758,14 +2758,14 @@ switch {
     color: #0D0D0C;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #828282;
-    background-image: linear-gradient(to bottom, #dbdbdb 20%, #7D8581 90%);
+    background-image: linear-gradient(to bottom, #A9ADAD 20%, #7D8581 90%);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px lightgray, inset 0 -1px #afafaf, 0 1px rgba(0, 0, 0, 0.1); }
   switch:hover slider {
     color: #0D0D0C;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #828282;
     background-image: linear-gradient(to bottom, #909994 10%, #d8d8d8 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #dbdbdb, inset 0 -1px #b5b5b5, 0 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #A9ADAD, inset 0 -1px #b5b5b5, 0 1px rgba(0, 0, 0, 0.1); }
   switch:checked slider {
     border: 1px solid alpha(#0f4278,0.8); }
   switch:disabled slider {
@@ -2868,8 +2868,8 @@ radio {
   color: #0D0D0C;
   outline-color: rgba(60, 60, 60, 0.3);
   border-color: #9b9b9b;
-  background-image: linear-gradient(to bottom, #e8e8e8 20%, #dbdbdb 90%);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), inset 0 -2px #D4D2D2, inset 0 -1px #bcbcbc, 0 1px rgba(0, 0, 0, 0.1); }
+  background-image: linear-gradient(to bottom, #9AA39F 20%, #9AA39F 90%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), inset 0 -2px #717874, inset 0 -1px #bcbcbc, 0 1px rgba(0, 0, 0, 0.1); }
   check:only-child,
   radio:only-child {
     margin: 0; }
@@ -2878,8 +2878,8 @@ radio {
     color: #0D0D0C;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #828282;
-    background-image: linear-gradient(to bottom, #909994 10%, #d8d8d8 90%);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #dbdbdb, inset 0 -1px #b5b5b5, 0 1px rgba(0, 0, 0, 0.1); }
+    background-image: linear-gradient(to bottom, #A6B0AC 10%, #A6B0AC 90%);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #717874, inset 0 -1px #b5b5b5, 0 1px rgba(0, 0, 0, 0.1); }
   check:active,
   radio:active {
     color: #0D0D0C;
