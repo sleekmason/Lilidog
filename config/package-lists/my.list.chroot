@@ -79,6 +79,7 @@ gettext-base
 gimp
 gnome-icon-theme
 gnome-system-tools
+gnome-themes-standard
 gnupg2
 gparted
 gpick
@@ -145,6 +146,7 @@ moc
 modemmanager
 mokutil
 mousepad
+mtools
 nano
 ncdu
 neofetch
