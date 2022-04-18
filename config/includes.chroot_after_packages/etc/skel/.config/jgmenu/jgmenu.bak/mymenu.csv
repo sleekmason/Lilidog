@@ -136,7 +136,6 @@ Urxvt Conf,               mousepad ~/.Xresources,                               
 Tint2 Conf,               tint2conf,                                                            tint2
 Picom Conf,               mousepad ~/.config/picom.conf,                                        document-properties
 Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
-Fbpanel Conf,             mousepad ~/.config/fbpanel/default,                                   preferences-other
 Xbindkeys Conf,           xbindkeys-config,                                                     document-properties
 Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                                        document-properties
 Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     applications-games 
