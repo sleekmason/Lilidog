@@ -2563,22 +2563,22 @@ notebook > stack:not(:only-child) {
  * Scrollbars *
  **************/
 scrollbar {
-  background-image: linear-gradient(to right, #101C2E, #52CFEB);
+  background-image: linear-gradient(to right, #10121F, #10121F);
   transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #74ABCF; }
+    border-bottom: 1px solid #111321; }
   scrollbar.bottom {
-    border-top: 1px solid #74ABCF; }
+    border-top: 1px solid #111321; }
   scrollbar.left {
-    border-right: 1px solid #74ABCF; }
+    border-right: 1px solid #111321; }
   scrollbar.right {
-    border-left: 1px solid #74ABCF; }
+    border-left: 1px solid #111321; }
   scrollbar:backdrop {
     background-color: #83B0C8;
-    border-color: #74ABCF;
+    border-color: #111321;
     transition: 200ms ease-out; }
   scrollbar slider {
     min-width: 9px;
