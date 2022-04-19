@@ -1,0 +1,45 @@
+#!/bin/bash
+read -p "                         [0;33mChromium Installer.[0m
+
+
+   Chromium Web Browser: [0;35mhttps://www.chromium.org/Home/[0m
+   
+   This script will install chromium  and chromium-sandbox.
+   A new menu entry will be created in the main menu.
+   
+    [0;32mMenu entries will need to be removed manually if uninstalled.
+   See Jgmenu Conf under Configuration in the menu for directions.
+      
+   ---------------------------------------------------------------
+   
+   Please press enter to install Chromium.
+   
+   ---------------------------------------------------------------[0m    
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+sudo apt update && sudo apt install chromium chromium-sandbox &&
+sed -i '/Chromium,           chromium,         chromium/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '3i Chromium,           chromium,         chromium' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo "----------------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mIf installed, You should find a new main menu entry.[0m"
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "----------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
+

@@ -1,0 +1,43 @@
+#!/bin/bash
+read -p "                         [0;33mMidori Installer.[0m
+
+
+   Midori Web Browser: [0;35mhttps://astian.org/en/midori-browser/[0m
+   
+   This script will install Midori and create a new menu entry.
+   
+   [0;32mMenu entries will need to be removed manually if uninstalled.
+   See Jgmenu Conf under Configuration in the menu for directions.
+      
+   ---------------------------------------------------------------
+   
+   Please press enter to install Midori.
+   
+   ---------------------------------------------------------------[0m   
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+sudo apt update && sudo apt install midori &&
+sed -i '/Midori,            midori,          midori/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '3i Midori,            midori,          midori' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo "----------------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mIf installed, You should find a new main menu entry.[0m"
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "----------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

@@ -59,6 +59,7 @@ Clickpick Gradient 4-Way, clickpick-gradient4,        gpick
 ^tag(extras)
 Install Games,^checkout(games-install),applications-utilities
 Install Graphics,^checkout(graphics-install),applications-utilities
+Install Browsers,^checkout(browsers-install),applications-utilities
 Install Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
 Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities
 Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
@@ -81,6 +82,12 @@ Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "s
 ^tag(graphics-install)
 Install Papirus Icons,     x-terminal-emulator -T 'Papirus Icon Theme Installer' -e bash -c "papirus-installer; echo $'\n\nPress any key to close.'; read -srn1",       applications-utilities
 Install Gnome Color Icons, x-terminal-emulator -T 'Gnome Colors Icons Installer' -e bash -c "gnome-colors-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-utilities
+
+^tag(browsers-install)
+Install Firefox,           x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-utilities
+Install Chromium,          x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-utilities
+Install Midori,            x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-utilities
+Install Lynx,              x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-utilities
 
 ^tag(toggles)
 Tint2 Options,       ^checkout(tint2-options),                      object-flip-horizontal
