@@ -2483,13 +2483,13 @@ notebook > header {
         background-color: transparent; }
     notebook > header tab:checked {
       color: #0D0D0C;
-      background-color: shade(#7D8581, 1.05);
+      background-color: shade(#8B9490, 1.05);
       border-width: 1px 1px 0 1px; }
       notebook > header tab:checked:backdrop {
         background-color: #7D8581; }
       notebook > header tab:checked.reorderable-page {
         border-color: rgba(130, 130, 130, 0.5);
-        background-color: shade(#7D8581, 1.05); }
+        background-color: shade(#8B9490, 1.05); }
     notebook > header tab:backdrop:checked {
       color: #363838; }
       notebook > header tab:backdrop:checked.reorderable-page {

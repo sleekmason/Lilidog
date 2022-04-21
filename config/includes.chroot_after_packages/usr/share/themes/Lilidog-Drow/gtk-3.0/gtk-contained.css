@@ -2483,7 +2483,7 @@ notebook > header {
         background-color: transparent; }
     notebook > header tab:checked {
       color: #C3D4D4;
-      background-color: shade(#303030, 1.05);
+      background-color: shade(#4B4B4B, 1.05);
       border-width: 1px 1px 0 1px; }
       notebook > header tab:checked:backdrop {
         background-color: #303030; }

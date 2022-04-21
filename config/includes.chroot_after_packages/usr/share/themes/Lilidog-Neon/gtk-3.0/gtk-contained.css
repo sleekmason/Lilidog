@@ -2466,7 +2466,7 @@ notebook > header {
     padding: 3px 12px;
     outline-offset: -5px;
     color: #94C1C4;
-    background-color: #260C20;
+    background-color: #2B0E25;
     border-width: 1px;
     border-radius: 3px;
     border-color: shade(#2B0E25, 0.9);
@@ -2483,7 +2483,7 @@ notebook > header {
         background-color: transparent; }
     notebook > header tab:checked {
       color: #61E7FF;
-      background-color: shade(#2B0E25, 1.05);
+      background-color: shade(#421645, 1.05);
       border-width: 1px 1px 0 1px; }
       notebook > header tab:checked:backdrop {
         background-color: #2B0E25; }
