@@ -10,6 +10,8 @@ yad --title "Theming Options" --escape-ok \
     --field="                       Wallpaper!gtk-select-color":FBTN "feh-set-wallpaper" \
     --field="                        Grub BG!wallpaper":FBTN "x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1'" \
     --field="                          Jgmenu!jgmenu":FBTN "jg-icon-changer" \
+    --field="                            Conky!preferences-system":FBTN ".config/conky/scripts/conky-chooser" \
+    --field="                          Sounds!audio-speakers":FBTN "notification-sounds" \
     --field="                         LightDM!lightdm-gtk-greeter-settings":FBTN "gksudo lightdm-gtk-greeter-settings" \
     --field="           Terminal Themes!gnome-terminal":FBTN "ld-term-changer" \
     --field="       Extras, Icons, Fonts!preferences-system":FBTN "xfce4-appearance-settings" \
