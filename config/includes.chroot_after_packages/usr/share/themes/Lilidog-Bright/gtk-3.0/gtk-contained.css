@@ -2563,22 +2563,22 @@ notebook > stack:not(:only-child) {
  * Scrollbars *
  **************/
 scrollbar {
-  background-image: linear-gradient(to right, #e8e8e8, #BDC4C4);
+  background-image: linear-gradient(to right, #DAE0E0, #DAE0E0);
   transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #dbdbdb; }
+    border-bottom: 1px solid #DAE0E0; }
   scrollbar.bottom {
-    border-top: 1px solid #dbdbdb; }
+    border-top: 1px solid #DAE0E0; }
   scrollbar.left {
-    border-right: 1px solid #dbdbdb; }
+    border-right: 1px solid #DAE0E0; }
   scrollbar.right {
-    border-left: 1px solid #dbdbdb; }
+    border-left: 1px solid #DAE0E0; }
   scrollbar:backdrop {
     background-color: #c6c6c6;
-    border-color: #dbdbdb;
+    border-color: #DAE0E0;
     transition: 200ms ease-out; }
   scrollbar slider {
     min-width: 9px;
@@ -2587,9 +2587,9 @@ scrollbar {
     border: 1px solid #828282;
     border-radius: 10px;
     background-clip: padding-box;
-    background-image: linear-gradient(to right, #dbdbdb, #CBD1D1); }
+    background-image: linear-gradient(to right, #C2C7C7, #BDC2C2); }
     scrollbar slider:hover {
-      background-image: linear-gradient(to right, #c1c1c1, #cbcbcb); }
+      background-image: linear-gradient(to right, #A6ABAB, #A1A6A6); }
     scrollbar slider:hover:active {
       background-color: #AAB3B2; }
     scrollbar slider:backdrop {
