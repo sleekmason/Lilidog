@@ -6,7 +6,7 @@
 
 ## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
 sudo sed -i "s/theme-name.*/theme-name = Lilidog-Slate/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Trifull.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Tribare.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/position.*/position = 95%,end 9%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Liberation Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
