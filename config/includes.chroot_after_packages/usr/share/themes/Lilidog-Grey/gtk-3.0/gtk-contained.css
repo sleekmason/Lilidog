@@ -2569,16 +2569,16 @@ scrollbar {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #dbdbdb; }
+    border-bottom: 1px solid #C7C6C2; }
   scrollbar.bottom {
-    border-top: 1px solid #dbdbdb; }
+    border-top: 1px solid #C7C6C2; }
   scrollbar.left {
-    border-right: 1px solid #dbdbdb; }
+    border-right: 1px solid #C7C6C2; }
   scrollbar.right {
-    border-left: 1px solid #dbdbdb; }
+    border-left: 1px solid #C7C6C2; }
   scrollbar:backdrop {
     background-color: #c6c6c6;
-    border-color: #dbdbdb;
+    border-color: #C7C6C2;
     transition: 200ms ease-out; }
   scrollbar slider {
     min-width: 9px;
