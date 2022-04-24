@@ -12,18 +12,14 @@ logi=$(yad --width 300 --borders=10 --entry --title "Auto Login" --center --wind
 case $logi in
   Disable*)
    pkexec sed -i '/autologin-user='"$USER"'/d' /etc/lightdm/lightdm.conf 
-notify-send 'Auto Login Disabled' ;;
+notify-send --urgency low 'Auto Login Disabled' ;;
    Enable*)
    if grep -q autologin-user="$USER" "/etc/lightdm/lightdm.conf"; then
    pkexec sh -c 'sed -i '/autologin-user='$USER'/d' /etc/lightdm/lightdm.conf & sed -i '125aautologin-user='$USER'' /etc/lightdm/lightdm.conf' &&
-notify-send -t 29000 'Auto Login Re Enabled
-
-Please Look In:
-/etc/lightdm/lightdm.conf
-If Encountering Problems.'
+notify-send --urgency low 'Auto Login Re-Enabled'
    else
    pkexec sed -i '125aautologin-user='"$USER"'' /etc/lightdm/lightdm.conf
-notify-send 'Auto Login Enabled' 
+notify-send --urgency low 'Auto Login Enabled' 
 fi ;;
         *) exit 1 ;;
     esac
