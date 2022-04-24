@@ -1,8 +1,8 @@
 Terminal,           x-terminal-emulator,       utilities-terminal
 ^sep()
-Thunar,             thunar,           /usr/share/icons/ld-icons/Thunar.png
 Firefox,            firefox,          firefox-esr
 Thunderbird,        thunderbird,      thunderbird
+Thunar,             thunar,           /usr/share/icons/ld-icons/Thunar.png
 ^sep()
 Quick Grab,^checkout(quickgrab),applications-other
 ^sep()
