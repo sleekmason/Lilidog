@@ -132,9 +132,9 @@ Openbox Themes,           thunar /usr/share/themes,                      folder-
 Grub Backgrounds,         thunar ~/Pictures/grub-bg,                     folder-documents
 
 ^tag(configuration)
-Quick Theme Changer,      ld-theme-changer,                                                     preferences-system
+Quick Theme Changer,      ld-theme-changer,                                                     preferences-desktop-theme
 Wallpaper Changer,        feh-set-wallpaper,                                                    feh
-Settings-Manager,         xfce4-settings-manager,                                               preferences-desktop-theme
+Settings-Manager,         xfce4-settings-manager,                                               preferences-system
 Power Manager,            xfce4-power-manager-settings,                                         applications-system  
 Openbox Conf,             obconf,                                                               obconf
 Jgmenu Conf,              mousepad ~/.config/jgmenu/README & thunar ~/.config/jgmenu,           document-properties
