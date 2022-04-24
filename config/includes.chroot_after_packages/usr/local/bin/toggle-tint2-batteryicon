@@ -5,11 +5,11 @@
 FILE="$HOME/.config/tint2/tint2rc"
 STRING="# Executor 1"
 if  grep -q "$STRING" "$FILE" ; then
-         notify-send 'Removing Battery Icon From Tint2' ;
+         notify-send --urgency low 'Removing Battery Level Indicator From Tint2 Panel' ;
          sed -i '/# Executor 1/,/#-------/d' "$FILE"
          sed -i 's/^battery_low_status.*/battery_low_status = 0/g' "$FILE"        
  else
-          notify-send 'Adding Battery Icon To Tint2' ;
+          notify-send --urgency low 'Adding Battery Level Indicator To Tint2 Panel' ;
          sed -i '/tooltip_font_color =/r .config/tint2/batt.txt' "$FILE"
          sed -i 's/^battery_low_status.*/battery_low_status = 10/g' "$FILE"
 fi
