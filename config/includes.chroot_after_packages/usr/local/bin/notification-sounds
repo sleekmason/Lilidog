@@ -13,7 +13,7 @@ case $noti in
    sed -i '/summary/d' ~/.config/dunst/dunstrc
    sed -i '/sounds/d' ~/.config/dunst/dunstrc
    killall dunst
-notify-send 'Notification Sound Is Off' ;;
+notify-send --urgency low 'Notification Sounds Off' ;;
    On*)  
     sed -i '/summary/d' ~/.config/dunst/dunstrc
     sed -i '/sounds/d' ~/.config/dunst/dunstrc
@@ -21,6 +21,6 @@ notify-send 'Notification Sound Is Off' ;;
     sed -i '/sounds/a summary = "*"' ~/.config/dunst/dunstrc
     killall dunst
     sleep 1s
-notify-send 'Sound Is On For All Notifications' ;;
+notify-send --urgency low 'Notification Sounds On' ;;
         *) exit 1 ;;
     esac
