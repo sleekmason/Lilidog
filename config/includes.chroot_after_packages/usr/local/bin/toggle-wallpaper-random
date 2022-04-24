@@ -96,7 +96,7 @@ One Full Day! bash -c  'wallpaper_shuffler 24h'!$icondir/22x22/mimetypes/applica
 Exit!Quit!$icondir/22x22/actions/window-close.png " >&3
 
 # set notification icon
-echo "icon:$trayicon" >&3
+echo "icon:$trayicon" >&3 && notify-send --urgency low 'Random BG Tint2 Tray Icon Enabled'
 
 # wait for notification to quit
 wait $NPID 2>/dev/null
