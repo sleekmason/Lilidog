@@ -1,0 +1,31 @@
+#!/bin/bash
+read -p "             [0;33mNumix Circle Icon Theme Installer.[0m
+
+
+   Just a convenience to download the Numix Icon theme set.
+    
+   ---------------------------------------------------------------
+   
+   [0;32mPlease press enter to install the Numix Icon Theme.[0m
+   
+   ---------------------------------------------------------------    
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+sudo apt update && sudo apt install numix-icon-theme-circle
+
+echo ""
+echo ""
+echo "[0;32mAll done. Enjoy your new icon theme![0m"
+echo ""
+echo ""
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
