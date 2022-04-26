@@ -5,7 +5,7 @@ grep 'file:///' ~/.local/share/recently-used.xbel | tail -n15 |  cut -d "\"" -f 
 do  
 file="$line"
 name=$(echo "$file" | sed 's,.*/,,' | sed 's/%20/ /g')
-echo "<item label=\"$name\" icon=\"/usr/share/icons/Breeze/actions/32/document-edit-sign.svg\">
+echo "<item label=\"$name\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-edit-sign.svg\">
 		<action name=\"Execute\"><command>xdg-open $line</command></action>
 	</item>"
 done);

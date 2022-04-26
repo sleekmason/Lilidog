@@ -44,7 +44,7 @@ open_file() {
 
 # extra dotfiles and directories to display in HOME folder (dotfiles are hidden by default)
 # edit the list (space separated, surrounded by single quotes) or comment this line out, to taste:
-shown_dotfiles='.config .local .Xresources .Xdefaults .bash_aliases .bashrc .inputrc .gtkrc-2.0.mine .profile .xsessionrc .xsession-errors'
+shown_dotfiles='.config .local .Xresources .Xdefaults .bash_aliases .bashrc .inputrc .fehbg .gtkrc-2.0.mine .profile .xsessionrc .xsession-errors'
 
 # By default, this script will display directories separately, before files.
 # To change this behaviour, see NOTE1, NOTE2 and NOTE3 below, near end of page.
@@ -99,7 +99,7 @@ case $1 in
     if [ -x "$recent_script" ]
     then
         output="${output}<separator label=\"Recently opened...\" />
-<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" icon=\"/usr/share/icons/Breeze/actions/32/document-edit-sign.svg\" />
+<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-edit-sign.svg\" />
 "
     else
         echo "$0 : cannot find executable script $recent_script" >&2
@@ -140,7 +140,7 @@ XXX
 esac
 
 output="$output<separator />
-<item label=\"Browse Home\" icon=\"/usr/share/icons/Breeze/actions/32/document-open.svg\">
+<item label=\"Browse Home\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-open.svg\">
     <action name=\"Execute\">
         <command>
          &apos;$open_folder_cmd&apos; &apos;$pathe_apos&apos;
@@ -194,10 +194,10 @@ XXX
 # NOTE1 If you want directories and files listed together
 # change next line [directories_menu="$directories_menu] to read: [files_menu="$files_menu] (there is no final quote)
         directories_menu="$directories_menu
-<menu id=\"${pathe_apos}/${shortnamee_apos}\" label=\"$shortnamee_label\" icon=\"/usr/share/icons/Breeze/actions/32/document-open.svg\" execute=\"&apos;$0&apos; &apos;${pathe_apos}/${shortnamee_apos}&apos;\" />"
+<menu id=\"${pathe_apos}/${shortnamee_apos}\" label=\"$shortnamee_label\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-open.svg\" execute=\"&apos;$0&apos; &apos;${pathe_apos}/${shortnamee_apos}&apos;\" />"
     else
         files_menu="$files_menu
-<item label=\"$shortnamee_label\" icon=\"/usr/share/icons/Breeze/actions/32/document-edit-sign.svg\">
+<item label=\"$shortnamee_label\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-edit-sign.svg\">
     <action name=\"Execute\">
         <command>
         &apos;$0&apos; --open &apos;${pathe_apos}/${shortnamee_apos}&apos;
