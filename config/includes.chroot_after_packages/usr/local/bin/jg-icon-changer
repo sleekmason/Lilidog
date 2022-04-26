@@ -42,7 +42,7 @@ fi ;;
 then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
      sed -i 's/^icon_theme =.*/icon_theme = Papirus-Dark/g' ~/.config/jgmenu/jgmenurc
-notify-send --urgency low 'Menu Icons Set To Light Papirus'
+notify-send --urgency low 'Menu Icons Set To Papirus Dark'
 else
 notify-send --urgency low "Papirus icons are not currently installed"
 fi ;;
@@ -51,7 +51,7 @@ fi ;;
 then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
      sed -i 's/^icon_theme =.*/icon_theme = Papirus/g' ~/.config/jgmenu/jgmenurc
-notify-send --urgency low 'Menu Icons Set To Dark Papirus'
+notify-send --urgency low 'Menu Icons Set To Papirus Light'
 else
 notify-send --urgency low "Papirus icons are not currently installed"
 fi ;;
