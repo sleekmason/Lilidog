@@ -1,13 +1,13 @@
-Quick Themes,               ld-themes,                                /usr/share/icons/Breeze/actions/22/color-management.svg
+Quick Themes,               ld-themes,                                gpick
 ^sep()
-Wallpapers,                 feh-set-wallpaper,                        /usr/share/icons/Breeze/actions/22/colorneg.svg
-Grub BG,                    x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1',   /usr/share/icons/Breeze/actions/22/colorneg.svg
-Lightdm,                    gksudo lightdm-gtk-greeter-settings,      /usr/share/icons/Breeze/actions/22/adjustrgb.svg
+Wallpapers,                 feh-set-wallpaper,                        gtk-select-color
+Grub BG,                    x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1',  preferences-desktop-wallpaper
 Jgmenu,                     jg-icon-changer,                          jgmenu
 Conky,                      $HOME/.config/conky/scripts/conky-chooser, utilities-system-monitor
 Sounds,                     notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
-Terminal,                   ld-term-changer,                          /usr/share/icons/Breeze/actions/22/channelmixer.svg
+Lightdm,                    gksudo lightdm-gtk-greeter-settings,      lightdm-gtk-greeter-settings
+Terminal,                   ld-term-changer,                          org.xfce.terminal
 Openbox,                    obconf,                                   obconf
-Icons - Fonts - Extras,     xfce4-appearance-settings,                /usr/share/icons/gnome/22x22/apps/preferences-desktop-font.png
+Icons - Fonts - Extras,     xfce4-appearance-settings,                preferences-system
 ^sep()
-Reset To Default,           x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/Breeze/actions/22/adjustrgb.svg
+Reset To Default,           x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/breeze-dark/actions/22/adjustrgb.svg

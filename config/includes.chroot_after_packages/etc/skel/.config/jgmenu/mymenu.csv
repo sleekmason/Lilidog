@@ -81,6 +81,7 @@ Install Minecraft,        x-terminal-emulator -T 'Minecraft Installer' -e bash -
 Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
 
 ^tag(graphics-install)
+Install Breeze Icons,      x-terminal-emulator -T 'Breeze Icon Theme Installer' -e bash -c "breeze-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
 Install Papirus Icons,     x-terminal-emulator -T 'Papirus Icon Theme Installer' -e bash -c "papirus-installer; echo $'\n\nPress any key to close.'; read -srn1",      applications-utilities
 Install Gnome Color Icons, x-terminal-emulator -T 'Gnome Colors Icons Installer' -e bash -c "gnome-colors-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Numix Circle Icons,  x-terminal-emulator -T 'Numix Circle Icon Theme Installer' -e bash -c "numix-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
@@ -98,6 +99,7 @@ Tint2 Options,       ^checkout(tint2-options),                      object-flip-
 Wbar,                toggle.wbar,                                   object-flip-horizontal
 Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
 Gammy,               toggle.gammy,                                  object-flip-horizontal
+Jgmenu,              jg-icon-changer,                               object-flip-horizontal
 Clipboard,           toggle.parcellite,                             object-flip-horizontal
 Hotcorners,          toggle.ld,                                     object-flip-horizontal
 Random BG,           toggle-wallpaper-random,                       object-flip-horizontal

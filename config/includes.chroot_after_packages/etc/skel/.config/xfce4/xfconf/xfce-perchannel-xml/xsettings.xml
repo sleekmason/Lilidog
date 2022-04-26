@@ -3,7 +3,7 @@
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
     <property name="ThemeName" type="string" value="Lilidog-Slate"/>
-    <property name="IconThemeName" type="string" value="Breeze"/>
+    <property name="IconThemeName" type="string" value="breeze-dark"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
