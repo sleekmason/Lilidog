@@ -7,13 +7,20 @@ Thunar
 Terminal
 Firefox
 Thunderbird
+Transmission
+Mousepad
 Pragha
 Smplayer
 Writer
 Gimp
 Gpicview
 Synaptic
+QuickThemes
+Conky
+RandomBG
+Xscreensaver
 Screenshot
+PowerManager
 Suspend
 ScreenLock
 Exit"
@@ -24,17 +31,24 @@ case ${cmd%% *} in
 
 	Catfish)		exec catfish ;;
 	Geany)			exec geany ;;
-	Thunar)		        exec thunar ;;
+	Thunar)		    exec thunar ;;
 	Terminal)		exec x-terminal-emulator ;;
 	Firefox)		exec firefox ;;
-	Thunderbird)		exec thunderbird ;;
+	Thunderbird)	exec thunderbird ;;
+	Transmission)   exec transmission-gtk ;;
+    Mousepad)       exec mousepad ;;
 	Pragha) 		exec pragha ;;
 	Smplayer)		exec smplayer ;;
-	Writer)			exec abiword ;;
+	Writer)			exec libreoffice ;;
 	Gimp)			exec gimp ;;
 	Gpicview)		exec gpicview ;;
 	Synaptic)		exec gksudo synaptic ;;
+	QuickThemes)    exec ld-theme-changer ;;
+	Conky)          exec ~/.config/conky/scripts/conky-chooser ;;
+    RandomBG)       exec toggle-wallpaper-random ;;
+    Xscreensaver)   exec toggle.xscreensaver ;;
 	Screenshot)		exec gnome-screenshot -i ;;
+    PowerManager)   exec xfce4-power-manager-settings ;;
 	Suspend)		exec systemctl suspend ;;
 	ScreenLock)		exec slock ;;
 	Exit)			exec ld-logout ;;
