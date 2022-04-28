@@ -20,7 +20,7 @@ notify-send --urgency low 'Menu Icons Set To Gnome'
 else
 notify-send --urgency low "Gnome icons are not currently installed"
 fi  ;;
-  Breeze*)
+  Breeze)
    if [[ -d "/usr/share/icons/breeze" ]]
 then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
