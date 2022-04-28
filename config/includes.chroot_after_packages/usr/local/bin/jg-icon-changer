@@ -1,13 +1,14 @@
 #! /bin/bash
 # Jgmenu options for icon type, on/off, and font size
 # Made be sleekmason for Lilidog 4-13-2022
-noti=$(yad --width 300 --borders=10 --entry --title "Jgmenu Icon & Font Options" --center --window-icon=applications-system \
+noti=$(yad --width 440 --borders=10 --entry --title "Jgmenu Icon And Font Options" --center --window-icon=applications-system \
     --image="jgmenu" \
+    --button="Install Icons"!/usr/share/icons/gnome/22x22/categories/applications-graphics.png!:"popup -f ~/.config/jgmenu/icon-installers" \
     --button=" Font Size"!/usr/share/icons/gnome/22x22/apps/preferences-desktop-font.png!:"jg-font-size" \
-    --button="gtk-ok:0" --button="gtk-close:1" \
-    --text "     Desired icon sets can be installed \n     through the Extras Menu.\n" \
+    --button="gtk-ok:0" \
+    --text "     Breeze and Gnome icon sets come pre-installed. \n     See 'Install Icons' below for additional themes.\n" \
     --entry-text \
-    "Please Select" "Gnome" "Breeze" "Breeze-Dark" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
+    "Please Select Menu Icon theme" "Gnome" "Breeze" "Breeze-Dark - Default Theme" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
 
 case $noti in
   Gnome*) 
@@ -19,7 +20,7 @@ notify-send --urgency low 'Menu Icons Set To Gnome'
 else
 notify-send --urgency low "Gnome icons are not currently installed"
 fi  ;;
-  Breeze)
+  Breeze*)
    if [[ -d "/usr/share/icons/breeze" ]]
 then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
@@ -28,7 +29,7 @@ notify-send --urgency low 'Menu Icons Set To Breeze'
 else
 notify-send --urgency low "Breeze icons are not currently installed"
 fi ;;
-  Breeze-Dark)
+  Breeze-Dark*)
    if [[ -d "/usr/share/icons/breeze-dark" ]]
 then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
