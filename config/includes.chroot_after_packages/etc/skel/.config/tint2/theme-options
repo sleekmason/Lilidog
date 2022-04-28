@@ -1,6 +1,6 @@
 Quick Themes,               ld-themes,                                gpick
 ^sep()
-Wallpapers,                 feh-set-wallpaper,                        gtk-select-color
+Wallpapers,                 feh-set-wallpaper,                        preferences-desktop-wallpaper
 Grub BG,                    x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1',  preferences-desktop-wallpaper
 Jgmenu,                     jg-icon-changer,                          jgmenu
 Conky,                      $HOME/.config/conky/scripts/conky-chooser, utilities-system-monitor
