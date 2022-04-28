@@ -17,10 +17,8 @@ Gpicview
 Synaptic
 QuickThemes
 Conky
-RandomBG
 Xscreensaver
 Screenshot
-PowerManager
 Suspend
 ScreenLock
 Exit"
@@ -45,10 +43,8 @@ case ${cmd%% *} in
 	Synaptic)		exec gksudo synaptic ;;
 	QuickThemes)    exec ld-theme-changer ;;
 	Conky)          exec ~/.config/conky/scripts/conky-chooser ;;
-    RandomBG)       exec toggle-wallpaper-random ;;
     Xscreensaver)   exec toggle.xscreensaver ;;
 	Screenshot)		exec gnome-screenshot -i ;;
-    PowerManager)   exec xfce4-power-manager-settings ;;
 	Suspend)		exec systemctl suspend ;;
 	ScreenLock)		exec slock ;;
 	Exit)			exec ld-logout ;;
