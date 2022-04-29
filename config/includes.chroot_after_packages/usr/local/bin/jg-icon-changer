@@ -3,7 +3,7 @@
 # Made be sleekmason for Lilidog 4-13-2022
 noti=$(yad --width 440 --borders=10 --entry --title "Jgmenu Icon And Font Options" --center --window-icon=applications-system \
     --image="jgmenu" \
-    --button="Install Icons"!/usr/share/icons/gnome/22x22/categories/applications-graphics.png!:"popup -f ~/.config/jgmenu/icon-installers" \
+    --button="Install Icons"!/usr/share/icons/gnome/22x22/categories/applications-graphics.png!:"popup -f ~/.config/jgmenu/icon-installers &" \
     --button=" Font Size"!/usr/share/icons/gnome/22x22/apps/preferences-desktop-font.png!:"jg-font-size" \
     --button="gtk-ok:0" \
     --text "     Breeze and Gnome icon sets come pre-installed. \n     See 'Install Icons' below for additional themes.\n" \
