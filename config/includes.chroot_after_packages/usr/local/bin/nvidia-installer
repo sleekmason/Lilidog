@@ -1,0 +1,49 @@
+#!/bin/bash
+echo ""
+read -p "   [0;33mNvidia Installer[0m
+
+   This script will install the non free Nvidia drivers and place a menu
+   entry in Utilities --> Nvidia Settings. Requires reboot on completion.
+   
+   This script will disable the installed Nouveau drivers.
+   
+   To check if you have an Nvidia Graphics card, use: 
+   'lspci | grep -e VGA' in a terminal.
+    
+   ---------------------------------------------------------
+   
+   [0;32mPlease press enter to install the Nvidia drivers.[0m
+   
+   ---------------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo "" 
+sudo apt update && sudo apt install linux-headers-amd64 libc6-dev nvidia-detect \
+nvidia-driver nvidia-settings libnvidia-cfg1 nvidia-persistenced libopengl0 \
+libgles-nvidia1 libgles-nvidia2 libnvidia-encode1 nvidia-vulkan-icd &&
+sed -i '/Nvidia Settings,    nvidia-settings,                  nvidia-settings/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Extras/i Nvidia Settings,    nvidia-settings,                  nvidia-settings' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo "-----------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mIf installed, You should find a new menu entry 'Nvidia Settings'"
+echo "in the Utilities menu.  Please REBOOT to enable your new Nvidia drivers.[0m" 
+echo "" 
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "-----------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
