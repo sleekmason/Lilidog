@@ -63,7 +63,6 @@ Install Graphics,^checkout(graphics-install),applications-utilities
 Install Browsers,^checkout(browsers-install),applications-utilities
 Install Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
 Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities
-Install Nvidia Drivers,   x-terminal-emulator -T 'Nvidia Drivers Installer' -e bash -c "nvidia-installer; echo $'\n\nPress any key to close.'; read -srn1",           applications-utilities
 Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Etcher USB Maker, x-terminal-emulator -T 'Etcher Installer' -e bash -c "etcher-installer; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 Install Kernel Packages,  x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
