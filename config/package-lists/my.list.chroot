@@ -185,7 +185,6 @@ python3-pyxattr
 python3-xdg
 python3-notify2
 python3-six
-python3-httplib2 
 python3-pycurl 
 python3-reportbug
 python3-xlib
