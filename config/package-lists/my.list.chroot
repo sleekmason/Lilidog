@@ -23,8 +23,10 @@ crda
 curl
 dbus-user-session
 dbus-x11
+debian-faq
 desktop-base
 dialog
+doc-debian
 dosfstools
 dunst
 e2fsprogs
@@ -111,11 +113,13 @@ iw
 jp2a
 jq
 kbd
+krb5-locales
 libavcodec-extra
 libexo-2-0
 libfile-mimeinfo-perl
 libfm-modules
 libinput-tools
+liblockfile-bin
 libnss-systemd
 libreoffice-gtk3
 libreoffice-writer
@@ -150,6 +154,7 @@ mousepad
 mtools
 nano
 ncdu
+ncurses-term
 neofetch
 netpbm
 net-tools
@@ -180,11 +185,15 @@ python3-pyxattr
 python3-xdg
 python3-notify2
 python3-six
+python3-httplib2 
+python3-pycurl 
+python3-reportbug
 python3-xlib
 qt5-gtk-platformtheme
 qt5-gtk2-platformtheme
 qt5-style-plugins
 rename
+reportbug
 rsync
 rtkit
 rtmpdump
@@ -196,7 +205,9 @@ squashfs-tools
 suckless-tools
 sudo
 synaptic
+systemd-timesyncd
 tasksel
+telnet
 tint2
 thunar
 thunar-archive-plugin
@@ -221,6 +232,7 @@ uuid-runtime
 va-driver-all
 vdpau-driver-all
 volumeicon-alsa
+wamerican
 wbar
 wbar-config
 w3m
