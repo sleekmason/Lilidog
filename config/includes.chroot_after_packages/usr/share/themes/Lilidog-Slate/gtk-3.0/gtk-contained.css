@@ -4486,7 +4486,7 @@ text widgets and the like base background color */
 @define-color theme_base_color #1E2A2B;
 /*
 base background color of selections */
-@define-color theme_selected_bg_color #374E4F;
+@define-color theme_selected_bg_color #688282;
 /*
 text/foreground color of selections */
 @define-color theme_selected_fg_color #DCF5F5;
