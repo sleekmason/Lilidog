@@ -2,18 +2,16 @@
 echo ""
 read -p "   Total Theme Reset
 
-   An emergency button to put everything back to the default settings.
+   A reset button to return some items back to their default settings.
 
-   This little script will change all of the theme components back to
-   their original default configuration. This will reset:
-
-   GTK theme, Openbox theme, fonts, icons, wallpaper, terminal, Geany,
-   notification sound, Jgmenu icons and fonts, and Lightdm settings.
-
+   This will reset:
+   
+   GTK and Openbox themes, most fonts, icons, wallpaper, terminal, Geany,
+   notification sounds, Jgmenu icons and fonts, and Lightdm settings.
 
    ----------------------------------------------------------------------
    
-   Please press enter to reset all items to their original configuration.
+   Please press enter to reset items to their original configuration.
    
    ----------------------------------------------------------------------
 
