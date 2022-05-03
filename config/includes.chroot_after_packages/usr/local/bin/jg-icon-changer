@@ -8,7 +8,7 @@ noti=$(yad --width 440 --borders=10 --entry --title "Jgmenu Icon And Font Option
     --button="gtk-ok:0" \
     --text "     Breeze and Gnome icon sets come pre-installed. \n     See 'Install Icons' below for additional themes.\n" \
     --entry-text \
-    "Please Select Menu Icon theme" "Gnome" "Breeze" "Breeze-Dark - Default Theme" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
+    "Please Select Menu Icon Theme" "Gnome" "Breeze" "Breeze-Dark - Default Theme" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
 
 case $noti in
   Gnome*) 
