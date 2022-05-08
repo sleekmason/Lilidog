@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HELP: MX Live-Usb Maker</title>
+</head>
+<body>
+<h1>HELP: MX Live-Usb Maker</h1>
+<figure class="wp-block-image is-resized"><a href="https://mxlinux.org/wp-content/uploads/2019/01/mx-live-usb-maker-overall.png"><img src="https://mxlinux.org/wp-content/uploads/2019/01/mx-live-usb-maker-overall.png" alt="Live USB Maker" class="wp-image-846" width="442" height="199" srcset="https://mxlinux.org/wp-content/uploads/2019/01/mx-live-usb-maker-overall.png 883w, https://mxlinux.org/wp-content/uploads/2019/01/mx-live-usb-maker-overall-300x135.png 300w, https://mxlinux.org/wp-content/uploads/2019/01/mx-live-usb-maker-overall-768x345.png 768w" sizes="(max-width: 442px) 100vw, 442px" /></a></figure>
+
+<p>This app creates a live-usb from an iso-file, another live-usb, a live-cd/dvd or a running live system. The main screen contains four areas</p>
+
+<h2>Basic operations</h2>
+
+<img src="basic.jpg" alt="Basic Operations" />
+
+<p>This top section is often all that a user needs to consider. With the two buttons on the left you select the USB you want to use (the box will be pre-populated with usbs that are connected when the MX-LUM starts), navigate to the ISO you want, and click the Next buttton at the bottom of the screen. The top right button (refresh) can be used if your USB device is plugged after MX-LUM starts, while the bottom right button toggles Advanced options (below).</p>
+
+<h2>Options</h2>
+
+<img src="options.png" alt="options" />
+
+<p><strong>Dry Run</strong> simulates what will happen with the configuration chosen.  Nothing is actually written to disk.</p>
+
+<p><strong>Encrypt</strong> allows the user to create a fully encyrpted live-USB using LUKS encryption.</p>
+
+<p><strong>Clone an existing live system</strong> will allow the user to clone a previously created live-USB.  </p>
+
+<p><strong>Clone running live system</strong> allows live system users to clone the live system that is currently running onto a usb.</p>
+
+<p><strong>Percent of USB-device to use</strong> allows you to set a limit on how much of the device is used for the live system.  </p>
+
+<p><strong>Lable ext partition</strong> allows you to utilize a custom label for the fileystem on the live-USB</p>
+
+<h2>Mode</h2>
+
+<img src="mode.png" alt="mode" />
+
+<p><strong>Full-featured mode</strong> is available for users of antiX/MX family systems, including snapshots.  This mode enables all the live system features, including peristence and other features requiring writable media to function (save options, etc…).</p>
+
+<p><strong>Image mode</strong> is the fallback for non-antiX/MX family isos, and utilizes a &#8220;dd&#8221; backend to create an exact copy of a source iso onto the target media.  This is similar to utilities like etcher or using &#8220;dd&#8221; directly from the commandline.  Image Mode has some sanity checks to help the user write data only to the target media. </p>
+
+<h2>Advanced options</h2>
+
+<img src="advanced.png" alt="advanced options" />
+
+<p>The advanced options are mostly for testing and develoment work, although some might be useful to end users in particular scenarios.</p>
+
+<p><strong>GPT Paritioning </strong> forces the use of gpt partition tables on the live-usb insted of the default &#8220;msdos&#8221; partition table.  Some systems may not boot from the live-USB if gpt is used, and this is only really usefull in UEFI environements.</p>
+
+<p><strong>Update</strong> allows the user to update an existing live-USB with a new iso.  this is not useful if persistence is in use, and is usually only used for testing and development work.</p>
+
+<p><strong>Save the original boot directory when updating a live-USB</strong> is useful when an encrypted environment is in use and is generally only used for testing and development.</p>
+
+<p><strong>Temporarily disable automounting</strong> is useful to disable antiX automounting system, and has no effect in MX.</p>
+
+<p><strong>Ignore USB/removable check</strong> skips the final sanity checks to make sure a target media is a removable device.</p>
+
+<p><strong>Set pmbr_boot disk flag</strong> sets the legacy boot flag on gpt partitions, but disables booting from UEFI systems.</p>
+
+<p><strong>Keep syslinux files</strong> will disable reinstallation of syslinux boot loader on an exisitng live-USB, and typically only matters for development work.</p>
+
+<p><strong>Make ext filesystem even if one exists</strong>  forces creation of a new ext filesystem even if one exists already.  Generally only useful for testing and development.</p>
+
+<p><strong>Resources</strong></p>
+
+<p>BitJam&#8217;s detailed notes can be found <a href="https://github.com/BitJam/live-usb-maker/blob/master/README.md">here</a>.<br> Development history: BitJam (antiX), Dolphin_Oracle, adrian</p>
+
+<p>License: ?</p>
+
+<p>v. 20181104</p>
+
+</body>
+</html>

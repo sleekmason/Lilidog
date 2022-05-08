@@ -35,6 +35,7 @@ eject
 evince
 exfat-fuse
 exfatprogs
+extlinux
 f2fs-tools
 feh
 file
@@ -204,6 +205,7 @@ squashfs-tools
 suckless-tools
 sudo
 synaptic
+syslinux-common
 systemd-timesyncd
 tasksel
 telnet

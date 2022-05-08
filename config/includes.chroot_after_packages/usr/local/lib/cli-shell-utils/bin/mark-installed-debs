@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+
+use strict;
+
+@ARGV != 1 and die "Expected at least one argument\n";
+
+my $installed_list = $ARGV[0];  shift;
+
+open(my $fh, "<", $installed_list) or die "Couldn't open($installed_list)\n";
+
+my %installed;
+
+for (<$fh>) {
+    chomp;
+    s/:.*//;
+    $installed{$_}++;
+}
+
+close $fh;
+
+my $name;
+for (<>) {
+    m/^([^ ]+) / or do {
+        print;
+        next;
+    };
+
+    $name = $1;
+    $installed{$name} and print "I ";
+    print;
+}
