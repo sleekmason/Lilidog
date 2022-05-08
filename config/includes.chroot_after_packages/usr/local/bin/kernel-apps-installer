@@ -21,7 +21,11 @@ read -p "   [0;33mAll Packages Necessary To Compile The Linux Kernel.[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
-sudo apt update && sudo apt install bc bison build-essential fakeroot flex libelf-dev libncurses5-dev libssl-dev
+sudo apt update && sudo apt install bc bison build-essential fakeroot \
+flex libelf-dev libncurses5-dev libssl-dev autoconf automake autopoint \
+autotools-dev debhelper dh-autoreconf dh-strip-nondeterminism dwz \
+gettext intltool-debian libarchive-zip-perl libfl-dev libdebhelper-perl \
+libfile-stripnondeterminism-perl libsub-override-perl libtool po-debconf
 echo ""
 echo "----------------------------------------"
 echo ""
