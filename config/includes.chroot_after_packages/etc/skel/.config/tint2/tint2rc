@@ -310,8 +310,8 @@ button_max_icon_size = 16
 button = new
 button_icon = /usr/share/icons/ld-icons/paw-theme.png
 button_text = 
-button_tooltip = Left Click = Theme Changer - Right Click = Settings
-button_lclick_command = ld-themes
+button_tooltip = Quick Theme Settings
+button_lclick_command = popup -f ~/.config/tint2/theme-options &
 button_rclick_command = popup -f ~/.config/tint2/theme-options &
 button_mclick_command = popup -f ~/.config/tint2/theme-options &
 button_uwheel_command = 

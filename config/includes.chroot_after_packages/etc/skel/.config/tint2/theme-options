@@ -2,12 +2,12 @@ Quick Themes,               ld-themes,                                gpick
 ^sep()
 Wallpapers,                 feh-set-wallpaper,                        preferences-desktop-wallpaper
 Grub BG,                    x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1',  preferences-desktop-wallpaper
-Jgmenu,                     jg-icon-changer,                          jgmenu
 Conky,                      $HOME/.config/conky/scripts/conky-chooser, utilities-system-monitor
-Sounds,                     notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
 Lightdm,                    gksudo lightdm-gtk-greeter-settings,      lightdm-gtk-greeter-settings
-Terminal,                   ld-term-changer,                          org.xfce.terminal
 Openbox,                    obconf,                                   obconf
-Icons - Fonts - Extras,     xfce4-appearance-settings,                preferences-system
+Jgmenu Icons,               jg-icon-changer,                          jgmenu
+Terminal Colors,            ld-term-changer,                          org.xfce.terminal
+Notification Sounds,        notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
+Icons - Fonts - Extras,     xfce4-appearance-settings,                applications-system
 ^sep()
 Reset To Default,           x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/breeze-dark/actions/22/adjustrgb.svg
