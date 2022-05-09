@@ -27,8 +27,8 @@ echo ""
 echo ""
 grep -qF "nvidia" /usr/local/bin/nvidia-ddmmx-installer &&
 sudo ddm-mx -i nvidia &&
-sed -i '/Nvidia Settings,    nvidia-settings,                  nvidia-settings/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Install Extras/i Nvidia Settings,    nvidia-settings,                  nvidia-settings' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Nvidia Settings,    nvidia-settings,                  applications-system/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Extras/i Nvidia Settings,    nvidia-settings,                  applications-system' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
 echo ""
 echo "----------------------------------------------------------------"
