@@ -77,6 +77,17 @@ Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c
 ^sep()
 Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 
+^tag(internet-install)
+Install Browsers,^checkout(browsers-install),applications-utilities
+Install Google Earth,     x-terminal-emulator -T 'Google Earth Installer' -e bash -c "google-earth-installer; echo $'\n\nPress any key to close.'; read -srn1",       applications-utilities
+Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
+
+^tag(browsers-install)
+Install Firefox,           x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-utilities
+Install Chromium,          x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-utilities
+Install Midori,            x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-utilities
+Install Lynx,              x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-utilities
+
 ^tag(games-install)
 Install Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
 Install Minecraft,        x-terminal-emulator -T 'Minecraft Installer' -e bash -c "minecraft-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-games
@@ -96,16 +107,6 @@ Install Paper Icons,       x-terminal-emulator -T 'Paper Icon Theme Installer' -
 
 ^tag(kernels-install)
 Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-
-^tag(internet-install)
-Install Browsers,^checkout(browsers-install),applications-utilities
-Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
-
-^tag(browsers-install)
-Install Firefox,           x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-utilities
-Install Chromium,          x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-utilities
-Install Midori,            x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-utilities
-Install Lynx,              x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-utilities
 
 ^tag(misc-install)
 Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
