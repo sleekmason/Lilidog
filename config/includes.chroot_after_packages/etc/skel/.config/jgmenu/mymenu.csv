@@ -59,20 +59,20 @@ Clickpick Gradient, clickpick-gradient,               gpick
 Clickpick Gradient 4-Way, clickpick-gradient4,        gpick
 
 ^tag(extras)
-Install Games,^checkout(games-install),applications-utilities
-Install Graphics,^checkout(graphics-install),applications-utilities
-Install Browsers,^checkout(browsers-install),applications-utilities
 Install Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
-Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities
-Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Utilities,^checkout(utilities-install),applications-utilities
+Install Internet,^checkout(internet-install),applications-utilities
+Install Games,^checkout(games-install),applications-utilities
+Install Office,^checkout(office-install),applications-utilities
+Install Graphics,^checkout(graphics-install),applications-utilities
+Install Kernels,^checkout(kernels-install),applications-utilities
+Install Misc,^checkout(misc-install),applications-utilities
+
+^tag(utilities-install)
 Install Etcher USB Maker, x-terminal-emulator -T 'Etcher Installer' -e bash -c "etcher-installer; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
-Install Kernel Packages,  x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
-Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Joplin Note,      x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
+Install Qemu VM,          x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                    applications-utilities
 Install Bluetooth,        x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "bluetooth-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
 Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c "pipewire-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-utilities
-Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
-Install Qemu,             x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
 ^sep()
 Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 
@@ -80,6 +80,10 @@ Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "
 Install Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
 Install Minecraft,        x-terminal-emulator -T 'Minecraft Installer' -e bash -c "minecraft-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-games
 Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
+
+^tag(office-install)
+Install Libreoffice,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",         applications-utilities
+Install Joplin Note,      x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 
 ^tag(graphics-install)
 Install Breeze Icons,      x-terminal-emulator -T 'Breeze Icon Theme Installer' -e bash -c "breeze-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
@@ -89,11 +93,22 @@ Install Numix Circle Icons,  x-terminal-emulator -T 'Numix Circle Icon Theme Ins
 Install Faenza Icons,      x-terminal-emulator -T 'Faenza Icon Theme Installer' -e bash -c "faenza-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
 Install Paper Icons,       x-terminal-emulator -T 'Paper Icon Theme Installer' -e bash -c "paper-installer; echo $'\n\nPress any key to close.'; read -srn1",          applications-utilities
 
+^tag(kernels-install)
+Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+
+^tag(internet-install)
+Install Browsers,^checkout(browsers-install),applications-utilities
+Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
+
 ^tag(browsers-install)
 Install Firefox,           x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-utilities
 Install Chromium,          x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-utilities
 Install Midori,            x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-utilities
 Install Lynx,              x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-utilities
+
+^tag(misc-install)
+Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Kernel Packages,  x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 
 ^tag(toggles)
 Tint2 Options,       ^checkout(tint2-options),                      object-flip-horizontal
