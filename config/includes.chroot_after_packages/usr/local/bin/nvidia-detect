@@ -1,0 +1,362 @@
+#!/bin/bash
+# Based on https://wiki.debian.org/NvidiaGraphicsDrivers?action=AttachFile&do=view&target=nvidia-versions.sh
+#
+# Copyright © 2008-2011 Filipus Klutiero <chealer@gmail.com>
+# Copyright © 2011-2021 Andreas Beckmann <anbe@debian.org>
+#
+# This package is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This package is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>
+#
+
+if [ "$1" = "-h" -o "$1" = "--help" ]; then
+	echo "Usage: nvidia-detect [PCIID]..."
+	echo "       Reports the Debian packages supporting the NVIDIA GPU that is"
+	echo "       installed on the local system (or given as a PCIID parameter)."
+	exit 0
+fi
+
+shopt -s compat31 nocasematch 2>/dev/null || { echo "Error: this script only works with bash." && exit; } # Avoid cryptic failure when running dash on this script
+
+# last time the PCI IDs were updated
+LATEST="460.91.03"
+PACKAGE=
+
+NV_DETECT()
+{
+
+NVGA=$1
+IDLISTDIR=/usr/share/nvidia
+local VERSIONS
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-legacy-71xx.ids 2>/dev/null
+then
+	VERSIONS[71]=71.86
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-legacy-96xx.ids 2>/dev/null
+then
+	VERSIONS[96]=96.43
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-legacy-173xx.ids 2>/dev/null
+then
+	VERSIONS[173]=173.14
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-legacy-304xx.ids 2>/dev/null
+then
+	VERSIONS[304]=304.123
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-legacy-340xx.ids 2>/dev/null
+then
+	VERSIONS[340]=340.76
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-legacy-390xx.ids 2>/dev/null
+then
+	VERSIONS[390]=390.87
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-legacy-390xx-amd64.ids 2>/dev/null
+then
+	VERSIONS[391]=390.87
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-418.ids 2>/dev/null
+then
+	VERSIONS[418]=418.74
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-tesla-418.ids 2>/dev/null
+then
+	VERSIONS[419]=418.87.01
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-tesla-440.ids 2>/dev/null
+then
+	VERSIONS[441]=440.64.00
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-tesla-450.ids 2>/dev/null
+then
+	VERSIONS[451]=450.51.05
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia-tesla-460.ids 2>/dev/null
+then
+	VERSIONS[461]=460.32.03
+fi
+
+if grep -q -i $NVGA $IDLISTDIR/nvidia.ids 2>/dev/null
+then
+	# 999 means current
+	VERSIONS[999]=$LATEST
+fi
+
+
+if [[ ${#VERSIONS[*]} == 0 ]]; then
+	echo "Uh oh. Your card is not supported by any driver version up to $LATEST."
+	echo "A newer driver may add support for your card."
+	echo "Newer driver releases may be available in backports, unstable or experimental."
+	return
+fi
+
+	if grep -q "^4" /etc/debian_version
+	then
+		echo "Uh oh. You are running Etch, which is no longer supported."
+	elif grep -q "lenny\|^5" /etc/debian_version
+	then
+		echo "Uh oh. You are running Lenny, which is no longer supported."
+	elif grep -q "squeeze\|^6" /etc/debian_version;
+	then
+		echo "Uh oh. You are running Squeeze, which is no longer supported."
+	elif grep -q "wheezy\|^7" /etc/debian_version;
+	then
+		echo "Uh oh. You are running Wheezy, which is no longer supported."
+	elif grep -q "jessie\|^8" /etc/debian_version
+	then
+		echo "Uh oh. You are running Jessie, which is no longer supported."
+	elif grep -q "stretch\|^9" /etc/debian_version
+	then
+		if [[ -n ${VERSIONS[390]} ]]; then
+			if [[ -n ${VERSIONS[340]} ]]; then
+				if [[ -n ${VERSIONS[304]} ]]; then
+					echo "Your card is supported by all driver versions."
+				else
+					echo "Your card is supported by the default drivers and legacy driver series 340."
+				fi
+			else
+				echo "Your card is supported by the default drivers."
+			fi
+			PACKAGE="nvidia-driver"
+		elif [[ -n ${VERSIONS[999]} ]]; then
+			echo "Your card is only supported by the updated drivers from stretch-backports."
+			echo "See https://backports.debian.org for instructions how to use backports."
+			PACKAGE="nvidia-driver/stretch-backports"
+		elif [[ -n ${VERSIONS[340]} ]]; then
+			echo "Your card is only supported up to the 340 legacy drivers series."
+			PACKAGE="nvidia-legacy-340xx-driver"
+		elif [[ -n ${VERSIONS[304]} ]]; then
+			echo "Your card is only supported up to the 304 legacy drivers series."
+			PACKAGE="nvidia-legacy-304xx-driver"
+		elif [[ -n ${VERSIONS[173]} ]]; then
+			echo "Uh oh. Your card is only supported by the 173.14 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[96]} ]]; then
+			echo "Uh oh. Your card is only supported by the 96.43 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[71]} ]]; then
+			echo "Uh oh. Your card is only supported by the 71.86 legacy drivers series, which is not in any current Debian suite."
+		else
+			echo "Oops. Internal error 9 ($NVGA)"
+		fi
+	elif grep -q "buster\|^10" /etc/debian_version
+	then
+		if [[ -n ${VERSIONS[418]} ]]; then
+			if [[ -n ${VERSIONS[390]} ]]; then
+				if [[ -n ${VERSIONS[340]} ]]; then
+					echo "Your card is supported by all driver versions."
+				else
+					echo "Your card is supported by the default drivers and legacy driver series 390."
+				fi
+			else
+				echo "Your card is supported by the default drivers."
+			fi
+			PACKAGE="nvidia-driver"
+		elif [[ -n ${VERSIONS[999]} ]]; then
+			echo "Your card is only supported by the updated drivers from buster-backports."
+			echo "See https://backports.debian.org for instructions how to use backports."
+			PACKAGE="nvidia-driver/buster-backports"
+		elif [[ -n ${VERSIONS[390]} ]]; then
+			echo "Your card is only supported up to the 390 legacy drivers series."
+			PACKAGE="nvidia-legacy-390xx-driver"
+		elif [[ -n ${VERSIONS[391]} ]]; then
+			echo "Your card is only supported on the amd64 platform."
+			echo "Your card is only supported up to the 390 legacy drivers series."
+			PACKAGE="nvidia-legacy-390xx-driver:amd64"
+		elif [[ -n ${VERSIONS[340]} ]]; then
+			echo "Your card is only supported up to the 340 legacy drivers series."
+			PACKAGE="nvidia-legacy-340xx-driver"
+		elif [[ -n ${VERSIONS[461]} ]]; then
+			echo "Your card is supported by the Tesla 460 drivers series in buster-backports."
+			echo "See https://backports.debian.org for instructions how to use backports."
+			PACKAGE="nvidia-tesla-460-driver/buster-backports"
+		elif [[ -n ${VERSIONS[451]} ]]; then
+			echo "Your card is supported by the Tesla 450 drivers series in buster-backports."
+			echo "See https://backports.debian.org for instructions how to use backports."
+			PACKAGE="nvidia-tesla-450-driver/buster-backports"
+		elif [[ -n ${VERSIONS[419]} ]]; then
+			echo "Your card is supported by the Tesla 418 drivers series in buster-backports."
+			echo "See https://backports.debian.org for instructions how to use backports."
+			PACKAGE="nvidia-tesla-418-driver/buster-backports"
+		elif [[ -n ${VERSIONS[304]} ]]; then
+			echo "Your card is only supported by the 304 legacy drivers series, which is only available up to stretch."
+		elif [[ -n ${VERSIONS[173]} ]]; then
+			echo "Uh oh. Your card is only supported by the 173.14 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[96]} ]]; then
+			echo "Uh oh. Your card is only supported by the 96.43 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[71]} ]]; then
+			echo "Uh oh. Your card is only supported by the 71.86 legacy drivers series, which is not in any current Debian suite."
+		else
+			echo "Oops. Internal error 10 ($NVGA)"
+		fi
+	elif grep -q "bullseye\|^11" /etc/debian_version
+	then
+		if [[ -n ${VERSIONS[999]} ]]; then
+			if [[ -n ${VERSIONS[390]} ]]; then
+					echo "Your card is supported by all driver versions."
+			else
+				echo "Your card is supported by the default drivers."
+			fi
+			PACKAGE="nvidia-driver"
+		elif [[ -n ${VERSIONS[390]} ]]; then
+			echo "Your card is only supported up to the 390 legacy drivers series."
+			PACKAGE="nvidia-legacy-390xx-driver"
+		elif [[ -n ${VERSIONS[391]} ]]; then
+			echo "Your card is only supported on the amd64 platform."
+			echo "Your card is only supported up to the 390 legacy drivers series."
+			PACKAGE="nvidia-legacy-390xx-driver:amd64"
+		elif [[ -n ${VERSIONS[461]} ]]; then
+			echo "Your card is supported by the Tesla 460 drivers series."
+			PACKAGE="nvidia-tesla-460-driver"
+		elif [[ -n ${VERSIONS[451]} ]]; then
+			echo "Your card is supported by the Tesla 450 drivers series."
+			PACKAGE="nvidia-tesla-450-driver"
+		elif [[ -n ${VERSIONS[419]} ]]; then
+			echo "Your card is supported by the Tesla 418 drivers series."
+			PACKAGE="nvidia-tesla-418-driver"
+		elif [[ -n ${VERSIONS[340]} ]]; then
+			echo "Your card is only supported by the 340 legacy drivers series, which is only available up to buster."
+		elif [[ -n ${VERSIONS[304]} ]]; then
+			echo "Your card is only supported by the 304 legacy drivers series, which is only available up to stretch."
+		elif [[ -n ${VERSIONS[173]} ]]; then
+			echo "Uh oh. Your card is only supported by the 173.14 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[96]} ]]; then
+			echo "Uh oh. Your card is only supported by the 96.43 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[71]} ]]; then
+			echo "Uh oh. Your card is only supported by the 71.86 legacy drivers series, which is not in any current Debian suite."
+		else
+			echo "Oops. Internal error 11 ($NVGA)"
+		fi
+		if [ -n "$PACKAGE" ] && [ "$PACKAGE" != "nvidia-tesla-460-driver" ] && [[ -n ${VERSIONS[461]} ]]; then
+			echo "Your card is also supported by the Tesla 460 drivers series."
+		fi
+		if [ -n "$PACKAGE" ] && [ "$PACKAGE" != "nvidia-tesla-450-driver" ] && [[ -n ${VERSIONS[451]} ]]; then
+			echo "Your card is also supported by the Tesla 450 drivers series."
+		fi
+		if [ -n "$PACKAGE" ] && [ "$PACKAGE" != "nvidia-tesla-418-driver" ] && [[ -n ${VERSIONS[419]} ]]; then
+			echo "Your card is also supported by the Tesla 418 drivers series."
+		fi
+	elif grep -q "bookworm\|^12" /etc/debian_version
+	then
+		if [[ -n ${VERSIONS[999]} ]]; then
+			if [[ -n ${VERSIONS[390]} ]]; then
+					echo "Your card is supported by all driver versions."
+			else
+				echo "Your card is supported by the default drivers."
+			fi
+			PACKAGE="nvidia-driver"
+		elif [[ -n ${VERSIONS[390]} ]]; then
+			echo "Your card is only supported up to the 390 legacy drivers series."
+			PACKAGE="nvidia-legacy-390xx-driver"
+		elif [[ -n ${VERSIONS[391]} ]]; then
+			echo "Your card is only supported on the amd64 platform."
+			echo "Your card is only supported up to the 390 legacy drivers series."
+			PACKAGE="nvidia-legacy-390xx-driver:amd64"
+		elif [[ -n ${VERSIONS[461]} ]]; then
+			echo "Your card is supported by the Tesla 460 drivers series."
+			PACKAGE="nvidia-tesla-460-driver"
+		elif [[ -n ${VERSIONS[451]} ]]; then
+			echo "Your card is supported by the Tesla 450 drivers series."
+			PACKAGE="nvidia-tesla-450-driver"
+		elif [[ -n ${VERSIONS[441]} ]]; then
+			echo "Your card is supported by the Tesla 440 drivers series."
+			PACKAGE="nvidia-tesla-440-driver"
+		elif [[ -n ${VERSIONS[419]} ]]; then
+			echo "Your card is supported by the Tesla 418 drivers series."
+			PACKAGE="nvidia-tesla-418-driver"
+		elif [[ -n ${VERSIONS[340]} ]]; then
+			echo "Your card is only supported by the 340 legacy drivers series, which is only available up to buster."
+		elif [[ -n ${VERSIONS[304]} ]]; then
+			echo "Your card is only supported by the 304 legacy drivers series, which is only available up to stretch."
+		elif [[ -n ${VERSIONS[173]} ]]; then
+			echo "Uh oh. Your card is only supported by the 173.14 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[96]} ]]; then
+			echo "Uh oh. Your card is only supported by the 96.43 legacy drivers series, which is not in any current Debian suite."
+		elif [[ -n ${VERSIONS[71]} ]]; then
+			echo "Uh oh. Your card is only supported by the 71.86 legacy drivers series, which is not in any current Debian suite."
+		else
+			echo "Oops. Internal error 12 ($NVGA)"
+		fi
+		if [ -n "$PACKAGE" ] && [ "$PACKAGE" != "nvidia-tesla-460-driver" ] && [[ -n ${VERSIONS[461]} ]]; then
+			echo "Your card is also supported by the Tesla 460 drivers series."
+		fi
+		if [ -n "$PACKAGE" ] && [ "$PACKAGE" != "nvidia-tesla-450-driver" ] && [[ -n ${VERSIONS[451]} ]]; then
+			echo "Your card is also supported by the Tesla 450 drivers series."
+		fi
+		if [ -n "$PACKAGE" ] && [ "$PACKAGE" != "nvidia-tesla-440-driver" ] && [[ -n ${VERSIONS[441]} ]]; then
+			echo "Your card is also supported by the Tesla 440 drivers series."
+		fi
+		if [ -n "$PACKAGE" ] && [ "$PACKAGE" != "nvidia-tesla-418-driver" ] && [[ -n ${VERSIONS[419]} ]]; then
+			echo "Your card is also supported by the Tesla 418 drivers series."
+		fi
+	else
+		echo "Uh oh. Failed to identify your Debian suite.";
+	fi;
+
+if [ -n "$PACKAGE" ]; then
+	echo "It is recommended to install the"
+	echo "    $PACKAGE"
+	echo "package."
+fi
+
+}
+
+
+if [ -z "$1" ]; then
+
+	if ! (lspci --version) > /dev/null 2>&1; then
+		echo "ERROR: The 'lspci' command was not found. Please install the 'pciutils' package." >&2
+		exit 1
+	fi
+
+	NV_DEVICES=$(lspci -mn | awk '{ gsub("\"",""); if (($2 ~ "030[0-2]") && ($3 == "10de" || $3 == "12d2")) { print $1 } }')
+
+	if [ -z "$NV_DEVICES" ]; then
+		echo "No NVIDIA GPU detected."
+		exit 0
+	fi
+
+	echo "Detected NVIDIA GPUs:"
+	for d in $NV_DEVICES ; do
+		lspci -nn -s $d
+	done
+
+	for d in $NV_DEVICES ; do
+		echo -e "\nChecking card: $(lspci -s $d | awk -F: '{print $3}')"
+		NV_DETECT "$(lspci -mn -s "$d" | awk '{ gsub("\"",""); print $3 $4 }')"
+	done
+
+else
+
+	for id in "$@" ; do
+		PCIID=$(echo "$id" | sed -rn 's/^(10de)?:?([0-9a-fA-F]{4})$/10de\2/ip')
+		if [ -z "$PCIID" ]; then
+			echo "Error parsing PCI ID '$id'."
+			exit 1
+		fi
+
+		echo "Checking driver support for PCI ID [$(echo $PCIID | sed -r 's/(....)(....)/\1:\2/')]"
+		NV_DETECT "$PCIID"
+	done
+
+fi

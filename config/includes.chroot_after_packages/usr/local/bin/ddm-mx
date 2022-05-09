@@ -1,0 +1,944 @@
+#!/bin/bash
+
+# Exit codes
+# 0 - All's well
+# 1 - Not root
+# 2 - Wrong parameters
+# 3 - No driver available
+# 7 - Card not supported
+# 8 - No nvidia card found
+# 10 - Source install detected
+
+###original code from the solydXK project.
+####MODIFICATIONS FOR MX by dolphin oracle
+##depends: nvidia-detect-mx, nvidia-detect and cli-shell-utils
+##modifications assume MX repos for the nvidia drivers
+##legacy detection and substantial command assistance from kmathern & fehlix
+##PRIMUS additions by farius and dolphin oracel
+##
+
+#add BitJam's soure cli-shell-utils
+source /usr/local/lib/cli-shell-utils/cli-shell-utils.bash
+
+VERSION="21.10.01"
+ME=${0##*/}
+CLI_PROG="ddm-mx"
+LOCK_FILE="/run/lock/$CLI_PROG"
+ERR_FILE="/dev/null"
+LOG="/var/log/ddm.log"
+BP_REPO="bullseye-backports"
+BP_REPO_ADDRESS="deb http://ftp.debian.org/debian"
+#MX_TEST_REPO_ADDRESS="deb http://la.mxrepo.com/mx/testrepo/ bullseye test"
+BACKPORTS_OVERRIDE=false
+
+TEXTDOMAINDIR=/usr/share/locale 
+export TEXTDOMAIN="ddm-mx"
+
+UNKNOWN_ERROR=$"Unknown error"
+OPTION_ERROR1=$"Option-"
+OPTION_ERROR2=$"requires an argument."
+RUN_AS_ROOT=$"Run as root"
+INSTALL_DRIVERS_FOR=$"Install drivers for: "
+
+NVIDIA_XCONFIG="nvidia-xconfig"
+
+ARCH=$(dpkg --print-architecture)
+
+main(){
+# -------------------------------------------------------------------------
+#get release info
+source /etc/lsb-release
+echo
+echo "Distribution:  " $DISTRIB_ID
+echo
+
+# -------------------------------------------------------------------------
+
+BUMBLEBEE_EXTRA_LIBS="primus primus-libs"
+
+#if [ "$DISTRIB_ID" = "MX" ]; then
+#     BUMBLEBEE_EXTRA_LIBS="virtualgl virtualgl-libs:i386"
+#fi
+
+
+BACKPORTS=false
+PURGE=''
+INSTALL=''
+FORCEDRIVER=''
+TEST=false
+while getopts ":f:bi:p:ht" opt; do
+  case $opt in
+    h)
+      usage HELP
+      ;;
+    i)
+      # Install
+      INSTALL="$INSTALL$OPTARG"
+      echo "INSTALL IS $INSTALL"
+      ;;
+    p)
+      # Purge
+      PURGE="$PURGE $OPTARG"
+      ;;
+    t)
+      # Testing
+      echo "TEST Install"
+      TEST=true
+      ;;
+    b)
+      # Testing
+      BACKPORTS_OVERRIDE=true
+      ;;
+    f)
+      # Testing
+      FORCEDRIVER="$FORCEDRIVER$OPTARG"
+      echo "FORCE DRIVER is $FORCEDRIVER"
+      ;;
+    \?)
+      # Invalid option: start GUI
+      #launch_gui $@
+      echo $"Invalid option" | tee -a $LOG
+      exit 0
+      ;;
+    :)
+      echo $OPTIONERROR1$OPTARG $OPTION_ERROR2 | tee -a $LOG
+      exit 2
+      ;;
+    *)
+      # Unknown error: start GUI
+      #launch_gui $@
+      echo $"Invalid option" | tee -a $LOG
+      exit 0
+      ;;
+  esac
+done
+
+# Is there anything to do?
+if [ "$INSTALL" == "" ]; then
+  TEST=false
+fi
+
+# From here onward: be root
+if [ $UID -ne 0 ]; then
+	echo $RUN_AS_ROOT 
+	exit 1
+fi
+
+###file locking
+echo $"creating lock ..." | tee -a $LOG
+trap clean_up EXIT
+do_flock 
+
+# Log file for traceback
+MAX_SIZE_KB=5120
+LOG_SIZE_KB=0
+LOG=/var/log/ddm.log
+LOG2=/var/log/ddm.log.1
+
+if [ -f $LOG ]; then
+  LOG_SIZE_KB=$(ls -s $LOG | awk '{print $1}')
+  if [ $LOG_SIZE_KB -gt $MAX_SIZE_KB ]; then
+    mv -f $LOG $LOG2
+  fi
+fi 
+
+#log version
+echo "===================================" | tee -a $LOG
+echo "ddm-mx: $VERSION" | tee -a $LOG
+echo "===================================" | tee -a $LOG
+
+# =========================================================================
+# =========================================================================
+# =========================================================================
+####removed certain options for mx
+# Loop through drivers to purge
+for DRV in $PURGE; do
+  # Start the log
+  echo "===================================" | tee -a $LOG
+  echo $"Purge drivers for: "$DRV | tee -a $LOG
+  echo $"Start at (m/d/y):" $(date +"%m/%d/%Y %H:%M:%S") | tee -a $LOG
+  echo "===================================" | tee -a $LOG
+  
+  case $DRV in
+    nvidia)
+      install_open
+      ;;
+    *)
+      echo $"ERROR: Unknown argument: $DRV" | tee -a $LOG
+      echo
+      usage
+      exit 2
+      ;;
+  esac
+done
+####removed certain options for mx
+# Loop through drivers to install
+
+for DRV in $INSTALL; do
+  # Start the log
+  echo "===================================" | tee -a $LOG
+  echo $INSTALL_DRIVERS_FOR $DRV | tee -a $LOG
+  echo $"Start at (m/d/y):" $(date +"%m/%d/%Y %H:%M:%S") | tee -a $LOG
+  echo "===================================" | tee -a $LOG
+#  echo ""
+  purge_message
+  
+  case $DRV in
+    
+    nvidia)
+	  # make sure nvidia card exists
+      check_for_nvidia_card
+    
+      # Install the Nvidia drivers
+      install_nvidia
+      ;;
+    open)
+      # Install the open drivers
+      install_open
+      ;;
+    *)
+      echo $"ERROR: Unknown argument: " $DRV | tee -a $LOG
+      echo
+      usage
+      exit 2
+      ;;
+  esac
+done
+
+exit 0
+}
+
+function usage() {
+  echo "======================================================================"
+  echo $"Device Driver Manager Help:" "ddm-mx:  $VERSION"
+  echo "======================================================================"
+  echo $"The following options are allowed:"
+  echo
+  echo "-b            Offer debian-backports alternative"
+  echo
+  echo $"-i driver    Install given driver."
+  echo $"             drivers: nvidia, open, fixbumblebee"
+  echo
+  echo $"-p driver    Purge given driver."
+  echo $"             driver: nvidia"
+  echo
+  echo $"-f           force specific nvidia driver package.  nvidia-driver, nvidia-legacy-390xx-driver, nvidia-tesla-418-driver, nvidia-tesla-450-driver, nvidia-tesla-460-driver"
+  echo
+  echo $"-t           For development testing only!  simulate installs"
+  echo $"             This will install drivers for pre-defined hardware."
+  echo $"             Use with -i."
+  echo
+  echo "----------------------------------------------------------------------"
+   echo "sudo ddm-mx -i nvidia"
+  echo "======================================================================"
+  exit 0
+}
+
+
+
+# =========================================================================
+# =============================== Functions ===============================
+# =========================================================================
+
+# nvidia -------------------------------------------------------------------------
+
+function preseed_nvidia {
+  CANDIDATE=$1
+  echo 'nvidia-support nvidia-support/check-xorg-conf-on-removal boolean false' | debconf-set-selections
+  echo 'nvidia-support nvidia-support/check-running-module-version boolean true' | debconf-set-selections
+  echo 'nvidia-installer-cleanup nvidia-installer-cleanup/delete-nvidia-installer boolean true' | debconf-set-selections
+  echo 'nvidia-installer-cleanup nvidia-installer-cleanup/remove-conflicting-libraries boolean true' | debconf-set-selections
+  echo "nvidia-support nvidia-support/last-mismatching-module-version string $CANDIDATE" | debconf-set-selections
+  echo 'nvidia-support nvidia-support/needs-xorg-conf-to-enable note ' | debconf-set-selections
+  echo 'nvidia-support nvidia-support/create-nvidia-conf boolean true' | debconf-set-selections
+  echo 'nvidia-installer-cleanup nvidia-installer-cleanup/uninstall-nvidia-installer boolean true' | debconf-set-selections
+}
+
+function install_nvidia {
+  USER=$(logname)
+  ARCHITECTURE=$(uname -m)
+  if [ -z "$FORCEDRIVER" ]; then
+	DRIVER=$(nvidia-detect-mx |grep INSTALL: |tr -d ' ' |cut -d ':' -f2)
+  fi
+  
+  UNSUPPORTED_LEGACY=$(nvidia-detect-mx | grep -e173.14 -e96.43 -e71.86 -e304)
+  
+  # Testing
+  if $TEST; then
+    DRIVER="nvidia-driver"
+    TESTSWITCH="-s"
+  fi
+  
+  if [ -n "$FORCEDRIVER" ]; then
+		DRIVER="$FORCEDRIVER"
+  fi	
+  
+  # Testing
+  if $TEST; then
+    echo "test for $DRIVER"
+  fi
+  
+  check_source_install
+  update_sources
+  check_cand
+  
+if [ "$BUMBLEBEE_NVIDIA_VERSION" = "nvidia-legacy-340xx-driver" ] ; then   
+		echo $"Unsupported configuration.  bumblebee only works with 390xx drivers and up."
+		my_exit
+fi
+
+  MAIN_CAND=$CANDIDATE
+  MAIN_NVIDIA=$NVIDIA_VERSION
+  if [ "$DISTRIB_ID" = "MX" ]; then
+    if [ "$BACKPORTS_OVERRIDE" = "true" ]; then
+        debian_backports_dialog
+    else
+        mx_test_repo_dialog
+    fi
+  else
+    debian_backports_dialog
+  fi
+  
+  echo ""
+  
+  check_cand
+  
+  check_optimus  
+  
+  check_cand
+
+  choose_cand
+  
+  check_cand
+  
+  confirm_reinstall
+  
+  check_legacy
+  
+  echo $"Need driver: "$DRIVER "$CANDIDATE" $BUMBLEBEE_NVIDIA_VERSION "$NVIDIA_VERSION" | tee -a $LOG
+
+  set_packages 
+  
+  echo $"NVIDIA packages to install are " $DRIVER | tee -a $LOG
+
+  YES_no $"Continue?"
+    if [ "$?" = "1" ]; then 
+        exit 0
+    fi
+ 
+  # Preseed debconf answers
+  preseed_nvidia $CANDIDATE
+  INSTALL_RECOMMENDS="--install-recommends"
+  if [ -n "$BUMBLEBEE_NVIDIA_VERSION" ]; then
+    if [ "$BUMBLEBEE_NVIDIA_VERSION" != "nvidia-driver" ]; then
+        INSTALL_RECOMMENDS=""
+    fi 
+  fi
+  
+  ##disable installation of nvidia-persistenced
+	cp /usr/share/ddm-mx/apt/nvidia* /etc/apt/preferences.d
+
+  
+  # Install the packages
+  echo "Frontend: $(echo $DEBIAN_FRONTEND)" | tee -a $LOG
+
+  echo $"Nvidia command " "= apt-get install --install-recommends --reinstall -y $FORCE $SWITCH $BP $DRIVER" | tee -a $LOG
+  apt-get install --reinstall -y linux-headers-$(uname -r) build-essential $TESTSWITCH 2>&1 | tee -a $LOG
+  apt-get install --reinstall $INSTALL_RECOMMENDS -y $SWITCH $BP $DRIVER $TESTSWITCH 2>&1 | tee -a $LOG
+  
+  #install certain 32 bit libs that don't like --install-recommends
+  #if [ -n "$LIB32" ]; then
+	#apt-get install --reinstall -y $SWITCH $BP $TESTSWITCH $LIB32 2>&1 | tee -a $LOG  
+  #fi
+
+# Configure
+  if [[ "$DRIVER" =~ "bumblebee-nvidia" ]]; then
+    if [ "$USER" != "" ] && [ "$USER" != "root" ]; then
+      groupadd bumblebee
+      groupadd video
+      usermod -a -G bumblebee,video $USER
+      service bumblebeed restart
+      # Adapt nvidia settings
+      if [ -f /usr/lib/nvidia/current/nvidia-settings.desktop ]; then
+        sed -i 's/Exec=nvidia-settings/Exec=optirun -b none nvidia-settings -c :8/' /usr/lib/nvidia/current/nvidia-settings.desktop
+      fi
+      # purge nvidia-xconfig and move xorg.conf away
+      apt-get purge -y $FORCE nvidia-xconfig 2>&1 | tee -a $LOG
+      #mv -f /etc/X11/xorg.conf /etc/X11/xorg.conf.ddm 2>&1 | tee -a $LOG
+    else
+      echo $"ERROR: Could not configure Bumblebee for user: " $USER | tee -a $LOG
+    fi
+  else
+    if $TEST; then
+    echo $"test enabled, not creating xorg.conf file"
+    #nvidia-xconfig | tee -a $LOG
+    else
+        if [ "$NVIDIA_XCONFIG" = "nvidia-xconfig" ]; then
+            echo $"creating /etc/X11/xorg.conf file"
+            nvidia-xconfig | tee -a $LOG
+        fi
+        #340 nvidia fixes
+        if [ "$DRIVER_ORIGINAL" == "nvidia-legacy-340xx-driver" ] || [ "$BUMBLEBEE_NVIDIA_VERSION" == "nvidia-legacy-340xx-driver" ]; then
+        nvidia-340-fix
+        fi
+    fi
+  fi
+  echo $"Finished" | tee -a $LOG
+  echo ""
+  finish_purge_message
+  
+}
+
+# open -------------------------------------------------------------------------
+
+function purge_proprietary_drivers {
+  rm /etc/X11/xorg.conf 2>/dev/null
+  rm /etc/modprobe.d/nvidia* 2>/dev/null
+  rm /etc/modprobe.d/blacklist-nouveau.conf 2>/dev/null
+  # Leave nvidia-detect and nvidia-installer-cleanup
+  apt-get purge $FORCE $(apt-cache pkgnames | grep nvidia | grep -v detect | grep -v cleanup | cut -d':' -f1) bumblebee* primus* primus*:i386 2>&1 | tee -a $LOG
+# apt-get purge $FORCE bumblebee* primus* primus*:i386 2>&1 | tee -a $LOG
+
+  if [ "$?" = "0" ]; then 
+      echo $"Proprietary drivers removed" | tee -a $LOG
+  fi
+}
+
+function install_open {
+  # Make sure you have the most used drivers installed 
+  # These are installed by default on MX
+  nvidia-340-reverse-fix
+  DRIVER="xserver-xorg-video-nouveau xserver-xorg-video-vesa xserver-xorg-video-intel xserver-xorg-video-fbdev xserver-xorg-video-radeon xserver-xorg-video-ati xserver-xorg-video-nouveau"
+  
+  # Install the packages
+  update_sources
+  echo "Frontend: $(echo $DEBIAN_FRONTEND)" | tee -a $LOG
+  echo $"Open command " "= apt-get install --reinstall -y $FORCE $DRIVER" | tee -a $LOG
+  apt-get install --reinstall $FORCE $DRIVER 2>&1 | tee -a $LOG
+  
+  if [ "$?" = "0" ]; then 
+      echo $"Open drivers installed" | tee -a $LOG
+  fi
+  
+  # Now cleanup
+  purge_proprietary_drivers
+}
+
+clean_up()
+{
+unflock $LOCK_FILE
+echo "" | tee -a $LOG 
+echo "" | tee -a $LOG 
+if [ -f /etc/apt/sources.list.d/debian-backports-temp.list ]; then
+  rm -f /etc/apt/sources.list.d/debian-backports-temp.list
+  echo $"Resetting sources"
+  apt-get update
+  echo ""
+fi
+if [ -f /etc/apt/sources.list.d/mx-test-repo-temp.list ]; then
+    rm -f /etc/apt/sources.list.d/mx-test-repo-temp.list
+    echo $"Resetting sources"
+    apt-get update
+    echo ""
+fi
+
+##re-enable nvidia-peristenced availability
+
+if [ -e "/etc/apt/preferences.d/nvidia-ddm-temp" ]; then 
+	rm /etc/apt/preferences.d/nvidia-ddm-temp*
+fi
+
+echo -n $"Press <Enter> to exit" | tee -a $LOG 
+read x
+}
+
+my_exit() {
+    local ret=${1:-0}
+
+    # Msg "=> cleaning up"
+    exit $ret
+}
+
+enable_debian_backports()
+{
+#enabling debian-backports
+  echo $"Enabling backports repo"
+  echo $"Running apt-get update..."
+  echo "$BP_REPO_ADDRESS $BP main contrib non-free">>/etc/apt/sources.list.d/debian-backports-temp.list
+  update_sources
+  echo ""
+  if [ "$ARCH" = "amd64" ]; then
+    echo $"Installing latest nvidia-detect package"|tee -a $LOG
+    echo ""
+    apt-get install $SWITCH $BP nvidia-detect |tee -a $LOG  
+    echo ""
+  fi
+}
+
+enable_mx_test_repo()
+{
+#enabling mx_test_repo
+  echo $"Enabling MX Test repo"
+  echo $"Running apt-get update..."
+  echo "$MX_TEST_REPO_ADDRESS">>/etc/apt/sources.list.d/mx-test-repo-temp.list
+  update_sources
+  echo ""
+  if [ "$ARCH" = "amd64" ]; then
+    echo $"Installing latest nvidia-detect package"|tee -a $LOG
+    echo ""
+    apt-get install $SWITCH "$BP" nvidia-detect |tee -a $LOG  
+    echo ""
+  fi
+}
+
+debian_backports_dialog()
+{
+echo $"Would you like to check debian-backports for a later version?" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo $"Yes or No?" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo 1: $"Yes" | tee -a $LOG
+        echo 2: $"No" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo "Enter Number of selection" | tee -a $LOG
+        read -n 1 -e x
+
+        case $x in
+           1) echo $"Ok"...| tee -a $LOG 
+	      SWITCH="-t"
+              BP=$BP_REPO
+	      enable_debian_backports	;;
+           2) echo $"Ok"... | tee -a $LOG
+              SWITCH=""
+	      BP=""             ;;
+           *) echo $"invalid option."  $"exiting"... | tee -a $LOG && exit 0;;
+        esac
+}
+
+mx_test_repo_dialog()
+{
+echo $"Would you like to check MX Test Repo for a later version?" >> $LOG
+yes_NO $"Would you like to check MX Test Repo for a later version?"
+
+        case $? in
+           0)   echo $"Ok"...| tee -a $LOG 
+                SWITCH="-t"
+                BP="a=mx,c=test"
+                enable_mx_test_repo	;;
+           1)   echo $"Ok"... | tee -a $LOG
+                SWITCH=""
+                BP=""           ;;
+           *) echo $"invalid option."  $"exiting"... | tee -a $LOG && exit 0;;
+        esac
+}
+
+
+which_driver()
+{
+echo $"Which driver do you wish to install" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo $"Main repos or debian-backports?" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo 1: $"Main" $MAIN_CAND $BUMBLEBEE_NVIDIA_VERSION $MAIN_NVIDIA| tee -a $LOG
+        echo "" | tee -a $LOG
+        echo 2: "debian-backports" $CANDIDATE $BUMBLEBEE_NVIDIA_VERSION $NVIDIA_VERSION| tee -a $LOG
+        echo "" | tee -a $LOG
+	echo 3: $"Exit" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo $"Enter Number of selection" | tee -a $LOG
+        read -n 1 -e x
+
+        case $x in
+           1) echo $"Ok"...| tee -a $LOG 
+	      SWITCH=""
+              BP=""
+              NVIDIA_VERSION=$MAIN_NVIDIA
+              rm /etc/apt/sources.list.d/debian-backports-temp.list
+              apt-get update            
+	      ;;
+           2) echo $"Ok"... | tee -a $LOG
+                #NVIDIA_XCONFIG=""
+                     ;;
+           3) echo $"exiting" |tee -a $LOG && exit 0;;
+
+           *) echo $"invalid option."  $"exiting"... | tee -a $LOG && exit 0;;
+        esac
+}
+
+which_driver_mx()
+{
+echo $"Which driver do you wish to install" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo $"Main repos or MX Test" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo 1: $"Main" $DRIVER $MAIN_CAND $BUMBLEBEE_NVIDIA_VERSION $MAIN_NVIDIA| tee -a $LOG
+        echo "" | tee -a $LOG
+        echo 2: "MX Test" $DRIVER $CANDIDATE $BUMBLEBEE_NVIDIA_VERSION $NVIDIA_VERSION| tee -a $LOG
+        echo "" | tee -a $LOG
+	echo 3: $"Exit" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo $"Enter Number of selection" | tee -a $LOG
+        read -n 1 -e x
+
+        case $x in
+           1) echo $"Ok"...| tee -a $LOG 
+                SWITCH=""
+                BP=""
+                NVIDIA_VERSION=$MAIN_NVIDIA
+                rm /etc/apt/sources.list.d/mx-test-repo-temp.list
+                apt-get update
+                    ;;
+           2)   echo $"Ok"... | tee -a $LOG
+                SWITCH="-t"
+                BP="a=mx,c=test"
+                #NVIDIA_XCONFIG=""
+                     ;;
+           3) echo $"exiting" |tee -a $LOG && exit 0;;
+
+           *) echo $"invalid option."  $"exiting"... | tee -a $LOG && exit 0;;
+        esac
+}
+
+
+check_cand()
+{
+CANDIDATE=$(LANG=C apt-cache policy $SWITCH $BP $DRIVER | grep Candidate | awk '{print $2}' | tr -d ' ')
+INSTALLED=$(env LANG=C apt-cache policy $DRIVER | grep Installed | awk '{print $2}' | tr -d ' ')
+
+if [ "$DRIVER" = "bumblebee-nvidia" ]; then 
+        NVIDIA_VERSION=$(LANG=C apt-cache policy $SWITCH $BP $BUMBLEBEE_NVIDIA_VERSION | grep Candidate | awk '{print $2}' | tr -d ' ')
+        NVIDIA_INSTALLED=$(env LANG=C apt-cache policy $BUMBLEBEE_NVIDIA_VERSION | grep Installed | awk '{print $2}' | tr -d ' ')
+fi
+
+echo ""
+  echo $"Candidate is: " $DRIVER $CANDIDATE $BUMBLEBEE_NVIDIA_VERSION $NVIDIA_VERSION| tee -a $LOG
+  echo $"Installed is: " $DRIVER $INSTALLED $BUMBLEBEE_NVIDIA_VERSION $NVIDIA_INSTALLED | tee -a $LOG
+echo ""
+  
+}
+update_sources()
+{
+    local ret
+    echo ""
+    echo $"Refreshing Sources with apt-get update" | tee -a $LOG
+    YES_no $"Continue?"
+    if [ "$?" = "0" ]; then 
+        apt-get update
+        if [ "$?" != "0" ]; then
+            echo ""
+            echo ""
+            echo $"There was a problem with the apt-get update.  See $LOG for details" | tee -a $LOG
+            echo ""
+            echo ""
+            my_exit
+        fi
+    fi
+}
+
+purge_message()
+{
+local PURGE_MESSAGE=$"To restore open source drivers use:  " 
+echo ""| tee -a $LOG
+echo "========================================"| tee -a $LOG
+echo "========================================"| tee -a $LOG
+echo ""| tee -a $LOG
+echo "$PURGE_MESSAGE"  | tee -a $LOG
+echo "sudo ddm-mx -p nvidia"| tee -a $LOG
+echo ""| tee -a $LOG
+echo "========================================"| tee -a $LOG
+echo "========================================"| tee -a $LOG
+echo ""| tee -a $LOG
+}
+
+finish_purge_message()
+{
+local USER="$(logname)"
+local USER_HOME_PATH="/home/$USER/ddm-mx-nvidia_removal_command.txt"
+local PURGE_MESSAGE=$"To restore open source drivers later use:  " 
+echo ""| tee "$USER_HOME_PATH"
+echo "========================================"| tee -a "$USER_HOME_PATH"
+echo "========================================"| tee -a "$USER_HOME_PATH"
+echo ""| tee -a "$USER_HOME_PATH"
+echo "$PURGE_MESSAGE"  | tee -a "$USER_HOME_PATH"
+echo "sudo ddm-mx -p nvidia"| tee -a "$USER_HOME_PATH"
+echo ""| tee -a $USER_HOME_PATH
+echo "========================================"| tee -a "$USER_HOME_PATH"
+echo "========================================"| tee -a "$USER_HOME_PATH"
+echo ""| tee -a "$USER_HOME_PATH"
+echo ""| tee -a "$USER_HOME_PATH"
+echo $"For recovery help see " | tee -a "$USER_HOME_PATH"
+echo "https://mxlinux.org/wiki/hardware/nvidia-driver-install-recovery" | tee -a "$USER_HOME_PATH"
+echo ""
+echo $"Information written to ""$USER_HOME_PATH"
+chown $USER:$USER "$USER_HOME_PATH"
+
+}
+
+nvidia-340-fix()
+{
+# backup libglx.so
+local lib_version
+lib_version=$(LANG=C apt-cache policy nvidia-legacy-340xx-driver |grep Candidate |cut -d: -f2|cut -d. -f2|cut -d- -f1)
+if [ -f /usr/lib/nvidia/legacy-340xx/libglx.so.340.$lib_version ]; then
+	if [ -f /usr/lib/xorg/modules/extensions/libglx.so ]; then
+	    echo "mv /usr/lib/xorg/modules/extensions/libglx.so /usr/lib/xorg/modules/extensions/libglx.so.bak" | tee -a $LOG
+		mv /usr/lib/xorg/modules/extensions/libglx.so /usr/lib/xorg/modules/extensions/libglx.so.bak | tee -a $LOG
+		echo "ln -s /usr/lib/nvidia/legacy-340xx/libglx.so.340.$lib_version /usr/lib/xorg/modules/extensions/libglx.so" | tee -a $LOG
+		ln -s /usr/lib/nvidia/legacy-340xx/libglx.so.340.$lib_version /usr/lib/xorg/modules/extensions/libglx.so | tee -a $LOG
+	fi
+fi
+}
+
+nvidia-340-reverse-fix()
+{
+	# if backup libglx.so exists, then revert it back.  this will take place just before reinstallation of the open drivers.
+if [ -L /usr/lib/xorg/modules/extensions/libglx.so ]; then
+	if [ -f /usr/lib/xorg/modules/extensions/libglx.so.bak ]; then
+	    echo "remove symlink libglx.so"
+		rm /usr/lib/xorg/modules/extensions/libglx.so | tee -a $LOG
+		echo "restore original libglx.so"
+		mv /usr/lib/xorg/modules/extensions/libglx.so.bak /usr/lib/xorg/modules/extensions/libglx.so | tee -a $LOG
+	fi
+fi
+}
+
+check_source_install(){
+	#check for possible source install
+  if [ -e /usr/bin/nvidia-installer ]; then
+    echo $"Possible previous install from source or smxi/sgfxi detected." | tee -a $LOG
+    echo $"Version detected: " $(modinfo nvidia | grep ^version: | sed 's/[^0-9.]*//g') | tee -a $LOG
+    echo $"Latest possible with this script : " $CANDIDATE | tee -a $LOG
+    echo $"Please remove with  <sudo nvidia-install --uninstall> and reboot if you wish to proceed" | tee -a $LOG
+    #if [ $GUI ]; then
+	#	echo $"Possible previous install from source or smxi/sgfxi detected." $"Please remove with  <sudo nvidia-install --uninstall> and reboot if you wish to proceed" > /tmp/ddm-msg
+	#fi
+	exit 10
+  fi
+}
+
+# Check for Optimus
+check_optimus(){
+    local OPTIMUS MIN_XORG_VERSION MIN_NVIDIA_VERSION MAJOR_NVIDIA_VERSION
+    OPTIMUS=1
+    if [ -z "$FORCEDRIVER" ]; then
+		if lspci -vnn | grep Intel |grep -q 0300 ; then
+			if lspci -vnn | grep NVIDIA | grep -q 0302 ; then
+				echo $"nvidia-optimus detected" | tee -a $LOG
+				OPTIMUS=2
+			else
+				YES_no $"Is this a NVIDIA/INTEL Optimus system?" | tee -a $LOG
+				if [ $? = 0 ]; then
+					OPTIMUS=2
+				fi
+            
+			fi
+		fi
+    fi
+
+    if [ $OPTIMUS = 2 ]; then
+        # Bumblebee used to be required, but now NVIDIA drivers support Optimus out of the box.
+        # See https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_PRIME_Render_Offload
+        
+        # Requires Xorg 1.20.8 and NVIDIA 450 or greater
+        MIN_XORG_VERSION="12008000"
+        MIN_NVIDIA_VERSION="450"
+
+        # I'm sure there's a cleaner way to detect Xorg version, but this works for now.
+        XORG_VERSION=`LANG=C xdpyinfo | grep "vendor release" | grep -Poe '\:\s(.*)' | cut -c 3-`
+        if [ test ]; then
+			echo "$XORG_VERSION"
+		fi
+
+        # Get major version of NVIDIA 
+        MAJOR_NVIDIA_VERSION=`echo $CANDIDATE | cut -d. -f1`
+        
+        if [ test ]; then
+			echo "xorg version" "$XORG_VERSION"
+			echo "nvidia major version" "$MAJOR_NVIDIA_VERSION"
+		fi
+
+        if { echo $MIN_XORG_VERSION; echo $XORG_VERSION; } | sort -n -c 2>/dev/null
+        then
+           if [ "$MAJOR_NVIDIA_VERSION" -ge "$MIN_NVIDIA_VERSION" ]
+           then
+				echo ""
+                echo $"You can use the new PRIMUS driver built in to the nvidia drivers." | tee -a $LOG
+                echo $"Use \"nvidia-run-mx\" followed by your application command to use the nvidia graphics" | tee -a $LOG
+                echo ""
+                printf $"If you want to force the older bumblebee optimus drivers,\n quit and restart with sudo ddm-mx -i nvidia -f bumblebee-nvidia" | tee -a $LOG
+                echo ""
+                DRIVER='nvidia-driver'    
+            else
+                echo $"You need to use the bumblebee-nvidia driver." | tee -a $LOG
+                # For nvidia-driver versions below 450 we must still use Bumblebee
+                BUMBLEBEE_NVIDIA_VERSION="$DRIVER"
+                DRIVER='bumblebee-nvidia'
+            fi
+        else
+            echo $"You need to use the bumblebee-nvidia driver." | tee -a $LOG
+            # For xorg versions below 1.20.8 we must still use Bumblebee
+            BUMBLEBEE_NVIDIA_VERSION="$DRIVER"
+            DRIVER='bumblebee-nvidia'
+        fi
+    fi
+}
+
+check_legacy(){
+	if [ "$DRIVER" == "" ] || [ "$CANDIDATE" == "" ]; then
+      if [ "$UNSUPPORTED_LEGACY" == "" ]
+         then
+			  echo ""
+              echo $"nvidia driver not available, check your repo sources" | tee -a $LOG
+              exit 3
+ 
+         else 
+          echo ""
+	      echo $"Uh oh. Your card is only supported by older legacy drivers which are not in any current Debian suite." | tee -a $LOG
+              exit 7
+      fi
+  fi
+}
+
+set_packages(){
+	  # Add additional packages
+  
+  DRIVER_ORIGINAL=$DRIVER
+
+  case $DRIVER in 
+                     nvidia-driver)    if [ "$ARCHITECTURE" == "x86_64" ]; then
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings nvidia-kernel-dkms libnvidia-encode1" 
+                                       else
+										   NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-kernel-dkms nvidia-settings libnvidia-encode1" 
+                                       fi
+                                       ;;
+        nvidia-legacy-390xx-driver)    if [ "$ARCHITECTURE" == "x86_64" ]; then
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-legacy-390xx nvidia-legacy-390xx-kernel-dkms"
+                                       else
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-legacy-390xx nvidia-legacy-390xx-kernel-dkms"
+                                       fi
+                                       ;;
+         nvidia-legacy-340xx-driver)    if [ "$ARCHITECTURE" == "x86_64" ]; then
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-legacy-340xx-kernel-dkms"
+                                       else
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-legacy-340xx-kernel-dkms"
+                                       fi
+                                       ;;
+        nvidia-tesla-418-driver)    if [ "$ARCHITECTURE" == "x86_64" ]; then
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-tesla-418 nvidia-tesla-418-kernel-dkms"
+                                       else
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-tesla-418 nvidia-tesla-418-kernel-dkms"
+                                       fi
+                                       ;;
+        nvidia-tesla-450-driver)    if [ "$ARCHITECTURE" == "x86_64" ]; then
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-tesla-450 nvidia-tesla-450-kernel-dkms"
+                                       else
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-tesla-450 nvidia-tesla-450-kernel-dkms"
+                                       fi
+                                       ;;
+        nvidia-tesla-460-driver)    if [ "$ARCHITECTURE" == "x86_64" ]; then
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-tesla-460 nvidia-tesla-460-kernel-dkms"
+                                       else
+                                           NVIDIA_XCONFIG=""
+                                           DRIVER="$DRIVER nvidia-settings-tesla-460 nvidia-tesla-460-kernel-dkms"
+                                       fi
+                                       ;;
+                  bumblebee-nvidia)    if [ "$DRIVER" == "bumblebee-nvidia" ]; then
+											NVIDIA_XCONFIG=""
+											
+                                       # Bumblebee drivers
+                                            if [ "$BUMBLEBEE_NVIDIA_VERSION" == "nvidia-legacy-390xx-driver" ]; then
+												DRIVER="$DRIVER $BUMBLEBEE_NVIDIA_VERSION nvidia-settings-legacy-390xx nvidia-legacy-390xx-kernel-dkms $BUMBLEBEE_EXTRA_LIBS"
+											fi
+											if [ "$BUMBLEBEE_NVIDIA_VERSION" == "nvidia-driver" ]; then
+												DRIVER="$DRIVER $BUMBLEBEE_NVIDIA_VERSION nvidia-settings nvidia-kernel-dkms $BUMBLEBEE_EXTRA_LIBS"
+											fi
+											
+                                       fi
+                                       ;;
+                                 *)
+                                       echo "2" $"ERROR: Unknown argument: " $DRV | tee -a $LOG 
+                                       echo | tee -a $LOG 
+                                       usage
+                                       exit 2
+   esac
+   
+}
+
+choose_cand(){
+	if [ -f /etc/apt/sources.list.d/debian-backports-temp.list ]; then
+       echo $"Main repo candidate is:  " $MAIN_CAND |tee -a $LOG
+       echo $"Debian backports candidate is:  "  $CANDIDATE |tee -a $LOG
+       echo $"Installed is: " $INSTALLED | tee -a $LOG
+       echo ""
+       which_driver
+       echo ""
+  fi  
+  
+  if [ -f /etc/apt/sources.list.d/mx-test-repo-temp.list ]; then
+       echo $"Main repo candidate is:  " $MAIN_CAND |tee -a $LOG
+       echo $"MX Test repo candidate is:  "  $CANDIDATE |tee -a $LOG
+       echo $"Installed is: " $INSTALLED | tee -a $LOG
+       echo ""
+       which_driver_mx
+       echo ""
+  fi  
+}
+
+confirm_reinstall(){
+	if [ "$CANDIDATE" != "" ]; then
+      if [ "$INSTALLED" = "$CANDIDATE" ]; then
+        echo $"nvidia driver already installed" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo $"Reinstall or quit?" | tee -a $LOG
+        echo "$NVIDIA packages to install are " $DRIVER | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo 1: $"Reinstall" | tee -a $LOG
+        echo 2: $"quit" | tee -a $LOG
+        echo "" | tee -a $LOG
+        echo $"Enter Number of selection" | tee -a $LOG
+        read -n 1 -e x
+
+        case $x in
+           1) echo $"reinstalling"... | tee -a $LOG ;;
+           2) echo $"exiting"... | tee -a $LOG && exit 0 ;;
+           *) echo $"invalid option."  $"exiting"... | tee -a $LOG && exit 0;;
+        esac
+      fi
+      echo ""
+  fi
+}
+
+check_for_nvidia_card(){
+	# Bumblebee: https://wiki.debian.org/Bumblebee
+      # Get device ids for Nvidia
+      local BCID DEVICEIDS
+      BCID='10de'
+      DEVICEIDS=$(lspci -n -d $BCID: | awk '{print $3}' | cut -d':' -f2)
+      
+      # Testing
+      if $TEST; then
+        DEVICEIDS='0a74'
+      fi
+
+    if [ -z "$FORCEDRIVER" ]; then
+		if [ "$DEVICEIDS" == "" ]; then
+			echo $"No nvidia card found - exiting" | tee -a $LOG
+			exit 8
+		fi
+    fi
+}
+
+main "$@"
+
+

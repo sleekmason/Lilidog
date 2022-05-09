@@ -1,0 +1,53 @@
+#!/bin/bash
+echo ""
+echo "               [0;33mNvidia Non Free Driver Installer[0m"
+echo ""
+read -p "   This is a helper script to download and install the non free
+   Nvidia drivers and place a new menu entry for Nvidia-settings.
+
+   There are no guarantees this script will work for your card. Use at
+   your own risk. To remove: 'sudo ddm-mx -p nvidia' in a terminal.
+   
+   Please wait until the script completely finishes, as scrollback in
+   the terminal stops after a popup dialog, but the script continues
+   until 'press enter to exit' appears in the last line of the terminal. 
+   
+   You will need to reboot for the driver change to occur.
+
+   [0;32m---------------------------------------------------------
+   
+   Please press Enter to install the non free Nvidia driver.
+   
+   ---------------------------------------------------------[0m
+   
+   
+    Or close this terminal window to quit the install." ;   
+    if : >/dev/tcp/8.8.8.8/53; then
+echo ""   
+echo ""
+grep -qF "nvidia" /usr/local/bin/nvidia-ddmmx-installer &&
+sudo ddm-mx -i nvidia &&
+sed -i '/Nvidia Settings,    nvidia-settings,                  nvidia-settings/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Extras/i Nvidia Settings,    nvidia-settings,                  nvidia-settings' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo ""
+echo "----------------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo "[0;33mTo remove the Nvidia non-free driver, use: sudo ddm-mx -p nvidia.[0m"
+echo ""
+echo "[0;33mYou will find a new menu entry for nvidia-settings under Utilities.[0m"
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "----------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
