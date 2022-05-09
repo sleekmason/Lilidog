@@ -32,7 +32,7 @@ sudo sed -i '7s/# deb/deb/g' /etc/apt/sources.list.d/balena-etcher.list
 sudo sed -i '9s/# deb/deb/g' /etc/apt/sources.list.d/balena-etcher.list
 sudo apt update && sudo apt install balena-etcher-electron &&
 grep -v "Etcher,         /opt/balenaEtcher/balena-etcher-electron,       balena-etcher-electron" ~/.config/jgmenu/mymenu.csv > tmpfile && mv tmpfile ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Extras/i Etcher,         \/\opt\/\balenaEtcher\/\balena-etcher-electron,       balena-etcher-electron' ~/.config/jgmenu/mymenu.csv
+sed -i '/Install Extras/i Etcher,         \/\opt\/\balenaEtcher\/\balena-etcher-electron,       balena-etcher-electron' ~/.config/jgmenu/mymenu.csv
 #sed -i '22 a Etcher,         \/\opt\/\balenaEtcher\/\balena-etcher-electron,       balena-etcher-electron' ~/.config/jgmenu/mymenu.csv
 killall jgmenu
 sudo sed -i '7s/deb/# deb/g' /etc/apt/sources.list.d/balena-etcher.list

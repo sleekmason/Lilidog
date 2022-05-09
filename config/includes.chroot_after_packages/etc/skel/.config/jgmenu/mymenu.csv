@@ -51,7 +51,7 @@ Lucky Backup,       export QT_QPA_PLATFORMTHEME=gtk2 && luckybackup,  luckybacku
 Printer Setup,      x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1", printer
 Galculator,         galculator,                        galculator
 Synaptic,           gksudo synaptic,                   synaptic
-Extras,             ^checkout(extras),                 applications-system
+Install Extras,             ^checkout(extras),         applications-system
 
 ^tag(clickpick)
 Clickpick Single,   clickpick,                        gpick
