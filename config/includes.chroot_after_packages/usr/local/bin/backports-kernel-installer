@@ -1,0 +1,62 @@
+#!/bin/bash
+## Made by Sleekmason 10 May 2022
+## Simple script to add backports and install latest kernel, headers, and firmware.
+read -p "
+   [0;33mAdd Bullseye backport sources and install the latest kernel[0m
+     
+   This script will add the Bullseye Backports repository and install 
+   the Bullseye backports kernel, headers, and firmware if available.
+   
+   More backports info:
+   [0;31mhttps://backports.debian.org/Instructions/[0m
+     
+   [0;32m-----------------------------------------------------------------
+   
+   Please press Enter to add backports and install the latest kernel
+   
+   -----------------------------------------------------------------[0m
+   
+   Or close this terminal window to quit." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+   echo ""
+   echo ""
+   sudo echo 'deb http://deb.debian.org/debian bullseye-backports main' | sudo tee /etc/apt/sources.list.d/bullseye-backports.list &&
+   sudo apt update
+   echo ""
+   echo ""
+   echo ""
+   echo "-------------------------------------------------------------------------------"
+   echo "
+                     [0;33m---Bullseye Backports Enabled---[0m
+         
+   [0;36mRepository added to /etc/apt/sources.list.d/bullseye-backports.list[0m"
+   echo ""
+sudo apt install -t bullseye-backports linux-image-amd64 linux-headers-amd64 firmware-linux
+   echo "-------------------------------------------------------------------------------"
+   echo ""
+   echo "[0;33mPlease reboot into your new kernel when able.[0m"
+echo ""
+echo "[0;36mYou may need to look in 'Advanced Options' upon reboot if you"
+echo "have installed a higher numbered kernel version previously."
+echo "Grub will boot the highest numbered kernel version automatically.[0m"
+echo ""
+echo "To remove this kernel, reboot to your old kernel through"
+echo "the advanced menu at the grub boot screen."
+echo ""
+echo "Then use apt or the kernel remover located in the menu"
+echo "under utilities to remove the offending kernel."
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

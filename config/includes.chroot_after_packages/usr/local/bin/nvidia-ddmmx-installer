@@ -5,8 +5,8 @@ echo ""
 read -p "   This is a helper script to download and install the non free
    Nvidia drivers and place a new menu entry for Nvidia-settings.
 
-   There are no guarantees this script will work for your card. Use at
-   your own risk. To remove: 'sudo ddm-mx -p nvidia' in a terminal.
+   There are no guarantees this script will work for your card.
+   To remove if needed: 'sudo ddm-mx -p nvidia' in a terminal.
    
    Please wait until the script completely finishes, as scrollback in
    the terminal stops after a popup dialog, but the script continues
