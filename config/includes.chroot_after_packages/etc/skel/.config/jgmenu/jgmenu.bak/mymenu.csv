@@ -8,7 +8,7 @@ Quick Grab,^checkout(quickgrab),applications-other
 ^sep()
 Debian,^pipe(jgmenu_run apps),debian-logo
 ^sep()
-Toggles,^checkout(toggles),object-flip-horizontal
+Toggles,^checkout(toggles),/usr/share/icons/ld-icons/toggle.png
 Utilities,^checkout(utilities),applications-utilities
 Configuration,^checkout(configuration),preferences-system
 ^sep()
@@ -115,30 +115,30 @@ Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e 
 Install Kernel Packages,  x-terminal-emulator -T 'Kernel Packages Installer' -e bash -c "kernel-apps-installer; echo $'\n\nPress any key to close.'; read -srn1",     applications-utilities
 
 ^tag(toggles)
-Tint2 Options,       ^checkout(tint2-options),                      object-flip-horizontal
-Wbar,                toggle.wbar,                                   object-flip-horizontal
-Conky,               $HOME/.config/conky/scripts/conky-chooser,     object-flip-horizontal
-Gammy,               toggle.gammy,                                  object-flip-horizontal
-Jgmenu,              jg-icon-changer,                               object-flip-horizontal
-Clipboard,           toggle.parcellite,                             object-flip-horizontal
-Hotcorners,          toggle.ld,                                     object-flip-horizontal
-Random BG,           toggle-wallpaper-random,                       object-flip-horizontal
-Xscreensaver,        toggle.xscreensaver,                           object-flip-horizontal
-Tint2 Toggle,        toggle.tint2,                                  object-flip-horizontal
-Auto Login,          lightdm-autologin,                             object-flip-horizontal
-Touchpad,            toggle-touchpad,                               object-flip-horizontal
-Sounds,              notification-sounds,                           object-flip-horizontal
-Picom,               toggle.picom,                                  object-flip-horizontal
+Tint2 Options,       ^checkout(tint2-options),                      preferences-system
+Wbar,                toggle.wbar,                                   preferences-system
+Conky,               $HOME/.config/conky/scripts/conky-chooser,     preferences-system
+Gammy,               toggle.gammy,                                  preferences-system
+Jgmenu,              jg-icon-changer,                               preferences-system
+Clipboard,           toggle.parcellite,                             preferences-system
+Hotcorners,          toggle.ld,                                     preferences-system
+Random BG,           toggle-wallpaper-random,                       preferences-system
+Xscreensaver,        toggle.xscreensaver,                           preferences-system
+Tint2 Toggle,        toggle.tint2,                                  preferences-system
+Auto Login,          lightdm-autologin,                             preferences-system
+Touchpad,            toggle-touchpad,                               preferences-system
+Sounds,              notification-sounds,                           preferences-system
+Picom,               toggle.picom,                                  preferences-system
 Xkill,               xkill,                                         edit-delete
 
 ^tag(tint2-options)
-Tint2 Position,        tint2-position,                                object-flip-horizontal
-Tint2 Autohide,        tint2-autohide,                                object-flip-horizontal
-Tint2 Autoshrink,      tint2-shrink,                                  object-flip-horizontal
-Tint2 Battery Icon,    toggle-tint2-batteryicon,                      object-flip-horizontal
-Tint2 Transparency,    tint2-transparency,                            object-flip-horizontal
-Tint2 12H/24H,         tint2-12to24,                                  object-flip-horizontal
-Tint2 Bright,          tint2-bright,                                  object-flip-horizontal
+Tint2 Position,        tint2-position,                                preferences-system
+Tint2 Autohide,        tint2-autohide,                                preferences-system
+Tint2 Autoshrink,      tint2-shrink,                                  preferences-system
+Tint2 Battery Icon,    toggle-tint2-batteryicon,                      preferences-system
+Tint2 Transparency,    tint2-transparency,                            preferences-system
+Tint2 12H/24H,         tint2-12to24,                                  preferences-system
+Tint2 Bright,          tint2-bright,                                  preferences-system
 
 ^tag(rootfiles)
 /etc,                     gksudo thunar /etc,                     folder-documents
