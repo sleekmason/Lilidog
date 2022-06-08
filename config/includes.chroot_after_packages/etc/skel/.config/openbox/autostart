@@ -30,4 +30,3 @@ xfsettingsd --daemon &
 pnmixer &
 conky -c ~/.config/conky/conky-shortcuts.conf &
 batt-remover &
-welcome.sh &
