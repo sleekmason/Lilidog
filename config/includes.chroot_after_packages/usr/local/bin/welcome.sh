@@ -7,8 +7,8 @@ if grep -q "$fs" /proc/partitions; then
    sed -i '/welcome.sh &/d' ~/.config/openbox/autostart && exit
 else
   yad --title "Welcome!" --window-icon=/usr/share/icons/ld-icons/paw-color.png \
---width=540 --height=333 --center --escape-ok --undecorated \
---skip-taskbar --no-buttons --close-on-unfocus \
---text-info --justify=left --wrap < /usr/share/lilidog/welcome.txt --fontname="JetBrains Mono Light 10" \
+--width=530 --height=313 --center --escape-ok --undecorated \
+--skip-taskbar  --button="gtk-ok:0" \
+--text-info --justify=left --wrap < /usr/share/lilidog/welcome.txt --fontname="JetBrains Mono Light 12" \
 --fore="#3DCCC2"; sed -i '/welcome.sh &/d' ~/.config/openbox/autostart
 fi

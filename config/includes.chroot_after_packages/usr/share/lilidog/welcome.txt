@@ -1,16 +1,9 @@
                        
-                             WELCOME!
+                      WELCOME!
                         
-    Thank you for trying out Lilidog. If you have any questions
-    or concerns, please post in the Lilidog discussion forum:
+    Thank you for trying out Lilidog. If you have 
+    any questions or concerns please feel free to
+    post in the Lilidog discussion forums located
+    on Sourceforge:
+
     https://sourceforge.net/p/lilidog/discussion/
-
-    The main goal of Lilidog is to provide a stable lightweight
-    full featured environment in which to work or play.
-
-    Explore through the Tint2 Panel, Menus, and File Manager to
-    see if this distro is right for you. Reboot to install.
-    
-    I am always on the lookout for new ideas and cool concepts.
-    If you enjoy Lilidog and would like to contribute toward 
-    its development, feel free to opine in the forums.
