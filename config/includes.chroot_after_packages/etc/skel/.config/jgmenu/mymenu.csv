@@ -1,3 +1,5 @@
+Type To Search,o,input-keyboard
+^sep()
 Terminal,           x-terminal-emulator,       utilities-terminal
 ^sep()
 Firefox,            firefox,          firefox-esr
@@ -6,11 +8,11 @@ Thunar,             thunar,           /usr/share/icons/ld-icons/Thunar.png
 ^sep()
 Quick Grab,^checkout(quickgrab),applications-other
 ^sep()
-Debian,^pipe(jgmenu_run apps),debian-logo
-^sep()
 Toggles,^checkout(toggles),/usr/share/icons/ld-icons/toggle.png
 Utilities,^checkout(utilities),applications-utilities
 Configuration,^checkout(configuration),preferences-system
+^sep()
+Auto Gen Menu,^pipe(jgmenu_run apps),debian-logo
 ^sep()
 Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_reboot.png
 Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png

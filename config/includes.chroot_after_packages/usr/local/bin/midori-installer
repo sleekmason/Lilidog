@@ -20,7 +20,7 @@ read -p "                         [0;33mMidori Installer.[0m
 echo ""
 sudo apt update && sudo apt install midori &&
 sed -i '/Midori,            midori,          midori/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '3i Midori,            midori,          midori' ~/.config/jgmenu/mymenu.csv &&
+sed -i '5i Midori,            midori,          midori' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
 echo "----------------------------------------------------------------"
 echo ""

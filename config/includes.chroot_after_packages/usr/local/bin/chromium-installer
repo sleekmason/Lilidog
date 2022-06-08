@@ -21,7 +21,7 @@ read -p "                         [0;33mChromium Installer.[0m
 echo ""
 sudo apt update && sudo apt install chromium chromium-sandbox &&
 sed -i '/Chromium,           chromium,         chromium/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '3i Chromium,           chromium,         chromium' ~/.config/jgmenu/mymenu.csv &&
+sed -i '5i Chromium,           chromium,         chromium' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
 echo "----------------------------------------------------------------"
 echo ""
