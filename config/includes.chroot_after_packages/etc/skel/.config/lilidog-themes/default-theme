@@ -8,7 +8,7 @@
 sudo sed -i "s/theme-name.*/theme-name = Lilidog-Slate/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Tribare.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/position.*/position = 95%,end 9%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/font-name.*/font-name = Liberation Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
 # Change gtktheme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Lilidog-Slate"
@@ -28,7 +28,7 @@ sed -i "s/color_scheme=.*/color_scheme=Lilidog-Slate.conf/g" ~/.config/geany/gea
 jgmenu_run init --apply-obtheme
 #jgmenu_run gtktheme
 #change jgmenu font back to 11
-sed -i "s/font =.*/font = Liberation Sans 11/g" ~/.config/jgmenu/jgmenurc
+sed -i "s/font =.*/font = Noto Sans 11/g" ~/.config/jgmenu/jgmenurc
 
 ## Change xfce4-terminal theme
 xfce4-term-colors lilidog-slate
@@ -42,7 +42,7 @@ sed -i 's/^icon_theme =.*/icon_theme = breeze-dark/g' ~/.config/jgmenu/jgmenurc
 feh --bg-scale '/home/wallpaper/Trifull.png'
 
 ## Set Fonts
-xfconf-query -c xsettings -p /Gtk/FontName -s "Liberation Sans 11"
+xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
 
 ## Sounds
