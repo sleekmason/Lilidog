@@ -7,7 +7,7 @@ WIDTH=180
 HEIGHT=400
 
 trans="$(yad --title "Font Size" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
---text="\n This dialog will also change \n the font to the default \n of Liberation Sans. \n" --text-align=center \
+--text="\n This dialog will also change \n the font to the default \n of Noto Sans. \n" --text-align=center \
 --window-icon=applications-system \
 --radiolist  --column "Choose" --column "Size" --separator=" " \
   FALSE "8" \
@@ -26,9 +26,9 @@ then
   exit 1
 fi
 
-    sed -i "s/font =.*/font = Liberation Sans $trans/g" ~/.config/jgmenu/jgmenurc
+    sed -i "s/font =.*/font = Noto Sans $trans/g" ~/.config/jgmenu/jgmenurc
     ## Conversely, only select the first instance of the line.
-    ## sed -i "0,/font = Liberation Sans/{s/font = Liberation Sans.*/font = Liberation Sans ${trans}/}" ~/.config/jgmenu/jgmenurc
+    ## sed -i "0,/font = Noto Sans/{s/font = Noto Sans.*/font = Noto Sans ${trans}/}" ~/.config/jgmenu/jgmenurc
 pkill -x jgmenu
 
 exit 0
