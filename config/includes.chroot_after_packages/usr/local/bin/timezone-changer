@@ -1,6 +1,3 @@
 #!/bin/bash
-## Timezone changer script for Lilidog by sleekmason 06-07-2022
-x-terminal-emulator -T 'Timezone Changer' -e sudo dpkg-reconfigure tzdata
-return
-pkill -x tint2
-tint2 &
+## Timezone changer script for Lilidog tint2 clock entry 06-08-2022
+sudo dpkg-reconfigure tzdata
