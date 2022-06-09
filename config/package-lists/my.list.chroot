@@ -14,12 +14,14 @@ bash-completion
 bind9-dnsutils
 breeze-icon-theme
 btrfs-progs
+bzip2
 catfish
 chafa
 colord
 conky
 console-data
 console-setup
+cpio
 crda
 curl
 dbus-user-session
@@ -72,10 +74,9 @@ firmware-samsung
 firmware-siano
 firmware-ti-connectivity
 firmware-zd1211
-fonts-dejavu-extra
+fonts-dejavu-core
 fonts-liberation
 fonts-noto
-fonts-noto-unhinted
 fortunes
 fortune-mod
 fuse3
@@ -155,6 +156,7 @@ moc
 modemmanager
 mokutil
 mousepad
+mtd-utils
 mtools
 nano
 ncdu
@@ -171,6 +173,7 @@ openbox
 os-prober
 oss-compat
 parcellite
+parted
 pavucontrol
 pciutils
 pcmciautils
@@ -209,6 +212,7 @@ suckless-tools
 sudo
 synaptic
 syslinux-common
+systemd-container
 systemd-timesyncd
 tasksel
 telnet
