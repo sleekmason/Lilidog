@@ -61,7 +61,7 @@ Clickpick Gradient, clickpick-gradient,               gpick
 Clickpick Gradient 4-Way, clickpick-gradient4,        gpick
 
 ^tag(extras)
-Install Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
+Add Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
 Install Utilities,^checkout(utilities-install),applications-utilities
 Install Internet,^checkout(internet-install),applications-utilities
 Install Games,^checkout(games-install),applications-utilities
@@ -81,15 +81,12 @@ Install Pipewire,         x-terminal-emulator -T 'Pipewire Installer' -e bash -c
 Remove Pipewire,          x-terminal-emulator -T 'Pipewire Remover' -e bash -c "pipewire-remover; echo $'\n\nPress any key to close.'; read -srn1",                   applications-utilities
 
 ^tag(internet-install)
-Install Browsers,^checkout(browsers-install),applications-utilities
+Install Firefox,          x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-utilities
+Install Chromium,         x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-utilities
+Install Midori,           x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-utilities
+Install Lynx,             x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-utilities
 Install Google Earth,     x-terminal-emulator -T 'Google Earth Installer' -e bash -c "google-earth-installer; echo $'\n\nPress any key to close.'; read -srn1",       applications-utilities
 Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
-
-^tag(browsers-install)
-Install Firefox,           x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-utilities
-Install Chromium,          x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-utilities
-Install Midori,            x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-utilities
-Install Lynx,              x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-utilities
 
 ^tag(games-install)
 Install Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
