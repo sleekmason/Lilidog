@@ -3,8 +3,8 @@
 #
 #
 #
-WIDTH=180
-HEIGHT=400
+WIDTH=240
+HEIGHT=420
 
 trans="$(yad --title "Font Size" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
 --text="\n This dialog will also change \n the font to the default \n of Noto Sans. \n" --text-align=center \
