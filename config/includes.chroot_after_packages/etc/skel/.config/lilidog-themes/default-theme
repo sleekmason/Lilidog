@@ -6,8 +6,8 @@
 
 ## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
 sudo sed -i "s/theme-name.*/theme-name = Lilidog-Slate/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Tribare.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/position.*/position = 95%,end 9%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/L\ightslate.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/position.*/position = 87%,end 21%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
 # Change gtktheme
@@ -39,7 +39,7 @@ sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
 sed -i 's/^icon_theme =.*/icon_theme = breeze-dark/g' ~/.config/jgmenu/jgmenurc
 
 ## Set Background
-feh --bg-scale '/home/wallpaper/Trifull.png'
+feh --bg-scale '/home/wallpaper/Lightslate.png'
 
 ## Set Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
