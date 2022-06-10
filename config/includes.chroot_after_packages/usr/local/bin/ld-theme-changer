@@ -14,6 +14,7 @@ yad --title "Theming Options" --escape-ok \
     --field="                          Sounds!audio-speakers":FBTN "notification-sounds" \
     --field="                         LightDM!lightdm-gtk-greeter-settings":FBTN "gksudo lightdm-gtk-greeter-settings" \
     --field="           Terminal Themes!gnome-terminal":FBTN "ld-term-changer" \
+    --field="          Fontsize Changer!preferences-system":FBTN "fontsize-changer" \
     --field="       Extras, Icons, Fonts!preferences-system":FBTN "xfce4-appearance-settings" \
     --field="":LBL "" \
     --field="":LBL "" \

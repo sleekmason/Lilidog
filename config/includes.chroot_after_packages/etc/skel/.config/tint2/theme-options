@@ -7,6 +7,7 @@ Lightdm,                    gksudo lightdm-gtk-greeter-settings,      lightdm-gt
 Openbox,                    obconf,                                   obconf
 Jgmenu Icons,               jg-icon-changer,                          jgmenu
 Terminal Colors,            ld-term-changer,                          org.xfce.terminal
+Fontsize Changer,           fontsize-changer,                         preferences-desktop-font
 Notification Sounds,        notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
 Icons - Fonts - Extras,     xfce4-appearance-settings,                applications-system
 ^sep()
