@@ -174,11 +174,11 @@ time2_timezone =
 clock_font_color = #93adac 100
 clock_padding = 3 0
 clock_background_id = 0
-clock_tooltip = Left Click = Calendar - Middle Click = Timezone Changer - Right-Click = Multi Timer
+clock_tooltip = Left Click = Calendar - Middle Click = Multi Timer - Right-Click = Timezone Changer
 clock_tooltip_timezone = 
 clock_lclick_command = calendar
-clock_rclick_command = multi-timer &
-clock_mclick_command = x-terminal-emulator -T 'Timezone Changer' -e "timezone-changer" && pkill -x tint2 ; tint2 &
+clock_rclick_command = x-terminal-emulator -T 'Timezone Changer' -e "timezone-changer" && pkill -x tint2 ; tint2 &
+clock_mclick_command = multi-timer &
 clock_uwheel_command = 
 clock_dwheel_command = 
 
