@@ -94,7 +94,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Noto Sans</name>
-      <size>10</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -103,7 +103,7 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Noto Sans</name>
-      <size>10</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
