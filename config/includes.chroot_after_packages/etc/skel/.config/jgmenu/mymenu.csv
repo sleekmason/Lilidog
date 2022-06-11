@@ -23,7 +23,6 @@ Root Folders,^checkout(rootfiles),folder
 Writer,             libreoffice,                       libreoffice-writer
 Geany,              geany,	                       geany
 Smplayer,           smplayer,                          smplayer
-Mousepad,           mousepad,                          accessories-text-editor
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
 Gpicview,           gpicview,                          gpicview
 Pragha,             pragha,                            pragha
@@ -141,7 +140,7 @@ Tint2 Bright,          tint2-bright,                                  preference
 
 ^tag(rootfiles)
 /etc,                     gksudo thunar /etc,                     folder-documents
-/etc/apt/sources.list,    gksudo mousepad /etc/apt/sources.list,  folder-documents
+/etc/apt/sources.list,    gksudo geany /etc/apt/sources.list,  folder-documents
 /usr/share,               gksudo thunar /usr/share,               folder-documents
 /usr/bin,                 gksudo thunar /usr/bin,                 folder-documents
 /usr/local/bin,           gksudo thunar /usr/local/bin,           folder-documents
@@ -162,14 +161,14 @@ Wallpaper Changer,        feh-set-wallpaper,                                    
 Settings-Manager,         xfce4-settings-manager,                                               preferences-system
 Power Manager,            xfce4-power-manager-settings,                                         applications-system  
 Openbox Conf,             obconf,                                                               obconf
-Jgmenu Conf,              mousepad ~/.config/jgmenu/README & thunar ~/.config/jgmenu,           document-properties
+Jgmenu Conf,              geany ~/.config/jgmenu/README & thunar ~/.config/jgmenu,           document-properties
 Conky Conf,               thunar ~/.config/conky,                                               document-properties
-Urxvt Conf,               mousepad ~/.Xresources,                                               utilities-terminal
+Urxvt Conf,               geany ~/.Xresources,                                               utilities-terminal
 Tint2 Conf,               tint2conf,                                                            tint2
-Picom Conf,               mousepad ~/.config/picom.conf,                                        document-properties
+Picom Conf,               geany ~/.config/picom.conf,                                        document-properties
 Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
 Xbindkeys Conf,           xbindkeys-config,                                                     document-properties
-Dmenu Apps Conf,          mousepad ~/.config/dmenu/apps,                                        document-properties
-Ld-Hotcorners Conf,       mousepad ~/.config/ld-hotcorners/ld-hotcornersrc,                     zoom-fit-best
+Dmenu Apps Conf,          geany ~/.config/dmenu/apps,                                        document-properties
+Ld-Hotcorners Conf,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,                     zoom-fit-best
 Xfce4-terminal Themes,    ld-term-changer,                                                      utilities-terminal
 Grub Background Changer,  x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
