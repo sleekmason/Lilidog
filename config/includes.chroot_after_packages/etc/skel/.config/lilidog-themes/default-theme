@@ -17,12 +17,13 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Lilidog-Slate"
 ## Change openbox theme
 #sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Lilidog-Slatebox"/g" ~/.config/openbox/rc.xml
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:name' -v "Lilidog-Slatebox" ~/.config/openbox/rc.xml
+xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "12" ~/.config/openbox/rc.xml
 openbox --reconfigure
 
 
 ## Change Geany theme
 sed -i "s/color_scheme=.*/color_scheme=Lilidog-Slate.conf/g" ~/.config/geany/geany.conf
-
+sed -i "s/editor_font=.*/editor_font=JetBrains Mono Light 11/g" ~/.config/geany/geany.conf
 
 # Change jgmenu theme
 jgmenu_run init --apply-obtheme
@@ -32,6 +33,7 @@ sed -i "s/font =.*/font = Noto Sans 11/g" ~/.config/jgmenu/jgmenurc
 
 ## Change xfce4-terminal theme
 xfce4-term-colors lilidog-slate
+sed -i "s/FontName=.*/FontName=JetBrains Mono Light 11/g" ~/.config/xfce4/terminal/terminalrc
 
 ## Set Icon Theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "breeze-dark"
@@ -41,7 +43,7 @@ sed -i 's/^icon_theme =.*/icon_theme = breeze-dark/g' ~/.config/jgmenu/jgmenurc
 ## Set Background
 feh --bg-scale '/home/wallpaper/Lightslate.png'
 
-## Set Fonts
+## Set System Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
 
