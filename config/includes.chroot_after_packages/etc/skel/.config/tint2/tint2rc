@@ -63,7 +63,7 @@ border_width = 1
 border_sides = 
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #283433 100
+background_color = #1f2121 100
 border_color = #899eb4 100
 gradient_id = 0
 background_color_hover = #d7fbf9 100
@@ -464,5 +464,5 @@ tooltip_show_timeout = 0.5
 tooltip_hide_timeout = 0.1
 tooltip_padding = 4 4
 tooltip_background_id = 5
-tooltip_font_color = #93adac 100
+tooltip_font_color = #b2cfd1 100
 
