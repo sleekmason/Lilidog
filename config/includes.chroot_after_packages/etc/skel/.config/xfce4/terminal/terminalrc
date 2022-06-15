@@ -27,14 +27,13 @@ MiscNewTabAdjacent=TRUE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=FALSE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-ColorBackground=#1c1c28272929
 FontName=JetBrains Mono Light 11
 ScrollingLines=10000
 ScrollingOnOutput=FALSE
-ColorForeground=#a1a1c9c9c0c0
 BackgroundDarkness=0.930000
 FontAllowBold=FALSE
-ColorPalette=rgb(0,0,0);rgb(184,19,0);rgb(0,144,23);rgb(222,77,0);rgb(0,0,170);rgb(170,0,170);rgb(0,184,184);rgb(170,170,170);rgb(0,191,191);rgb(255,85,85);rgb(3,188,3);rgb(255,255,85);rgb(63,181,189);rgb(255,85,255);rgb(85,255,255);rgb(255,255,255)
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 TabActivityColor=#b8b813130000
-
+ColorBackground=#13131a1a1a1a
+ColorForeground=#b2b2d6d6d6d6
+ColorPalette=rgb(0,0,0);rgb(184,19,0);rgb(0,144,23);rgb(222,77,0);rgb(0,0,170);rgb(170,0,170);rgb(0,184,184);rgb(170,170,170);rgb(0,191,191);rgb(255,85,85);rgb(3,188,3);rgb(255,255,85);rgb(63,181,189);rgb(255,85,255);rgb(85,255,255);rgb(255,255,255)

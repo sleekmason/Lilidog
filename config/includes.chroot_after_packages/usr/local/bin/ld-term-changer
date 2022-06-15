@@ -11,11 +11,11 @@ yad --title "Term Themes" --width=180 --height=580 --escape-ok \
     --field="       Dragon!/usr/share/xfce4/terminal/icons/paw-dragon.png!":FBTN "xfce4-term-colors dragon" \
     --field=" Dark-Drow!/usr/share/xfce4/terminal/icons/paw-dark-drow.png!":FBTN "xfce4-term-colors dark-drow" \
     --field="  Dark Earth!/usr/share/xfce4/terminal/icons/paw-dark-earth.png!":FBTN "xfce4-term-colors dark-earth" \
-    --field="          Drow!/usr/share/xfce4/terminal/icons/paw-drow.png!":FBTN "xfce4-term-colors lilidog-drow" \
-    --field="          Earth!/usr/share/xfce4/terminal/icons/paw-earth.png!":FBTN "xfce4-term-colors lilidog-earth" \
+    --field="      Crimson!/usr/share/xfce4/terminal/icons/paw-crimson.png!":FBTN "xfce4-term-colors crimson" \
+    --field="       Oceanic!/usr/share/xfce4/terminal/icons/paw-oceanic.png!":FBTN "xfce4-term-colors oceanic" \
     --field="         Taupe!/usr/share/xfce4/terminal/icons/paw-taupe.png!":FBTN "xfce4-term-colors lilidog-taupe" \
-    --field="          Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":FBTN "xfce4-term-colors lilidog-slate" \
-    --field="           Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":FBTN "xfce4-term-colors lilidog-clay" \
-    --field="          Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":FBTN "xfce4-term-colors lilidog-grey" \
+    --field="           Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":FBTN "xfce4-term-colors lilidog-slate" \
+    --field="            Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":FBTN "xfce4-term-colors lilidog-clay" \
+    --field="           Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":FBTN "xfce4-term-colors lilidog-grey" \
     --field="          Light!/usr/share/xfce4/terminal/icons/paw-light.png!":FBTN "xfce4-term-colors lilidog-light" \
     --field="         Bright!/usr/share/xfce4/terminal/icons/paw-bright.png!":FBTN "xfce4-term-colors lilidog-bright"
