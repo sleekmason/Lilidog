@@ -40,7 +40,7 @@
 	<icon>accessories-text-editor</icon>
 	<name>Edit As Root</name>
 	<unique-id>1608480111388580-4</unique-id>
-	<command>gksudo mousepad %F</command>
+	<command>gksudo geany %F</command>
 	<description>Edit text files as root</description>
 	<patterns>*</patterns>
 	<other-files/>
