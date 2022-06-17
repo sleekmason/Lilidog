@@ -42,7 +42,7 @@
   text-shadow: none; }
   .gtkstyle-fallback:hover {
     color: #A9CFCF;
-    background-color: #151A1A; }
+    background-color: #141A1A; }
   .gtkstyle-fallback:active {
     color: #A9CFCF;
     background-color:#132426; }
@@ -58,7 +58,7 @@
 iconview text,
 textview text {
   color: #B2D6D6;
-  background-color: #151A1A; }
+  background-color: #141A1A; }
   .view:backdrop, iconview:backdrop,
   .view text:backdrop,
   iconview text:backdrop,
@@ -115,7 +115,7 @@ headerbar .subtitle {
   text-shadow: none; }
 
 assistant .sidebar {
-  background-color: #151A1A;
+  background-color: #141A1A;
   border-top: 1px solid #2C484D; }
   assistant .sidebar:backdrop {
     background-color: #1B2121;
@@ -175,7 +175,7 @@ entry {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #B2D6D6;
   border-color: #2C484D;
-  background-color: #151A1A;
+  background-color: #141A1A;
   box-shadow: inset 0 0 0 1px rgba(57, 142, 231, 0); }
   spinbutton:not(.vertical) image.left,
   entry image.left {
@@ -352,7 +352,7 @@ entry {
 entry:not(:disabled) + entry:not(:disabled),
 .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical) {
   border-top-color: #A2C1D3;
-  background-color: #151A1A; }
+  background-color: #141A1A; }
   .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled):backdrop,
   .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):backdrop:not(.vertical), .linked.vertical >
   entry:not(:disabled) + entry:not(:disabled):backdrop,
@@ -403,13 +403,13 @@ entry:drop(active):not(:only-child) + combobox > box > button.combo {
   border-top-color: #4e9a06; }
 
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) {
-  background-color: #151A1A;
+  background-color: #141A1A;
   transition-property: color, background; }
 
 treeview entry.flat, treeview entry {
   border-radius: 0;
   background-image: none;
-  background-color: #151A1A; }
+  background-color: #141A1A; }
   treeview entry.flat:focus, treeview entry:focus {
     border-color: #2B484D; }
 
@@ -2114,7 +2114,7 @@ treeview.view {
     treeview.view.expander:backdrop {
       color: #132426; }
   treeview.view.progressbar {
-    color: #151A1A;
+    color: #141A1A;
     border: 1px solid #7DA7A8;
     border-radius: 4px;
     background-color: #2B484D;
@@ -2124,7 +2124,7 @@ treeview.view {
       border-radius: 4px;
       color: #2B484D;
       box-shadow: none;
-      background-image: linear-gradient(to bottom, #151A1A, #e3e3e3); }
+      background-image: linear-gradient(to bottom, #141A1A, #e3e3e3); }
       treeview.view.progressbar:selected:focus:backdrop, treeview.view.progressbar:selected:backdrop {
         color: #2B484D;
         border-color: #7DA7A8;
@@ -2144,7 +2144,7 @@ treeview.view {
       border-color: #2B484D; }
   treeview.view header button {
     color: #728E8F;
-    background-color: #151A1A;
+    background-color: #141A1A;
     font-weight: bold;
     text-shadow: none;
     box-shadow: none; }
@@ -2166,10 +2166,10 @@ treeview.view {
     transition: none;
     background-image: none;
     background-color: #2B484D;
-    color: #151A1A;
+    color: #141A1A;
     border-radius: 0;
     border-style: none;
-    box-shadow: inset 0 0 0 1px #151A1A;
+    box-shadow: inset 0 0 0 1px #141A1A;
     text-shadow: none; }
   treeview.view acceleditor > label {
     background-color: #2B484D; }
@@ -2224,7 +2224,7 @@ menu,
 .context-menu {
   margin: 4px;
   padding: 2px 0px;
-  background-color: #151A1A;
+  background-color: #141A1A;
   border: 1px solid #2C484D; }
   .csd menu, .csd
   .menu, .csd
@@ -2295,7 +2295,7 @@ menu,
     min-height: 16px;
     min-width: 16px;
     padding: 4px;
-    background-color: #151A1A;
+    background-color: #141A1A;
     border-radius: 0; }
     menu > arrow.top,
     .menu > arrow.top,
@@ -2344,7 +2344,7 @@ menuitem radio {
 popover.background {
   padding: 2px;
   border-radius: 5px;
-  background-color: #151A1A;
+  background-color: #141A1A;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
   popover.background modelbutton:hover {
     color: #DCF5F5; }
@@ -2563,22 +2563,22 @@ notebook > stack:not(:only-child) {
  * Scrollbars *
  **************/
 scrollbar {
-  background-image: linear-gradient(to right, #151A1A, #151A1A);
+  background-image: linear-gradient(to right, #141A1A, #141A1A);
   transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #151A1A; }
+    border-bottom: 1px solid #141A1A; }
   scrollbar.bottom {
-    border-top: 1px solid #151A1A; }
+    border-top: 1px solid #141A1A; }
   scrollbar.left {
-    border-right: 1px solid #151A1A; }
+    border-right: 1px solid #141A1A; }
   scrollbar.right {
-    border-left: 1px solid #151A1A; }
+    border-left: 1px solid #141A1A; }
   scrollbar:backdrop {
     background-color: #66A6B0;
-    border-color: #151A1A;
+    border-color: #141A1A;
     transition: 200ms ease-out; }
   scrollbar slider {
     min-width: 9px;
@@ -3419,7 +3419,7 @@ levelbar trough {
   border-radius: 3px;
   color: #B2D6D6;
   border-color: #2C484D;
-  background-color: #151A1A;
+  background-color: #141A1A;
   box-shadow: inset 0 0 0 1px rgba(57, 142, 231, 0); }
   levelbar trough:backdrop {
     color: #B5C9C9;
@@ -3638,7 +3638,7 @@ separator {
  *********/
 list {
   color: #B2D6D6;
-  background-color: #151A1A;
+  background-color: #141A1A;
   border-color: #2C484D; }
   list:backdrop {
     background-color: #1B2121;
@@ -4129,7 +4129,7 @@ tooltip {
   box-shadow: none;
   text-shadow: 0 1px black; }
   tooltip.background {
-    background-color: #151A1A;
+    background-color: #141A1A;
     background-clip: padding-box;
     border: 1px solid #2A3A3B; }
   tooltip decoration {
@@ -4444,7 +4444,7 @@ button.circular {
   padding-left: 6px;
   padding-right: 6px;
   color: #A9CFCF;
-  background-color: #151A1A;
+  background-color: #141A1A;
   border: 1px solid;
   border-color: #2A3A3B;
   border-radius: 5px;
@@ -4483,7 +4483,7 @@ widget base background color */
 @define-color theme_bg_color #132426;
 /*
 text widgets and the like base background color */
-@define-color theme_base_color #151A1A;
+@define-color theme_base_color #141A1A;
 /*
 base background color of selections */
 @define-color theme_selected_bg_color #2B4D52;
@@ -4498,7 +4498,7 @@ text foreground color of insensitive widgets */
 @define-color insensitive_fg_color #90ADAD;
 /*
 insensitive text widgets and the like base background color */
-@define-color insensitive_base_color #151A1A;
+@define-color insensitive_base_color #141A1A;
 /*
 widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color #90ADAD;
@@ -4544,7 +4544,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_a shade(#132426, 0.85);
 @define-color wm_button_active_color_b shade(#132426, 0.89);
 @define-color wm_button_active_color_c shade(#132426, 0.9);
-@define-color content_view_bg #151A1A;
+@define-color content_view_bg #141A1A;
 .XfceHeading {
   margin: 0;
   padding: 0;
@@ -4556,7 +4556,7 @@ read if you used those and something break with a version upgrade you're on your
 
 .xfce4-panel.background {
   background-color: #10191C;
-  color: #151A1A;
+  color: #141A1A;
   font-weight: normal; }
   .xfce4-panel.background button {
     background-image: none;
@@ -4565,18 +4565,18 @@ read if you used those and something break with a version upgrade you're on your
     border-color: transparent;
     box-shadow: none;
     padding: 0 1px;
-    color: #151A1A;
+    color: #141A1A;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.1); }
     .xfce4-panel.background button:active, .xfce4-panel.background button:checked {
       background-image: none;
       background-color: shade(#384C4D, 0.7);
       border-color: shade(#384C4D, 0.6);
-      color: #151A1A;
+      color: #141A1A;
       transition: none; }
     .xfce4-panel.background button:hover, .xfce4-panel.background button:active:hover, .xfce4-panel.background button:checked:hover {
       border-color: shade(#2B484D, 0.6);
       background-image: linear-gradient(to bottom, shade(#2B484D, 0.88), shade(#2B484D, 0.85));
-      color: #151A1A;
+      color: #141A1A;
       box-shadow: inset 0 -1px alpha(#BDDBD7,0), inset 1px 0 alpha(#BDDBD7,0.15), inset -1px 0 alpha(#BDDBD7,0.15), inset 0 1px alpha(#BDDBD7,0.15);
       transition: none; }
   .xfce4-panel.background entry {
@@ -4591,7 +4591,7 @@ read if you used those and something break with a version upgrade you're on your
       border-right-color: shade(#132426, 0.72);
       border-left-color: shade(#132426, 0.72);
       border-bottom-color: shade(#132426, 0.7);
-      background-image: linear-gradient(to bottom, shade(shade(#151A1A, 1.02), 1.05), shade(shade(#151A1A, 1.02), 0.97));
+      background-image: linear-gradient(to bottom, shade(shade(#141A1A, 1.02), 1.05), shade(shade(#141A1A, 1.02), 0.97));
       box-shadow: inset 0 1px #BDDBD7; }
       .xfce4-panel.background menu .linked button:disabled {
         border-color: #2C484D;
@@ -4623,7 +4623,7 @@ read if you used those and something break with a version upgrade you're on your
   .xfce4-panel.background .tasklist button {
     border-radius: 3px;
     text-shadow: 0 1px #A9CFCF;
-    color: shade(#151A1A, 0.7);
+    color: shade(#141A1A, 0.7);
     background-image: linear-gradient(to bottom, shade(#384C4D, 0.65), shade(#384C4D, 0.6), shade(#384C4D, 0.5), shade(#384C4D, 0.45));
     border: none; }
     .xfce4-panel.background .tasklist button.flat {
@@ -4632,11 +4632,11 @@ read if you used those and something break with a version upgrade you're on your
       box-shadow: none; }
     .xfce4-panel.background .tasklist button:active, .xfce4-panel.background .tasklist button:checked {
       background-image: linear-gradient(to bottom, shade(#2B484D, 0.65), shade(#2B484D, 0.6), shade(#2B484D, 0.5), shade(#2B484D, 0.45));
-      color: shade(#151A1A, 1);
+      color: shade(#141A1A, 1);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.2); }
     .xfce4-panel.background .tasklist button:hover, .xfce4-panel.background .tasklist button:active:hover, .xfce4-panel.background .tasklist button:checked:hover {
       background-image: linear-gradient(to bottom, shade(#2B484D, 0.85), shade(#2B484D, 0.8), shade(#2B484D, 0.7), shade(#2B484D, 0.65));
-      color: shade(#151A1A, 1);
+      color: shade(#141A1A, 1);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.2); }
     .xfce4-panel.background .tasklist button image {
       padding: 3px; }
@@ -4670,7 +4670,7 @@ wnck-pager:hover {
 
 XfdesktopIconView.view {
   background: transparent;
-  color: #151A1A;
+  color: #141A1A;
   border-radius: 3px; }
   XfdesktopIconView.view:active {
     background: rgba(23, 104, 189, 0.5);
@@ -4688,7 +4688,7 @@ XfdesktopIconView.view {
     padding: 0; }
   #XfceNotifyWindow button {
     background-image: none;
-    border-color: shade(#151A1A, 0.35);
+    border-color: shade(#141A1A, 0.35);
     border-radius: 3px;
     box-shadow: none; }
   #XfceNotifyWindow label#summary {
@@ -4698,7 +4698,7 @@ XfdesktopIconView.view {
     border-radius: 3px; }
     #XfceNotifyWindow progressbar progress {
       background-image: none;
-      background-color: #151A1A;
+      background-color: #141A1A;
       border: none;
       box-shadow: none; }
     #XfceNotifyWindow progressbar trough {
@@ -4771,7 +4771,7 @@ XfdesktopIconView.view {
     border-radius: 5px;
     background-color: #122E30;
     color: #A9CFCF;
-    box-shadow: inset 1px 0 shade(#151A1A, 0.6), inset -1px 0 shade(#151A1A, 0.6), inset 0 1px shade(#151A1A, 0.6), inset 0 -1px shade(#151A1A, 0.6); }
+    box-shadow: inset 1px 0 shade(#141A1A, 0.6), inset -1px 0 shade(#141A1A, 0.6), inset 0 1px shade(#141A1A, 0.6), inset 0 -1px shade(#141A1A, 0.6); }
     .lightdm-gtk-greeter #login_window button,
     .lightdm-gtk-greeter #shutdown_dialog button,
     .lightdm-gtk-greeter #restart_dialog button {
@@ -4850,13 +4850,13 @@ XfdesktopIconView.view {
  * NAUTILUS (aka Files) *
  ************************/
 .nautilus-window {
-  background-color: #151A1A; }
+  background-color: #141A1A; }
   .nautilus-window notebook, .nautilus-window notebook > stack {
-    background-color: #151A1A; }
+    background-color: #141A1A; }
 
 /* Floating status bar */
 .floating-bar {
-  background-color: #151A1A;
+  background-color: #141A1A;
   border-style: solid;
   border-color: #2C484D; }
   .floating-bar.left {
@@ -4886,7 +4886,7 @@ XfdesktopIconView.view {
  * Geary *
  *********/
 .conversation-frame .view.cell, .conversation-frame iconview.cell {
-  background-color: #151A1A; }
+  background-color: #141A1A; }
 
 .conversation-frame .view.cell:selected, .conversation-frame iconview.cell:selected,
 .conversation-frame .view.cell:selected:focus,
@@ -4936,7 +4936,7 @@ UnityPanelWidget,
   .unity-panel.menuitem,
   .unity-panel .menuitem {
     border-width: 0 1px;
-    color: #151A1A; }
+    color: #141A1A; }
     UnityPanelWidget.menuitem:hover, UnityPanelWidget.menuitem *:hover, UnityPanelWidget .menuitem:hover, UnityPanelWidget .menuitem *:hover,
     .unity-panel.menuitem:hover,
     .unity-panel.menuitem *:hover,
@@ -4944,7 +4944,7 @@ UnityPanelWidget,
     .unity-panel .menuitem *:hover {
       border-color: shade(#384C4D, 0.8);
       background-color: shade(#384C4D, 0.75);
-      color: #151A1A; }
+      color: #141A1A; }
 
 @keyframes playbackmenuitem_spinner {
   to {
