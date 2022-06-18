@@ -64,7 +64,7 @@ textview text {
   iconview text:backdrop,
   textview text:backdrop {
     color: #B5C9C9;
-    background-color: #1B2121; }
+    background-color: #152124; }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
@@ -118,7 +118,7 @@ assistant .sidebar {
   background-color: #121D1F;
   border-top: 1px solid #2C484D; }
   assistant .sidebar:backdrop {
-    background-color: #1B2121;
+    background-color: #152124;
     border-color: #49666B; }
 
 assistant.csd .sidebar {
@@ -226,7 +226,7 @@ entry {
   entry:backdrop {
     color: #B5C9C9;
     border-color: #49666B;
-    background-color: #1B2121;
+    background-color: #152124;
     box-shadow: none;
     transition: 200ms ease-out; }
   spinbutton:backdrop:disabled:not(.vertical),
@@ -358,7 +358,7 @@ entry:not(:disabled) + entry:not(:disabled),
   entry:not(:disabled) + entry:not(:disabled):backdrop,
   .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical) {
     border-top-color: #BCD5DE;
-    background-color: #1B2121; }
+    background-color: #152124; }
 
 .linked.vertical > spinbutton:disabled:not(.vertical) + spinbutton:disabled:not(.vertical),
 .linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, .linked.vertical > entry:disabled + spinbutton:disabled:not(.vertical),
@@ -2128,7 +2128,7 @@ treeview.view {
       treeview.view.progressbar:selected:focus:backdrop, treeview.view.progressbar:selected:backdrop {
         color: #2B484D;
         border-color: #7DA7A8;
-        background-color: #1B2121; }
+        background-color: #152124; }
     treeview.view.progressbar:backdrop {
       color: #9AB8BA;
       background-image: none;
@@ -2189,7 +2189,7 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
     border-style: none solid solid none;
     color: #aaaaaa;
     background-image: none;
-    background-color: #1B2121; }
+    background-color: #152124; }
     treeview.view header button:backdrop:disabled {
       border-color: #132426;
       background-image: none; }
@@ -2233,7 +2233,7 @@ menu,
   menu:backdrop,
   .menu:backdrop,
   .context-menu:backdrop {
-    background-color: #1B2121; }
+    background-color: #152124; }
   menu menuitem,
   .menu menuitem,
   .context-menu menuitem {
@@ -2316,7 +2316,7 @@ menu,
     menu > arrow:backdrop,
     .menu > arrow:backdrop,
     .context-menu > arrow:backdrop {
-      background-color: #1B2121; }
+      background-color: #152124; }
     menu > arrow:disabled,
     .menu > arrow:disabled,
     .context-menu > arrow:disabled {
@@ -3424,7 +3424,7 @@ levelbar trough {
   levelbar trough:backdrop {
     color: #B5C9C9;
     border-color: #49666B;
-    background-color: #1B2121;
+    background-color: #152124;
     box-shadow: none; }
 
 levelbar.horizontal.discrete block {
@@ -3641,7 +3641,7 @@ list {
   background-color: #121D1F;
   border-color: #2C484D; }
   list:backdrop {
-    background-color: #1B2121;
+    background-color: #152124;
     border-color: #49666B; }
   list row {
     padding: 2px; }
@@ -4451,7 +4451,7 @@ button.circular {
   box-shadow: inset 0 -3px #A2C1D3;
   font-size: smaller; }
   .keycap:backdrop {
-    background-color: #1B2121;
+    background-color: #152124;
     color: #90ADAD;
     transition: 200ms ease-out; }
 
@@ -4510,7 +4510,7 @@ widget base background color on backdrop windows */
 @define-color theme_unfocused_bg_color #132426;
 /*
 text widgets and the like base background color on backdrop windows */
-@define-color theme_unfocused_base_color #1B2121;
+@define-color theme_unfocused_base_color #152124;
 /*
 base background color of selections on backdrop windows */
 @define-color theme_unfocused_selected_bg_color #2B484D;
