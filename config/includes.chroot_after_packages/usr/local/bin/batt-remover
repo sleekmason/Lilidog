@@ -13,6 +13,8 @@ else
 notify-send 'No battery detected. Removing battery icon from Tint2 panel.'
 sed -i '/# Executor 1/,/#-------/d' "$FILE"
 sed -i 's/^battery_low_status.*/battery_low_status = 0/g' "$FILE"
+sed -i 's/^battery_low_cmd.*/battery_low_cmd =/g' "$FILE"
+sed -i 's/^battery_full_cmd.*/battery_full_cmd =/g' "$FILE"
 fi
 # restart tint2
 pkill -x tint2
