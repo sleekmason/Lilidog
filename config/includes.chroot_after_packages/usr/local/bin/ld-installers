@@ -1,0 +1,18 @@
+#!/bin/bash
+
+yad --title "Installers" --escape-ok \
+--button=gtk-close:1 --form --center --width=240 --height=450 --borders=6 \
+--text="\n Lilidog Installers\n" --text-align=center \
+--window-icon=applications-utilities \
+    --form \
+    --field="":LBL "" \
+    --field="   Add Backports!/usr/share/icons/gnome/22x22/categories/preferences-desktop-personal.png":FBTN "x-terminal-emulator -T 'Backports Installer' -e bash -c 'backports-installer; echo $Press Press any key to close. ; read -srn1'" \
+    --field="":LBL "" \
+    --field="       Office!/usr/share/icons/gnome/22x22/categories/applications-office.png":FBTN "popup -f /usr/share/lilidog/installers/office &" \
+    --field="     Games!/usr/share/icons/gnome/22x22/categories/applications-games.png":FBTN "popup -f /usr/share/lilidog/installers/games &" \
+    --field="     Utilities!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "popup -f /usr/share/lilidog/installers/utilities &" \
+    --field="   Internet!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "popup -f /usr/share/lilidog/installers/internet &" \
+    --field="   Graphics!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "popup -f /usr/share/lilidog/installers/graphics &" \
+    --field="     Kernels!/usr/share/icons/gnome/22x22/categories/applications-engineering.png":FBTN "popup -f /usr/share/lilidog/installers/kernels &" \
+    --field="         Misc!/usr/share/icons/gnome/22x22/categories/applications-other.png":FBTN "popup -f /usr/share/lilidog/installers/misc &" \
+    --field="":LBL "" \

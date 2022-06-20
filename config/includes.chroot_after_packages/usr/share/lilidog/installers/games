@@ -1,0 +1,3 @@
+Install Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
+Install Minecraft,        x-terminal-emulator -T 'Minecraft Installer' -e bash -c "minecraft-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-games
+Install Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-games
