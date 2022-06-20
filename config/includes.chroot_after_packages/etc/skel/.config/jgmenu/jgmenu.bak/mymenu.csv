@@ -23,6 +23,7 @@ Root Folders,^checkout(rootfiles),folder
 Writer,             libreoffice,                       libreoffice-writer
 Geany,              geany,	                       geany
 Smplayer,           smplayer,                          smplayer
+Mousepad,           mousepad,                          accessories-text-editor
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
 Gpicview,           gpicview,                          gpicview
 Pragha,             pragha,                            pragha
