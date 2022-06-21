@@ -12,7 +12,7 @@ Toggles,^checkout(toggles),/usr/share/icons/ld-icons/toggle.png
 Utilities,^checkout(utilities),applications-utilities
 Configuration,^checkout(configuration),preferences-system
 ^sep()
-Auto Gen Menu,^pipe(jgmenu_run apps),debian-logo
+All Programs,^pipe(jgmenu_run apps),debian-logo
 ^sep()
 Restart,    openbox --restart,        /usr/share/icons/ld-icons/pixmaps/logout_reboot.png
 Exit,               ld-logout,                 /usr/share/icons/ld-icons/exit4.png
