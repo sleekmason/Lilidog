@@ -53,6 +53,13 @@ Lilidog: <br/>
 
 [![Lilidog-Slate.png](https://i.postimg.cc/3J4CRPs6/Lilidog-Slate.png)](https://postimg.cc/SJ4z1tN7) <br/>
 
+### Navigating Lilidog:
+
+After boot, you have the option to install or try out Lilidog live.  Once in a session, there are a few items that can shape
+your experience. Look in the "paw" icon in the tint2 panel for theming options.  Look in the "Toggles" section of the menu for 
+some useful options, and look in the "Install Extras" portion of the menu for extra programs you may want.  Look around.  There
+is more to see as well.
+
 ### Features:
 
 - Based on Debian with contrib and non-free sources enabled by default.
