@@ -156,7 +156,6 @@ moc
 modemmanager
 mokutil
 mousepad
-mtd-utils
 mtools
 nano
 ncdu
@@ -173,7 +172,6 @@ openbox
 os-prober
 oss-compat
 parcellite
-parted
 pavucontrol
 pciutils
 pcmciautils
@@ -212,7 +210,6 @@ suckless-tools
 sudo
 synaptic
 syslinux-common
-systemd-container
 systemd-timesyncd
 tasksel
 telnet
