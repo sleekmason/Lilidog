@@ -2475,7 +2475,7 @@ notebook > header {
       color: #E3F8F8; }
       notebook > header tab:hover.reorderable-page {
         border-color: #597877;
-        background-color: #365559; }
+        background-color: #32575C; }
     notebook > header tab:backdrop {
       color: #a2a2a2; }
       notebook > header tab:backdrop.reorderable-page {
@@ -2489,7 +2489,7 @@ notebook > header {
         background-color: #132426; }
       notebook > header tab:checked.reorderable-page {
         border-color: #263436;
-         background-image: linear-gradient(to bottom, shade(#263F42, 1.15), shade(#263F42, 1.07)); }
+         background-image: linear-gradient(to bottom, shade(#213D40, 1.15), shade(#244145, 1.07)); }
     notebook > header tab:backdrop:checked {
       color: #ACD1D1; }
       notebook > header tab:backdrop:checked.reorderable-page {
@@ -3819,7 +3819,7 @@ filechooserbutton:drop(active) {
     .sidebar treeview iconview:selected,
     .sidebar treeview .view:selected:focus,
     .sidebar treeview iconview:selected:focus {
-      color: #B8E0E0; }
+      color: #C1E6E6; }
     .sidebar row:backdrop,
     .sidebar treeview:backdrop {
       background-color: transparent; }
@@ -4356,7 +4356,7 @@ entry selection:focus,
 entry selection, modelbutton.flat:selected, popover.background checkbutton:selected,
 popover.background radiobutton:selected,
 .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
-  background-color: #27454A; }
+  background-color: #274C52; }
   row:selected label, label:selected, .selection-mode button.titlebutton, .view:selected:focus, .view:selected, iconview:selected, .view text:selected, iconview text:selected,
   textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
@@ -4365,7 +4365,7 @@ popover.background radiobutton:selected,
   entry selection, modelbutton.flat:selected, popover.background checkbutton:selected,
   popover.background radiobutton:selected,
   .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
-    color: #C7EBEB;
+    color: #C9EDED;
     outline-color: rgba(255, 255, 255, 0.3); }
     row:selected label:disabled, label:disabled:selected, .selection-mode button.titlebutton:disabled, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected, iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, .view text:disabled:selected, iconview text:disabled:selected,
