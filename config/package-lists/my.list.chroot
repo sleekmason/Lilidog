@@ -172,6 +172,7 @@ openbox
 os-prober
 oss-compat
 parcellite
+parted
 pavucontrol
 pciutils
 pcmciautils
