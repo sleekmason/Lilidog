@@ -1,6 +1,3 @@
-Install GIMP,              x-terminal-emulator -T 'GIMP Installer' -e bash -c "gimp-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-utilities
-Install Breeze Icons,      x-terminal-emulator -T 'Breeze Icon Theme Installer' -e bash -c "breeze-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
-Install Gnome Color Icons, x-terminal-emulator -T 'Gnome Colors Icons Installer' -e bash -c "gnome-colors-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Papirus Icons,     x-terminal-emulator -T 'Papirus Icon Theme Installer' -e bash -c "papirus-installer; echo $'\n\nPress any key to close.'; read -srn1",      applications-utilities
 Install Numix Circle Icons,  x-terminal-emulator -T 'Numix Circle Icon Theme Installer' -e bash -c "numix-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
 Install Faenza Icons,      x-terminal-emulator -T 'Faenza Icon Theme Installer' -e bash -c "faenza-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities

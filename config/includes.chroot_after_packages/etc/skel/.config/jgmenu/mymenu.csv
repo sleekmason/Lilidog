@@ -27,7 +27,6 @@ Mousepad,           mousepad,                          accessories-text-editor
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
 Gpicview,           gpicview,                          gpicview
 Pragha,             pragha,                            pragha
-Gimp,               gimp,                              gimp
 Development,^checkout(development),applications-development
 
 ^tag(development)
