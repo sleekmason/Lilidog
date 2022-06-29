@@ -94,19 +94,18 @@ Openbox Themes,           thunar /usr/share/themes,                      folder-
 Grub Backgrounds,         thunar ~/Pictures/grub-bg,                     folder-documents
 
 ^tag(configuration)
-Quick Theme Changer,      ld-theme-changer,                                                     preferences-desktop-theme
-Wallpaper Changer,        feh-set-wallpaper,                                                    preferences-desktop-display
-Settings-Manager,         xfce4-settings-manager,                                               preferences-system
-Power Manager,            xfce4-power-manager-settings,                                         applications-system  
-Openbox Conf,             obconf,                                                               obconf
-Jgmenu Conf,              geany ~/.config/jgmenu/README & thunar ~/.config/jgmenu,           document-properties
-Conky Conf,               thunar ~/.config/conky,                                               document-properties
-Urxvt Conf,               geany ~/.Xresources,                                               utilities-terminal
-Tint2 Conf,               tint2conf,                                                            tint2
-Picom Conf,               geany ~/.config/picom.conf,                                        document-properties
-Lightdm Conf,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
-Xbindkeys Conf,           xbindkeys-config,                                                     document-properties
-Dmenu Apps Conf,          geany ~/.config/dmenu/apps,                                        document-properties
-Ld-Hotcorners Conf,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,                     zoom-fit-best
-Xfce4-terminal Themes,    ld-term-changer,                                                      utilities-terminal
-Grub Background Changer,  x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
+Openbox,             obconf,                                                               obconf
+Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
+Quick Themes,        ld-theme-changer,                                                     preferences-desktop-theme
+System Settings,     xfce4-settings-manager,                                               preferences-system
+Power Manager,       xfce4-power-manager-settings,                                         applications-system
+Tint2 Settings,      tint2conf,                                                            tint2
+Xbindkeys,           xbindkeys-config,                                                     document-properties
+Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
+Jgmenu,              geany ~/.config/jgmenu/README & thunar ~/.config/jgmenu,              document-properties
+Conky,               thunar ~/.config/conky,                                               document-properties
+Urxvt,               geany ~/.Xresources,                                                  utilities-terminal
+Picom,               geany ~/.config/picom.conf,                                           document-properties
+Dmenu F3,            geany ~/.config/dmenu/apps,                                           document-properties
+Ld-Hotcorners,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,                        zoom-fit-best 
+Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-theme
