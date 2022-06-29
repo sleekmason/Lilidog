@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Install Extras
+Exec=ld-installers
+StartupNotify=false
+Terminal=false
+Icon=applications-utilities
+Categories=System;

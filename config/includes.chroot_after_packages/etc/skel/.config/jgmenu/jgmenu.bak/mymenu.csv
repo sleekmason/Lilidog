@@ -60,7 +60,6 @@ Clickpick Gradient, clickpick-gradient,               gpick
 Clickpick Gradient 4-Way, clickpick-gradient4,        gpick
 
 ^tag(toggles)
-Tint2 Options,       ^checkout(tint2-options),                      preferences-system
 Wbar,                toggle.wbar,                                   preferences-system
 Conky,               $HOME/.config/conky/scripts/conky-chooser,     preferences-system
 Gammy,               toggle.gammy,                                  preferences-system
@@ -68,6 +67,7 @@ Jgmenu,              jg-icon-changer,                               preferences-
 Clipboard,           toggle.parcellite,                             preferences-system
 Hotcorners,          toggle.ld,                                     preferences-system
 Random BG,           toggle-wallpaper-random,                       preferences-system
+Tint2 Options,       tint2-options,                                 preferences-system
 Xscreensaver,        toggle.xscreensaver,                           preferences-system
 Tint2 Toggle,        toggle.tint2,                                  preferences-system
 Auto Login,          lightdm-autologin,                             preferences-system
@@ -75,15 +75,6 @@ Touchpad,            toggle-touchpad,                               preferences-
 Sounds,              notification-sounds,                           preferences-system
 Picom,               toggle.picom,                                  preferences-system
 Xkill,               xkill,                                         edit-delete
-
-^tag(tint2-options)
-Tint2 Position,        tint2-position,                                preferences-system
-Tint2 Autohide,        tint2-autohide,                                preferences-system
-Tint2 Autoshrink,      tint2-shrink,                                  preferences-system
-Tint2 Battery Icon,    toggle-tint2-batteryicon,                      preferences-system
-Tint2 Transparency,    tint2-transparency,                            preferences-system
-Tint2 12H/24H,         tint2-12to24,                                  preferences-system
-Tint2 Bright,          tint2-bright,                                  preferences-system
 
 ^tag(rootfiles)
 /etc,                     gksudo thunar /etc,                     folder-documents
