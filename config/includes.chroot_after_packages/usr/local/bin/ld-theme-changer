@@ -8,13 +8,13 @@ yad --title "Theming Options" --escape-ok \
     --field="":LBL "" \
     --field="                Quick Themes!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!":FBTN "ld-themes" \
     --field="                     Wallpapers!gtk-select-color":FBTN "feh-set-wallpaper" \
+    --field="                         Font Size!gtk-select-font":FBTN "fontsize-changer" \
     --field="                         Grub BG!wallpaper":FBTN "x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1'" \
     --field="                           Jgmenu!jgmenu":FBTN "jg-icon-changer" \
     --field="                              Conky!preferences-other":FBTN ".config/conky/scripts/conky-chooser" \
     --field="                           Sounds!audio-speakers":FBTN "notification-sounds" \
     --field="                         LightDM!lightdm-gtk-greeter-settings":FBTN "gksudo lightdm-gtk-greeter-settings" \
     --field="             Terminal Colors!gnome-terminal":FBTN "ld-term-changer" \
-    --field="          Fontsize Changer!preferences-desktop-font":FBTN "fontsize-changer" \
     --field="          Openbox Settings!obconf":FBTN "obconf" \
     --field="             System Settings!preferences-system":FBTN "xfce4-appearance-settings" \
     --field="":LBL "" \

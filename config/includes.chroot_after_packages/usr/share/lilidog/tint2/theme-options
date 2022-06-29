@@ -1,12 +1,12 @@
 Quick Themes,               ld-themes,                                gpick
 Wallpapers,                 feh-set-wallpaper,                        gtk-select-color
+Font Size,                  fontsize-changer,                         gtk-select-font
 Grub BG,                    x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1',  preferences-desktop-wallpaper
 Jgmenu,                     jg-icon-changer,                          jgmenu
 Conky,                      $HOME/.config/conky/scripts/conky-chooser, preferences-other
 Sounds,                     notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
 Lightdm,                    gksudo lightdm-gtk-greeter-settings,      lightdm-gtk-greeter-settings
 Terminal Colors,            ld-term-changer,                          org.xfce.terminal
-Fontsize Changer,           fontsize-changer,                         preferences-desktop-font
 Openbox Settings,           obconf,                                   obconf
 System Settings,            xfce4-appearance-settings,                applications-system
 ^sep()

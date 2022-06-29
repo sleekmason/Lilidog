@@ -1,7 +1,7 @@
 #! /bin/bash
 # font size changer - Changes all fonts one level up or down, and resets to the system default
 # Made be sleekmason for Lilidog 6-10-2022
-noti=$(yad --width 348  --borders=4 --entry --title "Fontsize Changer" --center --window-icon=applications-system \
+noti=$(yad --width 348  --borders=4 --entry --title "Font Size Changer" --center --window-icon=applications-system \
     --image="preferences-desktop-font" --text " Fonts will reset to the system defaults\n of Noto Sans and Jet Brains Mono.\n\n Please close Geany before choosing.\n" \
     --entry-text \
     "Please Select Your Desired Font Size " "Smallest" "Smaller" "Small" "Medium - Default Size" "Large" "Larger" "Largest")
