@@ -9,7 +9,7 @@
     <property name="logind-handle-lid-switch" type="bool" value="true"/>
     <property name="lid-action-on-ac" type="uint" value="1"/>
     <property name="lock-screen-suspend-hibernate" type="bool" value="false"/>
-    <property name="general-notification" type="bool" value="true"/>
+    <property name="general-notification" type="bool" value="false"/>
     <property name="show-tray-icon" type="bool" value="false"/>
     <property name="dpms-enabled" type="bool" value="true"/>
     <property name="inactivity-sleep-mode-on-battery" type="uint" value="1"/>
