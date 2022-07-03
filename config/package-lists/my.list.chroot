@@ -104,6 +104,7 @@ gtk2-engines-pixbuf
 gvfs
 gvfs-backends
 gvfs-fuse
+hardinfo
 hddtemp
 hdparm
 htop

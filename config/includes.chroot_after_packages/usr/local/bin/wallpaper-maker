@@ -1,0 +1,11 @@
+#!/bin/bash
+
+yad --title "Wallpaper" --escape-ok \
+--button=gtk-close:1 --form --center --width=240 --height=258 --borders=12 \
+--text="Please select the type of Wallpaper you want to create.\n" --text-align=center \
+--window-icon=applications-utilities \
+    --form \
+    --field="":LBL "" \
+    --field="            Single Color!org.xfce.settings.color!":FBTN "clickpick" \
+    --field="                  Gradient!org.xfce.settings.color":FBTN "clickpick-gradient" \
+    --field="       Gradient 4 Way!org.xfce.settings.color!":FBTN "clickpick-gradient4" \
