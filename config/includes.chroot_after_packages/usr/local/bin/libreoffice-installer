@@ -2,18 +2,18 @@
 echo ""
 echo ""
 echo ""
-read -p "   [0;33mLibreoffice Installer[0m
+read -p "   [0;33mLibreoffice Full Suite Installer[0m
 
    This will install the full Libreoffice Suite with gtk support 
    and other sensible extras. Hunspell will default to US EN. 
    Other languages available.
    
-   Please note that libreoffice-writer is already installed in the
-   full versions if all you need is a writer.
+   If libreoffice-writer is already installed, this will simply 
+   complete the package suite and place a new menu entry.
    
    --------------------------------------------------------------
    
-   [0;32mPlease press enter to install the Libreoffice Suite.[0m
+   [0;32mPlease press enter to install the full Libreoffice Suite.[0m
    
    --------------------------------------------------------------
    
@@ -22,11 +22,10 @@ read -p "   [0;33mLibreoffice Installer[0m
    if : >/dev/tcp/8.8.8.8/53; then
 echo "" 
 sudo apt update && sudo apt install libreoffice libreoffice-gtk3 \
-hunspell-en-us hyphen-en-us cups-bsd libsane libxrender1 libgl1 libpaper-utils \
-fonts-dejavu fonts-liberation2 fonts-linuxlibertine fonts-noto-core fonts-noto-extra &&
+hunspell-en-us hyphen-en-us libpaper-utils &&
 sed -i '/Libreoffice,             libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Writer,             libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv &&
 sed -i '/Root Folders,^checkout(rootfiles),folder/a Libreoffice,             libreoffice,                       libreoffice-writer' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Writer,             libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv
 killall jgmenu
 echo ""
 echo ""
