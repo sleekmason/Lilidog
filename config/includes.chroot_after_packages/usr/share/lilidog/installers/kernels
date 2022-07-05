@@ -1,2 +1,2 @@
-Install Backports Kernel, x-terminal-emulator -T 'Backports Kernel Installer' -e bash -c "backports-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
-Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Backports Kernel, x-terminal-emulator -T 'Backports Kernel Installer' -e bash -c "backports-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-engineering
+Install Liquorix Kernel,  x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-engineering

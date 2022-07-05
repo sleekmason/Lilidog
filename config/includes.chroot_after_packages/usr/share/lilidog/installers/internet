@@ -1,6 +1,6 @@
-Install Firefox,           x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-utilities
-Install Chromium,          x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-utilities
-Install Midori,            x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-utilities
-Install Lynx,              x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-utilities
-Install Google Earth,     x-terminal-emulator -T 'Google Earth Installer' -e bash -c "google-earth-installer; echo $'\n\nPress any key to close.'; read -srn1",       applications-utilities
-Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-utilities
+Install Chromium,          x-terminal-emulator -T 'Chromium Installer' -e bash -c "chromium-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-internet
+Install Discord,          x-terminal-emulator -T 'Discord AppImage Installer' -e bash -c "discord-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-internet
+Install Firefox,           x-terminal-emulator -T 'Firefox Installer' -e bash -c "firefox-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-internet
+Install Google Earth,     x-terminal-emulator -T 'Google Earth Installer' -e bash -c "google-earth-installer; echo $'\n\nPress any key to close.'; read -srn1",       applications-internet
+Install Lynx,              x-terminal-emulator -T 'Lynx Installer' -e bash -c "lynx-installer; echo $'\n\nPress any key to close.'; read -srn1",                      applications-internet
+Install Midori,            x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-internet
