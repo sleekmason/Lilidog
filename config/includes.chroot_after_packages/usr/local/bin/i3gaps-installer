@@ -26,7 +26,8 @@ echo ""
 cd ~/Downloads/ &&
 sudo curl -LJO https://raw.githubusercontent.com/sleekmason/packages/master/i3-wm_4.20-1-gaps_amd64.deb &&
 sudo apt update && sudo apt install ./i3-wm_4.20-1-gaps_amd64.deb i3lock i3status libanyevent-i3-perl &&
-cp -r /usr/share/lilidog/extras/i3 ~/.config
+cp -r /usr/share/lilidog/extras/i3 ~/.config &&
+sudo rm i3-wm_4.20-1-gaps_amd64.deb
 echo ""
 echo "----------------------------------------------------------------------"
 echo ""
