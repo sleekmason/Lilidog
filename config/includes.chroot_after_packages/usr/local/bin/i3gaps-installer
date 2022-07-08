@@ -4,9 +4,8 @@ echo ""
 read -p "   [0;33mi3-gaps WM Installer.[0m
 
 
-   This script will download the i3-gaps package to your Downloads
-   folder before installing the i3-gaps window manager and adding
-   the necessary configuration files to ~/.config/i3 for use.
+   This script will download and install the i3-gaps window manager, 
+   adding the necessary configuration files to ~/.config/i3 for use. 
    
    Any configurations in ~/.config/i3 will be overwritten.
    
@@ -23,7 +22,7 @@ read -p "   [0;33mi3-gaps WM Installer.[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
-cd ~/Downloads/ &&
+cd /tmp/ &&
 sudo curl -LJO https://raw.githubusercontent.com/sleekmason/packages/master/i3-wm_4.20-1-gaps_amd64.deb &&
 sudo apt update && sudo apt install ./i3-wm_4.20-1-gaps_amd64.deb i3lock i3status libanyevent-i3-perl &&
 cp -r /usr/share/lilidog/extras/i3 ~/.config &&
