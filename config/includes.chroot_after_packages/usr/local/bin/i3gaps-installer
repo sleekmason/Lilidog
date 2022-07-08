@@ -1,10 +1,10 @@
 #!/bin/bash
 echo ""
 echo ""
-read -p "   [0;33mi3-gapps WM Installer.[0m
+read -p "   [0;33mi3-gaps WM Installer.[0m
 
 
-   This script will install the i3-gapps window manager and
+   This script will install the i3-gaps window manager and
    the necessary configuration files for initial use.
    
    Any configurations in ~/.config/i3 will be overwritten.
@@ -15,7 +15,7 @@ read -p "   [0;33mi3-gapps WM Installer.[0m
    
    [0;32m----------------------------------------------------------
    
-   Please press enter to install i3-gapps WM.
+   Please press enter to install i3-gaps WM.
    
    ----------------------------------------------------------[0m
       
