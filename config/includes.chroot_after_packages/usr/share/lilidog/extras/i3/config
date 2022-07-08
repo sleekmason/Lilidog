@@ -51,6 +51,7 @@ bindsym $mod+F4 exec ld-themes
 bindsym $mod+F5 exec fontsize-changer
 bindsym $mod+F8 exec pavucontrol
 bindsym $mod+t exec thunar
+bindsym $mod+m exec pragha
 bindsym $mod+i exec "firefox-esr"
 bindsym $mod+b exec feh-set-wallpaper
 bindsym $mod+F12 exec i3lock
@@ -64,7 +65,7 @@ bindsym --release $mod+x exec --no-startup-id xdotool key --clearmodifiers ctrl+
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id ~/.config/dmenu/dmenu
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
