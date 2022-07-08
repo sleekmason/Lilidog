@@ -1,0 +1,43 @@
+#!/bin/bash
+echo ""
+echo ""
+read -p "   [0;33mi3-gapps WM Installer.[0m
+
+
+   This script will install the i3-gapps window manager and
+   the necessary configuration files for initial use.
+   
+   Any configurations in ~/.config/i3 will be overwritten.
+   
+   For more information: 
+   https://github.com/Airblader/i3
+   https://i3wm.org/docs/userguide.html
+   
+   [0;32m----------------------------------------------------------
+   
+   Please press enter to install i3-gapps WM.
+   
+   ----------------------------------------------------------[0m
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+cd /usr/share/lilidog/extras/ &&
+sudo apt update && sudo apt install --install-recommends ./i3-wm_4.20-1sleek+20220706_amd64.deb i3lock i3status libanyevent-i3-perl &&
+cp -r /usr/share/lilidog/extras/i3 ~/.config
+echo ""
+echo "----------------------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished!.
+New Login entry for 'i3' added. Logout and choose i3 to change WM's.[0m"
+echo "" 
+echo "----------------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Install Extras
+Name=Lilidog Installers
 Exec=ld-installers
 StartupNotify=false
 Terminal=false
