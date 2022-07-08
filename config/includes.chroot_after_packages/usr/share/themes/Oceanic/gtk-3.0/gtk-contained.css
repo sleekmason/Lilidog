@@ -2577,7 +2577,7 @@ scrollbar {
   scrollbar.right {
     border-left: 1px solid #121D1F; }
   scrollbar:backdrop {
-    background-color: #66A6B0;
+    background-color: #121D1F;
     border-color: #121D1F;
     transition: 200ms ease-out; }
   scrollbar slider {
