@@ -8,6 +8,10 @@ alt + d
 #Dmenu
 mod4 + F3
     ~/.config/dmenu/apps
+    
+#jgmenu
+mod4 + j
+    jgmenu_run   
    
 # terminal
 mod4 + Return
