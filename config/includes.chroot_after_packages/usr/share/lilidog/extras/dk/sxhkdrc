@@ -21,9 +21,13 @@ mod4 + t
 mod4 + m
     pragha
     
-# Browser
+# Backgounds
 mod4 + b
-    firefox-esr    
+    feh-set-wallpaper
+    
+# Browser
+mod4 + w
+    firefox-esr      
     
 # ld-themes
 mod4 + F4

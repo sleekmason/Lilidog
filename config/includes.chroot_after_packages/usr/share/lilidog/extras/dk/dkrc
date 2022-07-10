@@ -126,7 +126,7 @@ fi
 	dkcmd rule class="^mpv$" instance="^albumart$" float=true ignore=true callback=albumart bw=0
 
 	# open window(s) in a floating state
-	dkcmd rule class="^(pavucontrol|yad|transmission-gtk|steam|lxappearance)$" float=true
+	dkcmd rule class="^(pavucontrol|yad|transmission-gtk|steam|feh|lxappearance)$" float=true
 
 	# open window(s) with a specific geometry and coordinates (floating only!)
 	dkcmd rule class="^google-chrome$" title="^open files$" float=true w=1280 h=720
