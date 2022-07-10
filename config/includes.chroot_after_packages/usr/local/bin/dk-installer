@@ -1,0 +1,52 @@
+#!/bin/bash
+echo ""
+echo ""
+read -p "   [0;33mdk WM Installer.[0m
+
+   This is a script to build the dk window manager on your system. 
+   
+   This script will download, build, and install the dk window manager, 
+   adding the necessary configuration files to ~/.config/dk for use as 
+   well as adding a simple polybar to the screen.
+   
+   This script does install all necessary programs to build dk. If you
+   do not want to add the build dependencies, consider something else.
+   
+   Any configurations in ~/.config/dk will be overwritten.
+   
+   For more information: 
+   https://bitbucket.org/natemaia/dk/src/master/
+   
+   [0;32m-------------------------------------------------------------
+   
+   Please press enter to build and install the dk window manager
+   
+   -------------------------------------------------------------[0m
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+cd /tmp/ &&
+sudo apt update && sudo apt install git sxhkd build-essential polybar libxcb-randr0-dev libxcb-util-dev libxcb-icccm4-dev libxcb-cursor-dev libxcb-keysyms1-dev &&
+git clone https://bitbucket.org/natemaia/dk.git &&
+cd /tmp/dk &&
+make &&
+sudo make install &&
+cp -r /usr/share/lilidog/extras/dk ~/.config &&
+sudo rm -r dk
+echo ""
+echo "----------------------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished!.
+New Login entry for 'dk' added. Logout and choose dk to change WM's.[0m"
+echo "" 
+echo "----------------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
