@@ -1,0 +1,16 @@
+#!/bin/bash
+echo ""
+echo "Removing dk WM . . ."
+echo ""
+sudo rm -f /usr/local/bin/dk /usr/local/bin/dkcmd
+echo "rm -f /usr/local/bin/dk /usr/local/bin/dkcmd"
+sudo rm -f /usr/local/share/man/man1/dk.1 /usr/local/share/man/man1/dkcmd.1
+echo "rm -f /usr/local/share/man/man1/dk.1 /usr/local/share/man/man1/dkcmd.1"
+sudo rm -rf /usr/local/share/doc/dk
+echo "rm -rf /usr/local/share/doc/dk"
+sudo rm -f /usr/share/xsessions/dk.desktop
+echo "rm -f /usr/share/xsessions/dk.desktop"
+echo ""
+echo "dk WM Removed!"
+echo ""
+echo ""

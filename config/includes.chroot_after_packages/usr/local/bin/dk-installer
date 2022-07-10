@@ -7,10 +7,12 @@ read -p "   [0;33mdk WM Installer.[0m
    
    This script will download, build, and install the dk window manager, 
    adding the necessary configuration files to ~/.config/dk for use as 
-   well as adding a simple polybar to the screen.
+   well as adding a simple polybar for statusbar use.
    
-   This script does install all necessary programs to build dk. If you
-   do not want to add the build dependencies, consider something else.
+   This script installs all necessary programs for dk, and then clones
+   the dk repo before building and installing. 
+
+   To uninstall, run: 'dk-uninstaller' in a terminal.
    
    Any configurations in ~/.config/dk will be overwritten.
    
@@ -33,12 +35,13 @@ cd /tmp/dk &&
 make &&
 sudo make install &&
 cp -r /usr/share/lilidog/extras/dk ~/.config &&
-sudo rm -r dk
+sudo rm -r /tmp/dk/
 echo ""
 echo "----------------------------------------------------------------------"
 echo ""
 echo "[0;32mAll Finished!.
-New Login entry for 'dk' added. Logout and choose dk to change WM's.[0m"
+New Login entry for 'dk' added. Logout and choose dk to change WM's.
+To uninstall, run: 'dk-uninstaller' in a terminal.[0m"
 echo "" 
 echo "----------------------------------------------------------------------"
 else
