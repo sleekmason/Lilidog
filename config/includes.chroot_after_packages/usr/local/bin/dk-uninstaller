@@ -1,8 +1,9 @@
 #!/bin/bash
 echo ""
+sudo rm -f /usr/local/bin/dk /usr/local/bin/dkcmd
+echo ""
 echo "Removing dk WM . . ."
 echo ""
-sudo rm -f /usr/local/bin/dk /usr/local/bin/dkcmd
 echo "rm -f /usr/local/bin/dk /usr/local/bin/dkcmd"
 sudo rm -f /usr/local/share/man/man1/dk.1 /usr/local/share/man/man1/dkcmd.1
 echo "rm -f /usr/local/share/man/man1/dk.1 /usr/local/share/man/man1/dkcmd.1"
