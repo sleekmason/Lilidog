@@ -429,10 +429,10 @@ button_max_icon_size = 18
 button = new
 button_icon = /usr/share/icons/ld-icons/upgrade.png
 button_text = 
-button_tooltip = Left Click = Apt Updater - Right Click = Synaptic Package Manager
+button_tooltip = Left Click = Updater - Middle Click = LD Installers - Right Click = Synaptic
 button_lclick_command = x-terminal-emulator -T 'Simple Apt Updater' -e bash -c "simple-apt-updater"
 button_rclick_command = gksudo synaptic &
-button_mclick_command = 
+button_mclick_command = ld-installers &
 button_uwheel_command = 
 button_dwheel_command = 
 button_font_color = #000000 100
