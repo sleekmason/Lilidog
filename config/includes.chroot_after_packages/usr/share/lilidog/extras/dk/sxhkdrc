@@ -32,10 +32,14 @@ mod4 + Return
 	xfce4-terminal
 
 # File manager	
-mod4 + t
+mod4 + f
     thunar
     
- # File manager	
+# File manager	
+mod4 + t
+    xfce4-terminal
+
+# Editor
 mod4 + e
     geany  
 
