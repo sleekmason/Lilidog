@@ -1,11 +1,17 @@
 # example sxhkdrc for use with dk
 #########################################################
 
-# launcher
+mod4 + F1
+    jgmenu_run
+
+#Dmenu
 alt + d
 	~/.config/dmenu/dmenu
 
-#Dmenu
+mod4 + F2
+    ~/.config/dmenu/dmenu
+
+#Dmenu apps
 mod4 + F3
     ~/.config/dmenu/apps
     
@@ -17,7 +23,7 @@ mod4 + j
 ctrl mod4 + p
     toggle.polybar
 
-#Toggle tint2 panel on/off
+#Toggle polybar panel on/off
 ctrl mod4 + t
     toggle.tint2
     
@@ -28,6 +34,10 @@ mod4 + Return
 # File manager	
 mod4 + t
     thunar
+    
+ # File manager	
+mod4 + e
+    geany  
 
 # Music
 mod4 + m
