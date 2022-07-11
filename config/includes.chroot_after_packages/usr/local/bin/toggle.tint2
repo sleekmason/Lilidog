@@ -1,8 +1,10 @@
 #!/bin/bash
 if pgrep -xf tint2 > /dev/null; then
     pkill -f tint2 &
-    pkill -f nm-applet
+    pkill -f nm-applet &
+    pkill -f pnmixer
 else
     tint2 & 
-    nm-applet &  
+    nm-applet &
+    pnmixer &  
 fi
