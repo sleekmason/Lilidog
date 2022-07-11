@@ -11,8 +11,16 @@ mod4 + F3
     
 #jgmenu
 mod4 + j
-    jgmenu_run   
+    jgmenu_run 
    
+#Toggle polybar panel on/off
+ctrl mod4 + p
+    toggle.polybar
+
+#Toggle tint2 panel on/off
+ctrl mod4 + t
+    toggle.tint2
+    
 # terminal
 mod4 + Return
 	xfce4-terminal

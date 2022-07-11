@@ -1,0 +1,8 @@
+#!/bin/bash
+if pgrep -x polybar > /dev/null; then
+    pkill -f polybar &
+    pkill -f nm-applet
+else
+   polybar -c ~/.config/dk/polybar/config lili-bar &
+    nm-applet &  
+fi
