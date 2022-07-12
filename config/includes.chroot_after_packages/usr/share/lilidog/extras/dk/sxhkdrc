@@ -1,10 +1,10 @@
 # example sxhkdrc for use with dk
 #########################################################
-
+# jgmenu
 mod4 + F1
     jgmenu_run
 
-#Dmenu
+# Dmenu
 alt + d
 	~/.config/dmenu/dmenu
 
@@ -15,15 +15,39 @@ mod4 + F2
 mod4 + F3
     ~/.config/dmenu/apps
     
-#jgmenu
+# ld-themes
+mod4 + F4
+    ld-themes
+    
+# Terminal colors
+mod4 + F5
+    ld-term-changer
+    
+# Fontsize
+mod4 + F6
+    fontsize-changer
+    
+# Hotcorners
+mod4 + F8
+    toggle.ld  
+
+# Conky
+mod4 + c
+    ~/.config/conky/scripts/conky-chooser
+    
+# Gammy
+mod4 + g
+    toggle.gammy
+ 
+# jgmenu
 mod4 + j
     jgmenu_run 
    
-#Toggle polybar panel on/off
+# Toggle polybar panel on/off
 ctrl mod4 + p
     toggle.polybar
 
-#Toggle polybar panel on/off
+# Toggle tint2 panel on/off
 ctrl mod4 + t
     toggle.tint2
     
@@ -31,13 +55,12 @@ ctrl mod4 + t
 mod4 + Return
 	xfce4-terminal
 
+mod4 + t
+    xfce4-terminal
+    
 # File manager	
 mod4 + f
     thunar
-    
-# File manager	
-mod4 + t
-    xfce4-terminal
 
 # Editor
 mod4 + e
@@ -53,30 +76,23 @@ mod4 + b
     
 # Browser
 mod4 + w
-    firefox-esr      
+    firefox-esr
     
-# ld-themes
-mod4 + F4
-    ld-themes
-    
-#kill current window
-alt +x   
+# kill current window. Carefull here!
+alt + x   
     xdotool getwindowfocus windowkill
     
-# Lilidog Logout
+# Logout
 alt + z
-	ld-logout  
+	ld-logout
+
 # screenshot and selection capture
 alt + Print
 	xfce4-screenshooter
 	
-	#Toggle Pragha Music
+# Pragha Music
 Mod4 + m 
     pragha
-
-#logout
-Mod4 + x
-    ld-logout
    
    
 # dedicated volume keys
@@ -94,8 +110,6 @@ alt + {Insert,Delete}
 # reload sxhkd
 alt + shift + x
 	pkill -USR1 -x sxhkd
-
-
 
 # quit dk
 alt + shift + q
