@@ -30,8 +30,8 @@
 
 [colors]
 ;background = ${xrdb:color0:#193A3E}
-background = #121B1C
-background-alt = #132426
+background = #96121B1C
+background-alt = #96132426
 ;foreground = ${xrdb:color7:#ABCCCC}
 foreground = #ACD4D4
 foreground-alt = #A1D6D6
@@ -224,7 +224,7 @@ label-active-padding = 2
 ; Default: %icon%  %name%
 label-occupied = "%{T5}%name%%{T-}"
 label-occupied-foreground = #A0C7C7
-label-occupied-background = #121B1C
+label-occupied-background = #99121B1C
 label-occupied-padding = 1
 
 
@@ -235,7 +235,7 @@ label-occupied-padding = 1
 ; Default: %icon%  %name%
 label-urgent = "%{T5}%name%%{T-}"
 label-urgent-foreground = ${colors.foreground}
-label-urgent-background = #dd2727
+label-urgent-background = #96dd2727
 label-urgent-padding = 1
 
 ; Available tokens:
@@ -246,7 +246,7 @@ label-urgent-padding = 1
 label-empty = "%{T5}%name%%{T-}"
 ; foreground ACTIVE
 label-empty-foreground = #618080
-label-empty-background = #121B1C
+label-empty-background = #96121B1C
 label-empty-padding = 1
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
@@ -524,7 +524,7 @@ menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
+compositing-background = xor
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
