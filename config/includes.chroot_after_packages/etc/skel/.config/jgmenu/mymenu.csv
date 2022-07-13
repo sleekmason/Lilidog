@@ -96,7 +96,7 @@ Quick Themes,        ld-theme-changer,                                          
 System Settings,     xfce4-settings-manager,                                               preferences-system
 Power Manager,       xfce4-power-manager-settings,                                         applications-system
 Tint2 Settings,      tint2conf,                                                            tint2
-Xbindkeys,           xbindkeys-config,                                                     document-properties
+Keybinds,            geany ~/.config/openbox/sxhkdrc-open,                                 document-properties
 Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
 Jgmenu,              geany ~/.config/jgmenu/README & thunar ~/.config/jgmenu,              document-properties
 Conky,               thunar ~/.config/conky,                                               document-properties

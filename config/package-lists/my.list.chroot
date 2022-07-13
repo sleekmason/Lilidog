@@ -206,6 +206,7 @@ ssft
 squashfs-tools
 suckless-tools
 sudo
+sxhkd
 synaptic
 syslinux-common
 systemd-timesyncd
@@ -249,8 +250,6 @@ x11-session-utils
 x11-utils
 x11-xkb-utils
 x11-xserver-utils
-xbindkeys
-xbindkeys-config
 xbitmaps
 xdg-dbus-proxy
 xdg-desktop-portal-gtk

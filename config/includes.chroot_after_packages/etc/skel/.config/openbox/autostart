@@ -22,12 +22,11 @@
 
 picom &
 tint2 &
-batt-remover &
 xfce4-power-manager &
-xbindkeys &
 nm-applet &
 lxpolkit &
 xfsettingsd --daemon &
 pnmixer &
 conky -c ~/.config/conky/conky-shortcuts.conf &
-welcome.sh &
+#xbindkeys &
+sxhkd -c "$HOME/.config/openbox/sxhkdrc-open" &

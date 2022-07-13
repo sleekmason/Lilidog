@@ -1,4 +1,0 @@
-Terminal,           lxterminal,       utilities-terminal
-File Manager,       thunar,           system-file-manager
-Firefox,            firefox,          /usr/share/icons/ld-icons/firefox.png
-^sep()

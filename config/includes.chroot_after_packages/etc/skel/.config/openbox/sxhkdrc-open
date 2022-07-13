@@ -1,0 +1,74 @@
+# Openbox sxhkdrc
+# These are the keybinds used in openbox.
+#########################################################
+
+alt + F2
+    ~/.config/dmenu/dmenu
+
+#Dmenu apps
+alt + F3
+    ~/.config/dmenu/apps
+
+# Conky
+mod4 + c
+    ~/.config/conky/scripts/conky-chooser
+    
+# Gammy
+mod4 + g
+    toggle.gammy
+ 
+# jgmenu
+mod4 + j
+    jgmenu_run 
+   
+# Toggle polybar panel on/off
+ctrl mod4 + p
+    toggle.polybar
+
+# Toggle tint2 panel on/off
+ctrl mod4 + t
+    toggle.tint2
+    
+# terminal
+mod4 + Return
+	xfce4-terminal
+
+mod4 + t
+    xfce4-terminal
+    
+# File Manager	
+mod4 + f
+    thunar
+
+# Editor
+mod4 + e
+    geany  
+
+# Music
+mod4 + m
+    pragha
+
+# Lockscreen
+mod4 + l
+    slock
+    
+# Backgounds
+mod4 + b
+    feh-set-wallpaper
+    
+# Browser
+mod4 + w
+    firefox-esr
+
+# Logout
+mod4 + z
+    ld-logout
+
+# screenshot and selection capture
+alt + Print
+	xfce4-screenshooter
+	
+# Pragha Music
+Mod4 + m 
+    pragha
+   
