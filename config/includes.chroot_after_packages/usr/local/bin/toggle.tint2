@@ -2,9 +2,11 @@
 if pgrep -xf tint2 > /dev/null; then
     pkill -f tint2 &
     pkill -f nm-applet &
-    pkill -f pnmixer
+    pkill -f pnmixer &
+    pkill -f mate-power-manager
 else
     tint2 & 
     nm-applet &
-    pnmixer &  
+    pnmixer & 
+    mate-power-manager & 
 fi
