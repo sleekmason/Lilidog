@@ -8,10 +8,10 @@ original_time_format=$(grep -E "^time1_format =" ~/.config/tint2/tint2rc | cut -
 SUB='%H'
 
 if [[ "$original_time_format" == *"$SUB"* ]]; then
-notify-send "Tint2 Time Format Changed To 12H"
+notify-send --urgency low "Tint2 Time Format Changed To 12H"
 seleccao="%d %b %I:%M"
   else
-notify-send "Tint2 Time Format Changed To 24H" 
+notify-send --urgency low "Tint2 Time Format Changed To 24H" 
 seleccao="%d %b %H:%M"
 fi
 
