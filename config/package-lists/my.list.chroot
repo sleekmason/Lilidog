@@ -138,6 +138,7 @@ lxrandr
 mailcap
 manpages
 manpages-dev
+mate-power-manager
 meld
 menu
 menu-xdg
@@ -256,7 +257,6 @@ xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
 xdotool
-xfce4-power-manager
 xfce4-screenshooter
 xfce4-settings
 xfce4-terminal
