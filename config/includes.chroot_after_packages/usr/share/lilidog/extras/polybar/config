@@ -70,7 +70,7 @@ font-2 = OpenSymbol:style=Regular:size=10
 
 modules-left = xdesktops
 #modules-center = mpd
-modules-right = filesystem filesystem-home alsa cpu memory eth battery date
+modules-right = filesystem alsa cpu memory eth battery date
 
 tray-position = right
 tray-padding = 3
