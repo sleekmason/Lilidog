@@ -1,3 +1,4 @@
 Add Backports,            x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer; echo $'\n\nPress any key to close.'; read -srn1",             applications-utilities
 Install dk WM,            x-terminal-emulator -T 'dk Installer' -e bash -c "dk-installer; echo $'\n\nPress any key to close.'; read -srn1",                           applications-utilities
 Install Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-utilities
+Install Polybar Panel,    x-terminal-emulator -T 'Polybar Installer' -e bash -c "polybar-installer; echo $'\n\nPress any key to close.'; read -srn1",                 applications-utilities

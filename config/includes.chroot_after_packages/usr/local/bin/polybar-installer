@@ -1,0 +1,46 @@
+#!/bin/bash
+echo ""
+read -p "   [0;33mPolybar Installer.[0m
+
+   For information: 
+   https://polybar.github.io/
+
+   This will install polybar with a working configuration in place. 
+   
+   Any configuration already in ~/.config/polybar will be overwritten.
+   Please backup ~/.config/polybar if already installed.
+   
+   Toggle both panels on and off with the keyboard:
+   ctrl + mod4 +t for tint2.
+   ctrl + mod4 + p for polybar.
+   Note - 'mod4' = windows key. - toggle off panel before switching.
+   
+   [0;32m-------------------------------------------------------------
+   
+   Please press enter to install Polybar. 
+   
+   -------------------------------------------------------------[0m
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+sudo apt update && sudo apt install polybar && 
+cp -r /usr/share/lilidog/extras/polybar ~/.config &&
+echo ""
+echo "----------------------------------------------------------------------"
+echo ""
+echo "[0;32m   Toggle both panels on and off with:
+   ctrl + mod4 +t for tint2.
+   ctrl + mod4 + p for polybar.
+   Note - 'mod4' = windows key. - toggle off panel before switching.[0m"
+echo "" 
+echo "----------------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

@@ -14,7 +14,8 @@ read -p "   [0;33mdk WM Installer.[0m
 
    To uninstall, run: 'dk-uninstaller' in a terminal.
    
-   Any configurations in ~/.config/dk will be overwritten.
+   Any files in ~/.config/dk and ~/.config/polybar will be overwritten.
+   Please backup these files if already installed and want to keep.
    
    For more information: 
    https://bitbucket.org/natemaia/dk/src/master/
@@ -35,6 +36,7 @@ cd /tmp/dk &&
 make &&
 sudo make install &&
 cp -r /usr/share/lilidog/extras/dk ~/.config &&
+cp -r /usr/share/lilidog/extras/polybar ~/.config &&
 sudo rm -r /tmp/dk/
 echo ""
 echo "----------------------------------------------------------------------"
