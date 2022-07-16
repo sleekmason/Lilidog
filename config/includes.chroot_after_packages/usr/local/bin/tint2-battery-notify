@@ -1,0 +1,10 @@
+#!/bin/bash
+# Battery and Powerstate Notifier through tint2 by sleekmason 16-Jul-2022
+#
+if test -e "/sys/module/battery";then
+tint2-bat-options
+exit
+
+else
+notify-send --urgency low 'No battery found.' ;
+fi

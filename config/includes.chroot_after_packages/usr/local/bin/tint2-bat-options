@@ -1,0 +1,26 @@
+#!/bin/bash
+# Battery and Powerstate Notifier through tint2 by sleekmason 16-Jul-2022
+#
+#
+FILE="$HOME/.config/tint2/tint2rc"
+STRING="bat1_format = %"
+if  grep -q "$STRING" "$FILE" ; then
+         notify-send --urgency low 'Removing tint2 notifications for Critical Battery at 10%, and Power Connection State.' ;
+         sed -i 's/^bat1_format.*/bat1_format =/g' "$FILE"
+         sed -i 's/^battery_low_status.*/battery_low_status = 0/g' "$FILE" 
+         sed -i 's/^battery_low_cmd.*/battery_low_cmd =/g' "$FILE"
+         sed -i 's/^battery_full_cmd.*/battery_full_cmd =/g' "$FILE"
+         sed -i 's/^ac_connected_cmd.*/ac_connected_cmd =/g' "$FILE"
+         sed -i 's/^ac_disconnected_cmd.*/ac_disconnected_cmd =/g' "$FILE"      
+ else
+          notify-send --urgency low 'Adding tint2 notifications for Critical Battery at 10%, and Power Connection State.' ;
+         sed -i 's/^bat1_format.*/bat1_format = %/g' "$FILE"
+         sed -i 's/^battery_low_status.*/battery_low_status = 10/g' "$FILE"
+         sed -i "s/^battery_low_cmd.*/battery_low_cmd = notify-send --urgency critical 'Battery Low'/g" "$FILE"
+         sed -i "s/^battery_full_cmd.*/battery_full_cmd = notify-send --urgency low 'Battery Fully Charged'/g" "$FILE"
+         sed -i "s/^ac_connected_cmd.*/ac_connected_cmd = notify-send --urgency low 'Connected To Power'/g" "$FILE"
+         sed -i "s/^ac_disconnected_cmd.*/ac_disconnected_cmd = notify-send --urgency low 'Disconnected From Power'/g" "$FILE"
+fi
+# restart tint2
+pkill -x tint2
+tint2 &
