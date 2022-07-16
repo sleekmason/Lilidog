@@ -1,0 +1,36 @@
+#!/bin/bash
+# Begin amount choice
+
+WIDTH=215
+HEIGHT=380
+
+trans="$(yad --title "Critical Battery Level" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
+--text "Please Choose A Critical\nBattery % Warning Level" --text-align=center \
+--window-icon=applications-system \
+--radiolist  --column "Select" --column "Amount" --separator=" " \
+  FALSE "5" \
+  TRUE "10" \
+  FALSE "15" \
+  FALSE "20" \
+  FALSE "25" \
+  FALSE "30" \
+  FALSE "35" \
+  FALSE "40" \
+  FALSE "50" \
+  FALSE "60" \
+  FALSE "70")"
+  trans="$(echo "$trans" | cut -d' ' -f2-)"
+ 
+# check if "Cancel" button
+if ! [[ $trans ]];
+then
+  exit 1
+fi
+
+    sed -i "s/battery_low_status.*/battery_low_status = $trans/g" ~/.config/tint2/tint2rc
+    ## Conversely, only select the first instance of background_color
+    #sed -i "0,/battery_low_status =/{s/battery_low_status.*/battery_low_status = ${trans}/}" ~/.config/tint2/tint2rc
+pkill -x tint2
+tint2 &
+
+exit 0
