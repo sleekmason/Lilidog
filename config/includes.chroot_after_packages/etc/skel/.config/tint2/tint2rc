@@ -263,7 +263,7 @@ button_font_color = #000000 100
 button_padding = 6 0
 button_background_id = 0
 button_centered = 0
-button_max_icon_size = 14
+button_max_icon_size = 16
 
 #-------------------------------------
 # Button 4
