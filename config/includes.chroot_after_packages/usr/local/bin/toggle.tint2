@@ -1,6 +1,6 @@
 #!/bin/bash
 if pgrep -xf tint2 > /dev/null; then
-    pkill -f tint2 &
+    pkill -xf tint2 &
     pkill -f nm-applet &
     pkill -f pnmixer &
     pkill -f mate-power-manager
