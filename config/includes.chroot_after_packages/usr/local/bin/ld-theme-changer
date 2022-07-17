@@ -2,21 +2,21 @@
 
 yad --title "Theming Options" --escape-ok \
 --button=gtk-close:1 --form --center --width=240 --height=450 --borders=6 \
---text="\n Quick Theme Options\n" --text-align=center \
+--text="\n Lilidog Theming Options\n" --text-align=center \
 --window-icon=applications-utilities \
     --form \
+    --field="  Quick Theme Changer!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!":FBTN "ld-themes" \
     --field="":LBL "" \
-    --field="                Quick Themes!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!":FBTN "ld-themes" \
-    --field="                     Wallpapers!org.xfce.settings.display":FBTN "feh-set-wallpaper" \
+    --field="                              Conky!conky-logomark-violet":FBTN ".config/conky/scripts/conky-chooser" \
     --field="                         Font Size!font-x-generic":FBTN "fontsize-changer" \
     --field="                         Grub BG!org.xfce.settings.editor":FBTN "x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1'" \
     --field="                           Jgmenu!jgmenu":FBTN "jg-icon-changer" \
-    --field="                              Conky!conky-logomark-violet":FBTN ".config/conky/scripts/conky-chooser" \
-    --field="                           Sounds!audio-speakers":FBTN "notification-sounds" \
     --field="                         LightDM!lightdm-gtk-greeter-settings":FBTN "gksudo lightdm-gtk-greeter-settings" \
-    --field="             Terminal Colors!gnome-terminal":FBTN "ld-term-changer" \
-    --field="          Openbox Settings!obconf":FBTN "obconf" \
+    --field="      Notification Sounds!audio-speakers":FBTN "notification-sounds" \
+    --field="         Openbox Settings!obconf":FBTN "obconf" \
     --field="             System Settings!preferences-system":FBTN "xfce4-appearance-settings" \
+    --field="             Terminal Colors!gnome-terminal":FBTN "ld-term-changer" \
+    --field="                     Wallpapers!org.xfce.settings.display":FBTN "feh-set-wallpaper" \
     --field="":LBL "" \
     --field="":LBL "" \
     --field="            Reset To Default!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!":FBTN "x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1'" \

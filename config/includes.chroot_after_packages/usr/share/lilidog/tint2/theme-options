@@ -1,13 +1,14 @@
-Quick Themes,               ld-themes,                                gpick
-Wallpapers,                 feh-set-wallpaper,                        org.xfce.settings.display
+Quick Theme Changer,        ld-themes,                                gpick
+^sep()
+Conky,                      ~/.config/conky/scripts/conky-chooser,    conky-logomark-violet
 Font Size,                  fontsize-changer,                         preferences-desktop-font
 Grub BG,                    x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1',  org.xfce.settings.editor
 Jgmenu,                     jg-icon-changer,                          jgmenu
-Conky,                      ~/.config/conky/scripts/conky-chooser,    conky-logomark-violet
-Sounds,                     notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
 Lightdm,                    gksudo lightdm-gtk-greeter-settings,      lightdm-gtk-greeter-settings
-Terminal Colors,            ld-term-changer,                          org.xfce.terminal
+Notification Sounds,        notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
 Openbox Settings,           obconf,                                   obconf
 System Settings,            xfce4-appearance-settings,                applications-system
+Terminal Colors,            ld-term-changer,                          org.xfce.terminal
+Wallpapers,                 feh-set-wallpaper,                        org.xfce.settings.display
 ^sep()
 Reset To Default,           x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/breeze-dark/actions/22/adjustrgb.svg
