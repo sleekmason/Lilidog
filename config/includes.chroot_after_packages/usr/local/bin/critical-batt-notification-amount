@@ -32,5 +32,5 @@ fi
     #sed -i "0,/battery_low_status =/{s/battery_low_status.*/battery_low_status = ${trans}/}" ~/.config/tint2/tint2rc
 pkill -x tint2
 tint2 &
-notify-send --urgency low 'Critical Battery Level Set'
+notify-send --urgency low 'Critical Battery Warning Level Set'
 exit 0
