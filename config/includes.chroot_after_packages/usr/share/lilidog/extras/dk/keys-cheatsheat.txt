@@ -1,0 +1,114 @@
+# Cheat sheet for Lilidog keybinds.
+## Note - "super" is the windows key.
+### These are the added keybinds for Lilidog use.
+
+Backgounds =       super + b
+Browser =          super + w
+Conky =            super + c
+Dmenu =            alt + d
+                   super + F2                   
+Dmenuapps =        super + F3 
+Editor =           super + e 
+File Manager =     super + f   
+Fontsize =         super + F6
+Gammy =            super + g    
+Hotcorners =       super + F8
+Jgmenu =           super + j 
+                   super + F1    
+kill window =      ctrl alt + x !! This will kill ALL open instances. Think terminal. 
+Lilidog themes =   super + F4
+Logout =           alt + z
+Music =            super + m
+Screenshot =       alt + Print
+Terminal =         super + Return
+	               super + t
+Terminal colors =  super + F5	               
+Toggle polybar =   ctrl super + p
+Toggle tint2 =     ctrl super + t
+
+#### Below are the defaults that come with the program.
+
+# dedicated volume keys
+{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+	pamixer {-i,-d} 2
+
+# dedicated backlight keys
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+	xbacklight {+10,-10}
+
+# alt volume keys
+alt + {Insert,Delete}
+	pamixer {-i,-d} 2
+
+# reload sxhkd
+alt + shift + x
+	pkill -USR1 -x sxhkd
+
+# quit dk
+alt + shift + q
+	dkcmd exit
+
+# reload dkrc
+alt + shift + r
+	dkcmd reload
+
+# restart dk
+alt + ctrl + shift + r
+	dkcmd restart
+
+# focus next or previous window
+alt + {j,k}
+	dkcmd win focus {next,prev}
+
+# close window, swap tiled window in/out of master, cycle tiled windows in place
+alt + {q,space,Tab}
+	dkcmd win {kill,swap,cycle}
+
+# toggle fullscreen and fake fullscreen (enable manipulating fullscreen window)
+{_,alt + }F11
+	dkcmd win {full,fakefull}
+
+# toggle floating or sticky
+alt + shift + {space,s}
+	dkcmd win {float,stick}
+
+# move window, signed (+/-) for relative changes
+alt + shift + {h,j,k,l}
+	dkcmd win resize {x=-20,y=+20,y=-20,x=+20}
+
+# resize window, signed (+/-) for relative changes
+alt + ctrl + {h,j,k,l}
+	dkcmd win resize {w=-20,h=+20,h=-20,w=+20}
+
+# move the active window up/down the stack
+alt + {Up,Down}
+	dkcmd win mvstack {up,down}
+
+# view, send, or follow to a workspace (by number)
+alt + {_,shift + ,ctrl + }{1-9,0}
+	dkcmd ws {view,send,follow} {1-9,10}
+
+# view, send, or follow to the next, previous, last active,
+# next non-empty, or prev non-empty workspace
+alt + {_,shift + ,ctrl + }{bracketleft,bracketright,BackSpace,Left,Right}
+	dkcmd ws {view,send,follow} {prev,next,last,prevne,nextne}
+
+# view, send, or follow to the next, previous, or last active monitor
+alt + {_,shift + ,ctrl + }{comma,period,backslash}
+	dkcmd mon {view,send,follow} {prev,next,last}
+
+# change active workspace layout
+alt + {t,r,m,g,s,w,f,u}
+	dkcmd set layout {tile,rtile,mono,grid,spiral,dwindle,none,tstack}
+
+# change number of windows in master or first stack
+alt + {_,shift + }{i,d}
+	dkcmd set {master,stack} {+1,-1}
+
+# change gap width
+alt + {equal,minus}
+	dkcmd set gap width {+5,-5}
+
+# change border widths
+alt + ctrl + {_,shift + }{equal,minus}
+	dkcmd set border {width,outer_width} {+1,-1}
