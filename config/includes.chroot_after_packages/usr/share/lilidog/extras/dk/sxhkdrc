@@ -79,7 +79,7 @@ mod4 + w
     firefox-esr
     
 # kill current window. Carefull here!
-alt + x   
+ctrl alt + x   
     xdotool getwindowfocus windowkill
     
 # Logout
