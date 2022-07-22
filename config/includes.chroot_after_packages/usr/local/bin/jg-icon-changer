@@ -45,7 +45,7 @@ then
      sed -i 's/^icon_theme =.*/icon_theme = Papirus-Dark/g' ~/.config/jgmenu/jgmenurc
 notify-send --urgency low 'Menu Icons Set To Papirus Dark'
 else
-notify-send --urgency low "Papirus icons are not currently installed"
+notify-send --urgency low "Papirus icons for menu use are not currently installed"
 fi ;;
   Light*)
     if [[ -d "/usr/share/icons/Papirus" ]]
@@ -54,7 +54,7 @@ then
      sed -i 's/^icon_theme =.*/icon_theme = Papirus/g' ~/.config/jgmenu/jgmenurc
 notify-send --urgency low 'Menu Icons Set To Papirus Light'
 else
-notify-send --urgency low "Papirus icons are not currently installed"
+notify-send --urgency low "Papirus icons for menu use are not currently installed"
 fi ;;
   Numix*)
     if [[ -d "/usr/share/icons/Numix-Circle" ]]
