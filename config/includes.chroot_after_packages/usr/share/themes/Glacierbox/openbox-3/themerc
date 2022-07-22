@@ -1,0 +1,95 @@
+!! Glacier by sleekmason 18 July 2022
+!! Based on Onyx-Citrus by Dana Jansens
+
+!! Menu background
+menu.items.bg: flat gradient vertical
+menu.items.bg.color: #A9C8CC
+menu.items.bg.colorTo: #A9C8CC
+menu.separator.color: #5B7575
+
+!! Menu text
+menu.items.text.color: #0D0B0B
+menu.items.justify: left
+menu.items.disabled.text.color: #545E59
+
+!! Menu title
+menu.title.bg: raised splitvertical gradient
+menu.title.bg.color: #9FA8A8
+menu.title.bg.colorTo: #9FA8A8
+menu.title.text.color: #0D0B0B
+menu.title.text.justify: center
+
+!! Selected menu item
+menu.items.active.bg: raised vertical gradient
+menu.items.active.bg.color: #82B04D
+menu.items.active.bg.colorTo: #82B04D
+menu.items.active.text.color: #030500
+
+!! Titlebar
+window.active.title.bg: raised vertical gradient
+window.active.title.bg.color: #93BABA
+window.active.title.bg.colorTo: #6B8C8C
+window.inactive.title.bg: flat splitvertical gradient
+window.inactive.title.bg.color: #638282
+window.inactive.title.bg.colorTo: #638282
+
+!! Titlebar text
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #050404
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #303332
+
+!! Window buttons
+window.*.button.*.bg: parentrelative
+window.active.button.*.hover.bg: flat splitvertical gradient border
+window.inactive.button.*.hover.bg: parentrelative
+window.*.button.*.pressed.bg: flat splitvertical gradient border
+
+window.active.button.*.hover.bg.color: #8CBF52
+window.active.button.*.hover.bg.colorTo: #8CBF52
+window.active.button.*.hover.bg.border.color: #173B3D
+
+window.active.button.*.pressed.bg.color: #506666
+window.active.button.*.pressed.bg.colorTo: #506666
+window.active.button.*.pressed.image.color: #C3E0E0
+window.active.button.*.pressed.bg.border.color: #001F29
+window.inactive.button.*.pressed.bg.color: #ffaa64
+window.inactive.button.*.pressed.bg.colorTo: #ffaa64
+window.inactive.button.*.pressed.image.color: #C3E0E0
+window.inactive.button.*.pressed.bg.border.color: #658282
+
+window.active.button.*.image.color: #000000
+window.active.button.disabled.image.color: #577070
+window.inactive.button.*.image.color: #3A3D3C
+window.inactive.button.disabled.image.color: #779999
+
+!! Borders
+window.active.border.color: #759696
+window.inactive.border.color: #5B7878
+window.inactive.title.separator.color: #729494
+border.width: 1
+padding.width: 1
+window.handle.width: 3
+window.active.client.color:  #B8D4D4
+window.inactive.client.color:  #6A8585
+window.client.padding.width: 1
+window.client.padding.height: 1
+menu.border.color: #749696
+menu.overlap: 0
+
+!! Handles
+window.active.handle.bg: raised
+window.active.handle.bg.color: #749696
+window.active.grip.bg: parentrelative
+window.inactive.handle.bg: raised
+window.inactive.handle.bg.color: #678585
+window.inactive.grip.bg: parentrelative
+
+!! Font shadows
+!! menu.items.font:shadow=y:shadowtint=30
+
+!! On-screen displays
+osd.bg: gradient vertical flat
+osd.bg.color: #87ADAD
+osd.bg.colorTo: #779999

@@ -1,0 +1,5 @@
+[Scheme]
+Name=Glacier
+ColorBackground=#22212f2f3030
+ColorForeground=#b1b1d6d6d6d6
+ColorPalette=rgb(0,0,0);rgb(191,40,61);rgb(0,144,23);rgb(222,77,0);rgb(0,0,170);rgb(170,0,170);rgb(0,184,184);rgb(170,170,170);rgb(0,191,191);rgb(102,188,3);rgb(3,188,3);rgb(255,255,85);rgb(63,181,189);rgb(255,85,255);rgb(85,255,255);rgb(255,255,255)

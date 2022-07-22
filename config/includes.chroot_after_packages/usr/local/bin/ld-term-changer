@@ -15,7 +15,7 @@ yad --title "Term Themes" --width=180 --height=580 --escape-ok \
     --field="       Oceanic!/usr/share/xfce4/terminal/icons/paw-oceanic.png!":FBTN "xfce4-term-colors oceanic" \
     --field="         Taupe!/usr/share/xfce4/terminal/icons/paw-taupe.png!":FBTN "xfce4-term-colors lilidog-taupe" \
     --field="           Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":FBTN "xfce4-term-colors lilidog-slate" \
-    --field="            Clay!/usr/share/xfce4/terminal/icons/paw-clay.png!":FBTN "xfce4-term-colors lilidog-clay" \
-    --field="           Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":FBTN "xfce4-term-colors lilidog-grey" \
-    --field="          Light!/usr/share/xfce4/terminal/icons/paw-light.png!":FBTN "xfce4-term-colors lilidog-light" \
+    --field="        Glacier!/usr/share/xfce4/terminal/icons/paw-glacier.png!":FBTN "xfce4-term-colors glacier" \
+    --field="            Grey!/usr/share/xfce4/terminal/icons/paw-grey.png!":FBTN "xfce4-term-colors lilidog-grey" \
+    --field="           Light!/usr/share/xfce4/terminal/icons/paw-light.png!":FBTN "xfce4-term-colors lilidog-light" \
     --field="         Bright!/usr/share/xfce4/terminal/icons/paw-bright.png!":FBTN "xfce4-term-colors lilidog-bright"
