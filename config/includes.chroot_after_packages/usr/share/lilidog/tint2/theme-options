@@ -3,11 +3,12 @@ Quick Theme Changer,        ld-themes,                                gpick
 Conky,                      ~/.config/conky/scripts/conky-chooser,    conky-logomark-violet
 Font Size,                  fontsize-changer,                         preferences-desktop-font
 Grub BG,                    x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1',  org.xfce.settings.editor
+Icons,                      xfce4-appearance-settings,                preferences-system
 Jgmenu,                     jg-icon-changer,                          jgmenu
 Lightdm,                    gksudo lightdm-gtk-greeter-settings,      lightdm-gtk-greeter-settings
-Notification Sounds,        notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
-Openbox Settings,           obconf,                                   obconf
-System Settings,            xfce4-appearance-settings,                applications-system
+Openbox,                    obconf,                                   obconf
+Sounds,                     notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
+System Settings,            xfce4-settings-manager,                   applications-system
 Terminal Colors,            ld-term-changer,                          org.xfce.terminal
 Wallpapers,                 feh-set-wallpaper,                        org.xfce.settings.display
 ^sep()

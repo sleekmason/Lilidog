@@ -10,11 +10,12 @@ yad --title "Theming Options" --escape-ok \
     --field="                              Conky!conky-logomark-violet":FBTN ".config/conky/scripts/conky-chooser" \
     --field="                         Font Size!font-x-generic":FBTN "fontsize-changer" \
     --field="                         Grub BG!org.xfce.settings.editor":FBTN "x-terminal-emulator -T 'Grub Background Changer' -e bash -c 'grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1'" \
+    --field="                               Icons!preferences-other":FBTN "xfce4-appearance-settings" \
     --field="                           Jgmenu!jgmenu":FBTN "jg-icon-changer" \
     --field="                         LightDM!lightdm-gtk-greeter-settings":FBTN "gksudo lightdm-gtk-greeter-settings" \
-    --field="      Notification Sounds!audio-speakers":FBTN "notification-sounds" \
-    --field="         Openbox Settings!obconf":FBTN "obconf" \
-    --field="             System Settings!preferences-system":FBTN "xfce4-appearance-settings" \
+    --field="                        Openbox!obconf":FBTN "obconf" \
+    --field="                           Sounds!audio-speakers":FBTN "notification-sounds" \
+    --field="             System Settings!preferences-system":FBTN "xfce4-settings-manager" \
     --field="             Terminal Colors!gnome-terminal":FBTN "ld-term-changer" \
     --field="                     Wallpapers!org.xfce.settings.display":FBTN "feh-set-wallpaper" \
     --field="":LBL "" \
