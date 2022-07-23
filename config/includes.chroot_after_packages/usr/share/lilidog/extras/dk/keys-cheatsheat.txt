@@ -2,6 +2,8 @@
 ## Note - "super" is the windows key.
 ### These are the added keybinds for Lilidog use.
 
+This List =        super + l
+
 Backgounds =       super + b
 Browser =          super + w
 Conky =            super + c
@@ -21,8 +23,8 @@ Logout =           alt + z
 Music =            super + m
 Screenshot =       alt + Print
 Terminal =         super + Return
-	               super + t
-Terminal colors =  super + F5	               
+	           super + t
+Terminal Colors =  super + F5	               
 Toggle polybar =   ctrl super + p
 Toggle tint2 =     ctrl super + t
 
