@@ -23,7 +23,7 @@ Logout =           alt + z
 Music =            super + m
 Screenshot =       alt + Print
 Terminal =         super + Return
-	           super + t
+	               super + t
 Terminal Colors =  super + F5	               
 Toggle polybar =   ctrl super + p
 Toggle tint2 =     ctrl super + t
