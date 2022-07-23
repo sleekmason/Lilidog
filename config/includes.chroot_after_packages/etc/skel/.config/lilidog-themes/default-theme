@@ -36,7 +36,7 @@ xfce4-term-colors oceanic
 sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/terminalrc
 
 ## Set Icon Theme
-xfconf-query -c xsettings -p /Net/IconThemeName -s "breeze-dark"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Green"
 sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
 sed -i 's/^icon_theme =.*/icon_theme = breeze-dark/g' ~/.config/jgmenu/jgmenurc
 
