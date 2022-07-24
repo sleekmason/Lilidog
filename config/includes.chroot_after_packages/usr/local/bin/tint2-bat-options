@@ -12,8 +12,6 @@ if  grep -q "$STRING" "$FILE" ; then
          sed -i 's/^battery_full_cmd.*/battery_full_cmd =/g' "$FILE"
          sed -i 's/^ac_connected_cmd.*/ac_connected_cmd =/g' "$FILE"
          sed -i 's/^ac_disconnected_cmd.*/ac_disconnected_cmd =/g' "$FILE"
-pkill -x tint2
-tint2 &      
  else
           notify-send --urgency low 'Adding tint2 notifications for Critical Battery and Power Connection State.' ;
          sed -i 's/^bat1_format.*/bat1_format = %/g' "$FILE"
@@ -22,9 +20,6 @@ tint2 &
          sed -i "s/^battery_full_cmd.*/battery_full_cmd = notify-send --urgency low 'Battery Fully Charged'/g" "$FILE"
          sed -i "s/^ac_connected_cmd.*/ac_connected_cmd = notify-send --urgency low 'Connected To Power'/g" "$FILE"
          sed -i "s/^ac_disconnected_cmd.*/ac_disconnected_cmd = notify-send --urgency low 'Disconnected From Power'/g" "$FILE"
+fi
 pkill -x tint2
 tint2 &
-sleep1
-critical-batt-notification-amount
-fi
-

@@ -1,10 +1,21 @@
 #!/bin/bash
-# Battery and Powerstate Notifier through tint2 by sleekmason 16-Jul-2022
-#
 if test -e "/sys/module/battery";then
-tint2-bat-options
-exit
+FILE="$HOME/.config/tint2/tint2rc"
+STRING="bat1_format = %"
+if  grep -q "$STRING" "$FILE" ; then
 
+notify-send --urgency low 'Extra notifications are currently enabled'
 else
-notify-send --urgency low 'No battery found.' ;
+notify-send --urgency low 'Extra notifications are currently disabled'
+fi
+yad --title "Extra Notifications" --button=gtk-close:1 --form --center --width=280 --borders=8 \
+--height=160 --text="\nAdditional Battery And Power\nNotifications For Laptop Use. \n" --text-align=center \
+--window-icon=applications-system \
+    --form \
+    --field="   Extra Notifications On/Off!battery-full-charging":FBTN "bash -c 'tint2-bat-options'" \
+    --field="   Critical Threshold % Level!emblem-system":FBTN "bash -c 'critical-batt-notification-amount '" \
+    --field="":LBL "" \
+exit
+else
+notify-send --urgency low 'No Battery Found.' ;
 fi
