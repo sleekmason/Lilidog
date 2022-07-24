@@ -10,7 +10,7 @@ notify-send --urgency low 'Extra notifications are currently disabled'
 fi
 yad --title "Extra Notifications" --button=gtk-close:1 --form --center --width=280 --borders=8 \
 --height=160 --text="\nAdditional Battery And Power\nNotifications For Laptop Use. \n" --text-align=center \
---window-icon=applications-system \
+--window-icon=utilities-system-monitor \
     --form \
     --field="   Extra Notifications On/Off!battery-full-charging":FBTN "bash -c 'tint2-bat-options'" \
     --field="   Critical Threshold % Level!emblem-system":FBTN "bash -c 'critical-batt-notification-amount '" \
