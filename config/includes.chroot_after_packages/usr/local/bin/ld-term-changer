@@ -13,6 +13,7 @@ yad --title "Term Themes" --width=180 --height=580 --escape-ok \
     --field="  Dark Earth!/usr/share/xfce4/terminal/icons/paw-dark-earth.png!":FBTN "xfce4-term-colors dark-earth" \
     --field="      Crimson!/usr/share/xfce4/terminal/icons/paw-crimson.png!":FBTN "xfce4-term-colors crimson" \
     --field="       Oceanic!/usr/share/xfce4/terminal/icons/paw-oceanic.png!":FBTN "xfce4-term-colors oceanic" \
+    --field="          Anolis!/usr/share/xfce4/terminal/icons/paw-anolis.png!":FBTN "xfce4-term-colors anolis" \
     --field="         Taupe!/usr/share/xfce4/terminal/icons/paw-taupe.png!":FBTN "xfce4-term-colors lilidog-taupe" \
     --field="           Slate!/usr/share/xfce4/terminal/icons/paw-slate.png!":FBTN "xfce4-term-colors lilidog-slate" \
     --field="        Glacier!/usr/share/xfce4/terminal/icons/paw-glacier.png!":FBTN "xfce4-term-colors glacier" \
