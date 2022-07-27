@@ -5,7 +5,7 @@ yad --title "Theming Options" --escape-ok \
 --text="\n Lilidog Theming Options\n" --text-align=center \
 --window-icon=applications-utilities \
     --form \
-    --field="  Quick Theme Changer!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!":FBTN "ld-themes" \
+    --field="                  Auto Themes!$HOME/.config/lilidog-themes/icons/paw-theme-18.png!":FBTN "ld-themes" \
     --field="":LBL "" \
     --field="                              Conky!conky-logomark-violet":FBTN ".config/conky/scripts/conky-chooser" \
     --field="                         Font Size!font-x-generic":FBTN "fontsize-changer" \
