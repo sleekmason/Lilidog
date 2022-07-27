@@ -1,4 +1,6 @@
+Install Blender,           x-terminal-emulator -T 'Blender Installer' -e bash -c "blender-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-graphics
 Install GIMP,              x-terminal-emulator -T 'GIMP Installer' -e bash -c "gimp-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-graphics
+Install Gpicview,          x-terminal-emulator -T 'Gpicview Installer' -e bash -c "gpicview-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-graphics
 ^sep()
 Install Breeze Icons,      x-terminal-emulator -T 'Breeze Icon Theme Installer' -e bash -c "breeze-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-graphics
 Install Faenza Icons,      x-terminal-emulator -T 'Faenza Icon Theme Installer' -e bash -c "faenza-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-graphics

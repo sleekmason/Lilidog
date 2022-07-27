@@ -1,2 +1,3 @@
 Install Joplin Note,      x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-office
 Install Libreoffice Full Suite,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-office
+Install Libreoffice Writer,      x-terminal-emulator -T 'Libreoffice Writer Installer' -e bash -c "libreoffice-writer-installer; echo $'\n\nPress any key to close.'; read -srn1",    applications-office

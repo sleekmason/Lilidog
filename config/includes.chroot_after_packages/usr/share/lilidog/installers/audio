@@ -1,0 +1,3 @@
+Install Audacious,       x-terminal-emulator -T 'Audacious Installer' -e bash -c "audacious-installer; echo $'\n\nPress any key to close.'; read -srn1",          /usr/share/icons/gnome/22x22/devices/audio-speakers.png
+Install Audacity,        x-terminal-emulator -T 'Audacity Installer' -e bash -c "audacity-installer; echo $'\n\nPress any key to close.'; read -srn1",            /usr/share/icons/gnome/22x22/devices/audio-speakers.png
+Install Pragha,          x-terminal-emulator -T 'Pragha Installer' -e bash -c "pragha-installer; echo $'\n\nPress any key to close.'; read -srn1",                /usr/share/icons/gnome/22x22/devices/audio-speakers.png
