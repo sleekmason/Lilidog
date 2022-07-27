@@ -1,16 +1,16 @@
 #!/bin/bash
 # Begin amount choice
 
-WIDTH=215
+WIDTH=300
 HEIGHT=380
 
-trans="$(yad --title "Critical Battery Level" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
---text "Please Choose A Critical\nBattery % Warning Level" --text-align=center \
+trans="$(yad --title "Low Battery Level" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
+--text "\nLow Battery Warning Threshhold\nDefault Threshhold Set To 15%\n" --text-align=center \
 --window-icon=applications-system \
---radiolist  --column "Select" --column "Amount" --separator=" " \
+--radiolist  --column "Select" --column "Amount %" --separator=" " \
   FALSE "5" \
-  TRUE "10" \
-  FALSE "15" \
+  FALSE "10" \
+  TRUE "15" \
   FALSE "20" \
   FALSE "25" \
   FALSE "30" \

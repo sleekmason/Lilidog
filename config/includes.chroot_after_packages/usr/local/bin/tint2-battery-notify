@@ -1,20 +1,24 @@
 #!/bin/bash
 if test -e "/sys/module/battery";then
 FILE="$HOME/.config/tint2/tint2rc"
-STRING="bat1_format = %"
+STRING="battery_low_status = 0"
 if  grep -q "$STRING" "$FILE" ; then
 
-notify-send --urgency low 'Extra notifications are currently enabled'
+notify-send --urgency low 'Desktop battery notifications currently DISABLED.'
 else
-notify-send --urgency low 'Extra notifications are currently disabled'
+notify-send --urgency low 'Desktop battery notifications currently ENABLED.'
 fi
-yad --title "Extra Notifications" --button=gtk-close:1 --form --center --width=280 --borders=8 \
---height=160 --text="\nAdditional Battery And Power\nNotifications For Laptop Use. \n" --text-align=center \
+yad --title "Extra Notifications" --button=gtk-close:1 --form --center --width=300 --borders=16 \
+--height=160 --text="\nExtra Battery And Power Notifications\n" --text-align=center \
 --window-icon=utilities-system-monitor \
     --form \
-    --field="   Extra Notifications On/Off!battery-full-charging":FBTN "bash -c 'tint2-bat-options'" \
-    --field="   Critical Threshold % Level!emblem-system":FBTN "bash -c 'critical-batt-notification-amount '" \
+    --field="      Extra Notifications On/Off!battery-full-charging":FBTN "bash -c 'tint2-battery-options'" \
+    --field="         Low Battery Threshhold!emblem-system":FBTN "bash -c 'tint2-low-battery-level '" \
     --field="":LBL "" \
+    --field="":LBL "" \
+    --field="       Tint2 Battery Text On/Off!battery-full-charging":FBTN "bash -c 'tint2-panel-battery-options'" \
+    --field="       Tint2 Battery Threshhold!emblem-system":FBTN "bash -c 'tint2-panel-battery-level'" \
+    --field="     Tint2 Battery Color Toggle!org.xfce.settings.color":FBTN "bash -c 'tint2-battery-color'" \
 exit
 else
 notify-send --urgency low 'No Battery Found.' ;

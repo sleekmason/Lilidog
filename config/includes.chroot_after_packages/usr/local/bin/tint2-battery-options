@@ -6,7 +6,7 @@ FILE="$HOME/.config/tint2/tint2rc"
 STRING="battery_low_status = 0"
 if  grep -q "$STRING" "$FILE" ; then
  notify-send --urgency low 'Adding notifications for critical battery and power connection state.' ;
-         sed -i 's/^battery_low_status.*/battery_low_status = 20/g' "$FILE"
+         sed -i 's/^battery_low_status.*/battery_low_status = 15/g' "$FILE"
          sed -i "s/^battery_low_cmd.*/battery_low_cmd = notify-send --urgency critical 'Battery Low'/g" "$FILE"
          sed -i "s/^battery_full_cmd.*/battery_full_cmd = notify-send --urgency low 'Battery Fully Charged'/g" "$FILE"
          sed -i "s/^ac_connected_cmd.*/ac_connected_cmd = notify-send --urgency low 'Connected To Power'/g" "$FILE"

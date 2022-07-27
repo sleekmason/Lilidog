@@ -1,0 +1,38 @@
+#!/bin/bash
+# Begin amount choice
+
+WIDTH=300
+HEIGHT=380
+
+trans="$(yad --title "Threshhold Level" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
+--text "\nTint2 Battery Level Threshhold\nDefault Set To 101 - Always On\n" --text-align=center \
+--window-icon=applications-system \
+--radiolist  --column "Select" --column "Amount %" --separator=" " \
+  FALSE "5" \
+  FALSE "10" \
+  FALSE "15" \
+  FALSE "20" \
+  FALSE "25" \
+  FALSE "30" \
+  FALSE "40" \
+  FALSE "50" \
+  FALSE "60" \
+  FALSE "70" \
+  FALSE "80" \
+  FALSE "90" \
+  TRUE "101")"
+  trans="$(echo "$trans" | cut -d' ' -f2-)"
+ 
+# check if "Cancel" button
+if ! [[ $trans ]];
+then
+  exit 1
+fi
+
+    sed -i "s/battery_hide.*/battery_hide = $trans/g" ~/.config/tint2/tint2rc
+    ## Conversely, only select the first instance.
+    #sed -i "0,/battery_hide =/{s/battery_hide.*/battery_hide = ${trans}/}" ~/.config/tint2/tint2rc
+pkill -x tint2
+tint2 &
+notify-send --urgency low 'Tint2 Battery Notification Threshhold Level Set.'
+exit 0
