@@ -9,7 +9,7 @@ Firefox
 Thunderbird
 Transmission
 Mousepad
-Pragha
+Audacious
 Smplayer
 Writer
 Gimp
@@ -35,7 +35,7 @@ case ${cmd%% *} in
 	Thunderbird)	exec thunderbird ;;
 	Transmission)   exec transmission-gtk ;;
     Mousepad)       exec mousepad ;;
-	Pragha) 		exec pragha ;;
+	Audacious) 		exec audacious ;;
 	Smplayer)		exec smplayer ;;
 	Writer)			exec libreoffice ;;
 	Gimp)			exec gimp ;;

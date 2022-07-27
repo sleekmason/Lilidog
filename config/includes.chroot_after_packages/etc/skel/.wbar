@@ -22,10 +22,6 @@ i: /usr/share/icons/hicolor/128x128/apps/thunderbird.png
 c: thunderbird
 t: E-Mail
 
-i: /usr/share/icons/hicolor/128x128/apps/pragha.png
-c: pragha
-t: Music
-
 i: /usr/share/icons/hicolor/128x128/apps/org.xfce.settings.default-applications.png
 c: wbar-config
 t: Config
