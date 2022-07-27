@@ -2,14 +2,15 @@
 echo ""
 echo ""
 echo ""
-read -p "    [0;33mGpicview Installer[0m
+read -p "   [0;33mLibreoffice Writer Installer[0m
 
-    This will install Gpicview, a simple image viewer. A new menu 
-    entry will be placed in the Quick Grab section of the menu.
+   This will install the Libreoffice Writer package without the 
+   full suite plus a few sensible extras. Hunspell will default 
+   to US EN. Other languages available.
    
    --------------------------------------------------------------
    
-   [0;32mPlease press enter to install Gpicview.[0m
+   [0;32mPlease press enter to install Libreoffice Writer.[0m
    
    --------------------------------------------------------------
    
@@ -17,9 +18,10 @@ read -p "    [0;33mGpicview Installer[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo "" 
-sudo apt update && sudo apt install gpicview &&
-sed -i '/Gpicview,           gpicview,                          gpicview/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Gpicview,           gpicview,                          gpicview' ~/.config/jgmenu/mymenu.csv &&
+sudo apt update && sudo apt install libreoffice-writer libreoffice-gtk3 \
+hunspell-en-us hyphen-en-us &&
+sed -i '/Libreoffice,             libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Libreoffice,             libreoffice,                       libreoffice-writer' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
 echo ""
 echo ""
@@ -28,7 +30,7 @@ echo "-----------------------------------------------------------"
 echo ""
 echo "[0;32mAll Finished![0m"
 echo ""
-echo "[0;33mYou should find a Gpicview entry in the quickgrab menu [0m" 
+echo "[0;33mYou should find a Libreoffice entry in the quickgrab menu [0m" 
 echo "" 
 echo "" 
 echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
