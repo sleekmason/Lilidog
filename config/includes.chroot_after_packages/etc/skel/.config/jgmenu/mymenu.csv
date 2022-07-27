@@ -24,9 +24,9 @@ Writer,             libreoffice,                       libreoffice-writer
 Geany,              geany,	                       geany
 Smplayer,           smplayer,                          smplayer
 Mousepad,           mousepad,                          accessories-text-editor
+Audacious,          audacious,                         audacious
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
 Gpicview,           gpicview,                          gpicview
-Pragha,             pragha,                            pragha
 Development,^checkout(development),applications-development
 
 ^tag(development)
