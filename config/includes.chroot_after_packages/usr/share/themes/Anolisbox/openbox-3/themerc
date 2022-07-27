@@ -16,7 +16,7 @@ menu.items.disabled.text.color: #4C6E70
 menu.title.bg: raised splitvertical gradient
 menu.title.bg.color: #122426
 menu.title.bg.colorTo: #122426
-menu.title.text.color: #ADD4D4
+menu.title.text.color: #BDDEDE
 menu.title.text.justify: center
 
 !! Selected menu item
@@ -27,8 +27,8 @@ menu.items.active.text.color: #CEF5F5
 
 !! Titlebar
 window.active.title.bg: raised vertical gradient
-window.active.title.bg.color: #6B9441
-window.active.title.bg.colorTo: #2A4715
+window.active.title.bg.color: #678F3F
+window.active.title.bg.colorTo: #264213
 window.inactive.title.bg: flat splitvertical gradient
 window.inactive.title.bg.color: #1A2A2B
 window.inactive.title.bg.colorTo: #152426
@@ -36,7 +36,7 @@ window.inactive.title.bg.colorTo: #152426
 !! Titlebar text
 window.label.text.justify: center
 window.active.label.bg: parentrelative
-window.active.label.text.color: #C1EBEB
+window.active.label.text.color: #B8E0E0
 window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #90A9AD
 
