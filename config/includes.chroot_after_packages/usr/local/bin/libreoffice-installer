@@ -23,8 +23,8 @@ read -p "   [0;33mLibreoffice Full Suite Installer[0m
 echo "" 
 sudo apt update && sudo apt install libreoffice libreoffice-gtk3 \
 hunspell-en-us hyphen-en-us libpaper-utils &&
-sed -i '/Libreoffice,             libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Libreoffice,             libreoffice,                       libreoffice-writer' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Libreoffice,        libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Libreoffice,        libreoffice,                       libreoffice-writer' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
 echo ""
 echo ""
