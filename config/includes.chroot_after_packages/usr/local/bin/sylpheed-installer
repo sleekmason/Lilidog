@@ -1,0 +1,46 @@
+#!/bin/bash
+echo ""
+echo ""
+read -p "    [0;33mSylpheed Installer[0m
+
+    This will install the small email program Sylpheed. You may need an 
+    app password from google if using gmail. A new entry will be placed
+    in the main section of the menu. [0;33mhttps://sylpheed.sraoss.jp/en/[0m
+   
+   --------------------------------------------------------------
+   
+   [0;32mPlease press enter to install Sylpheed.[0m
+   
+   --------------------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo "" 
+sudo apt update && sudo apt install sylpheed  sylpheed-i18n sylfilter sylpheed-plugins &&
+sed -i '/Sylpheed,            sylpheed,                           sylpheed/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '5i Sylpheed,            sylpheed,                           sylpheed' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo ""
+echo ""
+echo ""
+echo "-----------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mYou should find a Sylpheed entry in the main menu [0m" 
+echo "" 
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "-----------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

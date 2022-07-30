@@ -1,3 +1,10 @@
-Install Joplin Note,      x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",                     applications-office
-Install Libreoffice Full Suite,      x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-office
+Install Abiword Writer,          x-terminal-emulator -T 'Abiword Writer Installer' -e bash -c "abiword-writer-installer; echo $'\n\nPress any key to close.'; read -srn1",            applications-office
+Install Joplin Note,             x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-office
+Install Pluma Editor,            x-terminal-emulator -T 'Pluma Editor Installer' -e bash -c "pluma-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-office
+^sep()
+Install Libreoffice Calc,        x-terminal-emulator -T 'Libreoffice Calc Installer' -e bash -c "libreoffice-calc-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-office
+Install Libreoffice Draw,        x-terminal-emulator -T 'Libreoffice Draw Installer' -e bash -c "libreoffice-draw-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-office
+Install Libreoffice Impress,     x-terminal-emulator -T 'Libreoffice Impress Installer' -e bash -c "libreoffice-impress-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-office
+Install Libreoffice Math,        x-terminal-emulator -T 'Libreoffice Math Installer' -e bash -c "libreoffice-math-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-office
 Install Libreoffice Writer,      x-terminal-emulator -T 'Libreoffice Writer Installer' -e bash -c "libreoffice-writer-installer; echo $'\n\nPress any key to close.'; read -srn1",    applications-office
+Install Libreoffice Full Suite,  x-terminal-emulator -T 'Libreoffice Installer' -e bash -c "libreoffice-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-office

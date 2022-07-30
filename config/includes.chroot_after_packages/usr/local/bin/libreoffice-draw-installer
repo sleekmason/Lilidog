@@ -1,0 +1,50 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "   [0;33mLibreoffice Draw Installer[0m
+
+   This will install the Libreoffice Draw program with gtk support and
+   add the entry to the existing Libreoffce suite if installed. Please
+   Note Libreoffice-impress will also be installed for Libreoffice draw
+   to function correctly without the full suite.
+   
+   
+   --------------------------------------------------------------
+   
+   [0;32mPlease press enter to install Libreoffice Draw.[0m
+   
+   --------------------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo "" 
+sudo apt update && sudo apt install --install-recommends libreoffice-draw libreoffice-impress libreoffice-gtk3 \
+hunspell-en-us hyphen-en-us libpaper-utils &&
+sed -i '/Libreoffice,        libreoffice,                       libreoffice-writer/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Libreoffice,        libreoffice,                       libreoffice-writer' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo ""
+echo ""
+echo ""
+echo "-----------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mYou should find a Libreoffice entry in the quickgrab menu [0m" 
+echo "" 
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "-----------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
