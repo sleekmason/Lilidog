@@ -6,7 +6,6 @@ Geany
 Thunar
 Terminal
 Firefox
-Thunderbird
 Transmission
 Mousepad
 Audacious
@@ -32,7 +31,6 @@ case ${cmd%% *} in
 	Thunar)		    exec thunar ;;
 	Terminal)		exec x-terminal-emulator ;;
 	Firefox)		exec firefox ;;
-	Thunderbird)	exec thunderbird ;;
 	Transmission)   exec transmission-gtk ;;
     Mousepad)       exec mousepad ;;
 	Audacious) 		exec audacious ;;
