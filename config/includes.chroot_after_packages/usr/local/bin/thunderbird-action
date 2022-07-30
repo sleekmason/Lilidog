@@ -1,7 +1,9 @@
 #!/bin/bash
 # call thunderbird with -compose option and attach files as selected in pcmanfm
 # called by .desktop in /home/my_username/.local/share/file-manager/actions
-
+if ! [ -x "$(command -v thunderbird)" ]; then
+  notify-send --urgency low 'Please install Thunderbird Mail to use this function.'
+else
 args=("$@")
 
 new_string = ""
@@ -15,3 +17,5 @@ done
 new_string="${new_string/,file:/file:}"
 
 thunderbird -compose "attachment='$new_string'"
+  exit 1
+fi
