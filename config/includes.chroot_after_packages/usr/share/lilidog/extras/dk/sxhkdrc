@@ -56,6 +56,14 @@ ctrl mod4 + p
 ctrl mod4 + t
     toggle.tint2
     
+# Toggle to Glacier
+mod4 + y
+   "$HOME/.config/lilidog-themes/glacier-theme"
+
+# Toggle to Anolis
+mod4 + u
+   "$HOME/.config/lilidog-themes/anolis-theme"
+
 # terminal
 mod4 + Return
 	xfce4-terminal
