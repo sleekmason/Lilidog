@@ -1,9 +1,10 @@
 Auto Themes,                ld-themes,                                gpick
 Font Sizes,                 fontsize-changer,                         preferences-desktop-font
+LD Installers,              ld-installers,                            applications-utilities                             
 Menu Icons,                 jg-icon-changer,                          jgmenu
 Sounds,                     notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
 System Icons,               xfce4-appearance-settings,                preferences-system
-Terminal,                   ld-term-changer,                          org.xfce.terminal
+Terminal Colors,            ld-term-changer,                          org.xfce.terminal
 Wallpapers,                 feh-set-wallpaper,                        org.xfce.settings.display
 ^sep()
-Reset To Default,           x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/breeze-dark/actions/22/adjustrgb.svg
+Reset Theme,           x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       /usr/share/icons/breeze-dark/actions/22/adjustrgb.svg
