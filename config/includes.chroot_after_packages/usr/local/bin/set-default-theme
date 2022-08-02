@@ -18,7 +18,7 @@ read -p "   Total Theme Reset
       
    Or close this terminal window to quit." ;
 echo ""
-~/.config/lilidog-themes/default-theme
+~/.config/lilidog-themes/default
 echo ""
 echo ""
 echo ""
