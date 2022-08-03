@@ -31,11 +31,11 @@ ctrl mod4 + t
 
 # Toggle to Glacier
 mod4 + y
-   "$HOME/.config/lilidog-themes/glacier-theme"
+   "$HOME/.config/lilidog-themes/Glacier"
 
 # Toggle to Anolis
 mod4 + u
-   "$HOME/.config/lilidog-themes/anolis-theme"
+   "$HOME/.config/lilidog-themes/Anolis"
     
 # terminal
 mod4 + Return
