@@ -15,6 +15,7 @@ yad --title "Quick Themes" --escape-ok --borders=14 \
     --field="       Crimson!$HOME/.config/lilidog-themes/icons/paw-crimson.png!":FBTN "$HOME/.config/lilidog-themes/Crimson" \
     --field="        Oceanic!$HOME/.config/lilidog-themes/icons/paw-oceanic.png!":FBTN "$HOME/.config/lilidog-themes/Oceanic" \
     --field="           Anolis!$HOME/.config/lilidog-themes/icons/paw-anolis.png!":FBTN "$HOME/.config/lilidog-themes/Anolis" \
+    --field="     Conanolis!$HOME/.config/lilidog-themes/icons/paw-anolis.png!":FBTN "$HOME/.config/lilidog-themes/Conanolis" \
     --field="           Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":FBTN "$HOME/.config/lilidog-themes/Taupe" \
     --field="             Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":FBTN "$HOME/.config/lilidog-themes/Slate" \
     --field="          Glacier!$HOME/.config/lilidog-themes/icons/paw-glacier.png!":FBTN "$HOME/.config/lilidog-themes/Glacier" \
