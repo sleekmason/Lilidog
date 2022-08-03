@@ -17,7 +17,7 @@ read -p "   [0;33mPrinter Setup Installer.[0m
    
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
-sudo apt update && sudo apt install hplip system-config-printer \
+sudo apt update && sudo apt install hplip system-config-printer cups-pk-helper cups-browsed cups-client cups-core-drivers \
 system-config-printer-udev sane-utils xsane printer-driver-all printer-driver-brlaser \
 printer-driver-c2050 printer-driver-c2esp printer-driver-cjet printer-driver-cups-pdf \
 printer-driver-dymo printer-driver-escpr printer-driver-foo2zjs printer-driver-fujixerox \
