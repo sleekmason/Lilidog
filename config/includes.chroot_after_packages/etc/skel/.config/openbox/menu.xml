@@ -18,11 +18,6 @@
 				<execute>x-www-browser</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/thunderbird/chrome/icons/default/default48.png" label="Thunderbird">
-			<action name="Execute">
-				<execute>thunderbird</execute>
-			</action>
-		</item>
 		<separator/>
 		<menu icon="/usr/share/icons/gnome/48x48/categories/applications-other.png" id="root-menu-594711" label="Quick Grab">
 			<menu execute="pipe-recent-files" icon="/usr/share/icons/gnome/32x32/places/folder.png" id="ID41" label="Recent Files"/>
