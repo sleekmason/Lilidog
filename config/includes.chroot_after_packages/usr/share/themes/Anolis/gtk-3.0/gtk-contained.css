@@ -2482,8 +2482,8 @@ notebook > header {
         border-color: transparent;
         background-color: transparent; }
     notebook > header tab:checked {
-      color: #BFE3E3;
-      background-color: shade(#29494D, 1.05);
+      color: #C5EBEB;
+      background-color: shade(#416629, 1.05);
       border-width: 1px 1px 0 1px; }
       notebook > header tab:checked:backdrop {
         background-color: #132426; }
