@@ -8,7 +8,7 @@ Terminal
 Firefox
 Transmission
 Mousepad
-Audacious
+Pragha
 Smplayer
 Writer
 Gimp
@@ -33,7 +33,7 @@ case ${cmd%% *} in
 	Firefox)		exec firefox ;;
 	Transmission)   exec transmission-gtk ;;
     Mousepad)       exec mousepad ;;
-	Audacious) 		exec audacious ;;
+	Pragha) 		exec pragha ;;
 	Smplayer)		exec smplayer ;;
 	Writer)			exec libreoffice ;;
 	Gimp)			exec gimp ;;

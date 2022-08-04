@@ -3,8 +3,6 @@ adwaita-icon-theme
 alsa-oss
 alsa-utils
 amd64-microcode
-audacious
-audacious-plugins
 anacron
 apt-listchanges
 apt-transport-https
@@ -93,6 +91,10 @@ gnupg
 gparted
 gpick
 gpicview
+gstreamer1.0-libav
+gstreamer1.0-plugins-good
+gstreamer1.0-plugins-ugly
+gstreamer1.0-pulseaudio
 gtk2-engines-murrine
 gtk2-engines-pixbuf
 gvfs
@@ -177,6 +179,7 @@ plymouth
 plymouth-themes
 pnmixer
 powermgmt-base
+pragha
 publicsuffix
 pulseaudio
 pulseaudio-utils
