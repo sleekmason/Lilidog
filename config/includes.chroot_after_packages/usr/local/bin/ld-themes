@@ -7,7 +7,6 @@ yad --title "Quick Themes" --escape-ok --borders=14 \
     --form \
     --field="":LBL "" \
     --field="           Anolis!$HOME/.config/lilidog-themes/icons/paw-anolis.png!":FBTN "$HOME/.config/lilidog-themes/Anolis" \
-    --field="     Conanolis!$HOME/.config/lilidog-themes/icons/paw-conanolis.png!":FBTN "$HOME/.config/lilidog-themes/Conanolis" \
     --field="       Crimson!$HOME/.config/lilidog-themes/icons/paw-crimson.png!":FBTN "$HOME/.config/lilidog-themes/Crimson" \
     --field="   Dark Drow!$HOME/.config/lilidog-themes/icons/paw-dark-drow.png!":FBTN "$HOME/.config/lilidog-themes/Dark-Drow" \
     --field="   Dark Earth!$HOME/.config/lilidog-themes/icons/paw-dark-earth.png!":FBTN "$HOME/.config/lilidog-themes/Dark-Earth" \
