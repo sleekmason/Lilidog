@@ -36,11 +36,7 @@ mod4 + y
 # Toggle to Anolis
 mod4 + u
    "$HOME/.config/lilidog-themes/Anolis"
-   
- # Toggle light/dark
-mod4 + s
-   "switch"  
-    
+
 # terminal
 mod4 + Return
 	xfce4-terminal
