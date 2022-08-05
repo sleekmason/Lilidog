@@ -19,7 +19,7 @@ read -p "    [0;33mGeary Installer[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo "" 
-sudo apt update && sudo apt install  --install-recommends geary &&
+sudo apt update && sudo apt install geary hunspell-en-us libfolks-eds25 gstreamer1.0-x gstreamer1.0-gl gstreamer1.0-libav enchant-2 &&
 sed -i '/Geary,            geary,                           org.gnome.Geary/d' ~/.config/jgmenu/mymenu.csv &&
 sed -i '5i Geary,            geary,                           org.gnome.Geary' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
