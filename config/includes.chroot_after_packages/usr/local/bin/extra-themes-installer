@@ -26,6 +26,7 @@ curl -LJO https://github.com/sleekmason/extra-themes/archive/master.zip &&
 unzip extra-themes-master.zip &&
 cp -a $HOME/.themes/extra-themes-master/. $HOME/.themes/
 rm extra-themes-master.zip
+rm -r extra-themes-master
 else
 mkdir ~/.themes &&
 cd ~/.themes &&
@@ -33,6 +34,7 @@ curl -LJO https://github.com/sleekmason/extra-themes/archive/master.zip &&
 unzip extra-themes-master.zip &&
 cp -a $HOME/.themes/extra-themes-master/. $HOME/.themes/
 rm extra-themes-master.zip
+rm -r extra-themes-master
 fi
 echo ""
 echo "----------------------------------------------------------------------"
