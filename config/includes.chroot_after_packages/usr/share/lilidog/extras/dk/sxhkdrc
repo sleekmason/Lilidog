@@ -16,7 +16,7 @@ alt + d
 mod4 + F2
     ~/.config/dmenu/dmenu
 
-#Dmenu apps
+# Dmenu apps
 mod4 + F3
     ~/.config/dmenu/apps
     
@@ -81,7 +81,7 @@ mod4 + e
 
 # Music
 mod4 + m
-    audacious
+    pragha
     
 # Backgounds
 mod4 + b
@@ -102,12 +102,7 @@ alt + z
 # screenshot and selection capture
 alt + Print
 	xfce4-screenshooter
-	
-# Pragha Music
-Mod4 + m 
-    pragha
-   
-   
+	 
 # dedicated volume keys
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}
 	pamixer {-i,-d} 2

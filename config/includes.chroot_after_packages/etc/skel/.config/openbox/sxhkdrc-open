@@ -5,7 +5,7 @@
 alt + F2
     ~/.config/dmenu/dmenu
 
-#Dmenu apps
+# Dmenu apps
 alt + F3
     ~/.config/dmenu/apps
 
@@ -22,11 +22,11 @@ mod4 + j
     jgmenu_run 
    
 # Toggle polybar panel on/off
-ctrl mod4 + p
+ctrl  + mod4 + p
     toggle.polybar
 
 # Toggle tint2 panel on/off
-ctrl mod4 + t
+ctrl + mod4 + t
     toggle.tint2
 
 # Toggle to Glacier
@@ -36,6 +36,10 @@ mod4 + y
 # Toggle to Anolis
 mod4 + u
    "$HOME/.config/lilidog-themes/Anolis"
+   
+ # Toggle light/dark
+mod4 + s
+   "switch"  
     
 # terminal
 mod4 + Return
@@ -54,7 +58,7 @@ mod4 + e
 
 # Music
 mod4 + m
-    audacious
+    pragha
 
 # Lockscreen
 mod4 + l
@@ -75,8 +79,4 @@ mod4 + z
 # screenshot and selection capture
 alt + Print
 	xfce4-screenshooter
-	
-# Pragha Music
-Mod4 + m 
-    pragha
    
