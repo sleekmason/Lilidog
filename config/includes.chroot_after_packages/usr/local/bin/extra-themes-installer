@@ -1,0 +1,52 @@
+#!/bin/bash
+echo ""
+echo ""
+read -p "   [0;33mExtra Themes Installer.[0m
+
+
+   This script will download and install the extra themes that are no 
+   longer in Lilidog. Currently 5 themes. The themes will be directly 
+   downloaded and installed to ~/.themes, creating the folder if it 
+   does not exist. Please see the Readme in ~/.themes for further 
+   instructions for root use, and for placing in Auto Themes if 
+   desired. For removal, simply delete any unwanted themes.
+   
+   [0;32m----------------------------------------------------------
+   
+   Please press enter to install the extra themes.
+   
+   ----------------------------------------------------------[0m
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+if test -e "$HOME/.themes" ; then
+cd ~/.themes &&
+curl -LJO https://github.com/sleekmason/extra-themes/archive/master.zip &&
+unzip extra-themes-master.zip &&
+cp -a $HOME/.themes/extra-themes-master/. $HOME/.themes/
+rm extra-themes-master.zip
+else
+mkdir ~/.themes &&
+cd ~/.themes &&
+curl -LJO https://github.com/sleekmason/extra-themes/archive/master.zip &&
+unzip extra-themes-master.zip &&
+cp -a $HOME/.themes/extra-themes-master/. $HOME/.themes/
+rm extra-themes-master.zip
+fi
+echo ""
+echo "----------------------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished!.
+Look in System Settings for the new themes, and the Readme in ~/.themes.[0m"
+echo "" 
+echo "----------------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

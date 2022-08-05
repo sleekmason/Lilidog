@@ -5,7 +5,7 @@
 menu.items.bg: flat gradient vertical
 menu.items.bg.color: #122426
 menu.items.bg.colorTo: #122426
-menu.separator.color: #2C464A
+menu.separator.color: #2A4347
 
 !! Menu text
 menu.items.text.color: #BDDEDE
@@ -65,7 +65,7 @@ window.inactive.button.*.image.color: #618080
 window.inactive.button.disabled.image.color: #436363
 
 !! Borders
-window.active.border.color: #2B4345
+window.active.border.color: #283D40
 window.inactive.border.color: #182224
 window.inactive.title.separator.color: #152426
 border.width: 1
@@ -80,7 +80,7 @@ menu.overlap: 0
 
 !! Handles
 window.active.handle.bg: raised
-window.active.handle.bg.color: #354F1C
+window.active.handle.bg.color: #304D18
 window.active.grip.bg: parentrelative
 window.inactive.handle.bg: raised
 window.inactive.handle.bg.color: #202D2E
