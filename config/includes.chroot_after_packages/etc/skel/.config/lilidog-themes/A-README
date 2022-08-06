@@ -27,8 +27,3 @@ be placed in your path. The script in ~/bin will be the active script.
 Just copy and paste a new line and then change the values.  Easy peasy.
 
 The options are endless, and you can create exactly what you want!
-
-Be aware that not all themes are installed, so you may notice extra
-icons and theme scripts with no match in ~/.config/lilidog-themes. 
-The missing themes were not needed for various reasons. These can 
-be found in github here: https://github.com/sleekmason/Themes

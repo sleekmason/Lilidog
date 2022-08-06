@@ -29,13 +29,9 @@ ctrl  + mod4 + p
 ctrl + mod4 + t
     toggle.tint2
 
-# Toggle to Glacier
+# Switch to light theme and back to anolis
 mod4 + y
-   "$HOME/.config/lilidog-themes/Glacier"
-
-# Toggle to Anolis
-mod4 + u
-   "$HOME/.config/lilidog-themes/Anolis"
+   "light-dark-toggle"
 
 # terminal
 mod4 + Return

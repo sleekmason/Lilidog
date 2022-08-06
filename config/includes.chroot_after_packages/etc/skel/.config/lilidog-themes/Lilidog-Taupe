@@ -24,3 +24,6 @@ jgmenu_run init --apply-obtheme
 
 ## Change xfce4-terminal theme
 xfce4-term-colors lilidog-taupe
+
+# COMMENT THE LINE BELOW FOR THE LIGHT THEME USED IN THE LIGHT/DARK TOGGLE
+rm ~/.cache/temp_theme

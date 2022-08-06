@@ -1,0 +1,13 @@
+#!/bin/bash
+# A light dark theme toggle by sleekmason 6 Aug 2022
+#
+temp_file=~/.cache/temp_theme
+
+if [[ -e $temp_file ]] 
+then
+ "$HOME/.config/lilidog-themes/"$(<$temp_file)""
+  #rm "$temp_file"       
+else
+xfconf-query -c xsettings -p /Net/ThemeName > "$temp_file" &&
+ "$HOME/.config/lilidog-themes/Glacier"   
+fi

@@ -24,3 +24,6 @@ jgmenu_run gtktheme
 
 ## Change xfce4-terminal theme
 xfce4-term-colors denim
+
+# COMMENT THE LINE BELOW FOR THE LIGHT THEME USED IN THE LIGHT/DARK TOGGLE
+rm ~/.cache/temp_theme
