@@ -30,14 +30,18 @@ read -p "   [0;33mdk WM Installer.[0m
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 cd /tmp/ &&
-sudo apt update && sudo apt install git sxhkd build-essential polybar libxcb-randr0-dev libxcb-util-dev libxcb-icccm4-dev libxcb-cursor-dev libxcb-keysyms1-dev &&
-git clone https://bitbucket.org/natemaia/dk.git &&
-cd /tmp/dk &&
+sudo apt update && sudo apt install sxhkd build-essential polybar libxcb-randr0-dev libxcb-util-dev libxcb-icccm4-dev libxcb-cursor-dev libxcb-keysyms1-dev &&
+# For the latest - possibly unstable, uncomment the below line and comment the curl line.
+#git clone https://bitbucket.org/natemaia/dk.git &&
+curl -fSL https://bitbucket.org/natemaia/dk/get/v1.7.zip -o dk.zip &&
+unzip dk.zip &&
+cd natemaia-dk-* &&
 make &&
 sudo make install &&
 cp -r /usr/share/lilidog/extras/dk ~/.config &&
 cp -r /usr/share/lilidog/extras/polybar ~/.config &&
-sudo rm -r /tmp/dk/
+rm -r /tmp/natemaia-dk-*
+rm -r /tmp/dk.zip
 echo ""
 echo "----------------------------------------------------------------------"
 echo ""
