@@ -1,6 +1,13 @@
 #!/bin/bash
-#### A theme changer to set the theme to your own custom configuration.
-### Simply change the "Lilidog" entries below with your own selections.
+# This theme is for the Light/Dark toggle script.  No additions should
+# be made to this file other than changing the name in the existing
+# lines. Any Other additions need to be added to the named scripts.
+
+# How to use:
+# Change the names in the lines below to match the names of the theme
+# style you want to use.  Carefull about capitalization.  You can also 
+# just copy and paste the relevant part of any of the named scripts in
+# ~/.config/lilidog-themes
 
 ## Change gtktheme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Glacier"
@@ -22,5 +29,5 @@ xfce4-term-colors glacier
 
 # These lines are for the light/dark toggle and the custom toggle. Do not remove.
 # Comment these lines in Custom-Theme or Light-Dark-Theme if copying a named theme.
-rm ~/.cache/temp_theme
-rm ~/.cache/custom_theme
+# rm ~/.cache/temp_theme
+# rm ~/.cache/custom_theme

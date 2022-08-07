@@ -28,8 +28,8 @@ Terminal Colors =  super + F5
 Toggle polybar =   ctrl super + p
 Toggle tint2 =     ctrl super + t
 
-Light Theme Toggle = super + y
-Dark theme toggle  = super + u
+Light-dark Toggle   = super + y
+Custom theme toggle = super + u
 
 
 #### Below are the defaults that come with the program.
