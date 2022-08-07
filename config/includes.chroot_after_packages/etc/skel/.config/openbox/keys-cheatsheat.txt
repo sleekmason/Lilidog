@@ -7,7 +7,7 @@ This List =        super + l
 Backgounds =       super + b
 Browser =          super + w
 Conky =            super + c
-                   super + F2                   
+Dmenu              super + F2                   
 Dmenuapps =        super + F3 
 Editor =           super + e 
 File Manager =     super + f   
