@@ -93,6 +93,7 @@ Openbox,             obconf,                                                    
 Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
 Quick Themes,        ld-theme-changer,                                                     preferences-desktop-theme
 System Settings,     xfce4-settings-manager,                                               preferences-system
+Custom Toggles,      geany ~/.config/lilidog-themes/light-dark ~/.config/lilidog-themes/Custom,  document-properties
 Power Manager,       mate-power-preferences,                                               applications-system
 Tint2 Settings,      tint2conf,                                                            tint2
 Keybinds,            geany ~/.config/openbox/sxhkdrc-open,                                 document-properties
