@@ -2,9 +2,9 @@
 # These are the keybinds used in openbox.
 #########################################################
 
-# This List as a cheatsheat.txt
+# This List as a cheatsheet.txt
 mod4 + l
-    geany ~/.config/openbox/keys-cheatsheat.txt
+    geany ~/.config/openbox/keys-cheatsheet.txt
 
 alt + F2
     ~/.config/dmenu/dmenu

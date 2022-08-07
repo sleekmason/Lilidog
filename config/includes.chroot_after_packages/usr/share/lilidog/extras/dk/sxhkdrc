@@ -1,9 +1,9 @@
 # example sxhkdrc for use with dk
 #########################################################
 
-# This List as a cheatsheat.txt
+# This List as a cheatsheet.txt
 mod4 + l
-    geany ~/.config/dk/keys-cheatsheat.txt
+    geany ~/.config/dk/keys-cheatsheet.txt
 
 # jgmenu
 mod4 + F1
