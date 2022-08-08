@@ -1,6 +1,6 @@
 # Cheat sheet for Lilidog Openbox added keybinds.
-## Note - "super" is the windows key.
-### These are the added keybinds for Lilidog use.
+# Note - "super" is the windows key.
+
 
 This List =        super + l
 
@@ -15,12 +15,13 @@ Fontsize =         super + F6
 Gammy =            super + g    
 Hotcorners =       super + F8
 Jgmenu =           super + j
- Logout =          super + z
+Logout =           super + z
 Music =            super + m
 Screenshot =       alt + Print
-Terminal	       super + t              
+Terminal	   super + t
+             
 Toggle polybar =   ctrl super + p
 Toggle tint2 =     ctrl super + t
 
-Light Theme Toggle = super + y
-Dark theme toggle  = super + u
+Toggle Light Theme = super + y
+Toggle Dark theme  = super + u

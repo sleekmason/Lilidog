@@ -1,6 +1,6 @@
 # Cheat sheet for Lilidog keybinds.
-## Note - "super" is the windows key.
-### These are the added keybinds for Lilidog use.
+# Note - "super" is the windows key.
+
 
 This List =        super + l
 
@@ -24,12 +24,13 @@ Music =            super + m
 Screenshot =       alt + Print
 Terminal =         super + Return
 	               super + t
-Terminal Colors =  super + F5	               
+Terminal Colors =  super + F5
+	               
 Toggle polybar =   ctrl super + p
 Toggle tint2 =     ctrl super + t
 
-Light-dark Toggle   = super + y
-Custom theme toggle = super + u
+Toggle Light Theme  = super + y
+Toggle Dark theme   = super + u
 
 
 #### Below are the defaults that come with the program.
