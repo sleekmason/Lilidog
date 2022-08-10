@@ -1,6 +1,9 @@
 ﻿### Lilidog Linux
  
-Lilidog is a lightweight Linux distro using the Openbox window manager. <br/> 
+Lilidog is a lightweight Linux distro using the Openbox window manager. <br/>
+
+Forum Link: https://www.forum.lilidog.org/
+Download link: https://sourceforge.net/projects/lilidog/
 
 Lilidog is based on Debian, with most of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize further.
