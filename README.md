@@ -1,4 +1,7 @@
 ﻿### Lilidog Linux
+
+Forum Link: https://www.forum.lilidog.org/ <br/>
+Download link: https://sourceforge.net/projects/lilidog/
  
 Lilidog is a lightweight Linux distro using the Openbox window manager. <br/>
 
