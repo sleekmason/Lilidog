@@ -1,1 +1,0 @@
-Install Openshot,         x-terminal-emulator -T 'Openshot Installer' -e bash -c "openshot-installer; echo $'\n\nPress any key to close.'; read -srn1",               preferences-desktop

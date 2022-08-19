@@ -1,15 +1,18 @@
 #!/bin/bash
 
 yad --title "Quick Themes" --escape-ok --borders=14 \
---button=gtk-close:1 --form --center --width=220 --height=570 \
+--button=gtk-close:1 --form --center --width=400 --height=500 \
 --text="\n  Please Close Geany \n Before Making Selection.\n" --text-align=center \
 --window-icon=gpick \
-    --form \
-    --field="":LBL "" \
-    --field="           Anolis!$HOME/.config/lilidog-themes/icons/paw-anolis.png!":FBTN "$HOME/.config/lilidog-themes/Anolis" \
+    --form --columns=2 \
+    --field="          Anolis!$HOME/.config/lilidog-themes/icons/paw-anolis.png!":FBTN "$HOME/.config/lilidog-themes/Anolis" \
+    --field="    Conanolis!$HOME/.config/lilidog-themes/icons/paw-conanolis.png!":FBTN "$HOME/.config/lilidog-themes/Conanolis" \
+    --field="           Neon!$HOME/.config/lilidog-themes/icons/paw-neon.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Neon" \
+    --field="          Cobalt!$HOME/.config/lilidog-themes/icons/paw-cobalt.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Cobalt" \
     --field="       Crimson!$HOME/.config/lilidog-themes/icons/paw-crimson.png!":FBTN "$HOME/.config/lilidog-themes/Crimson" \
     --field="   Dark Drow!$HOME/.config/lilidog-themes/icons/paw-dark-drow.png!":FBTN "$HOME/.config/lilidog-themes/Dark-Drow" \
     --field="   Dark Earth!$HOME/.config/lilidog-themes/icons/paw-dark-earth.png!":FBTN "$HOME/.config/lilidog-themes/Dark-Earth" \
+    --field="             Earth!$HOME/.config/lilidog-themes/icons/paw-earth.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Earth" \
     --field="          Denim!$HOME/.config/lilidog-themes/icons/paw-denim.png!":FBTN "$HOME/.config/lilidog-themes/Denim" \
     --field="         Dragon!$HOME/.config/lilidog-themes/icons/paw-dragon.png!":FBTN "$HOME/.config/lilidog-themes/Dragon" \
     --field="        Oceanic!$HOME/.config/lilidog-themes/icons/paw-oceanic.png!":FBTN "$HOME/.config/lilidog-themes/Oceanic" \

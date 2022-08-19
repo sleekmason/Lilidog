@@ -4,12 +4,12 @@ echo ""
 read -p "   [0;33mExtra Themes Installer.[0m
 
 
-   This script will download and install the extra themes that are no 
-   longer in Lilidog. Currently 5 themes. The themes will be directly 
+   This script will download and install all of the themes that are
+   currently in Lilidog. 20 full themes. The themes will be directly 
    downloaded and installed to ~/.themes, creating the folder if it 
    does not exist. Please see the Readme in ~/.themes for further 
    instructions for root use, and for placing in Auto Themes if 
-   desired. For removal, simply delete any unwanted themes.
+   used. For removal, simply delete any unwanted themes.
    
    [0;32m----------------------------------------------------------
    
