@@ -14,7 +14,10 @@ BGSET="--bg-scale"
 #BGSET="--bg-max"
 #BGSET="--bg-tile"
 
-feh -r -t -P -N --scale-down -W 960 -E 100 -y 160 -J 100 --title "Wallpaper" \
+feh -r -t -P -N --scale-down -W 800 -E 100 -y 160 -J 100 --title "Wallpaper" \
 --fontpath /usr/share/fonts/truetype/liberation/ --font LiberationSans-Regular.ttf/10 \
---index-info "%n" \
+--index-info "" \
 --action ";feh $FEHBG $BGSET %F" $BGDIR1 $BGDIR2 $BGDIR3
+
+
+## use --index-info "%n" for names generation
