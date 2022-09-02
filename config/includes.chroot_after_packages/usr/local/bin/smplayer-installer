@@ -1,0 +1,49 @@
+#!/bin/bash
+echo ""
+echo ""
+echo ""
+read -p "    [0;33mSmplayer Installer[0m
+
+    This will install Smplayer with all the necessary plugins and other 
+    dependencies. A new menu entry will be placed in the Quick Grab 
+    section of the menu.
+    
+    [0;36mhttps://www.smplayer.info/[0m
+   
+   --------------------------------------------------------------
+   
+   [0;32mPlease press enter to install Smplayer.[0m
+   
+   --------------------------------------------------------------
+   
+   
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo "" 
+sudo apt update && sudo apt install smplayer &&
+sed -i '/Smplayer,           smplayer,                          smplayer/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Smplayer,           smplayer,                          smplayer' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo ""
+echo ""
+echo ""
+echo "-----------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mYou should find a Smplayer entry in the quickgrab menu [0m" 
+echo "" 
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "-----------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

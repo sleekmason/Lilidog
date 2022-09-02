@@ -1,5 +1,11 @@
-Install Audacious,       x-terminal-emulator -T 'Audacious Installer' -e bash -c "audacious-installer; echo $'\n\nPress any key to close.'; read -srn1",          /usr/share/icons/gnome/22x22/devices/audio-speakers.png
-Install Audacity,        x-terminal-emulator -T 'Audacity Installer' -e bash -c "audacity-installer; echo $'\n\nPress any key to close.'; read -srn1",            /usr/share/icons/gnome/22x22/devices/audio-speakers.png
-Install Pragha,          x-terminal-emulator -T 'Pragha Installer' -e bash -c "pragha-installer; echo $'\n\nPress any key to close.'; read -srn1",                /usr/share/icons/gnome/22x22/devices/audio-speakers.png
+*Audio Players
+Install Audacious,        x-terminal-emulator -T 'Audacious Installer' -e bash -c "audacious-installer; echo $'\n\nPress any key to close.'; read -srn1",          applications-multimedia
+Install Pragha,           x-terminal-emulator -T 'Pragha Installer' -e bash -c "pragha-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-multimedia
 ^sep()
-Install Openshot,         x-terminal-emulator -T 'Openshot Installer' -e bash -c "openshot-installer; echo $'\n\nPress any key to close.'; read -srn1",           preferences-desktop
+*Video Players
+Install Smplayer,         x-terminal-emulator -T 'Smplayer Installer' -e bash -c "smplayer-installer; echo $'\n\nPress any key to close.'; read -srn1",            applications-multimedia
+Install Totem Player,     x-terminal-emulator -T 'Totem Installer' -e bash -c "totem-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-multimedia
+^sep() 
+*Utilities
+Install Openshot,         x-terminal-emulator -T 'Openshot Installer' -e bash -c "openshot-installer; echo $'\n\nPress any key to close.'; read -srn1",            applications-multimedia
+Install Audacity,         x-terminal-emulator -T 'Audacity Installer' -e bash -c "audacity-installer; echo $'\n\nPress any key to close.'; read -srn1",            applications-multimedia
