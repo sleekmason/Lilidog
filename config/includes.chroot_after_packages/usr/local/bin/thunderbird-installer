@@ -17,7 +17,7 @@ read -p "    [0;33mThunderbird Installer[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo "" 
-sudo apt update && sudo apt install thunderbird &&
+sudo apt update && sudo apt install thunderbird hunspell-en-us &&
 sed -i '/Thunderbird,        thunderbird,      thunderbird/d' ~/.config/jgmenu/mymenu.csv &&
 sed -i '5i Thunderbird,        thunderbird,      thunderbird' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
