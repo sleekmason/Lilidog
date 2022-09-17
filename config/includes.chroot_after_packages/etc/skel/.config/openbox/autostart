@@ -22,7 +22,6 @@
 
 picom &
 tint2 &
-mate-power-manager &
 nm-applet &
 lxpolkit &
 xfsettingsd --daemon &
