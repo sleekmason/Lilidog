@@ -3,13 +3,13 @@
 #
 #
 FILE="$HOME/.config/tint2/tint2rc"
-STRING="battery_font_color = #FF5317 100"
+STRING="battery_font_color = #EB2323 100"
 if  grep -q "$STRING" "$FILE" ; then
- notify-send --urgency low 'Tint2 battery notification color changed to DEFAULT.' ;
+         notify-send --urgency low 'Battery text color - default' ;
          sed -i 's/^battery_font_color.*/battery_font_color = #93adac 100/g' "$FILE"
 else
-         notify-send --urgency low 'Tint2 battery notification color changed to WARNING RED.' ;
-         sed -i 's/^battery_font_color.*/battery_font_color = #FF5317 100/g' "$FILE"
+         notify-send --urgency low 'Battery text color - warning red' ;
+         sed -i 's/^battery_font_color.*/battery_font_color = #EB2323 100/g' "$FILE"
 fi
 pkill -x tint2
 tint2 &
