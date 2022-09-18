@@ -5,12 +5,12 @@
 FILE="$HOME/.config/tint2/tint2rc"
 STRING="battery_hide = 0"
 if  grep -q "$STRING" "$FILE" ; then
-notify-send --urgency low 'Battery percentage notification added.' ;
+notify-send --urgency low 'Battery percentage notification enabled' ;
          sed -i -e '/panel_items/ s/S/SB/' "$FILE"
          sed -i 's/^battery_hide.*/battery_hide = 101/g' "$FILE"
          sed -i 's/^battery_tooltip.*/battery_tooltip = 1/g' "$FILE"
 else 
-notify-send --urgency low 'Removing battery percentage notification.' ;
+notify-send --urgency low 'Removing battery percentage notification' ;
          sed -i '/panel_items/s/B//' "$FILE"
          sed -i 's/^battery_hide.*/battery_hide = 0/g' "$FILE"
          sed -i 's/^battery_tooltip.*/battery_tooltip = 0/g' "$FILE"                  
