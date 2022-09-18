@@ -94,7 +94,7 @@ Wallpapers,          feh-set-wallpaper,                                         
 Quick Themes,        ld-theme-changer,                                                     preferences-desktop-theme
 System Settings,     xfce4-settings-manager,                                               preferences-system
 Custom Toggles,      geany ~/.config/lilidog-themes/light-dark ~/.config/lilidog-themes/Custom,  document-properties
-Power Manager,       mate-power-preferences,                                               applications-system
+Power Manager,       xfce4-power-manager-settings,                                               applications-system
 Tint2 Settings,      tint2conf,                                                            tint2
 Keybinds,            geany ~/.config/openbox/sxhkdrc-open,                                 document-properties
 Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  preferences-system
