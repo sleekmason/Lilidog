@@ -14,7 +14,8 @@ openbox --reconfigure
 sed -i "s/color_scheme=.*/color_scheme=Denim.conf/g" ~/.config/geany/geany.conf
 
 ## Change jgmenu theme
-jgmenu_run gtktheme
+# jgmenu_run gtktheme
+jgmenu_run init --apply-obtheme
 
 ## Change xfce4-terminal theme
 xfce4-term-colors denim
