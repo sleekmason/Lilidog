@@ -6,11 +6,15 @@ noti=$(yad --width 310 --borders=12 --entry --title "Battery Text Color" --cente
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button=gtk-close:1 \
     --button="gtk-ok:0" \
-    "Please Select Battery Text Color" "Default" "White" "Black" "Orange" "Blue" "Green" "Red" "Yellow" "Cyan" "Purple")
+    "Please Select Battery Text Color" "Default" "Gray" "White" "Black" "Orange" "Blue" "Green" "Red" "Yellow" "Cyan" "Purple")
 
 case $noti in
   Default)
-     sed -i 's/^battery_font_color.*/battery_font_color = #93adac 100/g' "$HOME/.config/tint2/tint2rc"
+     sed -i 's/^battery_font_color.*/battery_font_color = #95D9E0 100/g' "$HOME/.config/tint2/tint2rc"
+     killall -SIGUSR1 tint2
+;;
+  Gray)
+     sed -i 's/^battery_font_color.*/battery_font_color = #C8DEDE 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
   White)
