@@ -2,7 +2,7 @@
 # tint2 battery color options options.
 # Made be sleekmason for Lilidog 4-13-2022
 
-noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Text Color" --center --window-icon=applications-graphics \
+noti=$(yad --width 310 --borders=12 --entry --title "Battery Text Color" --center --window-icon=applications-graphics \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button=gtk-close:1 \
     --button="gtk-ok:0" \
