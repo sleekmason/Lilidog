@@ -1,23 +1,61 @@
-#!/bin/bash
-# Bright mode for tint2 in Lilidog by sleekmason 2-17-2022
-#
-#
+#! /bin/bash
+# tint2 battery color options options.
+# Made be sleekmason for Lilidog 4-13-2022
+
 FILE="$HOME/.config/tint2/tint2rc"
-STRING="task_font_color = #C8DEDE 100"
-if  grep -q "$STRING" "$FILE" ; then
-         notify-send --urgency low 'Changing Tint2 text to default color' ;
+noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Text Color" --center --window-icon=org.xfce.settings.color \
+    --image="/usr/share/icons/gnome/24x24/apps/preferences-desktop-font.png" \
+    --button=gtk-close:1 \
+    --button="gtk-ok:0" \
+    "Default - Light Sky" "Dark Sky" "Grey" "Bright Grey" "Green" "Black")
+
+case $noti in
+  Default*)
+    notify-send --urgency low 'Changing Tint2 text to Light Sky' ;
          sed -i 's/task_font_color =.*/task_font_color = \#95D9E0 100/' $FILE
          sed -i 's/clock_font_color =.*/clock_font_color = \#95D9E0 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#95D9E0 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#95D9E0 100/' $FILE
-         
- else
-         notify-send --urgency low 'Changing Tint2 text to gray' ;
+     killall -SIGUSR1 tint2
+;;
+  Dark*)
+    notify-send --urgency low 'Changing Tint2 text to Dark Sky' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#7BBDC7 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#7BBDC7 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#7BBDC7 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#7BBDC7 100/' $FILE
+     killall -SIGUSR1 tint2
+;;
+  Grey)
+    notify-send --urgency low 'Changing Tint2 text to Grey' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#BCD1D1 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#BCD1D1 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#BCD1D1 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#BCD1D1 100/' $FILE
+     killall -SIGUSR1 tint2
+;;
+  Bright*)
+  notify-send --urgency low 'Changing Tint2 text to Bright Grey' ;
          sed -i 's/task_font_color =.*/task_font_color = \#C8DEDE 100/' $FILE
          sed -i 's/clock_font_color =.*/clock_font_color = \#C8DEDE 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#C8DEDE 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#C8DEDE 100/' $FILE
-fi
-# restart tint2
-pkill -x tint2
-tint2 &
+     killall -SIGUSR1 tint2
+;;
+   Green)
+   notify-send --urgency low 'Changing Tint2 text to Green' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#11B850 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#11B850 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#11B850 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#11B850 100/' $FILE
+     killall -SIGUSR1 tint2
+;;
+  Black)
+     notify-send --urgency low 'Changing Tint2 text to Black' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#0A0A00 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#0A0A00 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#0A0A00 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#0A0A00 100/' $FILE
+     killall -SIGUSR1 tint2 ;;
+        *) exit 1 ;;
+    esac
