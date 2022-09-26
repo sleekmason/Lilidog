@@ -8,7 +8,7 @@ menu.items.bg.colorTo: #142026
 menu.separator.color: #32545E
 
 !! Menu text
-menu.items.text.color: #85D3DB
+menu.items.text.color: #9DD8DE
 menu.items.justify: left
 menu.items.disabled.text.color: #4C6E70
 
