@@ -12,18 +12,18 @@ noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Text Color" --center 
 case $noti in
   Default*)
     notify-send --urgency low 'Changing Tint2 text to Light Sky' ;
-         sed -i 's/task_font_color =.*/task_font_color = \#95D9E0 100/' $FILE
-         sed -i 's/clock_font_color =.*/clock_font_color = \#95D9E0 100/' $FILE
-         sed -i 's/execp_font_color =.*/execp_font_color = \#95D9E0 100/' $FILE
-         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#95D9E0 100/' $FILE
+         sed -i 's/task_font_color =.*/task_font_color = \#96D2D9 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#96D2D9 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#96D2D9 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#96D2D9 100/' $FILE
      killall -SIGUSR1 tint2
 ;;
   Dark*)
     notify-send --urgency low 'Changing Tint2 text to Dark Sky' ;
-         sed -i 's/task_font_color =.*/task_font_color = \#7BBDC7 100/' $FILE
-         sed -i 's/clock_font_color =.*/clock_font_color = \#7BBDC7 100/' $FILE
-         sed -i 's/execp_font_color =.*/execp_font_color = \#7BBDC7 100/' $FILE
-         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#7BBDC7 100/' $FILE
+         sed -i 's/task_font_color =.*/task_font_color = \#88BABF 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#88BABF 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#88BABF 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#88BABF 100/' $FILE
      killall -SIGUSR1 tint2
 ;;
   Grey)
