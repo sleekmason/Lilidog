@@ -27,31 +27,31 @@ style "clearlooks-default"
 
 	fg[NORMAL]		    = "#C4ECFF" # CHANGED COULD BE SOME TEXT
 	fg[PRELIGHT]		= "#CEE8EF" # TEXT COLOR IN YES/NO BOX
-	fg[SELECTED]		= "#005183" # 
+	fg[SELECTED]		= "#206373" # 
 	fg[ACTIVE]		    = "#CEE8EF" # TEXT COLOR IN YES AND NO BOXES
-	fg[INSENSITIVE]		= "#29464D" # 
+	fg[INSENSITIVE]		= "#2A6E7D" # 
 
 	bg[NORMAL]		    = "#18252B" # BACKGROUND
-	bg[PRELIGHT]		= "#283D47" # 
-	bg[SELECTED]		= "#253942" # 
-	bg[INSENSITIVE]		= "#2A484F" #
-	bg[ACTIVE]		    = "#74A1B5" #
+	bg[PRELIGHT]		= "#364F5C" # 
+	bg[SELECTED]		= "#538D99" # 
+	bg[INSENSITIVE]		= "#1A6678" #
+	bg[ACTIVE]		    = "#287C8F" #
 
-	base[NORMAL]		= "#273840" # WHOLE BACKGROUND IN INSET AREA
-	base[PRELIGHT]		= "#2D4D5B" # 
-	base[ACTIVE]		= "#1F696E" # UNSELECTED HIGHLIGHTED BAR
-	base[SELECTED]		= "#39A1A8" # HIGHLIGHTED BAR COLOR
-	base[INSENSITIVE]	= "#1E666B" #
+	base[NORMAL]		= "#203038" # WHOLE BACKGROUND IN INSET AREA
+	base[PRELIGHT]		= "#364F5C" # 
+	base[ACTIVE]		= "#265F6B" # UNSELECTED HIGHLIGHTED BAR
+	base[SELECTED]		= "#538D99" # HIGHLIGHTED BAR COLOR
+	base[INSENSITIVE]	= "#265F6B" #
 
-	text[NORMAL]		= "#BEE6F7" # PRIMARY TEXT COLOR
-	text[PRELIGHT]		= "#BEE6F7" # BRIGHTER TEXT DURING SELECTION HOPEFULLY
+	text[NORMAL]		= "#A3DBE6" # PRIMARY TEXT COLOR
+	text[PRELIGHT]		= "#B7EDF7" # BRIGHTER TEXT DURING SELECTION HOPEFULLY
 	text[ACTIVE]		= "#0D1517" #
 	text[SELECTED]		= "#0D1517" #
-	text[INSENSITIVE]	= "#98BDC5" # BUTTON TEXT
+	text[INSENSITIVE]	= "#A3DBE6" # BUTTON TEXT
 
 	engine "clearlooks"
 	{
-  # scrollbar_color	    = "#7CA7A5"  #This will disappear if uncommented 
+  # scrollbar_color	    = "#658EA1"  #This will disappear if uncommented 
 	menubarstyle		= 2	# 0 = flat, 1 = sunken, 2 = flat gradient
 	#menuitemstyle		= 1	# 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
 	#listviewitemstyle	= 1	# 0 = flat, 1 = 3d-ish (gradient)
