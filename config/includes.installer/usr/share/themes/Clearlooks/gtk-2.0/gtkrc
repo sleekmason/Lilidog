@@ -29,7 +29,7 @@ style "clearlooks-default"
 	fg[PRELIGHT]		= "#CEE8EF" # TEXT COLOR IN YES/NO BOX
 	fg[SELECTED]		= "#206373" # 
 	fg[ACTIVE]		    = "#CEE8EF" # TEXT COLOR IN YES AND NO BOXES
-	fg[INSENSITIVE]		= "#295B66" # 
+	fg[INSENSITIVE]		= "#275661" # 
 
 	bg[NORMAL]		    = "#18252B" # BACKGROUND
 	bg[PRELIGHT]		= "#364F5C" # 
