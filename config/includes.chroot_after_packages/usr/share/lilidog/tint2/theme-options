@@ -1,6 +1,7 @@
 Auto Themes,                ld-themes,                                gpick
+Conky,                      ~/.config/conky/scripts/conky-chooser,    conky-logomark-violet
 Font Sizes,                 fontsize-changer,                         preferences-desktop-font
-LD Installers,              ld-installers,                            applications-utilities                             
+Installers,                 ld-installers,                            applications-utilities                             
 Menu Icons,                 jg-icon-changer,                          jgmenu
 Sounds,                     notification-sounds,                      /usr/share/icons/gnome/22x22/devices/audio-speakers.png
 System Icons,               xfce4-appearance-settings,                preferences-system

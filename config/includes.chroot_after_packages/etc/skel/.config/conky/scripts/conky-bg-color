@@ -1,0 +1,92 @@
+#! /bin/bash
+# tint2 battery color options options.
+# Made be sleekmason for Lilidog 4-13-2022
+
+noti=$(yad --width 310 --borders=12 --entry --title "Conky BG Tint" --center --window-icon=applications-graphics \
+    --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
+    --button=gtk-close:1 \
+    --button="gtk-ok:0" \
+    "Default Tint - Black" "Aqua" "Blue" "Green" "Grey" "Red" "Purple" "Brown")
+
+case $noti in
+  Default*)
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/build.lua
+;;
+  Aqua)
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x00272B/g" ~/.config/conky/lua/build.lua
+;;
+  Blue)
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x06232E/g" ~/.config/conky/lua/build.lua
+;;
+  Green)
+     sed -i "s/bg_colour=.*/bg_colour=0x0F2107/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0F2107/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0F2107/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0F2107/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0F2107/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0F2107/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0F2107/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/build.lua
+;;
+  Grey)
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x2B2B2B/g" ~/.config/conky/lua/build.lua
+;;
+  Red)
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x260000/g" ~/.config/conky/lua/build.lua
+;;
+  Purple)
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x0A0A40/g" ~/.config/conky/lua/build.lua
+;;
+  Brown)
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/shortcuts.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/tao.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/full.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/fortunes.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/current.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/clock-date.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/world.lua
+     sed -i "s/bg_colour=.*/bg_colour=0x241B0E/g" ~/.config/conky/lua/build.lua ;;
+        *) exit 1 ;;
+    esac

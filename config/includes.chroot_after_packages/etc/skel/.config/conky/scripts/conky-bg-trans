@@ -1,0 +1,46 @@
+#!/bin/bash
+# Lua transparency level
+
+WIDTH=240
+HEIGHT=390
+
+trans="$(yad --title "Transparency" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
+--text "\nChoose conky background transparency amount in %\n" --text-align=center \
+--window-icon=applications-system \
+--radiolist  --column "Select" --column "%" --separator=" " \
+  TRUE "0" \
+  FALSE "5" \
+  FALSE "10" \
+  FALSE "15" \
+  FALSE "20" \
+  FALSE "25" \
+  FALSE "30" \
+  FALSE "35" \
+  FALSE "40" \
+  FALSE "45" \
+  FALSE "50" \
+  FALSE "55" \
+  FALSE "60" \
+  FALSE "65" \
+  FALSE "70" \
+  FALSE "75" \
+  FALSE "80" \
+  FALSE "85" \
+  FALSE "90" \
+  FALSE "95")"
+  trans="$(echo "$trans" | cut -d' ' -f2-)"
+ 
+# check if "Cancel" button
+if ! [[ $trans ]];
+then
+  exit 1
+fi
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/shortcuts.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/tao.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/full.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/fortunes.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/current.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/clock-date.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/world.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.$trans/g" ~/.config/conky/lua/build.lua
+exit 0
