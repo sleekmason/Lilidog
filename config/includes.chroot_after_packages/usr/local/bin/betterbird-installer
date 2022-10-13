@@ -32,7 +32,7 @@ echo ""
 echo "File Check OK"
 echo ""
 cd /tmp/ &&
-curl -LJO https://www.betterbird.eu/downloads/LinuxArchive/betterbird-102.3.1-bb18.en-US.linux-x86_64.tar.bz2 &&
+curl -LJO https://www.betterbird.eu/downloads/LinuxArchive/betterbird-102.3.3-bb20.en-US.linux-x86_64.tar.bz2 &&
 tar -xaf betterbird* &&
 cp -r /tmp/betterbird ~/.betterbird &&
 rm -r /tmp/betterbird* &&
