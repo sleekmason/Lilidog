@@ -145,7 +145,7 @@ mouse_scroll_down = iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 0 1 7
+systray_padding = 0 1 8
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 22
@@ -356,8 +356,8 @@ button = new
 button_icon = /usr/share/icons/ld-icons/upgrade.png
 button_text = 
 button_tooltip = Left Click = Synaptic - Middle Click = Apt Update - Right Click = LD Installers
-button_lclick_command = gksudo synaptic &
-button_rclick_command = ld-installers &
+button_lclick_command = ld-installers &
+button_rclick_command = gksudo synaptic &
 button_mclick_command = x-terminal-emulator -T 'Simple Apt Updater' -e bash -c "simple-apt-updater"
 button_uwheel_command = 
 button_dwheel_command = 
