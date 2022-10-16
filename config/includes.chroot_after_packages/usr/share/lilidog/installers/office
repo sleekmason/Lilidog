@@ -1,4 +1,4 @@
-Install Abiword Writer,          x-terminal-emulator -T 'Abiword Writer Installer' -e bash -c "abiword-writer-installer; echo $'\n\nPress any key to close.'; read -srn1",            applications-office
+Install Abiword Writer,          x-terminal-emulator -T 'Abiword Writer Installer' -e bash -c "abiword-installer; echo $'\n\nPress any key to close.'; read -srn1",                   applications-office
 Install Joplin Note,             x-terminal-emulator -T 'Joplin Note AppImage Installer' -e bash -c "joplin-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-office
 Install Pluma Editor,            x-terminal-emulator -T 'Pluma Editor Installer' -e bash -c "pluma-installer; echo $'\n\nPress any key to close.'; read -srn1",                       applications-office
 ^sep()
