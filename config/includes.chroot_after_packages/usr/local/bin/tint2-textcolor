@@ -7,7 +7,7 @@ noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Text Color" --center 
     --image="/usr/share/icons/gnome/24x24/apps/preferences-desktop-font.png" \
     --button=gtk-close:1 \
     --button="gtk-ok:0" \
-    "Default - Light Sky" "Dark Sky" "Grey" "Bright Grey" "Green" "Black")
+    "Default - Light Sky" "Dark Sky" "Grey" "Bright Grey" "Green" "Purple" "Nordish" "Black")
 
 case $noti in
   Default*)
@@ -16,6 +16,7 @@ case $noti in
          sed -i 's/clock_font_color =.*/clock_font_color = \#96D2D9 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#96D2D9 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#96D2D9 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #96D2D9 100/g' $FILE
      killall -SIGUSR1 tint2
 ;;
   Dark*)
@@ -24,6 +25,7 @@ case $noti in
          sed -i 's/clock_font_color =.*/clock_font_color = \#88BABF 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#88BABF 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#88BABF 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #88BABF 100/g' $FILE
      killall -SIGUSR1 tint2
 ;;
   Grey)
@@ -32,6 +34,7 @@ case $noti in
          sed -i 's/clock_font_color =.*/clock_font_color = \#BCD1D1 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#BCD1D1 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#BCD1D1 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #BCD1D1 100/g' $FILE
      killall -SIGUSR1 tint2
 ;;
   Bright*)
@@ -40,6 +43,7 @@ case $noti in
          sed -i 's/clock_font_color =.*/clock_font_color = \#C8DEDE 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#C8DEDE 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#C8DEDE 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #C8DEDE 100/g' $FILE
      killall -SIGUSR1 tint2
 ;;
    Green)
@@ -48,14 +52,34 @@ case $noti in
          sed -i 's/clock_font_color =.*/clock_font_color = \#11B850 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#11B850 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#11B850 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #11B850 100/g' $FILE
      killall -SIGUSR1 tint2
 ;;
-  Black)
-     notify-send --urgency low 'Changing Tint2 text to Black' ;
+   Purple)
+   notify-send --urgency low 'Changing Tint2 text to Purple' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#9E82D1 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#9E82D1 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#9E82D1 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#9E82D1 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #9E82D1 100/g' $FILE
+     killall -SIGUSR1 tint2
+;;
+   Nordish)
+   notify-send --urgency low 'Changing Tint2 text to Nordish' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#9FA5C2 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#9FA5C2 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#9FA5C2 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#9FA5C2 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #9FA5C2 100/g' $FILE
+     killall -SIGUSR1 tint2
+;;
+   Black)
+   notify-send --urgency low 'Changing Tint2 text to Black' ;
          sed -i 's/task_font_color =.*/task_font_color = \#0A0A00 100/' $FILE
          sed -i 's/clock_font_color =.*/clock_font_color = \#0A0A00 100/' $FILE
          sed -i 's/execp_font_color =.*/execp_font_color = \#0A0A00 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#0A0A00 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #000000 100/g' $FILE
      killall -SIGUSR1 tint2 ;;
         *) exit 1 ;;
     esac

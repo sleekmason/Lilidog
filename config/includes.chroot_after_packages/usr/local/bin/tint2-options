@@ -9,7 +9,7 @@ yad --title "Tint2 Options" --escape-ok \
     --field="                12H/24H!time-admin":FBTN "tint2-12to24" \
     --field="                Autohide!keyboard-brightness":FBTN "tint2-autohide" \
     --field="             Autoshrink!zoom-fit-best!":FBTN "tint2-shrink" \
-    --field="        Battery Notify!document-page-setup":FBTN "tint2-battery-notify" \
+    --field="        Battery Notify!battery":FBTN "tint2-battery-notify" \
     --field="                  Position!object-flip-vertical!":FBTN "tint2-position" \
-    --field="              Text Color!display-brightness":FBTN "tint2-bright" \
+    --field="              Text Color!display-brightness":FBTN "tint2-textcolor" \
     --field="        Transparency!preferences-system":FBTN "tint2-transparency" \
