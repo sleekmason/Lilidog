@@ -13,19 +13,19 @@
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
 
 ## Change openbox theme
-#sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Lilidog-Cobaltbox"/g" ~/.config/openbox/rc.xml
-xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:name' -v "Dark-Earthbox" ~/.config/openbox/rc.xml
+#sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Lilidog-Drowbox"/g" ~/.config/openbox/rc.xml
+xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:name' -v "Lilidog-Drowbox" ~/.config/openbox/rc.xml
 openbox --reconfigure
 
 ## Change Geany theme
 sed -i "s/color_scheme=.*/color_scheme=Dark-Earth.conf/g" ~/.config/geany/geany.conf
 
 # Change jgmenu theme
-#jgmenu_run gtktheme
-jgmenu_run init --apply-obtheme
+jgmenu_run gtktheme
+#jgmenu_run init --apply-obtheme
 
 ## Change xfce4-terminal theme
-xfce4-term-colors dragon
+xfce4-term-colors lilidog-drow
 
 # These lines are for the light/dark toggle and the custom toggle. Do not remove.
 # Comment these lines in Custom-Theme or Light-Dark-Theme if copying a named theme.

@@ -1,0 +1,5 @@
+[Scheme]
+Name=Nordic
+ColorBackground=#27272b2a3636
+ColorForeground=#ccccd2d1d9d9
+ColorPalette=rgb(0,0,0);rgb(184,19,0);rgb(0,144,23);rgb(222,77,0);rgb(0,0,170);rgb(170,0,170);rgb(0,184,184);rgb(170,170,170);rgb(0,191,191);rgb(255,85,85);rgb(3,188,3);rgb(255,255,85);rgb(63,181,189);rgb(255,85,255);rgb(85,255,255);rgb(255,255,255)
