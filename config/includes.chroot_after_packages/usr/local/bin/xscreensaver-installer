@@ -1,0 +1,49 @@
+#!/bin/bash
+echo ""
+echo ""
+read -p "   [0;33mXscreensaver Installer[0m
+
+   Xscreensaver provides a wide variety of different screensavers. 
+   
+   [0;32mhttps://www.jwz.org/xscreensaver/[0m
+
+   This script will install xscreensaver with all suggested packages. 
+   
+   A new menu entry will be placed in the Toggles menu. 
+      
+   ---------------------------------------------------------
+   
+   [0;32mPlease press enter to install Xscreensaver.[0m
+   
+   ---------------------------------------------------------  
+   
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+sudo apt update && sudo apt install --install-recommends xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra &&
+
+sed -i '/^Xscreensaver\b/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Tint2 Toggle/i Xscreensaver,        toggle.xscreensaver,                           preferences-system' ~/.config/jgmenu/mymenu.csv
+killall jgmenu
+echo ""
+echo "-----------------------------------------------------"
+echo ""
+echo ""
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mIf installed, You should find a new menu entry under Toggles.[0m"
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "-----------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

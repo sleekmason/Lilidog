@@ -2,7 +2,7 @@
 #
 if pgrep -fx xscreensaver > /dev/null; then
     pkill -fx xscreensaver
-    notify-send 'Screensaver Off'
+    notify-send --urgency low 'Screensaver Off'
 else
     xscreensaver
 fi
