@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Made by Sleekmason in 2020 to make dualboot changes easier!
-read -p "   Swapid! 
+echo "   Swapid! 
 
    for the frequent dual installer, updates your fstab and
    resume file with the proper uuid to use.
@@ -16,12 +16,9 @@ read -p "   Swapid!
     
    ---------------------------------------------------------
    
-   Please press enter begin.
+   Please enter your password to continue, or close to quit.
    
-   ---------------------------------------------------------
-   
-   
-   Or close this terminal window to quit." ;
+   ---------------------------------------------------------"
 echo ""
 sudo blkid -l -t TYPE=swap | awk '{printf $2}'
 sudo geany /etc/fstab /etc/initramfs-tools/conf.d/resume
@@ -30,5 +27,5 @@ echo ""
 echo "-------------Everything Groovy?-------------"
 echo ""
 read -p "Hit return to update initramfs and grub:)" ;
-sudo update-initramfs -u -k all
+sudo update-initramfs -u -k all &&
 sudo update-grub
