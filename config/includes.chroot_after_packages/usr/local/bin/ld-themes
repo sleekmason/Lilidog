@@ -1,31 +1,31 @@
 #!/bin/bash
 
 yad --title "Auto Themes" --escape-ok --borders=14 \
---button=gtk-close:1 --form --center --width=440 --height=600 \
+--button=gtk-close:1 --form --center --width=440 --height=440 \
 --text="Please Close Geany Before Making Selection\n" --text-align=center \
 --window-icon=gpick \
-    --form --columns=2 \
+    --form --columns=3 \
+    --field="             Oceanic!$HOME/.config/lilidog-themes/icons/paw-oceanic.png!":FBTN "$HOME/.config/lilidog-themes/Oceanic" \
     --field="               Anolis!$HOME/.config/lilidog-themes/icons/paw-anolis.png!":FBTN "$HOME/.config/lilidog-themes/Anolis" \
-    --field="         Conanolis!$HOME/.config/lilidog-themes/icons/paw-conanolis.png!":FBTN "$HOME/.config/lilidog-themes/Conanolis" \
+    --field="       Qogir-Dark!$HOME/.config/lilidog-themes/icons/paw-qogir.png!":FBTN "$HOME/.config/lilidog-themes/Qogir-Dark" \
     --field="  Nordic Darker!$HOME/.config/lilidog-themes/icons/paw-nordic.png!":FBTN "$HOME/.config/lilidog-themes/Nordic-Darker" \
-    --field="       Qogir Dark!$HOME/.config/lilidog-themes/icons/paw-qogir.png!":FBTN "$HOME/.config/lilidog-themes/Qogir-Dark" \
+    --field="              Arcadia!$HOME/.config/lilidog-themes/icons/paw-arcadia.png!":FBTN "$HOME/.config/lilidog-themes/Arcadia" \
     --field="             Dracula!$HOME/.config/lilidog-themes/icons/paw-dracula.png!":FBTN "$HOME/.config/lilidog-themes/Dracula" \
     --field="                 Neon!$HOME/.config/lilidog-themes/icons/paw-neon.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Neon" \
     --field="               Cobalt!$HOME/.config/lilidog-themes/icons/paw-cobalt.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Cobalt" \
+    --field="               Denim!$HOME/.config/lilidog-themes/icons/paw-denim.png!":FBTN "$HOME/.config/lilidog-themes/Denim" \
     --field="            Crimson!$HOME/.config/lilidog-themes/icons/paw-crimson.png!":FBTN "$HOME/.config/lilidog-themes/Crimson" \
+    --field="                  Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Slate" \
+    --field="                Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Taupe" \
     --field="              Dragon!$HOME/.config/lilidog-themes/icons/paw-dragon.png!":FBTN "$HOME/.config/lilidog-themes/Dragon" \
     --field="         Dark Drow!$HOME/.config/lilidog-themes/icons/paw-dark-drow.png!":FBTN "$HOME/.config/lilidog-themes/Dark-Drow" \
     --field="         Dark Earth!$HOME/.config/lilidog-themes/icons/paw-dark-earth.png!":FBTN "$HOME/.config/lilidog-themes/Dark-Earth" \
     --field="    Adwaita Dark!$HOME/.config/lilidog-themes/icons/paw-earth.png!":FBTN "$HOME/.config/lilidog-themes/Adwaita-Dark" \
-    --field="               Denim!$HOME/.config/lilidog-themes/icons/paw-denim.png!":FBTN "$HOME/.config/lilidog-themes/Denim" \
-    --field="             Oceanic!$HOME/.config/lilidog-themes/icons/paw-oceanic.png!":FBTN "$HOME/.config/lilidog-themes/Oceanic" \
-    --field="                  Slate!$HOME/.config/lilidog-themes/icons/paw-slate.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Slate" \
-    --field="                Taupe!$HOME/.config/lilidog-themes/icons/paw-taupe.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Taupe" \
     --field="              Glacier!$HOME/.config/lilidog-themes/icons/paw-glacier.png!":FBTN "$HOME/.config/lilidog-themes/Glacier" \
     --field="                   Clay!$HOME/.config/lilidog-themes/icons/paw-clay.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Clay" \
     --field="                  Grey!$HOME/.config/lilidog-themes/icons/paw-grey.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Grey" \
     --field="                 Light!$HOME/.config/lilidog-themes/icons/paw-light.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Light" \
     --field="               Bright!$HOME/.config/lilidog-themes/icons/paw-bright.png!":FBTN "$HOME/.config/lilidog-themes/Lilidog-Bright" \
-    --field="      Qogir Light!$HOME/.config/lilidog-themes/icons/paw-qogir-light.png!":FBTN "$HOME/.config/lilidog-themes/Qogir-Light" \
-    --field="     Orchis Light!$HOME/.config/lilidog-themes/icons/paw-orchis.png!":FBTN "$HOME/.config/lilidog-themes/Orchis-Light" \
+    --field="           Mulberry!$HOME/.config/lilidog-themes/icons/paw-mulberry.png!":FBTN "$HOME/.config/lilidog-themes/Mulberry" \
+    --field="      Broadwater!$HOME/.config/lilidog-themes/icons/paw-broadwater.png!":FBTN "$HOME/.config/lilidog-themes/Broadwater" \
     --field="            Adwaita!$HOME/.config/lilidog-themes/icons/paw-adwaita.png!":FBTN "$HOME/.config/lilidog-themes/Adwaita" \
