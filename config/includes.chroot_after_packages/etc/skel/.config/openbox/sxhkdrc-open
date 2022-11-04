@@ -5,6 +5,10 @@
 # This List as a cheatsheet.txt
 mod4 + l
     geany ~/.config/openbox/keys-cheatsheet.txt
+    
+# Openbox Keybinds
+mod4 + o
+	obkey
 
 alt + F2
     ~/.config/dmenu/dmenu

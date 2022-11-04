@@ -3,7 +3,7 @@
 
 
 This List =        super + l
-
+Obkeybinds =       super + o
 Backgounds =       super + b
 Browser =          super + w
 Conky =            super + c
