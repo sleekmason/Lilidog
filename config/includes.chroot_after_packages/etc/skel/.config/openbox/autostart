@@ -20,6 +20,9 @@
 # synclient VertEdgeScroll=0 HorizEdgeScroll=0 TapButton1=1 2>/dev/null
 # syndaemon -i .5 -K -t -R -d &
 
+### Mouse Pointer Highlighter - Uncomment the line below to activate on boot.
+# highlight-pointer -r 7 --show-cursor --hide-highlight --auto-hide-highlight --key-toggle-highlight 'H-space' -c violet -p green &
+
 picom &
 tint2 &
 xfce4-power-manager &

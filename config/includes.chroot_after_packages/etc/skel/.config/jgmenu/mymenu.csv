@@ -63,6 +63,7 @@ Clipboard,           toggle.parcellite,                             preferences-
 Hotcorners,          toggle.ld,                                     preferences-system
 Random BG,           toggle-wallpaper-random,                       preferences-system
 Tint2 Options,       tint2-options,                                 preferences-system
+Mouse Finder,        toggle-mouse-pointer,                          preferences-system
 Tint2 Toggle,        toggle.tint2,                                  preferences-system
 Auto Login,          lightdm-autologin,                             preferences-system
 Touchpad,            toggle-touchpad,                               preferences-system

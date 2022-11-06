@@ -1,0 +1,5 @@
+#!/bin/bash
+# highlight-pointer script adjustments. highlight-pointer -h for options.
+   
+notify-send --urgency low 'Mouse Locator Activated. - Use Super + Space to toggle the locator on and off after activation.' &&  
+   highlight-pointer -r 7 --show-cursor --hide-highlight --auto-hide-highlight --key-toggle-highlight 'H-space' -c violet -p green
