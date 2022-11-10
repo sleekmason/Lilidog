@@ -3796,7 +3796,7 @@ filechooserbutton:drop(active) {
     .sidebar treeview:selected,
     .sidebar treeview:selected:focus {
       background-image: linear-gradient(to bottom, shade(#3D5887, 0.87), shade(#37557D, 0.95) 10%, shade(#2D456B, 0.99) 92%, shade(#3D5887, 0.92));
-      border-top: 1px solid shade(#2B3640, 0.85);
+      border-top: 1px solid shade(#2B3640, 1.02);
       border-bottom: 1px solid shade(#2B3640, 1.12); }
       .sidebar row:selected label, .sidebar row:selected:focus label,
       .sidebar treeview:selected label,
