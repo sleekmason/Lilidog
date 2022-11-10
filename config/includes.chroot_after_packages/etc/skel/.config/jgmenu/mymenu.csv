@@ -37,6 +37,7 @@ Icon Browser,       yad-icon-browser,                  galternatives
 ^tag(utilities)
 Screenshot,         xfce4-screenshooter,              org.xfce.screenshooter
 Htop,               x-terminal-emulator -T 'Htop' -e htop,                    htop
+lxtask,             lxtask,                           applications-engineering
 Inxi Info,          x-terminal-emulator -T 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
 Hard Info,          hardinfo,                         /usr/share/hardinfo/pixmaps/logo.png
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
