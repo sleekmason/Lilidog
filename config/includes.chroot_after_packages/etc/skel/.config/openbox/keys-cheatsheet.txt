@@ -15,7 +15,7 @@ Fontsize =         super + F6
 Gammy =            super + g    
 Hotcorners =       super + F8
 Jgmenu =           super + j
-Logout =           super + z
+Logout =           super + x
 Music =            super + m
 Screenshot =       alt + Print
 Terminal	   super + t

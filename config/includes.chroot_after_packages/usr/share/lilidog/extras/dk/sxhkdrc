@@ -104,7 +104,7 @@ ctrl alt + x
     xdotool getwindowfocus windowkill
     
 # Logout
-alt + z
+alt + x
 	ld-logout
 
 # screenshot and selection capture

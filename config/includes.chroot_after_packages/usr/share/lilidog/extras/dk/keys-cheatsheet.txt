@@ -19,7 +19,7 @@ Jgmenu =           super + j
                    super + F1    
 kill window =      ctrl alt + x !! This will kill ALL open instances. Think terminal. 
 Lilidog themes =   super + F4
-Logout =           alt + z
+Logout =           alt + x
 Music =            super + m
 Screenshot =       alt + Print
 Terminal =         super + Return
