@@ -3,10 +3,9 @@ echo ""
 read -p "   Buuf Icon Set Installer 57.1MB
 
    This script will download and install the Buuf icon set to 
-   ~/.local/share/icons for user use. For root use, place the 
-   resultant folder into /usr/share/icons.
+   /usr/share/icons for systemwide use.
     
-   To uninstall, delete the folder where placed.
+   To uninstall, delete the folder in /usr/share/icons.
    
    ---------------------------------------------------
    
@@ -18,12 +17,12 @@ read -p "   Buuf Icon Set Installer 57.1MB
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 cd /tmp &&
-curl -LJO https://github.com/sleekmason/buuf-icons/archive/master.zip &&
-unzip -q buuf-icons-master.zip &&
-cp -a /tmp/buuf-icons-master/. $HOME/.local/share/icons/
-gtk-update-icon-cache $HOME/.local/share/icons/buuf-nestort
-rm /tmp/buuf-icons-master.zip
-rm -r /tmp/buuf-icons-master
+sudo curl -LJO https://github.com/sleekmason/buuf-icons/archive/master.zip &&
+sudo unzip -q buuf-icons-master.zip &&
+sudo cp -a /tmp/buuf-icons-master/. /usr/share/icons/
+sudo gtk-update-icon-cache /usr/share/icons/buuf-nestort
+sudo rm /tmp/buuf-icons-master.zip
+sudo rm -r /tmp/buuf-icons-master
 echo ""
 echo "----------------------------------------------------------------------"
 echo ""

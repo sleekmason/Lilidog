@@ -21,10 +21,14 @@ else
 notify-send --urgency low "Gnome icons are not currently installed"
 fi  ;;
   Buuf)
+     if [[ -d "/usr/share/icons/buuf-nestort" ]]
+then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
      sed -i 's/^icon_theme =.*/icon_theme = buuf-nestort/g' ~/.config/jgmenu/jgmenurc
-notify-send --urgency low 'Menu Icons Set To buuf-nestort if installed'
-  ;;
+notify-send --urgency low 'Menu Icons Set To buuf'
+else
+notify-send --urgency low "Buuf icons are not currently installed"
+fi  ;;
   Breeze)
    if [[ -d "/usr/share/icons/breeze" ]]
 then
