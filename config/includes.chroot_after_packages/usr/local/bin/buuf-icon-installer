@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   Buuf Icon Set Installer.
+read -p "   Buuf Icon Set Installer 57.1MB
 
    This script will download and install the Buuf icon set to 
    ~/.local/share/icons for user use. For root use, place the 
