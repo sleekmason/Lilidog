@@ -1,0 +1,41 @@
+#!/bin/bash
+echo ""
+read -p "   Buuf Icon Set Installer.
+
+   This script will download and install the Buuf icon set to 
+   ~/.local/share/icons for user use. For root use, place the 
+   resultant folder into /usr/share/icons.
+    
+   To uninstall, delete the folder where placed.
+   
+   ---------------------------------------------------
+   
+   Please press enter to install the buuf icon set.
+   
+   ---------------------------------------------------
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+cd /tmp &&
+curl -LJO https://github.com/sleekmason/buuf-icons/archive/master.zip &&
+unzip -q buuf-icons-master.zip &&
+cp -a /tmp/buuf-icons-master/. $HOME/.local/share/icons/
+gtk-update-icon-cache $HOME/.local/share/icons/buuf-nestort
+rm /tmp/buuf-icons-master.zip
+rm -r /tmp/buuf-icons-master
+echo ""
+echo "----------------------------------------------------------------------"
+echo ""
+echo "All Finished!."
+echo "" 
+echo "----------------------------------------------------------------------"
+else
+echo ""
+ echo "   -------------------------------------------------------"
+ echo ""
+ echo "   No Internet connection. Please connect and try again."
+ echo ""
+ echo "   -------------------------------------------------------"
+echo ""
+fi

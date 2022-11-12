@@ -3,6 +3,7 @@ Install GIMP,              x-terminal-emulator -T 'GIMP Installer' -e bash -c "g
 Install Gpicview,          x-terminal-emulator -T 'Gpicview Installer' -e bash -c "gpicview-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-graphics
 Install Inkscape,          x-terminal-emulator -T 'Inkscape Installer' -e bash -c "inkscape-installer; echo $'\n\nPress any key to close.'; read -srn1",               applications-graphics
 ^sep()
+Install Buuf Icons,        x-terminal-emulator -T 'Buuf Icon Theme Installer' -e bash -c "buuf-icon-installer; echo $'\n\nPress any key to close.'; read -srn1",       applications-graphics
 Install Breeze Icons,      x-terminal-emulator -T 'Breeze Icon Theme Installer' -e bash -c "breeze-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-graphics
 Install Faenza Icons,      x-terminal-emulator -T 'Faenza Icon Theme Installer' -e bash -c "faenza-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-graphics
 Install Gnome Color Icons, x-terminal-emulator -T 'Gnome Colors Icons Installer' -e bash -c "gnome-colors-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-graphics

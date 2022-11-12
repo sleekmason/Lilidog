@@ -1,4 +1,7 @@
+Install Buuf Icons,        x-terminal-emulator -T 'Buuf Icon Theme Installer' -e bash -c "buuf-icon-installer; echo $'\n\nPress any key to close.'; read -srn1",       applications-graphics
+Install Breeze Icons,      x-terminal-emulator -T 'Breeze Icon Theme Installer' -e bash -c "breeze-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-graphics
 Install Faenza Icons,      x-terminal-emulator -T 'Faenza Icon Theme Installer' -e bash -c "faenza-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-graphics
+Install Gnome Color Icons, x-terminal-emulator -T 'Gnome Colors Icons Installer' -e bash -c "gnome-colors-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-graphics
 Install Numix Circle Icons,  x-terminal-emulator -T 'Numix Circle Icon Theme Installer' -e bash -c "numix-installer; echo $'\n\nPress any key to close.'; read -srn1", applications-graphics
 Install Paper Icons,       x-terminal-emulator -T 'Paper Icon Theme Installer' -e bash -c "paper-installer; echo $'\n\nPress any key to close.'; read -srn1",          applications-graphics
 Install Papirus Icons,     x-terminal-emulator -T 'Papirus Icon Theme Installer' -e bash -c "papirus-installer; echo $'\n\nPress any key to close.'; read -srn1",      applications-graphics

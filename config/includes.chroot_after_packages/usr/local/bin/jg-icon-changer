@@ -8,7 +8,7 @@ noti=$(yad --width 444 --borders=10 --entry --title "Jgmenu Icon & Font Options"
     --button="gtk-ok:0" \
     --text "  Breeze-Dark and Gnome icons pre installed. \n  See 'Install Icons' below for additional themes.\n" \
     --entry-text \
-    "Please Select Menu Icon Theme" "Gnome" "Breeze" "Breeze-Dark - Default Theme" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
+    "Please Select Menu Icon Theme" "Gnome" "Buuf" "Breeze" "Breeze-Dark - Default Theme" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
 
 case $noti in
   Gnome*) 
@@ -20,6 +20,11 @@ notify-send --urgency low 'Menu Icons Set To Gnome'
 else
 notify-send --urgency low "Gnome icons are not currently installed"
 fi  ;;
+  Buuf)
+     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
+     sed -i 's/^icon_theme =.*/icon_theme = buuf-nestort/g' ~/.config/jgmenu/jgmenurc
+notify-send --urgency low 'Menu Icons Set To buuf-nestort if installed'
+  ;;
   Breeze)
    if [[ -d "/usr/share/icons/breeze" ]]
 then
