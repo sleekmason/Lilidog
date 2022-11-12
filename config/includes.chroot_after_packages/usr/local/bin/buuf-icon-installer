@@ -2,8 +2,10 @@
 echo ""
 read -p "   Buuf Icon Set Installer 57.1MB
 
-   This script will download and install the Buuf icon set to 
-   /usr/share/icons for systemwide use.
+   This script will download and install the Buuf icon set from
+   https://github.com/sleekmason/buuf-icons to /usr/share/icons 
+   for systemwide use. These icons are originally copied from: 
+   https://store.kde.org/p/1012233/
     
    To uninstall, delete the folder in /usr/share/icons.
    
