@@ -73,7 +73,7 @@ mod4 + w
     firefox-esr
 
 # Logout
-mod4 + z
+mod4 + x
     ld-logout
 
 # screenshot and selection capture
