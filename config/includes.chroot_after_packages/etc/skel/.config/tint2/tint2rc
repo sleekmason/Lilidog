@@ -216,7 +216,7 @@ separator_padding = 1 0
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /usr/share/icons/ld-icons/m.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/m.png
 button_text = 
 button_tooltip = Left Click = Menu - Right Click = Icon Menu
 button_lclick_command = jgmenu_run &
@@ -234,7 +234,7 @@ button_max_icon_size = 20
 #-------------------------------------
 # Button 2
 button = new
-button_icon = /usr/share/icons/ld-icons/hotcorners.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/hotcorners.png
 button_text = 
 button_tooltip = Hotcorners Toggle
 button_lclick_command = toggle.ld
@@ -251,7 +251,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 3
 button = new
-button_icon = /usr/share/icons/ld-icons/Cascade.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/Cascade.png
 button_text = 
 button_tooltip = Cascade
 button_lclick_command = winfuncs cascade
@@ -268,7 +268,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 4
 button = new
-button_icon = /usr/share/icons/ld-icons/down.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/down.png
 button_text = 
 button_tooltip = Minimize
 button_lclick_command = xdotool key super+d
@@ -285,7 +285,7 @@ button_max_icon_size = 16
 #-------------------------------------
 # Button 5
 button = new
-button_icon = /usr/share/icons/ld-icons/light-dark.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/light-dark.png
 button_text = 
 button_tooltip = Light-Dark Toggle - Middle Click = Custom-Theme
 button_lclick_command = light-dark-toggle &
@@ -302,7 +302,7 @@ button_max_icon_size = 22
 #-------------------------------------
 # Button 6
 button = new
-button_icon = /usr/share/icons/ld-icons/paw-theme.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/paw-theme.png
 button_text = 
 button_tooltip = Quick Theme Settings
 button_lclick_command = popup -f /usr/share/lilidog/tint2/theme-options &
@@ -319,7 +319,7 @@ button_max_icon_size = 20
 #-------------------------------------
 # Button 7
 button = new
-button_icon = /usr/share/icons/ld-icons/r.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/r.png
 button_text = 
 button_tooltip = Left Click = Places Menu - Right Click = Recents Menu
 button_lclick_command = popup -o places-pipemenu &
@@ -336,7 +336,7 @@ button_max_icon_size = 20
 #-------------------------------------
 # Button 8
 button = new
-button_icon = /usr/share/icons/ld-icons/t2.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/t2.png
 button_text = 
 button_tooltip = Tint2 Options - Middle Click = Tint2 Configuration
 button_lclick_command = popup -f /usr/share/lilidog/tint2/options &
@@ -353,7 +353,7 @@ button_max_icon_size = 20
 #-------------------------------------
 # Button 9
 button = new
-button_icon = /usr/share/icons/ld-icons/updater.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/updater.png
 button_text = 
 button_tooltip = Apt Update
 button_lclick_command = x-terminal-emulator -T 'Apt Update' -e bash -c "sudo nala upgrade; bash"
@@ -370,7 +370,7 @@ button_max_icon_size = 0
 #-------------------------------------
 # Button 10
 button = new
-button_icon = /usr/share/icons/ld-icons/upgrade.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/upgrade.png
 button_text = 
 button_tooltip = Left Click = LD Installers   Right Click = Synaptic
 button_lclick_command = ld-installers &
@@ -387,7 +387,7 @@ button_max_icon_size = 24
 #-------------------------------------
 # Button 11
 button = new
-button_icon = /usr/share/icons/ld-icons/exit.png
+button_icon = /usr/share/icons/ld-icons/coltint2blue/exit.png
 button_text = 
 button_tooltip = Exit
 button_lclick_command = ld-logout

@@ -6,18 +6,14 @@ noti=$(yad --width 310 --borders=12 --entry --title "Battery Text Color" --cente
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button=gtk-close:1 \
     --button="gtk-ok:0" \
-    "Please Select Battery Text Color" "Default - Light Sky" "Dark Sky" "Grey" "Bright Grey" "Green" "Purple" "Nordish" "Black" "Red")
+    "Navy - Default" "Grey" "Bright Grey" "Aqua" "Blue" "Indigo" "Violet" "Magenta" "Green" "Black" "Red")
 
 case $noti in
-  Default*)
-     sed -i 's/^battery_font_color.*/battery_font_color = #96D2D9 100/g' "$HOME/.config/tint2/tint2rc"
+  Navy*)
+     sed -i 's/^battery_font_color.*/battery_font_color = #9CBDD9 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
-  Dark*)
-     sed -i 's/^battery_font_color.*/battery_font_color = #88BABF 100/g' "$HOME/.config/tint2/tint2rc"
-     killall -SIGUSR1 tint2
-;;
-  Grey)
+  Grey*)
      sed -i 's/^battery_font_color.*/battery_font_color = #C2C2CC 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
@@ -25,20 +21,32 @@ case $noti in
      sed -i 's/^battery_font_color.*/battery_font_color = #C8DEDE 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
+  Aqua)
+     sed -i 's/^battery_font_color.*/battery_font_color = #96d2d9 100/g' "$HOME/.config/tint2/tint2rc"
+     killall -SIGUSR1 tint2
+;;
+  Blue)
+     sed -i 's/^battery_font_color.*/battery_font_color = #96C5D9 100/g' "$HOME/.config/tint2/tint2rc"
+     killall -SIGUSR1 tint2
+;;
+  Indigo)
+     sed -i 's/^battery_font_color.*/battery_font_color = #96A1D9 100/g' "$HOME/.config/tint2/tint2rc"
+     killall -SIGUSR1 tint2
+;;
+  Violet)
+     sed -i 's/^battery_font_color.*/battery_font_color = #AA96D9 100/g' "$HOME/.config/tint2/tint2rc"
+     killall -SIGUSR1 tint2
+;;
+  Magenta)
+     sed -i 's/^battery_font_color.*/battery_font_color = #C596D9 100/g' "$HOME/.config/tint2/tint2rc"
+     killall -SIGUSR1 tint2
+;;
   Green)
      sed -i 's/^battery_font_color.*/battery_font_color = #11B850 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
-  Purple)
-     sed -i 's/^battery_font_color.*/battery_font_color = #9E82D1 100/g' "$HOME/.config/tint2/tint2rc"
-     killall -SIGUSR1 tint2
-;;
-  Nordish)
-     sed -i 's/^battery_font_color.*/battery_font_color = #9FA5C2 100/g' "$HOME/.config/tint2/tint2rc"
-     killall -SIGUSR1 tint2
-;;
   Black)
-     sed -i 's/^battery_font_color.*/battery_font_color = #000000 100/g' "$HOME/.config/tint2/tint2rc"
+     sed -i 's/^battery_font_color.*/battery_font_color = #0A0A00 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
    Red)

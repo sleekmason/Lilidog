@@ -1,15 +1,16 @@
 #!/bin/bash
 
 yad --title "Tint2 Options" --escape-ok \
---button=gtk-close:1 --form --center --width=240 --height=354 --borders=12 \
+--button=gtk-ok:0 --form --center --width=240 --height=354 --borders=12 \
 --text="" --text-align=center \
 --window-icon=applications-utilities \
     --form \
     --field="":LBL "" \
     --field="                12H/24H!time-admin":FBTN "tint2-12to24" \
     --field="                Autohide!keyboard-brightness":FBTN "tint2-autohide" \
-    --field="             Autoshrink!zoom-fit-best!":FBTN "tint2-shrink" \
+    --field="             Autoshrink!zoom-fit-best":FBTN "tint2-shrink" \
     --field="        Battery Notify!battery":FBTN "tint2-battery-notify" \
-    --field="                  Position!object-flip-vertical!":FBTN "tint2-position" \
+    --field="              Icon Color!org.xfce.settings.color":FBTN "tint2-iconcolor" \
+    --field="                  Position!object-flip-vertical":FBTN "tint2-position" \
     --field="              Text Color!display-brightness":FBTN "tint2-textcolor" \
     --field="        Transparency!preferences-system":FBTN "tint2-transparency" \

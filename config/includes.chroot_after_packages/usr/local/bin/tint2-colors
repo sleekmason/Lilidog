@@ -1,0 +1,11 @@
+#!/bin/bash
+
+yad --title "Tint2 Colors" --escape-ok \
+--button=gtk-ok:0 --form --center --width=240 --height=240 --borders=8 \
+--text="" --text-align=center \
+--window-icon=org.xfce.settings.color \
+    --form \
+    --field="":LBL "" \
+    --field="        Tint2 Icons Color!org.xfce.settings.color":FBTN "tint2-iconcolor" \
+    --field="          Tint2 Text Color!org.xfce.settings.color":FBTN "tint2-textcolor" \
+    --field="       Battery Text Color!org.xfce.settings.color":FBTN "tint2-battery-textcolor" \
