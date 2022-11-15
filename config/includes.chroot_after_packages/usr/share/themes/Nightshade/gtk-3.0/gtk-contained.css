@@ -4754,11 +4754,11 @@ XfdesktopIconView.view {
     text-shadow: 0 1px transparentize white, 0.5;
     -gtk-icon-shadow: 0 1px transparentize black, 0.5;
     box-shadow: inset 0 -1px transparentize black, 0.5;
-    background-color: #1E2630;
+    background-color: #1E2430;
     text-shadow: 0 1px transparentize black, 0.5;
     -gtk-icon-shadow: 0 1px transparentize black, 0.5; }
     .lightdm-gtk-greeter #panel_window menubar menu {
-      background-color: #1E2630; }
+      background-color: #1E2430; }
       .lightdm-gtk-greeter #panel_window menubar menu menuitem {
         font-weight: normal;
         text-shadow: none; }
@@ -4769,7 +4769,7 @@ XfdesktopIconView.view {
   .lightdm-gtk-greeter #restart_dialog {
     border-style: none;
     border-radius: 5px;
-    background-color: #1E2630;
+    background-color: #1E2430;
     color: #B7DDEB;
     box-shadow: inset 1px 0 shade(#1C2129, 0.6), inset -1px 0 shade(#1C2129, 0.6), inset 0 1px shade(#1C2129, 0.6), inset 0 -1px shade(#1C2129, 0.6); }
     .lightdm-gtk-greeter #login_window button,
@@ -4843,7 +4843,7 @@ XfdesktopIconView.view {
     border-style: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-image: linear-gradient(to bottom, shade(#242B36, 0.85), shade(#242B36, 0.98) 10%, shade(#242B36, 1) 99%, shade(#242B36, 1));
+    background-image: linear-gradient(to bottom, shade(#1E2736, 0.85), shade(#2B374D, 0.98) 10%, shade(#1E2736, 1) 99%, shade(#242B36, 1));
     box-shadow: inset 1px 0 shade(#1C2129, 0.6), inset -1px 0 shade(#1C2129, 0.6), inset 0 1px shade(#1C2129, 0.6), inset 0 -1px shade(#1C2129, 0.6); }
 
 /************************
