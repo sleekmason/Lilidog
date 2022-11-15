@@ -14,15 +14,15 @@ menu.items.disabled.text.color: #4C6E70
 
 !! Menu title
 menu.title.bg: raised splitvertical gradient
-menu.title.bg.color: #28303D
+menu.title.bg.color: #222933
 menu.title.bg.colorTo: #222933
 menu.title.text.color: #BCDBEB
 menu.title.text.justify: center
 
 !! Selected menu item
 menu.items.active.bg: raised splitvertical gradient
-menu.items.active.bg.color: #3D4882
-menu.items.active.bg.colorTo: #3D4882
+menu.items.active.bg.color: #414C85
+menu.items.active.bg.colorTo: #414C85
 menu.items.active.text.color: #CCECFA
 
 !! Titlebar
