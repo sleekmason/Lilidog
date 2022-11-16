@@ -796,7 +796,7 @@ button.suggested-action {
   border-right-color: shade(#242B36, 0.72);
   border-left-color: shade(#242B36, 0.72);
   border-bottom-color: shade(#242B36, 0.7);
-  background-image: linear-gradient(to bottom, shade(shade(#2D345E, 1.02), 1.05), shade(shade(#475294, 1.02), 0.97));
+  background-image: linear-gradient(to bottom, shade(shade(#283157, 0.99), 1.05), shade(shade(#3E4F8F, 1.02), 0.97));
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
   .selection-mode button.titlebutton,
   button.suggested-action.flat {
@@ -812,7 +812,7 @@ button.suggested-action {
     color: #CFF0FC;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #284673;
-    background-image: linear-gradient(to bottom, shade(#353D6E, 1.15), shade(#4C589E, 1.07));
+    background-image: linear-gradient(to bottom, shade(#353D6E, 1.08), shade(#5262A8, 1.03));
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
   
   button.suggested-action:active,
@@ -2465,7 +2465,7 @@ notebook > header {
     min-width: 24px;
     padding: 3px 12px;
     outline-offset: -5px;
-    color: #7F9BB8;
+    color: #88A6C4;
     background-color: #263140;
     border-width: 1px;
     border-radius: 3px;
@@ -2717,7 +2717,7 @@ switch {
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px transparent;
   border: 1px solid alpha(black,0.25);
   border-radius: 10px;
-  background-color: #2B3A52;
+  background-color: #242933;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   min-height: 20px;
   min-width: 20px;
@@ -2725,7 +2725,7 @@ switch {
   switch:checked {
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), 0 1px transparent;
     border-color: shade(#2F4969, 1.1);
-    background-image: linear-gradient(to bottom, shade(#3D4F6E, 1.1), #99A7D1);
+    background-image: linear-gradient(to bottom, shade(#6373AD, 1.1), #4B5794);
     text-shadow: 0 1px rgba(15, 66, 120, 0.5), 0 0 2px rgba(255, 255, 255, 0.6); }
   switch:disabled {
     border-color: #37475E;
@@ -2758,7 +2758,7 @@ switch {
     color: #445C78;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #37475E;
-    background-image: linear-gradient(to bottom, #3A437A 30%, #5361AD 90%);
+    background-image: linear-gradient(to bottom, #3A437A 30%, #5C66A1 90%);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.6), inset 0 -2px #2F3F59, inset 0 -1px #516B81, 0 1px rgba(0, 0, 0, 0.1); }
   switch:hover slider {
     color: #82B1E0;
@@ -3093,7 +3093,7 @@ scale trough, scale fill, progressbar trough {
 scale highlight, progressbar progress {
   border: 1px solid shade(#434E8C, 0.7);
   border-radius: 3px;
-  background-image: linear-gradient(to bottom, shade(#2F3763, 1.1), shade(#5764B5, 0.9)); }
+  background-image: linear-gradient(to bottom, shade(#2B3663, 1.1), shade(#6570B8, 0.9)); }
   scale highlight:disabled, progressbar progress:disabled {
     background-color: transparent;
     border-color: transparent; }

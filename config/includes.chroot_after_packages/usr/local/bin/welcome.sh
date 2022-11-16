@@ -10,5 +10,5 @@ else
 --width=488 --height=340 --center --escape-ok --undecorated \
 --skip-taskbar  --button="gtk-ok:0" \
 --text-info --justify=left --wrap < /usr/share/lilidog/welcome.txt --fontname="JetBrains Mono Light 11" \
---fore="#3DCCC2"; sed -i '/welcome.sh &/d' ~/.config/openbox/autostart
+--fore="#99C5F7"; sed -i '/welcome.sh &/d' ~/.config/openbox/autostart
 fi

@@ -101,6 +101,13 @@ mv ~/.local/share/icons/Papirus-color Papirus-Nordic &&
 echo "[0;33mNordic icon theme added.[0m"
 
  echo ""
+ echo "[0;32mCreating the Indigo icon color scheme.[0m"
+papirus-folder-color.sh indigo &&
+mv ~/.local/share/icons/Papirus-color Papirus-Indigo &&
+ sed -i "2s/color/Indigo/g" ~/.local/share/icons/Papirus-Indigo/index.theme
+echo "[0;33mIndigo icon theme added.[0m"
+
+ echo ""
  echo "[0;32mCreating the Yaru icon color scheme.[0m"
 papirus-folder-color.sh yaru &&
 mv ~/.local/share/icons/Papirus-color Papirus-Yaru &&
