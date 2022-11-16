@@ -7,7 +7,6 @@ Install Lynx Browser,      x-terminal-emulator -T 'Lynx Installer' -e bash -c "l
 Install Midori Browser,    x-terminal-emulator -T 'Midori Installer' -e bash -c "midori-installer; echo $'\n\nPress any key to close.'; read -srn1",                  applications-internet
 Install Vivaldi Browser,   x-terminal-emulator -T 'Vivaldi Installer' -e bash -c "vivaldi-installer; echo $'\n\nPress any key to close.'; read -srn1",                applications-internet
 ^sep()
-Install Betterbird Mail,   x-terminal-emulator -T 'Betterbird Installer' -e bash -c "betterbird-installer; echo $'\n\nPress any key to close.'; read -srn1",          applications-internet
 Install Geary Mail,        x-terminal-emulator -T 'Geary Installer' -e bash -c "geary-installer; echo $'\n\nPress any key to close.'; read -srn1",                    applications-internet
 Install Sylpheed Mail,     x-terminal-emulator -T 'Sylpheed Installer' -e bash -c "sylpheed-installer; echo $'\n\nPress any key to close.'; read -srn1",              applications-internet
 Install Thunderbird Mail,  x-terminal-emulator -T 'Thunderbird Installer' -e bash -c "thunderbird-installer; echo $'\n\nPress any key to close.'; read -srn1",        applications-internet
