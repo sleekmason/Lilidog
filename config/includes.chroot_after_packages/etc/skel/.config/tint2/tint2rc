@@ -145,7 +145,7 @@ mouse_scroll_down = iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 2 1 9
+systray_padding = 1 1 9
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 22
@@ -193,7 +193,7 @@ bat2_font = Sans 8
 battery_font_color = #9CBDD9 100
 bat1_format = %p
 bat2_format = 
-battery_padding = 3 0
+battery_padding =1 0
 battery_background_id = 0
 battery_hide = 0
 battery_lclick_command = xfce4-power-manager-settings
