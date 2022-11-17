@@ -26,32 +26,32 @@ style "clearlooks-default"
 	ythickness = 1
 
 	fg[NORMAL]		    = "#C4ECFF" # CHANGED COULD BE SOME TEXT
-	fg[PRELIGHT]		= "#CEE8EF" # TEXT COLOR IN YES/NO BOX
-	fg[SELECTED]		= "#206373" # 
-	fg[ACTIVE]		    = "#CEE8EF" # TEXT COLOR IN YES AND NO BOXES
-	fg[INSENSITIVE]		= "#275661" # 
+	fg[PRELIGHT]		= "#BFE1EF" # TEXT COLOR IN YES/NO BOX
+	fg[SELECTED]		= "#475B9E" # Highlight
+	fg[ACTIVE]		    = "#BFE1EF" # TEXT COLOR IN YES AND NO BOXES
+	fg[INSENSITIVE]		= "#34425C" # 
 
-	bg[NORMAL]		    = "#18252B" # BACKGROUND
-	bg[PRELIGHT]		= "#364F5C" # 
-	bg[SELECTED]		= "#538D99" # 
-	bg[INSENSITIVE]		= "#1A6678" #
-	bg[ACTIVE]		    = "#287C8F" #
+	bg[NORMAL]		    = "#1C2129" # BACKGROUND
+	bg[PRELIGHT]		= "#394861" # 
+	bg[SELECTED]		= "#4F609E" # 
+	bg[INSENSITIVE]		= "#34425C" #
+	bg[ACTIVE]		    = "#4F609E" #
 
-	base[NORMAL]		= "#203038" # WHOLE BACKGROUND IN INSET AREA
-	base[PRELIGHT]		= "#364F5C" # 
-	base[ACTIVE]		= "#265F6B" # UNSELECTED HIGHLIGHTED BAR
-	base[SELECTED]		= "#6AAAB8" # HIGHLIGHTED BAR COLOR
-	base[INSENSITIVE]	= "#265F6B" #
+	base[NORMAL]		= "#222B38" # WHOLE BACKGROUND IN INSET AREA
+	base[PRELIGHT]		= "#3D5273" # 
+	base[ACTIVE]		= "#32446E" # UNSELECTED HIGHLIGHTED BAR
+	base[SELECTED]		= "#576CC2" # Configure network hostname
+	base[INSENSITIVE]	= "#32446E" #
 
-	text[NORMAL]		= "#A3DBE6" # PRIMARY TEXT COLOR
-	text[PRELIGHT]		= "#B7EDF7" # BRIGHTER TEXT DURING SELECTION HOPEFULLY
+	text[NORMAL]		= "#BCDEEB" # PRIMARY TEXT COLOR
+	text[PRELIGHT]		= "#C6EAF7" # BRIGHTER TEXT DURING SELECTION HOPEFULLY
 	text[ACTIVE]		= "#0D1517" #
 	text[SELECTED]		= "#0D1517" #
-	text[INSENSITIVE]	= "#A3DBE6" # BUTTON TEXT
+	text[INSENSITIVE]	= "#A6D4EB" # BUTTON TEXT
 
 	engine "clearlooks"
 	{
-  # scrollbar_color	    = "#658EA1"  #This will disappear if uncommented 
+  # scrollbar_color	    = "#5163BD"  #This will disappear if uncommented 
 	menubarstyle		= 2	# 0 = flat, 1 = sunken, 2 = flat gradient
 	#menuitemstyle		= 1	# 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
 	#listviewitemstyle	= 1	# 0 = flat, 1 = 3d-ish (gradient)
@@ -74,9 +74,9 @@ style "clearlooks-wider" = "clearlooks-default"
 
 style "clearlooks-button" = "clearlooks-wider"
 {
-	bg[NORMAL]	    = "#005363"  ## BUTTONS(3)
-	bg[INSENSITIVE]	= "#305562"
-	bg[PRELIGHT]	= "#00768C"
+	bg[NORMAL]	    = "#364E87"  ## BUTTONS(3)
+	bg[INSENSITIVE]	= "#304562"
+	bg[PRELIGHT]	= "#49649E"  #Hover
 }
 
 style "clearlooks-notebook" = "clearlooks-wide"

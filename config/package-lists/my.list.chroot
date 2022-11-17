@@ -87,6 +87,7 @@ geany
 gettext-base
 gnome-icon-theme
 gnome-themes-extra
+gnome-system-tools
 gnupg
 gparted
 gpick
@@ -165,6 +166,7 @@ netcat-openbsd
 network-manager-gnome
 newsboat
 ntfs-3g
+ntp
 obconf
 openbox
 os-prober
@@ -210,7 +212,6 @@ sudo
 sxhkd
 synaptic
 syslinux-common
-systemd-timesyncd
 tasksel
 telnet
 tint2

@@ -149,7 +149,7 @@ systray_padding = 2 1 9
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 22
-systray_icon_asb = 95 0 0
+systray_icon_asb = 100 0 0
 systray_monitor = 1
 systray_name_filter = 
 
@@ -177,7 +177,7 @@ clock_background_id = 0
 clock_tooltip = Left Click = Calendar - Middle Click = Multi Timer - Right-Click = Timezone Changer
 clock_tooltip_timezone = 
 clock_lclick_command = calendar
-clock_rclick_command = x-terminal-emulator -T 'Timezone Changer' -e "timezone-changer" && pkill -x tint2 ; tint2 &
+clock_rclick_command = time-admin
 clock_mclick_command = multi-timer &
 clock_uwheel_command = 
 clock_dwheel_command = 
