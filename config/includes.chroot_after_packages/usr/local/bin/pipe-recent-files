@@ -5,13 +5,13 @@ grep 'file:///' ~/.local/share/recently-used.xbel | tail -n15 |  cut -d "\"" -f 
 do  
 file="$line"
 name=$(echo "$file" | sed 's,.*/,,' | sed 's/%20/ /g')
-echo "<item label=\"$name\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-edit-sign.svg\">
+echo "<item label=\"$name\" icon=\"/usr/share/icons/Adwaita/32x32/legacy/document-revert.png\">
 		<action name=\"Execute\"><command>xdg-open $line</command></action>
 	</item>"
 done);
 echo "$files"
 echo "<separator />"
-echo "<item label=\"Clear Recents\" icon=\"/usr/share/icons/gnome/32x32/actions/edit-delete.png\">
+echo "<item label=\"Clear Recents\" icon=\"/usr/share/icons/Adwaita/32x32/legacy/edit-delete.png\">
 		<action name=\"Execute\"><command>rm ~/.local/share/recently-used.xbel</command></action>
 	</item>"
 echo "</openbox_pipe_menu>"

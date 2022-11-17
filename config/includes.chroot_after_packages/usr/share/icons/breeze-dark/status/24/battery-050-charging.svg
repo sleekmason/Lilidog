@@ -41,8 +41,8 @@
      inkscape:zoom="35.291667"
      inkscape:cx="12"
      inkscape:cy="11.787485"
-     inkscape:window-x="111"
-     inkscape:window-y="2"
+     inkscape:window-x="101"
+     inkscape:window-y="121"
      inkscape:window-maximized="0"
      inkscape:current-layer="g8"
      inkscape:document-rotation="0" />
@@ -120,7 +120,121 @@
        id="filter23">
       <feColorMatrix
          values="1 0 0 -0.1 -0 0 1 0 -0.1 -0 0 0 1 -0.1 -0 0 0 0 1 0"
-         id="feColorMatrix21" />
+         id="feColorMatrix21"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1265" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite1267"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1269"
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1" />
+      <feFlood
+         id="feFlood1271"
+         flood-opacity="0.619608"
+         flood-color="rgb(29,33,78)"
+         result="flood1" />
+      <feBlend
+         in2="colormatrix1"
+         id="feBlend1273"
+         in="flood1"
+         mode="multiply"
+         result="blend1" />
+      <feBlend
+         in2="blend1"
+         id="feBlend1275"
+         mode="screen"
+         result="blend2" />
+      <feColorMatrix
+         id="feColorMatrix1277"
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite1279"
+         in="colormatrix2"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix116" />
+      <feColorMatrix
+         id="feColorMatrix118"
+         values="1 0 0 0.03 -0 0 1 0 0.03 -0 0 0 1 0.03 -0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Lightness-Contrast"
+       id="filter1295">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         id="feComposite1281" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix1283" />
+      <feFlood
+         flood-opacity="0.619608"
+         flood-color="rgb(29,33,78)"
+         result="flood1"
+         id="feFlood1285" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="multiply"
+         result="blend1"
+         id="feBlend1287" />
+      <feBlend
+         in2="blend1"
+         mode="screen"
+         result="blend2"
+         id="feBlend1289" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix1291" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite1293" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix120" />
+      <feColorMatrix
+         id="feColorMatrix122"
+         values="1 0 0 0.03 -0 0 1 0 0.03 -0 0 0 1 0.03 -0 0 0 0 1 0"
+         in="fbSourceGraphic" />
     </filter>
   </defs>
   <g
@@ -128,7 +242,7 @@
      id="g8"
      style="filter:url(#filter190)">
     <path
-       style="fill:currentColor;fill-opacity:1;stroke:none"
+       style="fill:currentColor;fill-opacity:1;stroke:none;filter:url(#filter1295)"
        class="ColorScheme-Text"
        d="M3 7v8h9L10 7zM1 5v12h19v-4h.5c.277 0 .5-.223.5-.5v-3c0-.277-.223-.5-.5-.5H20V5H4zm1 1h17v10H2z"
        fill-rule="evenodd"

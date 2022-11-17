@@ -40,8 +40,17 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Indigo"
 sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
 sed -i 's/^icon_theme =.*/icon_theme = breeze-dark/g' ~/.config/jgmenu/jgmenurc
 
+## Set Tint2 Items
+sed -i 's/coltint2.*\//coltint2navy\//g' $HOME/.config/tint2/tint2rc
+sed -i 's/task_font_color =.*/task_font_color = \#9CBDD9 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/clock_font_color =.*/clock_font_color = \#9CBDD9 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/execp_font_color =.*/execp_font_color = \#9CBDD9 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#9CBDD9 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/^battery_font_color.*/battery_font_color = #9CBDD9 100/g' $HOME/.config/tint2/tint2rc
+killall -SIGUSR1 tint2
+
 ## Set Background
-feh --bg-scale '/home/wallpaper/Sunset.png'
+feh --bg-scale '/home/wallpaper/Sunset.jpg'
 
 ## Set System Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"

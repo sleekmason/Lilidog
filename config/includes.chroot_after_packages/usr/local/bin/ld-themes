@@ -1,9 +1,9 @@
 #!/bin/bash
 
 yad --title "Auto Themes" --escape-ok --borders=14 \
---button=gtk-close:1 --form --center --width=440 --height=440 \
+--button=gtk-ok:0 --form --center --width=440 --height=440 \
 --text="Please Close Geany Before Making Selection\n" --text-align=center \
---window-icon=gpick \
+--window-icon=org.xfce.settings.color \
     --form --columns=3 \
     --field="             Oceanic!$HOME/.config/lilidog-themes/icons/paw-oceanic.png!":FBTN "$HOME/.config/lilidog-themes/Oceanic" \
     --field="               Anolis!$HOME/.config/lilidog-themes/icons/paw-anolis.png!":FBTN "$HOME/.config/lilidog-themes/Anolis" \

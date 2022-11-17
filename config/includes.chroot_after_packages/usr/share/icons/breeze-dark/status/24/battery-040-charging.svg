@@ -34,8 +34,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1030"
+     inkscape:window-width="1385"
+     inkscape:window-height="1023"
      id="namedview826"
      showgrid="false"
      inkscape:zoom="35.291667"
@@ -43,7 +43,7 @@
      inkscape:cy="12"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg824"
      inkscape:document-rotation="0" />
   <defs
@@ -112,6 +112,64 @@
       <feColorMatrix
          id="feColorMatrix52"
          values="1 0 0 0.1 -0 0 1 0 0.1 -0 0 0 1 0.1 -0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1249" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite1251"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1253"
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1" />
+      <feFlood
+         id="feFlood1255"
+         flood-opacity="0.619608"
+         flood-color="rgb(29,33,78)"
+         result="flood1" />
+      <feBlend
+         in2="colormatrix1"
+         id="feBlend1257"
+         in="flood1"
+         mode="multiply"
+         result="blend1" />
+      <feBlend
+         in2="blend1"
+         id="feBlend1259"
+         mode="screen"
+         result="blend2" />
+      <feColorMatrix
+         id="feColorMatrix1261"
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite1263"
+         in="colormatrix2"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix124" />
+      <feColorMatrix
+         id="feColorMatrix126"
+         values="1 0 0 0.03 -0 0 1 0 0.03 -0 0 0 1 0.03 -0 0 0 0 1 0"
          in="fbSourceGraphic" />
     </filter>
   </defs>

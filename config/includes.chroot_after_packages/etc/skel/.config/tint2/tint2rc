@@ -63,7 +63,7 @@ border_width = 1
 border_sides = 
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #132426 100
+background_color = #1C2129 100
 border_color = #899eb4 100
 gradient_id = 0
 background_color_hover = #d7fbf9 100
@@ -145,11 +145,11 @@ mouse_scroll_down = iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 2 1 8
+systray_padding = 2 1 9
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 22
-systray_icon_asb = 85 0 0
+systray_icon_asb = 95 0 0
 systray_monitor = 1
 systray_name_filter = 
 

@@ -1,15 +1,15 @@
 #!/bin/bash
 
 yad --title "Installers" --escape-ok \
---button=gtk-close:1 --form --center --width=240 --height=380 --borders=6 \
+--button="gtk-ok:0" --form --center --width=240 --height=380 --borders=6 \
 --text="\n Lilidog Installers \n" --text-align=center \
 --window-icon=applications-utilities \
     --form \
-    --field="   Audio/Video!/usr/share/icons/gnome/22x22/devices/audio-speakers.png":FBTN "popup -f /usr/share/lilidog/installers/audio-video &" \
-    --field="            Games!/usr/share/icons/gnome/22x22/categories/applications-games.png":FBTN "popup -f /usr/share/lilidog/installers/games &" \
-    --field="         Graphics!/usr/share/icons/gnome/22x22/categories/applications-graphics.png":FBTN "popup -f /usr/share/lilidog/installers/graphics &" \
-    --field="         Internet!/usr/share/icons/gnome/22x22/categories/applications-internet.png":FBTN "popup -f /usr/share/lilidog/installers/internet &" \
-    --field="           Kernels!/usr/share/icons/gnome/22x22/categories/applications-engineering.png":FBTN "popup -f /usr/share/lilidog/installers/kernels &" \
-    --field="             Office!/usr/share/icons/gnome/22x22/categories/applications-office.png":FBTN "popup -f /usr/share/lilidog/installers/office &" \
-    --field="           System!/usr/share/icons/gnome/22x22/categories/applications-other.png":FBTN "popup -f /usr/share/lilidog/installers/system &" \
-    --field="           Utilities!/usr/share/icons/gnome/22x22/categories/applications-utilities.png":FBTN "popup -f /usr/share/lilidog/installers/utilities &" \
+    --field="   Audio/Video!/usr/share/icons/Adwaita/22x22/devices/audio-headphones.png":FBTN "popup -f /usr/share/lilidog/installers/audio-video &" \
+    --field="            Games!/usr/share/icons/Adwaita/22x22/legacy/applications-games.png":FBTN "popup -f /usr/share/lilidog/installers/games &" \
+    --field="         Graphics!/usr/share/icons/Adwaita/22x22/legacy/applications-graphics.png":FBTN "popup -f /usr/share/lilidog/installers/graphics &" \
+    --field="         Internet!/usr/share/icons/Adwaita/22x22/legacy/applications-internet.png":FBTN "popup -f /usr/share/lilidog/installers/internet &" \
+    --field="           Kernels!/usr/share/icons/Adwaita/22x22/legacy/applications-engineering.png":FBTN "popup -f /usr/share/lilidog/installers/kernels &" \
+    --field="             Office!/usr/share/icons/Adwaita/22x22/legacy/applications-office.png":FBTN "popup -f /usr/share/lilidog/installers/office &" \
+    --field="           System!/usr/share/icons/Adwaita/22x22/legacy/applications-other.png":FBTN "popup -f /usr/share/lilidog/installers/system &" \
+    --field="           Utilities!/usr/share/icons/Adwaita/22x22/legacy/applications-utilities.png":FBTN "popup -f /usr/share/lilidog/installers/utilities &" \

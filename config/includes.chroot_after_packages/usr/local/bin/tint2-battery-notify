@@ -8,7 +8,7 @@ notify-send --urgency low 'Extra notifications currently disabled'
 else
 notify-send --urgency low 'Extra notifications currently enabled.'
 fi
-yad --title "Extra Notifications" --button=gtk-close:1 --form --center --width=300 --borders=16 \
+yad --title "Extra Notifications" --button=gtk-ok:0 --form --center --width=300 --borders=16 \
 --height=380 --text="\nBattery And Power Notifications\n" --text-align=center \
 --window-icon=utilities-system-monitor \
     --form \

@@ -27,7 +27,7 @@
 #recent_script=/usr/bin/bl-recent-files-pipemenu
 
 # Command to open folders at "Browse here..." - any file manager
-open_folder_cmd=thunar
+open_folder_cmd=pcmanfm
 # Default command to open files with - others might be exo-open, gnome-open, thunar, pcmanfm...
 default_open_cmd=xdg-open
 # Text editor of choice
@@ -99,7 +99,7 @@ case $1 in
     if [ -x "$recent_script" ]
     then
         output="${output}<separator label=\"Recently opened...\" />
-<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-edit-sign.svg\" />
+<menu execute=\"$recent_script\" id=\"recent\" label=\"files\" icon=\"/usr/share/icons/Adwaita/32x32/legacy/document-revert.png\" />
 "
     else
         echo "$0 : cannot find executable script $recent_script" >&2
@@ -140,7 +140,7 @@ XXX
 esac
 
 output="$output<separator />
-<item label=\"Browse Home\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-open.svg\">
+<item label=\"Browse Home\" icon=\"/usr/share/icons/Adwaita/32x32/legacy/document-open.png\">
     <action name=\"Execute\">
         <command>
          &apos;$open_folder_cmd&apos; &apos;$pathe_apos&apos;
@@ -194,10 +194,10 @@ XXX
 # NOTE1 If you want directories and files listed together
 # change next line [directories_menu="$directories_menu] to read: [files_menu="$files_menu] (there is no final quote)
         directories_menu="$directories_menu
-<menu id=\"${pathe_apos}/${shortnamee_apos}\" label=\"$shortnamee_label\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-open.svg\" execute=\"&apos;$0&apos; &apos;${pathe_apos}/${shortnamee_apos}&apos;\" />"
+<menu id=\"${pathe_apos}/${shortnamee_apos}\" label=\"$shortnamee_label\" icon=\"/usr/share/icons/Adwaita/32x32/legacy/folder-visiting.png\" execute=\"&apos;$0&apos; &apos;${pathe_apos}/${shortnamee_apos}&apos;\" />"
     else
         files_menu="$files_menu
-<item label=\"$shortnamee_label\" icon=\"/usr/share/icons/breeze-dark/actions/32/document-edit-sign.svg\">
+<item label=\"$shortnamee_label\" icon=\"/usr/share/icons/Adwaita/32x32/legacy/document-revert.png\">
     <action name=\"Execute\">
         <command>
         &apos;$0&apos; --open &apos;${pathe_apos}/${shortnamee_apos}&apos;

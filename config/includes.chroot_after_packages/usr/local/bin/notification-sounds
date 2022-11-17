@@ -3,7 +3,7 @@
 noti=$(yad --width 300 --borders=10 --entry --title "Notification Sounds" --center --window-icon=applications-system \
     --image="/usr/share/volumeicon/icons/tango/8.png" \
     --button="Sounds":"dunst-wav-changer" \
-    --button="gtk-ok:0" --button="gtk-close:1" \
+    --button="gtk-ok:0" \
     --text "Sound Notification Choices" \
     --entry-text \
     "Please Select" "Off" "On For All Notifications")

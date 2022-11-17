@@ -6,7 +6,7 @@ yad --title "Tint2 Options" --escape-ok \
 --window-icon=applications-utilities \
     --form \
     --field="":LBL "" \
-    --field="                12H/24H!time-admin":FBTN "tint2-12to24" \
+    --field="                12H/24H!appointment-new":FBTN "tint2-12to24" \
     --field="                Autohide!keyboard-brightness":FBTN "tint2-autohide" \
     --field="             Autoshrink!zoom-fit-best":FBTN "tint2-shrink" \
     --field="        Battery Notify!battery":FBTN "tint2-battery-notify" \

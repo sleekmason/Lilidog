@@ -12,7 +12,6 @@ at-spi2-core
 b43-fwcutter
 bash-completion
 bind9-dnsutils
-breeze-icon-theme
 btrfs-progs
 bzip2
 catfish
@@ -87,7 +86,6 @@ galternatives
 geany
 gettext-base
 gnome-icon-theme
-gnome-system-tools
 gnome-themes-extra
 gnupg
 gparted

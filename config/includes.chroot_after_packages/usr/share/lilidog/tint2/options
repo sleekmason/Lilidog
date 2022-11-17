@@ -1,8 +1,8 @@
-Tint2 12H/24H,             tint2-12to24,            time-admin
+Tint2 12H/24H,             tint2-12to24,            appointment-new
 Tint2 Autohide,            tint2-autohide,          preferences-desktop
 Tint2 Autoshrink,          tint2-shrink,            zoom-fit-best
-Tint2 Battery Notify,      tint2-battery-notify,    utilities-system-monitor
-Tint2 Icons Color,          tint2-iconcolor,         applications-graphics
+Tint2 Battery Notify,      tint2-battery-notify,    battery-full
+Tint2 Icon Color,          tint2-iconcolor,         applications-graphics
 Tint2 Position,            tint2-position,          object-flip-vertical
 Tint2 Text Color,          tint2-textcolor,         preferences-desktop-font
 Tint2 Transparency,        tint2-transparency,      preferences-system

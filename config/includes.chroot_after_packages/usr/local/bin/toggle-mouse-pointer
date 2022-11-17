@@ -3,7 +3,7 @@
 yad --title "Mouse Finder" --center --width=244 --borders=6 \
 --text="\nColored Mouse Pointer Locator\n
 Use key combo Super + Space\nto toggle the locator On/Off \n" --text-align=center \
---window-icon=org.xfce.settings.mouse --button=gtk-close:1 \
+--window-icon=org.xfce.settings.mouse --button=gtk-ok:0 \
     --form \
     --field="Mouse Finder On":FBTN "bash -c mouse-pointer-on" \
     --field="Mouse Finder Off":FBTN "killall highlight-pointer" \

@@ -4,7 +4,6 @@
 
 noti=$(yad --width 310 --borders=12 --entry --title "Battery Text Color" --center --window-icon=applications-graphics \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
-    --button=gtk-close:1 \
     --button="gtk-ok:0" \
     "Navy - Default" "Grey" "Bright Grey" "Aqua" "Blue" "Indigo" "Violet" "Magenta" "Green" "Black" "Red")
 

@@ -34,8 +34,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1030"
+     inkscape:window-width="1385"
+     inkscape:window-height="1023"
      id="namedview896"
      showgrid="false"
      inkscape:zoom="35.291667"
@@ -43,7 +43,7 @@
      inkscape:cy="12"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="g892"
      inkscape:document-rotation="0" />
   <defs
@@ -120,7 +120,121 @@
        id="filter212">
       <feColorMatrix
          values="1 0 0 -0.15 -0 0 1 0 -0.15 -0 0 0 1 -0.15 -0 0 0 0 1 0"
-         id="feColorMatrix210" />
+         id="feColorMatrix210"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix955" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite957"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix959"
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1" />
+      <feFlood
+         id="feFlood961"
+         flood-opacity="0.792157"
+         flood-color="rgb(63,54,92)"
+         result="flood1" />
+      <feBlend
+         in2="colormatrix1"
+         id="feBlend963"
+         in="flood1"
+         mode="multiply"
+         result="blend1" />
+      <feBlend
+         in2="blend1"
+         id="feBlend965"
+         mode="screen"
+         result="blend2" />
+      <feColorMatrix
+         id="feColorMatrix967"
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite969"
+         in="colormatrix2"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix441" />
+      <feColorMatrix
+         id="feColorMatrix443"
+         values="1 0 0 0.0298 -0 0 1 0 0.0298 -0 0 0 1 0.0298 -0 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Lightness-Contrast"
+       id="filter985">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         id="feComposite971" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix973" />
+      <feFlood
+         flood-opacity="0.792157"
+         flood-color="rgb(63,54,92)"
+         result="flood1"
+         id="feFlood975" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="multiply"
+         result="blend1"
+         id="feBlend977" />
+      <feBlend
+         in2="blend1"
+         mode="screen"
+         result="blend2"
+         id="feBlend979" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix981" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite983" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix445" />
+      <feColorMatrix
+         id="feColorMatrix447"
+         values="1 0 0 0.0298 -0 0 1 0 0.0298 -0 0 0 1 0.0298 -0 0 0 0 1 0"
+         in="fbSourceGraphic" />
     </filter>
   </defs>
   <g
@@ -128,7 +242,7 @@
      id="g892"
      style="filter:url(#filter980)">
     <path
-       style="fill:currentColor;fill-opacity:1;stroke:none"
+       style="fill:currentColor;fill-opacity:1;stroke:none;filter:url(#filter985)"
        class="ColorScheme-Text"
        d="M3 7v8h15l-2-8zM1 5v12h19v-4h.5c.277 0 .5-.223.5-.5v-3c0-.277-.223-.5-.5-.5H20V5H3zm1 1h17v10H2z"
        fill-rule="evenodd"

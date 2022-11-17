@@ -27,7 +27,7 @@ export -f change_wallpaper
 function on_click() {
     yad --form --on-top --geometry="200x69-350-68" --title "Fast Flip" --borders=10 \
     --window-icon=edit-redo \
-        --field="  Shuffle Wallpapers!"/usr/share/icons/gnome/32x32/actions/edit-redo.png":FBTN" 'bash -c change_wallpaper' \
+        --field="  Shuffle Wallpapers!"/usr/share/icons/Adwaita/32x32/legacy/edit-redo.png":FBTN" 'bash -c change_wallpaper' \
         --image-on-top --no-markup \
         --skip-taskbar --no-buttons
 }
@@ -82,8 +82,8 @@ yad --notification --no-markup  --text="Random Background Changer"   \
 
 
 # set notification right-click menu
-echo "menu:Folder & Icon Options! bash -c  'mousepad ~/.config/random-bg.conf'!$icondir/22x22/categories/applications-office.png|| \
-Off! bash -c 'on_kill'!$icondir/22x22/actions/process-stop.png|| \
+echo "menu:Folder & Icon Options! bash -c  'mousepad ~/.config/random-bg.conf'!/usr/share/icons/Adwaita/22x22/legacy/applications-office.png|| \
+Off! bash -c 'on_kill'!/usr/share/icons/Adwaita/22x22/legacy/process-stop.png|| \
 One Minute! bash -c 'wallpaper_shuffler 60'!$icondir/22x22/mimetypes/application-x-addon.png| \
 Five Minutes! bash -c 'wallpaper_shuffler 5m'!$icondir/22x22/mimetypes/application-x-addon.png| \
 Ten Minutes! bash -c 'wallpaper_shuffler 10m'!$icondir/22x22/mimetypes/application-x-addon.png| \
@@ -93,7 +93,7 @@ Two Hours! bash -c  'wallpaper_shuffler 2h'!$icondir/22x22/mimetypes/application
 Four Hours! bash -c  'wallpaper_shuffler 4h'!$icondir/22x22/mimetypes/application-x-addon.png| \
 Eight Hours! bash -c  'wallpaper_shuffler 8h'!$icondir/22x22/mimetypes/application-x-addon.png| \
 One Full Day! bash -c  'wallpaper_shuffler 24h'!$icondir/22x22/mimetypes/application-x-addon.png|| \
-Exit!Quit!$icondir/22x22/actions/window-close.png " >&3
+Exit!Quit!/usr/share/icons/Adwaita/22x22/legacy/window-close.png " >&3
 
 # set notification icon
 echo "icon:$trayicon" >&3 && notify-send --urgency low 'Random BG Tint2 Tray Icon Enabled'

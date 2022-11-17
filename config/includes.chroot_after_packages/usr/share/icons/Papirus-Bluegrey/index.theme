@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Papirus-Bluegrey
 Comment=Minimal folder theme for Lilidog
-Inherits=Papirus,breeze-dark,ubuntu-mono-dark,gnome,hicolor
+Inherits=Papirus,gnome,breeze,Adwaita,hicolor
 Example=folder
 FollowsColorScheme=true
 DesktopDefault=48

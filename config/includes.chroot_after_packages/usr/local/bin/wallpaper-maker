@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yad --title "Wallpaper" --escape-ok \
---button=gtk-close:1 --form --center --width=240 --height=258 --borders=12 \
+--button=gtk-ok:0 --form --center --width=240 --height=258 --borders=12 \
 --text="Please select the type of Wallpaper you want to create.\n" --text-align=center \
 --window-icon=applications-utilities \
     --form \

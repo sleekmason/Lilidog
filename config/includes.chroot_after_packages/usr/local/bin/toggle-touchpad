@@ -1,5 +1,5 @@
 #!/bin/bash
-yad --title "Touchpad" --button=gtk-close:1 --form --center --width=232 --borders=4 \
+yad --title "Touchpad" --button=gtk-ok:0 --form --center --width=232 --borders=4 \
 --height=160 --text="\n Enable Or Disable \n Touchpad Tap To Click \n" --text-align=center \
 --window-icon=applications-system \
     --form \
