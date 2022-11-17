@@ -15,7 +15,7 @@ lb config noauto \
      --firmware-chroot 'true' \
      --security 'true' \
      --memtest 'none' \
-     --image-name 'Lilidog-22.11.03' \
+     --image-name 'Lilidog-22.11.17' \
      --iso-application 'Lilidog' \
      --iso-publisher 'Lilidog GNU/Linux' \
      --iso-volume 'LiliDog' \

@@ -6,7 +6,7 @@
 
 ## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
 sudo sed -i "s/theme-name.*/theme-name = Nightshade/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Nightshade.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Nightshade.jpg/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/position.*/position = 87%,end 11%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
@@ -50,7 +50,7 @@ sed -i 's/^battery_font_color.*/battery_font_color = #9CBDD9 100/g' $HOME/.confi
 killall -SIGUSR1 tint2
 
 ## Set Background
-feh --bg-scale '/home/wallpaper/Sunset.jpg'
+feh --bg-scale '/home/wallpaper/Nightshade.jpg'
 
 ## Set System Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
