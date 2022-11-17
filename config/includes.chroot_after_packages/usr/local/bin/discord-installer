@@ -34,7 +34,7 @@ notify-send "Discord is already installed" && exit
 else
 echo "" 
 echo ""
-wget -o - https://github.com/srevinsaju/discord-appimage/releases/download/stable/Discord-0.0.20-x86_64.AppImage -P ~/.discord &&
+wget -o - https://github.com/srevinsaju/discord-appimage/releases/download/stable/Discord-0.0.21-x86_64.AppImage -P ~/.discord &&
 chmod +x ~/.discord/*.AppImage &&
 echo ""
 sed -i '/^Discord\b/d' ~/.config/jgmenu/mymenu.csv &&

@@ -17,8 +17,8 @@ read -p "   This script will install the Inkscape vector design program.
     if : >/dev/tcp/8.8.8.8/53; then
 echo ""   
 sudo apt update && sudo apt install --install-recommends inkscape &&
-sed -i '/Inkscape,               inkscape,                              inkscape/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Inkscape,               inkscape,                              inkscape' ~/.config/jgmenu/mymenu.csv
+sed -i '/Inkscape,               inkscape,                              org.xfce.settings.color/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Inkscape,               inkscape,                              org.xfce.settings.color' ~/.config/jgmenu/mymenu.csv
 killall jgmenu
 echo ""
 echo "----------------------------------------------------------------"
