@@ -1,7 +1,7 @@
 #! /bin/bash
 
 soundwav=$(yad --width 300 --entry --borders=10 --title "Sound Choices" --center --window-icon=applications-system \
-    --image="/usr/share/volumeicon/icons/tango/8.png" \
+    --image="audio-headphones" \
     --button="gtk-ok:0" \
     --text "Notification Sounds" \
     --entry-text \
