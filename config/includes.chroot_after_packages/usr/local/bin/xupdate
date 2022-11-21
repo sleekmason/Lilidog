@@ -1,0 +1,198 @@
+#!/bin/bash
+# xupdate - originally xDaily from the Peppermint distro.
+# Adapted to lilidog use by sleekmason 11-21-2022
+
+PROGNAME="xupdate"
+[ "$USER" != "root" ] && 
+   echo -e "[0;31m\t$PROGNAME must be run as root, or with 'sudo $PROGNAME'[0m" && exit
+#use the utils for the needed functions
+### Our options are going to be
+#    = "full output to the terminal, no stopping."
+# -i = "interactive"
+# -q = "interactive but suppressed output"
+OPTIND="0"
+for i in  _quiet _interactive ; do unset -v $i ; done
+
+while getopts 'iq' OPTION; do
+    case "$OPTION" in
+      i)
+	_interactive="yes"
+	echo -e "[0;32m \n Entering interactive mode.\n[0m"
+	break
+      ;;
+
+      q)
+	_quiet="yes"
+	echo -e "[0;32m \n Entering interactive mode, without verbose output.\n[0m"
+	break
+      ;;
+
+      ?)
+	echo "Usage: $(basename ${PROGNAME}) [-i = interactive] [-q = suppressed ouput]"
+	return 1
+      ;;
+  esac
+done
+
+[ "$(which nala)" ] && PkgMgr="nala" || PkgMgr="apt"
+
+see_it() {
+	[ "$_interactive" = "yes" ] && ( read -r -n1 -p " $_msg \"Y/n\" " answ
+	[ -z "$answ" ] || [ "$answ" = "y" ] || [ "$answ" = "Y" ] && echo &&
+	do_it &&
+	echo -e " [0;32m$_msg - Completed.\n[0m" ||
+	echo -e "\r [0;32m$_msg - Skipped.\n[0m" )
+}
+
+no_see() {
+	[ "$_quiet" = "yes"       ] && ( read -r -n1 -p " $_msg \"Y/n\" " answ
+	[ -z "$answ" ] || [ "$answ" = "y" ] || [ "$answ" = "Y" ] && echo &&
+	do_it > /dev/null &&
+	echo -e " [0;32m$_msg - Completed.\n[0m" ||
+	echo -e "\r [0;32m$_msg - Skipped.\n[0m" )
+}
+
+run_it() {
+	[ "$_interactive" != "yes" ] && [ "$_quiet" != "yes" ] && (
+	echo -e "\n $_msg ." &&
+	do_it &&
+	echo -e " [0;32m$_msg - Completed.[0m" )
+}
+
+# Begin xDaily command functions 
+_update() {
+      _msg="Check apt repositories for updates?"
+      do_it() { 
+		[ "$_quiet" != "yes" ] &&
+		$PkgMgr update        ||
+		$PkgMgr update > /dev/null 2>&1
+}
+	see_it
+	no_see
+	run_it
+}
+
+_upgradable() {
+      _msg="See upgradable packages?"
+      do_it() {
+		[ "$_quiet" != "yes" ] &&
+		$PkgMgr list --upgradable  ||
+		$PkgMgr list --upgradable > /dev/null 2>&1
+}
+	see_it
+#	no_see
+#	run_it
+}
+
+_upgrade() {
+      _msg="Install available updated packages?"
+      do_it() {
+		[ "$_quiet" != "yes" ] &&
+		$PkgMgr upgrade       ||
+		$PkgMgr upgrade 2>&1 > /dev/null 2>&1
+}
+	see_it
+	no_see
+	run_it
+}
+
+_apt_clean() {
+      _msg="Remove unneccessary packages from APT cache?"
+      do_it() {
+		[ "$_quiet" != "yes" ] &&
+		$PkgMgr clean         ||
+		$PkgMgr clean 2>&1 > /dev/null 2>&1
+}
+	see_it
+	no_see
+	run_it
+}
+
+_autoclean () {
+      _msg="Remove unavailable entries from APT cache?"
+      do_it() {
+		[ "$_quiet" != "yes" ] &&
+		$PkgMgr autoclean     ||
+		$PkgMgr autoclean 2>&1 > /dev/null 2>&1
+}
+	see_it
+	no_see
+	run_it
+}
+
+_autoremove() {
+      _msg="Remove old dependencies not required by the system?"
+      do_it() {
+		[ "$_quiet" != "yes" ] &&
+		$PkgMgr autoremove    ||
+		$PkgMgr autoremove 2>&1 > /dev/null 2>&1
+}
+	see_it
+	no_see
+	run_it
+}
+
+_clear_thumbnails() {
+      _msg="Clear browser thumbnail caches?"
+      do_it() {
+		for i in ".thumbnails" ".cache/thumbnails" ; do
+		   for j in "*/*.png" "*/*/*.png" ; do
+			[ "$_quiet" != "yes" ]  &&
+			rm -v /home/"${SUDO_USER}"/${i}/"${j}" > /dev/null 2>&1 ||
+		        rm /home/"${SUDO_USER}"/${i}/"${j}" > /dev/null 2>&1
+		   done
+		done ; true
+	      }
+	see_it
+	no_see
+	run_it
+}
+
+_clear_recents() {
+      _msg="Clear the \"Recently Used\" list in FireFox"
+      do_it() {
+		dd bs=1 count=1 status=none if=/dev/null of=/home/"${SUDO_USER}"/.local/share/recently-used.xbel
+		chown "${SUDO_USER}":"${SUDO_USER}" /home/"${SUDO_USER}"/.local/share/recently-used.xbel
+}
+	see_it
+	no_see
+	run_it
+}
+
+_ssd_trimfs() {
+      _msg="For SSDs: trim eligible ext2/3/4 filesystems"
+      do_it() {
+		for mnt in $(grep -E "(ext2|ext3|ext4)" /etc/mtab | cut -f2 -d" ")
+		    do fstrim "${mnt}" &>/dev/null &&
+			echo -e " Completed fstrim for \"${mnt}\"" ||
+			echo -e " No fstrim required for \"${mnt}\""
+		    done
+	      }
+        see_it
+        no_see
+        run_it
+}
+
+_udcache() {
+      _msg="Caching icons at /usr/share/icons/"
+      do_it() { update-icon-caches /usr/share/icons/* ;}
+        see_it
+        no_see
+        run_it
+}
+
+ 
+_update
+_upgradable
+_upgrade
+_apt_clean
+if [ "$PkgMgr" = "apt" ]; then _autoclean ; fi
+_autoremove
+_clear_thumbnails
+_clear_recents
+_udcache
+_ssd_trimfs
+
+[ "$_interactive" = "yes" ] &&
+ read -r -n1 -p " Press any key to quit ... " answ
+echo

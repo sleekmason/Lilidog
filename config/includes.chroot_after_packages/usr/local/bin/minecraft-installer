@@ -19,8 +19,11 @@ read -p "   [0;33mMinecraft Installer.[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
-cd /usr/share/lilidog/extras/ &&
+
+cd /tmp/ &&
+sudo curl -LJO https://raw.githubusercontent.com/sleekmason/packages/master/Minecraft.deb &&
 sudo apt update && sudo apt install --install-recommends ./Minecraft.deb &&
+sudo rm Minecraft.deb
 sed -i '/Games,^checkout(games),applications-games/d' ~/.config/jgmenu/mymenu.csv &&
 sed -i '/Development,^checkout(development),applications-development/i Games,^checkout(games),applications-games' ~/.config/jgmenu/mymenu.csv &&
 sed -i '/tag(games)/d' ~/.config/jgmenu/mymenu.csv &&
