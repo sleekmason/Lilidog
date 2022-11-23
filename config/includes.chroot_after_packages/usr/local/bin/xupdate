@@ -1,7 +1,7 @@
 #!/bin/bash
 # xupdate - originally xDaily from the Peppermint distro.
 # Adapted to lilidog use by sleekmason 11-21-2022
-
+if : >/dev/tcp/8.8.8.8/53; then
 PROGNAME="xupdate"
 [ "$USER" != "root" ] && 
    echo -e "[0;31m\t$PROGNAME must be run as root, or with 'sudo $PROGNAME'[0m" && exit
@@ -194,5 +194,14 @@ _udcache
 _ssd_trimfs
 
 [ "$_interactive" = "yes" ] &&
- read -r -n1 -p " Press any key to quit ... " answ
 echo
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
+read -r -n1 -p " Press any key to quit this dialog ... " answ
