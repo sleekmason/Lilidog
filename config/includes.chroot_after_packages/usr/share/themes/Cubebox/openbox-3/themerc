@@ -21,8 +21,8 @@ menu.title.text.justify: center
 
 !! Selected menu item
 menu.items.active.bg: raised splitvertical gradient
-menu.items.active.bg.color: #565961
-menu.items.active.bg.colorTo: #565961
+menu.items.active.bg.color: #484A51
+menu.items.active.bg.colorTo: #484A51
 menu.items.active.text.color: #FAFAFA
 
 !! Titlebar
@@ -91,5 +91,5 @@ window.inactive.grip.bg: parentrelative
 
 !! On-screen displays
 osd.bg: gradient vertical flat
-osd.bg.color: #3B3B3B
-osd.bg.colorTo: #323232
+osd.bg.color: #2A2B2E
+osd.bg.colorTo: #333438
