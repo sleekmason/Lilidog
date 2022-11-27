@@ -342,7 +342,7 @@ style "evolve-menu-item" = "evolve-wider" {
 
 	engine "murrine" {
 		textstyle = 0
-		border_shades = { 1.4, 1.4 }
+		border_shades = { 1.1, 1.1 }
 	}
 }
 
