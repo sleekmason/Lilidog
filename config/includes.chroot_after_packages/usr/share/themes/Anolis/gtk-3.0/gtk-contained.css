@@ -428,7 +428,7 @@ button {
   min-width: 16px;
   padding: 1px 2px;
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #A7CFD1;
   outline-color: #527070;
@@ -437,7 +437,7 @@ button {
   border-left-color: shade(#132426, 0.72);
   border-bottom-color: shade(#132426, 0.7);
   background-image: linear-gradient(to bottom, shade(shade(#1B3236, 1.02), 1.05), shade(shade(#16282B, 1.02), 0.97));
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.6); }
+  box-shadow: inset 0 1px #132426; }
   notebook > header > tabs > arrow, button.sidebar-button, button.titlebutton,
   button.flat {
     border-color: transparent;
