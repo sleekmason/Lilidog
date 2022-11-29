@@ -17,7 +17,7 @@ while getopts 'iq' OPTION; do
     case "$OPTION" in
       i)
 	_interactive="yes"
-	echo -e "[0;32m \n Entering interactive mode.\n[0m"
+	echo -e "[0;32m \n Entering interactive choice mode . . .\n[0m"
 	break
       ;;
 
@@ -73,7 +73,7 @@ _update() {
 }
 
 _upgradable() {
-      _msg="See upgradable packages?"
+      _msg="See all upgradable packages?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr list --upgradable  ||
@@ -85,7 +85,7 @@ _upgradable() {
 }
 
 _upgrade() {
-      _msg="Install available updated packages?"
+      _msg="Install any available updated packages?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr upgrade       ||
@@ -97,7 +97,7 @@ _upgrade() {
 }
 
 _apt_clean() {
-      _msg="Remove unneccessary packages from APT cache?"
+      _msg="Use apt clean to remove unneeded packages from APT cache?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr clean         ||
@@ -109,7 +109,7 @@ _apt_clean() {
 }
 
 _autoclean () {
-      _msg="Remove unavailable entries from APT cache?"
+      _msg="Use apt autoclean to remove old entries from APT cache?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr autoclean     ||
@@ -121,7 +121,7 @@ _autoclean () {
 }
 
 _autoremove() {
-      _msg="Remove old dependencies not required by the system?"
+      _msg="Use apt autoremove to remove dependencies no longer needed?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr autoremove    ||
@@ -133,7 +133,7 @@ _autoremove() {
 }
 
 _clear_thumbnails() {
-      _msg="Clear browser thumbnail caches?"
+      _msg="Clear thumbnail caches?"
       do_it() {
 		for i in ".thumbnails" ".cache/thumbnails" ; do
 		   for j in "*/*.png" "*/*/*.png" ; do
@@ -149,7 +149,7 @@ _clear_thumbnails() {
 }
 
 _clear_recents() {
-      _msg="Clear the \"Recently Used\" list in FireFox"
+      _msg="Clear the \"Recently Used\" list?"
       do_it() {
 		dd bs=1 count=1 status=none if=/dev/null of=/home/"${SUDO_USER}"/.local/share/recently-used.xbel
 		chown "${SUDO_USER}":"${SUDO_USER}" /home/"${SUDO_USER}"/.local/share/recently-used.xbel
@@ -160,7 +160,7 @@ _clear_recents() {
 }
 
 _ssd_trimfs() {
-      _msg="For SSDs: trim eligible ext2/3/4 filesystems"
+      _msg="For SSDs: trim eligible ext2/3/4 filesystems?"
       do_it() {
 		for mnt in $(grep -E "(ext2|ext3|ext4)" /etc/mtab | cut -f2 -d" ")
 		    do fstrim "${mnt}" &>/dev/null &&
@@ -174,7 +174,7 @@ _ssd_trimfs() {
 }
 
 _udcache() {
-      _msg="Caching icons at /usr/share/icons/"
+      _msg="Cache all icons in /usr/share/icons/?"
       do_it() { update-icon-caches /usr/share/icons/* ;}
         see_it
         no_see
