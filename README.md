@@ -9,18 +9,36 @@ Lilidog is a lightweight Linux distro using the Openbox window manager. <br/>
 Lilidog is based on Debian, with most of the hard parts done, and some cool stuff along the way. <br/>
 Everything is easily accessible, with numerous options to customize further.
 
-### There are currently three versions of Lilidog available.
+### There are currently Four stable versions of Lilidog available for Bullseye.
 
-- Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use. <br/>
+- Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use.
 This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few.
 
-- Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog while allowing you to choose most all of
-your OWN packages. Currently contains xfce4-terminal, Thunar, and Mousepad to get you started.
+- Lilidog-Minimal-amd64 - This version contains all of the goodness of Lilidog
+while allowing you to choose most all of your OWN packages.
+Currently contains xfce4-terminal, Thunar, and Mousepad to get you started.
 Design your system with any other programs you might like.
 __sudo apt update && sudo apt install synaptic__ for a graphical interface to make installing your programs easier.
 
 - Lilidog-i386 (Bullseye i386 full version) Uses the same base packages as the amd64 version, but for older hardware.
-You may need to boot with the kernel parameter 'forcepae' if you have difficulties.
+You may need to boot with the kernel parameter 'forcepae' if you have difficulties.  This version will no longer be
+available after debian changes from Bullseye to Bookworm.
+
+- Beardog - A play on words a bit.  This is the "bare" minimal version of Lilidog with no ld theme changer.  pcmanfm
+and lxterminal are default. Upon login, you will be presented with an option to install a few of the more common
+items people like to have on their system, including a login manager, jgmenu with icon control, dunst with sound control,
+transparency, backports & kernel, and the rest of the installers if you want. If you are wanting to start with a bare
+system, this may be the one for you!
+
+### You may also find a testing or sid version on occasion.
+
+At various times you may also find a bookworm addition and/or a sid addition. These builds are for testing purposes.
+Both sid (unstable) and bookworm (testing) may contain yet unknown errors. Realistically, the stable builds are the 
+way to go for most people unless you just like to tinker. If you choose one of these builds, be prepared to update 
+frequently. Some of the installers will also be unavailable until Bookworm becomes stable in the summer of 2023.  
+If you dual boot, you will want to edit /etc/default/grub as root and uncomment GRUB_DISABLE_OS_PROBER=false 
+and then 'sudo update-grub' in a terminal to see your other distributions.  Join the Lilidog forum to report 
+any issues and keep lilidog bug free!
 
 See further below for features.
 
