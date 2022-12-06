@@ -1,0 +1,144 @@
+#!/bin/bash
+# Adapted to lilidog use by sleekmason 12-03-2022
+if : >/dev/tcp/8.8.8.8/53; then
+PROGNAME="ld-entry"
+[ "$USER" != "root" ] &&
+   echo -e "[0;31m\t$PROGNAME should be run with 'sudo $PROGNAME -i'[0m" && exit
+
+### Our options are going to be
+#    = "full output to the terminal, no stopping."
+# -i = "interactive"
+# -q = "interactive but suppressed output"
+OPTIND="0"
+for i in  _quiet _interactive ; do unset -v $i ; done
+
+while getopts 'iq' OPTION; do
+    case "$OPTION" in
+      i)
+	_interactive="yes"
+	echo -e " [0;32m\n Entering interactive mode to customize Lilidog.\n Please make your selections carefully.\n[0m"
+	break
+      ;;
+
+      q)
+	_quiet="yes"
+	echo -e " [0;32mEntering interactive mode, without verbose output.\n[0m"
+	break
+      ;;
+
+      ?)
+	echo "Usage: $(basename ${PROGNAME}) [-i = interactive] [-q = suppressed ouput]"
+	return 1
+      ;;
+  esac
+done
+
+[ "$(which nala)" ] && PkgMgr="nala" || PkgMgr="apt"
+
+see_it() {
+	[ "$_interactive" = "yes" ] && ( read -r -n1 -p " $_msg \"Y/n\" " answ
+	[ -z "$answ" ] || [ "$answ" = "y" ] || [ "$answ" = "Y" ] && echo &&
+	do_it &&
+	echo -e " [0;32m$_msg - Completed.\n[0m" ||
+	echo -e "[0;32m\r $_msg - Skipped.\n[0m" )
+}
+
+no_see() {
+	[ "$_quiet" = "yes"       ] && ( read -r -n1 -p " $_msg \"Y/n\" " answ
+	[ -z "$answ" ] || [ "$answ" = "y" ] || [ "$answ" = "Y" ] && echo &&
+	do_it > /dev/null &&
+	echo -e " [0;32m$_msg - Completed.\n[0m" ||
+	echo -e "[0;32m\r $_msg - Skipped.\n[0m" )
+}
+
+run_it() {
+	[ "$_interactive" != "yes" ] && [ "$_quiet" != "yes" ] && (
+	echo -e "\n $_msg" &&
+	do_it &&
+	echo -e "[0;32m $_msg - Completed.[0m" )
+}
+
+# Begin functions 
+_update() {
+      _msg="Update current packages before proceeding?"
+      do_it() { 
+		[ "$_quiet" != "yes" ] &&
+		apt-get update && apt-get -y upgrade
+}
+	see_it
+	no_see
+	run_it
+}
+
+_remove_packages() {
+      _msg="Remove Cryptsetup and related packages?"
+      do_it() { apt-get remove -y cryptsetup cryptsetup-initramfs cryptsetup-bin ;}
+        see_it
+        no_see
+        run_it
+}
+
+_upgrade_kernel() {
+      _msg="Install backports kernel and add backports sources?"
+      do_it() { echo 'deb http://deb.debian.org/debian bullseye-backports main' | tee /etc/apt/sources.list.d/bullseye-backports.list &&
+		        apt-get update && apt-get install -y -t bullseye-backports linux-image-amd64 firmware-linux ;}
+        see_it
+        no_see
+        run_it
+}
+
+_add_backports() {
+      _msg="Just add the backports sources and update?"
+      do_it() { echo 'deb http://deb.debian.org/debian bullseye-backports main' | tee /etc/apt/sources.list.d/bullseye-backports.list &&
+		        apt-get update ;}
+        see_it
+        no_see
+        run_it
+}
+
+_firmware() {
+      _msg="Install isenkram-cli to check for missing firmware?"
+      do_it() { apt update && sudo apt install -y isenkram-cli &&
+		isenkram-autoinstall-firmware ;}
+        see_it
+        no_see
+        run_it
+}
+
+_autologin() {
+      _msg="Enable autologin? (sudo password required)"
+      do_it() { sudo -u "${SUDO_USER}" 'lightdm-autologin' ;}
+        see_it
+        no_see
+        run_it
+}
+
+_reboot() {
+      _msg="Reboot? (After kernel install or autologin)"
+      do_it() { reboot ;}
+        see_it
+        no_see
+        run_it
+}
+
+_update
+_remove_packages
+_upgrade_kernel
+_add_backports
+_firmware
+_autologin
+_reboot
+
+[ "$_interactive" = "yes" ] &&
+echo $'\n\nPress any key to quit ...'; read -srn1
+sed -i '/welcome.sh &/d' /home/"${SUDO_USER}"/.config/openbox/autostart
+echo
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi

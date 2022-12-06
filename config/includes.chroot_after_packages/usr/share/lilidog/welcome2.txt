@@ -1,7 +1,7 @@
-                          
+                       
                       WELCOME!
                         
-    Thank you for installing Lilidog. Please feel
+    Thank you for trying out Lilidog. Please feel
     free to join the Lilidog discussion forum for
     further information or if you have any issues 
     to report.
@@ -11,8 +11,3 @@
     For initial settings, please see the paw icon
     located in the Tint2 panel. Font size, themes
     wallpapers, and other options are available.
-    
-    If you would like to customize your system by
-    answering some questions now, press the Begin
-    button below. Use 'sudo ld-entry -i' in order
-    to try out the customization script later.
