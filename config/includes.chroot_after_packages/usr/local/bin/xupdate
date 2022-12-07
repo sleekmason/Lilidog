@@ -17,7 +17,7 @@ while getopts 'iq' OPTION; do
     case "$OPTION" in
       i)
 	_interactive="yes"
-	echo -e "[0;32m \n Entering interactive choice mode . . .\n[0m"
+	echo -e "[0;32m \n Entering interactive mode to update your system.\n Please be careful when making your selections.\n[0m"
 	break
       ;;
 
@@ -97,7 +97,7 @@ _upgrade() {
 }
 
 _apt_clean() {
-      _msg="Use apt clean to remove unneeded packages from APT cache?"
+      _msg="Remove unneeded packages from APT cache?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr clean         ||
@@ -109,7 +109,7 @@ _apt_clean() {
 }
 
 _autoclean () {
-      _msg="Use apt autoclean to remove old entries from APT cache?"
+      _msg="Remove old entries from APT cache?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr autoclean     ||
@@ -121,7 +121,7 @@ _autoclean () {
 }
 
 _autoremove() {
-      _msg="Use apt autoremove to remove dependencies no longer needed?"
+      _msg="Remove dependencies no longer needed?"
       do_it() {
 		[ "$_quiet" != "yes" ] &&
 		$PkgMgr autoremove    ||

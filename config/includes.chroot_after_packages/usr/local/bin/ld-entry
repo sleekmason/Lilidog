@@ -88,7 +88,7 @@ _upgrade_kernel() {
 }
 
 _add_backports() {
-      _msg="Just add the backports sources and update?"
+      _msg="Or just add backports sources and update?"
       do_it() { echo 'deb http://deb.debian.org/debian bullseye-backports main' | tee /etc/apt/sources.list.d/bullseye-backports.list &&
 		        apt-get update ;}
         see_it
