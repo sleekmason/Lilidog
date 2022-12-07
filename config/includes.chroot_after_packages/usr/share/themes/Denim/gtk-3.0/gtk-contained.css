@@ -432,10 +432,10 @@ button {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #9FD8E0;
   outline-color: #4B646B;
-  border-top-color: shade(#18252B, 0.8);
-  border-right-color: shade(#18252B, 0.72);
-  border-left-color: shade(#18252B, 0.72);
-  border-bottom-color: shade(#18252B, 0.7);
+  border-top-color: shade(#32545E, 0.8);
+  border-right-color: shade(#32545E, 0.72);
+  border-left-color: shade(#32545E, 0.72);
+  border-bottom-color: shade(#32545E, 0.7);
   background-image: linear-gradient(to bottom, shade(shade(#18252B, 1.02), 1.05), shade(shade(#18252B, 1.02), 0.97));
   box-shadow: inset 0 1px #18252B; }
   notebook > header > tabs > arrow, button.sidebar-button, button.titlebutton,
