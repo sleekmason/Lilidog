@@ -27,8 +27,8 @@ menu.items.active.text.color: #FAFAFA
 
 !! Titlebar
 window.active.title.bg: raised vertical gradient
-window.active.title.bg.color: #393A40
-window.active.title.bg.colorTo: #51555C
+window.active.title.bg.color: #313238
+window.active.title.bg.colorTo: #4D5057
 window.inactive.title.bg: flat splitvertical gradient
 window.inactive.title.bg.color: #232326
 window.inactive.title.bg.colorTo: #232326
