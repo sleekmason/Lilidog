@@ -1,14 +1,14 @@
-!! Nightshadebox by sleekmason 14 Nov 2022
+!! Nightshade-Indigobox by sleekmason 14 Nov 2022
 !! Based on Onyx-Citrus by Dana Jansens
 
 !! Menu background
 menu.items.bg: flat gradient vertical
 menu.items.bg.color: #222933
 menu.items.bg.colorTo: #222933
-menu.separator.color: #344459
+menu.separator.color: #42576B
 
 !! Menu text
-menu.items.text.color: #C5E0EB
+menu.items.text.color: #C7E7F2
 menu.items.justify: left
 menu.items.disabled.text.color: #4C6E70
 
@@ -21,14 +21,14 @@ menu.title.text.justify: center
 
 !! Selected menu item
 menu.items.active.bg: raised splitvertical gradient
-menu.items.active.bg.color: #3B4D66
-menu.items.active.bg.colorTo: #3B4D66
-menu.items.active.text.color: #D7F2FC
+menu.items.active.bg.color: #404B85
+menu.items.active.bg.colorTo: #404B85
+menu.items.active.text.color: #CCECFA
 
 !! Titlebar
 window.active.title.bg: raised vertical gradient
-window.active.title.bg.color: #263042
-window.active.title.bg.colorTo: #384963
+window.active.title.bg.color: #29354A
+window.active.title.bg.colorTo: #35455E
 window.inactive.title.bg: flat splitvertical gradient
 window.inactive.title.bg.color: #1E2630
 window.inactive.title.bg.colorTo: #1E2630
@@ -46,12 +46,12 @@ window.active.button.*.hover.bg: flat splitvertical gradient border
 window.inactive.button.*.hover.bg: parentrelative
 window.*.button.*.pressed.bg: flat splitvertical gradient border
 
-window.active.button.*.hover.bg.color: #4D6585
-window.active.button.*.hover.bg.colorTo: #4D6585
+window.active.button.*.hover.bg.color: #53658C
+window.active.button.*.hover.bg.colorTo: #53658C
 window.active.button.*.hover.bg.border.color: #6987BD
 
-window.active.button.*.pressed.bg.color: #4D6585
-window.active.button.*.pressed.bg.colorTo: #4D6585
+window.active.button.*.pressed.bg.color: #566DB3
+window.active.button.*.pressed.bg.colorTo: #566DB3
 window.active.button.*.pressed.image.color: #000000
 window.active.button.*.pressed.bg.border.color: #6987BD
 window.active.button.*.pressed.bg.border.color: #000000
@@ -66,13 +66,13 @@ window.inactive.button.*.image.color: #62849E
 window.inactive.button.disabled.image.color: #2B3640
 
 !! Borders
-window.active.border.color: #2B384A
+window.active.border.color: #283140
 window.inactive.border.color: #2B3640
 window.inactive.title.separator.color: #2B3640
 border.width: 1
 padding.width: 1
 window.handle.width: 3
-window.active.client.color:  #2B384A
+window.active.client.color:  #2D384A
 window.inactive.client.color:  #212833
 window.client.padding.width: 1
 window.client.padding.height: 1
@@ -81,7 +81,7 @@ menu.overlap: 0
 
 !! Handles
 window.active.handle.bg: raised
-window.active.handle.bg.color: #3B4D66
+window.active.handle.bg.color: #2C375C
 window.active.grip.bg: parentrelative
 window.inactive.handle.bg: raised
 window.inactive.handle.bg.color: #222933
