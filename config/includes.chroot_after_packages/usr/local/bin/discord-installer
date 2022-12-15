@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "             [0;33mDiscord AppImage Installer - 75MB AppImage[0m
+read -p "             [0;33mDiscord Installer[0m
 
 
    This script will install Discord, https://discord.com/ Discord is a
@@ -8,7 +8,7 @@ read -p "             [0;33mDiscord AppImage Installer - 75MB AppImage[0m
    of people to talk and hang out with their communities and friends.
    
    Download source:
-   https://github.com/srevinsaju/discord-appimage/releases
+   https://discord.com/download
    
    [0;32m--------------------------------------
    
@@ -34,11 +34,12 @@ notify-send "Discord is already installed" && exit
 else
 echo "" 
 echo ""
-wget -o - https://github.com/srevinsaju/discord-appimage/releases/download/stable/Discord-0.0.21-x86_64.AppImage -P ~/.discord &&
-chmod +x ~/.discord/*.AppImage &&
+cd /tmp
+sudo wget https://dl.discordapp.net/apps/linux/0.0.22/discord-0.0.22.deb &&
+sudo apt update && sudo apt install --install-recommends -y ./discord*
 echo ""
 sed -i '/^Discord\b/d' ~/.config/jgmenu/mymenu.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Discord,             ~/.discord/Discord*,         applications-games' ~/.config/jgmenu/mymenu.csv &&
+sed -i '/Root Folders,^checkout(rootfiles),folder/a Discord,             discord,         applications-games' ~/.config/jgmenu/mymenu.csv &&
 killall jgmenu
 echo "" 
 echo "" 
