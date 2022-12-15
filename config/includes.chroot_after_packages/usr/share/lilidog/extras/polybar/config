@@ -30,11 +30,11 @@
 
 [colors]
 ;background = ${xrdb:color0:#193A3E}
-background = #96121B1C
-background-alt = #96132426
+background = #961B1C1F
+background-alt = #96222326
 ;foreground = ${xrdb:color7:#ABCCCC}
-foreground = #ACD4D4
-foreground-alt = #A1D6D6
+foreground = #CCD2D4
+foreground-alt = #CBD3D6
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -223,8 +223,8 @@ label-active-padding = 2
 ;   %index%
 ; Default: %icon%  %name%
 label-occupied = "%{T5}%name%%{T-}"
-label-occupied-foreground = #A0C7C7
-label-occupied-background = #99121B1C
+label-occupied-foreground = #BDC5C7
+label-occupied-background = #991B1C1F
 label-occupied-padding = 1
 
 
@@ -245,8 +245,8 @@ label-urgent-padding = 1
 ; Default: %icon%  %name%
 label-empty = "%{T5}%name%%{T-}"
 ; foreground ACTIVE
-label-empty-foreground = #618080
-label-empty-background = #96121B1C
+label-empty-foreground = #7F8485
+label-empty-background = #961B1C1F
 label-empty-padding = 1
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
@@ -301,11 +301,11 @@ label = BL
 
 bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = #AED6D6
+bar-indicator-foreground = #CBD3D6
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
-bar-fill-foreground = #617878
+bar-fill-foreground = #6B7078
 bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
@@ -328,7 +328,7 @@ type = internal/memory
 interval = 2
 format-prefix = "mem: "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-underline = #3D70CF
 label = %percentage_used%%
 
 [module/wlan]
@@ -396,11 +396,11 @@ label-muted = 🔇 muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #00D7EB
-bar-volume-foreground-1 = #00D7EB
-bar-volume-foreground-2 = #00D7EB
-bar-volume-foreground-3 = #00D7EB
-bar-volume-foreground-4 = #00D7EB
+bar-volume-foreground-0 = #4498C2
+bar-volume-foreground-1 = #4498C2
+bar-volume-foreground-2 = #4498C2
+bar-volume-foreground-3 = #4498C2
+bar-volume-foreground-4 = #4498C2
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
@@ -424,11 +424,11 @@ format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #00D7EB
-bar-volume-foreground-1 = #00D7EB
-bar-volume-foreground-2 = #00D7EB
-bar-volume-foreground-3 = #00D7EB
-bar-volume-foreground-4 = #00D7EB
+bar-volume-foreground-0 = #4498C2
+bar-volume-foreground-1 = #4498C2
+bar-volume-foreground-2 = #4498C2
+bar-volume-foreground-3 = #4498C2
+bar-volume-foreground-4 = #4498C2
 bar-volume-foreground-5 = #6FF50A
 bar-volume-foreground-6 = #D1FF55
 bar-volume-gradient = false

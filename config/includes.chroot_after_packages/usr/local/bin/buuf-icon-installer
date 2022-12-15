@@ -19,11 +19,11 @@ read -p "   Buuf Icon Set Installer 57.1MB
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 cd /tmp &&
-sudo curl -LJO https://github.com/sleekmason/buuf-icons/archive/master.zip &&
-sudo unzip -q buuf-icons-master.zip &&
+sudo wget https://github.com/sleekmason/buuf-icons/archive/master.zip &&
+sudo unzip -q master.zip &&
 sudo cp -a /tmp/buuf-icons-master/. /usr/share/icons/
 sudo gtk-update-icon-cache /usr/share/icons/buuf-nestort
-sudo rm /tmp/buuf-icons-master.zip
+sudo rm /tmp/master.zip
 sudo rm -r /tmp/buuf-icons-master
 echo ""
 echo "----------------------------------------------------------------------"
