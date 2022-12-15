@@ -25,33 +25,33 @@ style "clearlooks-default"
 	xthickness = 1
 	ythickness = 1
 
-	fg[NORMAL]		    = "#C4ECFF" # CHANGED COULD BE SOME TEXT
-	fg[PRELIGHT]		= "#BFE1EF" # TEXT COLOR IN YES/NO BOX
-	fg[SELECTED]		= "#6B82DB" # Highlight
-	fg[ACTIVE]		    = "#BFE1EF" # TEXT COLOR IN YES AND NO BOXES
-	fg[INSENSITIVE]		= "#34425C" # 
+	fg[NORMAL]		    = "#FAFAFA" # CHANGED COULD BE SOME TEXT
+	fg[PRELIGHT]		= "#EFEFEF" # TEXT COLOR IN YES/NO BOX
+	fg[SELECTED]		= "#8F95A1" # Highlight
+	fg[ACTIVE]		    = "#EFEFEF" # TEXT COLOR IN YES AND NO BOXES
+	fg[INSENSITIVE]		= "#4A4C52" # 
 
-	bg[NORMAL]		    = "#1C2129" # BACKGROUND
-	bg[PRELIGHT]		= "#394861" # 
-	bg[SELECTED]		= "#4F609E" # 
-	bg[INSENSITIVE]		= "#34425C" #
-	bg[ACTIVE]		    = "#4F609E" #
+	bg[NORMAL]		    = "#1E1F21" # BACKGROUND
+	bg[PRELIGHT]		= "#62666E" # 
+	bg[SELECTED]		= "#53565C" # 
+	bg[INSENSITIVE]		= "#4A4C52" #
+	bg[ACTIVE]		    = "#53565C" #
 
-	base[NORMAL]		= "#242C38" # WHOLE BACKGROUND IN INSET AREA
-	base[PRELIGHT]		= "#3D5273" # 
-	base[ACTIVE]		= "#32446E" # UNSELECTED HIGHLIGHTED BAR
-	base[SELECTED]		= "#6B82DB" # Configure network hostname
-	base[INSENSITIVE]	= "#32446E" #
+	base[NORMAL]		= "#252629" # WHOLE BACKGROUND IN INSET AREA
+	base[PRELIGHT]		= "#494C51" # 
+	base[ACTIVE]		= "#62666E" # UNSELECTED HIGHLIGHTED BAR
+	base[SELECTED]		= "#8F95A1" # Configure network hostname
+	base[INSENSITIVE]	= "#62666E" #
 
-	text[NORMAL]		= "#BCDEEB" # PRIMARY TEXT COLOR
-	text[PRELIGHT]		= "#C6EAF7" # BRIGHTER TEXT DURING SELECTION HOPEFULLY
+	text[NORMAL]		= "#EBEBEB" # PRIMARY TEXT COLOR
+	text[PRELIGHT]		= "#F7F7F7" # BRIGHTER TEXT DURING SELECTION HOPEFULLY
 	text[ACTIVE]		= "#0D1517" #
 	text[SELECTED]		= "#0D1517" #
-	text[INSENSITIVE]	= "#A6D4EB" # BUTTON TEXT
+	text[INSENSITIVE]	= "#EBEBEB" # BUTTON TEXT
 
 	engine "clearlooks"
 	{
-  # scrollbar_color	    = "#5476C4"  #This will disappear if uncommented 
+  # scrollbar_color	    = "#A2ABBD"  #This will disappear if uncommented 
 	menubarstyle		= 2	# 0 = flat, 1 = sunken, 2 = flat gradient
 	#menuitemstyle		= 1	# 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
 	#listviewitemstyle	= 1	# 0 = flat, 1 = 3d-ish (gradient)
@@ -74,9 +74,9 @@ style "clearlooks-wider" = "clearlooks-default"
 
 style "clearlooks-button" = "clearlooks-wider"
 {
-	bg[NORMAL]	    = "#415296"  ## BUTTONS(3)
-	bg[INSENSITIVE]	= "#304562"
-	bg[PRELIGHT]	= "#49649E"  #Hover
+	bg[NORMAL]	    = "#494C51"  ## BUTTONS(3)
+	bg[INSENSITIVE]	= "#404247"
+	bg[PRELIGHT]	= "#70747D"  #Hover
 }
 
 style "clearlooks-notebook" = "clearlooks-wide"

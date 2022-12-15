@@ -1,5 +1,5 @@
-The folders gnome, Papirus, and breeze are for xfce4-power-manager icon 
-use and should not be removed unless deemed no longer necessary.
+The folders are for xfce4-power-manager tray icon use and should not be 
+removed unless deemed no longer necessary/wanted.
 
 To add an icon type, simply copy one of the existing icon folders and
 rename it to match the icon theme wanted.

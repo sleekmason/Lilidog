@@ -6,17 +6,12 @@ FILE="$HOME/.config/tint2/tint2rc"
 noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Icon Color" --center --window-icon=org.xfce.settings.color \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button="gtk-ok:0" \
-    "Navy - Default" "Grey" "Aqua" "Blue" "Indigo" "Violet" "Magenta" "Black")
+    "Grey - Default" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Black")
 
 case $noti in
-  Navy*)
-    notify-send --urgency low 'Changing Tint2 icon color to Navy' ;
-          sed -i 's/coltint2.*\//coltint2navy\//g' $FILE
-     killall -SIGUSR1 tint2
-;;
   Grey*)
-  notify-send --urgency low 'Changing Tint2 icon color to Grey' ;
-       sed -i 's/coltint2.*\//coltint2grey\//g' $FILE
+    notify-send --urgency low 'Changing Tint2 icon color to Grey' ;
+          sed -i 's/coltint2.*\//coltint2grey\//g' $FILE
      killall -SIGUSR1 tint2
 ;;
   Aqua*)
@@ -27,6 +22,11 @@ case $noti in
   Blue)
     notify-send --urgency low 'Changing Tint2 icon color to Blue' ;
        sed -i 's/coltint2.*\//coltint2blue\//g' $FILE
+     killall -SIGUSR1 tint2
+;;
+  Navy*)
+  notify-send --urgency low 'Changing Tint2 icon color to Navy' ;
+       sed -i 's/coltint2.*\//coltint2navy\//g' $FILE
      killall -SIGUSR1 tint2
 ;;
    Indigo)

@@ -6,18 +6,9 @@ FILE="$HOME/.config/tint2/tint2rc"
 noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Text Color" --center --window-icon=org.xfce.settings.color \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button="gtk-ok:0" \
-    "Navy -Default" "Grey" "Bright Grey" "Aqua" "Blue" "Indigo" "Violet" "Magenta" "Green" "Black" "Red")
+    "Grey -Default" "Bright Grey" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Green" "Black" "Red")
 
 case $noti in
-  Navy*)
-  notify-send --urgency low 'Changing Tint2 text to Navy' ;
-         sed -i 's/task_font_color =.*/task_font_color = \#9CBDD9 100/' $FILE
-         sed -i 's/clock_font_color =.*/clock_font_color = \#9CBDD9 100/' $FILE
-         sed -i 's/execp_font_color =.*/execp_font_color = \#9CBDD9 100/' $FILE
-         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#9CBDD9 100/' $FILE
-         sed -i 's/^battery_font_color.*/battery_font_color = #9CBDD9 100/g' $FILE
-     killall -SIGUSR1 tint2
-;;
   Grey*)
     notify-send --urgency low 'Changing Tint2 text to Grey' ;
          sed -i 's/task_font_color =.*/task_font_color = \#C2C2CC 100/' $FILE
@@ -52,6 +43,15 @@ case $noti in
          sed -i 's/execp_font_color =.*/execp_font_color = \#96C5D9 100/' $FILE
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#96C5D9 100/' $FILE
          sed -i 's/^battery_font_color.*/battery_font_color = #96C5D9 100/g' $FILE
+     killall -SIGUSR1 tint2
+;;
+  Navy*)
+  notify-send --urgency low 'Changing Tint2 text to Bright Grey' ;
+         sed -i 's/task_font_color =.*/task_font_color = \#9CBDD9 100/' $FILE
+         sed -i 's/clock_font_color =.*/clock_font_color = \#9CBDD9 100/' $FILE
+         sed -i 's/execp_font_color =.*/execp_font_color = \#9CBDD9 100/' $FILE
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#9CBDD9 100/' $FILE
+         sed -i 's/^battery_font_color.*/battery_font_color = #9CBDD9 100/g' $FILE
      killall -SIGUSR1 tint2
 ;;
    Indigo)
