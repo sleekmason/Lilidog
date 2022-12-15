@@ -119,7 +119,7 @@ type = internal/fs
 interval = 25
 mount-0 = /
 
-label-mounted = %{F#A1D6D6}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#4498C2}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -128,7 +128,7 @@ type = internal/fs
 interval = 25
 mount-0 = /home
 
-label-mounted = %{F#A1D6D6}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#CBD3D6}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -214,7 +214,7 @@ label-monitor = %name%
 ;   %index%
 ; Default: %icon%  %name%
 label-active = "%{T5}%name%%{T-}"
-label-active-foreground = #BEEBEB
+label-active-foreground = #DCE7EB
 label-active-padding = 2
 
 ; Available tokens:
@@ -401,7 +401,7 @@ bar-volume-foreground-1 = #4498C2
 bar-volume-foreground-2 = #4498C2
 bar-volume-foreground-3 = #4498C2
 bar-volume-foreground-4 = #4498C2
-bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-5 = #21D562
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = |
@@ -429,7 +429,7 @@ bar-volume-foreground-1 = #4498C2
 bar-volume-foreground-2 = #4498C2
 bar-volume-foreground-3 = #4498C2
 bar-volume-foreground-4 = #4498C2
-bar-volume-foreground-5 = #6FF50A
+bar-volume-foreground-5 = #21D562
 bar-volume-foreground-6 = #D1FF55
 bar-volume-gradient = false
 bar-volume-indicator = |
