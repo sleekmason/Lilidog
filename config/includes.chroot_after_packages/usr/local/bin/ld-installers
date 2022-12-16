@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yad --title "Installers" --escape-ok \
---button="gtk-ok:0" --form --center --width=240 --height=380 --borders=6 \
+--button="gtk-ok:0" --form --center --width=240 --height=458 --borders=6 \
 --text="\n Lilidog Installers \n" --text-align=center \
 --window-icon=applications-utilities \
     --form \
