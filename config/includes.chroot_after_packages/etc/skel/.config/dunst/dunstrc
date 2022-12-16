@@ -46,7 +46,7 @@ frame_color = "#191A1C"
 
 [urgency_normal]
 background = "#202124"
-foreground = "#A1B3B3"
+foreground = "#BCC0C2"
 frame_color = "#191A1C"
 
 [urgency_critical]
