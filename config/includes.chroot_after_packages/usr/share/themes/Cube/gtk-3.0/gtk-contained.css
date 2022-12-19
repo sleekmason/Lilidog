@@ -2577,7 +2577,7 @@ scrollbar {
   scrollbar.right {
     border-left: 1px solid #252629; }
   scrollbar:backdrop {
-    background-color: #2F3033;
+    background-color: #2A2B2E;
     border-color: #252629;
     transition: 200ms ease-out; }
   scrollbar slider {
@@ -2868,7 +2868,7 @@ radio {
   color: #E0E0E0;
   outline-color: rgba(60, 60, 60, 0.3);
   border-color: #9b9b9b;
-  background-image: linear-gradient(to bottom, #2F3033 20%, #2F3033 90%);
+  background-image: linear-gradient(to bottom, #2A2B2E 20%, #2A2B2E 90%);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), inset 0 -2px #27282B, inset 0 -1px #2A2B2E, 0 1px rgba(0, 0, 0, 0.1); }
   check:only-child,
   radio:only-child {
@@ -3625,7 +3625,7 @@ scrolledwindow junction {
     border-image-slice: 0 1 0 0; }
   scrolledwindow junction:backdrop {
     border-image-source: linear-gradient(to bottom, #4D4F55 1px, transparent 1px);
-    background-color: #2F3033;
+    background-color: #2A2B2E;
     transition: 200ms ease-out; }
 
 separator {
