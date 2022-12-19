@@ -19,35 +19,21 @@ read -p "   Buuf Icon Set Installer 57.1MB
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 if test -e /tmp/master.zip; then
-sudo rm /tmp/master.zip &&
-cd /tmp &&
-sudo wget https://github.com/sleekmason/buuf-icons/archive/master.zip &&
-sudo unzip -q master.zip &&
-sudo cp -a /tmp/buuf-icons-master/. /usr/share/icons/
-sudo gtk-update-icon-cache /usr/share/icons/buuf-nestort
 sudo rm /tmp/master.zip
-sudo rm -r /tmp/buuf-icons-master
-echo ""
-echo "----------------------------------------------------------------------"
-echo ""
-echo "[0;36mAll Finished! You should now be able to select the Buuf icon set.[0m"
-echo "" 
-echo "----------------------------------------------------------------------"
-else
-cd /tmp &&
-sudo wget https://github.com/sleekmason/buuf-icons/archive/master.zip &&
-sudo unzip -q master.zip &&
-sudo cp -a /tmp/buuf-icons-master/. /usr/share/icons/
-sudo gtk-update-icon-cache /usr/share/icons/buuf-nestort
-sudo rm /tmp/master.zip
-sudo rm -r /tmp/buuf-icons-master
-echo ""
-echo "----------------------------------------------------------------------"
-echo ""
-echo "[0;36mAll Finished! You should now be able to select the Buuf icon set.[0m"
-echo "" 
-echo "----------------------------------------------------------------------"
 fi
+cd /tmp &&
+sudo wget https://github.com/sleekmason/buuf-icons/archive/master.zip &&
+sudo unzip -q master.zip &&
+sudo cp -a /tmp/buuf-icons-master/. /usr/share/icons/
+sudo gtk-update-icon-cache /usr/share/icons/buuf-nestort
+sudo rm /tmp/master.zip
+sudo rm -r /tmp/buuf-icons-master
+echo ""
+echo "----------------------------------------------------------------------"
+echo ""
+echo "[0;36mAll Finished! You should now be able to select the Buuf icon set.[0m"
+echo "" 
+echo "----------------------------------------------------------------------"
 else
 echo ""
  echo "   -------------------------------------------------------"
