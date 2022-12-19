@@ -73,6 +73,7 @@ firmware-qlogic
 firmware-realtek
 firmware-samsung
 firmware-siano
+firmware-sof-signed
 firmware-ti-connectivity
 firmware-zd1211
 fonts-dejavu-core
