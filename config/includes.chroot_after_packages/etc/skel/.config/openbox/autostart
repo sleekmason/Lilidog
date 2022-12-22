@@ -1,28 +1,36 @@
 #### Openbox autostart - Place your commands here to have programs 
 ### activated on login. See 'man openbox' for more information.
 
-## For lxpanel or pcmanfm use as wallpaper setter. Allows for icons.
+
+### For lxpanel or pcmanfm use as wallpaper setter. Allows for icons.
 # @lxpanel --profile LXDE &
 # pcmanfm --desktop --profile LXDE &
 
-### Items not in use.
+
+### For xfdesktop use as a wallpaper setter.  Allows for icons. (this one is probably better for most.)
+# ( sleep 3; xfdesktop >/dev/null 2>&1 ) &
+
+
+### Other items not in use.
 # @xscreensaver -no-splash &
 # monster-panel &
 # fbpanel-alsa &
 
-### Items currently activated.
-. $HOME/.fehbg &
 
 ### Touchpad Settings
-## To use tap to click and the syndaemon for movement during keystrokes,
-## un-comment the below two lines and log out/in for settings to take affect.
+### To use tap to click and the syndaemon for movement during keystrokes,
+### un-comment the below two lines and log out/in for settings to take affect.
 
 # synclient VertEdgeScroll=0 HorizEdgeScroll=0 TapButton1=1 2>/dev/null
 # syndaemon -i .5 -K -t -R -d &
 
+
 ### Mouse Pointer Highlighter - Uncomment the line below to activate on boot.
 # highlight-pointer -r 7 --show-cursor --hide-highlight --auto-hide-highlight --key-toggle-highlight 'H-space' -c violet -p green &
 
+
+### Common startup programs. Comment any item no longer wanted.
+. $HOME/.fehbg &
 picom &
 tint2 &
 xfce4-power-manager &
