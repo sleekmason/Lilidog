@@ -8,7 +8,7 @@ noti=$(yad --width 444 --borders=10 --entry --title "Jgmenu Icon & Font Options"
     --button="gtk-ok:0" \
     --text "  Adwaita Gnome and Breeze-Dark are installed. \n  Use 'Install Icons' below for more icon themes.\n" \
     --entry-text \
-    "Please Select Menu Icon Theme" "Adwaita - Default" "Gnome" "Buuf" "Breeze" "Breeze-Dark" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
+    "Please Select Menu Icon Theme" "Adwaita" "Gnome - Default" "Buuf" "Breeze" "Breeze-Dark" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
 
 case $noti in
   Adwaita*)
