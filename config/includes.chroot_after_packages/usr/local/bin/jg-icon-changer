@@ -3,8 +3,8 @@
 # Made be sleekmason for Lilidog 4-13-2022
 noti=$(yad --width 444 --borders=10 --entry --title "Jgmenu Icon & Font Options" --center --window-icon=applications-system \
     --image="jgmenu" \
-    --button="Install Icons"!/usr/share/icons/Adwaita/22x22/legacy/applications-graphics.png!:"popup -f /usr/share/lilidog/installers/icons &" \
-    --button=" Font Size"!/usr/share/icons/Adwaita/22x22/legacy/preferences-desktop-font.png!:"jg-font-size" \
+    --button="Install Icons"!/usr/share/icons/gnome/22x22/categories/applications-graphics.png!:"popup -f /usr/share/lilidog/installers/icons &" \
+    --button=" Font Size"!/usr/share/icons/gnome/22x22/apps/preferences-desktop-font.png!:"jg-font-size" \
     --button="gtk-ok:0" \
     --text "  Adwaita Gnome and Breeze-Dark are installed. \n  Use 'Install Icons' below for more icon themes.\n" \
     --entry-text \
