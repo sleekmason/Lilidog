@@ -9,11 +9,11 @@ noti=$(yad --width 310 --borders=12 --entry --title "Battery Text Color" --cente
 
 case $noti in
   Grey*)
-     sed -i 's/^battery_font_color.*/battery_font_color = #C2C2CC 100/g' "$HOME/.config/tint2/tint2rc"
+     sed -i 's/^battery_font_color.*/battery_font_color = #B2BAC2 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
   Bright*)
-     sed -i 's/^battery_font_color.*/battery_font_color = #C8DEDE 100/g' "$HOME/.config/tint2/tint2rc"
+     sed -i 's/^battery_font_color.*/battery_font_color = #C9D2DB 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
   Aqua)
