@@ -8,4 +8,4 @@ System Icons,               xfce4-appearance-settings,                preference
 Terminal Colors,            ld-term-changer,                          org.xfce.terminal
 Wallpapers,                 feh-set-wallpaper,                        org.xfce.settings.display
 ^sep()
-Reset Theme,           x-terminal-emulator -T 'Reset All Themes' -e bash -c 'set-default-theme; echo $Press Press any key to close. ; read -srn1',       preferences-system
+Reset Theme,                xfce4-terminal --geometry=68x20+100-80 -T 'Reset Theming Elements' -e 'set-default-theme',       preferences-system

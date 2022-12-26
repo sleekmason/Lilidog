@@ -1,19 +1,20 @@
 #!/bin/bash
 echo ""
-read -p "   Total Theme Reset
+read -p "   Reset Theming Elements
 
-   A reset button to return some items back to their default settings.
+   Resets most theming elements to installation default.
 
-   This will reset:
+   This will include:
    
-   GTK and Openbox themes, most fonts, icons, wallpaper, terminal, Geany,
-   notification sounds, Jgmenu icons and fonts, and Lightdm settings.
+   GTK and Openbox themes, system fonts and icons, wallpaper,
+   Geany, tint2 fonts and icon colors, notification sounds, 
+   Jgmenu icons and fonts, terminal, and Lightdm settings.
 
-   ----------------------------------------------------------------------
+   [0;36m-----------------------------------------------------
    
-   Please press enter to reset items to their original configuration.
+   Please press enter to reset Lilidog theming elements.
    
-   ----------------------------------------------------------------------
+   -----------------------------------------------------[0m
 
       
    Or close this terminal window to quit." ;
@@ -22,10 +23,12 @@ echo ""
 echo ""
 echo ""
 echo ""
-echo "------------------------------------------------------------------"
+echo "[0;36m   -----------------------------------------------------
+
+   All finished! If something did not change, check to
+   See if the item had been removed from the system.
+   
+   -----------------------------------------------------[0m"
 echo ""
-echo "All finished! If something did not change, check to see if the item" 
-echo "has been removed. (Uninstalled icons, wallpaper, etc.)"
 echo ""
-echo "------------------------------------------------------------------"
-echo ""
+read -n1 -p " Press any key to quit this dialog ... "
