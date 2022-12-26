@@ -10,58 +10,61 @@ sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Lilicube.jpg/g" /
 sudo sed -i "s/position.*/position = 87%,end 11%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
-# Change gtktheme
+# System gtktheme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Cube"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Blue"
 
+## System Fonts
+xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
+xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
 
-## Change openbox theme
+## Openbox theme
 #sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Cubebox"/g" ~/.config/openbox/rc.xml
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:name' -v "Cubebox" ~/.config/openbox/rc.xml
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "12" ~/.config/openbox/rc.xml
 openbox --reconfigure
 
 
-## Change Geany theme
+## Geany theme
 sed -i "s/color_scheme=.*/color_scheme=Cube.conf/g" ~/.config/geany/geany.conf
 sed -i "s/editor_font=.*/editor_font=JetBrains Mono 11/g" ~/.config/geany/geany.conf
 
-# Change jgmenu theme
+## jgmenu theme
 jgmenu_run init --apply-obtheme
 #jgmenu_run gtktheme
-#change jgmenu font back to 11
+
+## jgmenu font
 sed -i "s/font =.*/font = Noto Sans 11/g" ~/.config/jgmenu/jgmenurc
 
-## Change xfce4-terminal theme
+## jgmenu Icon Theme
+sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
+sed -i 's/^icon_theme =.*/icon_theme = gnome/g' ~/.config/jgmenu/jgmenurc
+
+## xfce4-terminal theme
 xfce4-term-colors cube
 sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/terminalrc
 
-## Set Icon Theme
-xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Blue"
-sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
-sed -i 's/^icon_theme =.*/icon_theme = Adwaita/g' ~/.config/jgmenu/jgmenurc
-
-## Set Tint2 Items
+## Tint2 Items
+##Icon colors
 sed -i 's/coltint2.*\//coltint2grey\//g' $HOME/.config/tint2/tint2rc
-sed -i 's/task_font_color =.*/task_font_color = \#C2C2CC 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/clock_font_color =.*/clock_font_color = \#C2C2CC 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/execp_font_color =.*/execp_font_color = \#C2C2CC 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#C2C2CC 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/^battery_font_color.*/battery_font_color = #C2C2CC 100/g' $HOME/.config/tint2/tint2rc
+##Font colors
+sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/task_font_color =.*/task_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/clock_font_color =.*/clock_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
+sed -i 's/^battery_font_color.*/battery_font_color = #B2BAC2 100/g' $HOME/.config/tint2/tint2rc
 killall -SIGUSR1 tint2
 
-## Set Background
+## Feh Background
 feh --bg-scale '/home/wallpaper/Lilicube.jpg'
 
-## Set System Fonts
-xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
-xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
-
-## Sounds
+## Sounds - Dunst
 sed -i '/summary/d' ~/.config/dunst/dunstrc
 sed -i '/sounds/d' ~/.config/dunst/dunstrc
-killall dunst
+killall -q dunst
 
 # These lines are for the light/dark toggle and the custom toggle. Do not remove.
 # Comment these lines in Custom-Theme or Light-Dark-Theme if copying a named theme.
-rm ~/.cache/temp_theme
-rm ~/.cache/custom_theme
+rm -f ~/.cache/temp_theme
+rm -f ~/.cache/custom_theme
