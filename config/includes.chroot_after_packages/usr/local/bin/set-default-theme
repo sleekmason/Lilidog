@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-read -p "   Reset Theming Elements
+read -p "   Full Theme Reset
 
    Resets most theming elements to installation default.
 
@@ -10,11 +10,11 @@ read -p "   Reset Theming Elements
    Geany, tint2 fonts and icon colors, notification sounds, 
    Jgmenu icons and fonts, terminal, and Lightdm settings.
 
-   [0;36m-----------------------------------------------------
+   [0;36m-------------------------------------------------------
    
-   Please press enter to reset Lilidog theming elements.
+   Press enter to reset the theme to installation default.
    
-   -----------------------------------------------------[0m
+   -------------------------------------------------------[0m
 
       
    Or close this terminal window to quit." ;
@@ -23,12 +23,12 @@ echo ""
 echo ""
 echo ""
 echo ""
-echo "[0;36m   -----------------------------------------------------
+echo "[0;36m   -------------------------------------------------------
 
    All finished! If something did not change, check to
-   See if the item had been removed from the system.
+   See if the item has been removed from the system.
    
-   -----------------------------------------------------[0m"
+   -------------------------------------------------------[0m"
 echo ""
 echo ""
-read -n1 -p " Press any key to quit this dialog ... "
+read -n1 -p " Press any key to quit. "

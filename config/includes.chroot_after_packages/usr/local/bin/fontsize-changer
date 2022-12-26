@@ -4,10 +4,10 @@
 noti=$(yad --width 348  --borders=4 --entry --title "Font Size Changer" --center --window-icon=applications-system \
     --image="preferences-desktop-font" --text " Fonts will reset to the system defaults\n of Noto Sans and Jet Brains Mono.\n\n Please close Geany before choosing.\n" \
     --entry-text \
-    "Please Select Your Desired Font Size " "Smallest" "Smaller" "Small" "Medium - Default Size" "Large" "Larger" "Largest")
+    "Please Select Your Desired Font Size " "8" "9" "10" "11 - Default" "12" "13" "14")
 
 case $noti in
-  Smallest) 
+  8) 
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 8"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 7"
 sed -i "s/font =.*/font = Noto Sans 9/g" ~/.config/jgmenu/jgmenurc
@@ -15,7 +15,7 @@ sed -i "s/editor_font=.*/editor_font=JetBrains Mono 8/g" ~/.config/geany/geany.c
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "9" ~/.config/openbox/rc.xml
 sed -i "s/FontName=.*/FontName=JetBrains Mono 8/g" ~/.config/xfce4/terminal/terminalrc
 ;;
-  Smaller) 
+  9) 
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 9"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 8"
 sed -i "s/font =.*/font = Noto Sans 9/g" ~/.config/jgmenu/jgmenurc
@@ -23,7 +23,7 @@ sed -i "s/editor_font=.*/editor_font=JetBrains Mono 9/g" ~/.config/geany/geany.c
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "10" ~/.config/openbox/rc.xml
 sed -i "s/FontName=.*/FontName=JetBrains Mono 9/g" ~/.config/xfce4/terminal/terminalrc
 ;;
-  Small)
+  10)
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 10"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 9"
 sed -i "s/font =.*/font = Noto Sans 10/g" ~/.config/jgmenu/jgmenurc
@@ -31,7 +31,7 @@ sed -i "s/editor_font=.*/editor_font=JetBrains Mono 10/g" ~/.config/geany/geany.
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "11" ~/.config/openbox/rc.xml
 sed -i "s/FontName=.*/FontName=JetBrains Mono 10/g" ~/.config/xfce4/terminal/terminalrc
 ;;
-  Medium*)
+  11*)
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
 sed -i "s/font =.*/font = Noto Sans 11/g" ~/.config/jgmenu/jgmenurc
@@ -39,7 +39,7 @@ sed -i "s/editor_font=.*/editor_font=JetBrains Mono 11/g" ~/.config/geany/geany.
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "12" ~/.config/openbox/rc.xml
 sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/terminalrc
 ;;
-  Large)
+  12)
 ## Set system Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 12"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 11"
@@ -48,7 +48,7 @@ sed -i "s/editor_font=.*/editor_font=JetBrains Mono 12/g" ~/.config/geany/geany.
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "13" ~/.config/openbox/rc.xml
 sed -i "s/FontName=.*/FontName=JetBrains Mono 12/g" ~/.config/xfce4/terminal/terminalrc
 ;;
-  Larger)
+  13)
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 13"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 12"
 sed -i "s/font =.*/font = Noto Sans 13/g" ~/.config/jgmenu/jgmenurc
@@ -56,7 +56,7 @@ sed -i "s/editor_font=.*/editor_font=JetBrains Mono 13/g" ~/.config/geany/geany.
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "14" ~/.config/openbox/rc.xml
 sed -i "s/FontName=.*/FontName=JetBrains Mono 13/g" ~/.config/xfce4/terminal/terminalrc
 ;;
-  Largest)
+  14)
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 14"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 13"
 sed -i "s/font =.*/font = Noto Sans 14/g" ~/.config/jgmenu/jgmenurc
