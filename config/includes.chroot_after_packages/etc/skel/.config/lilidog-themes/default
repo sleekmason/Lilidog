@@ -6,8 +6,8 @@
 
 ## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
 sudo sed -i "s/theme-name.*/theme-name = Cube/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/\Lilicube.jpg/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/position.*/position = 87%,end 11%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/Lilicube.jpg/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/position.*/position = -4%,end 4%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
 # System gtktheme
