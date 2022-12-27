@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=Papirus-Blue
-Comment=Recolored Papirus icon theme for Lilidog
+Comment=Minimal folder theme for Lilidog
 Inherits=Papirus,gnome,breeze,Adwaita,hicolor
 Example=folder
 FollowsColorScheme=true
