@@ -32,12 +32,12 @@
 ### Common startup programs. Comment any item no longer wanted.
 . $HOME/.fehbg &
 picom &
-tint2 &
-xfce4-power-manager &
+tint2 >/dev/null 2>&1 &
+xfce4-power-manager >/dev/null 2>&1 &
 nm-applet &
 lxpolkit &
 xfsettingsd --daemon &
-pnmixer &
+pnmixer >/dev/null 2>&1 &
 conky -c ~/.config/conky/conky-shortcuts.conf &
 sxhkd -c "$HOME/.config/openbox/sxhkdrc-open" &
 welcome.sh &
