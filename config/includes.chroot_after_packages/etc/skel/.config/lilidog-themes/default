@@ -46,14 +46,14 @@ sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/ter
 
 ## Tint2 Items
 ##Icon colors
-sed -i 's/coltint2.*\//coltint2grey\//g' $HOME/.config/tint2/tint2rc
+sed -i 's/coltint2.*\//coltint2grey\//g' "$HOME"/.config/tint2/tint2rc
 ##Font colors
-sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/task_font_color =.*/task_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/clock_font_color =.*/clock_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#B2BAC2 100/' $HOME/.config/tint2/tint2rc
-sed -i 's/^battery_font_color.*/battery_font_color = #B2BAC2 100/g' $HOME/.config/tint2/tint2rc
+sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/task_font_color =.*/task_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/clock_font_color =.*/clock_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/^battery_font_color.*/battery_font_color = #B2BAC2 100/g' "$HOME"/.config/tint2/tint2rc
 killall -SIGUSR1 tint2
 
 ## Feh Background
@@ -63,6 +63,31 @@ feh --bg-scale '/home/wallpaper/Lilicube.jpg'
 sed -i '/summary/d' ~/.config/dunst/dunstrc
 sed -i '/sounds/d' ~/.config/dunst/dunstrc
 killall -q dunst
+
+### Conky
+## transparency 
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/shortcuts.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/tao.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/full.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/fortunes.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/current.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/clock-date.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/world.lua
+    sed -i "s/bg_alpha=.*/bg_alpha=0.0/g" ~/.config/conky/lua/build.lua
+## color
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/shortcuts.lua
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/tao.lua
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/full.lua
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/fortunes.lua
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/current.lua
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/clock-date.lua
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/world.lua
+    sed -i "s/bg_colour=.*/bg_colour=0x000000/g" ~/.config/conky/lua/build.lua
+killall -q conky
+if test -f "$HOME"/.config/conky/conky-shortcuts.conf; then
+set -m; nohup conky -q -c "$HOME/.config/conky/conky-shortcuts.conf" &> /dev/null
+fi
+#(setsid conky -q -c "$HOME/.config/conky/conky-shortcuts.conf" &)
 
 # These lines are for the light/dark toggle and the custom toggle. Do not remove.
 # Comment these lines in Custom-Theme or Light-Dark-Theme if copying a named theme.
