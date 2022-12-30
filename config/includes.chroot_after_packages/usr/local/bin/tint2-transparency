@@ -3,19 +3,19 @@
 #
 #
 #
-WIDTH=215
-HEIGHT=380
+WIDTH=225
+HEIGHT=440
 
-trans="$(yad --title "Transparency" --width="$WIDTH" --height="$HEIGHT" --borders="6" --center --list \
---text "" --text-align=center \
+trans="$(yad --title "Transparency" --width="$WIDTH" --height="$HEIGHT" --borders="12" --center --list \
 --window-icon=applications-system \
+--text "Default Transparency = 50" --text-align=center \
 --radiolist  --column "Select" --column "Amount" --separator=" " \
   FALSE "0" \
   FALSE "10" \
   FALSE "20" \
   FALSE "30" \
   FALSE "40" \
-  FALSE "50" \
+  TRUE "50" \
   FALSE "60" \
   FALSE "70" \
   FALSE "80" \
