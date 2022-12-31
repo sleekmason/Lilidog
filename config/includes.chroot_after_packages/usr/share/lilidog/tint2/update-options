@@ -1,0 +1,3 @@
+Apt Update,     xfce4-terminal --geometry=68x20-80-80 -T 'Apt Update' -e 'sudo xupdate -i',      system-software-update
+LD Installers,  ld-installers,                                                                   system-software-install  
+Synaptic,       gksudo synaptic,                                                                 synaptic
