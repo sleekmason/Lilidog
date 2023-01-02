@@ -24,7 +24,7 @@ printer-driver-dymo printer-driver-escpr printer-driver-foo2zjs printer-driver-f
 printer-driver-gutenprint printer-driver-hpijs printer-driver-postscript-hp \
 printer-driver-m2300w printer-driver-min12xxw printer-driver-pnm2ppa printer-driver-oki \
 printer-driver-ptouch printer-driver-pxljr printer-driver-sag-gdi printer-driver-splix \
-printer-driver-indexbraille foomatic-db-compressed-ppds colord ipp-usb sane-airscan &&
+printer-driver-indexbraille foomatic-db-compressed-ppds xiccd colord ipp-usb sane-airscan &&
 sed -i 's/x-terminal-emulator -T "Printer Setup" -e bash -c "printer-installer; read -srn1"/gksudo system-config-printer/g' ~/.config/jgmenu/mymenu.csv
 killall jgmenu
 echo ""
