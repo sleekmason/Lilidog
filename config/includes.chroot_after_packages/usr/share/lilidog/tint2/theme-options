@@ -1,11 +1,11 @@
 Auto Themes,                ld-themes,                                org.xfce.settings.color
 Conky,                      ~/.config/conky/scripts/conky-chooser,    conky-logomark-violet
-Font Sizes,                 fontsize-changer,                         preferences-desktop-font
-Installers,                 ld-installers,                            applications-utilities                             
+Font Sizes,                 fontsize-changer,                         preferences-desktop-font                            
 Menu Icons,                 jg-icon-changer,                          jgmenu
-Sounds,                     notification-sounds,                      audio-headphones
-System Icons,               xfce4-appearance-settings,                preferences-system
+Notification Sounds,        notification-sounds,                      audio-headphones   
+Openbox Settings,           obconf,                                   obconf
+System Settings,            xfce4-settings-manager,                   preferences-system
 Terminal Colors,            ld-term-changer,                          org.xfce.terminal
 Wallpapers,                 feh-set-wallpaper,                        org.xfce.settings.display
 ^sep()
-Reset Theme,                xfce4-terminal --geometry=68x20+100-80 -T 'Reset Theming Elements' -e 'set-default-theme',       preferences-system
+Reset Theme,                xfce4-terminal --geometry=68x20+100-80 -T 'Apt Update' -e 'set-default-theme',       preferences-system
