@@ -121,6 +121,7 @@ libreoffice-gtk3
 libreoffice-writer
 libnotify-bin
 libqt5svg5
+librsvg2-common
 lightdm
 lightdm-gtk-greeter-settings
 lm-sensors
