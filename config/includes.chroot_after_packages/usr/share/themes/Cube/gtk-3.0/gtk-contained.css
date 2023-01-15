@@ -2613,7 +2613,7 @@ scrollbar {
       min-height: 7px;
       background-color: shade(#82868F, 0.9);
       background-image: none;
-      border: 1px solid #000000; }
+      border: 1px solid #17181A; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
       min-width: 5px;
       min-height: 5px;
@@ -2621,7 +2621,7 @@ scrollbar {
       background-image: none;
       background-clip: padding-box;
       border-radius: 100%;
-      border: 1px solid #000000;
+      border: 1px solid #17181A;
       -gtk-icon-source: none; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
       margin: 0 2px;
