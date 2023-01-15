@@ -1,52 +1,62 @@
- #! /bin/bash
+#!/bin/bash
 # tint2 battery color options options.
 # Made be sleekmason for Lilidog 4-13-2022
 
 FILE="$HOME/.config/tint2/tint2rc"
 noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Icon Color" --center --window-icon=org.xfce.settings.color \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
-    --button="gtk-ok:0" \
-    "Grey - Default" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Black")
+    --button="gtk-cancel:1" --button="gtk-ok:0" \
+    "Grey - Default" "Dark Grey" "Adobe" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Black")
 
 case $noti in
   Grey*)
     notify-send --urgency low 'Changing Tint2 icon color to Grey' ;
-          sed -i 's/coltint2.*\//coltint2grey\//g' $FILE
+          sed -i 's/coltint2.*\//coltint2grey\//g' "$FILE"
+     killall -SIGUSR1 tint2
+;;
+   Dark*)
+   notify-send --urgency low 'Changing Tint2 icon color to Dark Grey' ;
+         sed -i 's/coltint2.*\//coltint2darkgrey\//g' "$FILE"
+     killall -SIGUSR1 tint2
+;;
+   Adobe)
+   notify-send --urgency low 'Changing Tint2 icon color to Adobe' ;
+         sed -i 's/coltint2.*\//coltint2adobe\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
   Aqua*)
     notify-send --urgency low 'Changing Tint2 icon color to Aqua' ;
-        sed -i 's/coltint2.*\//coltint2aqua\//g' $FILE
+        sed -i 's/coltint2.*\//coltint2aqua\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
   Blue)
     notify-send --urgency low 'Changing Tint2 icon color to Blue' ;
-       sed -i 's/coltint2.*\//coltint2blue\//g' $FILE
+       sed -i 's/coltint2.*\//coltint2blue\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
   Navy*)
   notify-send --urgency low 'Changing Tint2 icon color to Navy' ;
-       sed -i 's/coltint2.*\//coltint2navy\//g' $FILE
+       sed -i 's/coltint2.*\//coltint2navy\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
    Indigo)
    notify-send --urgency low 'Changing Tint2 icon color to Indigo' ;
-       sed -i 's/coltint2.*\//coltint2indigo\//g' $FILE
+       sed -i 's/coltint2.*\//coltint2indigo\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
    Violet)
    notify-send --urgency low 'Changing Tint2 icon color to Violet' ;
-         sed -i 's/coltint2.*\//coltint2violet\//g' $FILE
+         sed -i 's/coltint2.*\//coltint2violet\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
    Magenta)
    notify-send --urgency low 'Changing Tint2 icon color to Magenta' ;
-        sed -i 's/coltint2.*\//coltint2magenta\//g' $FILE
+        sed -i 's/coltint2.*\//coltint2magenta\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
    Black)
    notify-send --urgency low 'Changing Tint2 icon color to Black' ;
-         sed -i 's/coltint2.*\//coltint2black\//g' $FILE
+         sed -i 's/coltint2.*\//coltint2black\//g' "$FILE"
      killall -SIGUSR1 tint2 ;;
         *) exit 1 ;;
     esac
