@@ -1,0 +1,47 @@
+#!/bin/bash
+echo ""
+echo "                  [0;33mBrave Browser Installer[0m"
+echo ""
+read -p "   This script will download and install the Brave Browser, A 
+   privacy focused web browser.  [0;36mhttps://brave.com/[0m
+
+   New sources will be added, and a new menu entry will be placed 
+   in the main menu.
+
+
+   [0;32m-----------------------------------------------------
+   
+   Please press enter to install the Brave Browser.
+   
+   -----------------------------------------------------[0m
+     
+    Or close this terminal window to quit the install." ;   
+    if : >/dev/tcp/8.8.8.8/53; then
+echo ""   
+echo ""
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg &&
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list &&
+sudo apt update && sudo apt install --install-recommends brave-browser &&
+sed -i '/Brave,              brave-browser,            brave-browser/d' ~/.config/jgmenu/mymenu.csv &&
+sed -i '5i Brave,              brave-browser,            brave-browser' ~/.config/jgmenu/mymenu.csv &&
+killall jgmenu
+echo ""
+echo "----------------------------------------------------------------"
+echo ""
+echo "[0;32mAll Finished![0m"
+echo ""
+echo "[0;33mIf installed, You should find a new main menu entry.[0m"
+echo "" 
+echo "[0;32mMenu entries will need to be removed manually if uninstalled." 
+echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
+echo ""
+echo "----------------------------------------------------------------"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
