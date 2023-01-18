@@ -30,10 +30,10 @@ NB_ROTATION_STEPS = 70;
 NB_REFRESHS_BETWEEN_ANIMS = 3;
 
 # Initial position of the center of the logo in % of background
-DEBIAN_POS_PCT.y = 0.65; # Debian image position in % of screen height
+DEBIAN_POS_PCT.y = 0.58; # Debian image position in % of screen height
 DEBIAN_HEIGHT_PCT = 0.07; # Debian image height in % of smallest screen dimension
 LOGO_CENTER_PCT.x = 0.5; # Debian swirl image position in % of screen height & width
-LOGO_CENTER_PCT.y = 0.442;
+LOGO_CENTER_PCT.y = 0.443;
 LOGO_SIZE_PCT = 0.18; # Debian swirl image size in % of smallest screen dimension
 
 #------------------------------- Globals -------------------------------------------
