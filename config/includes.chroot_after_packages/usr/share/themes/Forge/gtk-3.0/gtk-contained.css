@@ -57,7 +57,7 @@
 .view text,
 iconview text,
 textview text {
-  color: #CDD1D6;
+  color: #D2D6DB;
   background-color: #1D2024; }
   .view:backdrop, iconview:backdrop,
   .view text:backdrop,
@@ -75,7 +75,7 @@ textview text {
     border-radius: 3px; }
 
 textview border {
-  background-color: #28292B; }
+  background-color: #202428; }
 
 .rubberband,
 rubberband,
@@ -173,9 +173,9 @@ entry {
   border: 1px solid;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  color: #D0D4D9;
+  color: #D2D6DB;
   border-color: #101214;
-  background-color: #272B30;
+  background-color: #2B3036;
   box-shadow: inset 0 0 0 1px rgba(57, 142, 231, 0); }
   spinbutton:not(.vertical) image.left,
   entry image.left {
@@ -215,7 +215,7 @@ entry {
     border-radius: 0; }
   spinbutton:focus:not(.vertical),
   entry:focus {
-    border-color: #737782; }
+    border-color: #4D5761; }
   spinbutton:disabled:not(.vertical),
   entry:disabled {
     color: #8D9299;
@@ -259,10 +259,10 @@ entry {
       background-color: #f57900; }
   spinbutton:not(.vertical) image,
   entry image {
-    color: #7D7D7D; }
+    color: #566069; }
     spinbutton:not(.vertical) image:hover,
     entry image:hover {
-      color: #D2D6DB; }
+      color: #B0B9BF; }
     spinbutton:not(.vertical) image:active,
     entry image:active {
       color: #32373D; }
@@ -431,12 +431,12 @@ button {
   border-radius: 5px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #D0D4D9;
-  outline-color: #4F5759;
+  outline-color: #485159;
   border-top-color: shade(#121417, 0.8);
   border-right-color: shade(#121417, 0.72);
   border-left-color: shade(#121417, 0.72);
   border-bottom-color: shade(#121417, 0.7);
-  background-image: linear-gradient(to bottom, shade(shade(#23272B, 1.0), 1.05), shade(shade(#2A2E33, 1.02), 0.97));
+  background-image: linear-gradient(to bottom, shade(shade(#23272B, 1.0), 1.05), shade(shade(#2A2E33, 1.04), 0.97));
   box-shadow: inset 0 1px #333940; }
   notebook > header > tabs > arrow, button.sidebar-button, button.titlebutton,
   button.flat {
@@ -459,7 +459,7 @@ button {
     color: #FCFCFC;
     outline-color: rgba(60, 60, 60, 0.3);
     border-color: #17181C;
-    background-image: linear-gradient(to bottom, shade(#30353B, 1.2), shade(#3E454D, 1));
+    background-image: linear-gradient(to bottom, shade(#30353B, 1), shade(#3E454D, 1));
     box-shadow: inset 0 1px #3D414A;
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:active, button.titlebutton:active, notebook > header > tabs > arrow:checked, button.titlebutton:checked,
@@ -1454,7 +1454,7 @@ spinbutton:not(.vertical) {
     margin: 0;
     padding-bottom: 0;
     padding-top: 0;
-    color: #636A6A;
+    color: #566069;
     background-image: none;
     border-style: none none none solid;
     border-color: #808080;
@@ -2211,9 +2211,9 @@ menubar,
     border: 1px solid transparent; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
-      background-image: linear-gradient(to bottom, shade(#32373D, 1), shade(#32373D, 1.2));
+      background-image: linear-gradient(to bottom, shade(#2F353B, 1.1), shade(#2F353B, 1.2));
       color: #FAFAFA;
-      border-color: shade(#32373D, 1.1); }
+      border-color: shade(#181B1F, 1.1); }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
       color: #8D9299;
@@ -2245,7 +2245,7 @@ menu,
     .menu menuitem:hover,
     .context-menu menuitem:hover {
       color: #FAFAFA;
-      background-image: linear-gradient(to bottom, shade(#2D3338, 1.2), shade(#3D424A, 1));
+      background-image: linear-gradient(to bottom, shade(#2F353B, 1), shade(#2F353B, 1.1));
       box-shadow: inset 1px 1px shade(#111417, 0.9), inset -1px -1px shade(#17181C, 0.9); }
     menu menuitem:disabled,
     .menu menuitem:disabled,
@@ -2380,7 +2380,7 @@ notebook > header {
   padding: 1px;
   background-color: #202428; }
   notebook > header:backdrop {
-    border-color: #444C55;
+    border-color: #1B1D21;
     background-color: #202428; }
   notebook > header tabs {
     margin: -1px; }
@@ -2388,7 +2388,7 @@ notebook > header {
     border-top-style: none; }
   notebook > header.top > tabs > tab {
     border-radius: 3px 3px 0 0;
-    border: 1px solid shade(#1E2126, 0.9); }
+    border: 1px solid shade(#1D1F24, 0.9); }
     notebook > header.top > tabs > tab:backdrop {
       box-shadow: none; }
     notebook > header.top > tabs > tab:checked {
@@ -2465,8 +2465,8 @@ notebook > header {
     min-width: 24px;
     padding: 3px 12px;
     outline-offset: -5px;
-    color: #A0A4AD;
-    background-color: #1F2226;
+    color: #A6ACB3;
+    background-color: #22262B;
     border-width: 1px;
     border-radius: 3px;
     border-color: shade(#1E2126, 0.9);
@@ -2474,7 +2474,7 @@ notebook > header {
     notebook > header tab:hover {
       color: #FAFAFA; }
       notebook > header tab:hover.reorderable-page {
-        border-color: #1E2126;
+        border-color: #181B1F;
         background-color: #373E45; }
     notebook > header tab:backdrop {
       color: #a2a2a2; }
@@ -2488,12 +2488,12 @@ notebook > header {
       notebook > header tab:checked:backdrop {
         background-color: #202428; }
       notebook > header tab:checked.reorderable-page {
-        border-color: #212124;
+        border-color: #1B1E21;
         background-image: linear-gradient(to bottom, shade(#2D3338, 1.0), shade(#31373D, 1)); }
     notebook > header tab:backdrop:checked {
       color: #C9CFD1; }
       notebook > header tab:backdrop:checked.reorderable-page {
-        border-color: #444C55;
+        border-color: #1B1E21;
         background-color: #202428; }
     notebook > header tab button.flat {
       padding: 0;
@@ -2587,7 +2587,7 @@ scrollbar {
     border: 1px solid #17181C;
     border-radius: 10px;
     background-clip: padding-box;
-    background-image: linear-gradient(to right, #25292E, #454C54); }
+    background-image: linear-gradient(to right, #3C444D, #40474F); }
     scrollbar slider:hover {
       background-image: linear-gradient(to right, #454C54, #687080); }
     scrollbar slider:hover:active {
@@ -3093,7 +3093,7 @@ scale trough, scale fill, progressbar trough {
 scale highlight, progressbar progress {
   border: 1px solid shade(#32373D, 0.7);
   border-radius: 3px;
-  background-image: linear-gradient(to bottom, shade(#202428, 1.1), shade(#32373D, 0.9)); }
+  background-image: linear-gradient(to bottom, shade(#30363D, 1.0), shade(#30363D, 1.2)); }
   scale highlight:disabled, progressbar progress:disabled {
     background-color: transparent;
     border-color: transparent; }
@@ -3795,7 +3795,7 @@ filechooserbutton:drop(active) {
     .sidebar row:selected, .sidebar row:selected:focus,
     .sidebar treeview:selected,
     .sidebar treeview:selected:focus {
-      background-image: linear-gradient(to bottom, shade(#2E3238, 1.0) 12%, shade(#2E3238, 1.0), shade(#2E3238, 1.0) 92%, shade(#2E3238, 1.0));
+      background-image: linear-gradient(to bottom, shade(#2D3238, 0.98) 12%, shade(#2F353B, 1.0), shade(#2F353B, 1.0) 92%, shade(#2F353B, 1.0));
       border-top: 1px solid shade(#181C1F, 1.0);
       border-bottom: 1px solid shade(#181C1F, 1.0); }
       .sidebar row:selected label, .sidebar row:selected:focus label,
@@ -4356,7 +4356,7 @@ entry selection:focus,
 entry selection, modelbutton.flat:selected, popover.background checkbutton:selected,
 popover.background radiobutton:selected,
 .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
-  background-color: #4E5761; }
+  background-color: #4A525C; }
   row:selected label, label:selected, .selection-mode button.titlebutton, .view:selected:focus, .view:selected, iconview:selected, .view text:selected, iconview text:selected,
   textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
@@ -4365,7 +4365,7 @@ popover.background radiobutton:selected,
   entry selection, modelbutton.flat:selected, popover.background checkbutton:selected,
   popover.background radiobutton:selected,
   .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
-    color: #F7F7F7;
+    color: #EEF4F7;
     outline-color: rgba(235, 235, 235, 0.3); }
     row:selected label:disabled, label:disabled:selected, .selection-mode button.titlebutton:disabled, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected, iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, .view text:disabled:selected, iconview text:disabled:selected,
