@@ -44,10 +44,14 @@ sed -i 's/^icon_theme =.*/icon_theme = gnome/g' ~/.config/jgmenu/jgmenurc
 xfce4-term-colors forge
 sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/terminalrc
 
-## Tint2 Items
-##Icon colors
+## Tint2 Panel Items - position, autoshrink, autohide, and transparency
+sed -i "s/^panel_position =.*/panel_position = bottom center horizontal/" "$HOME"/.config/tint2/tint2rc
+sed -i "s/^panel_shrink =.*/panel_shrink = 0/" "$HOME"/.config/tint2/tint2rc
+sed -i "s/^autohide =.*/autohide = 0/" "$HOME"/.config/tint2/tint2rc
+sed -i "0,/background_color =/{s/background_color =.*/background_color = #0d0f0f 60/}" "$HOME"/.config/tint2/tint2rc
+## Tint2 Icon colors
 sed -i 's/coltint2.*\//coltint2grey\//g' "$HOME"/.config/tint2/tint2rc
-##Font colors
+## Tint2 Font colors
 sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
 sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
 sed -i 's/task_font_color =.*/task_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
