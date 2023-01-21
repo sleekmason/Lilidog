@@ -7,7 +7,8 @@
 # pcmanfm --desktop --profile LXDE &
 
 
-### For xfdesktop use as a wallpaper setter.  Allows for icons. (this one is probably better for most.)
+### For xfdesktop use. Allows for icons, menu, and wallpaper setter.
+### Needs xfdesktop4: sudo apt update && sudo apt install xfdesktop4
 # ( sleep 3; xfdesktop >/dev/null 2>&1 ) &
 
 
@@ -18,7 +19,7 @@
 
 
 ### Touchpad Settings
-### To use tap to click and the syndaemon for movement during keystrokes,
+### To use tap-to-click and the syndaemon for movement during keystrokes,
 ### un-comment the below two lines and log out/in for settings to take affect.
 
 # synclient VertEdgeScroll=0 HorizEdgeScroll=0 TapButton1=1 2>/dev/null
