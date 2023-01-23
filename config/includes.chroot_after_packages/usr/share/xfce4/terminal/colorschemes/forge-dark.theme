@@ -1,0 +1,5 @@
+[Scheme]
+Name=Forge-dark
+ColorBackground=#17171a1a1f1f
+ColorForeground=#d9d9d9d9d9d9
+ColorPalette=rgb(0,0,0);rgb(202,25,5);rgb(0,144,23);rgb(245,158,95);rgb(37,121,198);rgb(108,113,196);rgb(0,184,184);rgb(170,170,170);rgb(65,71,77);rgb(245,95,93);rgb(31,207,94);rgb(255,255,85);rgb(94,155,211);rgb(169,78,255);rgb(85,255,255);rgb(255,255,255)
