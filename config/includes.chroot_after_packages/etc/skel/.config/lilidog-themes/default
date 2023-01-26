@@ -6,7 +6,7 @@
 
 ## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
 sudo sed -i "s/theme-name.*/theme-name = Forge/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/Forge.jpg/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/Pawprints.jpg/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/position.*/position = -4%,end 4%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
@@ -61,7 +61,7 @@ sed -i 's/^battery_font_color.*/battery_font_color = #B2BAC2 100/g' "$HOME"/.con
 killall -SIGUSR1 tint2
 
 ## Feh Background
-feh --bg-scale '/home/wallpaper/Forge.jpg'
+feh --bg-scale '/home/wallpaper/Pawprints.jpg'
 
 ## Sounds - Dunst
 sed -i '/summary/d' ~/.config/dunst/dunstrc
