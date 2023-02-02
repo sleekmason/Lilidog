@@ -7,7 +7,7 @@ shrink = no
 separator_height = 1
 padding = 18
 horizontal_padding = 6
-frame_width = 2
+frame_width = 1
 sort = no
 idle_threshold = 60
 corner_radius = 0
@@ -40,12 +40,12 @@ context = ctrl+shift+period
 
 [urgency_low]
 timeout = 6
-background = "#1D2024"
+background = "#182029"
 foreground = "#3DBF4A"
 frame_color = "#141517"
 
 [urgency_normal]
-background = "#1D2024"
+background = "#182029"
 foreground = "#BCC0C2"
 frame_color = "#141517"
 

@@ -5,13 +5,13 @@
 # You can also add anything that can be refreshed, wallpaper, conky, etc . . .
 
 ## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
-sudo sed -i "s/theme-name.*/theme-name = Forge/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/Pawprints.jpg/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/theme-name.*/theme-name = River/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/\home\/\wallpaper\/River.jpg/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/position.*/position = -4%,end 4%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
 # System gtktheme
-xfconf-query -c xsettings -p /Net/ThemeName -s "Forge"
+xfconf-query -c xsettings -p /Net/ThemeName -s "River"
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Blue"
 
 ## System Fonts
@@ -19,14 +19,14 @@ xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
 
 ## Openbox theme
-#sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Forgebox"/g" ~/.config/openbox/rc.xml
-xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:name' -v "Forgebox" ~/.config/openbox/rc.xml
+#sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Riverbox"/g" ~/.config/openbox/rc.xml
+xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:name' -v "Riverbox" ~/.config/openbox/rc.xml
 xmlstarlet ed -L -N o="http://openbox.org/3.4/rc" -u '/o:openbox_config/o:theme/o:font/o:size' -v "12" ~/.config/openbox/rc.xml
 openbox --reconfigure
 
 
 ## Geany theme
-sed -i "s/color_scheme=.*/color_scheme=Forge.conf/g" ~/.config/geany/geany.conf
+sed -i "s/color_scheme=.*/color_scheme=River.conf/g" ~/.config/geany/geany.conf
 sed -i "s/editor_font=.*/editor_font=JetBrains Mono 11/g" ~/.config/geany/geany.conf
 
 ## jgmenu theme
@@ -41,7 +41,7 @@ sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
 sed -i 's/^icon_theme =.*/icon_theme = gnome/g' ~/.config/jgmenu/jgmenurc
 
 ## xfce4-terminal theme
-xfce4-term-colors forge
+xfce4-term-colors river
 sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/terminalrc
 
 ## Tint2 Panel Items - position, autoshrink, autohide, and transparency
@@ -50,18 +50,18 @@ sed -i "s/^panel_shrink =.*/panel_shrink = 0/" "$HOME"/.config/tint2/tint2rc
 sed -i "s/^autohide =.*/autohide = 0/" "$HOME"/.config/tint2/tint2rc
 sed -i "0,/background_color =/{s/background_color =.*/background_color = #0d0f0f 60/}" "$HOME"/.config/tint2/tint2rc
 ## Tint2 Icon colors
-sed -i 's/coltint2.*\//coltint2grey\//g' "$HOME"/.config/tint2/tint2rc
+sed -i 's/coltint2.*\//coltint2base\//g' "$HOME"/.config/tint2/tint2rc
 ## Tint2 Font colors
-sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
-sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
-sed -i 's/task_font_color =.*/task_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
-sed -i 's/clock_font_color =.*/clock_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
-sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#B2BAC2 100/' "$HOME"/.config/tint2/tint2rc
-sed -i 's/^battery_font_color.*/battery_font_color = #B2BAC2 100/g' "$HOME"/.config/tint2/tint2rc
+sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#C1CFDB 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#C1CFDB 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/task_font_color =.*/task_font_color = \#C1CFDB 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/clock_font_color =.*/clock_font_color = \#C1CFDB 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#C1CFDB 100/' "$HOME"/.config/tint2/tint2rc
+sed -i 's/^battery_font_color.*/battery_font_color = #C1CFDB 100/g' "$HOME"/.config/tint2/tint2rc
 killall -SIGUSR1 tint2
 
 ## Feh Background
-feh --bg-scale '/home/wallpaper/Pawprints.jpg'
+feh --bg-scale '/home/wallpaper/River.jpg'
 
 ## Sounds - Dunst
 sed -i '/summary/d' ~/.config/dunst/dunstrc
