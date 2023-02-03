@@ -166,7 +166,7 @@ spinner {
  ****************/
 spinbutton:not(.vertical),
 entry {
-  min-height: 28px;
+  min-height: 30px;
   padding-left: 4px;
   padding-right: 4px;
   border: 1px solid;
