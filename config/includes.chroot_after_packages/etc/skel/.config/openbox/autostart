@@ -33,12 +33,15 @@
 ### Common startup programs. Comment any item no longer wanted.
 . $HOME/.fehbg &
 picom &
-tint2 >/dev/null 2>&1 &
-xfce4-power-manager >/dev/null 2>&1 &
+tint2 &
 nm-applet &
 lxpolkit &
 xfsettingsd --daemon &
-pnmixer >/dev/null 2>&1 &
+pnmixer &
 conky -c ~/.config/conky/conky-shortcuts.conf &
 sxhkd -c "$HOME/.config/openbox/sxhkdrc-open" &
+### Start Thunar Daemon if thunar is installed. Comment all three lines to disable.
+if type 'thunar' &> /dev/null; then
+thunar --daemon &
+fi
 welcome.sh &
