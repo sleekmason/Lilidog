@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install Lilidog
+GenericName=Calamares Installer
+Exec=pkexec /usr/bin/calamares
+Comment=Calamares — Installer for Lilidog Live
+Keywords=calamares;system;install;lilidog;installer
+Icon=calamares
+Terminal=false
+Categories=Qt;System;
+StartupWMClass=calamares
+StartupNotify=True
