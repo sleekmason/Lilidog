@@ -11,6 +11,8 @@ Everything is easily accessible, with numerous options to customize further.
 
 ### There are currently Four stable versions of Lilidog available for Bullseye.
 
+NOTE - For All live sessions, Username is "user" and root password (sudo) is "live".
+
 - Lilidog-amd64 (Bullseye amd64 full version) -  Has most programs already installed for everyday use.
 This includes Firefox, Thunderbird, Thunar, Geany, Gpicview, Smplayer, Gparted, Synaptic, and Gimp to name a few.
 
@@ -80,7 +82,7 @@ Lilidog: <br/>
 After boot, you have the option to install or try out Lilidog live.  Once in a session, there are a few items that can shape
 your experience. Look in the "paw" icon in the tint2 panel for theming options.  Look in the "Toggles" section of the menu for 
 some useful options, and look in the "Install Extras" portion of the menu for extra programs you may want.  Look around.  There
-is more to see as well.
+is more to see as well. NOTE - For All live sessions, Username is "user" and root password (sudo) is "live".
 
 ### Features:
 
