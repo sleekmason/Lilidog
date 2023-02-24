@@ -10,18 +10,17 @@
    height="24"
    width="24"
    version="1.1"
-   id="svg880"
+   id="svg94"
    sodipodi:docname="battery-080-charging.svg"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
   <metadata
-     id="metadata884">
+     id="metadata98">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -34,17 +33,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1385"
-     inkscape:window-height="1023"
-     id="namedview882"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     id="namedview96"
      showgrid="false"
-     inkscape:zoom="35.291667"
+     inkscape:zoom="35.5"
      inkscape:cx="12"
      inkscape:cy="12"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="g878"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g92"
      inkscape:document-rotation="0" />
   <defs
      id="defs1">
@@ -60,198 +59,114 @@
         </style>
     <filter
        style="color-interpolation-filters:sRGB;"
-       inkscape:label="Lightness-Contrast"
-       id="filter1032">
+       inkscape:label="Colorize"
+       id="filter478">
       <feComposite
          in2="SourceGraphic"
          operator="arithmetic"
          k1="0"
          k2="1"
          result="composite1"
-         id="feComposite1018" />
+         id="feComposite464" />
       <feColorMatrix
          in="composite1"
          values="1"
          type="saturate"
          result="colormatrix1"
-         id="feColorMatrix1020" />
+         id="feColorMatrix466" />
       <feFlood
-         flood-opacity="0.898039"
-         flood-color="rgb(72,113,122)"
+         flood-opacity="1"
+         flood-color="rgb(124,138,156)"
          result="flood1"
-         id="feFlood1022" />
+         id="feFlood468" />
       <feBlend
          in="flood1"
          in2="colormatrix1"
          mode="multiply"
          result="blend1"
-         id="feBlend1024" />
+         id="feBlend470" />
       <feBlend
          in2="blend1"
          mode="screen"
          result="blend2"
-         id="feBlend1026" />
+         id="feBlend472" />
       <feColorMatrix
          in="blend2"
          values="1"
          type="saturate"
          result="colormatrix2"
-         id="feColorMatrix1028" />
+         id="feColorMatrix474" />
       <feComposite
          in="colormatrix2"
          in2="SourceGraphic"
          operator="in"
          k2="1"
-         result="fbSourceGraphic"
-         id="feComposite1030" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix116" />
-      <feColorMatrix
-         id="feColorMatrix118"
-         values="1 0 0 0.1 -0 0 1 0 0.1 -0 0 0 1 0.1 -0 0 0 0 1 0"
-         in="fbSourceGraphic" />
+         result="composite2"
+         id="feComposite476" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB;"
-       inkscape:label="Lightness-Contrast"
-       id="filter216">
-      <feColorMatrix
-         values="1 0 0 -0.15 -0 0 1 0 -0.15 -0 0 0 1 -0.15 -0 0 0 0 1 0"
-         id="feColorMatrix214"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix1393" />
-      <feComposite
-         in2="fbSourceGraphic"
-         id="feComposite1395"
-         operator="arithmetic"
-         k1="0"
-         k2="1"
-         result="composite1"
-         in="fbSourceGraphic" />
-      <feColorMatrix
-         id="feColorMatrix1397"
-         in="composite1"
-         values="1"
-         type="saturate"
-         result="colormatrix1" />
-      <feFlood
-         id="feFlood1399"
-         flood-opacity="0.619608"
-         flood-color="rgb(29,33,78)"
-         result="flood1" />
-      <feBlend
-         in2="colormatrix1"
-         id="feBlend1401"
-         in="flood1"
-         mode="multiply"
-         result="blend1" />
-      <feBlend
-         in2="blend1"
-         id="feBlend1403"
-         mode="screen"
-         result="blend2" />
-      <feColorMatrix
-         id="feColorMatrix1405"
-         in="blend2"
-         values="1"
-         type="saturate"
-         result="colormatrix2" />
-      <feComposite
-         in2="fbSourceGraphic"
-         id="feComposite1407"
-         in="colormatrix2"
-         operator="in"
-         k2="1"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix449" />
-      <feColorMatrix
-         id="feColorMatrix451"
-         values="1 0 0 0.0298 -0 0 1 0 0.0298 -0 0 0 1 0.0298 -0 0 0 0 1 0"
-         in="fbSourceGraphic" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Lightness-Contrast"
-       id="filter1423">
+       inkscape:label="Colorize"
+       id="filter352">
       <feComposite
          in2="SourceGraphic"
          operator="arithmetic"
          k1="0"
          k2="1"
          result="composite1"
-         id="feComposite1409" />
+         id="feComposite338" />
       <feColorMatrix
          in="composite1"
          values="1"
          type="saturate"
          result="colormatrix1"
-         id="feColorMatrix1411" />
+         id="feColorMatrix340" />
       <feFlood
-         flood-opacity="0.619608"
-         flood-color="rgb(29,33,78)"
+         flood-opacity="1"
+         flood-color="rgb(0,99,79)"
          result="flood1"
-         id="feFlood1413" />
+         id="feFlood342" />
       <feBlend
          in="flood1"
          in2="colormatrix1"
          mode="multiply"
          result="blend1"
-         id="feBlend1415" />
+         id="feBlend344" />
       <feBlend
          in2="blend1"
          mode="screen"
          result="blend2"
-         id="feBlend1417" />
+         id="feBlend346" />
       <feColorMatrix
          in="blend2"
          values="1"
          type="saturate"
          result="colormatrix2"
-         id="feColorMatrix1419" />
+         id="feColorMatrix348" />
       <feComposite
          in="colormatrix2"
          in2="SourceGraphic"
          operator="in"
          k2="1"
-         result="fbSourceGraphic"
-         id="feComposite1421" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix453" />
-      <feColorMatrix
-         id="feColorMatrix455"
-         values="1 0 0 0.0298 -0 0 1 0 0.0298 -0 0 0 1 0.0298 -0 0 0 0 1 0"
-         in="fbSourceGraphic" />
+         result="composite2"
+         id="feComposite350" />
     </filter>
   </defs>
   <g
      transform="translate(1,1)"
-     id="g878"
-     style="filter:url(#filter1032)">
+     id="g92"
+     style="filter:url(#filter478)">
     <path
-       style="fill:currentColor;fill-opacity:1;stroke:none;filter:url(#filter1423)"
+       style="fill:currentColor;fill-opacity:1;stroke:none"
        class="ColorScheme-Text"
        d="M3 7v8h12V7zM1 5v12h19v-4h.5c.277 0 .5-.223.5-.5v-3c0-.277-.223-.5-.5-.5H20V5H4zm1 1h17v10H2z"
        fill-rule="evenodd"
-       id="path874" />
+       id="path88" />
     <path
        d="M12 8a3 3 0 0 0-2.826 2H8v2h1.176A3 3 0 0 0 12 14v-1h2v-1h-2v-2h2V9h-2z"
        class="ColorScheme-PositiveText"
        fill="currentColor"
-       id="path876"
-       style="filter:url(#filter216)" />
+       id="path90"
+       style="filter:url(#filter352)" />
   </g>
 </svg>
