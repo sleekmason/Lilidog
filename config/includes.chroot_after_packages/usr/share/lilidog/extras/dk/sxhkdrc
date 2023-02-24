@@ -92,11 +92,11 @@ mod4 + m
     pragha
     
 # Backgounds
-mod4 + b
+mod4 + v
     feh-set-wallpaper
     
 # Browser
-mod4 + w
+mod4 + b
     firefox-esr
     
 # kill current window. Carefull here!
