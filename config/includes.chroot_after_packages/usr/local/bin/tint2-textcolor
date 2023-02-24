@@ -6,11 +6,21 @@ FILE="$HOME/.config/tint2/tint2rc"
 noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Font Color" --center --window-icon=org.xfce.settings.color \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button="gtk-cancel:1" --button="gtk-ok:0" \
-    "Base - Default" "Grey" "Bright Grey" "Dark Grey" "Adobe" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Green" "Black" "White" "Red")
+    "Base - Default" "Light Grey" "Grey" "Dark Grey" "Adobe" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Green" "Black" "White" "Red")
 
 case $noti in
   Base*)
   notify-send --urgency low 'Changing Tint2 font colors to Base Default' ;
+         sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#CADBEB 100/' "$FILE"
+         sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#CADBEB 100/' "$FILE"
+         sed -i 's/task_font_color =.*/task_font_color = \#CADBEB 100/' "$FILE"
+         sed -i 's/clock_font_color =.*/clock_font_color = \#CADBEB 100/' "$FILE"
+         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#CADBEB 100/' "$FILE"
+         sed -i 's/^battery_font_color.*/battery_font_color = #CADBEB 100/g' "$FILE"
+     killall -SIGUSR1 tint2
+;;
+  Light*)
+  notify-send --urgency low 'Changing Tint2 font colors to Light Grey' ;
          sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#C1CFDB 100/' "$FILE"
          sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#C1CFDB 100/' "$FILE"
          sed -i 's/task_font_color =.*/task_font_color = \#C1CFDB 100/' "$FILE"
@@ -27,16 +37,6 @@ case $noti in
          sed -i 's/clock_font_color =.*/clock_font_color = \#B2BAC2 100/' "$FILE"
          sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#B2BAC2 100/' "$FILE"
          sed -i 's/^battery_font_color.*/battery_font_color = #B2BAC2 100/g' "$FILE"
-     killall -SIGUSR1 tint2
-;;
-  Bright*)
-    notify-send --urgency low 'Changing Tint2 font colors to Bright Grey' ;
-         sed -i 's/taskbar_name_font_color =.*/taskbar_name_font_color = \#C9D2DB 100/' "$FILE"
-         sed -i 's/taskbar_name_active_font_color =.*/taskbar_name_active_font_color = \#C9D2DB 100/' "$FILE"
-         sed -i 's/task_font_color =.*/task_font_color = \#C9D2DB 100/' "$FILE"
-         sed -i 's/clock_font_color =.*/clock_font_color = \#C9D2DB 100/' "$FILE"
-         sed -i 's/tooltip_font_color =.*/tooltip_font_color = \#C9D2DB 100/' "$FILE"
-         sed -i 's/^battery_font_color.*/battery_font_color = #C9D2DB 100/g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
   Dark*)

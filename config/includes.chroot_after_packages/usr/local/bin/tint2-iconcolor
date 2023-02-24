@@ -6,12 +6,17 @@ FILE="$HOME/.config/tint2/tint2rc"
 noti=$(yad --width 310 --borders=12 --entry --title "Tint2 Icon Color" --center --window-icon=org.xfce.settings.color \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button="gtk-cancel:1" --button="gtk-ok:0" \
-    "Base - Default" "Grey" "Dark Grey" "Adobe" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Black" "White")
+    "Base - Default" "Light Grey" "Grey" "Dark Grey" "Adobe" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Black" "White")
 
 case $noti in
   Base*)
   notify-send --urgency low 'Changing Tint2 icon color to Base Default' ;
        sed -i 's/coltint2.*\//coltint2base\//g' "$FILE"
+     killall -SIGUSR1 tint2
+;;
+  Light*)
+  notify-send --urgency low 'Changing Tint2 icon color to Light Grey' ;
+       sed -i 's/coltint2.*\//coltint2lightgrey\//g' "$FILE"
      killall -SIGUSR1 tint2
 ;;
   Grey*)

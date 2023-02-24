@@ -5,10 +5,14 @@
 noti=$(yad --width 310 --borders=12 --entry --title "Battery Font Color" --center --window-icon=applications-graphics \
     --image="/usr/share/icons/hicolor/24x24/apps/org.xfce.settings.color.png" \
     --button="gtk-cancel:1" --button="gtk-ok:0" \
-    "Base - Default" "Grey" "Bright Grey" "Dark Grey" "Adobe" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Green" "Black" "White" "Red")
+    "Base - Default" "Light Grey" "Grey" "Bright Grey" "Dark Grey" "Adobe" "Aqua" "Blue" "Navy" "Indigo" "Violet" "Magenta" "Green" "Black" "White" "Red")
 
 case $noti in
   Base*)
+     sed -i 's/^battery_font_color.*/battery_font_color = #CADBEB 100/g' "$HOME/.config/tint2/tint2rc"
+     killall -SIGUSR1 tint2
+;;
+  Light*)
      sed -i 's/^battery_font_color.*/battery_font_color = #C1CFDB 100/g' "$HOME/.config/tint2/tint2rc"
      killall -SIGUSR1 tint2
 ;;
