@@ -8,7 +8,7 @@ noti=$(yad --width 444 --borders=10 --entry --title "Jgmenu Icon & Font Options"
     --button="gtk-ok:0" \
     --text "  Adwaita, Gnome, and Breeze icons are installed. \n  Use 'Install Icons' below to install extra themes.\n" \
     --entry-text \
-    "Please Select Menu Icon Theme" "Adwaita" "Gnome - Default" "Buuf" "Breeze" "Breeze-Dark" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Off")
+    "Please Select Menu Icon Theme" "Adwaita" "Gnome - Default" "Buuf" "Breeze" "Breeze-Dark" "Dark Papirus" "Light Papirus" "Numix Circle" "Faenza" "Paper" "Obsidian" "Off")
 
 case $noti in
   Adwaita*)
@@ -83,7 +83,7 @@ notify-send --urgency low 'Menu Icons Set To Numix Circle'
 else
 notify-send --urgency low "Numix icons are not currently installed"
 fi ;;
-   Faenza)
+  Faenza)
     if [[ -d "/usr/share/icons/Faenza-Ambiance" ]]
 then
      sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
@@ -100,6 +100,15 @@ then
 notify-send --urgency low 'Menu Icons Set To Paper'
 else
 notify-send --urgency low "Paper icons are not currently installed"
+fi ;;
+  Obsidian)
+    if [[ -d "/usr/share/icons/Obsidian" ]]
+then
+     sed -i 's/^icon_size.*/icon_size = 20/g' ~/.config/jgmenu/jgmenurc
+     sed -i 's/^icon_theme =.*/icon_theme = Obsidian/g' ~/.config/jgmenu/jgmenurc
+notify-send --urgency low 'Menu Icons Set To Obsidian'
+else
+notify-send --urgency low "Faenza icons are not currently installed"
 fi ;;
    Off*)
      jg-icon-on-off
