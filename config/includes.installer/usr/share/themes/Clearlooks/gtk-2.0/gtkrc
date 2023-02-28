@@ -31,13 +31,13 @@ style "clearlooks-default"
 	fg[ACTIVE]		    = "#BFE1EF" # TEXT COLOR IN YES AND NO BOXES
 	fg[INSENSITIVE]		= "#294361" # 
 
-	bg[NORMAL]		    = "#182838" # BACKGROUND
+	bg[NORMAL]		    = "#212B36" # BACKGROUND
 	bg[PRELIGHT]		= "#2D4A6B" # 
 	bg[SELECTED]		= "#4F749E" # 
 	bg[INSENSITIVE]		= "#2C415C" #
 	bg[ACTIVE]		    = "#4F749E" #
 
-	base[NORMAL]		= "#1C2E42" # WHOLE BACKGROUND IN INSET AREA
+	base[NORMAL]		= "#293542" # WHOLE BACKGROUND IN INSET AREA
 	base[PRELIGHT]		= "#3D5A7D" # 
 	base[ACTIVE]		= "#3A5B85" # UNSELECTED HIGHLIGHTED BAR
 	base[SELECTED]		= "#74A2D6" # Configure network hostname
