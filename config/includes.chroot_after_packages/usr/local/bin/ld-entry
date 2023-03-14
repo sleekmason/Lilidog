@@ -72,7 +72,7 @@ _update() {
 
 _remove_packages() {
       _msg="Remove Cryptsetup and related packages?"
-      do_it() { apt-get remove -y cryptsetup cryptsetup-initramfs cryptsetup-bin libvolume-key1 libblockdev-crypto2 ;}
+      do_it() { apt-get remove -y cryptsetup cryptsetup-initramfs cryptsetup-bin ;}
         see_it
         no_see
         run_it
