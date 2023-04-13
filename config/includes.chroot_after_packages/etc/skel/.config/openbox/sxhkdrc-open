@@ -10,6 +10,9 @@ mod4 + l
 mod4 + o
 	obkey
 
+alt + F1
+    jgmenu_run 
+
 alt + F2
     ~/.config/dmenu/dmenu
 

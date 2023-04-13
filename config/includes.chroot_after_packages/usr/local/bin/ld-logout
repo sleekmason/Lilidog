@@ -38,7 +38,7 @@ if ! [[ "$RETVAL" == 0 ]]; then
 type dm-tool >/dev/null 2>&1
 RETVAL=$?
 if ! [[ "$RETVAL" == 0 ]]; then
-pmlo_main=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --fixed --center --on-top --skip-taskbar --buttons-layout=center --button="Logout!$pmlo_bute!Logout of session:3" --button="Suspend!$pmlo_buts!Suspend the system:4" --button="Reboot!$pmlo_butr!Reboot the system:5" --button="Shutdown!$pmlo_butq!Shutdown the system:6")
+pmlo_main=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --fixed --center --close-on-unfocus --buttons-layout=center --button="Logout!$pmlo_bute!Logout of session:3" --button="Suspend!$pmlo_buts!Suspend the system:4" --button="Reboot!$pmlo_butr!Reboot the system:5" --button="Shutdown!$pmlo_butq!Shutdown the system:6")
 fi
 fi
 fi
@@ -46,7 +46,7 @@ fi
 fi
 fi
 fi
-pmlo_main=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --fixed --center --on-top --skip-taskbar --buttons-layout=center --button="Lock Screen!$pmlo_butl!Lock the screen:2" --button="Logout!$pmlo_bute!Logout of session:3" --button="Suspend!$pmlo_buts!Suspend the system:4" --button="Reboot!$pmlo_butr!Reboot the system:5" --button="Shutdown!$pmlo_butq!Shutdown the system:6")
+pmlo_main=$(yad --title="$pmlo_ttle" --class="$pmlo_clas" --window-icon="$pmlo_wico" --fixed --center --close-on-unfocus --buttons-layout=center --button="Lock Screen!$pmlo_butl!Lock the screen:2" --button="Logout!$pmlo_bute!Logout of session:3" --button="Suspend!$pmlo_buts!Suspend the system:4" --button="Reboot!$pmlo_butr!Reboot the system:5" --button="Shutdown!$pmlo_butq!Shutdown the system:6")
 pmlo_main=$?
 case "$pmlo_main" in
 1)
@@ -62,7 +62,7 @@ fi
 type i3lock >/dev/null 2>&1
 RETVAL=$?
 if [[ "$RETVAL" == 0 ]]; then
-i3lock
+i3lock -efn -c "2C3C4D"
 exit 0
 fi
 type slock >/dev/null 2>&1
