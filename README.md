@@ -1,8 +1,12 @@
 ﻿### Lilidog Linux
 
-Website: https://lilidog.org/ <br/>
-Forum Link: https://www.forum.lilidog.org/ <br/>
-Download link: https://sourceforge.net/projects/lilidog/
+Website: [https://lilidog.org/](https://sourceforge.net/projects/lilidog/) <br/>
+Forum Link: [https://www.forum.lilidog.org/](https://sourceforge.net/p/lilidog/discussion/) <br/>
+Download link:
+### NOTE - The DOWNLOAD button defaults to the current full Openbox version, currently Debian 13.4 - Trixie
+## Click on FILES, and then RELEASES to access the other builds.
+
+<a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
  
 Lilidog is a lightweight Linux distro using the Openbox window manager. <br/>
 
