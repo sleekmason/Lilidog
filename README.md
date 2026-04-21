@@ -1,7 +1,7 @@
 ﻿### Lilidog Linux
 
 Website: https://sourceforge.net/projects/lilidog/ <br/>
-Forum Link: https://sourceforge.net/p/lilidog/discussion/
+Forum Link: https://sourceforge.net/p/lilidog/discussion/ <br/>
 Download link:
 ##### NOTE - The DOWNLOAD button defaults to the current full Openbox version, currently Debian 13.4 - Trixie
 #### Click on FILES, and then RELEASES to access the other builds.
