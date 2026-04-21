@@ -2,8 +2,8 @@
 
 Website: https://sourceforge.net/projects/lilidog/ <br/>
 Forum Link: https://sourceforge.net/p/lilidog/discussion/ <br/>
-Download link to the latest build:
-<a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
+
+Download link to the latest build:   <a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
  
 Lilidog is a lightweight Linux distro using the Openbox window manager. <br/>
 
