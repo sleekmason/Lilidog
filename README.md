@@ -2,6 +2,7 @@
 
 Website: https://sourceforge.net/projects/lilidog/ <br/>
 Forum Link: https://sourceforge.net/p/lilidog/discussion/ <br/>
+Current releases: https://sourceforge.net/projects/lilidog/files/Releases/
 
 Download link to the latest build:   <a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
  
@@ -44,13 +45,6 @@ and then 'sudo update-grub' in a terminal to see your other distributions.  Join
 any issues and keep lilidog bug free!
 
 See further below for features.
-
-### NOTE - The DOWNLOAD button defaults to the Bullseye-amd64 full version! (stable).  Click below for the others.
-
-[![Download Lilidog](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/lilidog/files/latest/download)
-
-### Click Here for the other releases: 
-https://sourceforge.net/projects/lilidog/files/Releases/
 
 ### Directions
 
